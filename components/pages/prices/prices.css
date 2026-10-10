@@ -254,39 +254,75 @@
   border-bottom-right-radius: 14px;
 }
 
-@media (max-width: 1500px) {
+/* Figma: связка desktop 1920 px и 1440 px. На 1440 сохраняем размеры,
+   заданные отдельным Figma-frame, а не уменьшаем весь блок пропорционально. */
+@media (max-width: 1500px) and (min-width: 1001px) {
   .prices__panel {
-    padding: 30px;
+    padding: 40px;
+  }
+
+  .prices__content {
+    gap: 30px;
   }
 
   .prices__title {
-    font-size: 48px;
+    font-size: 64px;
+    line-height: 1.125;
   }
 
   .prices__notice {
-    font-size: 18px;
+    gap: 18px;
+    font-size: 22px;
+    line-height: 1.5455;
   }
 
   .prices__filters,
   .prices__filter-group,
-  .prices__dimensions,
-  .prices__fieldset {
-    gap: 16px;
+  .prices__dimensions {
+    gap: 20px;
   }
 
-  .prices__option,
-  .prices__table {
-    font-size: 14px;
+  .prices__fieldset {
+    gap: 18px;
+  }
+
+  .prices__fieldset legend {
+    font-size: 16px;
+  }
+
+  .prices__option {
+    min-height: 0;
+    padding: 12px 14px;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   .prices__dimension {
-    gap: 10px;
-    font-size: 14px;
+    gap: 20px;
+    font-size: 16px;
   }
 
   .prices__dimension select {
-    min-width: 90px;
-    padding: 14px 28px 14px 16px;
+    min-width: 0;
+    padding: 12px 42px 12px 14px;
+    background-position: right 12px center;
+    font-size: 16px;
+  }
+
+  .prices__table {
+    font-size: 16px;
+  }
+
+  .prices__label-column {
+    width: 39.7%;
+  }
+
+  .prices__table thead th {
+    font-size: 18px;
+  }
+
+  .prices__table small {
+    font-size: 16px;
   }
 }
 
