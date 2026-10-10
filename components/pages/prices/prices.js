@@ -118,12 +118,31 @@ function initPricesTechAccordion() {
   document.querySelectorAll('[data-prices-tech-accordion] .prices-tech__item-heading button').forEach((button) => {
     button.addEventListener('click', () => {
       const item = button.closest('.prices-tech__item');
+      const list = button.closest('[data-prices-tech-accordion]');
       const description = item?.querySelector('.prices-tech__description');
-      if (!item || !description) return;
+      if (!item || !list || !description) return;
+
       const expanded = button.getAttribute('aria-expanded') === 'true';
+
+      if (!expanded) {
+        list.querySelectorAll('.prices-tech__item').forEach((otherItem) => {
+          const otherButton = otherItem.querySelector('.prices-tech__item-heading button');
+          const otherDescription = otherItem.querySelector('.prices-tech__description');
+          if (!otherButton || !otherDescription) return;
+
+          otherButton.setAttribute('aria-expanded', 'false');
+          otherItem.classList.remove('is-open');
+          otherDescription.hidden = true;
+
+          const otherIcon = otherButton.querySelector('.prices-tech__icon');
+          if (otherIcon) otherIcon.textContent = '+';
+        });
+      }
+
       button.setAttribute('aria-expanded', String(!expanded));
       item.classList.toggle('is-open', !expanded);
       description.hidden = expanded;
+
       const icon = button.querySelector('.prices-tech__icon');
       if (icon) icon.textContent = expanded ? '+' : '−';
     });
