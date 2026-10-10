@@ -729,7 +729,7 @@
 
 /* Mobile frame Figma 360 px: 1857:25380.
    Сохраняет базовую desktop/tablet-модель и перестраивает только layout,
-   который меняется на узком экране. Без clamp() и геометрических hacks. */
+   который меняется на узком экране. Без геометрических hacks. */
 @media screen and (max-width: 400px) {
   .home-industries {
     padding: 0 5px 5px;
