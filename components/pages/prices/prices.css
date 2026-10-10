@@ -943,7 +943,7 @@
 }
 .prices-tech__layout {
   display: grid;
-  grid-template-columns: minmax(0, 710fr) minmax(0, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: start;
   gap: clamp(32px, 7.3vw, 140px);
   max-width: 1508px;
@@ -976,7 +976,8 @@
 }
 .prices-tech__building h3 {
   width: 100%;
-  overflow-wrap: anywhere;
+  hyphens: auto;
+  overflow-wrap: normal;
   margin: 0 0 14px;
   color: #505050;
   font-family: 'Onest-SemiBold', sans-serif;
