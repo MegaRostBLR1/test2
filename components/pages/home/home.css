@@ -390,6 +390,12 @@
   }
 }
 
+@media screen and (max-width: 427px) {
+  .home-hero__category-text {
+    max-width: 216px;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .home-hero__content {
     padding-right: 0.7778rem;
