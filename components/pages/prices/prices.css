@@ -1486,6 +1486,7 @@
 }
 
 .prices-calculation__inner {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1553,10 +1554,11 @@
     outline-offset: 4px;
 }
 
-.prices-calculation__visual {
-    flex: 0 1 44%;
-    align-self: stretch;
-    min-width: 0;
+.prices-calculation-img {
+    max-width: 812px;
+    position: absolute;
+    bottom: 0;
+    right: 45px;
 }
 
 @media (max-width: 1200px) {
