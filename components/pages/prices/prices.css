@@ -1479,7 +1479,7 @@
 
 
 
-/* Figma node 1893:92063 — online calculation banner (illustration is supplied separately). */
+/* Figma nodes 1893:92063 (1920 px) and 1857:25112 (1440 px). */
 .prices-calculation {
     padding: 20px 45px;
     background: #F5F8F7;
@@ -1489,45 +1489,60 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    gap: 4px;
     min-height: 318px;
     padding: 40px 45px;
+    overflow: hidden;
     border-radius: 20px;
     background: #324C88;
     color: #FFFFFF;
 }
 
 .prices-calculation__content {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex: 1 1 0;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: 36px;
     min-width: 0;
+}
+
+.prices-calculation__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    max-width: 762px;
 }
 
 .prices-calculation__title {
     max-width: 762px;
+    margin: 0;
     color: #FFFFFF;
     font-family: 'Onest-SemiBold', sans-serif;
     font-size: 38px;
     font-weight: 600;
-    line-height: 1.53;
+    line-height: 58px;
     text-transform: uppercase;
 }
 
 .prices-calculation__subtitle {
     max-width: 762px;
+    margin: 0;
     color: #FFFFFF;
     font-family: 'Onest-Medium', sans-serif;
     font-size: 22px;
     font-weight: 500;
-    line-height: 1.64;
+    line-height: 36px;
     text-transform: uppercase;
 }
 
 .prices-calculation__button {
+    position: relative;
+    z-index: 1;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1539,7 +1554,7 @@
     font-family: 'Onest-SemiBold', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 28px;
     text-align: center;
     text-transform: uppercase;
     transition: background-color 0.15s ease;
@@ -1555,10 +1570,14 @@
 }
 
 .prices-calculation-img {
-    max-width: 812px;
     position: absolute;
-    bottom: 0;
     right: 45px;
+    bottom: 0;
+    z-index: 0;
+    display: block;
+    width: min(52%, 812px);
+    max-width: 812px;
+    height: auto;
 }
 
 @media (max-width: 1200px) {
@@ -1571,6 +1590,14 @@
         padding: 32px;
     }
 
+    .prices-calculation__content {
+        gap: 24px;
+    }
+
+    .prices-calculation__text {
+        gap: 16px;
+    }
+
     .prices-calculation__title {
         font-size: 32px;
         line-height: 1.4;
@@ -1579,6 +1606,11 @@
     .prices-calculation__subtitle {
         font-size: 18px;
         line-height: 1.6;
+    }
+
+    .prices-calculation-img {
+        right: 24px;
+        width: min(48%, 600px);
     }
 
     .prices-calculation__button {
@@ -1605,6 +1637,10 @@
         gap: 16px;
     }
 
+    .prices-calculation__text {
+        gap: 16px;
+    }
+
     .prices-calculation__title {
         font-size: 24px;
         line-height: 1.35;
@@ -1623,7 +1659,7 @@
         font-size: 14px;
     }
 
-    .prices-calculation__visual {
+    .prices-calculation-img {
         display: none;
     }
 }
