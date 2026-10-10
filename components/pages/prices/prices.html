@@ -1,0 +1,50 @@
+<!-- Блок цен: макет Figma 1857:101566, контрольное разрешение 1920 px -->
+<section class="prices" aria-labelledby="prices-title">
+  <div class="prices__inner">
+    <nav class="prices__breadcrumbs" aria-label="Хлебные крошки">
+      <a href="/">Главная</a><span aria-hidden="true">-</span><span aria-current="page">Цены</span>
+    </nav>
+
+    <h1 class="prices__title" id="prices-title">Цены на типовые здания</h1>
+
+    <aside class="prices__notice">
+      <p><strong>ВАЖНО!</strong> Все цены на здания являются ориентировочными и даны для предварительного знакомства с примерным бюджетом на строительство вашего здания. Слишком много факторов влияет на уровень цен (сочетание климатических зон, размеры здания, плавающие цены на металл, материалы, стоимость рабочей силы в разных странах, шаг рам, наличие геоизыскательных работ, нестандартные нагрузки на стены и кровлю и т.д.)</p>
+      <p>Для более точного расчета используйте онлайн систему <a href="https://www.websteel.pkvesta.ru/Home/StepOne" target="_blank" rel="noopener noreferrer">WebSteel®</a> (онлайн учет стоимости и наличия материалов на складе завода, расчетной схемы и проектных решений) или делайте детальный запрос на российский завод ПК Веста.</p>
+    </aside>
+
+    <div class="prices__filters" aria-label="Параметры расчёта">
+      <div class="prices__filter-group">
+        <span class="prices__filter-label">Регион:</span>
+        <div class="prices__segmented">
+          <button class="prices__segment prices__segment--active" type="button" aria-pressed="true">Россия</button>
+          <button class="prices__segment" type="button" aria-pressed="false">СНГ</button>
+          <button class="prices__segment" type="button" aria-pressed="false">Африка и Ближний Восток</button>
+        </div>
+      </div>
+      <div class="prices__filter-group">
+        <span class="prices__filter-label">Кровля:</span>
+        <div class="prices__segmented">
+          <button class="prices__segment prices__segment--active" type="button" aria-pressed="true">Двухскатная</button>
+          <button class="prices__segment" type="button" aria-pressed="false">Плоская</button>
+        </div>
+      </div>
+      <label class="prices__dimension"><span class="prices__filter-label">Ширина:</span><span class="prices__select">12 м <img src="./assets/mynaui-chevron-up-solid.svg" alt="" width="24" height="24"></span></label>
+      <label class="prices__dimension"><span class="prices__filter-label">Высота:</span><span class="prices__select">4 м <img src="./assets/mynaui-chevron-up-solid.svg" alt="" width="24" height="24"></span></label>
+    </div>
+
+    <div class="prices__table-wrap">
+      <table class="prices__table">
+        <colgroup><col class="prices__work-col"><col span="6"></colgroup>
+        <thead>
+          <tr><th scope="col">Виды работ</th><th colspan="6">Длина, м / с шагом колон 6м</th></tr>
+        </thead>
+        <tbody>
+          <tr class="prices__subhead"><th scope="row">С 20% НДС. Поставка - EXW.</th><td>30</td><td>36</td><td>42</td><td>48</td><td>54</td><td>60</td></tr>
+          <tr><th scope="row">Сроки проектирования и изготовления, мес</th><td>2.5</td><td>2.5</td><td>2.5</td><td>2.5</td><td>2.5</td><td>2.5</td></tr>
+          <tr><th scope="row">Несущий каркас, RUB</th><td>891 588 RUB</td><td>1 133 396 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td></tr>
+        </tbody>
+        <tfoot><tr><th scope="row">Итого от:</th><td>891 588 RUB</td><td>1 133 396 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td></tr></tfoot>
+      </table>
+    </div>
+  </div>
+</section>
