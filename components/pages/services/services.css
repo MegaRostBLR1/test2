@@ -768,3 +768,114 @@
   .services-contact__consent { gap: 12px; font-size: 12px; }
   .services-contact__checkbox { flex-basis: 20px; width: 20px; height: 20px; }
 }
+
+
+/* Figma node 2269:144480 — mobile viewport 360 px. */
+@media screen and (max-width: 680px) {
+  .services-contact {
+    padding: 20px 14px;
+  }
+
+  .services-contact__container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    min-height: 0;
+  }
+
+  .services-contact__intro {
+    gap: 18px;
+  }
+
+  .services-contact__heading {
+    gap: 14px;
+  }
+
+  .services-contact__eyebrow {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .services-contact__title {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .services-contact__description {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .services-contact__illustration {
+    display: none;
+  }
+
+  .services-contact__form {
+    gap: 24px;
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .services-contact__fields {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .services-contact__field,
+  .services-contact__field--phone {
+    grid-column: 1 / -1;
+    gap: 8px;
+  }
+
+  .services-contact__label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .services-contact__input {
+    min-height: 56px;
+    padding: 16px 18px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .services-contact__textarea {
+    min-height: 120px;
+  }
+
+  .services-contact__form-bottom {
+    gap: 24px;
+  }
+
+  .services-contact__upload {
+    min-height: 152px;
+    padding: 24px 14px;
+  }
+
+  .services-contact__upload-button {
+    max-width: 100%;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .services-contact__submit.btn {
+    min-height: 56px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .services-contact__consent {
+    gap: 12px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .services-contact__checkbox {
+    flex-basis: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
