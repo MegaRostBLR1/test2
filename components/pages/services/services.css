@@ -120,3 +120,72 @@
     padding-left: 1rem;
   }
 }
+
+/* Responsive states are aligned with the 1440px and 1024px Figma frames. */
+@media screen and (min-width: 1601px) {
+  .services__panel.section__container {
+    padding: 2.2222rem;
+  }
+
+  .services__container.container {
+    max-width: 99.7778rem;
+  }
+
+  .services__title {
+    font-size: 3rem;
+  }
+
+  .services__count {
+    font-size: 1.935rem;
+  }
+
+  .services__category {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .services__panel.section__container {
+    padding: 2.5rem;
+  }
+
+  .services__container.container {
+    gap: 1.6667rem;
+  }
+
+  .services__title {
+    gap: 0.2222rem;
+    font-size: 1.3333rem;
+  }
+
+  .services__count {
+    font-size: 2rem;
+    line-height: 1.2222;
+  }
+
+  .services__category {
+    min-height: 3rem;
+    padding: 0.7778rem 1rem;
+    font-size: 0.8889rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .services__panel.section__container {
+    padding: 1.1111rem;
+  }
+
+  .services__container.container {
+    gap: 1.1111rem;
+  }
+
+  .services__breadcrumbs {
+    font-size: 0.7778rem;
+  }
+
+  .services__categories {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+}
