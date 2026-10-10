@@ -115,6 +115,44 @@ function initPrices() {
 }
 
 function initPricesTechAccordion() {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const animations = new WeakMap();
+
+  const setDescriptionExpanded = (description, expanded) => {
+    const previousAnimation = animations.get(description);
+    const currentHeight = description.getBoundingClientRect().height;
+    previousAnimation?.cancel();
+
+    if (expanded) {
+      description.hidden = false;
+    }
+
+    const targetHeight = expanded ? description.scrollHeight : 0;
+
+    if (reducedMotion.matches) {
+      description.hidden = !expanded;
+      return;
+    }
+
+    const animation = description.animate(
+      [
+        { height: `${currentHeight}px`, opacity: expanded ? 0.7 : 1 },
+        { height: `${targetHeight}px`, opacity: expanded ? 1 : 0.7 }
+      ],
+      {
+        duration: 260,
+        easing: 'cubic-bezier(0.22, 1, 0.36, 1)'
+      }
+    );
+
+    animations.set(description, animation);
+    animation.addEventListener('finish', () => {
+      if (animations.get(description) !== animation) return;
+      animations.delete(description);
+      if (!expanded) description.hidden = true;
+    }, { once: true });
+  };
+
   document.querySelectorAll('[data-prices-tech-accordion] .prices-tech__item-heading button').forEach((button) => {
     button.addEventListener('click', () => {
       const item = button.closest('.prices-tech__item');
@@ -128,11 +166,11 @@ function initPricesTechAccordion() {
         list.querySelectorAll('.prices-tech__item').forEach((otherItem) => {
           const otherButton = otherItem.querySelector('.prices-tech__item-heading button');
           const otherDescription = otherItem.querySelector('.prices-tech__description');
-          if (!otherButton || !otherDescription) return;
+          if (!otherButton || !otherDescription || otherItem === item) return;
 
           otherButton.setAttribute('aria-expanded', 'false');
           otherItem.classList.remove('is-open');
-          otherDescription.hidden = true;
+          setDescriptionExpanded(otherDescription, false);
 
           const otherIcon = otherButton.querySelector('.prices-tech__icon');
           if (otherIcon) otherIcon.textContent = '+';
@@ -141,7 +179,7 @@ function initPricesTechAccordion() {
 
       button.setAttribute('aria-expanded', String(!expanded));
       item.classList.toggle('is-open', !expanded);
-      description.hidden = expanded;
+      setDescriptionExpanded(description, !expanded);
 
       const icon = button.querySelector('.prices-tech__icon');
       if (icon) icon.textContent = expanded ? '+' : '−';
