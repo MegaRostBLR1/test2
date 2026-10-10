@@ -409,6 +409,7 @@
 
 /* Mobile layout follows Figma frames 1857:103016 + 2139:138518. */
 .prices__notice-toggle,
+.prices__parameters-toggle,
 .prices__mobile-table {
   display: none;
 }
@@ -581,5 +582,38 @@
 
   .prices__mobile-table-row:last-child span:last-child {
     border-bottom-right-radius: 14px;
+  }
+}
+
+
+@media (max-width: 680px) {
+  .prices__parameters-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 18px;
+    border: 3px solid #F5F8F7;
+    border-radius: 10px;
+    background: #F5F8F7;
+    color: #4D4D4D;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .prices__parameters-toggle svg {
+    flex: 0 0 24px;
+  }
+
+  .prices__filters {
+    display: none;
+  }
+
+  .prices__filters.is-expanded {
+    display: flex;
   }
 }
