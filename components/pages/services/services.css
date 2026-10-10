@@ -413,6 +413,11 @@
   display: none;
 }
 
+.service-card[hidden],
+.services-list__more[hidden] {
+  display: none;
+}
+
 @media screen and (min-width: 681px) and (max-width: 1300px) {
   .services-list__panel {
     padding: 24px;
