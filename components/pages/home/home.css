@@ -924,6 +924,75 @@
 }
 
 
+/* Контрольный tablet-frame Figma 1024 px: 1857:25321.
+   Точечные переопределения сохраняют desktop-геометрию на 1920/1440 px. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .home-process__panel {
+    gap: 18px;
+    padding: 40px;
+    background: transparent;
+  }
+
+  .home-process__header {
+    gap: 24px;
+  }
+
+  .home-process__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .home-process__subtitle {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .home-process__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .home-process__card {
+    gap: 30px;
+    padding: 20px;
+    background: #fff;
+  }
+
+  .home-process__card-content {
+    gap: 24px;
+  }
+
+  .home-process__card-header {
+    gap: 14px;
+  }
+
+  .home-process__icon {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .home-process__card-title {
+    font-size: 22px;
+    line-height: 1.6;
+    overflow-wrap: normal;
+  }
+
+  .home-process__description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .home-process__link {
+    flex-basis: 64px;
+    min-height: 64px;
+    padding: 16px 20px;
+    border-radius: 20px;
+    font-size: 17px;
+    line-height: 1.26;
+  }
+}
+
 /* Контрольный desktop-frame Figma 1440 px: 1857:24744.
    Сохраняет четыре карточки в ряд и уточняет параметры относительно 1920 px. */
 @media screen and (min-width: 1301px) and (max-width: 1500px) {
