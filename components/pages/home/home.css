@@ -522,6 +522,10 @@
   }
 }
 
+.home-hero__mobile-break {
+  display: none;
+}
+
 /* Figma mobile frame 360 × 556 (1857:26279). */
 @media screen and (max-width: 680px) {
   .home-hero {
@@ -564,6 +568,10 @@
 
   .home-hero__heading {
     gap: 18px;
+  }
+
+  .home-hero__mobile-break {
+    display: block;
   }
 
   .home-hero__title {
