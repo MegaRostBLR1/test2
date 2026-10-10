@@ -903,3 +903,177 @@
     transition: none;
   }
 }
+
+
+/* Technology section — Figma 1857:101778 */
+.prices-tech {
+  padding: 10px;
+  background: #F5F8F7;
+  color: #4D4D4D;
+  font-family: 'Onest-Regular', sans-serif;
+}
+.prices-tech__inner {
+  width: 100%;
+  padding: 64px 40px;
+  border-radius: 20px;
+  background: #F5F8F7;
+}
+.prices-tech__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+.prices-tech__title {
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: clamp(28px, 2.5vw, 48px);
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.prices-tech__subtitle {
+  max-width: 100%;
+  margin: 0;
+  color: #5D5D5D;
+  font-size: clamp(16px, 1.25vw, 24px);
+  line-height: 1.6;
+}
+.prices-tech__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 710fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(32px, 7.3vw, 140px);
+  max-width: 1508px;
+  margin: 0 auto;
+}
+.prices-tech__buildings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: center;
+  gap: 36px 20px;
+  min-height: 691px;
+  padding: 36px 24px;
+  border-radius: 30px;
+  background: #FFF;
+}
+.prices-tech__building {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  text-align: center;
+}
+.prices-tech__building img {
+  display: block;
+  width: min(100%, 200px);
+  height: 133px;
+  margin-bottom: 18px;
+  object-fit: contain;
+}
+.prices-tech__building h3 {
+  margin: 0 0 14px;
+  color: #505050;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: clamp(18px, 1.56vw, 30px);
+  font-weight: 600;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+.prices-tech__building p {
+  margin: 0;
+  color: rgba(77,77,77,.8);
+  font-size: 18px;
+  line-height: 1.5;
+}
+.prices-tech__list {
+  min-width: 0;
+}
+.prices-tech__item {
+  padding: 0 0 20px;
+  margin: 0 0 20px;
+  border-top: 1px solid rgba(0,0,0,.05);
+}
+.prices-tech__item:last-child { margin-bottom: 0; }
+.prices-tech__item-heading { margin: 0; }
+.prices-tech__item-heading button {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  padding: 20px 0 0;
+  border: 0;
+  background: transparent;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.prices-tech__icon {
+  display: flex;
+  flex: 0 0 40px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 0;
+  border-radius: 50%;
+  background: #FFF500;
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+}
+.prices-tech__item-heading button:focus-visible {
+  outline: 2px solid #324C88;
+  outline-offset: 4px;
+}
+.prices-tech__description {
+  padding: 14px 0 0 64px;
+}
+.prices-tech__description p {
+  margin: 0;
+  color: rgba(77,77,77,.8);
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media (max-width: 1200px) {
+  .prices-tech__inner { padding: 48px 24px; }
+  .prices-tech__layout { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 32px; }
+  .prices-tech__buildings { min-height: 0; padding: 28px 18px; gap: 30px 12px; }
+  .prices-tech__item-heading button { gap: 16px; font-size: 17px; }
+  .prices-tech__description { padding-left: 56px; }
+}
+@media (max-width: 760px) {
+  .prices-tech { padding: 0; }
+  .prices-tech__inner { padding: 40px 14px; border-radius: 0; }
+  .prices-tech__header { gap: 16px; margin-bottom: 28px; }
+  .prices-tech__title { font-size: 26px; line-height: 1.25; }
+  .prices-tech__subtitle { font-size: 16px; line-height: 1.5; }
+  .prices-tech__layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .prices-tech__buildings { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 12px; padding: 24px 12px; border-radius: 20px; }
+  .prices-tech__building img { height: 100px; margin-bottom: 12px; }
+  .prices-tech__building h3 { margin-bottom: 8px; font-size: 17px; }
+  .prices-tech__building p { font-size: 14px; }
+  .prices-tech__item { padding-bottom: 16px; margin-bottom: 16px; }
+  .prices-tech__item-heading button { align-items: center; gap: 12px; padding-top: 16px; font-size: 15px; line-height: 1.4; }
+  .prices-tech__icon { flex-basis: 36px; width: 36px; height: 36px; font-size: 25px; }
+  .prices-tech__description { padding: 12px 0 0 48px; }
+  .prices-tech__description p { font-size: 15px; }
+}
+@media (max-width: 360px) {
+  .prices-tech__title { font-size: 23px; }
+  .prices-tech__buildings { padding: 20px 8px; }
+  .prices-tech__building h3 { font-size: 15px; }
+  .prices-tech__building p { font-size: 13px; }
+  .prices-tech__item-heading button { font-size: 14px; }
+}
