@@ -1467,6 +1467,10 @@
 }
 
 @media (max-width: 480px) {
+    .prices-tech__description .prices-tech__buildings--responsive {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
     .prices-tech__description .prices-tech__building--compact-hidden {
         display: none;
     }
