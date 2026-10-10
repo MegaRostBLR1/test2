@@ -256,7 +256,7 @@ function initNavigationRouting() {
 
   document.querySelectorAll('.app-header a.nav-link, .app-header a.nav-list__nested-list-link')
     .forEach((link) => {
-      const label = link.textContent.trim().replace(/\\s+/g, ' ');
+      const label = link.textContent.trim().replace(/\s+/g, ' ');
       const route = routeByLabel[label];
 
       if (route) {
