@@ -1,0 +1,115 @@
+.services {
+  width: 100%;
+  color: #4d4d4d;
+  background-color: #ffffff;
+  border-radius: 0.5556rem;
+}
+
+.services__panel {
+  display: flex;
+  justify-content: center;
+  padding: 2.2222rem;
+  border-radius: 1.1111rem;
+}
+
+.services__container.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6667rem;
+  width: 100%;
+  max-width: 99.7778rem;
+  padding: 0;
+}
+
+.services__breadcrumbs {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1111rem;
+  color: #4d4d4d;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.services__breadcrumb-link {
+  color: inherit;
+}
+
+.services__breadcrumb-link:hover {
+  color: #324c88;
+}
+
+.services__breadcrumb-separator {
+  flex: 0 0 auto;
+}
+
+.services__title {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.4444rem;
+  color: #4d4d4d;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services__title-text {
+  font: inherit;
+}
+
+.services__count {
+  color: #324c88;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 1.935rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.services__categories {
+  display: flex;
+  align-items: center;
+  gap: 0.2222rem;
+  max-width: 100%;
+  padding: 0.2222rem;
+  overflow: visible;
+  border-radius: 0.5556rem;
+  background-color: #f5f8f7;
+}
+
+.services__category {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.5556rem;
+  padding: 0.7778rem 1.3333rem;
+  border-radius: 0.7778rem;
+  color: #5d5d5d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background-color 0.1s ease;
+}
+
+.services__category:hover {
+  background-color: #e9eeec;
+}
+
+.services__category.is-active {
+  background-color: #fff500;
+}
+
+.services__category:focus-visible {
+  outline: 0.1111rem solid #324c88;
+  outline-offset: 0.1111rem;
+}
