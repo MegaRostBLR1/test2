@@ -11,7 +11,11 @@
 
       <aside class="prices__notice" aria-label="Важная информация">
         <p><strong>ВАЖНО!</strong> Все цены на здания являются ориентировочными и даны для предварительного знакомства с примерным бюджетом на строительство вашего здания. Слишком много факторов влияет на уровень цен (сочетание климатических зон, размеры здания, плавающие цены на металл, материалы, стоимость рабочей силы в разных странах, шаг рам, наличие геоизыскательных работ, нестандартные нагрузки на стены и кровлю и т.д.)</p>
-        <p>Для более точного расчета используйте онлайн систему <a href="https://www.websteel.pkvesta.ru/Home/StepOne" target="_blank" rel="noopener noreferrer">WebSteel®</a> (онлайн учет стоимости и наличия материалов на складе завода, расчетной схемы и проектных решений) или делайте детальный запрос на российский завод ПК Веста.</p>
+        <p class="prices__notice-extra">Для более точного расчета используйте онлайн систему <a href="https://www.websteel.pkvesta.ru/Home/StepOne" target="_blank" rel="noopener noreferrer">WebSteel®</a> (онлайн учет стоимости и наличия материалов на складе завода, расчетной схемы и проектных решений) или делайте детальный запрос на российский завод ПК Веста.</p>
+        <button class="prices__notice-toggle" type="button" aria-expanded="false">
+          <span>Показать еще</span>
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="m7 10 5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
       </aside>
 
       <form class="prices__filters" aria-label="Параметры здания">
@@ -85,6 +89,17 @@
             </tr>
           </tfoot>
         </table>
+
+        <div class="prices__mobile-table" aria-label="Цена для длины 1 метр">
+          <div class="prices__mobile-table-heading" aria-hidden="true">
+            <span>Длина, м</span>
+            <span>Цена, RUB</span>
+          </div>
+          <div class="prices__mobile-table-row">
+            <span>1</span>
+            <span>891 588</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
