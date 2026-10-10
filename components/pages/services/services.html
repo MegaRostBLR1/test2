@@ -116,3 +116,59 @@
     </div>
   </div>
 </section>
+
+<section class="services-contact" aria-labelledby="services-contact-title">
+  <div class="services-contact__container">
+    <div class="services-contact__intro">
+      <div class="services-contact__heading">
+        <p class="services-contact__eyebrow">Задать вопрос или заказать расчет</p>
+        <h2 class="services-contact__title" id="services-contact-title">Оставьте заявку и мы ответим вам в ближайшее время</h2>
+      </div>
+      <p class="services-contact__description">Оставьте заявку и мы ответим вам в ближайшее время</p>
+      <div class="services-contact__illustration" aria-hidden="true">
+        <img src="../../static/images/home/industries-big-img.png" alt="" width="706" height="580" loading="lazy">
+      </div>
+    </div>
+
+    <form class="services-contact__form" action="#" method="post" enctype="multipart/form-data">
+      <div class="services-contact__fields">
+        <div class="services-contact__field">
+          <label class="services-contact__label" for="services-contact-name">Имя</label>
+          <input class="services-contact__input" id="services-contact-name" name="name" type="text" placeholder="Иван Петров" autocomplete="name" required>
+        </div>
+        <div class="services-contact__field">
+          <label class="services-contact__label" for="services-contact-email">E-mail</label>
+          <input class="services-contact__input" id="services-contact-email" name="email" type="email" placeholder="ivan.petrov@mail.ru" autocomplete="email" required>
+        </div>
+        <div class="services-contact__field services-contact__field--phone">
+          <label class="services-contact__label" for="services-contact-phone">Телефон</label>
+          <input class="services-contact__input" id="services-contact-phone" name="phone" type="tel" placeholder="+7 999 123-45-24" autocomplete="tel" required>
+        </div>
+      </div>
+
+      <div class="services-contact__form-bottom">
+        <div class="services-contact__field">
+          <label class="services-contact__label" for="services-contact-comment">Комментарий</label>
+          <textarea class="services-contact__input services-contact__textarea" id="services-contact-comment" name="comment" placeholder="Ваш комментарий"></textarea>
+        </div>
+
+        <div class="services-contact__upload">
+          <label class="services-contact__upload-button" for="services-contact-file">
+            <span class="services-contact__file-icon" aria-hidden="true">↥</span>
+            <span>Выберите файл</span>
+          </label>
+          <input class="services-contact__file-input" id="services-contact-file" name="attachment" type="file" aria-describedby="services-contact-file-help">
+          <p class="services-contact__upload-help" id="services-contact-file-help">Прикрепите/перетащите файл, max 50 mb</p>
+        </div>
+
+        <div class="services-contact__submit-group">
+          <button class="btn main-btn services-contact__submit" type="submit">Отправить</button>
+          <label class="services-contact__consent">
+            <input class="services-contact__checkbox" type="checkbox" name="personal-data-consent" required>
+            <span>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</span>
+          </label>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
