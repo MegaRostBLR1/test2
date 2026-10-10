@@ -456,7 +456,7 @@
         flex-direction: column;
         gap: 18px;
         padding: 24px;
-        background: rgba(255, 245, 0, 0.1);
+        background: #FFF5001A;
         font-size: 14px;
         line-height: 22px;
     }
@@ -658,7 +658,7 @@
     }
 
     .prices__mobile-summary-item small {
-        color: rgba(44, 44, 44, 0.5);
+        color: #2C2C2C80;
         font-family: 'Onest-Medium', sans-serif;
         font-size: 13px;
         font-weight: 500;
@@ -695,7 +695,7 @@
         display: none;
         align-items: stretch;
         justify-content: center;
-        background: rgba(29, 37, 53, 0.38);
+        background: #1D253561;
     }
 
     .prices__filters-modal.is-open {
@@ -793,7 +793,7 @@
 
     .prices__fieldset legend {
         float: none;
-        color: rgba(44, 44, 44, 0.9);
+        color: #2C2C2CE6;
         font-family: 'Onest-Medium', sans-serif;
         font-size: 18px;
         font-weight: 500;
@@ -861,7 +861,7 @@
         min-width: 0;
         padding: 10px 40px 10px 0;
         border-radius: 0;
-        border-bottom: 1px solid rgba(44, 44, 44, 0.12);
+        border-bottom: 1px solid #2C2C2C1F;
         background-color: transparent;
         background-position: right 4px center;
         font-size: 14px;
@@ -999,7 +999,7 @@
 
 .prices-tech__building p {
     margin: 0;
-    color: rgba(77, 77, 77, .8);
+    color: #4D4D4DCC;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -1011,7 +1011,7 @@
 .prices-tech__item {
     padding: 0 0 20px;
     margin: 0 0 20px;
-    border-top: 1px solid rgba(0, 0, 0, .05);
+    border-top: 1px solid #0000000D;
 }
 
 .prices-tech__item:last-child {
@@ -1069,7 +1069,7 @@
 
 .prices-tech__description p {
     margin: 0;
-    color: rgba(77, 77, 77, .8);
+    color: #4D4D4DCC;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -1232,7 +1232,7 @@
     }
 
     .prices-tech__title {
-        font-size: clamp(30px, 3.2vw, 40px);
+        font-size: 32px;
     }
 
     .prices-tech__subtitle {
@@ -1373,7 +1373,7 @@
 
     .prices-tech__mobile-building p {
         margin: 0;
-        color: rgba(77, 77, 77, .8);
+        color: #4D4D4DCC;
         font-size: 16px;
         line-height: 1.5;
     }
