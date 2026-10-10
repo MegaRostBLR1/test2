@@ -113,3 +113,24 @@ function initPrices() {
     });
   });
 }
+
+function initPricesTechAccordion() {
+  document.querySelectorAll('[data-prices-tech-accordion] .prices-tech__item-heading button').forEach((button) => {
+    button.addEventListener('click', () => {
+      const item = button.closest('.prices-tech__item');
+      const description = item?.querySelector('.prices-tech__description');
+      if (!item || !description) return;
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!expanded));
+      item.classList.toggle('is-open', !expanded);
+      description.hidden = expanded;
+      const icon = button.querySelector('.prices-tech__icon');
+      if (icon) icon.textContent = expanded ? '+' : '−';
+    });
+  });
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPricesTechAccordion, { once: true });
+} else {
+  initPricesTechAccordion();
+}
