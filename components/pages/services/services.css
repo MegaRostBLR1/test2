@@ -662,7 +662,7 @@
 /* Связка контрольных разрешений формы: 1440–1920 px. */
 /* Размеры плавно меняются между контрольными макетами, без скачка на 1440 px. */
 .services-contact {
-  padding: clamp(50px, calc(-40px + 6.25vw), 80px) clamp(32px, calc(6px + 2.03125vw), 45px);
+  padding: clamp(50px, calc(-40px + 6.25vw), 80px) 45px;
 }
 
 .services-contact__container {
