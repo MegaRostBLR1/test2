@@ -267,8 +267,7 @@
   }
 }
 
-
-/* Карточки услуг — Figma Frame 2439, контрольный viewport 1920 px. */
+/* Карточки услуг: Figma Frame 2439, контрольные viewport 1920 и 1440 px. */
 .services-list {
   width: 100%;
   padding: 0 5px 10px;
@@ -345,7 +344,8 @@
 }
 
 .service-card__description {
-  width: 100%;
+  width: 370px;
+  max-width: 100%;
   color: #979a9b;
   font-family: 'Onest-Regular', sans-serif;
   font-size: 16px;
@@ -364,4 +364,18 @@
   font-weight: 600;
   line-height: 24px;
   white-space: nowrap;
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .services-list__container {
+    max-width: 1350px;
+  }
+
+  .services-list__grid {
+    grid-template-columns: repeat(2, 672px);
+  }
+
+  .service-card {
+    width: 672px;
+  }
 }
