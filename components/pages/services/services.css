@@ -659,52 +659,17 @@
 }
 
 
-/* Связка контрольных разрешений формы: 1440–1920 px. */
-/* Размеры плавно меняются между контрольными макетами, без скачка на 1440 px. */
-.services-contact {
-  padding: clamp(50px, calc(-40px + 6.25vw), 80px) 45px;
-}
-
-.services-contact__container {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: clamp(32px, calc(-16px + 3.3333vw), 48px);
-  max-width: 1830px;
-}
-
-.services-contact__intro,
-.services-contact__form {
-  min-width: 0;
-}
-
-.services-contact__title {
-  font-size: clamp(36px, calc(12px + 1.6667vw), 44px);
-}
-
-.services-contact__description {
-  font-size: clamp(20px, calc(5px + 1.0417vw), 25px);
-}
-
-.services-contact__fields {
-  grid-template-columns: minmax(0, clamp(240px, calc(60px + 12.5vw), 300px)) minmax(0, 1fr);
-  column-gap: clamp(16px, calc(0px + 1.25vw), 24px);
-}
-
-.services-contact__form {
-  padding: clamp(16px, calc(-4px + 1.6667vw), 20px);
-}
-
-.services-contact__input {
-  padding-right: clamp(16px, calc(-8px + 1.6667vw), 24px);
-  padding-left: clamp(16px, calc(-8px + 1.6667vw), 24px);
-}
-
-.services-contact__illustration {
-  max-width: 100%;
-}
+/* Адаптация формы между контрольными разрешениями 1440 и 1920 px. */
+/* Базовые значения выше соответствуют макету 1920 px. */
 
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
+  .services-contact {
+    padding: 50px 45px;
+  }
+
   .services-contact__container {
     min-height: 720px;
+    gap: 32px;
   }
 
   .services-contact__intro {
@@ -719,14 +684,33 @@
     font-size: 18px;
   }
 
+  .services-contact__title {
+    font-size: 36px;
+  }
+
+  .services-contact__description {
+    font-size: 20px;
+  }
+
+  .services-contact__form {
+    padding: 16px;
+  }
+
+  .services-contact__fields {
+    grid-template-columns: minmax(0, 240px) minmax(0, 1fr);
+    column-gap: 16px;
+    row-gap: 20px;
+  }
+
   .services-contact__label,
   .services-contact__input,
   .services-contact__upload-button {
     font-size: 16px;
   }
 
-  .services-contact__fields {
-    row-gap: 20px;
+  .services-contact__input {
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .services-contact__form,
@@ -743,5 +727,9 @@
     flex-basis: 20px;
     width: 20px;
     height: 20px;
+  }
+
+  .services-contact__illustration {
+    max-width: 100%;
   }
 }
