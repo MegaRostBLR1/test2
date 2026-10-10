@@ -1627,41 +1627,51 @@
 
 @media (max-width: 760px) {
     .prices-calculation {
-        padding: 10px 14px;
+        padding: 20px 14px;
+        background: #F5F8F7;
     }
 
     .prices-calculation__inner {
         flex-direction: column;
         align-items: stretch;
-        gap: 24px;
-        padding: 28px 20px;
-        border-radius: 10px;
+        gap: 0;
+        min-height: 0;
+        padding: 18px;
+        border-radius: 20px;
     }
 
     .prices-calculation__content {
-        gap: 16px;
+        gap: 24px;
+        width: 100%;
     }
 
     .prices-calculation__text {
-        gap: 16px;
+        gap: 14px;
+        max-width: none;
     }
 
     .prices-calculation__title {
+        max-width: none;
         font-size: 24px;
-        line-height: 1.35;
+        font-weight: 600;
+        line-height: 40px;
     }
 
     .prices-calculation__subtitle {
-        font-size: 15px;
-        line-height: 1.5;
+        max-width: none;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
     }
 
     .prices-calculation__button {
         width: 100%;
-        min-height: 56px;
-        padding: 16px 20px;
-        border-radius: 12px;
+        min-height: 54px;
+        padding: 14px 20px;
+        border-radius: 20px;
         font-size: 14px;
+        font-weight: 600;
+        line-height: 26px;
     }
 
     .prices-calculation-img {
