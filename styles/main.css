@@ -1460,7 +1460,7 @@ footer {
 
 /* Figma: связка desktop 1920 px и 1440 px. На 1440 сохраняем размеры,
    заданные отдельным Figma-frame, а не уменьшаем весь блок пропорционально. */
-@media (max-width: 1660px) and (min-width: 1001px) {
+@media (max-width: 1660px) and (not (max-width: 1000px)) {
   .prices__panel {
     padding: 2.2222rem;
   }
@@ -1619,7 +1619,7 @@ footer {
   display: none;
 }
 
-@media (min-width: 681px) {
+@media (not (max-width: 680px)) {
   .prices__notice-extra {
     display: block;
   }
@@ -2425,7 +2425,7 @@ footer {
   display: none;
 }
 
-@media (min-width: 761px) and (max-width: 1200px) {
+@media (max-width: 1200px) and (not (max-width: 760px)) {
   .prices-tech__inner {
     padding: 2.2222rem 1.3333rem;
   }
@@ -2784,7 +2784,7 @@ footer {
   height: stretch;
 }
 
-@media (max-width: 1200px) and (min-width: 761px) {
+@media (max-width: 1200px) and (not (max-width: 760px)) {
   .prices-calculation {
     padding: 1.6667rem 2.2222rem;
   }
