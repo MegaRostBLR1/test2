@@ -1465,3 +1465,9 @@
         font-size: 13px;
     }
 }
+
+@media (max-width: 480px) {
+    .prices-tech__description .prices-tech__building--compact-hidden {
+        display: none;
+    }
+}
