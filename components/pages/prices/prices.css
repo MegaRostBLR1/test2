@@ -1049,6 +1049,28 @@
   font-size: 18px;
   line-height: 1.5;
 }
+/* Figma node 1857:102091 — 1440 px frame, joined with the existing 1920 px layout. */
+@media (max-width: 1660px) and (min-width: 1201px) {
+  .prices-tech__inner {
+    padding: 64px 40px;
+  }
+
+  .prices-tech__header {
+    margin-bottom: 25px;
+  }
+
+  .prices-tech__layout {
+    grid-template-columns: minmax(0, 625px) minmax(0, 594px);
+    justify-content: center;
+    gap: 80px;
+    max-width: 1340px;
+  }
+
+  .prices-tech__buildings {
+    min-height: 691px;
+  }
+}
+
 @media (max-width: 1200px) {
   .prices-tech__inner { padding: 48px 24px; }
   .prices-tech__title { font-size: 36px; }
