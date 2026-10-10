@@ -1061,3 +1061,95 @@
     line-height: 1.26;
   }
 }
+
+
+/* Контрольный mobile-frame Figma 360 px: 1857:26316.
+   Более узкая геометрия действует только на мобильном экране и не меняет
+   контрольные состояния 1920, 1440 и 1024 px. */
+@media screen and (max-width: 680px) {
+  .home-process {
+    padding: 0 5px 5px;
+  }
+
+  .home-process__panel {
+    gap: 18px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background: transparent;
+  }
+
+  .home-process__header {
+    gap: 14px;
+  }
+
+  .home-process__title {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+    overflow-wrap: break-word;
+  }
+
+  .home-process__subtitle {
+    width: 100%;
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .home-process__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .home-process__card {
+    gap: 14px;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  .home-process__card-content {
+    gap: 10px;
+  }
+
+  .home-process__card-header {
+    gap: 14px;
+  }
+
+  .home-process__icon {
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .home-process__card-title {
+    font-size: 18px;
+    line-height: 16px;
+    overflow-wrap: normal;
+  }
+
+  .home-process__divider {
+    flex-basis: 2px;
+    height: 2px;
+  }
+
+  .home-process__description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .home-process__description p + p {
+    margin-top: 0;
+  }
+
+  .home-process__link {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 0;
+    margin-top: 0;
+    padding: 18px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.26;
+  }
+}
