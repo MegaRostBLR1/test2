@@ -18,11 +18,6 @@
         </button>
       </aside>
 
-      <button class="prices__parameters-toggle" type="button" aria-expanded="false" aria-haspopup="dialog" aria-controls="prices-filters-modal">
-        <span>Параметры</span>
-        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M7 12h10m-7 5h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      </button>
-
       <div class="prices__filters-modal" id="prices-filters-modal" aria-hidden="true">
         <div class="prices__filters-backdrop" data-prices-filters-close></div>
         <section class="prices__filters-dialog" role="dialog" aria-modal="true" aria-labelledby="prices-filters-title" tabindex="-1">
@@ -83,6 +78,11 @@
           <small>(Этаж-1, кран-балки — нет, тип конструкции — двухскатная с 1 пролётом)</small>
         </div>
       </div>
+
+      <button class="prices__parameters-toggle" type="button" aria-expanded="false" aria-haspopup="dialog" aria-controls="prices-filters-modal">
+        <span>Параметры</span>
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M7 12h10m-7 5h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
 
       <div class="prices__table-wrap">
         <table class="prices__table">
