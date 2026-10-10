@@ -58,7 +58,7 @@
   font-family: 'Onest-SemiBold', sans-serif;
   font-size: 3rem;
   font-weight: 600;
-  line-height: 1.2778;
+  line-height: 0;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -66,6 +66,7 @@
 
 .services__title-text {
   font: inherit;
+  line-height: 1.2778;
 }
 
 .services__count {
@@ -233,12 +234,16 @@
   .services__title {
     gap: 0;
     font-size: 1.3333rem;
+    line-height: 0;
+  }
+
+  .services__title-text {
     line-height: 1.3333;
   }
 
   .services__count {
     font-size: 2rem;
-    line-height: 1.2222;
+    line-height: 0;
   }
 
   .services__categories {
