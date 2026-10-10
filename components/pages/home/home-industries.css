@@ -725,3 +725,155 @@
     min-height: 0;
   }
 }
+
+
+/* Mobile frame Figma 360 px: 1857:25380.
+   Сохраняет базовую desktop/tablet-модель и перестраивает только layout,
+   который меняется на узком экране. Без clamp() и геометрических hacks. */
+@media screen and (max-width: 400px) {
+  .home-industries {
+    padding: 0 5px 5px;
+  }
+
+  .home-industries__panel {
+    gap: 16px;
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+
+  .home-industries__header {
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .home-industries__eyebrow {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .home-industries__nav {
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 4px 0;
+    scrollbar-width: none;
+  }
+
+  .home-industries__nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .home-industries__nav-list {
+    flex: 0 0 auto;
+    gap: 10px;
+  }
+
+  .home-industries__nav-item {
+    gap: 10px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .home-industries__nav-item--tablet-hidden {
+    display: flex;
+  }
+
+  .home-industries__nav-divider {
+    flex: 0 0 1px;
+    height: 28px;
+  }
+
+  .home-industries__catalog-link {
+    font-size: 12px;
+  }
+
+  .home-industries__content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .home-industries__details {
+    flex: 0 1 auto;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .home-industries__intro {
+    gap: 10px;
+  }
+
+  .home-industries__title {
+    font-size: 22px;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+
+  .home-industries__description {
+    max-width: none;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .home-industries__types {
+    max-width: none;
+  }
+
+  .home-industries__types-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .home-industries__tags {
+    gap: 8px;
+    max-width: none;
+  }
+
+  .home-industries__tag {
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .home-industries__button {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .home-industries__visual {
+    flex: 0 1 auto;
+    align-items: flex-end;
+    gap: 5px;
+    width: 100%;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: 1.15;
+  }
+
+  .home-industries__image {
+    border-radius: 8px;
+  }
+
+  .home-industries__image--small {
+    flex: 0 0 37.6%;
+    width: 37.6%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .home-industries__image--large {
+    flex: 1 1 0;
+    align-self: stretch;
+    width: auto;
+    height: auto;
+    min-height: 0;
+  }
+}
