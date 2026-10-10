@@ -62,10 +62,6 @@
   line-height: 1.5;
 }
 
-.prices__notice-toggle {
-  display: none;
-}
-
 .prices__notice p {
   min-width: 0;
   margin: 0;
@@ -330,7 +326,6 @@
   }
 }
 
-/* Адаптация между desktop 1440 px и mobile 360 px. */
 @media (max-width: 1000px) {
   .prices__panel {
     padding: 24px;
@@ -357,7 +352,7 @@
 
 @media (max-width: 680px) {
   .prices__panel {
-    padding: 20px 14px;
+    padding: 12px;
   }
 
   .prices__content {
@@ -367,71 +362,19 @@
 
   .prices__breadcrumbs {
     justify-content: center;
-    gap: 20px;
+    gap: 12px;
     font-size: 14px;
-    line-height: 1.4;
-  }
-
-  .prices__breadcrumbs > span[aria-hidden="true"] {
-    font-size: 20px;
   }
 
   .prices__title {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 28px;
+    line-height: 1.2;
   }
 
   .prices__notice {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 18px;
-    padding: 24px;
+    padding: 16px;
     font-size: 14px;
-    line-height: 22px;
-  }
-
-  .prices__notice p:first-child {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 10;
-  }
-
-  .prices__notice.is-expanded p:first-child {
-    display: block;
-    overflow: visible;
-  }
-
-  .prices__notice p:nth-child(2) {
-    display: none;
-  }
-
-  .prices__notice.is-expanded p:nth-child(2) {
-    display: block;
-  }
-
-  .prices__notice-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    align-self: center;
-    color: #324C88;
-    font-family: 'Onest-Medium', sans-serif;
-    font-size: 16px;
-    line-height: 1.4;
-  }
-
-  .prices__notice-toggle svg {
-    width: 24px;
-    height: 24px;
-    flex: 0 0 24px;
-    transition: transform 0.2s ease;
-  }
-
-  .prices__notice.is-expanded .prices__notice-toggle svg {
-    transform: rotate(180deg);
+    line-height: 1.5;
   }
 
   .prices__filter-group,
@@ -461,11 +404,5 @@
 
   .prices__table {
     min-width: 1000px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .prices__notice-toggle svg {
-    transition: none;
   }
 }
