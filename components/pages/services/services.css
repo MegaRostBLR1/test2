@@ -5,10 +5,9 @@
   border-radius: 0.5556rem;
 }
 
-.services__panel {
+.services__panel.section__container {
   display: flex;
   justify-content: center;
-  padding: 2.2222rem;
   border-radius: 1.1111rem;
 }
 
@@ -75,9 +74,10 @@
   display: flex;
   align-items: center;
   gap: 0.2222rem;
+  width: 100%;
   max-width: 100%;
   padding: 0.2222rem;
-  overflow: visible;
+  overflow: hidden;
   border-radius: 0.5556rem;
   background-color: #f5f8f7;
 }
@@ -112,4 +112,11 @@
 .services__category:focus-visible {
   outline: 0.1111rem solid #324c88;
   outline-offset: 0.1111rem;
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1301px) {
+  .services__category {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
