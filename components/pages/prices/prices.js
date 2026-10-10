@@ -1,4 +1,14 @@
 function initPrices() {
+  const parametersToggle = document.querySelector('.prices__parameters-toggle');
+  const filters = document.querySelector('.prices__filters');
+
+  if (parametersToggle && filters) {
+    parametersToggle.addEventListener('click', () => {
+      const isExpanded = filters.classList.toggle('is-expanded');
+      parametersToggle.setAttribute('aria-expanded', String(isExpanded));
+    });
+  }
+
   const notice = document.querySelector('.prices__notice');
   const noticeToggle = notice?.querySelector('.prices__notice-toggle');
 
