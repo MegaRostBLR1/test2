@@ -1479,7 +1479,7 @@
 
 
 
-/* Figma nodes 1893:92063 (1920 px) and 1857:25112 (1440 px). */
+/* Figma nodes 1893:92063 (1920 px), 1857:25112 (1440 px), 2297:112563 (1024 px). */
 .prices-calculation {
     padding: 20px 45px;
     background: #F5F8F7;
@@ -1580,43 +1580,48 @@
     height: auto;
 }
 
-@media (max-width: 1200px) {
+/* 1024 px Figma frame: the card keeps 40 px inner padding and the
+   illustration remains cropped by the card, as in the reference. */
+@media (max-width: 1200px) and (min-width: 761px) {
     .prices-calculation {
-        padding: 16px 24px;
+        padding: 30px 40px;
     }
 
     .prices-calculation__inner {
-        min-height: 0;
-        padding: 32px;
+        min-height: 282px;
+        padding: 40px;
     }
 
     .prices-calculation__content {
-        gap: 24px;
+        gap: 36px;
     }
 
     .prices-calculation__text {
-        gap: 16px;
+        gap: 14px;
     }
 
     .prices-calculation__title {
-        font-size: 32px;
-        line-height: 1.4;
+        max-width: 762px;
+        font-size: 24px;
+        line-height: 40px;
     }
 
     .prices-calculation__subtitle {
+        max-width: 762px;
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 36px;
+    }
+
+    .prices-calculation__button {
+        min-height: 76px;
+        padding: 24px 48px;
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .prices-calculation-img {
         right: 24px;
         width: min(48%, 600px);
-    }
-
-    .prices-calculation__button {
-        min-height: 64px;
-        padding: 20px 28px;
-        font-size: 16px;
     }
 }
 
