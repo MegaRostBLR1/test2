@@ -663,7 +663,7 @@
 /* Адаптация формы между контрольными разрешениями 1440 и 1920 px. */
 /* Базовые значения выше соответствуют макету 1920 px. */
 
-@media screen and (min-width: 1440px) and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
   .services-contact {
     padding: 50px 45px;
   }
@@ -737,7 +737,7 @@
 
 
 /* Figma Frame 2440 — 1024 px. Layout changes to a single column. */
-@media screen and (min-width: 681px) and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .services-list__panel { padding: 24px; }
   .services-list__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; }
   .service-card { gap: 12px; padding: 8px; }
