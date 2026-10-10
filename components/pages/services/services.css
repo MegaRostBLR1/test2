@@ -379,3 +379,77 @@
     width: 672px;
   }
 }
+
+/* Figma Frame 1857:28872 — viewport 1024 px. */
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+  .services-list__container {
+    max-width: 933px;
+  }
+
+  .services-list__grid {
+    grid-template-columns: repeat(2, 464px);
+  }
+
+  .service-card {
+    width: 464px;
+  }
+}
+
+/* Промежуточные ширины: сохраняем карточки в потоке без горизонтального переполнения. */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .services-list__panel {
+    padding: 24px;
+  }
+
+  .services-list__container {
+    max-width: 464px;
+  }
+
+  .services-list__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .service-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services-list {
+    padding: 0 5px 10px;
+  }
+
+  .services-list__panel {
+    padding: 12px;
+  }
+
+  .services-list__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .service-card {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .service-card__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 17 / 20;
+    flex-basis: auto;
+  }
+
+  .service-card__content {
+    width: 100%;
+    gap: 16px;
+    padding-top: 0;
+  }
+
+  .service-card__button.btn {
+    align-self: flex-start;
+    max-width: 100%;
+    padding: 12px 24px;
+  }
+}
+
