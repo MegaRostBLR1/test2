@@ -1,18 +1,5 @@
 /* Page Services (Страница Услуги) */
 /* Services Panel */
-.services {
-    width: 100%;
-    color: #4d4d4d;
-    background-color: #fff;
-    border-radius: 0.5556rem;
-}
-
-.services__panel.section__container {
-    display: flex;
-    justify-content: center;
-    padding: 2.2222rem;
-    border-radius: 1.1111rem;
-}
 
 .services__container.container {
     display: flex;
@@ -129,7 +116,6 @@
     outline-offset: 0.1111rem;
 }
 
-
 @media screen and (max-width: 1300px) {
     .services__panel.section__container {
         padding: 2.2222rem;
@@ -201,6 +187,9 @@
         transition: none;
     }
 }
+
+/* Page Services (Страница Услуги) */
+/* Services List */
 
 /* Page Services (Страница Услуги) */
 /* Services List */
@@ -300,15 +289,6 @@
     white-space: nowrap;
 }
 
-.services-list__container {
-    max-width: 99.7778rem;
-}
-
-.services-list__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.2778rem;
-}
-
 .services-list__more {
     display: none;
 }
@@ -328,10 +308,53 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
+    .services-list__panel {
+            padding: 1.3333rem;
+        }
 
+    .services-list__grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.2778rem;
+        }
+
+    .service-card {
+            gap: 0.6667rem;
+            padding: 0.4444rem;
+        }
+
+    .service-card__image {
+            flex-basis: 6.6667rem;
+            width: 6.6667rem;
+            height: 8.8889rem;
+        }
+
+    .service-card__content {
+            padding-top: 0.2222rem;
+        }
+
+    .service-card__text {
+            gap: 0.3333rem;
+        }
+
+    .service-card__title {
+            font-size: 0.8889rem;
+            line-height: 1.4;
+        }
+
+    .service-card__description {
+            font-size: 0.7778rem;
+            line-height: 1.45;
+        }
+
+    .service-card__button.btn {
+            min-height: 2.4444rem;
+            padding: 0.5556rem 1.1111rem;
+            border-radius: 0.6667rem;
+            font-size: 0.7778rem;
+            line-height: 1.2222rem;
+        }
 }
-
 
 @media screen and (max-width: 680px) {
     .services-list {
@@ -429,6 +452,8 @@
     }
 }
 
+/* Page Services (Страница Услуги) */
+/* Services Contact */
 
 /* Page Services (Страница Услуги) */
 /* Services Contact */
@@ -665,6 +690,12 @@
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .services-contact * {
+        scroll-behavior: auto;
+    }
+}
+
 @media screen and (max-width: 1600px) {
     .services-contact {
         padding: 2.7778rem 2.5rem;
@@ -729,153 +760,106 @@
 }
 
 @media screen and (max-width: 1300px) {
-    .services-list__panel {
-        padding: 1.3333rem;
-    }
-
-    .services-list__grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 0.2778rem;
-    }
-
-    .service-card {
-        gap: 0.6667rem;
-        padding: 0.4444rem;
-    }
-
-    .service-card__image {
-        flex-basis: 6.6667rem;
-        width: 6.6667rem;
-        height: 8.8889rem;
-    }
-
-    .service-card__content {
-        padding-top: 0.2222rem;
-    }
-
-    .service-card__text {
-        gap: 0.3333rem;
-    }
-
-    .service-card__title {
-        font-size: 0.8889rem;
-        line-height: 1.4;
-    }
-
-    .service-card__description {
-        font-size: 0.7778rem;
-        line-height: 1.45;
-    }
-
-    .service-card__button.btn {
-        min-height: 2.4444rem;
-        padding: 0.5556rem 1.1111rem;
-        border-radius: 0.6667rem;
-        font-size: 0.7778rem;
-        line-height: 1.2222rem;
-    }
-
     .services-contact {
-        padding: 2.2222rem;
-    }
+            padding: 2.2222rem;
+        }
 
     .services-contact__container {
-        grid-template-columns: minmax(0, 1fr);
-    }
+            grid-template-columns: minmax(0, 1fr);
+        }
 
     .services-contact__intro {
-        gap: 1.3333rem;
-    }
+            gap: 1.3333rem;
+        }
 
     .services-contact__heading {
-        gap: 0.9444rem;
-    }
+            gap: 0.9444rem;
+        }
 
     .services-contact__eyebrow {
-        font-size: 1.1111rem;
-    }
+            font-size: 1.1111rem;
+        }
 
     .services-contact__title {
-        max-width: 100%;
-        font-size: 1.6667rem;
-        line-height: 1.4;
-    }
+            max-width: 100%;
+            font-size: 1.6667rem;
+            line-height: 1.4;
+        }
 
     .services-contact__description {
-        margin-top: 0;
-    }
+            margin-top: 0;
+        }
 
     .services-contact__description {
-        max-width: 37.1667rem;
-        font-size: 1.3889rem;
-        line-height: 1.4;
-    }
+            max-width: 37.1667rem;
+            font-size: 1.3889rem;
+            line-height: 1.4;
+        }
 
     .services-contact__illustration {
-        display: none;
-    }
+            display: none;
+        }
 
     .services-contact__form {
-        gap: 1.3333rem;
-        padding: 1.1111rem;
-    }
+            gap: 1.3333rem;
+            padding: 1.1111rem;
+        }
 
     .services-contact__fields {
-        grid-template-columns: minmax(0, 16.6667rem) minmax(0, 1fr);
-        column-gap: 1.3333rem;
-        row-gap: 1.3333rem;
-    }
+            grid-template-columns: minmax(0, 16.6667rem) minmax(0, 1fr);
+            column-gap: 1.3333rem;
+            row-gap: 1.3333rem;
+        }
 
     .services-contact__field {
-        gap: 0.4444rem;
-    }
+            gap: 0.4444rem;
+        }
 
     .services-contact__label {
-        font-size: 0.8889rem;
-        line-height: 1.3333rem;
-    }
+            font-size: 0.8889rem;
+            line-height: 1.3333rem;
+        }
 
     .services-contact__input {
-        min-height: 3.1111rem;
-        padding: 0.8889rem 1rem;
-        font-size: 0.8889rem;
-    }
+            min-height: 3.1111rem;
+            padding: 0.8889rem 1rem;
+            font-size: 0.8889rem;
+        }
 
     .services-contact__textarea {
-        min-height: 6.6667rem;
-    }
+            min-height: 6.6667rem;
+        }
 
     .services-contact__form-bottom {
-        gap: 1.3333rem;
-    }
+            gap: 1.3333rem;
+        }
 
     .services-contact__upload {
-        min-height: 8.4444rem;
-    }
+            min-height: 8.4444rem;
+        }
 
     .services-contact__upload-button {
-        font-size: 0.8889rem;
-    }
+            font-size: 0.8889rem;
+        }
 
     .services-contact__submit.btn {
-        min-height: 3.1111rem;
-        padding: 0.8333rem 1.7778rem;
-        font-size: 0.8889rem;
-        line-height: 1.3333rem;
-    }
+            min-height: 3.1111rem;
+            padding: 0.8333rem 1.7778rem;
+            font-size: 0.8889rem;
+            line-height: 1.3333rem;
+        }
 
     .services-contact__consent {
-        gap: 0.6667rem;
-        font-size: 0.6667rem;
-    }
+            gap: 0.6667rem;
+            font-size: 0.6667rem;
+        }
 
     .services-contact__checkbox {
-        flex-basis: 1.1111rem;
-        width: 1.1111rem;
-        height: 1.1111rem;
-    }
+            flex-basis: 1.1111rem;
+            width: 1.1111rem;
+            height: 1.1111rem;
+        }
 }
-
 
 @media screen and (max-width: 680px) {
     .services-contact {
