@@ -37,7 +37,10 @@ function initPrices() {
   };
 
   if (parametersToggle && filtersModal) {
-    parametersToggle.addEventListener('click', openFilters);
+    parametersToggle.addEventListener('click', (event) => {
+      event.preventDefault();
+      openFilters();
+    });
     closeButtons.forEach((button) => button.addEventListener('click', closeFilters));
 
     document.addEventListener('keydown', (event) => {
