@@ -578,11 +578,23 @@
     white-space: nowrap;
   }
 
-  .prices__mobile-table-row:last-child span:first-child {
+  .prices__mobile-table-total {
+    min-height: 70px;
+    margin-bottom: 0;
+  }
+
+  .prices__mobile-table-total span {
+    background: #324C88;
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .prices__mobile-table-total span:first-child {
     border-bottom-left-radius: 14px;
   }
 
-  .prices__mobile-table-row:last-child span:last-child {
+  .prices__mobile-table-total span:last-child {
     border-bottom-right-radius: 14px;
   }
 }
