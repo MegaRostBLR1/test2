@@ -206,43 +206,43 @@
 /* Карточки услуг: Figma Frame 2439, контрольные viewport 1920 и 1440 px. */
 .services-list {
   width: 100%;
-  padding: 0 5px 10px;
+  padding: 0 0.2778rem 0.5556rem;
   background-color: #f5f8f7;
 }
 
 .services-list__panel {
   width: 100%;
-  padding: 40px;
-  border-radius: 10px;
+  padding: 2.2222rem;
+  border-radius: 0.5556rem;
   background-color: #fff;
 }
 
 .services-list__container {
   width: 100%;
-  max-width: 1796px;
+  max-width: 99.7778rem;
   margin: 0 auto;
 }
 
 .services-list__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  gap: 0.2778rem;
   align-items: start;
 }
 
 .service-card {
   display: flex;
-  gap: 16px;
-  padding: 10px;
-  border-radius: 10px;
+  gap: 0.8889rem;
+  padding: 0.5556rem;
+  border-radius: 0.5556rem;
   background-color: #4D4D4D0A;
 }
 
 .service-card__image {
   display: block;
-  flex: 0 0 170px;
-  width: 170px;
-  height: 200px;
+  flex: 0 0 9.4444rem;
+  width: 9.4444rem;
+  height: 11.1111rem;
   object-fit: cover;
 }
 
@@ -253,14 +253,14 @@
   align-items: flex-start;
   justify-content: space-between;
   min-width: 0;
-  padding-top: 10px;
+  padding-top: 0.5556rem;
 }
 
 .service-card__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 0.5556rem;
   width: 100%;
   line-height: 1.6;
 }
@@ -269,7 +269,7 @@
   width: 100%;
   color: #4d4d4d;
   font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 20px;
+  font-size: 1.1111rem;
   font-weight: 600;
   line-height: 1.6;
   text-transform: uppercase;
@@ -279,7 +279,7 @@
 .service-card__description {
   color: #979a9b;
   font-family: 'Onest-Regular', sans-serif;
-  font-size: 16px;
+  font-size: 0.8889rem;
   font-weight: 400;
   line-height: 1.6;
   overflow-wrap: anywhere;
@@ -287,13 +287,13 @@
 
 .service-card__button.btn {
   flex: 0 0 auto;
-  min-height: 52px;
-  padding: 14px 48px;
-  border-radius: 20px;
+  min-height: 2.8889rem;
+  padding: 0.7778rem 2.6667rem;
+  border-radius: 1.1111rem;
   font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 16px;
+  font-size: 0.8889rem;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 1.3333rem;
   white-space: nowrap;
 }
 
@@ -304,12 +304,12 @@
 
 /* Responsive grid for the Figma service-card frames: 1920 / 1440 / 1024 / 360. */
 .services-list__container {
-  max-width: 1796px;
+  max-width: 99.7778rem;
 }
 
 .services-list__grid {
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 464px), 1fr));
-  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25.7778rem), 1fr));
+  gap: 0.2778rem;
 }
 
 .service-card {
@@ -329,12 +329,12 @@
 
 @media screen and (max-width: 680px) {
   .services-list {
-    padding: 0 5px 10px;
+    padding: 0 0.2778rem 0.5556rem;
   }
 
   .services-list__panel {
-    padding: 4px;
-    border-radius: 10px;
+    padding: 0.2222rem;
+    border-radius: 0.5556rem;
   }
 
   .services-list__container {
@@ -343,54 +343,54 @@
 
   .services-list__grid {
     grid-template-columns: minmax(0, 1fr);
-    gap: 5px;
+    gap: 0.2778rem;
   }
 
   .service-card {
     flex-direction: column;
-    gap: 10px;
+    gap: 0.5556rem;
     width: 100%;
     min-height: 0;
-    padding: 10px;
+    padding: 0.5556rem;
   }
 
   .service-card__image {
     flex: 0 0 auto;
     width: 100%;
-    height: 170px;
+    height: 9.4444rem;
     aspect-ratio: auto;
     object-fit: cover;
   }
 
   .service-card__content {
-    gap: 14px;
+    gap: 0.7778rem;
     width: 100%;
     padding-top: 0;
   }
 
   .service-card__text {
-    gap: 4px;
+    gap: 0.2222rem;
   }
 
   .service-card__title {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
   }
 
   .service-card__description {
     width: 100%;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.7778rem;
+    line-height: 1.1111rem;
   }
 
   .service-card__button.btn {
     align-self: stretch;
     width: 100%;
-    min-height: 49px;
-    padding: 12px 24px;
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 25px;
+    min-height: 2.7222rem;
+    padding: 0.6667rem 1.3333rem;
+    border-radius: 0.5556rem;
+    font-size: 0.7778rem;
+    line-height: 1.3889rem;
   }
 
   .services-list__more {
@@ -398,22 +398,22 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 49px;
-    margin-top: 8px;
-    padding: 12px 24px;
-    border-radius: 10px;
+    min-height: 2.7222rem;
+    margin-top: 0.4444rem;
+    padding: 0.6667rem 1.3333rem;
+    border-radius: 0.5556rem;
     color: #324c88;
     background: #324C881A;
     font-family: 'Onest-SemiBold', sans-serif;
-    font-size: 14px;
+    font-size: 0.7778rem;
     font-weight: 600;
-    line-height: 25px;
+    line-height: 1.3889rem;
     text-transform: uppercase;
   }
 
   .services-list__more:focus-visible {
-    outline: 2px solid #324c88;
-    outline-offset: 2px;
+    outline: 0.1111rem solid #324c88;
+    outline-offset: 0.1111rem;
   }
 }
 
@@ -427,7 +427,7 @@
 /* Форма обратной связи — Figma Frame 2349, 1920 px. */
 .services-contact {
   width: 100%;
-  padding: 80px 45px;
+  padding: 4.4444rem 2.5rem;
   background-color: #f5f8f7;
 }
 
@@ -435,10 +435,10 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: stretch;
-  gap: 48px;
+  gap: 2.6667rem;
   width: 100%;
-  max-width: 1830px;
-  min-height: 800px;
+  max-width: 101.6667rem;
+  min-height: 44.4444rem;
   margin: 0 auto;
 }
 
@@ -446,7 +446,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 48px;
+  gap: 2.6667rem;
   min-width: 0;
 }
 
@@ -454,40 +454,40 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 17px;
+  gap: 0.9444rem;
   width: 100%;
 }
 
 .services-contact__eyebrow {
   color: #324c8880;
   font-family: 'Onest-Medium', sans-serif;
-  font-size: 20px;
+  font-size: 1.1111rem;
   font-weight: 500;
   line-height: 1.5;
 }
 
 .services-contact__title {
-  max-width: 860px;
+  max-width: 47.7778rem;
   color: #324c88;
   font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 44px;
+  font-size: 2.4444rem;
   font-weight: 600;
   line-height: 1.4;
   text-transform: uppercase;
 }
 
 .services-contact__description {
-  max-width: 669px;
+  max-width: 37.1667rem;
   color: #324c88;
   font-family: 'Onest-Regular', sans-serif;
-  font-size: 25px;
+  font-size: 1.3889rem;
   line-height: 1.4;
 }
 
 .services-contact__illustration {
   width: 100%;
-  max-width: 706px;
-  min-height: 580px;
+  max-width: 39.2222rem;
+  min-height: 32.2222rem;
   margin-top: auto;
   align-self: flex-start;
 }
@@ -495,24 +495,24 @@
 .services-contact__form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.3333rem;
   min-width: 0;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 1.1111rem;
+  border-radius: 0.5556rem;
   background-color: #fff;
 }
 
 .services-contact__fields {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  gap: 24px;
-  row-gap: 24px;
+  grid-template-columns: 16.6667rem minmax(0, 1fr);
+  gap: 1.3333rem;
+  row-gap: 1.3333rem;
 }
 
 .services-contact__field {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.5556rem;
   min-width: 0;
 }
 
@@ -523,24 +523,24 @@
 .services-contact__label {
   color: #2c2c2ce6;
   font-family: 'Onest-Medium', sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 1.6667rem;
 }
 
 .services-contact__input {
   display: block;
   width: 100%;
   min-width: 0;
-  min-height: 65px;
-  padding: 20px 24px;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  outline-offset: 3px;
+  min-height: 3.6111rem;
+  padding: 1.1111rem 1.3333rem;
+  border: 0.0556rem solid transparent;
+  border-radius: 0.5556rem;
+  outline-offset: 0.1667rem;
   color: #4d4d4d;
   background-color: #324c880a;
   font-family: 'Onest-Regular', sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
 }
@@ -552,17 +552,17 @@
 
 .services-contact__input:focus-visible {
   border-color: #324c88;
-  outline: 1px solid #324c88;
+  outline: 0.0556rem solid #324c88;
 }
 
 .services-contact__form-bottom {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.3333rem;
 }
 
 .services-contact__textarea {
-  min-height: 120px;
+  min-height: 6.6667rem;
   resize: vertical;
 }
 
@@ -570,50 +570,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
-  min-height: 152px;
-  padding: 30px 20px;
-  border: 1px dashed #2c2c2c;
-  border-radius: 10px;
+  gap: 0.7778rem;
+  min-height: 8.4444rem;
+  padding: 1.6667rem 1.1111rem;
+  border: 0.0556rem dashed #2c2c2c;
+  border-radius: 0.5556rem;
 }
 
 .services-contact__upload-button {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 16px 20px;
-  border-radius: 10px;
+  gap: 0.5556rem;
+  padding: 0.8889rem 1.1111rem;
+  border-radius: 0.5556rem;
   color: #324c88;
   background-color: #ebedf3;
   font-family: 'Onest-Regular', sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.4;
   cursor: pointer;
 }
 
 .services-contact__file-icon {
-  font-size: 24px;
+  font-size: 1.3333rem;
   line-height: 1;
 }
 
 .services-contact__file-input {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.0556rem;
+  height: 0.0556rem;
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
 }
 
 .services-contact__file-input:focus-visible + .services-contact__upload-help {
-  outline: 2px solid #324c88;
-  outline-offset: 3px;
+  outline: 0.1111rem solid #324c88;
+  outline-offset: 0.1667rem;
 }
 
 .services-contact__upload-help {
   color: #505050;
   font-family: 'Onest-Regular', sans-serif;
-  font-size: 14px;
+  font-size: 0.7778rem;
   line-height: 1.5;
   text-align: center;
 }
@@ -621,34 +621,34 @@
 .services-contact__submit-group {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 0.7778rem;
 }
 
 .services-contact__submit.btn {
   width: 100%;
-  min-height: 62px;
-  padding: 18px 48px;
-  border-radius: 20px;
-  font-size: 18px;
-  line-height: 26px;
+  min-height: 3.4444rem;
+  padding: 1rem 2.6667rem;
+  border-radius: 1.1111rem;
+  font-size: 1rem;
+  line-height: 1.4444rem;
 }
 
 .services-contact__consent {
   display: flex;
   align-items: flex-start;
-  gap: 18px;
+  gap: 1rem;
   color: #000;
   font-family: 'Onest-Light', sans-serif;
-  font-size: 14px;
+  font-size: 0.7778rem;
   font-weight: 300;
   line-height: 1.5;
   cursor: pointer;
 }
 
 .services-contact__checkbox {
-  flex: 0 0 24px;
-  width: 24px;
-  height: 24px;
+  flex: 0 0 1.3333rem;
+  width: 1.3333rem;
+  height: 1.3333rem;
   margin: 0;
   accent-color: #324c88;
 }
@@ -665,69 +665,69 @@
 
 @media screen and (max-width: 1600px) {
   .services-contact {
-    padding: 50px 45px;
+    padding: 2.7778rem 2.5rem;
   }
 
   .services-contact__container {
-    min-height: 720px;
-    gap: 32px;
+    min-height: 40rem;
+    gap: 1.7778rem;
   }
 
   .services-contact__intro {
-    gap: 40px;
+    gap: 2.2222rem;
   }
 
   .services-contact__heading {
-    gap: 14px;
+    gap: 0.7778rem;
   }
 
   .services-contact__eyebrow {
-    font-size: 18px;
+    font-size: 1rem;
   }
 
   .services-contact__title {
-    font-size: 36px;
+    font-size: 2rem;
   }
 
   .services-contact__description {
-    font-size: 20px;
+    font-size: 1.1111rem;
   }
 
   .services-contact__form {
-    padding: 16px;
+    padding: 0.8889rem;
   }
 
   .services-contact__fields {
-    grid-template-columns: minmax(0, 240px) minmax(0, 1fr);
-    column-gap: 16px;
-    row-gap: 20px;
+    grid-template-columns: minmax(0, 13.3333rem) minmax(0, 1fr);
+    column-gap: 0.8889rem;
+    row-gap: 1.1111rem;
   }
 
   .services-contact__label,
   .services-contact__input,
   .services-contact__upload-button {
-    font-size: 16px;
+    font-size: 0.8889rem;
   }
 
   .services-contact__input {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 0.8889rem;
+    padding-left: 0.8889rem;
   }
 
   .services-contact__form,
   .services-contact__form-bottom {
-    gap: 20px;
+    gap: 1.1111rem;
   }
 
   .services-contact__consent {
-    gap: 12px;
-    font-size: 12px;
+    gap: 0.6667rem;
+    font-size: 0.6667rem;
   }
 
   .services-contact__checkbox {
-    flex-basis: 20px;
-    width: 20px;
-    height: 20px;
+    flex-basis: 1.1111rem;
+    width: 1.1111rem;
+    height: 1.1111rem;
   }
 
   .services-contact__illustration {
@@ -738,72 +738,72 @@
 
 /* Figma Frame 2440 — 1024 px. Layout changes to a single column. */
 @media screen and (max-width: 1300px) {
-  .services-list__panel { padding: 24px; }
-  .services-list__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; }
-  .service-card { gap: 12px; padding: 8px; }
-  .service-card__image { flex-basis: 120px; width: 120px; height: 160px; }
-  .service-card__content { padding-top: 4px; }
-  .service-card__text { gap: 6px; }
-  .service-card__title { font-size: 16px; line-height: 1.4; }
-  .service-card__description { font-size: 14px; line-height: 1.45; }
-  .service-card__button.btn { min-height: 44px; padding: 10px 20px; border-radius: 12px; font-size: 14px; line-height: 22px; }
-  .services-contact { padding: 40px; }
-  .services-contact__container { grid-template-columns: minmax(0, 1fr); gap: 24px; min-height: 0; }
-  .services-contact__intro { gap: 24px; }
-  .services-contact__heading { gap: 17px; }
-  .services-contact__eyebrow { font-size: 20px; }
-  .services-contact__title { max-width: 100%; font-size: 30px; line-height: 1.4; }
-  .services-contact__description { max-width: 669px; font-size: 25px; line-height: 1.4; }
+  .services-list__panel { padding: 1.3333rem; }
+  .services-list__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.2778rem; }
+  .service-card { gap: 0.6667rem; padding: 0.4444rem; }
+  .service-card__image { flex-basis: 6.6667rem; width: 6.6667rem; height: 8.8889rem; }
+  .service-card__content { padding-top: 0.2222rem; }
+  .service-card__text { gap: 0.3333rem; }
+  .service-card__title { font-size: 0.8889rem; line-height: 1.4; }
+  .service-card__description { font-size: 0.7778rem; line-height: 1.45; }
+  .service-card__button.btn { min-height: 2.4444rem; padding: 0.5556rem 1.1111rem; border-radius: 0.6667rem; font-size: 0.7778rem; line-height: 1.2222rem; }
+  .services-contact { padding: 2.2222rem; }
+  .services-contact__container { grid-template-columns: minmax(0, 1fr); gap: 1.3333rem; min-height: 0; }
+  .services-contact__intro { gap: 1.3333rem; }
+  .services-contact__heading { gap: 0.9444rem; }
+  .services-contact__eyebrow { font-size: 1.1111rem; }
+  .services-contact__title { max-width: 100%; font-size: 1.6667rem; line-height: 1.4; }
+  .services-contact__description { max-width: 37.1667rem; font-size: 1.3889rem; line-height: 1.4; }
   .services-contact__illustration { display: none; }
-  .services-contact__form { gap: 24px; padding: 20px; }
-  .services-contact__fields { grid-template-columns: minmax(0, 300px) minmax(0, 1fr); column-gap: 24px; row-gap: 24px; }
-  .services-contact__field { gap: 8px; }
-  .services-contact__label { font-size: 16px; line-height: 24px; }
-  .services-contact__input { min-height: 56px; padding: 16px 18px; font-size: 16px; }
-  .services-contact__textarea { min-height: 120px; }
-  .services-contact__form-bottom { gap: 24px; }
-  .services-contact__upload { min-height: 152px; }
-  .services-contact__upload-button { font-size: 16px; }
-  .services-contact__submit.btn { min-height: 56px; padding: 15px 32px; font-size: 16px; line-height: 24px; }
-  .services-contact__consent { gap: 12px; font-size: 12px; }
-  .services-contact__checkbox { flex-basis: 20px; width: 20px; height: 20px; }
+  .services-contact__form { gap: 1.3333rem; padding: 1.1111rem; }
+  .services-contact__fields { grid-template-columns: minmax(0, 16.6667rem) minmax(0, 1fr); column-gap: 1.3333rem; row-gap: 1.3333rem; }
+  .services-contact__field { gap: 0.4444rem; }
+  .services-contact__label { font-size: 0.8889rem; line-height: 1.3333rem; }
+  .services-contact__input { min-height: 3.1111rem; padding: 0.8889rem 1rem; font-size: 0.8889rem; }
+  .services-contact__textarea { min-height: 6.6667rem; }
+  .services-contact__form-bottom { gap: 1.3333rem; }
+  .services-contact__upload { min-height: 8.4444rem; }
+  .services-contact__upload-button { font-size: 0.8889rem; }
+  .services-contact__submit.btn { min-height: 3.1111rem; padding: 0.8333rem 1.7778rem; font-size: 0.8889rem; line-height: 1.3333rem; }
+  .services-contact__consent { gap: 0.6667rem; font-size: 0.6667rem; }
+  .services-contact__checkbox { flex-basis: 1.1111rem; width: 1.1111rem; height: 1.1111rem; }
 }
 
 
 /* Figma node 2269:144480 — mobile viewport 360 px. */
 @media screen and (max-width: 680px) {
   .services-contact {
-    padding: 20px 14px;
+    padding: 1.1111rem 0.7778rem;
   }
 
   .services-contact__container {
     grid-template-columns: minmax(0, 1fr);
-    gap: 18px;
+    gap: 1rem;
     min-height: 0;
   }
 
   .services-contact__intro {
-    gap: 18px;
+    gap: 1rem;
   }
 
   .services-contact__heading {
-    gap: 14px;
+    gap: 0.7778rem;
   }
 
   .services-contact__eyebrow {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
   }
 
   .services-contact__title {
     max-width: 100%;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.1111rem;
+    line-height: 1.5556rem;
   }
 
   .services-contact__description {
     max-width: 100%;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 1.4;
   }
 
@@ -812,70 +812,70 @@
   }
 
   .services-contact__form {
-    gap: 24px;
-    padding: 14px;
-    border-radius: 10px;
+    gap: 1.3333rem;
+    padding: 0.7778rem;
+    border-radius: 0.5556rem;
   }
 
   .services-contact__fields {
     grid-template-columns: minmax(0, 1fr);
-    gap: 24px;
+    gap: 1.3333rem;
   }
 
   .services-contact__field,
   .services-contact__field--phone {
     grid-column: 1 / -1;
-    gap: 8px;
+    gap: 0.4444rem;
   }
 
   .services-contact__label {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
   }
 
   .services-contact__input {
-    min-height: 56px;
-    padding: 16px 18px;
-    font-size: 16px;
-    line-height: 24px;
+    min-height: 3.1111rem;
+    padding: 0.8889rem 1rem;
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
   }
 
   .services-contact__textarea {
-    min-height: 120px;
+    min-height: 6.6667rem;
   }
 
   .services-contact__form-bottom {
-    gap: 24px;
+    gap: 1.3333rem;
   }
 
   .services-contact__upload {
-    min-height: 152px;
-    padding: 24px 14px;
+    min-height: 8.4444rem;
+    padding: 1.3333rem 0.7778rem;
   }
 
   .services-contact__upload-button {
     max-width: 100%;
-    padding: 14px;
-    font-size: 14px;
+    padding: 0.7778rem;
+    font-size: 0.7778rem;
   }
 
   .services-contact__submit.btn {
-    min-height: 56px;
-    padding: 16px 20px;
-    border-radius: 10px;
-    font-size: 16px;
-    line-height: 24px;
+    min-height: 3.1111rem;
+    padding: 0.8889rem 1.1111rem;
+    border-radius: 0.5556rem;
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
   }
 
   .services-contact__consent {
-    gap: 12px;
-    font-size: 12px;
+    gap: 0.6667rem;
+    font-size: 0.6667rem;
     line-height: 1.5;
   }
 
   .services-contact__checkbox {
-    flex-basis: 20px;
-    width: 20px;
-    height: 20px;
+    flex-basis: 1.1111rem;
+    width: 1.1111rem;
+    height: 1.1111rem;
   }
 }
