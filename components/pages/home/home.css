@@ -228,6 +228,93 @@
   }
 }
 
+/* Адаптация главного экрана под планшетный макет Figma 1024 px. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .home-hero {
+    min-height: 848px;
+  }
+
+  .home-hero__content {
+    padding: 60px 20px 40px;
+  }
+
+  .home-hero__intro {
+    gap: 28px;
+  }
+
+  .home-hero__category {
+    gap: 12px;
+    padding: 2px 20px 2px 2px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .home-hero__category-icon {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .home-hero__category-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .home-hero__heading {
+    gap: 18px;
+  }
+
+  .home-hero__title {
+    font-size: clamp(36px, 4.6875vw, 48px);
+    line-height: 1.3333;
+  }
+
+  .home-hero__description {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .home-hero__actions {
+    gap: 14px;
+  }
+
+  .home-hero__button.btn {
+    flex: 0 0 260px;
+    width: 260px;
+    min-height: 76px;
+    padding: 24px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .home-hero__slider {
+    gap: 24px;
+  }
+
+  .home-hero__arrow {
+    flex-basis: 64px;
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+  }
+
+  .home-hero__arrow svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .home-hero__pagination {
+    gap: 4px;
+  }
+
+  .home-hero__dot {
+    flex-basis: 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .home-hero {
     min-height: 38rem;
