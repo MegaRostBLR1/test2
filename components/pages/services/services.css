@@ -127,74 +127,11 @@
   outline-offset: 0.1111rem;
 }
 
-@media screen and (min-width: 1601px) {
-  .services__panel.section__container {
-    padding: 2.2222rem;
-  }
 
-  .services__container.container {
-    max-width: 99.7778rem;
-    gap: 1.1111rem;
-  }
 
-  .services__breadcrumbs {
-    font-size: 1rem;
-  }
 
-  .services__title {
-    font-size: 3rem;
-    line-height: 1.2778;
-  }
 
-  .services__count {
-    font-size: 2rem;
-  }
-
-  .services__categories {
-    justify-content: center;
-    gap: 0.2222rem;
-  }
-
-  .services__category {
-    min-height: 3.5556rem;
-    padding-right: 1.3333rem;
-    padding-left: 1.3333rem;
-  }
-}
-
-@media screen and (min-width: 681px) and (max-width: 1600px) {
-  .services__panel.section__container {
-    padding: 2.2222rem;
-  }
-
-  .services__container.container {
-    gap: 1.1111rem;
-  }
-
-  .services__breadcrumbs {
-    font-size: 1rem;
-  }
-
-  .services__title {
-    font-size: 3rem;
-    line-height: 1.2778;
-  }
-
-  .services__count {
-    font-size: 2rem;
-  }
-
-  .services__categories {
-    gap: 0.2222rem;
-  }
-
-  .services__category {
-    min-height: 3.1667rem;
-    padding: 0.7778rem 1rem;
-  }
-}
-
-@media screen and (max-width: 1300px) and (min-width: 681px) {
+@media screen and (max-width: 1300px) {
   .services__panel.section__container {
     padding: 2.2222rem;
   }
@@ -298,7 +235,7 @@
   gap: 16px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(77, 77, 77, 0.04);
+  background-color: #4D4D4D0A;
 }
 
 .service-card__image {
@@ -360,30 +297,10 @@
   white-space: nowrap;
 }
 
-@media screen and (min-width: 1301px) and (max-width: 1600px) {
-  .services-list__container {
-    max-width: 1350px;
-  }
 
-  .services-list__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 /* Figma Frame 1857:28872 — viewport 1024 px. */
-@media screen and (min-width: 901px) and (max-width: 1300px) {
-  .services-list__container {
-    max-width: 933px;
-  }
 
-  .services-list__grid {
-    grid-template-columns: repeat(2, 464px);
-  }
-
-  .service-card {
-    width: 464px;
-  }
-}
 
 /* Responsive grid for the Figma service-card frames: 1920 / 1440 / 1024 / 360. */
 .services-list__container {
@@ -408,11 +325,7 @@
   display: none;
 }
 
-@media screen and (min-width: 681px) and (max-width: 1300px) {
-  .services-list__panel {
-    padding: 24px;
-  }
-}
+
 
 @media screen and (max-width: 680px) {
   .services-list {
@@ -490,7 +403,7 @@
     padding: 12px 24px;
     border-radius: 10px;
     color: #324c88;
-    background: rgba(50, 76, 136, 0.1);
+    background: #324C881A;
     font-family: 'Onest-SemiBold', sans-serif;
     font-size: 14px;
     font-weight: 600;
