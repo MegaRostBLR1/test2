@@ -1,11 +1,86 @@
 function initPrices() {
   const parametersToggle = document.querySelector('.prices__parameters-toggle');
-  const filters = document.querySelector('.prices__filters');
+  const filtersModal = document.querySelector('.prices__filters-modal');
+  const filtersDialog = filtersModal?.querySelector('.prices__filters-dialog');
+  const closeButtons = filtersModal?.querySelectorAll('[data-prices-filters-close]') || [];
+  let previouslyFocusedElement = null;
 
-  if (parametersToggle && filters) {
-    parametersToggle.addEventListener('click', () => {
-      const isExpanded = filters.classList.toggle('is-expanded');
-      parametersToggle.setAttribute('aria-expanded', String(isExpanded));
+  const closeFilters = () => {
+    if (!filtersModal || !parametersToggle) {
+      return;
+    }
+
+    filtersModal.classList.remove('is-open');
+    const isMobile = window.matchMedia('(max-width: 680px)').matches;
+    filtersModal.setAttribute('aria-hidden', String(isMobile));
+    parametersToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('prices-filters-open');
+
+    if (previouslyFocusedElement instanceof HTMLElement) {
+      previouslyFocusedElement.focus();
+    }
+  };
+
+  const openFilters = () => {
+    if (!filtersModal || !parametersToggle || !filtersDialog) {
+      return;
+    }
+
+    previouslyFocusedElement = document.activeElement instanceof HTMLElement
+      ? document.activeElement
+      : parametersToggle;
+    filtersModal.classList.add('is-open');
+    filtersModal.setAttribute('aria-hidden', 'false');
+    parametersToggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('prices-filters-open');
+    filtersDialog.focus();
+  };
+
+  if (parametersToggle && filtersModal) {
+    parametersToggle.addEventListener('click', openFilters);
+    closeButtons.forEach((button) => button.addEventListener('click', closeFilters));
+
+    document.addEventListener('keydown', (event) => {
+      if (!filtersModal.classList.contains('is-open')) {
+        return;
+      }
+
+      if (event.key === 'Escape') {
+        closeFilters();
+        return;
+      }
+
+      if (event.key !== 'Tab' || !filtersDialog) {
+        return;
+      }
+
+      const focusable = Array.from(filtersDialog.querySelectorAll(
+        'button:not([disabled]), select:not([disabled]), a[href], input:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )).filter((element) => element instanceof HTMLElement && element.getClientRects().length > 0);
+
+      if (focusable.length === 0) {
+        event.preventDefault();
+        filtersDialog.focus();
+        return;
+      }
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+
+    const desktopMedia = window.matchMedia('(min-width: 681px)');
+    desktopMedia.addEventListener?.('change', (event) => {
+      if (event.matches) {
+        closeFilters();
+      }
     });
   }
 

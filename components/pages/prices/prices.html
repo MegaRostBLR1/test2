@@ -18,11 +18,20 @@
         </button>
       </aside>
 
-      <button class="prices__parameters-toggle" type="button" aria-expanded="false">
+      <button class="prices__parameters-toggle" type="button" aria-expanded="false" aria-haspopup="dialog" aria-controls="prices-filters-modal">
         <span>Параметры</span>
         <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M7 12h10m-7 5h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       </button>
 
+      <div class="prices__filters-modal" id="prices-filters-modal" aria-hidden="false">
+        <div class="prices__filters-backdrop" data-prices-filters-close></div>
+        <section class="prices__filters-dialog" role="dialog" aria-modal="true" aria-labelledby="prices-filters-title" tabindex="-1">
+          <header class="prices__filters-header">
+            <h2 class="prices__filters-title" id="prices-filters-title">Параметры</h2>
+            <button class="prices__filters-close" type="button" aria-label="Закрыть параметры" data-prices-filters-close>
+              <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+          </header>
       <form class="prices__filters" aria-label="Параметры здания">
         <div class="prices__filter-group">
           <fieldset class="prices__fieldset">
@@ -57,6 +66,11 @@
           </label>
         </div>
       </form>
+          <footer class="prices__filters-footer">
+            <button class="prices__filters-back" type="button" data-prices-filters-close>Назад</button>
+          </footer>
+        </section>
+      </div>
 
       <div class="prices__mobile-summary">
         <p class="prices__mobile-summary-title">С 20% НДС. Поставка — EXW.</p>
