@@ -1577,11 +1577,9 @@
     display: block;
     width: min(52%, 812px);
     max-width: 812px;
-    height: auto;
+    height: stretch;
 }
 
-/* 1024 px Figma frame: the card keeps 40 px inner padding and the
-   illustration remains cropped by the card, as in the reference. */
 @media (max-width: 1200px) and (min-width: 761px) {
     .prices-calculation {
         padding: 30px 40px;
