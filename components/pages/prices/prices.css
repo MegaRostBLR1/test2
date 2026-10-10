@@ -410,6 +410,7 @@
 /* Mobile layout follows Figma frames 1857:103016 + 2139:138518. */
 .prices__notice-toggle,
 .prices__parameters-toggle,
+.prices__mobile-summary,
 .prices__mobile-table {
   display: none;
 }
@@ -615,5 +616,44 @@
 
   .prices__filters.is-expanded {
     display: flex;
+  }
+}
+
+
+@media (max-width: 680px) {
+  .prices__mobile-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    color: #2C2C2C;
+    font-family: 'Onest-SemiBold', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+
+  .prices__mobile-summary p {
+    margin: 0;
+  }
+
+  .prices__mobile-summary-title {
+    line-height: 22px;
+  }
+
+  .prices__mobile-summary-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .prices__mobile-summary-item small {
+    color: rgba(44, 44, 44, 0.5);
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: none;
   }
 }
