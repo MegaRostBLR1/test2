@@ -1,6 +1,175 @@
-<section class="prices">
-  <div class="container">
-    <h1>Цены</h1>
-    <p>Базовый HTML-контент страницы цен. Здесь будет размещён основной интерфейс.</p>
+<section class="prices" aria-labelledby="prices-title">
+  <div class="prices__container">
+    <nav class="prices__breadcrumbs" aria-label="Хлебные крошки">
+      <a href="#home">Главная</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Цены</span>
+    </nav>
+
+    <header class="prices__intro">
+      <h1 class="prices__title" id="prices-title">Цены</h1>
+      <p class="prices__lead">Рассчитайте стоимость здания под ваши задачи</p>
+      <div class="prices__notice">
+        <span class="prices__notice-icon" aria-hidden="true">i</span>
+        <p>Стоимость здания зависит от параметров проекта, комплектации и выбранных материалов. Укажите параметры для предварительного расчёта.</p>
+      </div>
+    </header>
+
+    <section class="prices-calculator" aria-labelledby="prices-calculator-title">
+      <div class="prices-calculator__heading">
+        <div>
+          <p class="prices__eyebrow">Калькулятор стоимости</p>
+          <h2 class="prices-calculator__title" id="prices-calculator-title">Параметры здания</h2>
+        </div>
+        <p class="prices-calculator__hint">Измените параметры, чтобы посмотреть ориентировочную стоимость</p>
+      </div>
+
+      <form class="prices-config" id="prices-config">
+        <fieldset class="prices-config__group">
+          <legend class="prices-config__legend">Тип здания</legend>
+          <div class="prices-config__options">
+            <label class="prices-option">
+              <input type="radio" name="building-type" value="warehouse" checked>
+              <span>Складское здание</span>
+            </label>
+            <label class="prices-option">
+              <input type="radio" name="building-type" value="industrial">
+              <span>Производственное здание</span>
+            </label>
+            <label class="prices-option">
+              <input type="radio" name="building-type" value="agricultural">
+              <span>Сельскохозяйственное здание</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="prices-config__fields">
+          <label class="prices-field">
+            <span class="prices-field__label">Длина здания, м</span>
+            <input class="prices-field__input" type="number" name="length" min="6" max="300" step="1" value="60" required>
+          </label>
+          <label class="prices-field">
+            <span class="prices-field__label">Ширина здания, м</span>
+            <input class="prices-field__input" type="number" name="width" min="6" max="100" step="1" value="24" required>
+          </label>
+          <label class="prices-field">
+            <span class="prices-field__label">Высота здания, м</span>
+            <input class="prices-field__input" type="number" name="height" min="3" max="30" step="1" value="6" required>
+          </label>
+          <label class="prices-field">
+            <span class="prices-field__label">Шаг колонн, м</span>
+            <select class="prices-field__input" name="column-step">
+              <option value="6">6 м</option>
+              <option value="12" selected>12 м</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="prices-config__footer">
+          <p class="prices-config__disclaimer">Расчёт носит предварительный характер и не является публичной офертой.</p>
+          <button class="prices__button prices__button--secondary" type="reset">Сбросить параметры</button>
+        </div>
+      </form>
+
+      <div class="prices-table-wrap">
+        <table class="prices-table">
+          <caption class="prices-table__caption">Ориентировочная стоимость здания</caption>
+          <thead>
+            <tr>
+              <th scope="col">Комплектация</th>
+              <th scope="col">Что входит</th>
+              <th scope="col">Стоимость</th>
+              <th scope="col"><span class="prices-visually-hidden">Действие</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-label="Комплектация">Каркас</th>
+              <td data-label="Что входит">Металлоконструкции здания</td>
+              <td data-label="Стоимость" class="prices-table__price">По запросу</td>
+              <td class="prices-table__action"><a href="#prices-request" class="prices__text-link">Уточнить стоимость</a></td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Комплектация">Тёплый контур</th>
+              <td data-label="Что входит">Каркас, ограждающие конструкции и утепление</td>
+              <td data-label="Стоимость" class="prices-table__price">По запросу</td>
+              <td class="prices-table__action"><a href="#prices-request" class="prices__text-link">Уточнить стоимость</a></td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Комплектация">Под ключ</th>
+              <td data-label="Что входит">Комплексное решение по согласованному проекту</td>
+              <td data-label="Стоимость" class="prices-table__price">По запросу</td>
+              <td class="prices-table__action"><a href="#prices-request" class="prices__text-link">Уточнить стоимость</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="prices-calculator__result" id="prices-area" aria-live="polite">Площадь здания: 1 440 м²</p>
+    </section>
   </div>
+
+  <section class="prices-promo" aria-labelledby="prices-promo-title">
+    <div class="prices__container prices-promo__layout">
+      <div class="prices-promo__content">
+        <p class="prices__eyebrow">Индивидуальный подход</p>
+        <h2 class="prices-promo__title" id="prices-promo-title">Вы проектируете. Завод делает здание под заказ</h2>
+        <p class="prices-promo__text">Проектируем и производим здания с учётом назначения объекта, требований к эксплуатации и особенностей вашего проекта.</p>
+        <ul class="prices-promo__benefits">
+          <li>Подбор решения под задачи бизнеса</li>
+          <li>Производство металлоконструкций</li>
+          <li>Сопровождение проекта на этапах реализации</li>
+        </ul>
+        <a class="prices__button" href="#prices-request">Обсудить проект</a>
+      </div>
+      <div class="prices-promo__gallery" aria-label="Примеры зданий">
+        <img src="./static/images/prices/warehouse-1.png" alt="Пример промышленного здания" loading="lazy">
+        <img src="./static/images/prices/warehouse-2.png" alt="Пример здания из металлоконструкций" loading="lazy">
+        <img src="./static/images/prices/warehouse-3.png" alt="Пример складского комплекса" loading="lazy">
+        <img src="./static/images/prices/warehouse-4.png" alt="Пример производственного здания" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="prices-online" aria-labelledby="prices-online-title">
+    <div class="prices__container prices-online__inner">
+      <div class="prices-online__content">
+        <p class="prices__eyebrow">Быстро и удобно</p>
+        <h2 class="prices-online__title" id="prices-online-title">Получите бесплатный онлайн-расчёт</h2>
+        <p class="prices-online__text">Ответьте на несколько вопросов — подготовим предварительную оценку стоимости здания для вашего проекта.</p>
+        <a class="prices__button" href="#prices-request">Рассчитать стоимость</a>
+      </div>
+      <img class="prices-online__image" src="./static/images/prices/online-calculation-illustration.svg" alt="" loading="lazy">
+    </div>
+  </section>
+
+  <section class="prices-request" id="prices-request" aria-labelledby="prices-request-title">
+    <div class="prices__container prices-request__layout">
+      <div class="prices-request__content">
+        <p class="prices__eyebrow">Свяжитесь с нами</p>
+        <h2 class="prices-request__title" id="prices-request-title">Оставьте заявку</h2>
+        <p class="prices-request__text">Расскажите о задаче — специалист свяжется с вами и поможет подобрать оптимальное решение.</p>
+        <img class="prices-request__image" src="./static/images/prices/request-illustration.svg" alt="" loading="lazy">
+      </div>
+      <form class="prices-request-form" id="prices-request-form">
+        <label class="prices-field">
+          <span class="prices-field__label">Ваше имя</span>
+          <input class="prices-field__input" type="text" name="name" autocomplete="name" placeholder="Введите имя" required>
+        </label>
+        <label class="prices-field">
+          <span class="prices-field__label">Номер телефона</span>
+          <input class="prices-field__input" type="tel" name="phone" autocomplete="tel" placeholder="+375 (__) ___-__-__" required>
+        </label>
+        <label class="prices-field">
+          <span class="prices-field__label">Комментарий к проекту <span class="prices-field__optional">(необязательно)</span></span>
+          <textarea class="prices-field__input prices-field__input--textarea" name="comment" rows="4" placeholder="Опишите задачу"></textarea>
+        </label>
+        <label class="prices-request-form__consent">
+          <input type="checkbox" name="consent" required>
+          <span>Согласен(на) на обработку персональных данных</span>
+        </label>
+        <button class="prices__button" type="submit">Отправить заявку</button>
+        <p class="prices-request-form__status" id="prices-request-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
 </section>
