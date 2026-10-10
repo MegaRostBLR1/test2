@@ -922,3 +922,73 @@
     transition: none;
   }
 }
+
+
+/* Контрольный desktop-frame Figma 1440 px: 1857:24744.
+   Сохраняет четыре карточки в ряд и уточняет параметры относительно 1920 px. */
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+  .home-process__panel {
+    gap: 30px;
+    padding: 48px 30px;
+    background: transparent;
+  }
+
+  .home-process__header {
+    gap: 24px;
+  }
+
+  .home-process__title {
+    font-size: 48px;
+    line-height: normal;
+  }
+
+  .home-process__subtitle {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .home-process__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .home-process__card {
+    gap: 30px;
+    padding: 20px;
+    background: #fff;
+  }
+
+  .home-process__card-content {
+    gap: 24px;
+  }
+
+  .home-process__card-header {
+    gap: 18px;
+  }
+
+  .home-process__icon {
+    flex-basis: 54px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .home-process__card-title {
+    font-size: 26px;
+    line-height: 1.6;
+    overflow-wrap: normal;
+  }
+
+  .home-process__description {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .home-process__link {
+    flex-basis: 64px;
+    min-height: 64px;
+    padding: 16px 20px;
+    border-radius: 20px;
+    font-size: 17px;
+    line-height: 1.26;
+  }
+}
