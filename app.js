@@ -224,6 +224,47 @@ async function renderPage(pageName) {
   }
 }
 
+
+function initNavigationRouting() {
+  const routeByLabel = {
+    'Продукция': 'objects',
+    'Быстровозводимые здания': 'objects',
+    'Легкие металлоконструкции': 'objects',
+    'Сэндвич панели': 'objects',
+    'Комплектующие для ворот': 'objects',
+    'Оцинкованный профиль': 'objects',
+    'Услуги': 'services',
+    'Лазерная резка': 'services',
+    'Лизинг зданий': 'services',
+    'Консалтинг': 'services',
+    'Проектирование': 'services',
+    'Изготовление': 'services',
+    'Фундамент': 'services',
+    'Доставка': 'services',
+    'Монтаж': 'services',
+    'Объекты': 'objects',
+    'Пресс-центр': 'press-center',
+    'Новости': 'news',
+    'Видео': 'video',
+    'F.A.Q.': 'faq',
+    'Telegram канал': 'press-center',
+    'Статьи': 'articles',
+    'Завод': 'about',
+    'Цены': 'prices',
+    'Контакты': 'contacts'
+  };
+
+  document.querySelectorAll('.app-header a.nav-link, .app-header a.nav-list__nested-list-link')
+    .forEach((link) => {
+      const label = link.textContent.trim().replace(/\\s+/g, ' ');
+      const route = routeByLabel[label];
+
+      if (route) {
+        link.href = `#/${route}`;
+      }
+    });
+}
+
 async function initApp() {
   const header = document.querySelector('#app-header');
   const footer = document.querySelector('#app-footer');
@@ -237,6 +278,7 @@ async function initApp() {
     console.error(error);
   }
 
+  initNavigationRouting();
   await renderPage(getPageName());
 }
 
