@@ -521,3 +521,130 @@
     height: 10px;
   }
 }
+
+
+/* Mobile Figma frame: 360 × 556 px (node 1857:26279). */
+@media screen and (max-width: 680px) {
+  .home-hero__content {
+    justify-content: space-between;
+    gap: 0;
+    padding: 30px 10px 20px;
+  }
+
+  .home-hero__intro {
+    gap: 14px;
+    width: 100%;
+  }
+
+  .home-hero__category {
+    align-self: center;
+    gap: 8px;
+    max-width: 100%;
+    padding: 2px 10px 2px 2px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .home-hero__category-icon {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .home-hero__category-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .home-hero__heading {
+    gap: 18px;
+  }
+
+  .home-hero__title {
+    display: block;
+    font-size: 22px;
+    line-height: 30px;
+    overflow-wrap: normal;
+  }
+
+  .home-hero__description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .home-hero__actions {
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .home-hero__button.btn {
+    flex: 0 0 260px;
+    width: 260px;
+    min-height: 54px;
+    padding: 14px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 26px;
+    white-space: nowrap;
+  }
+
+  .home-hero__slider {
+    gap: 24px;
+    padding: 0;
+  }
+
+  .home-hero__arrow {
+    position: relative;
+    flex: 0 0 67.882px;
+    width: 67.882px;
+    height: 67.882px;
+    border: 0;
+    border-radius: 0;
+    transform: none;
+  }
+
+  .home-hero__arrow::before {
+    position: absolute;
+    top: 9.941px;
+    left: 9.941px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgb(255 255 255 / 50%);
+    border-radius: 20px;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  .home-hero__arrow svg {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+
+  .home-hero__pagination {
+    gap: 4px;
+  }
+
+  .home-hero__dot {
+    flex-basis: 8px;
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .home-hero {
+    min-height: 556px;
+  }
+
+  .home-hero__content {
+    padding: 30px 10px 20px;
+  }
+
+  .home-hero__intro {
+    gap: 14px;
+  }
+}
