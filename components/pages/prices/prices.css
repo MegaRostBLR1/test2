@@ -1,0 +1,372 @@
+/* Prices page — Figma node 1857:101567, desktop frame 1920 px. */
+.prices {
+  width: 100%;
+  color: #4D4D4D;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.prices__panel {
+  width: 100%;
+  padding: 40px;
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+
+.prices__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.prices__breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #4D4D4D;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.prices__breadcrumbs a:hover {
+  color: #324C88;
+}
+
+.prices__title {
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.125;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.prices__notice {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+  padding: 24px;
+  border-radius: 10px;
+  background: #FFFECC;
+  color: #324C88;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.prices__notice p {
+  min-width: 0;
+  margin: 0;
+}
+
+.prices__notice strong {
+  font-family: 'Onest-Bold', sans-serif;
+  font-weight: 700;
+}
+
+.prices__notice a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prices__filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.prices__filter-group,
+.prices__dimensions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.prices__fieldset {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.prices__fieldset legend {
+  float: left;
+  padding: 0;
+  color: #272629;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.prices__segmented {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 10px;
+  background: #F5F8F7;
+}
+
+.prices__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  color: #5D5D5D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.prices__option.is-active {
+  background: #FFFFFF;
+}
+
+.prices__option:focus-visible,
+.prices__dimension select:focus-visible {
+  outline: 2px solid #324C88;
+  outline-offset: 2px;
+}
+
+.prices__dimension {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #272629;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.prices__dimension select {
+  min-width: 120px;
+  padding: 18px 24px;
+  border: 0;
+  border-radius: 10px;
+  appearance: none;
+  background: #F5F6F8 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='m7 10 5 5 5-5' stroke='%234D4D4D' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 16px center;
+  color: #272629;
+  font: inherit;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.prices__table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+.prices__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 2px;
+  table-layout: fixed;
+  color: #5D5D5D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.prices__label-column {
+  width: 38.34%;
+}
+
+.prices__table th,
+.prices__table td {
+  padding: 14px 18px;
+  background: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+  overflow-wrap: anywhere;
+}
+
+.prices__table thead th {
+  background: #E2E8ED;
+  color: #324C88;
+  text-align: left;
+}
+
+.prices__table thead th:first-child {
+  border-top-left-radius: 14px;
+}
+
+.prices__table thead th:last-child {
+  border-top-right-radius: 14px;
+}
+
+.prices__table tbody th {
+  text-align: left;
+}
+
+.prices__table tbody th span {
+  display: block;
+}
+
+.prices__table small {
+  display: block;
+  margin-top: 8px;
+  color: #5D5D5DCC;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.prices__table tfoot th,
+.prices__table tfoot td {
+  background: #324C88;
+  color: #FFFFFF;
+}
+
+.prices__table tfoot th {
+  border-bottom-left-radius: 14px;
+  text-align: left;
+}
+
+.prices__table tfoot td:last-child {
+  border-bottom-right-radius: 14px;
+}
+
+@media (max-width: 1500px) {
+  .prices__panel {
+    padding: 30px;
+  }
+
+  .prices__title {
+    font-size: 48px;
+  }
+
+  .prices__notice {
+    font-size: 18px;
+  }
+
+  .prices__filters,
+  .prices__filter-group,
+  .prices__dimensions,
+  .prices__fieldset {
+    gap: 16px;
+  }
+
+  .prices__option,
+  .prices__table {
+    font-size: 14px;
+  }
+
+  .prices__dimension {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .prices__dimension select {
+    min-width: 90px;
+    padding: 14px 28px 14px 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .prices__panel {
+    padding: 24px;
+  }
+
+  .prices__filters {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .prices__filter-group,
+  .prices__dimensions {
+    flex-wrap: wrap;
+  }
+
+  .prices__notice {
+    grid-template-columns: 1fr;
+  }
+
+  .prices__table {
+    min-width: 1100px;
+  }
+}
+
+@media (max-width: 680px) {
+  .prices__panel {
+    padding: 12px;
+  }
+
+  .prices__content {
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .prices__breadcrumbs {
+    justify-content: center;
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .prices__title {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .prices__notice {
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .prices__filter-group,
+  .prices__dimensions,
+  .prices__fieldset {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .prices__segmented {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .prices__option {
+    min-height: 40px;
+    padding: 8px 12px;
+    font-size: 12px;
+    white-space: normal;
+  }
+
+  .prices__dimension {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .prices__table {
+    min-width: 1000px;
+  }
+}
