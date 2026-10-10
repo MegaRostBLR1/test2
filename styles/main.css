@@ -1202,7 +1202,6 @@ footer {
 }
 
 /* Price */
-/* Prices page — Figma node 1857:101567, desktop frame 1920 px. */
 .prices {
   width: 100%;
   color: #4D4D4D;
@@ -1458,9 +1457,7 @@ footer {
   border-bottom-right-radius: 0.7778rem;
 }
 
-/* Figma: связка desktop 1920 px и 1440 px. На 1440 сохраняем размеры,
-   заданные отдельным Figma-frame, а не уменьшаем весь блок пропорционально. */
-@media (max-width: 1660px) and (width >= 1001px) {
+@media (max-width: 1660px) and (min-width: 1001px) {
   .prices__panel {
     padding: 2.2222rem;
   }
@@ -1611,7 +1608,6 @@ footer {
   }
 }
 
-/* Mobile layout follows Figma frames 1857:103016 + 2139:138518. */
 .prices__notice-toggle,
 .prices__parameters-toggle,
 .prices__mobile-summary,
@@ -1619,7 +1615,7 @@ footer {
   display: none;
 }
 
-@media (width >= 681px) {
+@media (min-width: 681px) {
   .prices__notice-extra {
     display: block;
   }
@@ -1871,8 +1867,6 @@ footer {
   }
 }
 
-
-/* Mobile filters popup — Figma node 2141:139075. */
 .prices__filters-modal {
   display: contents;
 }
@@ -2107,8 +2101,6 @@ footer {
   }
 }
 
-
-/* Technology section — Figma 1857:101778 */
 .prices-tech {
   padding: 0.5556rem;
   background: #F5F8F7;
@@ -2418,14 +2410,11 @@ footer {
   }
 }
 
-
-/* Figma 1857:103229 — mobile technology section; 1024 px is an intentional
-   intermediate layout because the source design has no tablet frame. */
 .prices-tech__mobile-buildings {
   display: none;
 }
 
-@media (max-width: 1200px) and (width >= 761px) {
+@media (min-width: 761px) and (max-width: 1200px) {
   .prices-tech__inner {
     padding: 2.2222rem 1.3333rem;
   }
@@ -2594,8 +2583,6 @@ footer {
   }
 }
 
-
-/* At 1200 px and below, show the same building cards inside the first technology description. */
 .prices-tech__buildings--responsive {
   display: none;
 }
@@ -2681,9 +2668,6 @@ footer {
   }
 }
 
-
-
-/* Figma nodes 1893:92063 (1920 px), 1857:25112 (1440 px), 2297:112563 (1024 px). */
 .prices-calculation {
   padding: 1.1111rem 2.5rem;
   background: #F5F8F7;
@@ -2784,7 +2768,7 @@ footer {
   height: stretch;
 }
 
-@media (max-width: 1200px) and (width >= 761px) {
+@media (max-width: 1200px) and (min-width: 761px) {
   .prices-calculation {
     padding: 1.6667rem 2.2222rem;
   }
