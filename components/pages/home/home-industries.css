@@ -618,6 +618,10 @@
     gap: 20px;
   }
 
+  .home-industries__nav-item--tablet-hidden {
+    display: none;
+  }
+
   .home-industries__nav-item {
     gap: 20px;
     font-size: 16px;
