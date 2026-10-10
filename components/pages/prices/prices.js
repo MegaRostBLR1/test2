@@ -5,12 +5,18 @@ function initPrices() {
     return;
   }
 
-  page.dataset.initialized = 'true';
-
   const configForm = page.querySelector('#prices-config');
   const areaOutput = page.querySelector('#prices-area');
   const requestForm = page.querySelector('#prices-request-form');
   const requestStatus = page.querySelector('#prices-request-status');
+
+  // The current Figma prices block is static and doesn't include these legacy forms.
+  // Keep the existing calculator/request behavior when its matching markup is present.
+  if (!configForm || !areaOutput || !requestForm || !requestStatus) {
+    return;
+  }
+
+  page.dataset.initialized = 'true';
 
   const updateArea = () => {
     const formData = new FormData(configForm);
