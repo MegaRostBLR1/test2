@@ -433,7 +433,6 @@ footer {
   }
 }
 
-/* Карточки услуг: Figma Frame 2439, контрольные viewport 1920 и 1440 px. */
 .services-list {
   width: 100%;
   padding: 0 0.2778rem 0.5556rem;
@@ -528,9 +527,6 @@ footer {
   white-space: nowrap;
 }
 
-/* Figma Frame 1857:28872 — viewport 1024 px. */
-
-/* Responsive grid for the Figma service-card frames: 1920 / 1440 / 1024 / 360. */
 .services-list__container {
   max-width: 99.7778rem;
 }
@@ -554,7 +550,6 @@ footer {
   display: none;
 }
 
-/* Планшет: сетка карточек и их внутренние размеры. */
 @media screen and (max-width: 1300px) {
   .services-list__panel {
     padding: 1.3333rem;
@@ -690,7 +685,6 @@ footer {
   }
 }
 
-/* Форма обратной связи — Figma Frame 2349, 1920 px. */
 .services-contact {
   width: 100%;
   padding: 4.4444rem 2.5rem;
@@ -925,9 +919,6 @@ footer {
   }
 }
 
-/* Адаптация формы между контрольными разрешениями 1440 и 1920 px. */
-/* Базовые значения выше соответствуют макету 1920 px. */
-
 @media screen and (max-width: 1600px) {
   .services-contact {
     padding: 2.7778rem 2.5rem;
@@ -1000,7 +991,6 @@ footer {
   }
 }
 
-/* Планшет: одноколоночная компоновка формы. */
 @media screen and (max-width: 1300px) {
   .services-contact {
     padding: 2.2222rem;
@@ -1102,7 +1092,6 @@ footer {
   }
 }
 
-/* Figma node 2269:144480 — mobile viewport 360 px. */
 @media screen and (max-width: 680px) {
   .services-contact {
     padding: 1.1111rem 0.7778rem;

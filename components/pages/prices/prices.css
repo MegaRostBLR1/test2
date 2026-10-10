@@ -256,7 +256,7 @@
 
 /* Figma: связка desktop 1920 px и 1440 px. На 1440 сохраняем размеры,
    заданные отдельным Figma-frame, а не уменьшаем весь блок пропорционально. */
-@media (max-width: 1500px) and (min-width: 1001px) {
+@media (max-width: 1660px) and (min-width: 1001px) {
   .prices__panel {
     padding: 40px;
   }
@@ -326,7 +326,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
   .prices__panel {
     padding: 24px;
   }
@@ -608,10 +608,6 @@
 
   .prices__parameters-toggle svg {
     flex: 0 0 24px;
-  }
-
-  .prices__filters {
-    display: none;
   }
 
   .prices__filters.is-expanded {
