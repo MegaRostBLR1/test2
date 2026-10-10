@@ -231,3 +231,984 @@ h2 {
 footer {
   display: none;
 }
+
+.services {
+  width: 100%;
+  color: #4d4d4d;
+  background-color: #fff;
+  border-radius: 0.5556rem;
+}
+
+.services__panel.section__container {
+  display: flex;
+  justify-content: center;
+  padding: 2.2222rem;
+  border-radius: 1.1111rem;
+}
+
+.services__container.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1111rem;
+  width: 100%;
+  max-width: 99.7778rem;
+  padding: 0;
+}
+
+.services__breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1111rem;
+  color: #4d4d4d;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4444;
+  white-space: nowrap;
+}
+
+.services__breadcrumb-link {
+  color: inherit;
+}
+
+.services__breadcrumb-link:hover {
+  color: #324c88;
+}
+
+.services__breadcrumb-separator {
+  flex: 0 0 auto;
+  font-size: 1.1111rem;
+}
+
+.services__title {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0;
+  margin: 0;
+  color: #4d4d4d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 0;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.services__title-text {
+  font: inherit;
+  line-height: 1.2778;
+}
+
+.services__count {
+  color: #324c88;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2222;
+}
+
+.services__categories {
+  display: flex;
+  align-items: center;
+  gap: 0.2222rem;
+  max-width: 100%;
+  padding: 0.2222rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 0.5556rem;
+  background-color: #f5f8f7;
+  scrollbar-width: none;
+  overscroll-behavior-inline: contain;
+}
+
+.services__categories::-webkit-scrollbar {
+  display: none;
+}
+
+.services__category {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.5556rem;
+  padding: 0.9444rem 1.3333rem;
+  border-radius: 0.7778rem;
+  color: #5d5d5d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background-color 0.1s ease;
+}
+
+.services__category:hover {
+  background-color: #e9eeec;
+}
+
+.services__category.is-active {
+  background-color: #fff500;
+}
+
+.services__category:focus-visible {
+  outline: 0.1111rem solid #324c88;
+  outline-offset: 0.1111rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .services__panel.section__container {
+    padding: 2.2222rem;
+  }
+
+  .services__container.container {
+    gap: 1.1111rem;
+  }
+
+  .services__category {
+    min-height: 3rem;
+    padding: 0.6667rem 0.7778rem;
+    font-size: 0.8889rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .services__panel.section__container {
+    padding: 0.7778rem;
+    border-radius: 1.1111rem;
+  }
+
+  .services__container.container {
+    gap: 1.1111rem;
+  }
+
+  .services__breadcrumbs {
+    gap: 1.1111rem;
+    font-size: 0.7778rem;
+    line-height: 1.8571;
+  }
+
+  .services__breadcrumb-separator {
+    font-size: 1.1111rem;
+  }
+
+  .services__title {
+    gap: 0;
+    font-size: 1.3333rem;
+    line-height: 0;
+  }
+
+  .services__title-text {
+    line-height: 1.3333;
+  }
+
+  .services__count {
+    font-size: 2rem;
+    line-height: 0;
+  }
+
+  .services__categories {
+    gap: 0.2222rem;
+    padding: 0.2222rem;
+    border-radius: 0.5556rem;
+  }
+
+  .services__category {
+    min-height: 2.3333rem;
+    padding: 0.5556rem 0.7778rem;
+    border-radius: 0.7778rem;
+    font-size: 0.7778rem;
+    line-height: 1.5714;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services__category {
+    transition: none;
+  }
+}
+
+/* Карточки услуг: Figma Frame 2439, контрольные viewport 1920 и 1440 px. */
+.services-list {
+  width: 100%;
+  padding: 0 0.2778rem 0.5556rem;
+  background-color: #f5f8f7;
+}
+
+.services-list__panel {
+  width: 100%;
+  padding: 2.2222rem;
+  border-radius: 0.5556rem;
+  background-color: #fff;
+}
+
+.services-list__container {
+  width: 100%;
+  max-width: 99.7778rem;
+  margin: 0 auto;
+}
+
+.services-list__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.2778rem;
+  align-items: start;
+}
+
+.service-card {
+  display: flex;
+  gap: 0.8889rem;
+  padding: 0.5556rem;
+  border-radius: 0.5556rem;
+  background-color: #4D4D4D0A;
+}
+
+.service-card__image {
+  display: block;
+  flex: 0 0 9.4444rem;
+  width: 9.4444rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-width: 0;
+  padding-top: 0.5556rem;
+}
+
+.service-card__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5556rem;
+  width: 100%;
+  line-height: 1.6;
+  margin-bottom: 0.5556rem;
+}
+
+.service-card__title {
+  width: 100%;
+  color: #4d4d4d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.service-card__description {
+  color: #979a9b;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 0.8889rem;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.service-card__button.btn {
+  flex: 0 0 auto;
+  min-height: 2.8889rem;
+  padding: 0.7778rem 2.6667rem;
+  border-radius: 1.1111rem;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 0.8889rem;
+  font-weight: 600;
+  line-height: 1.3333rem;
+  white-space: nowrap;
+}
+
+/* Figma Frame 1857:28872 — viewport 1024 px. */
+
+/* Responsive grid for the Figma service-card frames: 1920 / 1440 / 1024 / 360. */
+.services-list__container {
+  max-width: 99.7778rem;
+}
+
+.services-list__grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25.7778rem), 1fr));
+  gap: 0.2778rem;
+}
+
+.service-card {
+  height: stretch;
+  width: auto;
+}
+
+.services-list__more {
+  display: none;
+}
+
+.service-card[hidden],
+.services-list__more[hidden] {
+  display: none;
+}
+
+/* Планшет: сетка карточек и их внутренние размеры. */
+@media screen and (max-width: 1300px) {
+  .services-list__panel {
+    padding: 1.3333rem;
+  }
+
+  .services-list__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.2778rem;
+  }
+
+  .service-card {
+    gap: 0.6667rem;
+    padding: 0.4444rem;
+  }
+
+  .service-card__image {
+    flex-basis: 6.6667rem;
+    width: 6.6667rem;
+  }
+
+  .service-card__content {
+    padding-top: 0.2222rem;
+  }
+
+  .service-card__text {
+    gap: 0.3333rem;
+  }
+
+  .service-card__button.btn {
+    min-height: 2.4444rem;
+    padding: 0.5556rem 1.1111rem;
+    border-radius: 0.6667rem;
+    font-size: 0.7778rem;
+    line-height: 1.2222rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .services-list__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.2778rem;
+  }
+
+  .service-card {
+    flex-direction: column;
+    gap: 0.5556rem;
+    width: 100%;
+    min-height: 0;
+    padding: 0.5556rem;
+  }
+
+  .service-card__image {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 9.4444rem;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+
+  .service-card__content {
+    gap: 0.7778rem;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .service-card__text {
+    gap: 0.2222rem;
+  }
+
+  .service-card__title {
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
+  }
+
+  .service-card__description {
+    width: 100%;
+    font-size: 0.7778rem;
+    line-height: 1.1111rem;
+  }
+
+  .service-card__button.btn {
+    align-self: stretch;
+    width: 100%;
+    min-height: 2.7222rem;
+    padding: 0.6667rem 1.3333rem;
+    border-radius: 0.5556rem;
+    font-size: 0.7778rem;
+    line-height: 1.3889rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .services-list {
+    padding: 0 0.2778rem 0.5556rem;
+  }
+
+  .services-list__panel {
+    padding: 0.2222rem;
+    border-radius: 0.5556rem;
+  }
+
+  .services-list__container {
+    max-width: none;
+  }
+
+  .services-list__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 2.7222rem;
+    margin-top: 0.4444rem;
+    padding: 0.6667rem 1.3333rem;
+    border-radius: 0.5556rem;
+    color: #324c88;
+    background: #324C881A;
+    font-family: 'Onest-SemiBold', sans-serif;
+    font-size: 0.7778rem;
+    font-weight: 600;
+    line-height: 1.3889rem;
+    text-transform: uppercase;
+  }
+
+  .services-list__more:focus-visible {
+    outline: 0.1111rem solid #324c88;
+    outline-offset: 0.1111rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card__button.btn {
+    transition: none;
+  }
+}
+
+/* Форма обратной связи — Figma Frame 2349, 1920 px. */
+.services-contact {
+  width: 100%;
+  padding: 4.4444rem 2.5rem;
+  background-color: #f5f8f7;
+}
+
+.services-contact__container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  gap: 2.6667rem;
+  width: 100%;
+  max-width: 101.6667rem;
+  min-height: 44.4444rem;
+  margin: 0 auto;
+}
+
+.services-contact__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2.6667rem;
+  min-width: 0;
+}
+
+.services-contact__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9444rem;
+  width: 100%;
+}
+
+.services-contact__eyebrow {
+  color: #324c8880;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.services-contact__title {
+  max-width: 47.7778rem;
+  color: #324c88;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.4444rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.services-contact__description {
+  max-width: 37.1667rem;
+  color: #324c88;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.3889rem;
+  line-height: 1.4;
+  margin-top: 1.7778rem;
+}
+
+.services-contact__illustration {
+  width: 100%;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.services-contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3333rem;
+  min-width: 0;
+  padding: 1.1111rem;
+  border-radius: 0.5556rem;
+  background-color: #fff;
+}
+
+.services-contact__fields {
+  display: grid;
+  grid-template-columns: 16.6667rem minmax(0, 1fr);
+  gap: 1.3333rem;
+  row-gap: 1.3333rem;
+}
+
+.services-contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5556rem;
+  min-width: 0;
+}
+
+.services-contact__field--phone {
+  grid-column: 1 / -1;
+}
+
+.services-contact__label {
+  color: #2c2c2ce6;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6667rem;
+}
+
+.services-contact__input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 3.6111rem;
+  padding: 1.1111rem 1.3333rem;
+  border: 0.0556rem solid transparent;
+  border-radius: 0.5556rem;
+  outline-offset: 0.1667rem;
+  color: #4d4d4d;
+  background-color: #324c880a;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.services-contact__input::placeholder {
+  color: #2c2c2c80;
+  opacity: 1;
+}
+
+.services-contact__input:focus-visible {
+  border-color: #324c88;
+  outline: 0.0556rem solid #324c88;
+}
+
+.services-contact__form-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3333rem;
+}
+
+.services-contact__textarea {
+  min-height: 6.6667rem;
+  resize: vertical;
+}
+
+.services-contact__upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7778rem;
+  min-height: 8.4444rem;
+  padding: 1.6667rem 1.1111rem;
+  border: 0.0556rem dashed #2c2c2c;
+  border-radius: 0.5556rem;
+}
+
+.services-contact__upload-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5556rem;
+  padding: 0.8889rem 1.1111rem;
+  border-radius: 0.5556rem;
+  color: #324c88;
+  background-color: #ebedf3;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.services-contact__file-icon {
+  font-size: 1.3333rem;
+  line-height: 1;
+}
+
+.services-contact__file-input {
+  position: absolute;
+  width: 0.0556rem;
+  height: 0.0556rem;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.services-contact__file-input:focus-visible + .services-contact__upload-help {
+  outline: 0.1111rem solid #324c88;
+  outline-offset: 0.1667rem;
+}
+
+.services-contact__upload-help {
+  color: #505050;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 0.7778rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.services-contact__submit-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7778rem;
+}
+
+.services-contact__submit.btn {
+  width: 100%;
+  min-height: 3.4444rem;
+  padding: 1rem 2.6667rem;
+  border-radius: 1.1111rem;
+  font-size: 1rem;
+  line-height: 1.4444rem;
+}
+
+.services-contact__consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: #000;
+  font-family: 'Onest-Light', sans-serif;
+  font-size: 0.7778rem;
+  font-weight: 300;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.services-contact__checkbox {
+  flex: 0 0 1.3333rem;
+  width: 1.3333rem;
+  height: 1.3333rem;
+  margin: 0;
+  accent-color: #324c88;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-contact * {
+    scroll-behavior: auto;
+  }
+}
+
+/* Адаптация формы между контрольными разрешениями 1440 и 1920 px. */
+/* Базовые значения выше соответствуют макету 1920 px. */
+
+@media screen and (max-width: 1600px) {
+  .services-contact {
+    padding: 2.7778rem 2.5rem;
+  }
+
+  .services-contact__container {
+    min-height: 40rem;
+    gap: 1.7778rem;
+  }
+
+  .services-contact__intro {
+    gap: 2.2222rem;
+  }
+
+  .services-contact__heading {
+    gap: 0.7778rem;
+  }
+
+  .services-contact__eyebrow {
+    font-size: 1rem;
+  }
+
+  .services-contact__title {
+    font-size: 2rem;
+  }
+
+  .services-contact__description {
+    font-size: 1.1111rem;
+  }
+
+  .services-contact__form {
+    padding: 0.8889rem;
+  }
+
+  .services-contact__fields {
+    grid-template-columns: minmax(0, 13.3333rem) minmax(0, 1fr);
+    column-gap: 0.8889rem;
+    row-gap: 1.1111rem;
+  }
+
+  .services-contact__label,
+  .services-contact__input,
+  .services-contact__upload-button {
+    font-size: 0.8889rem;
+  }
+
+  .services-contact__input {
+    padding-right: 0.8889rem;
+    padding-left: 0.8889rem;
+  }
+
+  .services-contact__form,
+  .services-contact__form-bottom {
+    gap: 1.1111rem;
+  }
+
+  .services-contact__consent {
+    gap: 0.6667rem;
+    font-size: 0.6667rem;
+  }
+
+  .services-contact__checkbox {
+    flex-basis: 1.1111rem;
+    width: 1.1111rem;
+    height: 1.1111rem;
+  }
+
+  .services-contact__illustration {
+    max-width: 100%;
+  }
+}
+
+/* Планшет: одноколоночная компоновка формы. */
+@media screen and (max-width: 1300px) {
+  .services-contact {
+    padding: 2.2222rem;
+  }
+
+  .services-contact__container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.3333rem;
+    min-height: 0;
+  }
+
+  .services-contact__intro {
+    gap: 1.3333rem;
+  }
+
+  .services-contact__heading {
+    gap: 0.9444rem;
+  }
+
+  .services-contact__eyebrow {
+    font-size: 1.1111rem;
+  }
+
+  .services-contact__title {
+    max-width: 100%;
+    font-size: 1.6667rem;
+    line-height: 1.4;
+  }
+
+  .services-contact__description {
+    max-width: 37.1667rem;
+    font-size: 1.3889rem;
+    line-height: 1.4;
+    margin-top: 0;
+  }
+
+  .services-contact__illustration {
+    display: none;
+  }
+
+  .services-contact__form {
+    gap: 1.3333rem;
+    padding: 1.1111rem;
+  }
+
+  .services-contact__fields {
+    grid-template-columns: minmax(0, 16.6667rem) minmax(0, 1fr);
+    column-gap: 1.3333rem;
+    row-gap: 1.3333rem;
+  }
+
+  .services-contact__field {
+    gap: 0.4444rem;
+  }
+
+  .services-contact__label {
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
+  }
+
+  .services-contact__input {
+    min-height: 3.1111rem;
+    padding: 0.8889rem 1rem;
+    font-size: 0.8889rem;
+  }
+
+  .services-contact__textarea {
+    min-height: 6.6667rem;
+  }
+
+  .services-contact__form-bottom {
+    gap: 1.3333rem;
+  }
+
+  .services-contact__upload {
+    min-height: 8.4444rem;
+  }
+
+  .services-contact__upload-button {
+    font-size: 0.8889rem;
+  }
+
+  .services-contact__submit.btn {
+    min-height: 3.1111rem;
+    padding: 0.8333rem 1.7778rem;
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
+  }
+
+  .services-contact__consent {
+    gap: 0.6667rem;
+    font-size: 0.6667rem;
+  }
+
+  .services-contact__checkbox {
+    flex-basis: 1.1111rem;
+    width: 1.1111rem;
+    height: 1.1111rem;
+  }
+}
+
+/* Figma node 2269:144480 — mobile viewport 360 px. */
+@media screen and (max-width: 680px) {
+  .services-contact {
+    padding: 1.1111rem 0.7778rem;
+  }
+
+  .services-contact__container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    min-height: 0;
+  }
+
+  .services-contact__intro {
+    gap: 1rem;
+  }
+
+  .services-contact__heading {
+    gap: 0.7778rem;
+  }
+
+  .services-contact__eyebrow {
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
+  }
+
+  .services-contact__title {
+    max-width: 100%;
+    font-size: 1.1111rem;
+    line-height: 1.5556rem;
+  }
+
+  .services-contact__description {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .services-contact__illustration {
+    display: none;
+  }
+
+  .services-contact__form {
+    gap: 1.3333rem;
+    padding: 0.7778rem;
+    border-radius: 0.5556rem;
+  }
+
+  .services-contact__fields {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.3333rem;
+  }
+
+  .services-contact__field,
+  .services-contact__field--phone {
+    grid-column: 1 / -1;
+    gap: 0.4444rem;
+  }
+
+  .services-contact__label {
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
+  }
+
+  .services-contact__input {
+    min-height: 3.1111rem;
+    padding: 0.8889rem 1rem;
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
+  }
+
+  .services-contact__textarea {
+    min-height: 6.6667rem;
+  }
+
+  .services-contact__form-bottom {
+    gap: 1.3333rem;
+  }
+
+  .services-contact__upload {
+    min-height: 8.4444rem;
+    padding: 1.3333rem 0.7778rem;
+  }
+
+  .services-contact__upload-button {
+    max-width: 100%;
+    padding: 0.7778rem;
+    font-size: 0.7778rem;
+  }
+
+  .services-contact__submit.btn {
+    min-height: 3.1111rem;
+    padding: 0.8889rem 1.1111rem;
+    border-radius: 0.5556rem;
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
+  }
+
+  .services-contact__consent {
+    gap: 0.6667rem;
+    font-size: 0.6667rem;
+    line-height: 1.5;
+  }
+
+  .services-contact__checkbox {
+    flex-basis: 1.1111rem;
+    width: 1.1111rem;
+    height: 1.1111rem;
+  }
+}
+
