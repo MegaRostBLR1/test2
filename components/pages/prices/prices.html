@@ -1,0 +1,91 @@
+<section class="prices" aria-labelledby="prices-title">
+  <div class="prices__panel">
+    <div class="prices__content">
+      <nav class="prices__breadcrumbs" aria-label="Хлебные крошки">
+        <a href="#/home">Главная</a>
+        <span aria-hidden="true">-</span>
+        <span aria-current="page">Цены</span>
+      </nav>
+
+      <h1 class="prices__title" id="prices-title">Цены на типовые здания</h1>
+
+      <aside class="prices__notice" aria-label="Важная информация">
+        <p><strong>ВАЖНО!</strong> Все цены на здания являются ориентировочными и даны для предварительного знакомства с примерным бюджетом на строительство вашего здания. Слишком много факторов влияет на уровень цен (сочетание климатических зон, размеры здания, плавающие цены на металл, материалы, стоимость рабочей силы в разных странах, шаг рам, наличие геоизыскательных работ, нестандартные нагрузки на стены и кровлю и т.д.)</p>
+        <p>Для более точного расчета используйте онлайн систему <a href="https://www.websteel.pkvesta.ru/Home/StepOne" target="_blank" rel="noopener noreferrer">WebSteel®</a> (онлайн учет стоимости и наличия материалов на складе завода, расчетной схемы и проектных решений) или делайте детальный запрос на российский завод ПК Веста.</p>
+      </aside>
+
+      <form class="prices__filters" aria-label="Параметры здания">
+        <div class="prices__filter-group">
+          <fieldset class="prices__fieldset">
+            <legend>Регион:</legend>
+            <div class="prices__segmented" data-segmented="region">
+              <button class="prices__option is-active" type="button" aria-pressed="true">Россия</button>
+              <button class="prices__option" type="button" aria-pressed="false">СНГ</button>
+              <button class="prices__option" type="button" aria-pressed="false">Африка и Ближний Восток</button>
+            </div>
+          </fieldset>
+          <fieldset class="prices__fieldset">
+            <legend>Кровля:</legend>
+            <div class="prices__segmented" data-segmented="roof">
+              <button class="prices__option is-active" type="button" aria-pressed="true">Двухскатная</button>
+              <button class="prices__option" type="button" aria-pressed="false">Плоская</button>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="prices__dimensions">
+          <label class="prices__dimension">
+            <span>Ширина:</span>
+            <select name="width" aria-label="Ширина здания">
+              <option>12 м</option><option>18 м</option><option>24 м</option><option>30 м</option>
+            </select>
+          </label>
+          <label class="prices__dimension">
+            <span>Высота:</span>
+            <select name="height" aria-label="Высота здания">
+              <option>4 м</option><option>5 м</option><option>6 м</option><option>7 м</option>
+            </select>
+          </label>
+        </div>
+      </form>
+
+      <div class="prices__table-wrap">
+        <table class="prices__table">
+          <colgroup><col class="prices__label-column"><col span="6"></colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Виды работ</th>
+              <th scope="colgroup" colspan="6">Длина, м / с шагом колонн 6 м</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="prices__subheading">
+              <th scope="row">С 20% НДС. Поставка — EXW.</th>
+              <td>30</td><td>36</td><td>42</td><td>48</td><td>54</td><td>60</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <span>Сроки проектирования и изготовления, мес</span>
+                <small>(разделы проекта — КМ, ОК (стадия Р, монтажные схемы и технический паспорт)</small>
+              </th>
+              <td>2.5</td><td>2.5</td><td>2.5</td><td>2.5</td><td>2.5</td><td>2.5</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <span>Несущий каркас, RUB</span>
+                <small>(Этаж-1, кран-балки — нет, тип конструкции — двухскатная с 1 пролётом)</small>
+              </th>
+              <td>891 588 RUB</td><td>1 133 396 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">Итого от:</th>
+              <td>891 588 RUB</td><td>1 133 396 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td><td>1 290 252 RUB</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
