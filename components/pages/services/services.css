@@ -485,7 +485,8 @@
 }
 
 .services-contact__illustration {
-  width: min(100%, 706px);
+  width: 100%;
+  max-width: 706px;
   min-height: 580px;
   margin-top: auto;
   align-self: flex-start;
@@ -732,4 +733,38 @@
   .services-contact__illustration {
     max-width: 100%;
   }
+}
+
+
+/* Figma Frame 2440 — 1024 px. Layout changes to a single column. */
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .services-list__panel { padding: 24px; }
+  .services-list__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; }
+  .service-card { gap: 12px; padding: 8px; }
+  .service-card__image { flex-basis: 120px; width: 120px; height: 160px; }
+  .service-card__content { padding-top: 4px; }
+  .service-card__text { gap: 6px; }
+  .service-card__title { font-size: 16px; line-height: 1.4; }
+  .service-card__description { font-size: 14px; line-height: 1.45; }
+  .service-card__button.btn { min-height: 44px; padding: 10px 20px; border-radius: 12px; font-size: 14px; line-height: 22px; }
+  .services-contact { padding: 40px; }
+  .services-contact__container { grid-template-columns: minmax(0, 1fr); gap: 24px; min-height: 0; }
+  .services-contact__intro { gap: 24px; }
+  .services-contact__heading { gap: 17px; }
+  .services-contact__eyebrow { font-size: 20px; }
+  .services-contact__title { max-width: 100%; font-size: 30px; line-height: 1.4; }
+  .services-contact__description { max-width: 669px; font-size: 25px; line-height: 1.4; }
+  .services-contact__illustration { display: none; }
+  .services-contact__form { gap: 24px; padding: 20px; }
+  .services-contact__fields { grid-template-columns: minmax(0, 300px) minmax(0, 1fr); column-gap: 24px; row-gap: 24px; }
+  .services-contact__field { gap: 8px; }
+  .services-contact__label { font-size: 16px; line-height: 24px; }
+  .services-contact__input { min-height: 56px; padding: 16px 18px; font-size: 16px; }
+  .services-contact__textarea { min-height: 120px; }
+  .services-contact__form-bottom { gap: 24px; }
+  .services-contact__upload { min-height: 152px; }
+  .services-contact__upload-button { font-size: 16px; }
+  .services-contact__submit.btn { min-height: 56px; padding: 15px 32px; font-size: 16px; line-height: 24px; }
+  .services-contact__consent { gap: 12px; font-size: 12px; }
+  .services-contact__checkbox { flex-basis: 20px; width: 20px; height: 20px; }
 }
