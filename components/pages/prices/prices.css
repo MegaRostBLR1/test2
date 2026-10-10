@@ -538,12 +538,13 @@
     align-items: center;
     justify-content: center;
     min-width: 0;
-    padding: 14px 8px;
+    padding: 14px 20px;
     background: #E2E8ED;
     color: #324C88;
     font-size: 14px;
     font-weight: 600;
     line-height: 1.6;
+    white-space: nowrap;
     text-align: center;
     text-transform: uppercase;
   }
@@ -568,13 +569,13 @@
     align-items: center;
     justify-content: center;
     min-width: 0;
-    padding: 14px 8px;
+    padding: 14px 18px;
     background: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
     line-height: 22px;
     text-align: center;
-    overflow-wrap: anywhere;
+    white-space: nowrap;
   }
 
   .prices__mobile-table-row:last-child span:first-child {
