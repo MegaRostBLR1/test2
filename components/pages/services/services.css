@@ -657,3 +657,91 @@
     scroll-behavior: auto;
   }
 }
+
+
+/* Связка контрольных разрешений формы: 1440–1920 px. */
+/* Размеры плавно меняются между контрольными макетами, без скачка на 1440 px. */
+.services-contact {
+  padding: clamp(50px, calc(-40px + 6.25vw), 80px) clamp(32px, calc(6px + 2.03125vw), 45px);
+}
+
+.services-contact__container {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, calc(-16px + 3.3333vw), 48px);
+  max-width: 1830px;
+}
+
+.services-contact__intro,
+.services-contact__form {
+  min-width: 0;
+}
+
+.services-contact__title {
+  font-size: clamp(36px, calc(12px + 1.6667vw), 44px);
+}
+
+.services-contact__description {
+  font-size: clamp(20px, calc(5px + 1.0417vw), 25px);
+}
+
+.services-contact__fields {
+  grid-template-columns: minmax(0, clamp(240px, calc(60px + 12.5vw), 300px)) minmax(0, 1fr);
+  column-gap: clamp(16px, calc(0px + 1.25vw), 24px);
+}
+
+.services-contact__form {
+  padding: clamp(16px, calc(-4px + 1.6667vw), 20px);
+}
+
+.services-contact__input {
+  padding-right: clamp(16px, calc(-8px + 1.6667vw), 24px);
+  padding-left: clamp(16px, calc(-8px + 1.6667vw), 24px);
+}
+
+.services-contact__illustration {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  .services-contact__container {
+    min-height: 720px;
+  }
+
+  .services-contact__intro {
+    gap: 40px;
+  }
+
+  .services-contact__heading {
+    gap: 14px;
+  }
+
+  .services-contact__eyebrow {
+    font-size: 18px;
+  }
+
+  .services-contact__label,
+  .services-contact__input,
+  .services-contact__upload-button {
+    font-size: 16px;
+  }
+
+  .services-contact__fields {
+    row-gap: 20px;
+  }
+
+  .services-contact__form,
+  .services-contact__form-bottom {
+    gap: 20px;
+  }
+
+  .services-contact__consent {
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .services-contact__checkbox {
+    flex-basis: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
