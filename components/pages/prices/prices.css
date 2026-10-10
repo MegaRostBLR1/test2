@@ -975,6 +975,8 @@
   object-fit: contain;
 }
 .prices-tech__building h3 {
+  width: 100%;
+  overflow-wrap: anywhere;
   margin: 0 0 14px;
   color: #505050;
   font-family: 'Onest-SemiBold', sans-serif;
