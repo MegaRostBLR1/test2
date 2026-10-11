@@ -4740,6 +4740,124 @@
   }
 }
 
+/* Figma node 1857:25687 — планшетный макет 1024 px.
+   Сохраняем desktop-структуру секции и перестраиваем карточку по Figma. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .home-advantages {
+    padding: 0 10px 10px;
+  }
+
+  .home-advantages__inner {
+    gap: 24px;
+    padding: 40px;
+  }
+
+  .home-advantages__heading {
+    gap: 18px;
+  }
+
+  .home-advantages__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .home-advantages__subtitle {
+    width: 810px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .home-advantages__content {
+    gap: 24px;
+  }
+
+  .home-advantages__tabs {
+    align-self: center;
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 10px;
+    background: #f5f8f7;
+    overflow-x: auto;
+  }
+
+  .home-advantages__tab,
+  .home-advantages__tab--active {
+    flex: 0 0 auto;
+    padding: 14px 12px;
+    border-radius: 14px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .home-advantages__card {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 24px;
+    padding: 64px 40px;
+    border-radius: 30px;
+  }
+
+  .home-advantages__information {
+    flex: 0 1 auto;
+    gap: 36px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .home-advantages__icon {
+    flex-basis: 64px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .home-advantages__icon img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .home-advantages__copy {
+    gap: 18px;
+  }
+
+  .home-advantages__eyebrow {
+    font-size: 20px;
+  }
+
+  .home-advantages__card-title {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .home-advantages__description {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .home-advantages__button {
+    align-self: stretch;
+    width: 100%;
+    padding: 17px 32px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 1.26;
+    text-align: center;
+  }
+
+  .home-advantages__image {
+    flex: 0 0 auto;
+    align-self: stretch;
+    width: 100%;
+    max-width: none;
+    height: 544px;
+    aspect-ratio: auto;
+    border-radius: 30px;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .home-advantages__inner {
     gap: 32px;
