@@ -4247,3 +4247,190 @@
   }
 }
 
+/* Figma 1857:26635 — mobile layout 360 px for the existing About section. */
+@media screen and (max-width: 680px) {
+  .home-about {
+    padding: 0 5px 5px;
+  }
+
+  .home-about__hero {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-height: 0;
+    padding: 20px 10px;
+    border-radius: 21px;
+  }
+
+  .home-about__info {
+    display: none;
+  }
+
+  .home-about__intro {
+    gap: 20px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .home-about__eyebrow {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .home-about__title {
+    max-width: none;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .home-about__button.btn {
+    align-self: stretch;
+    width: 100%;
+    min-height: 54px;
+    padding: 14px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .home-about__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .home-about__video-links {
+    align-self: center;
+    gap: 18px;
+    width: max-content;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .home-about__video-link {
+    flex: 0 0 147px;
+    width: 147px;
+    gap: 18px;
+  }
+
+  .home-about__video-image {
+    width: 106px;
+    height: 93px;
+  }
+
+  .home-about__video-play {
+    top: 53px;
+    width: 48px;
+    height: 48px;
+    border-radius: 20px;
+  }
+
+  .home-about__video-caption {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .home-about__mobile-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 282.843px;
+  }
+
+  .home-about__mobile-video-link {
+    position: relative;
+    display: flex;
+    flex: 0 0 200px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 10px;
+    background: rgb(255 255 255 / 10%);
+  }
+
+  .home-about__mobile-video-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    transform: rotate(-45deg);
+    border-radius: 20px;
+    color: #324c88;
+    background: #fff;
+  }
+
+  .home-about__mobile-video-play svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+
+  .home-about__mobile-video-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 164px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    color: #fff;
+    font-family: "Onest-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .home-about__stats {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overscroll-behavior-inline: contain;
+  }
+
+  .home-about__stat {
+    flex: 0 0 290px;
+    min-height: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    scroll-snap-align: start;
+  }
+
+  .home-about__stat-value {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .home-about__stat-unit {
+    font-size: 20px;
+  }
+
+  .home-about__stat-description {
+    max-width: 180px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .home-about__hero {
+    padding: 20px 10px;
+  }
+}
+
