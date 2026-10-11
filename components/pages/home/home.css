@@ -3876,7 +3876,6 @@
     min-height: 280px;
     padding: 20px;
     border-radius: 10px;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), calc(100% - 65px) 100%, 0 100%);
   }
 
   .home-about__stat-value {
