@@ -1247,7 +1247,7 @@
 .home-projects__pagination-dots {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 6px;
 }
 .home-projects__featured-dots span {
   width: 7px;
