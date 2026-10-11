@@ -3276,9 +3276,9 @@
   gap: 30px;
   grid-column: 2;
   grid-row: 1;
-  align-self: center;
+  align-self: start;
   max-width: 747px;
-  padding-top: 8px;
+  margin-top: 218px;
   color: #fff;
   font-family: "Onest-Regular", sans-serif;
   font-size: 20px;
@@ -3648,6 +3648,7 @@
 
   .home-about__description {
     max-width: 620px;
+    margin-top: 150px;
     font-size: 18px;
     line-height: 1.5;
   }
@@ -3719,7 +3720,7 @@
     grid-column: 1;
     grid-row: 2;
     max-width: 100%;
-    padding-top: 0;
+    margin-top: 0;
   }
 
   .home-about__video-links {
