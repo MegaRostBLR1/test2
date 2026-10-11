@@ -5103,3 +5103,31 @@
     object-fit: cover;
   }
 }
+
+/* Контактная карточка — Figma 1893:92421, 1920 × 655. */
+.home-contact-person{padding:0 5px 5px;background:#f5f8f7;color:#4d4d4d}
+.home-contact-person__panel{width:100%;padding:40px;border-radius:30px;background:#fff}
+.home-contact-person__layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:8px;width:100%;min-width:0;padding:4px;border-radius:14px;background:#f5f8f7}
+.home-contact-person__photo{display:flex;min-width:0;min-height:0;padding:33px 24px;border-radius:18px;background:#fff}
+.home-contact-person__photo img{display:block;width:100%;min-width:0;height:100%;min-height:0;border-radius:14px;object-fit:cover;object-position:center}
+.home-contact-person__details{display:flex;flex-direction:column;gap:10px;min-width:0;padding:33px 24px;border-radius:18px;background:#fff}
+.home-contact-person__person{display:flex;flex-direction:column;align-items:flex-start;gap:20px;width:100%;padding:30px;border-radius:10px;background:rgb(50 76 136 / 10%);text-transform:uppercase}
+.home-contact-person__name{color:#324c88;font-family:'Onest-SemiBold',sans-serif;font-size:30px;font-weight:600;line-height:1.5}
+.home-contact-person__position{color:#4d4d4d;font-family:'Onest-Medium',sans-serif;font-size:20px;font-weight:500;line-height:1.5}
+.home-contact-person__contacts{display:flex;flex-direction:column;gap:5px;width:100%}
+.home-contact-person__contact-group{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;width:100%}
+.home-contact-person__contact{display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0;padding:20px;border-radius:14px;background:#f5f8f7}
+.home-contact-person__label{width:100%;color:#5d5d5d;font-family:'Onest-Medium',sans-serif;font-size:18px;font-weight:500;line-height:1.5}
+.home-contact-person__phone-row{display:flex;align-items:center;gap:10px;width:100%;min-width:0}
+.home-contact-person__value{color:#4d4d4d;font-family:'Onest-SemiBold',sans-serif;font-size:20px;font-weight:600;line-height:1.5;overflow-wrap:anywhere}
+.home-contact-person__phone-row .home-contact-person__value{flex:0 0 auto;white-space:nowrap}
+.home-contact-person__note{flex:1 1 auto;min-width:0;color:rgb(77 77 77 / 80%);font-family:'Onest-Medium',sans-serif;font-size:14px;font-weight:500;line-height:1.3}
+.home-contact-person__socials{display:flex;align-items:flex-start;gap:10px}
+.home-contact-person__social{display:flex;align-items:center;justify-content:center;flex:0 0 36px;width:36px;height:32px;padding:6px 8px;border-radius:10px;background:#fff}
+.home-contact-person__social img{display:block;width:20px;height:20px;object-fit:contain}
+.home-contact-person__button.btn{display:flex;flex:0 0 62px;align-items:center;justify-content:center;width:100%;min-height:62px;padding:18px 48px;border-radius:20px;font-size:18px;line-height:26px}
+.home-contact-person__button.btn:focus-visible,.home-contact-person__social:focus-visible{outline:2px solid #324c88;outline-offset:3px}
+@media(max-width:1600px){.home-contact-person__panel{padding:32px}.home-contact-person__details,.home-contact-person__photo{padding:24px 18px}.home-contact-person__person{gap:14px;padding:24px}.home-contact-person__name{font-size:26px}.home-contact-person__position{font-size:17px}.home-contact-person__contact{padding:16px}.home-contact-person__label,.home-contact-person__value{font-size:16px}.home-contact-person__note{font-size:12px}}
+@media(max-width:1100px){.home-contact-person__panel{padding:24px}.home-contact-person__layout{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}.home-contact-person__details{padding:20px 16px}.home-contact-person__person{padding:20px}.home-contact-person__contact-group{grid-template-columns:minmax(0,1fr)}.home-contact-person__phone-row{flex-wrap:wrap}.home-contact-person__photo{padding:20px 12px}}
+@media(max-width:680px){.home-contact-person__panel{padding:12px;border-radius:20px}.home-contact-person__layout{grid-template-columns:minmax(0,1fr);gap:5px;padding:4px}.home-contact-person__photo{min-height:280px;padding:12px;border-radius:14px}.home-contact-person__photo img{min-height:256px;max-height:420px}.home-contact-person__details{gap:10px;padding:12px;border-radius:14px}.home-contact-person__person{gap:12px;padding:18px}.home-contact-person__name{font-size:24px;line-height:1.35}.home-contact-person__position{font-size:16px}.home-contact-person__contact-group{grid-template-columns:minmax(0,1fr);gap:5px}.home-contact-person__contact{gap:8px;padding:14px}.home-contact-person__label,.home-contact-person__value{font-size:16px}.home-contact-person__note{font-size:13px}.home-contact-person__button.btn{flex-basis:56px;min-height:56px;padding:14px 20px;font-size:16px}}
+@media(max-width:360px){.home-contact-person__panel{padding:8px}.home-contact-person__person,.home-contact-person__contact{padding:12px}.home-contact-person__name{font-size:21px}.home-contact-person__phone-row{align-items:flex-start;flex-direction:column;gap:2px}}
