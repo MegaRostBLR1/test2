@@ -3782,7 +3782,7 @@
   .home-about__hero {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto auto auto;
-    gap: 30px 20px;
+    gap: 40px 20px;
     min-height: 0;
     padding: 45px;
   }
