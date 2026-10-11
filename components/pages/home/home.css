@@ -5258,7 +5258,8 @@
 }
 
 
-/* Home news — desktop frame Figma 1920 px (1857:24608). */
+/* Home news — shared desktop layout for Figma frames 1920 px (1857:24608) and 1440 px (1857:25114).
+   The three-column grid contracts naturally; the desktop metrics remain unchanged until 1300 px. */
 .home-news {
   width: 100%;
   padding: 5px;
@@ -5405,32 +5406,41 @@
   align-self: center;
 }
 
+/* Контролы по Figma: квадрат 64 × 64 px повёрнут внутри области 90 × 90 px. */
 .home-news__arrow {
+  position: relative;
   display: flex;
   flex: 0 0 90px;
   align-items: center;
   justify-content: center;
   width: 90px;
   height: 90px;
+  border-radius: 20px;
+}
+
+.home-news__arrow::before {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 64px;
+  height: 64px;
   border: 1px solid rgba(77, 77, 77, 0.2);
   border-radius: 20px;
-  transform: rotate(-45deg);
+  content: "";
+  transform: rotate(45deg);
 }
 
 .home-news__arrow img {
+  position: relative;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 15px;
+  height: 15px;
+  filter: brightness(0) opacity(0.7);
   object-fit: contain;
-  transform: rotate(45deg);
 }
 
-.home-news__arrow--next {
-  transform: rotate(45deg);
-}
-
-.home-news__arrow--next img {
-  transform: rotate(-45deg);
+.home-news__arrow--prev img {
+  transform: rotate(180deg);
 }
 
 .home-news__arrow:disabled {
@@ -5508,9 +5518,17 @@
     border-radius: 16px;
   }
 
+  .home-news__arrow::before {
+    top: 9px;
+    left: 9px;
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+  }
+
   .home-news__arrow img {
-    width: 30px;
-    height: 30px;
+    width: 12px;
+    height: 12px;
   }
 }
 
