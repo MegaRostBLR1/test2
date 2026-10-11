@@ -1464,3 +1464,87 @@
   .home-projects__all { font-size: 10px; }
   .home-projects__featured { min-height: 470px; }
 }
+
+
+/* Контрольный desktop-frame Figma 1440 px: 1857:24868.
+   Сохраняет общую структуру 1920 px и уточняет геометрию на ширине 1440 px. */
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+  .home-projects__panel {
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  .home-projects__header {
+    gap: 30px;
+    padding-top: 30px;
+  }
+
+  .home-projects__title {
+    font-size: 48px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  .home-projects__all {
+    font-size: 18px;
+  }
+
+  .home-projects__divider {
+    margin: 20px 0 18px;
+  }
+
+  .home-projects__layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 5px;
+  }
+
+  .home-projects__featured {
+    aspect-ratio: 791 / 729;
+    padding: 45px 40px;
+  }
+
+  .home-projects__featured-title {
+    font-size: 40px;
+  }
+
+  .home-projects__meta--featured .home-projects__meta-item {
+    gap: 10px;
+    min-height: 42px;
+    padding: 2px 10px 2px 2px;
+    font-size: 14px;
+  }
+
+  .home-projects__meta--featured .home-projects__meta-icon,
+  .home-projects__meta--featured .home-projects__meta-item--id span {
+    flex-basis: 38px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .home-projects__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr)) auto;
+    gap: 5px;
+  }
+
+  .home-projects__card {
+    padding: 20px;
+    aspect-ratio: 453.75 / 397.5;
+  }
+
+  .home-projects__card-title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .home-projects__pagination {
+    gap: 24px;
+    padding-top: 18px;
+  }
+
+  .home-projects__arrow {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+  }
+}
