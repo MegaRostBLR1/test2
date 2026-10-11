@@ -3197,7 +3197,7 @@
   z-index: -2;
   inset: 0;
   border-radius: inherit;
-  background: url("../static/images/home/home-about.png") center / cover no-repeat;
+  background: url("../../../static/images/home/home-about.png") center / cover no-repeat;
 }
 
 .home-about__hero::before {
