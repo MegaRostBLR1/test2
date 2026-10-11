@@ -4642,22 +4642,26 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 1600px) {
+/* Figma node 1857:24978 — desktop 1440 px.
+   Точные параметры этого кадра; базовые размеры 1920 px выше не изменяются. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
   .home-advantages__card {
-    gap: 48px;
+    gap: 36px;
     padding: 64px;
   }
 
   .home-advantages__information {
-    flex-basis: 50%;
-    width: 50%;
+    flex: 1 1 0;
+    width: auto;
+    max-width: none;
   }
 
   .home-advantages__image {
-    flex-basis: 45%;
-    width: 45%;
-    height: auto;
-    aspect-ratio: 650 / 490;
+    flex: 0 0 560px;
+    width: 560px;
+    max-width: 560px;
+    height: 490px;
+    aspect-ratio: auto;
   }
 }
 
