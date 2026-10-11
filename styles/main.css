@@ -696,9 +696,6 @@ footer {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: stretch;
   gap: 2.6667rem;
-  width: 100%;
-  max-width: 101.6667rem;
-  min-height: 44.4444rem;
   margin: 0 auto;
 }
 
