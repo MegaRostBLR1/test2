@@ -4027,7 +4027,7 @@
     grid-template-rows: 579px auto;
     gap: 20px;
     min-height: 1259px;
-    padding: 45px;
+    padding: 45px 45px 35px;
   }
 
   .home-about__info {
