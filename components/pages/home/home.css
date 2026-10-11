@@ -3180,7 +3180,7 @@
 .home-about__hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 895px) minmax(0, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: minmax(0, 1fr) auto;
   gap: 30px 20px;
   min-height: 1000px;
@@ -3278,7 +3278,6 @@
   grid-row: 1;
   align-self: start;
   max-width: 747px;
-  margin-top: 218px;
   color: #fff;
   font-family: "Onest-Regular", sans-serif;
   font-size: 20px;
@@ -3287,12 +3286,8 @@
 }
 
 .home-about__video-links {
-  position: absolute;
-  top: 45px;
-  left: calc(50% + 186px);
   display: flex;
   gap: 18px;
-  transform: translateX(-50%);
 }
 
 .home-about__video-link {
