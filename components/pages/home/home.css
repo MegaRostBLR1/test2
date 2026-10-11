@@ -4247,6 +4247,10 @@
   }
 }
 
+.home-about__mobile-video {
+  display: none;
+}
+
 /* Figma 1857:26635 — mobile layout 360 px for the existing About section. */
 @media screen and (max-width: 680px) {
   .home-about {
