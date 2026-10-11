@@ -223,11 +223,20 @@
             <span class="project-card__video-label">Смотреть видео</span>
           </div>
 
-          <div class="project-card__controls" aria-hidden="true">
-            <span class="project-card__arrow project-card__arrow--previous"><svg viewBox="0 0 24 24" focusable="false"><path d="m15 5-7 7 7 7"/></svg></span>
-            <span class="project-card__pagination project-card__pagination--bottom"><span class="is-active"></span><span></span><span></span><span></span></span>
-            <span class="project-card__arrow project-card__arrow--next"><svg viewBox="0 0 24 24" focusable="false"><path d="m9 5 7 7-7 7"/></svg></span>
-          </div>
+          <nav class="home-hero__slider" aria-label="Навигация по слайдам">
+            <button class="home-hero__arrow home-hero__arrow--prev" type="button" aria-label="Предыдущий слайд" disabled>
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M24 8 12 20l12 12"></path></svg>
+            </button>
+            <div class="home-hero__pagination" aria-label="Слайд 1 из 4">
+              <span class="home-hero__dot is-active" aria-hidden="true"></span>
+              <span class="home-hero__dot" aria-hidden="true"></span>
+              <span class="home-hero__dot" aria-hidden="true"></span>
+              <span class="home-hero__dot" aria-hidden="true"></span>
+            </div>
+            <button class="home-hero__arrow home-hero__arrow--next" type="button" aria-label="Следующий слайд" disabled>
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="m16 8 12 12-12 12"></path></svg>
+            </button>
+          </nav>
         </div>
       </article>
 
@@ -293,11 +302,20 @@
             <p class="project-card__id">ID проекта: 34345334</p>
           </article>
         </div>
-        <div class="home-projects__secondary-controls" aria-hidden="true">
-          <span class="project-card__arrow project-card__arrow--previous"><svg viewBox="0 0 24 24" focusable="false"><path d="m15 5-7 7 7 7"/></svg></span>
-          <span class="project-card__pagination project-card__pagination--secondary"><span class="is-active"></span><span></span><span></span><span></span></span>
-          <span class="project-card__arrow project-card__arrow--next"><svg viewBox="0 0 24 24" focusable="false"><path d="m9 5 7 7-7 7"/></svg></span>
-        </div>
+        <nav class="home-hero__slider" aria-label="Навигация по слайдам">
+          <button class="home-hero__arrow home-hero__arrow--prev" type="button" aria-label="Предыдущий слайд" disabled>
+            <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M24 8 12 20l12 12"></path></svg>
+          </button>
+          <div class="home-hero__pagination" aria-label="Слайд 1 из 4">
+            <span class="home-hero__dot is-active" aria-hidden="true"></span>
+            <span class="home-hero__dot" aria-hidden="true"></span>
+            <span class="home-hero__dot" aria-hidden="true"></span>
+            <span class="home-hero__dot" aria-hidden="true"></span>
+          </div>
+          <button class="home-hero__arrow home-hero__arrow--next" type="button" aria-label="Следующий слайд" disabled>
+            <svg viewBox="0 0 40 40" aria-hidden="true"><path d="m16 8 12 12-12 12"></path></svg>
+          </button>
+        </nav>
       </div>
     </div>
   </div>
