@@ -33,17 +33,20 @@ function initHome() {
         : '<path d="M5 12h14"></path>';
     });
 
-    const zoomButton = document.querySelector('.home-agro__zoom');
-    const visual = document.querySelector('.home-agro__visual');
+    document.querySelectorAll('.home-agro__zoom').forEach((zoomButton) => {
+      const visual = zoomButton.closest('.home-agro__visual, .home-agro__tablet-visual');
 
-    if (zoomButton && visual) {
+      if (!visual) {
+        return;
+      }
+
       zoomButton.addEventListener('click', () => {
         const isExpanded = zoomButton.getAttribute('aria-expanded') === 'true';
         zoomButton.setAttribute('aria-expanded', String(!isExpanded));
         zoomButton.setAttribute('aria-label', isExpanded ? 'Увеличить изображение' : 'Уменьшить изображение');
         visual.classList.toggle('is-zoomed', !isExpanded);
       });
-    }
+    });
   }
 }
 
