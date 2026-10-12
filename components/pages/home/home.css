@@ -6191,3 +6191,17 @@
     font-size: 14px;
   }
 }
+
+.home-agro__visual.is-zoomed .home-agro__image {
+  transform: scale(1.5);
+}
+
+.home-agro__image {
+  transition: transform 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-agro__image {
+    transition: none;
+  }
+}
