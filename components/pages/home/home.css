@@ -6201,9 +6201,10 @@
 
 
 /* Агрокомплексы из ЛСТК — согласование пропорций для 1440 и 1024 px */
-@media screen and (min-width: 761px) and (max-width: 1600px) {
+@media screen and (min-width: 1101px) and (max-width: 1600px) {
   .home-agro__layout {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 684px) minmax(0, 1fr);
+    gap: 110px;
     align-items: start;
   }
 
