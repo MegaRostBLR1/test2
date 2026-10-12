@@ -5893,9 +5893,9 @@
 
 .home-agro__layout {
   display: grid;
-  grid-template-columns: minmax(0, 684px) minmax(0, 684px);
+  grid-template-columns: minmax(0, 684px) minmax(0, 1fr);
   justify-content: center;
-  gap: 140px;
+  gap: 110px;
   width: 100%;
   max-width: 1508px;
   min-width: 0;
@@ -6061,23 +6061,15 @@
   border-bottom: 0;
 }
 
-@media screen and (max-width: 1600px) {
-  .home-agro__panel {
-    gap: 32px;
-    padding: 72px 32px;
-  }
-
+@media screen and (min-width: 1101px) and (max-width: 1600px) {
   .home-agro__layout {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 64px;
+    grid-template-columns: minmax(0, 684px) minmax(0, 1fr);
+    gap: 110px;
   }
 
   .home-agro__visual {
-    min-height: 460px;
-  }
-
-  .home-agro__title {
-    font-size: 40px;
+    min-height: 0;
+    aspect-ratio: 684 / 523;
   }
 }
 
