@@ -123,6 +123,66 @@ function initHome() {
       });
     });
   }
+
+  const faqList = document.querySelector('.home-faq__list');
+
+  if (faqList && !faqList.dataset.initialized) {
+    faqList.dataset.initialized = 'true';
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const answerAnimations = new WeakMap();
+
+    const setAnswerExpanded = (answer, expanded) => {
+      const currentHeight = answer.getBoundingClientRect().height;
+      answerAnimations.get(answer)?.cancel();
+      if (expanded) answer.hidden = false;
+
+      if (reducedMotion.matches) {
+        answer.hidden = !expanded;
+        answer.style.removeProperty('height');
+        answer.style.removeProperty('opacity');
+        answerAnimations.delete(answer);
+        return;
+      }
+
+      const targetHeight = expanded ? answer.scrollHeight : 0;
+      const animation = answer.animate(
+        [
+          { height: `${currentHeight}px`, opacity: expanded ? 0.7 : 1 },
+          { height: `${targetHeight}px`, opacity: expanded ? 1 : 0.7 }
+        ],
+        { duration: 300, easing: 'ease-in-out' }
+      );
+      answerAnimations.set(answer, animation);
+      animation.addEventListener('finish', () => {
+        if (answerAnimations.get(answer) !== animation) return;
+        answerAnimations.delete(answer);
+        answer.hidden = !expanded;
+        answer.style.removeProperty('height');
+        answer.style.removeProperty('opacity');
+      }, { once: true });
+    };
+
+    faqList.addEventListener('click', (event) => {
+      const toggle = event.target.closest('.home-faq__toggle');
+      if (!toggle || !faqList.contains(toggle)) return;
+      const answer = document.getElementById(toggle.getAttribute('aria-controls'));
+      if (!answer) return;
+      const expanded = toggle.getAttribute('aria-expanded') !== 'true';
+
+      if (expanded) {
+        faqList.querySelectorAll('.home-faq__toggle[aria-expanded="true"]').forEach((openToggle) => {
+          if (openToggle === toggle) return;
+          openToggle.setAttribute('aria-expanded', 'false');
+          const openAnswer = document.getElementById(openToggle.getAttribute('aria-controls'));
+          if (openAnswer) setAnswerExpanded(openAnswer, false);
+        });
+      }
+
+      toggle.setAttribute('aria-expanded', String(expanded));
+      setAnswerExpanded(answer, expanded);
+    });
+  }
+}
 }
 
 const industriesStylesheet = './components/pages/home/home-industries.css';
