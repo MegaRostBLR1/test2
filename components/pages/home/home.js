@@ -12,6 +12,52 @@ function initHome() {
   if (agroAccordion && !agroAccordion.dataset.initialized) {
     agroAccordion.dataset.initialized = 'true';
 
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const contentAnimations = new WeakMap();
+
+    const setContentExpanded = (content, expanded) => {
+      const currentHeight = content.getBoundingClientRect().height;
+      contentAnimations.get(content)?.cancel();
+
+      if (expanded) {
+        content.hidden = false;
+      }
+
+      if (reducedMotion.matches) {
+        content.hidden = !expanded;
+        content.style.removeProperty('height');
+        content.style.removeProperty('overflow');
+        content.style.removeProperty('opacity');
+        contentAnimations.delete(content);
+        return;
+      }
+
+      const targetHeight = expanded ? content.scrollHeight : 0;
+      const animation = content.animate(
+        [
+          { height: `${currentHeight}px`, opacity: expanded ? 0.7 : 1 },
+          { height: `${targetHeight}px`, opacity: expanded ? 1 : 0.7 }
+        ],
+        {
+          duration: 300,
+          easing: 'ease-in-out'
+        }
+      );
+
+      contentAnimations.set(content, animation);
+      animation.addEventListener('finish', () => {
+        if (contentAnimations.get(content) !== animation) {
+          return;
+        }
+
+        contentAnimations.delete(content);
+        content.hidden = !expanded;
+        content.style.removeProperty('height');
+        content.style.removeProperty('overflow');
+        content.style.removeProperty('opacity');
+      }, { once: true });
+    };
+
     agroAccordion.addEventListener('click', (event) => {
       const toggle = event.target.closest('.home-agro__toggle');
 
@@ -20,17 +66,23 @@ function initHome() {
       }
 
       const item = toggle.closest('.home-agro__item');
-      const content = item.querySelector('.home-agro__item-content');
-      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+      const content = item?.querySelector('.home-agro__item-content');
 
-      toggle.setAttribute('aria-expanded', String(!isExpanded));
-      item.classList.toggle('is-open', !isExpanded);
-      content.hidden = isExpanded;
+      if (!item || !content) {
+        return;
+      }
+
+      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+      const expanded = !isExpanded;
+
+      toggle.setAttribute('aria-expanded', String(expanded));
+      item.classList.toggle('is-open', expanded);
+      setContentExpanded(content, expanded);
 
       const icon = toggle.querySelector('.home-agro__toggle-icon svg');
-      icon.innerHTML = isExpanded
-        ? '<path d="M12 5v14M5 12h14"></path>'
-        : '<path d="M5 12h14"></path>';
+      icon.innerHTML = expanded
+        ? '<path d="M5 12h14"></path>'
+        : '<path d="M12 5v14M5 12h14"></path>';
     });
 
     document.querySelectorAll('.home-agro__zoom').forEach((zoomButton) => {
