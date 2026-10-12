@@ -6406,3 +6406,141 @@
     transform: scale(1.5);
   }
 }
+
+
+/* Агрокомплексы — мобильная композиция Figma 1857:26849 (360 px).
+   Сохраняет десктопную сетку 1920/1440 и планшетную композицию 1024 px. */
+@media screen and (max-width: 680px) {
+  .home-agro {
+    padding: 0 10px 10px;
+  }
+
+  .home-agro__panel {
+    align-items: stretch;
+    gap: 25px;
+    padding: 0 4px 10px;
+    border-radius: 10px;
+  }
+
+  .home-agro__header {
+    padding-top: 20px;
+  }
+
+  .home-agro__title {
+    max-width: none;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .home-agro__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .home-agro__visual {
+    display: none;
+  }
+
+  .home-agro__accordion {
+    gap: 26px;
+    width: 100%;
+  }
+
+  .home-agro__item {
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .home-agro__toggle {
+    align-items: center;
+    gap: 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .home-agro__toggle-icon {
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .home-agro__toggle-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .home-agro__item-content {
+    gap: 14px;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .home-agro__item-copy {
+    margin-left: 54px;
+  }
+
+  .home-agro__item-copy ul {
+    display: none;
+  }
+
+  .home-agro__item.is-open {
+    gap: 8px;
+  }
+
+  .home-agro__tablet-visual {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 265px;
+    padding: 4px;
+    overflow: hidden;
+    border: 0;
+    border-radius: 30px;
+    background: #fff;
+  }
+
+  .home-agro__tablet-visual .home-agro__image {
+    inset: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border-radius: 30px;
+    object-fit: cover;
+  }
+
+  .home-agro__tablet-visual .home-agro__zoom {
+    z-index: 1;
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+  }
+
+  .home-agro__tablet-visual .home-agro__zoom svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home-agro__panel {
+    padding: 0 4px 10px;
+  }
+
+  .home-agro__title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .home-agro__toggle {
+    gap: 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .home-agro__item-content {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
