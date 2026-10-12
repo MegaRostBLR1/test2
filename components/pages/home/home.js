@@ -75,6 +75,29 @@ function initHome() {
       const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
       const expanded = !isExpanded;
 
+      if (expanded) {
+        agroAccordion.querySelectorAll('.home-agro__toggle[aria-expanded="true"]').forEach((openToggle) => {
+          if (openToggle === toggle) {
+            return;
+          }
+
+          const openItem = openToggle.closest('.home-agro__item');
+          const openContent = openItem?.querySelector('.home-agro__item-content');
+
+          openToggle.setAttribute('aria-expanded', 'false');
+          openItem?.classList.remove('is-open');
+
+          if (openContent) {
+            setContentExpanded(openContent, false);
+          }
+
+          const openIcon = openToggle.querySelector('.home-agro__toggle-icon svg');
+          if (openIcon) {
+            openIcon.innerHTML = '<path d="M12 5v14M5 12h14"></path>';
+          }
+        });
+      }
+
       toggle.setAttribute('aria-expanded', String(expanded));
       item.classList.toggle('is-open', expanded);
       setContentExpanded(content, expanded);
