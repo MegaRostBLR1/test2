@@ -183,7 +183,6 @@ function initHome() {
     });
   }
 }
-}
 
 const industriesStylesheet = './components/pages/home/home-industries.css';
 if (!document.querySelector('link[data-page-style="' + industriesStylesheet + '"]')) {
