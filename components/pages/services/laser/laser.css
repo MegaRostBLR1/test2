@@ -1,67 +1,213 @@
-/* Страница лазерной резки металла */
+/* Hero страницы лазерной резки металла */
 .laser {
-  padding: 32px 0 64px;
-}
-
-.laser__container {
-  width: 100%;
+  padding-bottom: 2.2222rem;
 }
 
 .laser__breadcrumbs {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 0.4444rem;
+  width: calc(100% - 0.5556rem);
+  max-width: 106.1111rem;
+  min-height: 3.4444rem;
+  margin: 0 auto;
+  padding: 0 0.2778rem;
+  color: #4d4d4d;
+  font-size: 0.7778rem;
+  line-height: 1.5;
 }
 
 .laser__breadcrumb-link {
   color: inherit;
-  text-decoration: none;
+  transition: color 0.15s ease;
 }
 
 .laser__breadcrumb-link:hover {
-  text-decoration: underline;
+  color: #324c88;
 }
 
-.laser__intro {
-  max-width: 900px;
-  margin-bottom: 48px;
+.laser__breadcrumb-separator {
+  color: #979a9b;
+}
+
+.laser__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46.6111rem;
+  padding: 4.4444rem 2.2222rem 3.3333rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #25313a;
+  background-image: linear-gradient(90deg, rgb(9 19 29 / 66%), rgb(9 19 29 / 50%)), url('../../../static/images/home/home-advantages-factory.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.laser__hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 72.2222rem;
+  margin: 0 auto;
 }
 
 .laser__title {
-  margin: 0 0 20px;
+  max-width: 100%;
+  margin: 0 0 1.6667rem;
+  color: #ffffff;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.laser__description,
-.laser__text {
-  max-width: 760px;
+.laser__description {
+  max-width: 65.5556rem;
   margin: 0;
+  color: #ffffff;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
 }
 
-.laser__content {
-  max-width: 900px;
-  margin-bottom: 32px;
+.laser__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.1111rem;
+  margin-top: 2.2222rem;
 }
 
-.laser__subtitle {
-  margin: 0 0 16px;
+.laser__action.btn {
+  min-height: 3.8889rem;
+  padding: 1.1111rem 2.2222rem;
+  font-size: 0.8889rem;
+  line-height: 1.5556rem;
 }
 
-.laser__button {
+.laser__price-link {
   display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6667rem;
+  margin-top: 2.2222rem;
+  color: #ffffff;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 0.7778rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  transition: opacity 0.15s ease;
+}
+
+.laser__price-link:hover {
+  opacity: 0.8;
+}
+
+.laser__price-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.7778rem;
+  height: 2.7778rem;
+  border-radius: 50%;
+  color: #324c88;
+  background-color: #ffffff;
+}
+
+.laser__price-icon svg {
+  display: block;
+  width: 1.3333rem;
+  height: 1.3333rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media screen and (max-width: 1300px) {
+  .laser__hero {
+    min-height: 40rem;
+    padding: 3.3333rem 1.6667rem;
+  }
+
+  .laser__title {
+    font-size: 2.4444rem;
+  }
+
+  .laser__description {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 680px) {
   .laser {
-    padding: 24px 0 40px;
+    padding-bottom: 1.1111rem;
   }
 
   .laser__breadcrumbs {
-    margin-bottom: 24px;
+    width: 100%;
+    min-height: 2.7778rem;
+    padding: 0 0.7778rem;
+    font-size: 0.7222rem;
   }
 
-  .laser__intro {
-    margin-bottom: 32px;
+  .laser__hero {
+    min-height: 0;
+    padding: 3.3333rem 1.1111rem;
+    background-position: center;
+  }
+
+  .laser__hero-content {
+    max-width: 35rem;
+  }
+
+  .laser__title {
+    margin-bottom: 1.1111rem;
+    font-size: 1.6667rem;
+    line-height: 1.25;
+  }
+
+  .laser__description {
+    font-size: 0.8889rem;
+    line-height: 1.55;
+  }
+
+  .laser__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6667rem;
+    width: 100%;
+    margin-top: 1.6667rem;
+  }
+
+  .laser__action.btn {
+    width: 100%;
+    min-height: 3.1111rem;
+    padding: 0.7778rem 1.1111rem;
+    border-radius: 0.6667rem;
+    font-size: 0.7778rem;
+  }
+
+  .laser__price-link {
+    margin-top: 1.6667rem;
+    font-size: 0.7222rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .laser__breadcrumb-link,
+  .laser__price-link {
+    transition: none;
   }
 }
