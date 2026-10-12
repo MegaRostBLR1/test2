@@ -25,6 +25,13 @@ const APP_CONFIG = {
       js: './components/pages/services/services.js',
       init: 'initServices'
     },
+    'laser': {
+      title: 'Лазерная резка металла',
+      html: './components/pages/services/laser/laser.html',
+      css: './components/pages/services/laser/laser.css',
+      js: './components/pages/services/laser/laser.js',
+      init: 'initLaser'
+    },
     'objects': {
       title: 'Объекты',
       html: './components/pages/objects/objects.html',
@@ -167,10 +174,10 @@ function loadScript(url) {
 
 function getPageName() {
   const hashRoute = window.location.hash
-    .replace(/^#\/?/, '')
-    .split(/[?&]/, 1)[0]
-    .trim()
-    .toLowerCase();
+      .replace(/^#\/?/, '')
+      .split(/[?&]/, 1)[0]
+      .trim()
+      .toLowerCase();
 
   const route = hashRoute || APP_CONFIG.defaultPage;
 
@@ -234,7 +241,7 @@ function initNavigationRouting() {
     'Комплектующие для ворот': 'objects',
     'Оцинкованный профиль': 'objects',
     'Услуги': 'services',
-    'Лазерная резка': 'services',
+    'Лазерная резка': 'laser',
     'Лизинг зданий': 'services',
     'Консалтинг': 'services',
     'Проектирование': 'services',
@@ -255,14 +262,14 @@ function initNavigationRouting() {
   };
 
   document.querySelectorAll('.app-header a.nav-link, .app-header a.nav-list__nested-list-link')
-    .forEach((link) => {
-      const label = link.textContent.trim().replace(/\s+/g, ' ');
-      const route = routeByLabel[label];
+      .forEach((link) => {
+        const label = link.textContent.trim().replace(/\s+/g, ' ');
+        const route = routeByLabel[label];
 
-      if (route) {
-        link.href = `#/${route}`;
-      }
-    });
+        if (route) {
+          link.href = `#/${route}`;
+        }
+      });
 }
 
 async function initApp() {
