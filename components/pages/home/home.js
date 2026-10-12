@@ -6,16 +6,7 @@ function initHome() {
   }
 
   // Навигация слайдера остаётся неактивной, пока в проект не добавлены остальные слайды.
-}
 
-  const industriesStylesheet = './components/pages/home/home-industries.css';
-  if (!document.querySelector('link[data-page-style="' + industriesStylesheet + '"]')) {
-    const stylesheet = document.createElement('link');
-    stylesheet.rel = 'stylesheet';
-    stylesheet.href = industriesStylesheet;
-    stylesheet.dataset.pageStyle = industriesStylesheet;
-    document.head.append(stylesheet);
-  
   const agroAccordion = document.querySelector('.home-agro__accordion');
 
   if (agroAccordion && !agroAccordion.dataset.initialized) {
@@ -49,9 +40,18 @@ function initHome() {
       zoomButton.addEventListener('click', () => {
         const isExpanded = zoomButton.getAttribute('aria-expanded') === 'true';
         zoomButton.setAttribute('aria-expanded', String(!isExpanded));
+        zoomButton.setAttribute('aria-label', isExpanded ? 'Увеличить изображение' : 'Уменьшить изображение');
         visual.classList.toggle('is-zoomed', !isExpanded);
       });
     }
   }
+}
 
+const industriesStylesheet = './components/pages/home/home-industries.css';
+if (!document.querySelector('link[data-page-style="' + industriesStylesheet + '"]')) {
+  const stylesheet = document.createElement('link');
+  stylesheet.rel = 'stylesheet';
+  stylesheet.href = industriesStylesheet;
+  stylesheet.dataset.pageStyle = industriesStylesheet;
+  document.head.append(stylesheet);
 }
