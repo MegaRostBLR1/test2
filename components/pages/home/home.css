@@ -5669,7 +5669,7 @@
     gap: 30px;
   }
 
-  .home-news__card:nth-child(n + 3) {
+  .home-news__card--tablet-hidden {
     display: none;
   }
 
