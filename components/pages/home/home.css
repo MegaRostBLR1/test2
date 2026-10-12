@@ -5903,6 +5903,7 @@
 
 .home-agro__visual {
   position: relative;
+  overflow: hidden;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
