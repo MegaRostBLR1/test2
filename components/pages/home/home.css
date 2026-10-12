@@ -6544,3 +6544,156 @@
     line-height: 21px;
   }
 }
+
+/* Вопросы о компании — Figma 1857:24696. */
+.home-faq {
+  width: 100%;
+  padding: 0 40px 40px;
+}
+
+.home-faq__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 30px;
+  width: 100%;
+  max-width: 1780px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+  background: #F5F8F7;
+}
+
+.home-faq__title {
+  align-self: center;
+  margin: 0;
+  color: #4D4D4D;
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home-faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.home-faq__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-width: 0;
+  padding: 30px;
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+
+.home-faq__question {
+  min-width: 0;
+  margin: 0;
+  color: #4D4D4D;
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  overflow-wrap: anywhere;
+  text-transform: uppercase;
+}
+
+.home-faq__icon {
+  display: flex;
+  flex: 0 0 40px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #E9ECF3;
+}
+
+.home-faq__icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #324C88;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+@media screen and (max-width: 1300px) {
+  .home-faq {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+
+  .home-faq__panel {
+    padding: 32px;
+  }
+
+  .home-faq__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .home-faq__question {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .home-faq__item {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .home-faq {
+    padding: 0 10px 10px;
+  }
+
+  .home-faq__panel {
+    gap: 20px;
+    padding: 24px 12px;
+    border-radius: 10px;
+  }
+
+  .home-faq__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .home-faq__item {
+    gap: 12px;
+    padding: 16px 12px;
+    border-radius: 12px;
+  }
+
+  .home-faq__question {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .home-faq__icon {
+    flex-basis: 32px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .home-faq__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-faq__icon svg {
+    transition: none;
+  }
+}
+
