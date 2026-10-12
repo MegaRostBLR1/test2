@@ -6053,10 +6053,6 @@
   padding-left: 0;
 }
 
-.home-agro__item.is-open {
-  gap: 20px;
-}
-
 .home-agro__item:last-child {
   padding-bottom: 0;
   border-bottom: 0;
@@ -6483,10 +6479,6 @@
 
   .home-agro__item-copy ul {
     display: none;
-  }
-
-  .home-agro__item.is-open {
-    gap: 8px;
   }
 
   .home-agro__tablet-visual {
