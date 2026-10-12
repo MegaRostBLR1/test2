@@ -6705,3 +6705,47 @@
   }
 }
 
+/* FAQ — Figma 1857:26229, tablet frame 1024 px. Desktop 1920/1440 keeps its own typography. */
+@media screen and (min-width: 761px) and (max-width: 1100px) {
+  .home-faq {
+    padding: 0 10px 10px;
+  }
+
+  .home-faq__panel {
+    gap: 30px;
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  .home-faq__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .home-faq__list {
+    gap: 4px;
+  }
+
+  .home-faq__item {
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .home-faq__question {
+    font-size: 18px;
+    line-height: 30px;
+    white-space: normal;
+  }
+
+  .home-faq__icon {
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .home-faq__icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}
