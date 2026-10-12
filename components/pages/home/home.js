@@ -7,56 +7,70 @@ function initHome() {
 
   // Навигация слайдера остаётся неактивной, пока в проект не добавлены остальные слайды.
 
+  const accordionAnimations = new WeakMap();
+  const animateAccordionContent = (content, expanded) => {
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const computed = window.getComputedStyle(content);
+    const currentHeight = computed.height;
+    const currentPaddingTop = computed.paddingTop;
+    const targetPaddingTop = computed.paddingTop;
+    const targetPaddingBottom = computed.paddingBottom;
+    const boxSizing = computed.boxSizing;
+
+    accordionAnimations.get(content)?.cancel();
+
+    if (expanded) {
+      content.hidden = false;
+    }
+
+    if (reducedMotion.matches) {
+      content.hidden = !expanded;
+      content.style.removeProperty('height');
+      content.style.removeProperty('overflow');
+      content.style.removeProperty('padding-top');
+      accordionAnimations.delete(content);
+      return;
+    }
+
+    if (expanded) {
+      content.style.height = '0px';
+      content.style.paddingTop = '0px';
+    } else {
+      content.style.height = currentHeight;
+      content.style.paddingTop = currentPaddingTop;
+    }
+    content.style.overflow = 'hidden';
+
+    const startHeight = Number.parseFloat(content.style.height) || 0;
+    const startPaddingTop = Number.parseFloat(content.style.paddingTop) || 0;
+    const targetHeight = expanded
+      ? content.scrollHeight - (boxSizing === 'border-box'
+        ? 0
+        : Number.parseFloat(targetPaddingTop) + Number.parseFloat(targetPaddingBottom))
+      : 0;
+    const animation = content.animate(
+      [
+        { height: `${startHeight}px`, paddingTop: `${startPaddingTop}px` },
+        { height: `${Math.max(0, targetHeight)}px`, paddingTop: expanded ? targetPaddingTop : '0px' }
+      ],
+      { duration: 300, easing: 'ease-in-out' }
+    );
+
+    accordionAnimations.set(content, animation);
+    animation.addEventListener('finish', () => {
+      if (accordionAnimations.get(content) !== animation) return;
+      accordionAnimations.delete(content);
+      content.hidden = !expanded;
+      content.style.removeProperty('height');
+      content.style.removeProperty('overflow');
+      content.style.removeProperty('padding-top');
+    }, { once: true });
+  };
+
   const agroAccordion = document.querySelector('.home-agro__accordion');
 
   if (agroAccordion && !agroAccordion.dataset.initialized) {
     agroAccordion.dataset.initialized = 'true';
-
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const contentAnimations = new WeakMap();
-
-    const setContentExpanded = (content, expanded) => {
-      const currentHeight = content.getBoundingClientRect().height;
-      contentAnimations.get(content)?.cancel();
-
-      if (expanded) {
-        content.hidden = false;
-      }
-
-      if (reducedMotion.matches) {
-        content.hidden = !expanded;
-        content.style.removeProperty('height');
-        content.style.removeProperty('overflow');
-        content.style.removeProperty('opacity');
-        contentAnimations.delete(content);
-        return;
-      }
-
-      const targetHeight = expanded ? content.scrollHeight : 0;
-      const animation = content.animate(
-        [
-          { height: `${currentHeight}px`, opacity: expanded ? 0.7 : 1 },
-          { height: `${targetHeight}px`, opacity: expanded ? 1 : 0.7 }
-        ],
-        {
-          duration: 300,
-          easing: 'ease-in-out'
-        }
-      );
-
-      contentAnimations.set(content, animation);
-      animation.addEventListener('finish', () => {
-        if (contentAnimations.get(content) !== animation) {
-          return;
-        }
-
-        contentAnimations.delete(content);
-        content.hidden = !expanded;
-        content.style.removeProperty('height');
-        content.style.removeProperty('overflow');
-        content.style.removeProperty('opacity');
-      }, { once: true });
-    };
 
     agroAccordion.addEventListener('click', (event) => {
       const toggle = event.target.closest('.home-agro__toggle');
@@ -88,7 +102,7 @@ function initHome() {
           openItem?.classList.remove('is-open');
 
           if (openContent) {
-            setContentExpanded(openContent, false);
+            animateAccordionContent(openContent, false);
           }
 
           const openIcon = openToggle.querySelector('.home-agro__toggle-icon svg');
@@ -100,7 +114,7 @@ function initHome() {
 
       toggle.setAttribute('aria-expanded', String(expanded));
       item.classList.toggle('is-open', expanded);
-      setContentExpanded(content, expanded);
+      animateAccordionContent(content, expanded);
 
       const icon = toggle.querySelector('.home-agro__toggle-icon svg');
       icon.innerHTML = expanded
@@ -128,40 +142,6 @@ function initHome() {
 
   if (faqList && !faqList.dataset.initialized) {
     faqList.dataset.initialized = 'true';
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const answerAnimations = new WeakMap();
-
-    const setAnswerExpanded = (answer, expanded) => {
-      const currentHeight = answer.getBoundingClientRect().height;
-      answerAnimations.get(answer)?.cancel();
-      if (expanded) answer.hidden = false;
-
-      if (reducedMotion.matches) {
-        answer.hidden = !expanded;
-        answer.style.removeProperty('height');
-        answer.style.removeProperty('opacity');
-        answerAnimations.delete(answer);
-        return;
-      }
-
-      const targetHeight = expanded ? answer.scrollHeight : 0;
-      const animation = answer.animate(
-        [
-          { height: `${currentHeight}px`, opacity: expanded ? 0.7 : 1 },
-          { height: `${targetHeight}px`, opacity: expanded ? 1 : 0.7 }
-        ],
-        { duration: 300, easing: 'ease-in-out' }
-      );
-      answerAnimations.set(answer, animation);
-      animation.addEventListener('finish', () => {
-        if (answerAnimations.get(answer) !== animation) return;
-        answerAnimations.delete(answer);
-        answer.hidden = !expanded;
-        answer.style.removeProperty('height');
-        answer.style.removeProperty('opacity');
-      }, { once: true });
-    };
-
     faqList.addEventListener('click', (event) => {
       const toggle = event.target.closest('.home-faq__toggle');
       if (!toggle || !faqList.contains(toggle)) return;
@@ -174,12 +154,12 @@ function initHome() {
           if (openToggle === toggle) return;
           openToggle.setAttribute('aria-expanded', 'false');
           const openAnswer = document.getElementById(openToggle.getAttribute('aria-controls'));
-          if (openAnswer) setAnswerExpanded(openAnswer, false);
+          if (openAnswer) animateAccordionContent(openAnswer, false);
         });
       }
 
       toggle.setAttribute('aria-expanded', String(expanded));
-      setAnswerExpanded(answer, expanded);
+      animateAccordionContent(answer, expanded);
     });
   }
 }
