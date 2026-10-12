@@ -10,6 +10,7 @@ function initHome() {
   const accordionAnimations = new WeakMap();
   const animateAccordionContent = (content, expanded) => {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const wasHidden = content.hidden;
     const computed = window.getComputedStyle(content);
     const currentHeight = computed.height;
     const currentPaddingTop = computed.paddingTop;
@@ -32,7 +33,7 @@ function initHome() {
       return;
     }
 
-    if (expanded) {
+    if (expanded && wasHidden) {
       content.style.height = '0px';
       content.style.paddingTop = '0px';
     } else {
