@@ -6545,10 +6545,10 @@
   }
 }
 
-/* Вопросы о компании — Figma 1857:24696. */
+/* Вопросы о компании — Figma 1857:24696 (1920 px) и 1857:25201 (1440 px). */
 .home-faq {
   width: 100%;
-  padding: 0 40px 40px;
+  padding: 0 0 40px;
 }
 
 .home-faq__panel {
@@ -6557,7 +6557,6 @@
   align-items: stretch;
   gap: 30px;
   width: 100%;
-  max-width: 1780px;
   margin: 0 auto;
   padding: 40px;
   border-radius: 10px;
@@ -6625,6 +6624,15 @@
   stroke: #324C88;
   stroke-linecap: round;
   stroke-width: 2;
+}
+
+
+/* Figma desktop frame 1440 px: H3 Semibold 36/44; preserve 1920 px typography above this range. */
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+  .home-faq__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
