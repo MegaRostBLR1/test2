@@ -2127,3 +2127,117 @@
     display: none;
   }
 }
+
+
+/* Figma 360 px: преимущества лазерной резки. */
+@media screen and (max-width: 680px) {
+  .laser-benefits {
+    padding: 10px;
+  }
+
+  .laser-benefits__panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 10px;
+    border-radius: 30px;
+  }
+
+  .laser-benefits__header {
+    margin-bottom: 0;
+  }
+
+  .laser-benefits__title {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .laser-benefits__layout {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .laser-benefits__accordion {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .laser-benefits__item {
+    gap: 20px;
+  }
+
+  .laser-benefits__item-body {
+    gap: 14px;
+  }
+
+  .laser-benefits__item-toggle {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .laser-benefits__toggle-icon {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .laser-benefits__toggle-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .laser-benefits__item-title {
+    padding-top: 1px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .laser-benefits__item-content {
+    gap: 14px;
+    padding-left: 44px;
+  }
+
+  .laser-benefits__description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .laser-benefits__more.btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .laser-benefits__visual--desktop {
+    display: none;
+  }
+
+  .laser-benefits__visual--tablet {
+    display: block;
+    width: calc(100% + 44px);
+    aspect-ratio: 340 / 330;
+    height: auto;
+    margin-left: -44px;
+    padding: 4px;
+    border-radius: 30px;
+  }
+
+  .laser-benefits__visual--tablet .laser-benefits__image {
+    border-radius: 26px;
+  }
+
+  .laser-benefits__visual--tablet .laser-benefits__zoom {
+    right: 10px;
+    bottom: 10px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .laser-benefits__visual--tablet .laser-benefits__zoom img {
+    width: 28px;
+    height: 28px;
+  }
+}
