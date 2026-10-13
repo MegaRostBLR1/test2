@@ -32,6 +32,13 @@ const APP_CONFIG = {
       js: './components/pages/services/laser/laser.js',
       init: 'initLaser'
     },
+    'buildings': {
+      title: 'Быстровозводимые здания',
+      html: './components/pages/buildings/buildings.html',
+      css: './components/pages/buildings/buildings.css',
+      js: './components/pages/buildings/buildings.js',
+      init: 'initBuildings'
+    },
     'objects': {
       title: 'Объекты',
       html: './components/pages/objects/objects.html',
@@ -235,7 +242,7 @@ async function renderPage(pageName) {
 function initNavigationRouting() {
   const routeByLabel = {
     'Продукция': 'objects',
-    'Быстровозводимые здания': 'objects',
+    'Быстровозводимые здания': 'buildings',
     'Легкие металлоконструкции': 'objects',
     'Сэндвич панели': 'objects',
     'Комплектующие для ворот': 'objects',
