@@ -538,6 +538,51 @@
   overflow-wrap: anywhere;
 }
 
+/* Макет преимуществ: на 1440 px повторяет Figma, на широком desktop сохраняет сетку 1920 px. */
+@media screen and (max-width: 1600px) {
+  .laser-benefits__header {
+    gap: 1.3333rem;
+    padding: 1.1111rem 2.2222rem 1.3333rem;
+  }
+
+  .laser-benefits__title {
+    font-size: 2rem;
+    line-height: 1.2222;
+  }
+
+  .laser-benefits__navigation {
+    flex-wrap: nowrap;
+    gap: 1.1111rem;
+    padding: 0.2222rem 0.2222rem 0.2222rem 1rem;
+  }
+
+  .laser-benefits__navigation-link {
+    font-size: 1.1111rem;
+  }
+
+  .laser-benefits__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.1111rem;
+    padding-right: 2.2222rem;
+    padding-left: 2.2222rem;
+  }
+
+  .laser-benefits__card {
+    min-height: 17.7778rem;
+    gap: 2rem;
+    padding: 1.3333rem;
+    border-radius: 1.6667rem;
+  }
+
+  .laser-benefits__card-title {
+    font-size: 1.2222rem;
+  }
+
+  .laser-benefits__description {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .laser-benefits__header {
     padding-right: 1.6667rem;
