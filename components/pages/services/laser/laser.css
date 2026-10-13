@@ -1075,7 +1075,7 @@
 
 /* Калькулятор резки металла — Figma 1857:33464 */
 .laser-calculator {
-  width: calc(100% - 1.1111rem);
+  width: 100%;
   margin: 1.1111rem auto 0;
   padding: 0.5556rem;
   border-radius: 0.5556rem;
