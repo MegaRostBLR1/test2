@@ -1868,3 +1868,142 @@
     transition: none;
   }
 }
+
+
+/* Mobile frame 360 px — Figma 1857:38832. Overrides are scoped to this section. */
+@media screen and (max-width: 480px) {
+  .laser-materials {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0 0 10px;
+    border-radius: 20px;
+  }
+
+  .laser-materials__panel {
+    align-items: stretch;
+    gap: 25px;
+    padding: 20px 0 0;
+    border-radius: 20px;
+  }
+
+  .laser-materials__header {
+    gap: 14px;
+    padding: 0 10px;
+  }
+
+  .laser-materials__title {
+    font-size: 20px;
+    line-height: 28px;
+    overflow-wrap: normal;
+  }
+
+  .laser-materials__tabs {
+    gap: 20px;
+    padding: 4px;
+  }
+
+  .laser-materials__tab {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .laser-materials__tab-separator {
+    flex-basis: 4px;
+    width: 4px;
+    height: 4px;
+  }
+
+  .laser-materials__layout {
+    display: block;
+    width: 100%;
+  }
+
+  .laser-materials__list {
+    gap: 26px;
+    padding: 0 10px;
+  }
+
+  .laser-materials__item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .laser-materials__toggle {
+    align-items: flex-start;
+    gap: 24px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .laser-materials__toggle-icon {
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .laser-materials__toggle-icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .laser-materials__item:nth-child(2) .laser-materials__toggle-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .laser-materials__description {
+    gap: 14px;
+    padding: 0 0 0 54px;
+  }
+
+  .laser-materials__description p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .laser-materials__more.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .laser-materials__visual--desktop {
+    display: none;
+  }
+
+  .laser-materials__visual--tablet {
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 265px;
+    aspect-ratio: auto;
+    padding: 4px;
+    border-radius: 30px;
+  }
+
+  .laser-materials__image {
+    min-width: 0;
+    border-radius: 26px;
+  }
+
+  .laser-materials__zoom {
+    right: 10px;
+    bottom: 10px;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border-radius: 10px;
+  }
+
+  .laser-materials__zoom img {
+    width: 28px;
+    height: 28px;
+  }
+}
