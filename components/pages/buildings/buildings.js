@@ -176,8 +176,8 @@ function initBuildings() {
     const lightboxImage = gallery.querySelector('.buildings-gallery__lightbox-image');
     const zoom = gallery.querySelector('.buildings-gallery__zoom');
     const galleryImages = [
-      'https://www.figma.com/api/mcp/asset/945c4150-c196-4499-9017-1befbb305cf2/45237.png',
-      'https://www.figma.com/api/mcp/asset/945c4150-c196-4499-9017-1befbb305cf2/fa91b.png'
+      'https://www.figma.com/api/mcp/asset/5648ade9-e8a3-4d99-bbab-194096e7b33b/45237.png',
+      'https://www.figma.com/api/mcp/asset/5648ade9-e8a3-4d99-bbab-194096e7b33b/fa91b.png'
     ];
     let activeIndex = 0;
 
