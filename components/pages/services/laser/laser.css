@@ -2055,7 +2055,7 @@
 @media screen and (min-width: 681px) and (max-width: 1100px) {
   .laser-benefits__panel {
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 30px;
   }
 
   .laser-benefits__header {
