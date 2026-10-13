@@ -12,6 +12,7 @@ function initLaser() {
       });
     });
   });
+  initLaserCalculatorSettings();
 }
 
 function initLaserCalculatorSettings() {
@@ -42,5 +43,3 @@ function initLaserCalculatorSettings() {
   document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !popup.hidden) { setOpen(false); toggle.focus(); } });
   document.addEventListener('click', (event) => { if (!popup.hidden && !root.querySelector('.laser-calculator__settings').contains(event.target)) setOpen(false); });
 }
-const initLaserBase = initLaser;
-function initLaser() { initLaserBase(); initLaserCalculatorSettings(); }
