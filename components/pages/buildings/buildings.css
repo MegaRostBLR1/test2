@@ -728,3 +728,182 @@
   }
 }
 
+
+
+/* Figma 1857:46660 — мобильная версия 360 px.
+   Планшетный и desktop-макеты выше остаются независимыми. */
+@media (max-width: 680px) {
+  .buildings__agro {
+    min-height: 480px;
+    margin: 5px;
+    padding: 30px 0 0;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #2b2b2b;
+  }
+
+  .buildings__agro-inner {
+    width: 100%;
+    min-height: 0;
+    padding: 0 4px;
+  }
+
+  .buildings__agro-content {
+    gap: 48px;
+    width: 100%;
+  }
+
+  .buildings__agro-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .buildings__agro-heading {
+    gap: 12px;
+    width: 100%;
+  }
+
+  .buildings__agro-category {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .buildings__agro-title {
+    width: 100%;
+    max-width: 342px;
+    font-size: 22px;
+    line-height: 30px;
+    overflow-wrap: normal;
+  }
+
+  .buildings__agro-description {
+    width: 100%;
+    max-width: 342px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .buildings__agro-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .buildings__agro-action.btn {
+    width: 286px;
+    max-width: 100%;
+    min-height: 54px;
+    padding: 18px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+
+  .buildings__agro-illustration {
+    display: none;
+  }
+
+  .buildings__agro-tabs {
+    top: auto;
+    right: auto;
+    bottom: 8px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 334px;
+    max-width: calc(100% - 16px);
+    min-height: 52px;
+    height: 52px;
+    padding: 14px 20px;
+    overflow: visible;
+    border: 0;
+    border-radius: 20px;
+    background: #ededed33;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    transform: translateX(-50%);
+  }
+
+  .buildings__agro-tab {
+    display: none;
+    height: auto;
+    padding: 0;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .buildings__agro-tab.is-active {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    background: transparent;
+    color: #ffffff;
+  }
+
+  .buildings__agro-tabs-toggle {
+    display: flex;
+    flex: 0 0 24px;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    color: #ffffff;
+  }
+
+  .buildings__agro-tabs-toggle img {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .buildings__agro-tabs.is-open {
+    top: auto;
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px 16px;
+    width: auto;
+    max-width: none;
+    height: auto;
+    min-height: 52px;
+    padding: 14px 20px;
+    transform: none;
+  }
+
+  .buildings__agro-tabs.is-open .buildings__agro-tab {
+    display: flex;
+    flex: 0 0 auto;
+    padding: 6px 8px;
+    border-radius: 8px;
+  }
+
+  .buildings__agro-tabs.is-open .buildings__agro-tab.is-active {
+    background: #ffffff;
+    color: #324c88;
+  }
+}
+
+@media (max-width: 375px) {
+  .buildings__agro-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .buildings__agro-tabs {
+    width: 334px;
+  }
+}
