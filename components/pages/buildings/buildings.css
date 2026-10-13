@@ -942,3 +942,270 @@
     width: 334px;
   }
 }
+
+/* Секция «Описание» — Figma 1857:40155, фрейм 1920 × 958. */
+.buildings-description {
+  margin: 0 0.5556rem 0.5556rem;
+  padding: 5.3333rem 2.2222rem;
+  border-radius: 1.1111rem;
+  background: #f5f8f7;
+  color: #4d4d4dcc;
+}
+.buildings-description__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 101.1111rem;
+  margin: 0 auto;
+}
+.buildings-description__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3333rem;
+  width: 100%;
+}
+.buildings-description__title {
+  width: 100%;
+  margin: 0;
+  color: #4d4d4d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.buildings-description__industries {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.3333rem;
+  font-weight: 400;
+  line-height: 1.7222rem;
+}
+.buildings-description__industries-label { color: #4d4d4dcc; }
+.buildings-description__industries-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7778rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.buildings-description__industry {
+  color: #324c88;
+  text-decoration: underline;
+  text-underline-offset: 0.1111rem;
+}
+.buildings-description__content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 7.7778rem;
+  width: 100%;
+  max-width: 83.7778rem;
+}
+.buildings-description__media {
+  min-width: 0;
+  padding: 0.2222rem;
+  border-radius: 1.6667rem;
+  background: #ffffff;
+}
+.buildings-description__image-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5556rem;
+  isolation: isolate;
+}
+.buildings-description__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 676 / 593;
+  border-radius: inherit;
+  object-fit: cover;
+}
+.buildings-description__zoom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5556rem;
+  height: 3.5556rem;
+  padding: 0.1111rem;
+  border-radius: 0.5556rem 0 0.5556rem 0;
+  background: #ffffff0a;
+  box-shadow: inset 0 0 3.3333rem #ffffff08;
+  -webkit-backdrop-filter: blur(1.3333rem);
+  backdrop-filter: blur(1.3333rem);
+  color: #ffffff;
+}
+.buildings-description__zoom img { display: block; width: 2rem; height: 2rem; }
+.buildings-description__zoom:focus-visible,
+.buildings-description__trigger:focus-visible,
+.buildings-description__more:focus-visible,
+.buildings-description__lightbox-close:focus-visible {
+  outline: 0.1111rem solid #324c88;
+  outline-offset: 0.2222rem;
+}
+.buildings-description__accordion { min-width: 0; width: 100%; color: #4d4d4dcc; }
+.buildings-description__item { border-top: 1px solid #0000000d; }
+.buildings-description__item + .buildings-description__item { padding-top: 1.4444rem; }
+.buildings-description__trigger {
+  display: flex;
+  align-items: center;
+  gap: 1.3333rem;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  color: #4d4d4d;
+  text-align: left;
+}
+.buildings-description__icon {
+  display: flex;
+  flex: 0 0 2.2222rem;
+  align-items: center;
+  justify-content: center;
+  width: 2.2222rem;
+  height: 2.2222rem;
+  border-radius: 50%;
+  background: #fff500;
+}
+.buildings-description__icon img { display: block; width: 1.3333rem; height: 1.3333rem; }
+.buildings-description__item-title {
+  display: block;
+  min-width: 0;
+  color: #4d4d4d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 600;
+  line-height: 1.6667rem;
+  text-transform: uppercase;
+}
+.buildings-description__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-left: 3.5556rem;
+  padding-top: 1rem;
+}
+.buildings-description__panel[hidden] { display: none; }
+.buildings-description__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7778rem;
+  width: 100%;
+  color: #4d4d4dcc;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.buildings-description__copy p { margin: 0; }
+.buildings-description__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.3333rem;
+  padding: 1rem 1.6667rem;
+  border-radius: 0.5556rem;
+  background: #324c88;
+  color: #ffffff;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 0.8333rem;
+  font-weight: 600;
+  line-height: 1.3333rem;
+  text-transform: uppercase;
+  transition: background-color 0.15s ease;
+}
+.buildings-description__more:hover { background: #324c88cc; }
+.buildings-description__lightbox {
+  width: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  padding: 1rem;
+  overflow: auto;
+  border: 0;
+  border-radius: 1.1111rem;
+  background: #f5f8f7;
+}
+.buildings-description__lightbox::backdrop { background: #000000b3; }
+.buildings-description__lightbox-controls { display: flex; justify-content: flex-end; margin-bottom: 0.5556rem; }
+.buildings-description__lightbox-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6667rem;
+  height: 2.6667rem;
+  border-radius: 0.5556rem;
+  background: #ffffff;
+  color: #324c88;
+  font-size: 2rem;
+  line-height: 1;
+}
+.buildings-description__lightbox-image {
+  display: block;
+  width: auto;
+  max-width: 84vw;
+  max-height: 78vh;
+  object-fit: contain;
+}
+@media (max-width: 1600px) {
+  .buildings-description { padding: 4rem 2.2222rem; }
+  .buildings-description__content { gap: 3.3333rem; }
+  .buildings-description__title { font-size: 2.3333rem; }
+  .buildings-description__industries { font-size: 1.1111rem; line-height: 1.7222rem; }
+  .buildings-description__item-title { font-size: 1rem; }
+  .buildings-description__copy { font-size: 0.8889rem; }
+}
+@media (max-width: 900px) {
+  .buildings-description { padding: 3.3333rem 1.3333rem; }
+  .buildings-description__inner { gap: 2rem; }
+  .buildings-description__content { grid-template-columns: minmax(0, 1fr); gap: 2rem; max-width: 42.6667rem; }
+  .buildings-description__media { width: 100%; }
+  .buildings-description__title { font-size: 2rem; }
+  .buildings-description__industries { gap: 0.5556rem; }
+  .buildings-description__industries-list { justify-content: center; gap: 0.5556rem; }
+}
+@media (max-width: 680px) {
+  .buildings-description { margin: 0 0.2778rem 0.2778rem; padding: 1.7778rem 0.8889rem; border-radius: 0.5556rem; }
+  .buildings-description__inner { gap: 1.3333rem; }
+  .buildings-description__header { gap: 0.8889rem; }
+  .buildings-description__title { font-size: 1.4444rem; line-height: 1.3; }
+  .buildings-description__industries { flex-direction: column; gap: 0.3333rem; font-size: 0.8889rem; line-height: 1.3333rem; }
+  .buildings-description__industries-list { gap: 0.3333rem 0.5556rem; }
+  .buildings-description__content { gap: 1.3333rem; }
+  .buildings-description__media { padding: 0.2222rem; border-radius: 1rem; }
+  .buildings-description__zoom { width: 3.1111rem; height: 3.1111rem; }
+  .buildings-description__zoom img { width: 1.5556rem; height: 1.5556rem; }
+  .buildings-description__item + .buildings-description__item { padding-top: 1rem; }
+  .buildings-description__trigger { gap: 0.7778rem; }
+  .buildings-description__icon { flex-basis: 2rem; width: 2rem; height: 2rem; }
+  .buildings-description__icon img { width: 1.1111rem; height: 1.1111rem; }
+  .buildings-description__item-title { font-size: 0.8889rem; line-height: 1.3333rem; }
+  .buildings-description__panel { gap: 0.8889rem; margin-left: 2.7778rem; padding-top: 0.7778rem; }
+  .buildings-description__copy { gap: 0.5556rem; font-size: 0.8889rem; }
+  .buildings-description__more { min-height: 2.6667rem; padding: 0.6667rem 1.1111rem; font-size: 0.7778rem; }
+  .buildings-description__lightbox { max-width: 96vw; padding: 0.6667rem; }
+  .buildings-description__lightbox-image { max-width: 90vw; }
+}
+@media (max-width: 375px) {
+  .buildings-description { padding-right: 0.6667rem; padding-left: 0.6667rem; }
+  .buildings-description__industries-list { column-gap: 0.4444rem; }
+  .buildings-description__item-title { font-size: 0.8333rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .buildings-description__more { transition: none; }
+}
+
