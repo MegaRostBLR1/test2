@@ -1784,13 +1784,9 @@
 }
 
 @media screen and (min-width: 401px) {
+  .laser-calculator__popup,
   .laser-calculator__popup.is-open {
-    position: fixed;
-    z-index: 1000;
-    inset: 0;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
+    display: none;
   }
 }
 
