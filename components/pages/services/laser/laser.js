@@ -11,25 +11,25 @@ function initLaser() {
           const panel = root.querySelector(`#${item.getAttribute('aria-controls')}`);
           if (panel) panel.hidden = true;
           const icon = item.querySelector('.laser-materials__toggle-icon img');
-          if (icon) icon.src = 'https://www.figma.com/api/mcp/asset/1c582948-cf6c-4d39-b2c8-06156740e326/5d936.svg';
+          if (icon) icon.src = 'https://www.figma.com/api/mcp/asset/f8643fe1-36f3-4926-a073-ad87d95117e4/5d936.svg';
         });
         if (!wasExpanded) {
           toggle.setAttribute('aria-expanded', 'true');
           const panel = root.querySelector(`#${toggle.getAttribute('aria-controls')}`);
           if (panel) panel.hidden = false;
           const icon = toggle.querySelector('.laser-materials__toggle-icon img');
-          if (icon) icon.src = 'https://www.figma.com/api/mcp/asset/1c582948-cf6c-4d39-b2c8-06156740e326/33e3b.svg';
+          if (icon) icon.src = 'https://www.figma.com/api/mcp/asset/f8643fe1-36f3-4926-a073-ad87d95117e4/33e3b.svg';
         }
       });
     });
-    const zoom = root.querySelector('.laser-materials__zoom');
-    const image = root.querySelector('.laser-materials__image');
-    if (zoom && image) {
+    root.querySelectorAll('.laser-materials__zoom').forEach((zoom) => {
+      const image = zoom.closest('.laser-materials__visual')?.querySelector('.laser-materials__image');
+      if (!image) return;
       zoom.addEventListener('click', () => {
         const preview = window.open(image.src, '_blank', 'noopener,noreferrer');
         if (preview) preview.opener = null;
       });
-    }
+    });
   });
 
   document.querySelectorAll('.laser-calculator__options').forEach((group) => {
