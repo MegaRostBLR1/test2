@@ -974,7 +974,7 @@
   font-family: 'Onest-SemiBold', sans-serif;
   font-size: 2.6667rem;
   font-weight: 600;
-  line-height: normal;
+  line-height: 1.27;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1061,6 +1061,7 @@
 .buildings-description__accordion { min-width: 0; width: 100%; color: #4d4d4dcc; }
 .buildings-description__item { padding-bottom: 1.1111rem; border-top: 1px solid #0000000d; }
 .buildings-description__item:first-child { padding-top: 1.1111rem; }
+.buildings-description__item:first-child .buildings-description__trigger { align-items: flex-start; }
 .buildings-description__item + .buildings-description__item { padding-top: 1.4444rem; }
 .buildings-description__trigger {
   display: flex;
