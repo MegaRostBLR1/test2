@@ -527,3 +527,107 @@
   }
 }
 
+/* Figma 1857:39056 — desktop 1920 px. */
+@media (min-width: 1601px) {
+  .buildings__agro {
+    min-height: 830px;
+    padding: 68px 0 0;
+    background: #292929;
+  }
+
+  .buildings__agro-inner {
+    width: 100%;
+    max-width: 1388px;
+    min-height: 762px;
+  }
+
+  .buildings__agro-content {
+    gap: 36px;
+  }
+
+  .buildings__agro-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .buildings__agro-heading {
+    gap: 24px;
+  }
+
+  .buildings__agro-category {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .buildings__agro-title {
+    font-size: 64px;
+    line-height: 94px;
+    white-space: nowrap;
+  }
+
+  .buildings__agro-description {
+    max-width: 970px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .buildings__agro-actions {
+    gap: 14px;
+  }
+
+  .buildings__agro-action.btn {
+    min-height: 89px;
+    padding: 32px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 25.2px;
+    white-space: nowrap;
+  }
+
+  .buildings__agro-illustration {
+    top: 304px;
+    left: 197px;
+    width: 994px;
+    max-width: none;
+    height: 1043px;
+    object-fit: contain;
+    transform: none;
+  }
+
+  .buildings__agro-tabs {
+    top: auto;
+    right: auto;
+    bottom: 20px;
+    left: 73px;
+    display: grid;
+    grid-template-columns: 188px 259px 258px 195px 132px 176px;
+    gap: 4px;
+    width: 1240px;
+    min-height: 0;
+    height: 76px;
+    padding: 6px;
+    border: 0;
+    border-radius: 20px;
+    background: rgba(237, 237, 237, 0.2);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+  }
+
+  .buildings__agro-tab {
+    height: 64px;
+    padding: 0 36px;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  .buildings__agro-tab.is-active {
+    background: #ffffff;
+    color: #324c88;
+  }
+}
+
