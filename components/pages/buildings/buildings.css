@@ -2515,6 +2515,39 @@
   margin: 0 auto;
   object-fit: contain;
 }
+/* Figma node 1857:43694 — tablet/compact desktop layout, 1440 px. */
+@media (min-width: 1301px) and (max-width: 1600px) {
+  .buildings-gallery {
+    padding: 40px;
+  }
+
+  .buildings-gallery__inner {
+    gap: 36px;
+  }
+
+  .buildings-gallery__content {
+    gap: 30px;
+  }
+
+  .buildings-gallery__title {
+    font-size: 48px;
+    line-height: 1.25;
+  }
+
+  .buildings-gallery__carousel {
+    gap: 20px;
+  }
+
+  .buildings-gallery__slide {
+    height: 400px;
+  }
+
+  .buildings-gallery__slide--active {
+    flex: 0 0 580px;
+    height: 520px;
+  }
+}
+
 @media (max-width: 1300px) {
   .buildings-gallery {
     padding: 30px;
