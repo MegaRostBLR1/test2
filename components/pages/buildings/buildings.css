@@ -8,10 +8,10 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1.1111rem;
-  width: calc(100% - 0.5556rem);
+  width: auto;
   max-width: 106.1111rem;
   min-height: 3.4444rem;
-  margin: 0 auto;
+  margin: 0 0.2778rem;
   padding: 0 0.2778rem;
   color: #4d4d4d;
   font-size: 1.1111rem;
@@ -41,9 +41,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% - 0.5556rem);
+  width: auto;
   min-height: 32rem;
-  margin: 0 auto;
+  margin: 0 0.2778rem;
   padding: 2.2222rem;
   overflow: clip;
   border-radius: 1.1111rem;
