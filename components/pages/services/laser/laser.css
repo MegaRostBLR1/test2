@@ -1804,10 +1804,9 @@
 }
 
 
-/* Секция «Работать с нами», Figma 1857:33745. Изображения будут подключены отдельно. */
+/* Секция «Работать с нами», Figma 1857:35402. Общая fluid-геометрия для desktop 1440/1920 px. */
 .laser-work-with-us {
-  margin: 0 0.2778rem 0.2778rem;
-  padding: 0.2778rem;
+  padding: 0 0.2778rem 0.2778rem;
   border-radius: 1.1111rem;
   background: #F5F8F7;
 }
@@ -1930,8 +1929,16 @@
 .laser-work-with-us__card-image {
   width: 100%;
   aspect-ratio: 1046 / 455;
+  overflow: hidden;
   border-radius: 0.5556rem;
   background: #F5F8F7;
+}
+
+.laser-work-with-us__card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .laser-work-with-us__carousel {
