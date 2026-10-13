@@ -153,3 +153,168 @@
     white-space: normal;
   }
 }
+
+
+/* Блок агрокомплексов по макету Figma 1857:39053. */
+.buildings__agro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 46.6667rem;
+  margin: 0 0.2778rem 0.2778rem;
+  padding: 3.7778rem 1.1111rem 2.6667rem;
+  border-radius: 0.5556rem;
+  background: #25313a;
+  color: #ffffff;
+  text-align: center;
+}
+
+.buildings__agro-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 77.1111rem;
+}
+
+.buildings__agro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.buildings__agro-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3333rem;
+  width: 100%;
+}
+
+.buildings__agro-category {
+  width: 100%;
+  margin: 0;
+  color: #fff500;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 1.3333rem;
+  font-weight: 500;
+  line-height: 1.8889rem;
+}
+
+.buildings__agro-title {
+  max-width: 100%;
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 3.5556rem;
+  font-weight: 600;
+  line-height: 5.2222rem;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.buildings__agro-description {
+  width: 100%;
+  max-width: 53.8889rem;
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.3333rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.buildings__agro-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.7778rem;
+  margin-top: 0;
+}
+
+.buildings__agro-action.btn {
+  min-height: 4.9444rem;
+  padding: 1.7778rem 2.2222rem;
+  border-radius: 1.1111rem;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 600;
+  line-height: 1.26;
+  text-decoration: none;
+}
+
+.buildings__agro-action:focus-visible {
+  outline: 0.1111rem solid #ffffff;
+  outline-offset: 0.2222rem;
+}
+
+@media (max-width: 1300px) {
+  .buildings__agro {
+    min-height: 0;
+    padding: 3.3333rem 1.3333rem;
+  }
+
+  .buildings__agro-title {
+    font-size: 2.6667rem;
+    line-height: 1.3;
+  }
+
+  .buildings__agro-description {
+    max-width: 53.8889rem;
+    font-size: 1.1111rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .buildings__agro {
+    padding: 2.2222rem 1rem;
+  }
+
+  .buildings__agro-content {
+    gap: 1.3333rem;
+  }
+
+  .buildings__agro-heading {
+    gap: 0.7778rem;
+  }
+
+  .buildings__agro-category {
+    font-size: 1rem;
+    line-height: 1.4444rem;
+  }
+
+  .buildings__agro-title {
+    font-size: 1.7778rem;
+    line-height: 1.3;
+  }
+
+  .buildings__agro-description {
+    font-size: 0.8889rem;
+    line-height: 1.5;
+  }
+
+  .buildings__agro-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.5556rem;
+  }
+
+  .buildings__agro-action.btn {
+    width: 100%;
+    min-height: 3.1111rem;
+    padding: 0.7778rem 1rem;
+    border-radius: 0.5556rem;
+    font-size: 0.7778rem;
+    line-height: 1.4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .buildings__agro-action {
+    transition: none;
+  }
+}
