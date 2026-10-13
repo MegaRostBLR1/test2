@@ -2,20 +2,38 @@ function initBuildings() {
   const tabs = document.querySelector('.buildings__agro-tabs');
   const toggle = tabs?.querySelector('.buildings__agro-tabs-toggle');
 
-  if (!tabs || !toggle || toggle.dataset.initialized === 'true') {
+  if (!tabs || !toggle || tabs.dataset.initialized === 'true') {
     return;
   }
 
-  toggle.dataset.initialized = 'true';
+  tabs.dataset.initialized = 'true';
 
-  toggle.addEventListener('click', () => {
-    const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-
-    toggle.setAttribute('aria-expanded', String(!isExpanded));
+  const setExpanded = (isExpanded) => {
+    tabs.classList.toggle('is-open', isExpanded);
+    toggle.setAttribute('aria-expanded', String(isExpanded));
     toggle.setAttribute(
       'aria-label',
-      isExpanded ? 'Открыть разделы агрокомплекса' : 'Закрыть разделы агрокомплекса'
+      isExpanded ? 'Закрыть разделы агрокомплекса' : 'Открыть разделы агрокомплекса'
     );
-    tabs.classList.toggle('is-open', !isExpanded);
+  };
+
+  tabs.addEventListener('click', (event) => {
+    if (!window.matchMedia('(max-width: 680px)').matches) {
+      return;
+    }
+
+    const link = event.target.closest('.buildings__agro-tab');
+    const isExpanded = tabs.classList.contains('is-open');
+
+    if (link) {
+      if (!isExpanded) {
+        event.preventDefault();
+        setExpanded(true);
+      }
+
+      return;
+    }
+
+    setExpanded(!isExpanded);
   });
 }
