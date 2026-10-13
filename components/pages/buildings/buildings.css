@@ -1212,3 +1212,57 @@
   .buildings-description__more { transition: none; }
 }
 
+
+
+/* Адаптация блока «Описание» под макет Figma 1857:42515 (1440 px). */
+@media (min-width: 901px) and (max-width: 1600px) {
+  .buildings-description {
+    padding: 3.5556rem 2.2222rem;
+  }
+
+  .buildings-description__inner {
+    gap: 1.3889rem;
+    max-width: 100%;
+  }
+
+  .buildings-description__header {
+    gap: 1.3333rem;
+  }
+
+  .buildings-description__title {
+    font-size: 2.6667rem;
+    line-height: 1.25;
+  }
+
+  .buildings-description__industries {
+    gap: 1rem;
+    font-size: 1.3333rem;
+    line-height: 1.5;
+  }
+
+  .buildings-description__industries-list {
+    gap: 0.7778rem;
+  }
+
+  .buildings-description__content {
+    grid-template-columns: minmax(0, 684fr) minmax(0, 594fr);
+    gap: 4.4444rem;
+    max-width: 75.4444rem;
+    padding-bottom: 0;
+  }
+
+  .buildings-description__item-title {
+    font-size: 1.1111rem;
+    line-height: 1.5;
+  }
+
+  .buildings-description__copy {
+    font-size: 1rem;
+    line-height: 1.5;
+    gap: 1.3889rem;
+  }
+
+  .buildings-description__panel {
+    gap: 1rem;
+  }
+}
