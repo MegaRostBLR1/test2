@@ -175,28 +175,39 @@ function initBuildings() {
     const lightbox = gallery.querySelector('.buildings-gallery__lightbox');
     const lightboxImage = gallery.querySelector('.buildings-gallery__lightbox-image');
     const zoom = gallery.querySelector('.buildings-gallery__zoom');
-    let activeIndex = 1;
+    const galleryImages = [
+      'https://www.figma.com/api/mcp/asset/79f3c992-ed3d-467e-859b-28ac3c73b07b/45237.png',
+      'https://www.figma.com/api/mcp/asset/79f3c992-ed3d-467e-859b-28ac3c73b07b/fa91b.png'
+    ];
+    let activeIndex = 0;
 
     const renderGallery = () => {
       slides.forEach((slide, index) => {
-        slide.classList.toggle('buildings-gallery__slide--active', index === activeIndex);
-        slide.classList.toggle('buildings-gallery__slide--side', index !== activeIndex);
+        const isCenter = index === 1;
+        slide.classList.toggle('buildings-gallery__slide--active', isCenter);
+        slide.classList.toggle('buildings-gallery__slide--side', !isCenter);
       });
+
+      const centerImage = slides[1]?.querySelector('img');
+      if (centerImage) {
+        centerImage.src = galleryImages[activeIndex % galleryImages.length];
+      }
+
       dots.forEach((dot, index) => {
         const isActive = index === activeIndex;
         dot.classList.toggle('is-active', isActive);
         if (isActive) dot.setAttribute('aria-current', 'true');
         else dot.removeAttribute('aria-current');
       });
-      const activeImage = slides[activeIndex]?.querySelector('img');
-      if (activeImage && lightboxImage) {
-        lightboxImage.src = activeImage.src;
-        lightboxImage.alt = activeImage.alt;
+
+      if (centerImage && lightboxImage) {
+        lightboxImage.src = centerImage.src;
+        lightboxImage.alt = centerImage.alt;
       }
     };
 
     const move = (direction) => {
-      activeIndex = (activeIndex + direction + slides.length) % slides.length;
+      activeIndex = (activeIndex + direction + dots.length) % dots.length;
       renderGallery();
     };
 
@@ -210,5 +221,4 @@ function initBuildings() {
     });
     renderGallery();
   }
-
 }
