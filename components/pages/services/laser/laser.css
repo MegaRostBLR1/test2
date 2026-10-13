@@ -1073,7 +1073,7 @@
 }
 
 
-/* Калькулятор лазерной резки — Figma 1857:33464, desktop 1920 px. */
+/* Калькулятор лазерной резки — Figma 1857:35121 (1440 px) + 1857:33464 (1920 px). Fluid desktop layout. */
 .laser-calculator {
   width: 100%;
   margin: 0 0 0.5556rem;
