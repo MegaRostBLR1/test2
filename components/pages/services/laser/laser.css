@@ -237,6 +237,66 @@
   }
 }
 
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .laser__breadcrumbs {
+    gap: 1.1111rem;
+    min-height: 3.4444rem;
+    font-size: 0.8889rem;
+    line-height: 1.4444rem;
+  }
+
+  .laser__hero {
+    min-height: 41.1111rem;
+    padding: 2.2222rem 1.6667rem;
+  }
+
+  .laser__hero-content {
+    gap: 2rem;
+    max-width: 33.8333rem;
+  }
+
+  .laser__intro {
+    gap: 0.7778rem;
+  }
+
+  .laser__title {
+    font-size: 2.2222rem;
+    line-height: 2.6667rem;
+    white-space: nowrap;
+  }
+
+  .laser__description {
+    max-width: 100%;
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
+  }
+
+  .laser__actions {
+    gap: 0.7778rem;
+  }
+
+  .laser__action.btn {
+    padding: 1.4444rem 1.7778rem;
+    font-size: 1rem;
+  }
+
+  .laser__price-link {
+    width: 15.7135rem;
+    height: 15.7135rem;
+  }
+
+  .laser__price-diamond {
+    width: 11.1111rem;
+    height: 11.1111rem;
+  }
+
+  .laser__price-label {
+    width: 9.8333rem;
+    font-size: 1rem;
+    line-height: 1.4444rem;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .laser {
     padding-bottom: 1.1111rem;
