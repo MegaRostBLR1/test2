@@ -289,9 +289,13 @@
   padding: 0.6667rem 0.4444rem;
   border-radius: 0.3333rem;
   color: #ffffff;
-  font-size: 1rem;
-  line-height: 1.4444;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0;
   text-align: center;
+  text-transform: uppercase;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
