@@ -348,6 +348,40 @@
   }
 }
 
+/* Figma node 1857:46319 — layout for the 1024 px frame. */
+@media (min-width: 769px) and (max-width: 1300px) {
+  .buildings-gallery {
+    padding: 30px;
+  }
+
+  .buildings-gallery__inner {
+    gap: 36px;
+  }
+
+  .buildings-gallery__content {
+    gap: 30px;
+  }
+
+  .buildings-gallery__title {
+    font-size: 38px;
+    line-height: 1.25;
+  }
+
+  .buildings-gallery__carousel {
+    gap: 20px;
+  }
+
+  .buildings-gallery__slide {
+    flex: 1 1 0;
+    height: 400px;
+  }
+
+  .buildings-gallery__slide--active {
+    flex: 0 0 61.44%;
+    height: 520px;
+  }
+}
+
 @media (max-width: 680px) {
   .buildings__agro {
     min-height: 40rem;
