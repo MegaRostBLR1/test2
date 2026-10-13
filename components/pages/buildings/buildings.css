@@ -351,7 +351,7 @@
 /* Figma node 1857:46319 — layout for the 1024 px frame. */
 @media (min-width: 769px) and (max-width: 1300px) {
   .buildings-gallery {
-    padding: 30px;
+    padding: 40px;
   }
 
   .buildings-gallery__inner {
@@ -363,7 +363,7 @@
   }
 
   .buildings-gallery__title {
-    font-size: 38px;
+    font-size: 48px;
     line-height: 1.25;
   }
 
@@ -377,7 +377,7 @@
   }
 
   .buildings-gallery__slide--active {
-    flex: 0 0 61.44%;
+    flex: 0 0 580px;
     height: 520px;
   }
 }
