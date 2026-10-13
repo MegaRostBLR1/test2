@@ -965,35 +965,7 @@
   pointer-events: none;
 }
 
-@media screen and (max-width: 1600px) {
-  .laser-process__panel {
-    padding: 40px 32px;
-    gap: 28px;
-  }
-
-  .laser-process__title {
-    font-size: 36px;
-  }
-
-  .laser-process__card {
-    min-height: 220px;
-    padding: 28px;
-  }
-
-  .laser-process__card-title {
-    font-size: 28px;
-    line-height: 1.4;
-  }
-
-  .laser-process__description {
-    font-size: 18px;
-  }
-
-  .laser-process__number {
-    right: 28px;
-    font-size: 100px;
-  }
-}
+/* At 1440 px the Figma frame keeps the same card geometry as the 1920 px layout. */
 
 @media screen and (max-width: 1100px) {
   .laser-process__panel {
