@@ -862,217 +862,6 @@
 
 
 
-/* Этапы работы — Figma node 1857:33415, desktop 1920 px. */
-.laser-process {
-  width: calc(100% - 20px);
-  margin: 0 auto 10px;
-  padding: 10px;
-  border-radius: 10px;
-  background: #ffffff;
-}
-
-.laser-process__panel {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-  width: 100%;
-  padding: 48px 40px;
-  border-radius: 20px;
-}
-
-.laser-process__header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.laser-process__title {
-  margin: 0;
-  color: #4d4d4d;
-  font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 1.25;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.laser-process__list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.laser-process__card {
-  position: relative;
-  display: flex;
-  align-items: center;
-  min-width: 0;
-  min-height: 240px;
-  padding: 36px;
-  overflow: hidden;
-  border-radius: 14px;
-  background: #ebedf3;
-}
-
-.laser-process__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 16px;
-  width: 100%;
-  min-width: 0;
-  min-height: 168px;
-  position: relative;
-  z-index: 1;
-}
-
-.laser-process__card-title {
-  margin: 0;
-  color: #324c88;
-  font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 1.6;
-  text-transform: uppercase;
-  overflow-wrap: anywhere;
-}
-
-.laser-process__description {
-  max-width: 544px;
-  margin: 0;
-  color: #1e3874;
-  font-family: 'Onest-Regular', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-  overflow-wrap: anywhere;
-}
-
-.laser-process__number {
-  position: absolute;
-  top: 8px;
-  right: 36px;
-  color: #324c8833;
-  font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 120px;
-  font-weight: 600;
-  line-height: 1.5;
-  white-space: nowrap;
-  pointer-events: none;
-}
-
-/* At 1440 px the Figma frame keeps the same card geometry as the 1920 px layout. */
-
-/* Адаптация блока «Этапы работы» под Figma 1024 px.
-   На 1440 и 1920 px сохраняется базовая desktop-композиция. */
-@media screen and (min-width: 681px) and (max-width: 1100px) {
-  .laser-process__panel {
-    gap: 36px;
-    padding: 48px 40px;
-  }
-
-  .laser-process__title {
-    font-size: 48px;
-    line-height: normal;
-  }
-
-  .laser-process__card {
-    height: 200px;
-    min-height: 200px;
-    padding: 24px;
-  }
-
-  .laser-process__content {
-    min-height: 152px;
-  }
-
-  .laser-process__card-title {
-    font-size: 24px;
-    line-height: 1.6;
-  }
-
-  .laser-process__description {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .laser-process__number {
-    right: 20px;
-    font-size: 100px;
-    line-height: 1.5;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .laser-process {
-    width: calc(100% - 20px);
-    padding: 0;
-  }
-
-  .laser-process__panel {
-    gap: 18px;
-    padding: 20px 10px;
-    border-radius: 20px;
-  }
-
-  .laser-process__title {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  .laser-process__list {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 10px;
-  }
-
-  .laser-process__card {
-    height: 160px;
-    min-height: 160px;
-    padding: 18px;
-    border-radius: 14px;
-  }
-
-  .laser-process__content {
-    gap: 0;
-    min-height: 0;
-    height: 100%;
-    justify-content: space-between;
-    max-width: 210px;
-  }
-
-  .laser-process__card-title {
-    max-width: 100%;
-    font-size: 18px;
-    line-height: 1.6;
-    white-space: nowrap;
-  }
-
-  .laser-process__description {
-    max-width: 100%;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .laser-process__number {
-    top: auto;
-    right: 18px;
-    bottom: 18px;
-    font-size: 50px;
-    line-height: 1.5;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .laser-process * {
-    scroll-behavior: auto;
-  }
-}
-
-
 /* Калькулятор лазерной резки — Figma 1857:35121 (1440 px) + 1857:33464 (1920 px). Fluid desktop layout. */
 .laser-calculator {
   width: 100%;
@@ -1399,4 +1188,215 @@
  .laser-calculator__settings-toggle { width: 100%; font-size: 14px; }
  .laser-calculator__filters { display: none; }
  .laser-calculator__table { font-size: 12px; }
+}
+
+
+/* Этапы работы — Figma node 1857:33415, desktop 1920 px. */
+.laser-process {
+  width: calc(100% - 20px);
+  margin: 0 auto 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.laser-process__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  width: 100%;
+  padding: 48px 40px;
+  border-radius: 20px;
+}
+
+.laser-process__header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.laser-process__title {
+  margin: 0;
+  color: #4d4d4d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.laser-process__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.laser-process__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  min-height: 240px;
+  padding: 36px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #ebedf3;
+}
+
+.laser-process__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  min-height: 168px;
+  position: relative;
+  z-index: 1;
+}
+
+.laser-process__card-title {
+  margin: 0;
+  color: #324c88;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.laser-process__description {
+  max-width: 544px;
+  margin: 0;
+  color: #1e3874;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.laser-process__number {
+  position: absolute;
+  top: 8px;
+  right: 36px;
+  color: #324c8833;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* At 1440 px the Figma frame keeps the same card geometry as the 1920 px layout. */
+
+/* Адаптация блока «Этапы работы» под Figma 1024 px.
+   На 1440 и 1920 px сохраняется базовая desktop-композиция. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .laser-process__panel {
+    gap: 36px;
+    padding: 48px 40px;
+  }
+
+  .laser-process__title {
+    font-size: 48px;
+    line-height: normal;
+  }
+
+  .laser-process__card {
+    height: 200px;
+    min-height: 200px;
+    padding: 24px;
+  }
+
+  .laser-process__content {
+    min-height: 152px;
+  }
+
+  .laser-process__card-title {
+    font-size: 24px;
+    line-height: 1.6;
+  }
+
+  .laser-process__description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .laser-process__number {
+    right: 20px;
+    font-size: 100px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .laser-process {
+    width: calc(100% - 20px);
+    padding: 0;
+  }
+
+  .laser-process__panel {
+    gap: 18px;
+    padding: 20px 10px;
+    border-radius: 20px;
+  }
+
+  .laser-process__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .laser-process__list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .laser-process__card {
+    height: 160px;
+    min-height: 160px;
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .laser-process__content {
+    gap: 0;
+    min-height: 0;
+    height: 100%;
+    justify-content: space-between;
+    max-width: 210px;
+  }
+
+  .laser-process__card-title {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+
+  .laser-process__description {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .laser-process__number {
+    top: auto;
+    right: 18px;
+    bottom: 18px;
+    font-size: 50px;
+    line-height: 1.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .laser-process * {
+    scroll-behavior: auto;
+  }
 }
