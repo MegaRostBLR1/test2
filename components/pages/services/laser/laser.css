@@ -7,15 +7,15 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.4444rem;
+  gap: 1.1111rem;
   width: calc(100% - 0.5556rem);
   max-width: 106.1111rem;
   min-height: 3.4444rem;
   margin: 0 auto;
   padding: 0 0.2778rem;
   color: #4d4d4d;
-  font-size: 0.7778rem;
-  line-height: 1.5;
+  font-size: 1.1111rem;
+  line-height: 1.4444rem;
 }
 
 .laser__breadcrumb-link {
@@ -191,6 +191,12 @@
 }
 
 @media screen and (max-width: 1300px) {
+  .laser__breadcrumbs {
+    gap: 0.7778rem;
+    font-size: 0.8889rem;
+    line-height: 1.5;
+  }
+
   .laser__hero {
     min-height: 40rem;
     padding: 2.2222rem 1.6667rem;
@@ -237,10 +243,12 @@
   }
 
   .laser__breadcrumbs {
+    gap: 0.4444rem;
     width: 100%;
     min-height: 2.7778rem;
     padding: 0 0.7778rem;
     font-size: 0.7222rem;
+    line-height: 1.5;
   }
 
   .laser__hero {
