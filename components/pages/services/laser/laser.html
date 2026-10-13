@@ -258,6 +258,39 @@
       <h2 class="laser-calculator__title" id="laser-calculator__title">Калькулятор для резки металла русская версия</h2>
     </header>
 
+    <button class="laser-calculator__parameters-toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="laser-calculator-parameters">
+      <span>Параметры: <span class="laser-calculator__parameters-summary">(Ш: <span data-parameter-width>15м</span>, В: <span data-parameter-height>10м</span>)</span></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h9M17 7h3M4 17h3M11 17h9M13 4v6M7 14v6"/></svg>
+    </button>
+    <div class="laser-calculator__dialog-backdrop" hidden>
+      <section class="laser-calculator__dialog" id="laser-calculator-parameters" role="dialog" aria-modal="true" aria-labelledby="laser-calculator-parameters-title" tabindex="-1">
+        <header class="laser-calculator__dialog-header">
+          <h3 class="laser-calculator__dialog-title" id="laser-calculator-parameters-title">Параметры</h3>
+          <button class="laser-calculator__dialog-close" type="button" aria-label="Закрыть параметры"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+        </header>
+        <div class="laser-calculator__dialog-content">
+          <fieldset class="laser-calculator__parameter-group">
+            <legend>Регион:</legend>
+            <label class="laser-calculator__parameter-option is-selected"><input type="radio" name="laser-region" value="Россия" checked><span>Россия</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></label>
+            <label class="laser-calculator__parameter-option"><input type="radio" name="laser-region" value="СНГ"><span>СНГ</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></label>
+            <label class="laser-calculator__parameter-option"><input type="radio" name="laser-region" value="Африка и Ближний Восток"><span>Африка и Ближний Восток</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></label>
+          </fieldset>
+          <fieldset class="laser-calculator__parameter-group">
+            <legend>Ширина:</legend>
+            <label class="laser-calculator__parameter-option is-selected"><input type="radio" name="laser-width" value="15" checked><span>15 м</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></label>
+            <label class="laser-calculator__parameter-option"><input type="radio" name="laser-width" value="2"><span>2 м</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></label>
+            <label class="laser-calculator__parameter-option"><input type="radio" name="laser-width" value="4"><span>4 м</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></label>
+          </fieldset>
+          <fieldset class="laser-calculator__parameter-group">
+            <legend>Высота:</legend>
+            <label class="laser-calculator__parameter-option is-selected"><input type="radio" name="laser-height" value="10" checked><span>10 м</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></label>
+            <label class="laser-calculator__parameter-option"><input type="radio" name="laser-height" value="2"><span>2 м</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></label>
+            <label class="laser-calculator__parameter-option"><input type="radio" name="laser-height" value="4"><span>4 м</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></label>
+          </fieldset>
+        </div>
+        <button class="laser-calculator__dialog-apply main-btn" type="button">Применить</button>
+      </section>
+    </div>
     <div class="laser-calculator__filters" aria-label="Параметры расчёта">
       <div class="laser-calculator__filter">
         <span class="laser-calculator__filter-label" id="laser-calculator-region-label">Регион:</span>
