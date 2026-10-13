@@ -1,0 +1,155 @@
+/* Страница: быстровозводимые здания */
+.buildings {
+  padding-bottom: 2.2222rem;
+}
+
+.buildings__breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.1111rem;
+  width: calc(100% - 0.5556rem);
+  max-width: 106.1111rem;
+  min-height: 3.4444rem;
+  margin: 0 auto;
+  padding: 0 0.2778rem;
+  color: #4d4d4d;
+  font-size: 1.1111rem;
+  line-height: 1.4444rem;
+}
+
+.buildings__breadcrumb-link {
+  color: inherit;
+  transition: color 0.15s ease;
+}
+
+.buildings__breadcrumb-link:hover {
+  color: #324c88;
+}
+
+.buildings__breadcrumb-link:focus-visible,
+.buildings__action:focus-visible {
+  outline: 0.1111rem solid currentColor;
+  outline-offset: 0.2222rem;
+}
+
+.buildings__breadcrumb-separator {
+  color: #979a9b;
+}
+
+.buildings__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 0.5556rem);
+  min-height: 32rem;
+  margin: 0 auto;
+  padding: 2.2222rem;
+  overflow: clip;
+  border-radius: 1.1111rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: #25313a;
+  background-image: linear-gradient(#00000080, #00000080), url('../../../static/images/home/home-advantages-factory.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.buildings__hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3333rem;
+  width: 100%;
+  max-width: 72.2222rem;
+  margin: 0 auto;
+}
+
+.buildings__title {
+  max-width: 100%;
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 3.5556rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.buildings__description {
+  width: 100%;
+  max-width: 55.7222rem;
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4444rem;
+}
+
+.buildings__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.7778rem;
+  margin-top: 0.4444rem;
+}
+
+.buildings__action.btn {
+  min-height: 0;
+  padding: 1.3333rem 2.2222rem;
+  border-radius: 1.1111rem;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 600;
+  line-height: 1.26;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .buildings__hero {
+    min-height: 26rem;
+    padding: 2rem 1.1111rem;
+  }
+
+  .buildings__title {
+    font-size: 2.4444rem;
+  }
+
+  .buildings__actions {
+    width: 100%;
+  }
+
+  .buildings__action.btn {
+    width: 100%;
+    max-width: 24rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .buildings__breadcrumbs {
+    gap: 0.5556rem;
+    font-size: 0.8889rem;
+  }
+
+  .buildings__hero {
+    min-height: 22rem;
+    padding: 1.3333rem 0.7778rem;
+  }
+
+  .buildings__title {
+    font-size: 1.6667rem;
+    line-height: 1.4;
+  }
+
+  .buildings__description {
+    font-size: 0.8889rem;
+  }
+
+  .buildings__action.btn {
+    padding: 1rem;
+    font-size: 1rem;
+    white-space: normal;
+  }
+}
