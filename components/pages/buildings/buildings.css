@@ -516,66 +516,105 @@
 }
 
 /* Макет Figma 1857:44024 — планшетный desktop 1024 px.
-   Сохраняем общую композицию и отдельные правила desktop 1440/1920 px. */
+   Геометрия сверена с фреймом 1024×850; правила 1440 и 1920 px сохранены отдельно. */
 @media (min-width: 769px) and (max-width: 1300px) {
   .buildings__agro {
-    min-height: 46.6667rem;
-    padding: 3.7778rem 1.1111rem 0;
+    min-height: 840px;
+    padding: 68px 0 0;
     background: #292929;
   }
 
   .buildings__agro-inner {
-    min-height: 42.8889rem;
+    width: 100%;
+    max-width: 1014px;
+    min-height: 840px;
   }
 
   .buildings__agro-content {
-    gap: 2rem;
+    gap: 36px;
+  }
+
+  .buildings__agro-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
   }
 
   .buildings__agro-heading {
-    gap: 1.3333rem;
+    gap: 24px;
+    width: 100%;
   }
 
   .buildings__agro-category {
-    font-size: 1.3333rem;
-    line-height: 1.8889rem;
+    font-size: 20px;
+    line-height: 34px;
   }
 
   .buildings__agro-title {
-    font-size: 2.6667rem;
-    line-height: 1.3;
+    width: 100%;
+    max-width: 950px;
+    font-size: 48px;
+    line-height: 64px;
+    white-space: normal;
+    overflow-wrap: normal;
   }
 
   .buildings__agro-description {
-    max-width: 44.1111rem;
-    font-size: 1.1111rem;
-    line-height: 1.5;
+    width: 100%;
+    max-width: 794px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .buildings__agro-actions {
+    gap: 14px;
+  }
+
+  .buildings__agro-action.btn {
+    min-height: 75px;
+    padding: 26px 32px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 1.26;
+    white-space: nowrap;
   }
 
   .buildings__agro-illustration {
-    top: 15.5556rem;
-    width: 61.1111rem;
+    top: 344px;
+    left: 50%;
+    width: 700px;
+    max-width: none;
+    height: auto;
+    transform: translateX(-50%);
   }
 
   .buildings__agro-tabs {
+    top: auto;
     right: auto;
-    bottom: 1.1111rem;
+    bottom: 20px;
     left: 50%;
-    grid-template-columns: 8rem 11.5556rem 11.5556rem 8.3889rem 5.2222rem 7.4444rem;
-    width: 53.9444rem;
-    min-height: 4.2222rem;
-    padding: 0.3333rem;
-    border-radius: 1.1111rem;
+    display: grid;
+    grid-template-columns: 144px 208px 208px 151px 94px 134px;
+    gap: 4px;
+    width: 971px;
+    min-height: 0;
+    height: 76px;
+    padding: 6px;
+    border: 0;
+    border-radius: 20px;
     background: #626262cc;
     transform: translateX(-50%);
   }
 
   .buildings__agro-tab {
-    padding: 0.6667rem 0.4444rem;
-    border-radius: 1.1111rem;
-    font-size: 0.8889rem;
-    line-height: 1.4444;
-    white-space: normal;
+    height: 64px;
+    padding: 0 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: normal;
+    white-space: nowrap;
   }
 
   .buildings__agro-tab:hover,
