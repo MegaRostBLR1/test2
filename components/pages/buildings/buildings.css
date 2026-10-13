@@ -2731,54 +2731,333 @@
   }
 }
 
-/* Каталог отраслей — Figma 1857:41352. */
-.buildings-catalog { margin: 0 0.2778rem 0.2778rem; padding: 0.2222rem; border-radius: 1.1111rem; background: #f5f8f7; }
-.buildings-catalog__panel { display: flex; flex-direction: column; align-items: center; gap: 1.3889rem; padding: 2.2222rem; border-radius: 1.1667rem; background: #ffffff; }
-.buildings-catalog__header { display: flex; flex-direction: column; align-items: center; gap: 1.3333rem; width: 100%; }
-.buildings-catalog__title { margin: 0; color: #4d4d4d; font-family: 'Onest-SemiBold', sans-serif; font-size: 2.6667rem; font-weight: 600; line-height: 1.2; text-align: center; text-transform: uppercase; }
-.buildings-catalog__filters { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 1.1111rem; max-width: 100%; padding: 0.2222rem 1rem; border-radius: 0.2222rem; background: #ffffff; }
-.buildings-catalog__filter { display: inline-flex; align-items: center; gap: 1.1111rem; color: #5d5d5d4d; font-family: 'Onest-SemiBold', sans-serif; font-size: 1rem; font-weight: 600; line-height: 1.6; text-transform: uppercase; white-space: nowrap; }
-.buildings-catalog__filter:not(:last-child)::after { width: 0.2222rem; height: 0.2222rem; flex: 0 0 0.2222rem; border-radius: 50%; background: #cfcfcf; content: ''; }
-.buildings-catalog__filter.is-active { color: #5d5d5d; }
-.buildings-catalog__filter.is-active::after { background: #5d5d5d; }
-.buildings-catalog__cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: start; gap: 0.5556rem; width: 100%; }
-.buildings-catalog__card { display: flex; flex-direction: column; align-items: center; gap: 1rem; min-width: 0; padding: 0.2222rem 0.2222rem 1rem; border-radius: 1.6667rem; color: #4d4d4d; }
-.buildings-catalog__image { display: block; width: 100%; height: 17.3333rem; border-radius: 1.6667rem; background: #f5f8f7; object-fit: cover; }
-.buildings-catalog__caption { font-family: 'Onest-SemiBold', sans-serif; font-size: 1.1111rem; font-weight: 600; line-height: 1.6; text-align: center; text-transform: uppercase; }
-.buildings-catalog__controls { display: flex; align-items: center; justify-content: center; gap: 1.3333rem; min-height: 5.0278rem; }
-.buildings-catalog__arrow { display: grid; width: 5.0278rem; height: 5.0278rem; flex: 0 0 5.0278rem; place-items: center; border: 1px solid #4d4d4d33; border-radius: 1.1111rem; transition: background-color 0.15s ease, opacity 0.15s ease; }
-.buildings-catalog__arrow img { display: block; width: 2.2222rem; height: 2.2222rem; }
-.buildings-catalog__arrow--prev img { transform: rotate(-90deg); }
-.buildings-catalog__arrow--next img { transform: rotate(90deg); }
-.buildings-catalog__arrow:disabled { opacity: 0.35; cursor: not-allowed; }
-.buildings-catalog__pagination { display: flex; align-items: center; gap: 0.2222rem; }
-.buildings-catalog__pagination span { width: 0.5556rem; height: 0.5556rem; border-radius: 50%; background: #324c8833; }
-.buildings-catalog__pagination span.is-active { background: #324c88; }
-.buildings-catalog__card:focus-visible, .buildings-catalog__filter:focus-visible, .buildings-catalog__arrow:focus-visible { outline: 2px solid #324c88; outline-offset: 3px; }
+/* Каталог отраслей — Figma 1857:43723. */
+.buildings-catalog {
+  margin: 0;
+  padding: 10px;
+  background: #f5f8f7;
+}
+
+.buildings-catalog__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 21px;
+  background: #ffffff;
+}
+
+.buildings-catalog__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.buildings-catalog__title {
+  margin: 0;
+  color: #4d4d4d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buildings-catalog__filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+  padding: 4px 18px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.buildings-catalog__filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  color: #5d5d5d4d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.buildings-catalog__filter:not(:last-child)::after {
+  width: 4px;
+  height: 4px;
+  flex: 0 0 4px;
+  border-radius: 50%;
+  background: #cfcfcf;
+  content: '';
+}
+
+.buildings-catalog__filter.is-active {
+  color: #5d5d5d;
+}
+
+.buildings-catalog__filter.is-active::after {
+  background: #5d5d5d;
+}
+
+.buildings-catalog__cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+  gap: 10px;
+  width: 100%;
+}
+
+.buildings-catalog__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+  min-height: 384px;
+  padding: 4px 4px 18px;
+  border-radius: 30px;
+  color: #4d4d4d;
+}
+
+.buildings-catalog__image-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 319.5 / 312;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #f5f8f7;
+}
+
+.buildings-catalog__image,
+.buildings-catalog__image-overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.buildings-catalog__image-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.buildings-catalog__caption {
+  color: #4d4d4d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buildings-catalog__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90.51px;
+}
+
+.buildings-catalog__controls > * {
+  flex: 0 0 auto;
+}
+
+.buildings-catalog__arrow {
+  position: relative;
+  display: grid;
+  width: 90.51px;
+  height: 90.51px;
+  flex: 0 0 90.51px;
+  place-items: center;
+  border: 0;
+  border-radius: 0;
+}
+
+.buildings-catalog__arrow::before {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #4d4d4d33;
+  border-radius: 20px;
+  content: '';
+  transform: rotate(45deg);
+}
+
+.buildings-catalog__arrow img {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.buildings-catalog__arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.buildings-catalog__pagination {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 24px;
+}
+
+.buildings-catalog__pagination span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #324c8833;
+}
+
+.buildings-catalog__pagination span.is-active {
+  background: #324c88;
+}
+
+.buildings-catalog__card:focus-visible,
+.buildings-catalog__filter:focus-visible,
+.buildings-catalog__arrow:focus-visible {
+  outline: 2px solid #324c88;
+  outline-offset: 3px;
+}
+
+@media (min-width: 1301px) {
+  .buildings-catalog__cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 1300px) {
- .buildings-catalog__panel { padding: 1.6667rem; }
- .buildings-catalog__title { font-size: 1.6667rem; }
- .buildings-catalog__filters { gap: 0.7778rem; }
- .buildings-catalog__filter { gap: 0.7778rem; font-size: 0.8889rem; }
- .buildings-catalog__image { height: 15rem; }
+  .buildings-catalog__panel {
+    padding: 30px;
+  }
+
+  .buildings-catalog__title {
+    font-size: 30px;
+  }
+
+  .buildings-catalog__filters {
+    gap: 12px;
+  }
+
+  .buildings-catalog__filter {
+    gap: 12px;
+    font-size: 16px;
+  }
+
+  .buildings-catalog__card {
+    min-height: 0;
+  }
+
+  .buildings-catalog__caption {
+    font-size: 18px;
+  }
 }
+
 @media (max-width: 900px) {
- .buildings-catalog__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5556rem; }
- .buildings-catalog__image { height: 17rem; }
- .buildings-catalog__filters { justify-content: flex-start; }
+  .buildings-catalog__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .buildings-catalog__filters {
+    justify-content: flex-start;
+  }
 }
+
 @media (max-width: 680px) {
- .buildings-catalog__panel { gap: 1rem; padding: 1.1111rem 0.7778rem; border-radius: 0.5556rem; }
- .buildings-catalog__title { font-size: 1.2222rem; line-height: 1.4; }
- .buildings-catalog__header { gap: 0.7778rem; }
- .buildings-catalog__filters { gap: 0.5556rem; padding: 0.2222rem; }
- .buildings-catalog__filter { gap: 0.5556rem; font-size: 0.6667rem; white-space: normal; }
- .buildings-catalog__cards { grid-template-columns: minmax(0, 1fr); gap: 0.5556rem; }
- .buildings-catalog__card { gap: 0.6667rem; padding-bottom: 0.5556rem; }
- .buildings-catalog__image { height: auto; aspect-ratio: 450 / 312; }
- .buildings-catalog__caption { font-size: 0.8889rem; }
- .buildings-catalog__controls { gap: 0.8889rem; }
- .buildings-catalog__arrow { width: 3.5556rem; height: 3.5556rem; flex-basis: 3.5556rem; border-radius: 0.7778rem; }
- .buildings-catalog__arrow img { width: 1.6667rem; height: 1.6667rem; }
+  .buildings-catalog {
+    padding: 5px;
+  }
+
+  .buildings-catalog__panel {
+    gap: 16px;
+    padding: 20px 14px;
+    border-radius: 10px;
+  }
+
+  .buildings-catalog__title {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .buildings-catalog__header {
+    gap: 12px;
+  }
+
+  .buildings-catalog__filters {
+    gap: 8px;
+    padding: 2px;
+  }
+
+  .buildings-catalog__filter {
+    gap: 8px;
+    font-size: 12px;
+    white-space: normal;
+  }
+
+  .buildings-catalog__cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .buildings-catalog__card {
+    gap: 12px;
+    min-height: 0;
+    padding: 4px 4px 10px;
+  }
+
+  .buildings-catalog__caption {
+    font-size: 16px;
+  }
+
+  .buildings-catalog__controls {
+    min-height: 68px;
+  }
+
+  .buildings-catalog__arrow {
+    width: 68px;
+    height: 68px;
+    flex-basis: 68px;
+  }
+
+  .buildings-catalog__arrow::before {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+  }
+
+  .buildings-catalog__arrow img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .buildings-catalog__pagination {
+    gap: 4px;
+    margin: 0 12px;
+  }
+
+  .buildings-catalog__pagination span {
+    width: 8px;
+    height: 8px;
+  }
 }
-@media (prefers-reduced-motion: reduce) { .buildings-catalog__arrow { transition: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .buildings-catalog__arrow {
+    transition: none;
+  }
+}
