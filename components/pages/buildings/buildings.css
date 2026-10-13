@@ -2109,13 +2109,15 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  border: 1px solid #ffffff80;
   border-radius: 50%;
-  color: #ffffff;
-  font-family: 'Onest-Regular', sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1;
+  background: #fff500;
+}
+
+.buildings-complectation__stage-icon img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .buildings-complectation__stage-title {
@@ -2269,7 +2271,11 @@
     flex-basis: 32px;
     width: 32px;
     height: 32px;
-    font-size: 24px;
+  }
+
+  .buildings-complectation__stage-icon img {
+    width: 22px;
+    height: 22px;
   }
 
   .buildings-complectation__stage-title {
