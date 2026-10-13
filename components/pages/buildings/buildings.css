@@ -2356,7 +2356,7 @@
 }
 
 
-/* Фотогалерея — Figma node 1857:43694, desktop 1920 px. */
+/* Фотогалерея — Figma node 1857:41326, desktop 1920 px. */
 .buildings-gallery {
   margin: 0 10px 10px;
   padding: 40px;
@@ -2370,6 +2370,14 @@
   gap: 36px;
   width: 100%;
   margin: 0 auto;
+}
+.buildings-gallery__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  min-width: 0;
 }
 .buildings-gallery__title {
   margin: 0;
@@ -2392,15 +2400,15 @@
   position: relative;
   flex: 1 1 0;
   min-width: 0;
-  height: 400px;
+  height: 440px;
   margin: 0;
   overflow: hidden;
   border-radius: 30px;
   background: #e9eceb;
 }
 .buildings-gallery__slide--active {
-  flex: 0 0 580px;
-  height: 520px;
+  flex: 0 0 839px;
+  height: 580px;
 }
 .buildings-gallery__slide > img {
   display: block;
@@ -2474,8 +2482,8 @@
   outline-offset: 3px;
 }
 .buildings-gallery__lightbox {
-  width: min(90vw, 1200px);
-  max-width: 90vw;
+  width: 90vw;
+  max-width: 1200px;
   max-height: 90vh;
   margin: auto;
   padding: 16px;
@@ -2531,6 +2539,9 @@
     border-radius: 10px;
   }
   .buildings-gallery__inner {
+    gap: 24px;
+  }
+  .buildings-gallery__content {
     gap: 24px;
   }
   .buildings-gallery__title {
