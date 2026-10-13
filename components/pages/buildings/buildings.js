@@ -79,14 +79,16 @@ function initBuildings() {
     });
   });
 
-  const zoomButton = description.querySelector('.buildings-description__zoom');
+  const zoomButtons = description.querySelectorAll('.buildings-description__zoom');
   const lightbox = description.querySelector('.buildings-description__lightbox');
 
-  if (zoomButton && lightbox) {
-    zoomButton.addEventListener('click', () => {
-      if (typeof lightbox.showModal === 'function') {
-        lightbox.showModal();
-      }
+  if (lightbox) {
+    zoomButtons.forEach((zoomButton) => {
+      zoomButton.addEventListener('click', () => {
+        if (typeof lightbox.showModal === 'function') {
+          lightbox.showModal();
+        }
+      });
     });
 
     lightbox.addEventListener('click', (event) => {
