@@ -2144,3 +2144,99 @@
     transition: none;
   }
 }
+
+
+/* Секция «Ультросовременное оборудование» по макету Figma 1857:33729 */
+.laser-equipment {
+  margin: 0 0.2778rem 0.2778rem;
+  padding: 0.5556rem;
+  border-radius: 2.2222rem;
+  background: #F5F8F7;
+}
+
+.laser-equipment__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1111rem;
+  width: 100%;
+  min-height: 55.5556rem;
+  padding: 0.4444rem 2.2222rem 4.4444rem;
+  border-radius: 1.1667rem;
+  background: #FFFFFF;
+}
+
+.laser-equipment__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 1.6667rem;
+  padding-bottom: 1.1111rem;
+  border-bottom: 1px solid #F5F8F7;
+}
+
+.laser-equipment__title {
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.laser-equipment__visual {
+  width: 100%;
+  max-width: 100rem;
+  height: auto;
+  aspect-ratio: 36 / 17;
+  margin: 0;
+}
+
+.laser-equipment__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1300px) {
+  .laser-equipment__panel {
+    min-height: 0;
+    padding-right: 1.6667rem;
+    padding-left: 1.6667rem;
+    padding-bottom: 2.2222rem;
+  }
+
+  .laser-equipment__title {
+    font-size: 1.6667rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .laser-equipment {
+    padding: 0.2778rem;
+    border-radius: 1.1111rem;
+  }
+
+  .laser-equipment__panel {
+    gap: 1.1111rem;
+    padding: 0.5556rem 0.8333rem 1.1111rem;
+    border-radius: 0.8333rem;
+  }
+
+  .laser-equipment__header {
+    padding-top: 0.8333rem;
+    padding-bottom: 0.8333rem;
+  }
+
+  .laser-equipment__title {
+    font-size: 1.2222rem;
+  }
+
+  .laser-equipment__visual {
+    aspect-ratio: 36 / 17;
+  }
+}
