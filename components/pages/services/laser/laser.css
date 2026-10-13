@@ -1238,23 +1238,63 @@
   border-bottom-right-radius: 0.7778rem;
 }
 
+/* Figma tablet frame: 1024 px (1857:36851); fluid transition to desktop frames. */
 @media screen and (min-width: 681px) and (max-width: 1100px) {
+  .laser-calculator {
+    padding: 10px;
+  }
+
   .laser-calculator__panel {
-    gap: 1.1111rem;
-    padding: 2.2222rem;
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .laser-calculator__title {
+    font-size: 24px;
+    line-height: 32px;
+    overflow-wrap: normal;
   }
 
   .laser-calculator__filters {
-    column-gap: 1.1111rem;
+    column-gap: 18px;
+    row-gap: 24px;
   }
 
   .laser-calculator__filter {
-    gap: 0.8333rem;
+    gap: 12px;
+  }
+
+  .laser-calculator__filter-label {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+
+  .laser-calculator__options {
+    gap: 4px;
+    padding: 4px;
   }
 
   .laser-calculator__option {
-    padding-right: 0.7778rem;
-    padding-left: 0.7778rem;
+    min-height: 0;
+    padding: 14px 18px;
+    border-radius: 14px;
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .laser-calculator__table {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+
+  .laser-calculator__table th,
+  .laser-calculator__table td {
+    padding: 14px 18px;
+  }
+
+  .laser-calculator__table tfoot th,
+  .laser-calculator__table tfoot td {
+    height: 70px;
   }
 }
 
