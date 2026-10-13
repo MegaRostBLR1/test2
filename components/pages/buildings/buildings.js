@@ -37,7 +37,24 @@ function initBuildings() {
 
   const description = document.querySelector('.buildings-description');
 
-  if (!description || description.dataset.initialized === 'true') {
+  if (!description) {
+    return;
+  }
+
+  const industries = description.querySelector('.buildings-description__industries');
+  const industriesToggle = description.querySelector('.buildings-description__industries-toggle');
+
+  if (industries && industriesToggle && industries.dataset.toggleInitialized !== 'true') {
+    industries.dataset.toggleInitialized = 'true';
+    industriesToggle.addEventListener('click', () => {
+      const expanded = industriesToggle.getAttribute('aria-expanded') !== 'true';
+      industries.classList.toggle('is-expanded', expanded);
+      industriesToggle.setAttribute('aria-expanded', String(expanded));
+      industriesToggle.querySelector('span').textContent = expanded ? 'Скрыть' : 'Показать еще';
+    });
+  }
+
+  if (description.dataset.initialized === 'true') {
     return;
   }
 
