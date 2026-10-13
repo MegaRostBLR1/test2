@@ -527,7 +527,7 @@
   .buildings__agro-inner {
     width: 100%;
     max-width: 1014px;
-    min-height: 840px;
+    min-height: 772px;
   }
 
   .buildings__agro-content {
@@ -582,7 +582,7 @@
   }
 
   .buildings__agro-illustration {
-    top: 344px;
+    top: 281px;
     left: 50%;
     width: 700px;
     max-width: none;
