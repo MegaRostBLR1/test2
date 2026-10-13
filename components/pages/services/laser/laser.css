@@ -1403,7 +1403,7 @@
 .laser-materials {
   width: calc(100% - 1.1111rem);
   margin: 0 auto;
-  padding: 0.5556rem;
+  padding: 0;
   border-radius: 1.1111rem;
   background: #f5f8f7;
 }
@@ -1475,7 +1475,6 @@
   align-items: start;
   gap: 7.7778rem;
   width: 100%;
-  max-width: 83.7778rem;
 }
 
 .laser-materials__list {
