@@ -3061,3 +3061,48 @@
     transition: none;
   }
 }
+
+
+/* Figma node 1857:46397 — точная адаптация планшетного кадра 1024 px. */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .buildings-catalog__panel {
+    gap: 14px;
+    padding: 40px;
+  }
+
+  .buildings-catalog__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .buildings-catalog__header {
+    gap: 24px;
+  }
+
+  .buildings-catalog__filters {
+    justify-content: center;
+    gap: 4px;
+    padding: 4px 18px;
+  }
+
+  .buildings-catalog__filter {
+    gap: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .buildings-catalog__cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .buildings-catalog__card {
+    gap: 18px;
+    padding: 4px 4px 18px;
+  }
+
+  .buildings-catalog__caption {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
