@@ -1,4 +1,37 @@
 function initLaser() {
+
+  document.querySelectorAll('.laser-materials').forEach((root) => {
+    if (root.dataset.initialized === 'true') return;
+    root.dataset.initialized = 'true';
+    root.querySelectorAll('.laser-materials__toggle').forEach((toggle) => {
+      toggle.addEventListener('click', () => {
+        const wasExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        root.querySelectorAll('.laser-materials__toggle').forEach((item) => {
+          item.setAttribute('aria-expanded', 'false');
+          const panel = root.querySelector(`#${item.getAttribute('aria-controls')}`);
+          if (panel) panel.hidden = true;
+          const icon = item.querySelector('.laser-materials__toggle-icon img');
+          if (icon) icon.src = 'https://www.figma.com/api/mcp/asset/1c582948-cf6c-4d39-b2c8-06156740e326/5d936.svg';
+        });
+        if (!wasExpanded) {
+          toggle.setAttribute('aria-expanded', 'true');
+          const panel = root.querySelector(`#${toggle.getAttribute('aria-controls')}`);
+          if (panel) panel.hidden = false;
+          const icon = toggle.querySelector('.laser-materials__toggle-icon img');
+          if (icon) icon.src = 'https://www.figma.com/api/mcp/asset/1c582948-cf6c-4d39-b2c8-06156740e326/33e3b.svg';
+        }
+      });
+    });
+    const zoom = root.querySelector('.laser-materials__zoom');
+    const image = root.querySelector('.laser-materials__image');
+    if (zoom && image) {
+      zoom.addEventListener('click', () => {
+        const preview = window.open(image.src, '_blank', 'noopener,noreferrer');
+        if (preview) preview.opener = null;
+      });
+    }
+  });
+
   document.querySelectorAll('.laser-calculator__options').forEach((group) => {
     if (group.dataset.initialized === 'true') return;
     group.dataset.initialized = 'true';
