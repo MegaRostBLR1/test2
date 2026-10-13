@@ -306,6 +306,10 @@
   outline-offset: -0.1111rem;
 }
 
+.buildings__agro-tabs-toggle {
+  display: none;
+}
+
 @media (max-width: 1300px) {
   .buildings__agro {
     min-height: 43rem;
