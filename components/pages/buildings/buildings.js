@@ -4,7 +4,7 @@ function initBuildings() {
   if (advantages && advantages.dataset.initialized !== 'true') {
     advantages.dataset.initialized = 'true';
 
-    const items = Array.from(advantages.querySelectorAll('.buildings-advantages__item'));
+    const items = Array.from(advantages.querySelectorAll('.buildings-advantages__item:not(.buildings-advantages__item--responsive)'));
     const previousButton = advantages.querySelector('.buildings-advantages__arrow--prev');
     const nextButton = advantages.querySelector('.buildings-advantages__arrow--next');
     let activeIndex = 0;
