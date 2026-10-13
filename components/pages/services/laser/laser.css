@@ -1802,3 +1802,308 @@
     line-height: 28px;
   }
 }
+
+
+/* Секция «Работать с нами», Figma 1857:33745. Изображения будут подключены отдельно. */
+.laser-work-with-us {
+  margin: 0 0.2778rem 0.2778rem;
+  padding: 0.2778rem;
+  border-radius: 1.1111rem;
+  background: #F5F8F7;
+}
+
+.laser-work-with-us__frame {
+  width: 100%;
+  border-radius: 0.5556rem;
+  background: #FFFFFF;
+}
+
+.laser-work-with-us__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.6667rem;
+  width: 100%;
+  min-width: 0;
+  padding: 4.4444rem 2.7778rem 0.2778rem;
+  border-radius: 1.1111rem;
+  background: #FFFFFF;
+}
+
+.laser-work-with-us__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5556rem;
+  width: 100%;
+  text-align: center;
+}
+
+.laser-work-with-us__title {
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.laser-work-with-us__subtitle {
+  max-width: 100%;
+  margin: 0;
+  color: #4D4D4DCC;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.3333rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.laser-work-with-us__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6667rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.laser-work-with-us__cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5556rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.laser-work-with-us__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6667rem;
+  min-width: 0;
+  padding: 1.1111rem;
+  border-radius: 1.1111rem;
+  background: #FFFFFF;
+}
+
+.laser-work-with-us__card-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5556rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.laser-work-with-us__eyebrow {
+  margin: 0;
+  color: #505050;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.laser-work-with-us__card-title {
+  margin: 0;
+  color: #505050;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.6667rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.laser-work-with-us__card-description {
+  width: 100%;
+  margin: 0;
+  color: #4D4D4DCC;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.laser-work-with-us__card-image {
+  width: 100%;
+  aspect-ratio: 1046 / 455;
+  border-radius: 0.5556rem;
+  background: #F5F8F7;
+}
+
+.laser-work-with-us__carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3333rem;
+  min-height: 5.0283rem;
+}
+
+.laser-work-with-us__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 3.5556rem;
+  width: 3.5556rem;
+  height: 3.5556rem;
+  padding: 0.5556rem;
+  border: 1px solid #4D4D4D33;
+  border-radius: 1.1111rem;
+  color: #4D4D4D;
+  background: #FFFFFF;
+}
+
+.laser-work-with-us__arrow svg {
+  display: block;
+  width: 2.2222rem;
+  height: 2.2222rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+}
+
+.laser-work-with-us__arrow:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.laser-work-with-us__pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.2222rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.laser-work-with-us__pagination li {
+  flex: 0 0 0.5556rem;
+  width: 0.5556rem;
+  height: 0.5556rem;
+  border-radius: 1.6667rem;
+  background: #324C8833;
+}
+
+.laser-work-with-us__pagination li.is-active {
+  background: #324C88;
+}
+
+.laser-work-with-us__visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .laser-work-with-us__panel {
+    gap: 30px;
+    padding: 40px 30px 5px;
+  }
+
+  .laser-work-with-us__title {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .laser-work-with-us__subtitle {
+    font-size: 18px;
+  }
+
+  .laser-work-with-us__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .laser-work-with-us__card {
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .laser-work-with-us__card-title {
+    font-size: 22px;
+  }
+
+  .laser-work-with-us__card-description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .laser-work-with-us {
+    padding: 0.2778rem;
+    border-radius: 1.1111rem;
+  }
+
+  .laser-work-with-us__panel {
+    gap: 25px;
+    padding: 30px 10px 5px;
+    border-radius: 0.8333rem;
+  }
+
+  .laser-work-with-us__header {
+    gap: 10px;
+  }
+
+  .laser-work-with-us__title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .laser-work-with-us__subtitle {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .laser-work-with-us__cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .laser-work-with-us__card {
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .laser-work-with-us__eyebrow {
+    font-size: 14px;
+  }
+
+  .laser-work-with-us__card-title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .laser-work-with-us__card-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .laser-work-with-us__carousel {
+    gap: 16px;
+    min-height: 64px;
+  }
+
+  .laser-work-with-us__arrow {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .laser-work-with-us__arrow svg {
+    width: 28px;
+    height: 28px;
+  }
+}
