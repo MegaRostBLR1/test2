@@ -785,3 +785,79 @@
     line-height: 24px;
   }
 }
+
+/* Figma mobile frame: 360 px (1857:38390). */
+@media screen and (max-width: 400px) {
+  .laser-benefits {
+    width: calc(100% - 20px);
+    padding: 0 0 10px;
+    border-radius: 10px;
+  }
+
+  .laser-benefits__header {
+    align-items: center;
+    gap: 14px;
+    padding: 20px 4px 10px;
+  }
+
+  .laser-benefits__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .laser-benefits__navigation {
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    padding: 4px;
+  }
+
+  .laser-benefits__navigation-link {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .laser-benefits__navigation-dot {
+    flex-basis: 4px;
+    width: 4px;
+    height: 4px;
+  }
+
+  .laser-benefits__list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .laser-benefits__card {
+    gap: 18px;
+    min-height: 0;
+    padding: 18px;
+    border-radius: 30px;
+  }
+
+  .laser-benefits__number {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .laser-benefits__content {
+    gap: 8px;
+  }
+
+  .laser-benefits__card-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .laser-benefits__description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
