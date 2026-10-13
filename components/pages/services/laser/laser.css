@@ -1713,8 +1713,13 @@
   justify-content: center;
   width: 100%;
   padding-top: 1.6667rem;
-  padding-bottom: 1.1111rem;
-  border-bottom: 1px solid #F5F8F7;
+  padding-bottom: 0;
+}
+
+.laser-equipment__divider {
+  width: 100%;
+  height: 1px;
+  background: #F5F8F7;
 }
 
 .laser-equipment__title {
@@ -1752,7 +1757,7 @@
 
   .laser-equipment__header {
     padding-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
 
   .laser-equipment__title {
@@ -1776,17 +1781,24 @@
   }
 
   .laser-equipment__panel {
-    gap: 1.1111rem;
-    padding: 0.5556rem 0.8333rem 1.1111rem;
+    gap: 20px;
+    padding: 20px 10px;
     border-radius: 0.8333rem;
   }
 
+  .laser-equipment__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+  }
+
   .laser-equipment__header {
-    padding-top: 0.8333rem;
-    padding-bottom: 0.8333rem;
+    padding: 0;
   }
 
   .laser-equipment__title {
-    font-size: 1.2222rem;
+    font-size: 20px;
+    line-height: 28px;
   }
 }
