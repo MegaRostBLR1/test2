@@ -443,7 +443,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14px;
+    gap: 24px;
     width: 100%;
   }
 
@@ -757,7 +757,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 14px;
     width: 100%;
   }
 
