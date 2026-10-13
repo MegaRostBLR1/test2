@@ -418,3 +418,42 @@
     transition: none;
   }
 }
+
+/* Макет Figma 1857:41413 — ширина 1440 px.
+   Сохраняем desktop-композицию 1920 px и корректируем только геометрию
+   секции и навигации для целевого фрейма 1440 px. */
+@media (min-width: 1301px) and (max-width: 1600px) {
+  .buildings__agro {
+    min-height: 46.1111rem;
+    background: #292929;
+  }
+
+  .buildings__agro-inner {
+    min-height: 42.3333rem;
+  }
+
+  .buildings__agro-tabs {
+    right: 0;
+    bottom: 1.1111rem;
+    left: 0;
+    width: 77.7778rem;
+    max-width: 100%;
+    margin: 0 auto;
+    border-color: #ffffff1f;
+    border-radius: 1.1111rem;
+    background: #626262cc;
+  }
+
+  .buildings__agro-tab {
+    border-radius: 1.1111rem;
+    color: #ffffff;
+    font-size: 1.1111rem;
+  }
+
+  .buildings__agro-tab:hover,
+  .buildings__agro-tab.is-active {
+    background: #ffffff;
+    color: #324c88;
+  }
+}
+
