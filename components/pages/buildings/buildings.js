@@ -52,7 +52,7 @@ function initBuildings() {
     const panel = item.querySelector('.buildings-description__panel');
     const icon = trigger?.querySelector('.buildings-description__icon img');
 
-    if (!trigger || !panel || !icon) {
+    if (!trigger || !panel || !icon || !panel.textContent.trim()) {
       return;
     }
 
