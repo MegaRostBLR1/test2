@@ -594,14 +594,23 @@
 }
 
 @media screen and (max-width: 1600px) {
+  .laser-benefits__panel {
+    padding: 3.5556rem 2.2222rem;
+  }
+
   .laser-benefits__layout {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 39.4444rem);
-    gap: 4rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 33.8889rem);
+    gap: 2.2222rem;
+    max-width: 100%;
   }
 
   .laser-benefits__title {
-    font-size: 2rem;
+    font-size: 2.6667rem;
     line-height: 1.3333;
+  }
+
+  .laser-benefits__visual {
+    aspect-ratio: 610 / 594;
   }
 }
 
