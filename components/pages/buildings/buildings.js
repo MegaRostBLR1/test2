@@ -163,4 +163,52 @@ function initBuildings() {
       }
     });
   }
+  const gallery = document.querySelector('.buildings-gallery');
+
+  if (gallery && gallery.dataset.initialized !== 'true') {
+    gallery.dataset.initialized = 'true';
+
+    const slides = Array.from(gallery.querySelectorAll('[data-gallery-slide]'));
+    const dots = Array.from(gallery.querySelectorAll('.buildings-gallery__dot'));
+    const previous = gallery.querySelector('[data-gallery-prev]');
+    const next = gallery.querySelector('[data-gallery-next]');
+    const lightbox = gallery.querySelector('.buildings-gallery__lightbox');
+    const lightboxImage = gallery.querySelector('.buildings-gallery__lightbox-image');
+    const zoom = gallery.querySelector('.buildings-gallery__zoom');
+    let activeIndex = 1;
+
+    const renderGallery = () => {
+      slides.forEach((slide, index) => {
+        slide.classList.toggle('buildings-gallery__slide--active', index === activeIndex);
+        slide.classList.toggle('buildings-gallery__slide--side', index !== activeIndex);
+      });
+      dots.forEach((dot, index) => {
+        const isActive = index === activeIndex;
+        dot.classList.toggle('is-active', isActive);
+        if (isActive) dot.setAttribute('aria-current', 'true');
+        else dot.removeAttribute('aria-current');
+      });
+      const activeImage = slides[activeIndex]?.querySelector('img');
+      if (activeImage && lightboxImage) {
+        lightboxImage.src = activeImage.src;
+        lightboxImage.alt = activeImage.alt;
+      }
+    };
+
+    const move = (direction) => {
+      activeIndex = (activeIndex + direction + slides.length) % slides.length;
+      renderGallery();
+    };
+
+    previous?.addEventListener('click', () => move(-1));
+    next?.addEventListener('click', () => move(1));
+    zoom?.addEventListener('click', () => {
+      if (lightbox && typeof lightbox.showModal === 'function') lightbox.showModal();
+    });
+    lightbox?.addEventListener('click', (event) => {
+      if (event.target === lightbox) lightbox.close();
+    });
+    renderGallery();
+  }
+
 }

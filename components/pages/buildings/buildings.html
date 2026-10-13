@@ -206,3 +206,44 @@
     </div>
   </div>
 </section>
+
+
+<section class="buildings-gallery" aria-labelledby="buildings-gallery-title">
+  <div class="buildings-gallery__inner">
+    <h2 class="buildings-gallery__title" id="buildings-gallery-title">Фотогалерея</h2>
+    <div class="buildings-gallery__carousel" aria-label="Фотографии зданий">
+      <figure class="buildings-gallery__slide buildings-gallery__slide--side" data-gallery-slide>
+        <img src="https://www.figma.com/api/mcp/asset/79f3c992-ed3d-467e-859b-28ac3c73b07b/fa91b.png" alt="Фотография быстровозводимого здания" width="580" height="400" loading="lazy">
+      </figure>
+      <figure class="buildings-gallery__slide buildings-gallery__slide--active" data-gallery-slide>
+        <img src="https://www.figma.com/api/mcp/asset/79f3c992-ed3d-467e-859b-28ac3c73b07b/45237.png" alt="Фотография быстровозводимого здания" width="580" height="520" loading="lazy">
+        <button class="buildings-gallery__zoom" type="button" aria-label="Увеличить фотографию здания" aria-haspopup="dialog">
+          <img src="https://www.figma.com/api/mcp/asset/79f3c992-ed3d-467e-859b-28ac3c73b07b/675d8.svg" alt="" aria-hidden="true" width="24" height="24">
+        </button>
+      </figure>
+      <figure class="buildings-gallery__slide buildings-gallery__slide--side" data-gallery-slide>
+        <img src="https://www.figma.com/api/mcp/asset/79f3c992-ed3d-467e-859b-28ac3c73b07b/fa91b.png" alt="Фотография быстровозводимого здания" width="580" height="400" loading="lazy">
+      </figure>
+    </div>
+    <div class="buildings-gallery__controls">
+      <button class="buildings-gallery__arrow buildings-gallery__arrow--prev" type="button" aria-label="Предыдущие фотографии" data-gallery-prev>
+        <img src="https://www.figma.com/api/mcp/asset/79f3c992-ed3d-467e-859b-28ac3c73b07b/1b874.svg" alt="" aria-hidden="true" width="40" height="40">
+      </button>
+      <div class="buildings-gallery__pagination" aria-label="Страница фотогалереи">
+        <span class="buildings-gallery__dot is-active" aria-current="true"></span>
+        <span class="buildings-gallery__dot"></span>
+        <span class="buildings-gallery__dot"></span>
+        <span class="buildings-gallery__dot"></span>
+      </div>
+      <button class="buildings-gallery__arrow buildings-gallery__arrow--next" type="button" aria-label="Следующие фотографии" data-gallery-next>
+        <img src="https://www.figma.com/api/mcp/asset/79f3c992-ed3d-467e-859b-28ac3c73b07b/a5120.svg" alt="" aria-hidden="true" width="40" height="40">
+      </button>
+    </div>
+  </div>
+  <dialog class="buildings-gallery__lightbox" aria-label="Фотография здания в увеличенном размере">
+    <form method="dialog" class="buildings-gallery__lightbox-controls">
+      <button class="buildings-gallery__lightbox-close" type="submit" aria-label="Закрыть фотографию">×</button>
+    </form>
+    <img class="buildings-gallery__lightbox-image" src="https://www.figma.com/api/mcp/asset/79f3c992-ed3d-467e-859b-28ac3c73b07b/45237.png" alt="Фотография быстровозводимого здания">
+  </dialog>
+</section>
