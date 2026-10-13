@@ -13,8 +13,10 @@ function initLaser() {
   const closeButtons = calculator.querySelectorAll('[data-popup-close]');
   let previouslyFocused = null;
 
+  const isMobile = () => window.matchMedia('(max-width: 400px)').matches;
+
   const setPopupOpen = (isOpen) => {
-    if (!popup || !parametersToggle) return;
+    if (!popup || !parametersToggle || (!isMobile() && isOpen)) return;
 
     popup.classList.toggle('is-open', isOpen);
     popup.setAttribute('aria-hidden', String(!isOpen));
@@ -30,7 +32,12 @@ function initLaser() {
   };
 
   parametersToggle?.addEventListener('click', () => {
+    if (!isMobile()) return;
     setPopupOpen(popup?.classList.contains('is-open') !== true);
+  });
+
+  window.addEventListener('resize', () => {
+    if (!isMobile() && popup?.classList.contains('is-open')) setPopupOpen(false);
   });
 
   closeButtons.forEach((button) => {
