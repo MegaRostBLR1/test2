@@ -1012,6 +1012,7 @@
   gap: 7.7778rem;
   width: 100%;
   max-width: 83.7778rem;
+  padding-bottom: 0.1667rem;
 }
 .buildings-description__media {
   min-width: 0;
