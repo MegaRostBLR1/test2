@@ -1600,7 +1600,7 @@
 .laser-calculator__popup-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(29, 38, 50, 0.35);
+  background: #1d263259;
 }
 
 .laser-calculator__popup-panel {
@@ -1609,13 +1609,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 340px;
-  max-height: min(564px, calc(100dvh - 24px));
-  padding: 2px;
+  max-width: 18.8889rem;
+  max-height: min(31.3333rem, calc(100dvh - 1.3333rem));
+  padding: 0.1111rem;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 0.5556rem;
   background: #f8f8f8;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0.6667rem 2rem #00000029;
   outline: none;
 }
 
@@ -1624,26 +1624,26 @@
   align-items: center;
   justify-content: space-between;
   flex: 0 0 auto;
-  gap: 14px;
-  padding: 14px;
-  border-bottom: 2px solid #ffffff;
+  gap: 0.7778rem;
+  padding: 0.7778rem;
+  border-bottom: 0.1111rem solid #ffffff;
 }
 
 .laser-calculator__popup-title {
   color: #1d4395;
   font-family: 'Onest-Medium', sans-serif;
-  font-size: 16px;
+  font-size: 0.8889rem;
   font-weight: 500;
   line-height: 1.6;
 }
 
 .laser-calculator__popup-close {
   display: flex;
-  flex: 0 0 24px;
+  flex: 0 0 1.3333rem;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 1.3333rem;
+  height: 1.3333rem;
   color: #324c88;
 }
 
@@ -1652,12 +1652,12 @@
   flex: 1 1 auto;
   flex-direction: column;
   align-items: stretch;
-  gap: 14px;
+  gap: 0.7778rem;
   min-height: 0;
   margin: 0;
-  padding: 12px 14px;
+  padding: 0.6667rem 0.7778rem;
   overflow-y: auto;
-  border-radius: 10px;
+  border-radius: 0.5556rem;
   background: #efefef;
   scrollbar-color: #4d4d4d #ffffff;
   scrollbar-width: thin;
@@ -1667,7 +1667,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 10px;
+  gap: 0.5556rem;
   min-width: 0;
   padding: 0;
   border: 0;
@@ -1676,9 +1676,9 @@
 .laser-calculator__popup-legend {
   color: rgba(44, 44, 44, 0.9);
   font-family: 'Onest-Medium', sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 1.4444rem;
 }
 
 .laser-calculator__popup-options,
@@ -1686,32 +1686,32 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 14px;
+  gap: 0.7778rem;
 }
 
 .laser-calculator__popup-option {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  min-height: 22px;
+  gap: 0.5556rem;
+  min-height: 1.2222rem;
   padding: 0;
   color: #2c2c2c;
   font-family: 'Onest-Medium', sans-serif;
-  font-size: 14px;
+  font-size: 0.7778rem;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 1.2222rem;
   text-align: left;
   overflow-wrap: anywhere;
 }
 
 .laser-calculator__popup-option.is-active::after {
-  width: 8px;
-  height: 5px;
-  flex: 0 0 8px;
-  margin-right: 5px;
-  border-bottom: 2px solid #324c88;
-  border-left: 2px solid #324c88;
+  width: 0.4444rem;
+  height: 0.2778rem;
+  flex: 0 0 0.4444rem;
+  margin-right: 0.2778rem;
+  border-bottom: 0.1111rem solid #324c88;
+  border-left: 0.1111rem solid #324c88;
   content: '';
   transform: rotate(-45deg);
 }
@@ -1720,17 +1720,17 @@
   display: inline-flex;
   align-items: center;
   align-self: flex-start;
-  gap: 14px;
-  margin-top: 2px;
+  gap: 0.7778rem;
+  margin-top: 0.1111rem;
   color: #324c88;
   font-family: 'Onest-Medium', sans-serif;
-  font-size: 14px;
+  font-size: 0.7778rem;
   line-height: 1.4;
 }
 
 .laser-calculator__popup-more span {
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.1111rem;
   transition: transform 0.15s ease;
 }
 
@@ -1745,15 +1745,15 @@
 .laser-calculator__popup-footer {
   display: flex;
   flex: 0 0 auto;
-  padding: 12px 14px;
-  border-top: 2px solid #ffffff;
+  padding: 0.6667rem 0.7778rem;
+  border-top: 0.1111rem solid #ffffff;
 }
 
 .laser-calculator__popup-back {
   color: #324c88;
   font-family: 'Onest-Medium', sans-serif;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 0.7778rem;
+  line-height: 1.2222rem;
 }
 
 @media screen and (max-width: 400px) {
