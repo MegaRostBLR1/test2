@@ -2055,28 +2055,35 @@
 
 @media screen and (max-width: 680px) {
   .laser-work-with-us {
-    padding: 0.2778rem;
-    border-radius: 1.1111rem;
+    padding: 5px 5px 5px;
+    border-radius: 10px;
   }
 
   .laser-work-with-us__panel {
-    gap: 25px;
-    padding: 30px 10px 5px;
-    border-radius: 0.8333rem;
+    gap: 18px;
+    padding: 20px 10px 5px;
+    border-radius: 10px;
   }
 
   .laser-work-with-us__header {
     gap: 10px;
+    align-items: center;
+    text-align: center;
   }
 
   .laser-work-with-us__title {
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 28px;
+    white-space: nowrap;
   }
 
   .laser-work-with-us__subtitle {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: normal;
+  }
+
+  .laser-work-with-us__content {
+    gap: 30px;
   }
 
   .laser-work-with-us__cards {
@@ -2085,17 +2092,23 @@
   }
 
   .laser-work-with-us__card {
-    gap: 20px;
-    padding: 15px;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .laser-work-with-us__card-copy {
+    gap: 10px;
   }
 
   .laser-work-with-us__eyebrow {
     font-size: 14px;
+    line-height: 1.6;
   }
 
   .laser-work-with-us__card-title {
-    font-size: 20px;
-    line-height: 1.4;
+    font-size: 18px;
+    line-height: 1.6;
   }
 
   .laser-work-with-us__card-description {
@@ -2103,9 +2116,13 @@
     line-height: 1.5;
   }
 
+  .laser-work-with-us__card-image {
+    border-radius: 0;
+  }
+
   .laser-work-with-us__carousel {
-    gap: 16px;
-    min-height: 64px;
+    gap: 24px;
+    min-height: 68px;
   }
 
   .laser-work-with-us__arrow {
@@ -2113,11 +2130,11 @@
     width: 48px;
     height: 48px;
     padding: 8px;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
   .laser-work-with-us__arrow svg {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
   }
 }
