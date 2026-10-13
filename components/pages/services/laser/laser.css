@@ -304,23 +304,28 @@
   }
 
   .laser__breadcrumbs {
-    gap: 0.4444rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.5556rem;
     width: 100%;
-    min-height: 2.7778rem;
-    padding: 0 0.7778rem;
-    font-size: 0.7222rem;
-    line-height: 1.5;
+    min-height: 0;
+    padding: 1rem 0;
+    font-size: 0.7778rem;
+    line-height: 1.2857;
+    white-space: nowrap;
   }
 
   .laser__hero {
-    min-height: 0;
-    padding: 2.7778rem 1.1111rem;
+    height: 41.1111rem;
+    min-height: 41.1111rem;
+    padding: 1.1111rem 0.5rem;
+    border-radius: 1.1111rem;
     background-position: center;
   }
 
   .laser__hero-content {
-    gap: 1.3333rem;
-    max-width: 35rem;
+    gap: 2rem;
+    max-width: 18.3889rem;
   }
 
   .laser__intro {
@@ -328,62 +333,67 @@
   }
 
   .laser__title {
-    font-size: 1.6667rem;
-    line-height: 1.25;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 1.3333rem;
+    font-weight: 500;
+    line-height: 1.3333;
+    white-space: nowrap;
   }
 
   .laser__description {
-    font-size: 0.8889rem;
-    line-height: 1.55;
+    max-width: 100%;
+    font-size: 0.7778rem;
+    line-height: 1.2222rem;
   }
 
   .laser__actions {
     flex-direction: column;
-    align-items: stretch;
-    gap: 0.6667rem;
-    width: 100%;
+    align-items: flex-start;
+    gap: 0.7778rem;
+    width: auto;
   }
 
   .laser__action.btn {
-    width: 100%;
-    min-height: 3.1111rem;
-    padding: 0.7778rem 1.1111rem;
-    border-radius: 0.6667rem;
-    font-size: 0.7778rem;
+    width: auto;
+    min-height: 0;
+    padding: 1.4444rem 1.7778rem;
+    border-radius: 1.1111rem;
+    font-size: 1rem;
+    line-height: 1.26;
   }
 
   .laser__price-link {
-    width: 10rem;
-    height: 10rem;
+    width: 11rem;
+    height: 11rem;
   }
 
   .laser__price-diamond {
     width: 7.7778rem;
     height: 7.7778rem;
-    border-radius: 0.4444rem;
+    border-radius: 0.5556rem;
   }
 
   .laser__price-content {
-    padding-top: 0.4444rem;
+    padding-top: 0.5556rem;
   }
 
   .laser__price-icon {
-    flex-basis: 2.2222rem;
-    width: 2.2222rem;
-    height: 2.2222rem;
-    border-radius: 0.7778rem;
+    flex-basis: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5556rem;
   }
 
   .laser__price-icon svg {
-    width: 1.1111rem;
-    height: 1.1111rem;
+    width: 1.3333rem;
+    height: 1.3333rem;
   }
 
   .laser__price-label {
-    width: 7.2222rem;
+    width: 9.8333rem;
     margin-top: 0.4444rem;
     font-size: 0.6667rem;
-    line-height: 1rem;
+    line-height: 1.4444rem;
   }
 }
 
