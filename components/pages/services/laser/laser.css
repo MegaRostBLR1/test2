@@ -967,17 +967,21 @@
 
 /* At 1440 px the Figma frame keeps the same card geometry as the 1920 px layout. */
 
-@media screen and (max-width: 1100px) {
+/* Адаптация блока «Этапы работы» под Figma 1024 px.
+   На 1440 и 1920 px сохраняется базовая desktop-композиция. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
   .laser-process__panel {
-    gap: 24px;
-    padding: 32px 24px;
+    gap: 36px;
+    padding: 48px 40px;
   }
 
   .laser-process__title {
-    font-size: 30px;
+    font-size: 48px;
+    line-height: normal;
   }
 
   .laser-process__card {
+    height: 200px;
     min-height: 200px;
     padding: 24px;
   }
@@ -988,15 +992,18 @@
 
   .laser-process__card-title {
     font-size: 24px;
+    line-height: 1.6;
   }
 
   .laser-process__description {
     font-size: 16px;
+    line-height: 1.5;
   }
 
   .laser-process__number {
     right: 20px;
-    font-size: 80px;
+    font-size: 100px;
+    line-height: 1.5;
   }
 }
 
