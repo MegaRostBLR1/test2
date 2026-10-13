@@ -38,58 +38,60 @@
 </section>
 
 <section class="laser-benefits" aria-labelledby="laser-benefits-title">
-  <div class="laser-benefits__container">
+  <div class="laser-benefits__panel">
     <header class="laser-benefits__header">
       <h2 class="laser-benefits__title" id="laser-benefits-title">Преимущества лазерной резки</h2>
-
-      <nav class="laser-benefits__navigation" aria-label="Разделы услуги лазерной резки">
-        <a class="laser-benefits__navigation-link is-active" href="#laser-benefits-title" aria-current="location">Преимущества лазерной резки</a>
-        <span class="laser-benefits__navigation-dot" aria-hidden="true"></span>
-        <span class="laser-benefits__navigation-link">Области применения</span>
-        <span class="laser-benefits__navigation-dot" aria-hidden="true"></span>
-        <span class="laser-benefits__navigation-link">Типы металлов</span>
-        <span class="laser-benefits__navigation-dot" aria-hidden="true"></span>
-        <span class="laser-benefits__navigation-link">Технологический процесс</span>
-      </nav>
     </header>
-
-    <ol class="laser-benefits__list">
-      <li class="laser-benefits__card">
-        <span class="laser-benefits__number" aria-hidden="true">01</span>
-        <div class="laser-benefits__content">
-          <h3 class="laser-benefits__card-title">Высокая точность</h3>
-          <p class="laser-benefits__description">Лазерный луч обеспечивает рез с минимальным допуском и аккуратными краями.</p>
-        </div>
-      </li>
-      <li class="laser-benefits__card">
-        <span class="laser-benefits__number" aria-hidden="true">02</span>
-        <div class="laser-benefits__content">
-          <h3 class="laser-benefits__card-title">Скорость обработки</h3>
-          <p class="laser-benefits__description">Процесс резки происходит быстро, что ускоряет производство</p>
-        </div>
-      </li>
-      <li class="laser-benefits__card">
-        <span class="laser-benefits__number" aria-hidden="true">03</span>
-        <div class="laser-benefits__content">
-          <h3 class="laser-benefits__card-title">Минимальное термическое воздействие</h3>
-          <p class="laser-benefits__description">Лазер воздействует локально, снижая риск деформации металла</p>
-        </div>
-      </li>
-      <li class="laser-benefits__card">
-        <span class="laser-benefits__number" aria-hidden="true">04</span>
-        <div class="laser-benefits__content">
-          <h3 class="laser-benefits__card-title">Возможность резки сложных форм</h3>
-          <p class="laser-benefits__description">Лазер легко справляется с криволинейными и мелкими деталями</p>
-        </div>
-      </li>
-      <li class="laser-benefits__card">
-        <span class="laser-benefits__number" aria-hidden="true">05</span>
-        <div class="laser-benefits__content">
-          <h3 class="laser-benefits__card-title">Экономия материала</h3>
-          <p class="laser-benefits__description">Точный рез уменьшает отходы и повышает эффективность использования металла</p>
-        </div>
-      </li>
-    </ol>
+    <div class="laser-benefits__layout">
+      <div class="laser-benefits__accordion">
+        <article class="laser-benefits__item is-open">
+          <div class="laser-benefits__item-divider" aria-hidden="true"></div>
+          <div class="laser-benefits__item-body">
+            <button class="laser-benefits__item-toggle" type="button" aria-expanded="true" aria-controls="laser-benefits-materials">
+              <span class="laser-benefits__toggle-icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/bad17f69-a288-4904-8b87-633c3d10b3f9/33e3b.svg" alt=""></span>
+              <span class="laser-benefits__item-title">Универсальность материалов</span>
+            </button>
+            <div class="laser-benefits__item-content" id="laser-benefits-materials">
+              <p class="laser-benefits__description">Компания PK VESTA предлагает здания из легких металлоконструкций под ключ в Евразии, Ближнем Востоке и Африке от производителя. Проектируем, изготавливаем, устанавливаем быстромонтируемые конструкции любого типа. Предлагаем современные, инновационные решения в сфере строительства, позволяющие поднять бизнес на качественно новый уровень.</p>
+              <a class="btn main-btn laser-benefits__more" href="#/contacts">Подробнее</a>
+            </div>
+          </div>
+          <div class="laser-benefits__item-divider" aria-hidden="true"></div>
+        </article>
+        <article class="laser-benefits__item">
+          <div class="laser-benefits__item-body">
+            <button class="laser-benefits__item-toggle" type="button" aria-expanded="false" aria-controls="laser-benefits-speed">
+              <span class="laser-benefits__toggle-icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/bad17f69-a288-4904-8b87-633c3d10b3f9/5d936.svg" alt=""></span>
+              <span class="laser-benefits__item-title">Высокая скорость</span>
+            </button>
+            <div class="laser-benefits__item-content" id="laser-benefits-speed" hidden>
+              <p class="laser-benefits__description">Высокая скорость обработки помогает сократить сроки изготовления деталей и выполнения заказа.</p>
+              <a class="btn main-btn laser-benefits__more" href="#/contacts">Подробнее</a>
+            </div>
+          </div>
+          <div class="laser-benefits__item-divider" aria-hidden="true"></div>
+        </article>
+        <article class="laser-benefits__item">
+          <div class="laser-benefits__item-body">
+            <button class="laser-benefits__item-toggle" type="button" aria-expanded="false" aria-controls="laser-benefits-quality">
+              <span class="laser-benefits__toggle-icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/bad17f69-a288-4904-8b87-633c3d10b3f9/5d936.svg" alt=""></span>
+              <span class="laser-benefits__item-title">Premium качество</span>
+            </button>
+            <div class="laser-benefits__item-content" id="laser-benefits-quality" hidden>
+              <p class="laser-benefits__description">Точная обработка обеспечивает аккуратный рез и стабильное качество готовых изделий.</p>
+              <a class="btn main-btn laser-benefits__more" href="#/contacts">Подробнее</a>
+            </div>
+          </div>
+          <div class="laser-benefits__item-divider" aria-hidden="true"></div>
+        </article>
+      </div>
+      <figure class="laser-benefits__visual">
+        <img class="laser-benefits__image" src="https://www.figma.com/api/mcp/asset/bad17f69-a288-4904-8b87-633c3d10b3f9/f28bb.png" alt="Пример лазерной резки металла" width="710" height="691" loading="lazy">
+        <a class="laser-benefits__zoom" href="https://www.figma.com/api/mcp/asset/bad17f69-a288-4904-8b87-633c3d10b3f9/f28bb.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть изображение крупнее">
+          <img src="https://www.figma.com/api/mcp/asset/bad17f69-a288-4904-8b87-633c3d10b3f9/4a48f.svg" alt="" aria-hidden="true">
+        </a>
+      </figure>
+    </div>
   </div>
 </section>
 
