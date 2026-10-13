@@ -1059,7 +1059,8 @@
   outline-offset: 0.2222rem;
 }
 .buildings-description__accordion { min-width: 0; width: 100%; color: #4d4d4dcc; }
-.buildings-description__item { border-top: 1px solid #0000000d; }
+.buildings-description__item { padding-bottom: 1.1111rem; border-top: 1px solid #0000000d; }
+.buildings-description__item:first-child { padding-top: 1.1111rem; }
 .buildings-description__item + .buildings-description__item { padding-top: 1.4444rem; }
 .buildings-description__trigger {
   display: flex;
@@ -1098,7 +1099,7 @@
   align-items: flex-start;
   gap: 1rem;
   margin-left: 3.5556rem;
-  padding-top: 1rem;
+  padding-top: 0.2222rem;
 }
 .buildings-description__panel[hidden] { display: none; }
 .buildings-description__copy {
