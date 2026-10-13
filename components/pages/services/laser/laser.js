@@ -59,7 +59,7 @@ function initLaser() {
       const group = button.dataset.filter;
 
       calculator.querySelectorAll('[data-filter="' + group + '"]').forEach((option) => {
-        const active = option === button;
+        const active = option.dataset.value === button.dataset.value;
         option.classList.toggle('is-active', active);
         option.setAttribute('aria-pressed', String(active));
       });
