@@ -2049,3 +2049,81 @@
     height: 30px;
   }
 }
+
+
+/* Figma 1024 px: раскрытый пункт содержит изображение под описанием. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .laser-benefits__panel {
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  .laser-benefits__header {
+    margin-bottom: 40px;
+  }
+
+  .laser-benefits__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .laser-benefits__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    max-width: 100%;
+  }
+
+  .laser-benefits__accordion {
+    width: 100%;
+  }
+
+  .laser-benefits__item-content {
+    padding-left: 54px;
+  }
+
+  .laser-benefits__item-title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .laser-benefits__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .laser-benefits__visual--desktop {
+    display: none;
+  }
+
+  .laser-benefits__visual--tablet {
+    display: block;
+    width: 100%;
+    aspect-ratio: auto;
+    height: 480px;
+    margin-top: 0;
+    padding: 4px;
+    border-radius: 30px;
+  }
+
+  .laser-benefits__visual--tablet .laser-benefits__image {
+    border-radius: 30px;
+  }
+
+  .laser-benefits__visual--tablet .laser-benefits__zoom {
+    right: 10px;
+    bottom: 10px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .laser-benefits__visual--tablet .laser-benefits__zoom img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .laser-benefits__visual--tablet {
+    display: none;
+  }
+}
