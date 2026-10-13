@@ -1691,7 +1691,6 @@
 
 .laser-equipment__frame {
   width: 100%;
-  padding: 0.5556rem;
   border-radius: 1.6667rem;
   background: #FFFFFF;
 }
@@ -1700,7 +1699,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.1111rem;
+  gap: 4.4444rem;
   width: 100%;
   min-width: 0;
   padding: 0.4444rem 2.2222rem 4.4444rem;
@@ -1762,7 +1761,6 @@
   }
 
   .laser-equipment__frame {
-    padding: 0.2778rem;
     border-radius: 0.8333rem;
   }
 
