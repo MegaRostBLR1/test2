@@ -1950,7 +1950,7 @@
   width: 3.5556rem;
   height: 3.5556rem;
   padding: 0.5556rem;
-  border: 1px solid #4D4D4D33;
+  border: 0.0556rem solid #4D4D4D33;
   border-radius: 1.1111rem;
   color: #4D4D4D;
   background: #FFFFFF;
@@ -1995,12 +1995,12 @@
 
 .laser-work-with-us__visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.0556rem;
+  height: 0.0556rem;
   padding: 0;
-  margin: -1px;
+  margin: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
 }
