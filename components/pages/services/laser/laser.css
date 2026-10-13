@@ -2015,16 +2015,17 @@
 @media screen and (min-width: 681px) and (max-width: 1100px) {
   .laser-work-with-us__panel {
     gap: 30px;
-    padding: 40px 30px 5px;
+    padding: 40px 40px 5px;
   }
 
   .laser-work-with-us__title {
-    font-size: 30px;
-    line-height: 1.3;
+    font-size: 24px;
+    line-height: 1.3333;
   }
 
   .laser-work-with-us__subtitle {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.5;
   }
 
   .laser-work-with-us__cards {
@@ -2033,16 +2034,22 @@
   }
 
   .laser-work-with-us__card {
-    gap: 20px;
-    padding: 15px;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .laser-work-with-us__eyebrow {
+    font-size: 16px;
   }
 
   .laser-work-with-us__card-title {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 1.6;
   }
 
   .laser-work-with-us__card-description {
     font-size: 16px;
+    line-height: 1.5;
   }
 }
 
