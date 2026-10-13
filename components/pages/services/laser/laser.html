@@ -250,3 +250,66 @@
     </div>
   </div>
 </section>
+
+<section class="laser-calculator" aria-labelledby="laser-calculator__title">
+  <div class="laser-calculator__panel">
+    <header class="laser-calculator__header">
+      <h2 class="laser-calculator__title" id="laser-calculator__title">Калькулятор для резки металла</h2>
+    </header>
+
+    <form class="laser-calculator__form" id="laser-calculator-form">
+      <fieldset class="laser-calculator__filter">
+        <legend class="laser-calculator__legend">Регион:</legend>
+        <div class="laser-calculator__options" role="group" aria-label="Регион">
+          <button class="laser-calculator__option is-active" type="button" data-filter="region" data-value="russia" aria-pressed="true">Россия</button>
+          <button class="laser-calculator__option" type="button" data-filter="region" data-value="abroad" aria-pressed="false">За рубеж</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="laser-calculator__filter">
+        <legend class="laser-calculator__legend">Металл:</legend>
+        <div class="laser-calculator__options" role="group" aria-label="Тип металла">
+          <button class="laser-calculator__option is-active" type="button" data-filter="metal" data-value="steel" aria-pressed="true">Черная сталь</button>
+          <button class="laser-calculator__option" type="button" data-filter="metal" data-value="stainless" aria-pressed="false">Нержавейка</button>
+          <button class="laser-calculator__option" type="button" data-filter="metal" data-value="aluminium" aria-pressed="false">Алюминий</button>
+          <button class="laser-calculator__option" type="button" data-filter="metal" data-value="copper" aria-pressed="false">Медь</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="laser-calculator__filter">
+        <legend class="laser-calculator__legend">Объем, пог. м.:</legend>
+        <div class="laser-calculator__options" role="group" aria-label="Объем резки">
+          <button class="laser-calculator__option is-active" type="button" data-filter="volume" data-value="3000" aria-pressed="true">Выше 3000</button>
+          <button class="laser-calculator__option" type="button" data-filter="volume" data-value="100" aria-pressed="false">До 100</button>
+          <button class="laser-calculator__option" type="button" data-filter="volume" data-value="100-1000" aria-pressed="false">100–1000</button>
+          <button class="laser-calculator__option" type="button" data-filter="volume" data-value="1000-3000" aria-pressed="false">1000–3000</button>
+        </div>
+      </fieldset>
+
+      <div class="laser-calculator__table-wrap">
+        <table class="laser-calculator__table">
+          <thead>
+            <tr>
+              <th scope="col">Толщина, мм.</th>
+              <th scope="col">Стоимость, руб/пог. м. (без НДС)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>100</td></tr>
+            <tr><td>1</td><td>100</td></tr>
+            <tr><td>1</td><td>100</td></tr>
+            <tr><td>1</td><td>100</td></tr>
+            <tr><td>1</td><td>100</td></tr>
+            <tr><td>1</td><td>100</td></tr>
+            <tr><td>1</td><td>100</td></tr>
+            <tr><td>1</td><td>100</td></tr>
+            <tr><td>1</td><td>100</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><th scope="row">Итого от:</th><td id="laser-calculator-total">892 ₽</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </form>
+  </div>
+</section>
