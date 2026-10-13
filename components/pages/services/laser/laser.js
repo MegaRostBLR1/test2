@@ -14,7 +14,7 @@ function initLaser() {
 
           const icon = itemToggle.querySelector('.laser-benefits__toggle-icon img');
           if (icon) {
-            icon.src = 'https://www.figma.com/api/mcp/asset/b18c657a-c680-4bb3-9ed3-2d7272e0a149/5d936.svg';
+            icon.src = 'https://www.figma.com/api/mcp/asset/225d48e0-b804-457d-a743-1bf7af983def/dcfb2.svg';
           }
         });
 
@@ -25,7 +25,7 @@ function initLaser() {
 
           const icon = toggle.querySelector('.laser-benefits__toggle-icon img');
           if (icon) {
-            icon.src = 'https://www.figma.com/api/mcp/asset/b18c657a-c680-4bb3-9ed3-2d7272e0a149/33e3b.svg';
+            icon.src = 'https://www.figma.com/api/mcp/asset/225d48e0-b804-457d-a743-1bf7af983def/33e3b.svg';
           }
         }
       });
