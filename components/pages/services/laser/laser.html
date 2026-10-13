@@ -331,6 +331,53 @@
         </section>
       </div>
 
+      <div class="laser-calculator__filters" aria-label="Параметры расчета">
+        <fieldset class="laser-calculator__filter">
+          <legend class="laser-calculator__legend">Регион:</legend>
+          <div class="laser-calculator__options" role="group" aria-label="Регион">
+            <button class="laser-calculator__option is-active" type="button" data-filter="region" data-value="russia" aria-pressed="true">Россия</button>
+            <button class="laser-calculator__option" type="button" data-filter="region" data-value="abroad" aria-pressed="false">СНГ</button>
+            <button class="laser-calculator__option" type="button" data-filter="region" data-value="africa" aria-pressed="false">Африка и Ближний Восток</button>
+          </div>
+        </fieldset>
+        <fieldset class="laser-calculator__filter">
+          <legend class="laser-calculator__legend">Ширина:</legend>
+          <div class="laser-calculator__options" role="group" aria-label="Ширина">
+            <button class="laser-calculator__option is-active" type="button" data-filter="width" data-value="2" aria-pressed="true">2 м</button>
+            <button class="laser-calculator__option" type="button" data-filter="width" data-value="4" aria-pressed="false">4 м</button>
+            <button class="laser-calculator__option" type="button" data-filter="width" data-value="6" aria-pressed="false">6 м</button>
+            <button class="laser-calculator__option" type="button" data-filter="width" data-value="8" aria-pressed="false">8 м</button>
+          </div>
+        </fieldset>
+        <fieldset class="laser-calculator__filter">
+          <legend class="laser-calculator__legend">Высота:</legend>
+          <div class="laser-calculator__options" role="group" aria-label="Высота">
+            <button class="laser-calculator__option is-active" type="button" data-filter="height" data-value="2" aria-pressed="true">2 м</button>
+            <button class="laser-calculator__option" type="button" data-filter="height" data-value="4" aria-pressed="false">4 м</button>
+            <button class="laser-calculator__option" type="button" data-filter="height" data-value="6" aria-pressed="false">6 м</button>
+            <button class="laser-calculator__option" type="button" data-filter="height" data-value="8" aria-pressed="false">8 м</button>
+          </div>
+        </fieldset>
+        <fieldset class="laser-calculator__filter">
+          <legend class="laser-calculator__legend">Металл:</legend>
+          <div class="laser-calculator__options" role="group" aria-label="Тип металла">
+            <button class="laser-calculator__option is-active" type="button" data-filter="metal" data-value="steel" aria-pressed="true">Черная сталь</button>
+            <button class="laser-calculator__option" type="button" data-filter="metal" data-value="stainless" aria-pressed="false">Нержавейка</button>
+            <button class="laser-calculator__option" type="button" data-filter="metal" data-value="aluminium" aria-pressed="false">Алюминий</button>
+            <button class="laser-calculator__option" type="button" data-filter="metal" data-value="copper" aria-pressed="false">Медь</button>
+          </div>
+        </fieldset>
+        <fieldset class="laser-calculator__filter">
+          <legend class="laser-calculator__legend">Объем, пог. м.:</legend>
+          <div class="laser-calculator__options" role="group" aria-label="Объем резки">
+            <button class="laser-calculator__option is-active" type="button" data-filter="volume" data-value="3000" aria-pressed="true">Выше 3000</button>
+            <button class="laser-calculator__option" type="button" data-filter="volume" data-value="100" aria-pressed="false">До 100</button>
+            <button class="laser-calculator__option" type="button" data-filter="volume" data-value="100-1000" aria-pressed="false">100–1000</button>
+            <button class="laser-calculator__option" type="button" data-filter="volume" data-value="1000-3000" aria-pressed="false">1000–3000</button>
+          </div>
+        </fieldset>
+      </div>
+
       <div class="laser-calculator__table-wrap">
         <table class="laser-calculator__table">
           <thead>
