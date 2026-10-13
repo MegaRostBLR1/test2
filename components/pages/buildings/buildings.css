@@ -1339,3 +1339,146 @@
   .buildings-description__panel { gap: 14px; margin-left: 54px; padding-top: 0; }
   .buildings-description__copy { gap: 14px; font-size: 16px; line-height: 1.5; }
 }
+
+
+/* Мобильный макет Figma 1857:46708 — ширина 360 px. */
+@media (max-width: 375px) {
+  .buildings-description {
+    margin: 0 10px 10px;
+    padding: 0 4px 10px;
+    border-radius: 10px;
+  }
+
+  .buildings-description__inner {
+    gap: 25px;
+  }
+
+  .buildings-description__header {
+    gap: 14px;
+    padding-top: 20px;
+  }
+
+  .buildings-description__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .buildings-description__industries {
+    gap: 14px;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .buildings-description__industries-label {
+    white-space: nowrap;
+  }
+
+  .buildings-description__industries-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+    height: 21px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 21px;
+    white-space: nowrap;
+  }
+
+  .buildings-description__industries-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 24px;
+    color: #324c88;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .buildings-description__industries-toggle img {
+    display: block;
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.15s ease;
+  }
+
+  .buildings-description__industries.is-expanded .buildings-description__industries-list {
+    flex-wrap: wrap;
+    height: auto;
+    overflow: visible;
+    white-space: normal;
+  }
+
+  .buildings-description__industries.is-expanded .buildings-description__industries-toggle img {
+    transform: rotate(180deg);
+  }
+
+  .buildings-description__content {
+    gap: 26px;
+  }
+
+  .buildings-description__accordion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buildings-description__item {
+    padding-bottom: 20px;
+  }
+
+  .buildings-description__item:first-child {
+    padding-top: 0;
+  }
+
+  .buildings-description__item + .buildings-description__item {
+    padding-top: 20px;
+  }
+
+  .buildings-description__trigger {
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .buildings-description__icon {
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .buildings-description__icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .buildings-description__item-title {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .buildings-description__panel {
+    gap: 14px;
+    margin-left: 54px;
+    padding-top: 0;
+  }
+
+  .buildings-description__copy {
+    gap: 25px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .buildings-description__media--tablet {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .buildings-description__industries-toggle img {
+    transition: none;
+  }
+}
