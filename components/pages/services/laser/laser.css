@@ -1706,11 +1706,14 @@
 }
 
 .laser-calculator__popup-option.is-active::after {
-  width: 18px;
-  height: 18px;
-  flex: 0 0 18px;
+  width: 8px;
+  height: 5px;
+  flex: 0 0 8px;
+  margin-right: 5px;
+  border-bottom: 2px solid #324c88;
+  border-left: 2px solid #324c88;
   content: '';
-  background: url('../../../../static/images/icons/check.svg') center / contain no-repeat;
+  transform: rotate(-45deg);
 }
 
 .laser-calculator__popup-more {
