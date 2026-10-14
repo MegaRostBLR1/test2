@@ -69,6 +69,132 @@
   line-height: 1.35;
 }
 
+.buildings-characteristics__technical {
+  padding: 0.5556rem 0.5556rem 0;
+  background: #ffffff;
+  border-radius: 0.5556rem;
+}
+
+.buildings-characteristics__technical-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.7778rem;
+  padding: 1.1111rem 2.2222rem 2.7778rem;
+}
+
+.buildings-characteristics__technical-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3333rem;
+  width: 100%;
+}
+
+.buildings-characteristics__technical-title {
+  width: 100%;
+  margin: 0;
+  padding: 1.1111rem 2.2222rem 0;
+  color: #4d4d4d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: 1.3333;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buildings-characteristics__tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.2222rem;
+  padding: 0.2222rem;
+  border-radius: 0.5556rem;
+  background: #f5f8f7;
+}
+
+.buildings-characteristics__tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7778rem 1rem;
+  border-radius: 0.7778rem;
+  color: #5d5d5d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.buildings-characteristics__tab.is-active {
+  background: #fff500;
+}
+
+.buildings-characteristics__technical-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.2222rem;
+  padding: 0.2778rem;
+  border-radius: 0.5556rem;
+  background: #f5f8f7;
+}
+
+.buildings-characteristics__technical-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2778rem;
+  min-width: 0;
+}
+
+.buildings-characteristics__technical-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  min-width: 0;
+  padding: 1.1111rem;
+  border-radius: 0.5556rem;
+  background: #ffffff;
+}
+
+.buildings-characteristics__technical-label {
+  margin: 0;
+  color: #4d4d4d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.buildings-characteristics__technical-value {
+  width: 100%;
+  margin: 0;
+  color: #4d4d4d;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.2222rem;
+  font-weight: 400;
+  line-height: 1.7778;
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 1024px) {
+  .buildings-characteristics__technical-inner {
+    padding-right: 1.3333rem;
+    padding-left: 1.3333rem;
+  }
+
+  .buildings-characteristics__technical-title {
+    font-size: 2.2222rem;
+  }
+
+  .buildings-characteristics__technical-panel {
+    gap: 0.5556rem;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .buildings-characteristics__content {
     padding: 1.3333rem 0.8889rem;
@@ -88,6 +214,47 @@
   .buildings-characteristics__section-title {
     font-size: 1.3333rem;
   }
+
+  .buildings-characteristics__technical-inner {
+    gap: 1.3333rem;
+    padding: 0.5556rem 0.5556rem 1.3333rem;
+  }
+
+  .buildings-characteristics__technical-title {
+    padding: 0.5556rem;
+    font-size: 1.5556rem;
+    line-height: 1.3;
+  }
+
+  .buildings-characteristics__tabs {
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .buildings-characteristics__tab {
+    padding: 0.5556rem 0.7778rem;
+    font-size: 0.8889rem;
+  }
+
+  .buildings-characteristics__technical-panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.2778rem;
+  }
+
+  .buildings-characteristics__technical-card {
+    gap: 0.5556rem;
+    padding: 0.8889rem;
+  }
+
+  .buildings-characteristics__technical-label {
+    font-size: 1rem;
+  }
+
+  .buildings-characteristics__technical-value {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -98,5 +265,9 @@
 
   .buildings-characteristics__title {
     font-size: 1.5556rem;
+  }
+
+  .buildings-characteristics__technical-title {
+    font-size: 1.3333rem;
   }
 }
