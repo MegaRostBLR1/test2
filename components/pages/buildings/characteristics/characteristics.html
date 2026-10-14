@@ -1,17 +1,37 @@
-<section class="buildings-characteristics" aria-labelledby="buildings-characteristics-title">
-  <nav class="buildings-characteristics__breadcrumbs container" aria-label="Хлебные крошки">
-    <a class="buildings-characteristics__breadcrumb-link" href="#/home">Главная</a>
-    <span class="buildings-characteristics__breadcrumb-separator" aria-hidden="true">-</span>
-    <a class="buildings-characteristics__breadcrumb-link" href="#/buildings">Быстровозводимые здания</a>
-    <span class="buildings-characteristics__breadcrumb-separator" aria-hidden="true">-</span>
-    <span aria-current="page">Характеристики</span>
-  </nav>
-
-  <div class="buildings-characteristics__content container">
-    <h1 class="buildings-characteristics__title" id="buildings-characteristics-title">Быстровозводимые здания: характеристики</h1>
-    <section class="buildings-characteristics__specifications" aria-labelledby="buildings-characteristics-specifications-title">
-      <h2 class="buildings-characteristics__section-title" id="buildings-characteristics-specifications-title">Технические характеристики</h2>
-      <!-- Здесь будет размещён блок характеристик здания. -->
-    </section>
+<section class="buildings" aria-label="Быстровозводимые здания">
+  <div class="buildings__agro" aria-labelledby="buildings-agro-title">
+    <div class="buildings__agro-inner">
+      <div class="buildings__agro-content">
+        <div class="buildings__agro-intro">
+          <div class="buildings__agro-heading">
+            <p class="buildings__agro-category">Сельское хозяйство</p>
+            <h2 class="buildings__agro-title" id="buildings-agro-title">Быстровозводимые агрокомплексы</h2>
+          </div>
+          <p class="buildings__agro-description">Cистема считает металлоемкость каркаса на базе 3 базовых
+            строительных норм: 1- Росс. нормы (СНИПы), 2 - ЕВРОКОД и 3 - Американские нормы</p>
+        </div>
+        <div class="buildings__agro-actions">
+          <a class="btn secondary-btn buildings__agro-action" href="#/contacts">Рассчитать онлайн</a>
+          <a class="btn main-btn buildings__agro-action" href="#/contacts">Запросить расчет</a>
+        </div>
+      </div>
+      <img class="buildings__agro-illustration"
+           src="https://www.figma.com/api/mcp/asset/415da788-d0b6-45c9-a3da-0d775649c1fd.png" alt=""
+           aria-hidden="true" width="994" height="1043" loading="lazy">
+      <nav class="buildings__agro-tabs" aria-label="Разделы агрокомплексов" id="buildings-agro-tab-list">
+        <a class="buildings__agro-tab" href="#buildings-agro-description"
+           aria-current="page">Описание</a>
+        <a class="buildings__agro-tab is-active" href="#/buildings-characteristics">Характеристики</a>
+        <a class="buildings__agro-tab" href="#buildings-agro-benefits">Почему PK Vesta</a>
+        <a class="buildings__agro-tab" href="#buildings-agro-comparison">Сравнение</a>
+        <a class="buildings__agro-tab" href="#buildings-agro-prices">Цены</a>
+        <a class="buildings__agro-tab" href="#buildings-agro-faq">Вопросы</a>
+        <button class="buildings__agro-tabs-toggle" type="button" aria-label="Открыть разделы агрокомплекса"
+                aria-expanded="false" aria-controls="buildings-agro-tab-list">
+          <img src="https://www.figma.com/api/mcp/asset/e788bb81-b932-4832-876d-2bfb1f8b1584/32372.svg" alt=""
+               aria-hidden="true" width="24" height="24">
+        </button>
+      </nav>
+    </div>
   </div>
 </section>
