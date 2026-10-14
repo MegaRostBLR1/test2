@@ -513,3 +513,113 @@
     column-gap: 5px;
   }
 }
+
+
+/* Mobile 360 px — Figma 1857:53588; expanded state 2177:135633. */
+.buildings-characteristics__show-more {
+  display: none;
+}
+
+.buildings-characteristics__show-more:focus-visible {
+  outline: 2px solid #324c88;
+  outline-offset: 4px;
+}
+
+.buildings-characteristics__show-more-icon {
+  display: block;
+  flex: 0 0 24px;
+  transition: transform 0.15s ease;
+}
+
+.buildings-characteristics__show-more[aria-expanded="true"] .buildings-characteristics__show-more-icon {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 680px) {
+  .buildings-characteristics__technical {
+    padding: 0 10px 10px;
+  }
+
+  .buildings-characteristics__technical-inner {
+    gap: 14px;
+    padding: 20px 0 10px;
+  }
+
+  .buildings-characteristics__technical-header {
+    gap: 14px;
+  }
+
+  .buildings-characteristics__technical-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .buildings-characteristics__tabs {
+    width: 340px;
+    max-width: 100%;
+    gap: 4px;
+    padding: 4px;
+    overflow-x: auto;
+    border-radius: 10px;
+  }
+
+  .buildings-characteristics__tab {
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .buildings-characteristics__technical-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .buildings-characteristics__technical-card {
+    display: flex;
+    min-height: 0;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .buildings-characteristics__technical-card:nth-child(n + 5) {
+    display: none;
+  }
+
+  .buildings-characteristics__technical-panel.is-expanded .buildings-characteristics__technical-card:nth-child(n + 5) {
+    display: flex;
+  }
+
+  .buildings-characteristics__technical-label {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .buildings-characteristics__technical-value {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .buildings-characteristics__show-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 24px;
+    align-self: center;
+    color: #324c88;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .buildings-characteristics__show-more-icon {
+    transition: none;
+  }
+}
