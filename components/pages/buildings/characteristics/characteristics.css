@@ -334,3 +334,52 @@
     transition: none;
   }
 }
+
+
+/* Figma 1857:49331 — desktop 1440 px.
+   На 1920 px сохраняется базовая геометрия выше; этот диапазон
+   компенсирует только разницу размеров между desktop-макетами. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .buildings-characteristics__technical-inner {
+    gap: 50px;
+    padding: 20px 40px 40px;
+  }
+
+  .buildings-characteristics__technical-title {
+    padding: 20px 40px 0;
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .buildings-characteristics__tabs {
+    gap: 4px;
+    padding: 4px;
+  }
+
+  .buildings-characteristics__tab {
+    padding: 14px 18px;
+    font-size: 20px;
+  }
+
+  .buildings-characteristics__technical-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  .buildings-characteristics__technical-card {
+    height: 100%;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .buildings-characteristics__technical-label {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .buildings-characteristics__technical-value {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
