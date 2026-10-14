@@ -39,6 +39,13 @@ const APP_CONFIG = {
       js: './components/pages/buildings/buildings.js',
       init: 'initBuildings'
     },
+    'buildings-characteristics': {
+      title: 'Характеристики быстровозводимых зданий',
+      html: './components/pages/buildings/characteristics/characteristics.html',
+      css: './components/pages/buildings/characteristics/characteristics.css',
+      js: './components/pages/buildings/characteristics/characteristics.js',
+      init: 'initBuildingsCharacteristics'
+    },
     'objects': {
       title: 'Объекты',
       html: './components/pages/objects/objects.html',
