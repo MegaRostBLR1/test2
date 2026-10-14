@@ -69,38 +69,43 @@
   line-height: 1.35;
 }
 
+/* Технические характеристики — Figma 1857:94701, desktop 1920 px. */
 .buildings-characteristics__technical {
-  padding: 0.5556rem 0.5556rem 0;
+  padding: 0 10px 10px;
+  border-radius: 10px;
   background: #ffffff;
-  border-radius: 0.5556rem;
 }
 
 .buildings-characteristics__technical-inner {
   display: flex;
   flex-direction: column;
-  gap: 2.7778rem;
-  padding: 1.1111rem 2.2222rem 2.7778rem;
+  gap: 50px;
+  width: 100%;
+  padding: 20px 40px 40px;
+  border-radius: 20px;
+  background: #ffffff;
 }
 
 .buildings-characteristics__technical-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.3333rem;
+  gap: 24px;
   width: 100%;
 }
 
 .buildings-characteristics__technical-title {
   width: 100%;
   margin: 0;
-  padding: 1.1111rem 2.2222rem 0;
+  padding: 20px 40px 0;
   color: #4d4d4d;
   font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 2.6667rem;
+  font-size: 48px;
   font-weight: 600;
-  line-height: 1.3333;
+  line-height: 64px;
   text-align: center;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .buildings-characteristics__tabs {
@@ -108,9 +113,10 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.2222rem;
-  padding: 0.2222rem;
-  border-radius: 0.5556rem;
+  gap: 4px;
+  max-width: 100%;
+  padding: 4px;
+  border-radius: 10px;
   background: #f5f8f7;
 }
 
@@ -118,45 +124,47 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.7778rem 1rem;
-  border-radius: 0.7778rem;
+  flex: 0 0 auto;
+  padding: 14px 18px;
+  border-radius: 14px;
   color: #5d5d5d;
   font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 1.1111rem;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.6;
   text-transform: uppercase;
   white-space: nowrap;
+  transition: background-color 0.15s ease;
 }
 
 .buildings-characteristics__tab.is-active {
   background: #fff500;
 }
 
+.buildings-characteristics__tab:focus-visible {
+  outline: 2px solid #324c88;
+  outline-offset: 2px;
+}
+
 .buildings-characteristics__technical-panel {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2.2222rem;
-  padding: 0.2778rem;
-  border-radius: 0.5556rem;
+  column-gap: 40px;
+  row-gap: 5px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
   background: #f5f8f7;
-}
-
-.buildings-characteristics__technical-column {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2778rem;
-  min-width: 0;
 }
 
 .buildings-characteristics__technical-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 18px;
   min-width: 0;
-  padding: 1.1111rem;
-  border-radius: 0.5556rem;
+  padding: 20px;
+  border-radius: 10px;
   background: #ffffff;
 }
 
@@ -164,9 +172,10 @@
   margin: 0;
   color: #4d4d4d;
   font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 1.1111rem;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: normal;
+  overflow-wrap: anywhere;
 }
 
 .buildings-characteristics__technical-value {
@@ -174,100 +183,163 @@
   margin: 0;
   color: #4d4d4d;
   font-family: 'Onest-Regular', sans-serif;
-  font-size: 1.2222rem;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 1.7778;
+  line-height: 32px;
   overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 1600px) {
+  .buildings-characteristics__technical-inner {
+    gap: 36px;
+    padding: 20px 30px 30px;
+  }
+
+  .buildings-characteristics__technical-title {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+
+  .buildings-characteristics__tabs {
+    gap: 4px;
+  }
+
+  .buildings-characteristics__tab {
+    padding: 12px 14px;
+    font-size: 18px;
+  }
+
+  .buildings-characteristics__technical-panel {
+    column-gap: 24px;
+  }
+
+  .buildings-characteristics__technical-card {
+    padding: 18px;
+  }
+
+  .buildings-characteristics__technical-label {
+    font-size: 18px;
+  }
+
+  .buildings-characteristics__technical-value {
+    font-size: 18px;
+    line-height: 1.6;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .buildings-characteristics__technical-inner {
-    padding-right: 1.3333rem;
-    padding-left: 1.3333rem;
+    gap: 28px;
+    padding: 20px;
   }
 
   .buildings-characteristics__technical-title {
-    font-size: 2.2222rem;
+    padding: 10px 10px 0;
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .buildings-characteristics__tabs {
+    gap: 4px;
+  }
+
+  .buildings-characteristics__tab {
+    padding: 10px 12px;
+    font-size: 16px;
   }
 
   .buildings-characteristics__technical-panel {
-    gap: 0.5556rem;
+    column-gap: 10px;
+  }
+
+  .buildings-characteristics__technical-card {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .buildings-characteristics__technical-label {
+    font-size: 16px;
+  }
+
+  .buildings-characteristics__technical-value {
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
 @media screen and (max-width: 680px) {
-  .buildings-characteristics__content {
-    padding: 1.3333rem 0.8889rem;
-  }
-
-  .buildings-characteristics__title {
-    margin-bottom: 1.3333rem;
-    font-size: 1.7778rem;
-  }
-
-  .buildings-characteristics__specifications {
-    min-height: 8rem;
-    padding: 1.3333rem 0.8889rem;
-    border-radius: 0.6667rem;
-  }
-
-  .buildings-characteristics__section-title {
-    font-size: 1.3333rem;
+  .buildings-characteristics__technical {
+    padding: 0 5px 5px;
   }
 
   .buildings-characteristics__technical-inner {
-    gap: 1.3333rem;
-    padding: 0.5556rem 0.5556rem 1.3333rem;
+    gap: 24px;
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+
+  .buildings-characteristics__technical-header {
+    gap: 16px;
   }
 
   .buildings-characteristics__technical-title {
-    padding: 0.5556rem;
-    font-size: 1.5556rem;
+    padding: 0;
+    font-size: 22px;
     line-height: 1.3;
   }
 
   .buildings-characteristics__tabs {
     justify-content: flex-start;
-    width: 100%;
+    flex-wrap: nowrap;
+    align-self: stretch;
     overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
   }
 
   .buildings-characteristics__tab {
-    padding: 0.5556rem 0.7778rem;
-    font-size: 0.8889rem;
+    padding: 10px 12px;
+    font-size: 13px;
   }
 
   .buildings-characteristics__technical-panel {
     grid-template-columns: minmax(0, 1fr);
-    gap: 0.2778rem;
+    gap: 5px;
+    padding: 5px;
   }
 
   .buildings-characteristics__technical-card {
-    gap: 0.5556rem;
-    padding: 0.8889rem;
+    gap: 10px;
+    padding: 14px;
   }
 
   .buildings-characteristics__technical-label {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .buildings-characteristics__technical-value {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .buildings-characteristics__breadcrumbs {
-    gap: 0.5556rem;
-    font-size: 0.8889rem;
-  }
-
-  .buildings-characteristics__title {
-    font-size: 1.5556rem;
+  .buildings-characteristics__technical-inner {
+    padding-right: 8px;
+    padding-left: 8px;
   }
 
   .buildings-characteristics__technical-title {
-    font-size: 1.3333rem;
+    font-size: 20px;
+  }
+
+  .buildings-characteristics__technical-card {
+    padding: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .buildings-characteristics__tab {
+    transition: none;
   }
 }
