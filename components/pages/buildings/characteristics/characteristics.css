@@ -149,8 +149,7 @@
 .buildings-characteristics__technical-panel {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 40px;
-  row-gap: 5px;
+  gap: 5px;
   width: 100%;
   padding: 5px;
   border-radius: 10px;
@@ -209,10 +208,6 @@
     font-size: 18px;
   }
 
-  .buildings-characteristics__technical-panel {
-    column-gap: 24px;
-  }
-
   .buildings-characteristics__technical-card {
     padding: 18px;
   }
@@ -246,10 +241,6 @@
   .buildings-characteristics__tab {
     padding: 10px 12px;
     font-size: 16px;
-  }
-
-  .buildings-characteristics__technical-panel {
-    column-gap: 10px;
   }
 
   .buildings-characteristics__technical-card {
