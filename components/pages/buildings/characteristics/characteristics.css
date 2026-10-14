@@ -339,7 +339,7 @@
 /* Figma 1857:49331 — desktop 1440 px.
    На 1920 px сохраняется базовая геометрия выше; этот диапазон
    компенсирует только разницу размеров между desktop-макетами. */
-@media screen and (min-width: 1301px) and (max-width: 1600px) {
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
   .buildings-characteristics__technical-inner {
     gap: 50px;
     padding: 20px 40px 40px;
