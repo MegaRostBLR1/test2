@@ -1,0 +1,102 @@
+/* Страница: характеристики быстровозводимых зданий */
+.buildings-characteristics {
+  padding-bottom: 2.2222rem;
+}
+
+.buildings-characteristics__breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.1111rem;
+  width: 100%;
+  max-width: 106.1111rem;
+  min-height: 3.4444rem;
+  margin: 0 auto;
+  padding: 0 0.2778rem;
+  color: #4d4d4d;
+  font-size: 1.1111rem;
+  line-height: 1.4444rem;
+}
+
+.buildings-characteristics__breadcrumb-link {
+  color: inherit;
+  transition: color 0.15s ease;
+}
+
+.buildings-characteristics__breadcrumb-link:hover {
+  color: #324c88;
+}
+
+.buildings-characteristics__breadcrumb-link:focus-visible {
+  outline: 0.1111rem solid currentColor;
+  outline-offset: 0.2222rem;
+}
+
+.buildings-characteristics__breadcrumb-separator {
+  color: #979a9b;
+}
+
+.buildings-characteristics__content {
+  width: 100%;
+  max-width: 106.1111rem;
+  margin: 0 auto;
+  padding: 2.2222rem;
+}
+
+.buildings-characteristics__title {
+  max-width: 75rem;
+  margin: 0 0 2.2222rem;
+  color: #25313a;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.buildings-characteristics__specifications {
+  min-height: 12rem;
+  padding: 2.2222rem;
+  border-radius: 1.1111rem;
+  background-color: #ffffff;
+}
+
+.buildings-characteristics__section-title {
+  margin: 0;
+  color: #25313a;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.7778rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+@media screen and (max-width: 680px) {
+  .buildings-characteristics__content {
+    padding: 1.3333rem 0.8889rem;
+  }
+
+  .buildings-characteristics__title {
+    margin-bottom: 1.3333rem;
+    font-size: 1.7778rem;
+  }
+
+  .buildings-characteristics__specifications {
+    min-height: 8rem;
+    padding: 1.3333rem 0.8889rem;
+    border-radius: 0.6667rem;
+  }
+
+  .buildings-characteristics__section-title {
+    font-size: 1.3333rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .buildings-characteristics__breadcrumbs {
+    gap: 0.5556rem;
+    font-size: 0.8889rem;
+  }
+
+  .buildings-characteristics__title {
+    font-size: 1.5556rem;
+  }
+}
