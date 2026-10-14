@@ -72,6 +72,11 @@ function initBuildings() {
       const isExpanded = tabs.classList.contains('is-open');
 
       if (link) {
+        if (link.getAttribute('href')?.startsWith('#/')) {
+          setExpanded(false);
+          return;
+        }
+
         if (!isExpanded) {
           event.preventDefault();
           setExpanded(true);
