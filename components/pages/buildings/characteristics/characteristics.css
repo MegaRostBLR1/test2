@@ -442,3 +442,74 @@
     line-height: 1.5;
   }
 }
+
+
+/* Technical characteristics: column order and equal-height paired cells. */
+@media screen and (min-width: 681px) {
+  .buildings-characteristics__technical-panel {
+    grid-auto-flow: column;
+    grid-template-rows: repeat(5, auto);
+    column-gap: 40px;
+    row-gap: 5px;
+  }
+}
+
+/* Figma node 1857:51974 — 1024 px. */
+@media screen and (min-width: 761px) and (max-width: 1100px) {
+  .buildings-characteristics__technical-inner {
+    gap: 24px;
+    padding: 20px 40px;
+  }
+
+  .buildings-characteristics__technical-title {
+    padding: 0 40px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .buildings-characteristics__tabs {
+    flex-wrap: nowrap;
+    gap: 4px;
+    padding: 4px;
+  }
+
+  .buildings-characteristics__tab {
+    padding: 14px 18px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .buildings-characteristics__technical-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    align-items: stretch;
+    column-gap: 40px;
+    row-gap: 5px;
+    padding: 5px;
+  }
+
+  .buildings-characteristics__technical-card {
+    height: 100%;
+    gap: 8px;
+    padding: 20px;
+  }
+
+  .buildings-characteristics__technical-label {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .buildings-characteristics__technical-value {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .buildings-characteristics__technical-panel {
+    grid-auto-flow: row;
+    grid-template-rows: none;
+    column-gap: 5px;
+  }
+}
