@@ -438,6 +438,10 @@
     max-width: 1508px;
   }
 
+  .why-vesta__layout {
+    min-height: 604px;
+  }
+
   .why-vesta__visual {
     height: 523px;
   }
