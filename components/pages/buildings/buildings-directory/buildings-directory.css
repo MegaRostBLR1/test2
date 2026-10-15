@@ -819,3 +819,45 @@
     line-height: 1.4;
   }
 }
+
+
+/* Figma 1857:29897 — tablet frame 1024 px.
+   Exact target geometry; desktop 1920/1440 rules remain the source for wider screens. */
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+  .buildings-directory-seo {
+    margin: 0;
+    padding: 60px 40px;
+  }
+
+  .buildings-directory-seo__content {
+    gap: 30px;
+  }
+
+  .buildings-directory-seo__title {
+    font-family: "Onest-SemiBold", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    overflow-wrap: break-word;
+  }
+
+  .buildings-directory-seo__divider {
+    flex-basis: 1px;
+  }
+
+  .buildings-directory-seo__text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    font-family: "Onest-Regular", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .buildings-directory-seo__text p {
+    width: 100%;
+    min-width: 0;
+  }
+}
