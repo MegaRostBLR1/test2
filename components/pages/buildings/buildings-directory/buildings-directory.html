@@ -24,7 +24,7 @@
       <button class="buildings-directory__filter" type="button" data-filter="foundation" aria-pressed="false">Фундамент</button>
     </nav>
 
-    <div class="buildings-directory__grid" aria-label="Здания в каталоге">
+    <div class="buildings-directory__grid" id="buildings-directory-cards" aria-label="Здания в каталоге">
       <article class="buildings-directory__card" data-category="agriculture">
         <img class="buildings-directory__image" src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/4597c.png" alt="Пример быстровозводимого здания" loading="lazy">
         <div class="buildings-directory__card-content">
@@ -162,6 +162,6 @@
       </article>
     </div>
 
-    <button class="buildings-directory__show-more" type="button" aria-expanded="false">Показать еще</button>
+    <button class="buildings-directory__show-more" type="button" aria-controls="buildings-directory-cards" aria-expanded="false">Показать еще</button>
   </div>
 </section>
