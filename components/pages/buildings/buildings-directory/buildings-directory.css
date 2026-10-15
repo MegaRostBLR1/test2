@@ -1082,3 +1082,48 @@
     transition: none;
   }
 }
+
+
+/* Figma 1857:29528 — особенности конструкции, desktop 1440 px.
+   Основной текст занимает ширину макета; скрытый SEO-текст не резервирует колонку. */
+.buildings-directory-features__secondary {
+  display: none;
+}
+
+@media screen and (min-width: 1601px) {
+  .buildings-directory-features__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1600px) {
+  .buildings-directory-features {
+    padding: 60px 62px;
+  }
+
+  .buildings-directory-features__content {
+    gap: 30px;
+  }
+
+  .buildings-directory-features__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .buildings-directory-features__body {
+    gap: 24px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .buildings-directory-features__column {
+    flex: 1 1 auto;
+    gap: 25px;
+  }
+
+  .buildings-directory-features__separator {
+    flex-basis: 1px;
+    height: 217px;
+  }
+}
