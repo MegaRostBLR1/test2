@@ -46,6 +46,34 @@ const APP_CONFIG = {
       js: './components/pages/buildings/characteristics/characteristics.js',
       init: 'initBuildingsCharacteristics'
     },
+    'buildings-why-pk-vesta': {
+      title: 'Почему PK Vesta',
+      html: './components/pages/buildings/why-pk-vesta/why-pk-vesta.html',
+      css: './components/pages/buildings/why-pk-vesta/why-pk-vesta.css',
+      js: './components/pages/buildings/why-pk-vesta/why-pk-vesta.js',
+      init: 'initBuildingsWhyPkVesta'
+    },
+    'buildings-comparison': {
+      title: 'Сравнение',
+      html: './components/pages/buildings/comparison/comparison.html',
+      css: './components/pages/buildings/comparison/comparison.css',
+      js: './components/pages/buildings/comparison/comparison.js',
+      init: 'initBuildingsComparison'
+    },
+    'buildings-prices': {
+      title: 'Цены',
+      html: './components/pages/buildings/buildings-prices/buildings-prices.html',
+      css: './components/pages/buildings/buildings-prices/buildings-prices.css',
+      js: './components/pages/buildings/buildings-prices/buildings-prices.js',
+      init: 'initBuildingsPrices'
+    },
+    'buildings-faq': {
+      title: 'Вопросы',
+      html: './components/pages/buildings/buildings-faq/buildings-faq.html',
+      css: './components/pages/buildings/buildings-faq/buildings-faq.css',
+      js: './components/pages/buildings/buildings-faq/buildings-faq.js',
+      init: 'initBuildingsFaq'
+    },
     'objects': {
       title: 'Объекты',
       html: './components/pages/objects/objects.html',
