@@ -1,20 +1,161 @@
 <section class="buildings-directory" aria-labelledby="buildings-directory-title">
-  <nav class="buildings-directory__breadcrumbs" aria-label="Хлебные крошки">
-    <a class="buildings-directory__breadcrumb-link" href="#/home">Главная</a>
-    <span class="buildings-directory__breadcrumb-separator" aria-hidden="true">/</span>
-    <a class="buildings-directory__breadcrumb-link" href="#/buildings">Быстровозводимые здания</a>
-    <span class="buildings-directory__breadcrumb-separator" aria-hidden="true">/</span>
-    <span aria-current="page">Каталог зданий</span>
-  </nav>
+  <div class="buildings-directory__panel">
+    <nav class="buildings-directory__breadcrumbs" aria-label="Хлебные крошки">
+      <a class="buildings-directory__breadcrumb-link" href="#/home">Главная</a>
+      <span class="buildings-directory__breadcrumb-separator" aria-hidden="true">-</span>
+      <span aria-current="page">Каталог зданий</span>
+    </nav>
 
-  <header class="buildings-directory__header">
-    <h1 class="buildings-directory__title" id="buildings-directory-title">Каталог зданий</h1>
-    <p class="buildings-directory__description">
-      Подберите быстровозводимое здание для вашей задачи. Состав каталога и карточки зданий можно наполнить по макету.
-    </p>
-  </header>
+    <header class="buildings-directory__header">
+      <h1 class="buildings-directory__title" id="buildings-directory-title">Каталог зданий <span>(9)</span></h1>
+    </header>
 
-  <div class="buildings-directory__content" aria-label="Каталог зданий">
-    <!-- Карточки зданий будут добавлены после согласования состава каталога и макета. -->
+    <nav class="buildings-directory__filters" aria-label="Фильтр категорий зданий">
+      <button class="buildings-directory__filter is-active" type="button" data-filter="all" aria-pressed="true">Все</button>
+      <button class="buildings-directory__filter" type="button" data-filter="agriculture" aria-pressed="false">Сельское хозяйство</button>
+      <button class="buildings-directory__filter" type="button" data-filter="commercial" aria-pressed="false">Коммерческие здания</button>
+      <button class="buildings-directory__filter" type="button" data-filter="general" aria-pressed="false">Общие здания</button>
+      <button class="buildings-directory__filter" type="button" data-filter="equipment" aria-pressed="false">Техника</button>
+      <button class="buildings-directory__filter" type="button" data-filter="sports" aria-pressed="false">Спортивные здания</button>
+      <button class="buildings-directory__filter" type="button" data-filter="industry" aria-pressed="false">Промышленность</button>
+    </nav>
+
+    <div class="buildings-directory__grid" aria-label="Здания в каталоге">
+      <article class="buildings-directory__card" data-category="agriculture">
+        <img class="buildings-directory__image" src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/4597c.png" alt="Пример быстровозводимого здания" loading="lazy">
+        <div class="buildings-directory__card-content">
+          <h2 class="buildings-directory__card-title">Агрокомплексы</h2>
+          <p class="buildings-directory__card-description">Лазерный луч обеспечивает рез с минимальным допуском и аккуратными кромками.</p>
+          <div class="buildings-directory__card-divider" aria-hidden="true"></div>
+          <p class="buildings-directory__price">от 5 000 RUB/кв.м. с НДС</p>
+        </div>
+        <div class="buildings-directory__card-actions">
+          <a class="buildings-directory__details" href="#/buildings-characteristics">Подробнее</a>
+          <button class="buildings-directory__compare" type="button" aria-label="Добавить агрокомплекс к сравнению" title="Добавить к сравнению">
+            <img src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/68521.svg" alt="" aria-hidden="true">
+          </button>
+        </div>
+      </article>
+      <article class="buildings-directory__card" data-category="commercial">
+        <img class="buildings-directory__image" src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/4597c.png" alt="Пример коммерческого здания" loading="lazy">
+        <div class="buildings-directory__card-content">
+          <h2 class="buildings-directory__card-title">Агрокомплексы</h2>
+          <p class="buildings-directory__card-description">Лазерный луч обеспечивает рез с минимальным допуском и аккуратными кромками.</p>
+          <div class="buildings-directory__card-divider" aria-hidden="true"></div>
+          <p class="buildings-directory__price">от 5 000 RUB/кв.м. с НДС</p>
+        </div>
+        <div class="buildings-directory__card-actions">
+          <a class="buildings-directory__details" href="#/buildings-characteristics">Подробнее</a>
+          <button class="buildings-directory__compare" type="button" aria-label="Добавить здание к сравнению" title="Добавить к сравнению">
+            <img src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/68521.svg" alt="" aria-hidden="true">
+          </button>
+        </div>
+      </article>
+      <article class="buildings-directory__card" data-category="general">
+        <img class="buildings-directory__image" src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/4597c.png" alt="Пример общего здания" loading="lazy">
+        <div class="buildings-directory__card-content">
+          <h2 class="buildings-directory__card-title">Агрокомплексы</h2>
+          <p class="buildings-directory__card-description">Лазерный луч обеспечивает рез с минимальным допуском и аккуратными кромками.</p>
+          <div class="buildings-directory__card-divider" aria-hidden="true"></div>
+          <p class="buildings-directory__price">от 5 000 RUB/кв.м. с НДС</p>
+        </div>
+        <div class="buildings-directory__card-actions">
+          <a class="buildings-directory__details" href="#/buildings-characteristics">Подробнее</a>
+          <button class="buildings-directory__compare" type="button" aria-label="Добавить здание к сравнению" title="Добавить к сравнению">
+            <img src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/68521.svg" alt="" aria-hidden="true">
+          </button>
+        </div>
+      </article>
+      <article class="buildings-directory__card" data-category="equipment">
+        <img class="buildings-directory__image" src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/4597c.png" alt="Пример здания для техники" loading="lazy">
+        <div class="buildings-directory__card-content">
+          <h2 class="buildings-directory__card-title">Агрокомплексы</h2>
+          <p class="buildings-directory__card-description">Лазерный луч обеспечивает рез с минимальным допуском и аккуратными кромками.</p>
+          <div class="buildings-directory__card-divider" aria-hidden="true"></div>
+          <p class="buildings-directory__price">от 5 000 RUB/кв.м. с НДС</p>
+        </div>
+        <div class="buildings-directory__card-actions">
+          <a class="buildings-directory__details" href="#/buildings-characteristics">Подробнее</a>
+          <button class="buildings-directory__compare" type="button" aria-label="Добавить здание к сравнению" title="Добавить к сравнению">
+            <img src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/68521.svg" alt="" aria-hidden="true">
+          </button>
+        </div>
+      </article>
+      <article class="buildings-directory__card" data-category="sports">
+        <img class="buildings-directory__image" src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/4597c.png" alt="Пример спортивного здания" loading="lazy">
+        <div class="buildings-directory__card-content">
+          <h2 class="buildings-directory__card-title">Агрокомплексы</h2>
+          <p class="buildings-directory__card-description">Лазерный луч обеспечивает рез с минимальным допуском и аккуратными кромками.</p>
+          <div class="buildings-directory__card-divider" aria-hidden="true"></div>
+          <p class="buildings-directory__price">от 5 000 RUB/кв.м. с НДС</p>
+        </div>
+        <div class="buildings-directory__card-actions">
+          <a class="buildings-directory__details" href="#/buildings-characteristics">Подробнее</a>
+          <button class="buildings-directory__compare" type="button" aria-label="Добавить здание к сравнению" title="Добавить к сравнению">
+            <img src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/68521.svg" alt="" aria-hidden="true">
+          </button>
+        </div>
+      </article>
+      <article class="buildings-directory__card" data-category="industry">
+        <img class="buildings-directory__image" src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/4597c.png" alt="Пример промышленного здания" loading="lazy">
+        <div class="buildings-directory__card-content">
+          <h2 class="buildings-directory__card-title">Агрокомплексы</h2>
+          <p class="buildings-directory__card-description">Лазерный луч обеспечивает рез с минимальным допуском и аккуратными кромками.</p>
+          <div class="buildings-directory__card-divider" aria-hidden="true"></div>
+          <p class="buildings-directory__price">от 5 000 RUB/кв.м. с НДС</p>
+        </div>
+        <div class="buildings-directory__card-actions">
+          <a class="buildings-directory__details" href="#/buildings-characteristics">Подробнее</a>
+          <button class="buildings-directory__compare" type="button" aria-label="Добавить здание к сравнению" title="Добавить к сравнению">
+            <img src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/68521.svg" alt="" aria-hidden="true">
+          </button>
+        </div>
+      </article>
+      <article class="buildings-directory__card" data-category="agriculture">
+        <img class="buildings-directory__image" src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/4597c.png" alt="Пример быстровозводимого здания" loading="lazy">
+        <div class="buildings-directory__card-content">
+          <h2 class="buildings-directory__card-title">Агрокомплексы</h2>
+          <p class="buildings-directory__card-description">Лазерный луч обеспечивает рез с минимальным допуском и аккуратными кромками.</p>
+          <div class="buildings-directory__card-divider" aria-hidden="true"></div>
+          <p class="buildings-directory__price">от 5 000 RUB/кв.м. с НДС</p>
+        </div>
+        <div class="buildings-directory__card-actions">
+          <a class="buildings-directory__details" href="#/buildings-characteristics">Подробнее</a>
+          <button class="buildings-directory__compare" type="button" aria-label="Добавить здание к сравнению" title="Добавить к сравнению">
+            <img src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/68521.svg" alt="" aria-hidden="true">
+          </button>
+        </div>
+      </article>
+      <article class="buildings-directory__card" data-category="commercial">
+        <img class="buildings-directory__image" src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/4597c.png" alt="Пример коммерческого здания" loading="lazy">
+        <div class="buildings-directory__card-content">
+          <h2 class="buildings-directory__card-title">Агрокомплексы</h2>
+          <p class="buildings-directory__card-description">Лазерный луч обеспечивает рез с минимальным допуском и аккуратными кромками.</p>
+          <div class="buildings-directory__card-divider" aria-hidden="true"></div>
+          <p class="buildings-directory__price">от 5 000 RUB/кв.м. с НДС</p>
+        </div>
+        <div class="buildings-directory__card-actions">
+          <a class="buildings-directory__details" href="#/buildings-characteristics">Подробнее</a>
+          <button class="buildings-directory__compare" type="button" aria-label="Добавить здание к сравнению" title="Добавить к сравнению">
+            <img src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/68521.svg" alt="" aria-hidden="true">
+          </button>
+        </div>
+      </article>
+      <article class="buildings-directory__card" data-category="industry">
+        <img class="buildings-directory__image" src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/4597c.png" alt="Пример промышленного здания" loading="lazy">
+        <div class="buildings-directory__card-content">
+          <h2 class="buildings-directory__card-title">Агрокомплексы</h2>
+          <p class="buildings-directory__card-description">Лазерный луч обеспечивает рез с минимальным допуском и аккуратными кромками.</p>
+          <div class="buildings-directory__card-divider" aria-hidden="true"></div>
+          <p class="buildings-directory__price">от 5 000 RUB/кв.м. с НДС</p>
+        </div>
+        <div class="buildings-directory__card-actions">
+          <a class="buildings-directory__details" href="#/buildings-characteristics">Подробнее</a>
+          <button class="buildings-directory__compare" type="button" aria-label="Добавить здание к сравнению" title="Добавить к сравнению">
+            <img src="https://www.figma.com/api/mcp/asset/20e87647-4461-4975-a646-5aea53561194/68521.svg" alt="" aria-hidden="true">
+          </button>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
