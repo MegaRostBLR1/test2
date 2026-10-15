@@ -1171,3 +1171,62 @@
     display: none;
   }
 }
+
+/* Figma 1857:30179 — mobile frame 360 × 620.
+   Desktop 1920/1440 and tablet 1024 layouts remain unchanged. */
+@media screen and (max-width: 480px) {
+  .buildings-directory-features {
+    margin: 0;
+    padding: 24px 14px;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .buildings-directory-features__content {
+    gap: 18px;
+  }
+
+  .buildings-directory-features__title {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .buildings-directory-features__divider {
+    flex-basis: 1px;
+  }
+
+  .buildings-directory-features__body {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .buildings-directory-features__column {
+    flex: 1 1 auto;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .buildings-directory-features__lead {
+    gap: 0;
+  }
+
+  .buildings-directory-features__list {
+    gap: 15px;
+    padding-left: 21px;
+  }
+
+  .buildings-directory-features__list li {
+    line-height: 1.5;
+  }
+
+  .buildings-directory-features__separator,
+  .buildings-directory-features__secondary {
+    display: none;
+  }
+}
+
