@@ -442,3 +442,105 @@
   gap: 30px;
   max-width: 100%;
 }
+
+
+/* Figma 1857:29966 — mobile 360 px. Desktop/tablet layout remains unchanged. */
+@media screen and (max-width: 480px) {
+  .buildings-directory__panel {
+    gap: 20px;
+    padding: 20px 14px;
+  }
+
+  .buildings-directory__intro {
+    gap: 30px;
+    width: 100%;
+  }
+
+  .buildings-directory__breadcrumbs {
+    justify-content: center;
+    align-self: auto;
+    gap: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .buildings-directory__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .buildings-directory__title span {
+    font-size: 64px;
+    line-height: 72px;
+  }
+
+  .buildings-directory__filters {
+    align-self: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 320px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 4px;
+  }
+
+  .buildings-directory__filter {
+    flex: 0 0 auto;
+    padding: 12px 18px;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+
+  .buildings-directory__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .buildings-directory__card {
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .buildings-directory__image {
+    height: 192px;
+    aspect-ratio: auto;
+  }
+
+  .buildings-directory__card-content {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .buildings-directory__card-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .buildings-directory__card-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .buildings-directory__price {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .buildings-directory__details {
+    min-height: 48px;
+    padding: 14px 12px;
+    font-size: 14px;
+  }
+
+  .buildings-directory__compare {
+    flex: 0 0 48px;
+    min-height: 48px;
+    padding: 10px;
+  }
+
+  .buildings-directory__compare img {
+    width: 24px;
+    height: 24px;
+  }
+}
