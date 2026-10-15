@@ -657,18 +657,20 @@
   overflow-wrap: break-word;
 }
 
-@media screen and (max-width: 1600px) {
+/* Figma 1857:29519 — точные параметры макета 1440 px.
+   Базовые значения выше соответствуют desktop-макету 1920 px. */
+@media screen and (min-width: 1101px) and (max-width: 1600px) {
   .buildings-directory-seo {
-    padding: 48px;
+    padding: 60px 62px;
   }
 
   .buildings-directory-seo__title {
-    font-size: 40px;
-    line-height: 1.2;
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .buildings-directory-seo__text {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
