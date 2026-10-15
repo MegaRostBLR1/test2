@@ -978,3 +978,68 @@
     line-height: 32px;
   }
 }
+
+/* Figma 1857:53202 — tablet 1024 px.
+   Сохраняет desktop-композицию, адаптируя размеры под ширину внутреннего контейнера 924 px. */
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  .buildings-production__panel {
+    gap: 24px;
+    padding: 40px;
+  }
+
+  .buildings-production__content {
+    gap: 24px;
+  }
+
+  .buildings-production__header {
+    gap: 24px;
+  }
+
+  .buildings-production__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .buildings-production__subtitle {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .buildings-production__gallery {
+    align-items: stretch;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .buildings-production__main-image {
+    flex: 1 1 0;
+    aspect-ratio: 2520 / 1417;
+    height: auto;
+  }
+
+  .buildings-production__side-images {
+    flex: 0 0 170px;
+    gap: 8px;
+  }
+
+  .buildings-production__side-image {
+    flex: 1 1 0;
+  }
+
+  .buildings-production__facts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px;
+    max-width: 100%;
+  }
+
+  .buildings-production__fact-title {
+    margin-bottom: 18px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .buildings-production__fact-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
