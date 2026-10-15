@@ -861,3 +861,46 @@
     min-width: 0;
   }
 }
+
+
+/* Figma 1857:30169 — mobile frame 360 px. */
+@media screen and (max-width: 480px) {
+  .buildings-directory-seo {
+    margin: 0 5px 5px;
+    padding: 20px 14px;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .buildings-directory-seo__content {
+    gap: 18px;
+  }
+
+  .buildings-directory-seo__title {
+    font-family: "Onest-SemiBold", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+
+  .buildings-directory-seo__divider {
+    flex-basis: 1px;
+  }
+
+  .buildings-directory-seo__text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    font-family: "Onest-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .buildings-directory-seo__text p {
+    width: 100%;
+    min-width: 0;
+  }
+}
