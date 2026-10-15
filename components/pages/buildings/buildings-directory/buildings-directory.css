@@ -735,3 +735,26 @@
   }
 }
 
+/* Figma 1857:30168 — mobile frame 360 px. Keep desktop/tablet rules intact. */
+@media screen and (max-width: 480px) {
+  .buildings-directory-seo {
+    padding: 20px 14px;
+  }
+
+  .buildings-directory-seo__content {
+    gap: 18px;
+  }
+
+  .buildings-directory-seo__title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .buildings-directory-seo__text {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
