@@ -1,0 +1,96 @@
+/* Отдельная страница «Каталог зданий». */
+.buildings-directory {
+  padding-bottom: 2.2222rem;
+}
+
+.buildings-directory__breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5556rem;
+  margin: 0 0.2778rem;
+  padding: 1.1111rem 0.2778rem;
+  color: #4d4d4d;
+  font-size: 0.8889rem;
+  line-height: 1.4444rem;
+}
+
+.buildings-directory__breadcrumb-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.buildings-directory__breadcrumb-link:hover {
+  color: #324c88;
+}
+
+.buildings-directory__breadcrumb-link:focus-visible {
+  outline: 0.1111rem solid currentColor;
+  outline-offset: 0.2222rem;
+}
+
+.buildings-directory__breadcrumb-separator {
+  color: #979a9b;
+}
+
+.buildings-directory__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.1111rem;
+  margin: 0 0.2778rem;
+  padding: 2.2222rem;
+  border-radius: 1.1111rem;
+  background: #ffffff;
+}
+
+.buildings-directory__title {
+  margin: 0;
+  color: #25313a;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.buildings-directory__description {
+  max-width: 55.5556rem;
+  margin: 0;
+  color: #4d4d4d;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.buildings-directory__content {
+  min-height: 12rem;
+  margin: 1.1111rem 0.2778rem 0;
+}
+
+@media (max-width: 680px) {
+  .buildings-directory__header {
+    gap: 0.7778rem;
+    padding: 1.3333rem 1rem;
+    border-radius: 0.5556rem;
+  }
+
+  .buildings-directory__title {
+    font-size: 1.7778rem;
+  }
+
+  .buildings-directory__description {
+    font-size: 0.8889rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .buildings-directory__title {
+    font-size: 1.5556rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .buildings-directory__breadcrumb-link {
+    transition: none;
+  }
+}
