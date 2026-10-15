@@ -1043,3 +1043,83 @@
     line-height: 28px;
   }
 }
+
+/* Figma 1857:54814 — mobile 360 px. */
+/* Mobile layout from the 360 px Figma frame; desktop, 1440 px and 1024 px rules stay unchanged. */
+@media screen and (max-width: 375px) {
+  .buildings-production {
+    margin: 0 4px 10px;
+    padding: 0;
+  }
+
+  .buildings-production__panel {
+    gap: 17px;
+    padding: 30px 10px;
+    border-radius: 10px;
+  }
+
+  .buildings-production__content {
+    gap: 24px;
+  }
+
+  .buildings-production__header {
+    gap: 14px;
+  }
+
+  .buildings-production__title {
+    font-size: 20px;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+
+  .buildings-production__subtitle {
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .buildings-production__gallery {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .buildings-production__main-image {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2520 / 1417;
+    border-radius: 20px;
+  }
+
+  .buildings-production__side-images {
+    flex: 0 0 80px;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .buildings-production__side-image {
+    flex: 1 1 0;
+    width: 0;
+    height: 80px;
+    border-radius: 20px;
+  }
+
+  .buildings-production__facts {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    max-width: 100%;
+  }
+
+  .buildings-production__fact-title {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .buildings-production__fact-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
