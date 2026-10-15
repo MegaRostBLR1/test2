@@ -39,6 +39,13 @@ const APP_CONFIG = {
       js: './components/pages/buildings/buildings.js',
       init: 'initBuildings'
     },
+    'buildings-directory': {
+      title: 'Каталог зданий',
+      html: './components/pages/buildings/buildings-directory/buildings-directory.html',
+      css: './components/pages/buildings/buildings-directory/buildings-directory.css',
+      js: './components/pages/buildings/buildings-directory/buildings-directory.js',
+      init: 'initBuildingsDirectory'
+    },
     'buildings-characteristics': {
       title: 'Характеристики быстровозводимых зданий',
       html: './components/pages/buildings/characteristics/characteristics.html',
