@@ -916,3 +916,65 @@
   }
 }
 
+
+/* Figma 1857:50544 — desktop 1440 px.
+   Геометрия адаптируется от 1920 px: gallery 1052 + 8 + 280 px, высота 591 px. */
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .buildings-production__panel {
+    gap: 36px;
+    padding: 60px 40px;
+  }
+
+  .buildings-production__content {
+    gap: 36px;
+  }
+
+  .buildings-production__header {
+    gap: 24px;
+  }
+
+  .buildings-production__title {
+    font-size: 48px;
+    line-height: normal;
+  }
+
+  .buildings-production__subtitle {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .buildings-production__gallery {
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  .buildings-production__main-image {
+    flex: 0 1 1052px;
+    height: 591px;
+  }
+
+  .buildings-production__side-images {
+    flex: 1 1 280px;
+    gap: 8px;
+  }
+
+  .buildings-production__side-image {
+    flex: 1 1 0;
+  }
+
+  .buildings-production__facts {
+    gap: 36px;
+    max-width: 1389px;
+  }
+
+  .buildings-production__fact-title {
+    margin-bottom: 18px;
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .buildings-production__fact-description {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
