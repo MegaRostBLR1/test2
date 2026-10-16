@@ -1478,3 +1478,161 @@
     height: 10px;
   }
 }
+
+
+/* Figma 1857:107455 — mobile customer review (360px). */
+@media screen and (max-width: 680px) {
+  .object-detail__review {
+    margin-top: 10px;
+    padding: 0 5px 5px;
+    border-radius: 10px;
+    background: #F5F8F7;
+  }
+
+  .object-detail__review-inner {
+    align-items: center;
+    gap: 24px;
+    padding: 24px 14px;
+    border-radius: 20px;
+    background: #FFFFFF;
+  }
+
+  .object-detail__review-title {
+    max-width: 100%;
+    font-family: "Onest-SemiBold", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .object-detail__review-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .object-detail__review-photo {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 253px;
+    min-height: 0;
+    padding: 8px;
+    border-radius: 30px;
+    background: #FFFFFF;
+  }
+
+  .object-detail__review-image {
+    display: block;
+    width: 100%;
+    height: 237px;
+    min-height: 0;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .object-detail__review-details {
+    justify-content: flex-start;
+    gap: 36px;
+    min-width: 0;
+    padding: 0;
+  }
+
+  .object-detail__review-main {
+    gap: 36px;
+  }
+
+  .object-detail__review-copy {
+    gap: 14px;
+  }
+
+  .object-detail__review-quote {
+    height: 34px;
+    font-family: "Onest-SemiBold", sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72px;
+  }
+
+  .object-detail__review-text {
+    width: 100%;
+    max-width: none;
+    max-height: 6.4em;
+    font-family: "Onest-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .object-detail__review-more {
+    font-family: "Onest-Medium", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  .object-detail__review-author {
+    gap: 18px;
+  }
+
+  .object-detail__review-name {
+    font-family: "Onest-Bold", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  .object-detail__review-position {
+    font-family: "Onest-Regular", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .object-detail__review-navigation {
+    justify-content: flex-start;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .object-detail__review-arrow {
+    position: relative;
+    flex: 0 0 67.882px;
+    width: 67.882px;
+    height: 67.882px;
+    border: 0;
+    border-radius: 0;
+    opacity: 1;
+    overflow: visible;
+  }
+
+  .object-detail__review-arrow::before {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(77, 77, 77, 0.2);
+    border-radius: 20px;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  .object-detail__review-arrow svg {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+
+  .object-detail__review-pagination {
+    flex: 0 0 auto;
+    gap: 4px;
+  }
+
+  .object-detail__review-pagination span {
+    width: 10px;
+    height: 10px;
+  }
+}
