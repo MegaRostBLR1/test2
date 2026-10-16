@@ -1289,3 +1289,36 @@
     height: 28px;
   }
 }
+
+
+/* Figma 1857:104725 — shared review layout for 1920px and 1440px frames. */
+@media screen and (min-width: 1101px) and (max-width: 1600px) {
+  .object-detail__review-inner {
+    padding: 3.5556rem 2.2222rem;
+  }
+
+  .object-detail__review-title {
+    font-size: 2.6667rem;
+  }
+
+  .object-detail__review-content {
+    grid-template-columns: minmax(0, 22.2222rem) minmax(0, 1fr);
+    column-gap: 4rem;
+  }
+
+  .object-detail__review-photo {
+    min-height: 31.1111rem;
+  }
+
+  .object-detail__review-details {
+    min-width: 0;
+  }
+
+  .object-detail__review-text {
+    max-width: 100%;
+  }
+
+  .object-detail__review-navigation {
+    max-width: 100%;
+  }
+}
