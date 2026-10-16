@@ -86,6 +86,11 @@ function initObjects() {
         else dot.removeAttribute('aria-current');
       });
       if (pagination) pagination.setAttribute('aria-label', `Слайд ${activeDrawing + 1} из ${dots.length}`);
+      const cards = Array.from(drawingsSection.querySelectorAll('.objects-drawings__card'));
+      const track = drawingsSection.querySelector('.objects-drawings__grid');
+      if (track && cards[activeDrawing]) {
+        track.scrollLeft = cards[activeDrawing].offsetLeft - track.offsetLeft;
+      }
       if (previous) previous.disabled = activeDrawing === 0;
       if (next) next.disabled = activeDrawing === dots.length - 1;
     };
