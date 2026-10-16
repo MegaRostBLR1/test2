@@ -105,6 +105,14 @@
   white-space: nowrap;
 }
 
+.objects__search-group .objects__label {
+  flex-basis: 4.7778rem;
+}
+
+.objects__view-group > .objects__label {
+  flex-basis: 9.7778rem;
+}
+
 .objects__search-field {
   display: flex;
   flex: 0 0 14.3333rem;
