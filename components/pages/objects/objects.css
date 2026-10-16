@@ -1046,3 +1046,150 @@
     height: 100%;
   }
 }
+
+
+/* Figma 1857:31710 — mobile filter panel at 360 px. */
+.objects-map__mobile-toggle {
+  display: none;
+}
+
+.objects-map__filter-fields {
+  display: contents;
+}
+
+@media screen and (max-width: 680px) {
+  .objects-map {
+    display: block;
+    position: relative;
+    height: 500px;
+    min-height: 500px;
+    padding: 4px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #F5F8F7;
+  }
+
+  .objects-map__frame {
+    position: absolute;
+    inset: 0;
+    display: block;
+    order: initial;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .objects-map__filters {
+    position: absolute;
+    z-index: 1;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    display: flex;
+    gap: 18px;
+    width: auto;
+    max-width: none;
+    padding: 14px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    color: #4D4D4D;
+  }
+
+  .objects-map__filters-heading {
+    padding: 0 0 12px;
+    border-bottom: 1px solid #4D4D4D33;
+  }
+
+  .objects-map__filters-title {
+    font-family: "Onest-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  .objects-map__mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 24px;
+    border: 1px solid #27262933;
+    border-radius: 10px;
+    background: #FFFFFF;
+    color: #4D4D4D;
+    font-family: "Onest-SemiBold", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .objects-map__mobile-toggle svg {
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.2s ease;
+  }
+
+  .objects-map__mobile-toggle[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+
+  .objects-map__filter-fields {
+    display: none;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .objects-map__filters.is-expanded .objects-map__filter-fields {
+    display: flex;
+  }
+
+  .objects-map__filter {
+    gap: 8px;
+  }
+
+  .objects-map__filter-label,
+  .objects-map__filter select {
+    font-size: 14px;
+  }
+
+  .objects-map__filter select {
+    min-height: 48px;
+    padding: 12px 40px 12px 14px;
+  }
+
+  .objects-map__more {
+    display: none;
+  }
+
+  .objects-map__extra-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .objects-map__submit {
+    min-height: 48px;
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+
+  .objects-map__card {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .objects-map__mobile-toggle svg {
+    transition: none;
+  }
+}
