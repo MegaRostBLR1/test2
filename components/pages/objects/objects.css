@@ -460,3 +460,110 @@
   }
 }
 
+
+
+/* Figma 1857:31661 — mobile toolbar at 360 px. */
+@media screen and (max-width: 680px) {
+  .objects__panel {
+    gap: 18px;
+    padding: 20px 14px;
+  }
+
+  .objects__breadcrumbs {
+    gap: 20px;
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .objects__title {
+    gap: 4px;
+    font-family: "Onest-SemiBold", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    white-space: nowrap;
+  }
+
+  .objects__count {
+    font-family: "Onest-SemiBold", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+
+  .objects__toolbar {
+    gap: 14px;
+  }
+
+  .objects__view-group {
+    order: 1;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .objects__view-group > .objects__label {
+    flex: 0 0 auto;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .objects__view-options {
+    gap: 4px;
+  }
+
+  .objects__view-option {
+    gap: 0;
+  }
+
+  .objects__view-name {
+    display: none;
+  }
+
+  .objects__view-control {
+    flex-basis: 36px;
+    width: 36px;
+    height: 32px;
+    padding: 2px;
+    border-radius: 2px;
+  }
+
+  .objects__view-icon {
+    flex-basis: 32px;
+    width: 32px;
+    height: 28px;
+    padding: 7px 9px;
+  }
+
+  .objects__view-control.is-active .objects__view-icon {
+    border-radius: 4px;
+  }
+
+  .objects__search-group {
+    order: 2;
+    gap: 0;
+  }
+
+  .objects__search-group > .objects__label {
+    display: none;
+  }
+
+  .objects__search-field {
+    flex: 1 1 auto;
+    width: 100%;
+    height: 48px;
+    gap: 14px;
+    padding: 15px 14px;
+    border-radius: 10px;
+  }
+
+  .objects__search-icon {
+    flex-basis: 18px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .objects__search-input {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
