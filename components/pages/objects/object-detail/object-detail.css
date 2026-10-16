@@ -601,54 +601,56 @@
 }
 
 @media screen and (min-width: 1101px) and (max-width: 1600px) {
+  /* Figma frame 1857:104669 (1440 px): preserve desktop typography and spacing. */
   .object-detail__overview {
-    padding: 32px;
+    padding: 40px;
   }
 
   .object-detail__overview-inner {
-    gap: 24px;
-    padding: 16px 12px 0;
+    gap: 30px;
+    padding: 20px 12px 0;
   }
 
   .object-detail__overview-title {
-    font-size: 32px;
-    line-height: 1.35;
-  }
-
-  .object-detail__tab {
-    min-height: 48px;
-    padding: 12px 14px;
-    font-size: 14px;
+    font-size: 48px;
     line-height: 1.5;
   }
 
+  .object-detail__tab {
+    min-height: 54px;
+    padding: 14px 18px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
   .object-detail__facts {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: center;
+    gap: 18px;
   }
 
   .object-detail__fact {
-    gap: 16px;
-    padding: 18px 12px;
+    gap: 20px;
+    padding: 18px 20px;
   }
 
   .object-detail__fact-label {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .object-detail__fact-value {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 26px;
   }
 
   .object-detail__description {
-    gap: 20px;
+    gap: 30px;
   }
 
   .object-detail__description-text,
   .object-detail__read-more {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
