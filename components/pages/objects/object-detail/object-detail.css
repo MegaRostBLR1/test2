@@ -426,7 +426,7 @@
 .object-detail__tab.is-active{background:#FFF505}
 .object-detail__tab:focus-visible,.object-detail__read-more:focus-visible{outline:2px solid #324C88;outline-offset:3px}
 .object-detail__overview-divider{width:100%;height:1px;background:rgba(77,77,77,.2)}
-.object-detail__facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;gap:18px;width:100%;margin:0}
+.object-detail__facts{display:grid;grid-template-columns:200px max-content 200px 200px;align-items:stretch;justify-content:center;gap:18px;width:100%;margin:0}
 .object-detail__fact{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;min-width:0;padding:18px 20px;border:1px solid rgba(77,77,77,.1);border-radius:10px;background:rgba(255,255,255,.45);box-shadow:inset 0 0 60px rgba(255,255,255,.03);text-align:center;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
 .object-detail__fact-label{display:flex;flex-direction:column;align-items:center;gap:8px;color:#5D5D5D;font-family:"Onest-SemiBold",sans-serif;font-size:20px;font-weight:600;line-height:26px;overflow-wrap:anywhere}
 .object-detail__fact-icon{display:flex;align-items:center;justify-content:center;flex:0 0 48px;width:48px;height:48px;border-radius:10px;background:#FFF500}
