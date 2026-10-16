@@ -34,6 +34,9 @@ function initObjects() {
       const expanded = mobileFiltersToggle.getAttribute('aria-expanded') === 'true';
       mobileFiltersToggle.setAttribute('aria-expanded', String(!expanded));
       filtersForm.classList.toggle('is-expanded', !expanded);
+      if (extraFilters) {
+        extraFilters.hidden = expanded;
+      }
     });
   }
 
