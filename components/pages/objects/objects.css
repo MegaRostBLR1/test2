@@ -1195,6 +1195,49 @@
 }
 
 
+/* Figma 1857:30736 — video section at 1440 px.
+   Keep the 1440 composition aligned with the existing 1920 desktop layout. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .objects-video {
+    gap: 30px;
+    padding: 60px 62px;
+  }
+
+  .objects-video__heading {
+    gap: 30px;
+  }
+
+  .objects-video__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .objects-video__feature {
+    height: 800px;
+  }
+
+  .objects-video__feature-content {
+    max-width: 1347px;
+    gap: 36px;
+  }
+
+  .objects-video__feature-title {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .objects-video__play {
+    width: 283px;
+    height: 283px;
+    flex-basis: 283px;
+  }
+
+  .objects-video__play-diamond {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 /* Figma 1857:30550 — video section. */
 .objects-video { display:flex; flex-direction:column; align-items:stretch; gap:30px; width:100%; min-width:0; padding:60px 62px; background:#FFFFFF; color:#4D4D4D; }
 .objects-video__heading { display:flex; flex-direction:column; align-items:center; gap:30px; width:100%; }
