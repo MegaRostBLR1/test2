@@ -1593,3 +1593,27 @@
     display: none;
   }
 }
+
+/* Figma 2269:146136 — options in the map filters. */
+.objects-map__filter select option {
+  padding: 8px 24px;
+  background: #F7F8FA;
+  color: #2C2C2C80;
+  font-family: "Onest-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.objects-map__filter select option:checked,
+.objects-map__filter select option:hover {
+  background: #FFFFFF;
+  color: #4D4D4D;
+}
+
+@media screen and (max-width: 680px) {
+  .objects-map__filter select option {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
