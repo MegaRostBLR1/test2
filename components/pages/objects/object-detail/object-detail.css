@@ -325,3 +325,93 @@
     transition: none;
   }
 }
+
+
+/* Mobile layout aligned with Figma frame 1857:107339 (360 px). */
+@media screen and (max-width: 680px) {
+  .object-detail__breadcrumbs {
+    gap: 10px;
+    padding: 24px 8px;
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .object-detail__hero {
+    min-height: 480px;
+    padding: 40px 20px;
+  }
+
+  .object-detail__hero-content {
+    gap: 24px;
+  }
+
+  .object-detail__intro {
+    gap: 24px;
+  }
+
+  .object-detail__title {
+    font-family: "Onest-Medium", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  .object-detail__project-id {
+    gap: 12px;
+    padding: 2px 20px 2px 2px;
+  }
+
+  .object-detail__project-id-label {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+
+  .object-detail__project-id-value {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .object-detail__video-link {
+    width: 198px;
+    height: 198px;
+  }
+
+  .object-detail__video-diamond {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+  }
+
+  .object-detail__video-content {
+    gap: 12px;
+  }
+
+  .object-detail__video-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .object-detail__video-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .object-detail__video-label {
+    font-size: 12px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .object-detail__hero {
+    min-height: 480px;
+    padding: 40px 20px;
+  }
+
+  .object-detail__title {
+    font-size: 18px;
+  }
+}
