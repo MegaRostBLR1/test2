@@ -16,6 +16,32 @@ function initObjects() {
     });
   }
 
+  const filtersForm = root.querySelector('.objects-map__filters');
+  const moreFiltersButton = root.querySelector('.objects-map__more');
+  const extraFilters = root.querySelector('.objects-map__extra-filters');
+  const mapCard = root.querySelector('.objects-map__card');
+  const closeCardButton = root.querySelector('.objects-map__card-close');
+
+  if (filtersForm) {
+    filtersForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+    });
+  }
+
+  if (moreFiltersButton && extraFilters) {
+    moreFiltersButton.addEventListener('click', () => {
+      const expanded = moreFiltersButton.getAttribute('aria-expanded') === 'true';
+      moreFiltersButton.setAttribute('aria-expanded', String(!expanded));
+      extraFilters.hidden = expanded;
+    });
+  }
+
+  if (closeCardButton && mapCard) {
+    closeCardButton.addEventListener('click', () => {
+      mapCard.hidden = true;
+    });
+  }
+
   viewControls.forEach((control) => {
     control.addEventListener('click', () => {
       const selectedView = control.dataset.objectsView;
