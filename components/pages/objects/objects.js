@@ -67,6 +67,34 @@ function initObjects() {
     });
   });
 
+
+  const drawingsSection = root.querySelector('.objects-drawings');
+  if (drawingsSection) {
+    const dots = Array.from(drawingsSection.querySelectorAll('.objects-drawings__dot'));
+    const previous = drawingsSection.querySelector('.objects-drawings__arrow--previous');
+    const next = drawingsSection.querySelector('.objects-drawings__arrow--next');
+    const pagination = drawingsSection.querySelector('.objects-drawings__pagination');
+    let activeDrawing = 0;
+
+    const selectDrawing = (index) => {
+      if (!dots.length) return;
+      activeDrawing = Math.max(0, Math.min(dots.length - 1, index));
+      dots.forEach((dot, dotIndex) => {
+        const active = dotIndex === activeDrawing;
+        dot.classList.toggle('is-active', active);
+        if (active) dot.setAttribute('aria-current', 'true');
+        else dot.removeAttribute('aria-current');
+      });
+      if (pagination) pagination.setAttribute('aria-label', `Слайд ${activeDrawing + 1} из ${dots.length}`);
+      if (previous) previous.disabled = activeDrawing === 0;
+      if (next) next.disabled = activeDrawing === dots.length - 1;
+    };
+
+    dots.forEach((dot, index) => dot.addEventListener('click', () => selectDrawing(index)));
+    if (previous) previous.addEventListener('click', () => selectDrawing(activeDrawing - 1));
+    if (next) next.addEventListener('click', () => selectDrawing(activeDrawing + 1));
+  }
+
   const videoSection = root.querySelector('.objects-video');
   if (videoSection) {
     const dots = Array.from(videoSection.querySelectorAll('.objects-video__dot'));
