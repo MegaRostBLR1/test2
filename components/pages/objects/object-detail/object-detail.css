@@ -248,6 +248,7 @@
   }
 
   .object-detail__hero-content {
+    flex-direction: column;
     gap: 36px;
   }
 
