@@ -1569,3 +1569,15 @@
   .objects-drawings__arrow::before { width: 48px; height: 48px; border-radius: 20px; }
   .objects-drawings__arrow svg { width: 30px; height: 30px; }
 }
+
+/* Figma 1857:30780 — drawings section at 1440 px.
+   Keep the existing four-card composition at 1920 px unchanged. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .objects-drawings__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .objects-drawings__card--fourth {
+    display: none;
+  }
+}
