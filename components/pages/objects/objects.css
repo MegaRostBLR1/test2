@@ -1556,15 +1556,17 @@
   .objects-drawings { gap: 30px; padding: 40px; }
   .objects-drawings__title { font-size: 24px; line-height: 32px; }
   .objects-drawings__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .objects-drawings__card--third,
+  .objects-drawings__card--fourth { display: none; }
 }
 @media screen and (max-width: 680px) {
-  .objects-drawings { gap: 20px; padding: 20px 10px; }
+  .objects-drawings { gap: 18px; padding: 20px 14px; overflow: hidden; }
   .objects-drawings__title { font-size: 24px; line-height: 32px; }
-  .objects-drawings__grid { grid-template-columns: 1fr; gap: 10px; }
-  .objects-drawings__card { gap: 20px; height: auto; min-height: 250px; padding: 20px; }
-  .objects-drawings__image { flex-basis: 160px; height: 160px; }
-  .objects-drawings__caption { font-size: 16px; }
-  .objects-drawings__navigation { gap: 18px; min-height: 67.882px; }
+  .objects-drawings__grid { display: flex; gap: 10px; overflow: hidden; width: 100%; }
+  .objects-drawings__card { flex: 0 0 242px; gap: 24px; width: 242px; height: auto; min-height: 0; padding: 15px; }
+  .objects-drawings__image { flex: 0 0 140px; width: 212px; height: 140px; }
+  .objects-drawings__caption { width: 100%; font-size: 14px; line-height: 1.4; }
+  .objects-drawings__navigation { gap: 24px; min-height: 67.882px; }
   .objects-drawings__arrow { flex-basis: 67.882px; width: 67.882px; height: 67.882px; }
   .objects-drawings__arrow::before { width: 48px; height: 48px; border-radius: 20px; }
   .objects-drawings__arrow svg { width: 30px; height: 30px; }
@@ -1586,7 +1588,8 @@
 /* Figma 1857:31584 — tablet drawings layout at 1024 px.
    Show the two cards present in the tablet frame; keep desktop variants intact. */
 @media screen and (min-width: 681px) and (max-width: 1100px) {
-  .objects-drawings__card:nth-child(n + 3) {
+  .objects-drawings__card--third,
+  .objects-drawings__card--fourth {
     display: none;
   }
 }
