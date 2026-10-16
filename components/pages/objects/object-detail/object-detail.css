@@ -1440,6 +1440,7 @@
   }
 
   .object-detail__review-arrow {
+    position: relative;
     display: flex;
     flex: 0 0 90.51px;
     align-items: center;
@@ -1453,6 +1454,7 @@
   }
 
   .object-detail__review-arrow::before {
+    position: absolute;
     width: 64px;
     height: 64px;
     border: 1px solid rgba(77, 77, 77, 0.2);
@@ -1462,10 +1464,9 @@
   }
 
   .object-detail__review-arrow svg {
-    position: absolute;
+    position: relative;
     width: 40px;
     height: 40px;
-    transform: rotate(0deg);
   }
 
   .object-detail__review-pagination {
