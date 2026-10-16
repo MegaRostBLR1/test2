@@ -438,3 +438,61 @@
 @media screen and (max-width:1100px){.object-detail__overview{padding:30px 24px}.object-detail__overview-inner{padding:10px 0 0}.object-detail__overview-title{font-size:38px;line-height:1.35}.object-detail__facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media screen and (max-width:680px){.object-detail__overview{padding:24px 16px}.object-detail__overview-inner{gap:22px}.object-detail__overview-title{font-size:26px;line-height:1.35}.object-detail__tabs{width:100%;align-items:stretch}.object-detail__tab{flex:1 1 100%;min-height:46px;padding:10px 12px;font-size:14px}.object-detail__facts{grid-template-columns:minmax(0,1fr);gap:12px}.object-detail__fact{flex-direction:row;justify-content:flex-start;gap:16px;padding:16px;text-align:left}.object-detail__fact-label{flex:1 1 auto;flex-direction:row;align-items:center;gap:12px;font-size:16px;text-align:left}.object-detail__fact-value{flex:0 1 auto;font-size:15px;text-align:right}.object-detail__description-text,.object-detail__read-more{font-size:16px}}
 @media (prefers-reduced-motion:reduce){.object-detail__tab{transition:none}}
+
+/* Figma 1857:105359 — tablet/desktop transition; preserve the 1920 layout. */
+@media screen and (min-width: 1101px) and (max-width: 1600px) {
+  .object-detail__overview {
+    padding: 32px;
+  }
+
+  .object-detail__overview-inner {
+    gap: 24px;
+    padding: 16px 12px 0;
+  }
+
+  .object-detail__overview-title {
+    font-size: 32px;
+    line-height: 1.35;
+  }
+
+  .object-detail__tabs {
+    max-width: 100%;
+  }
+
+  .object-detail__tab {
+    min-height: 48px;
+    padding: 12px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .object-detail__facts {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .object-detail__fact {
+    gap: 16px;
+    padding: 18px 12px;
+  }
+
+  .object-detail__fact-label {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .object-detail__fact-value {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .object-detail__description {
+    gap: 20px;
+  }
+
+  .object-detail__description-text,
+  .object-detail__read-more {
+    font-size: 18px;
+  }
+}
+
