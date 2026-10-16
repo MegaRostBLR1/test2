@@ -1594,26 +1594,67 @@
   }
 }
 
-/* Figma 2269:146136 — options in the map filters. */
-.objects-map__filter select option {
-  padding: 8px 24px;
-  background: #F7F8FA;
-  color: #2C2C2C80;
-  font-family: "Onest-Medium", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
+/* Figma 2269:146136 — custom filter options. */
+.objects-map__filter { position: relative; }
+
+.objects-map__native-select {
+  position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%);
 }
 
-.objects-map__filter select option:checked,
-.objects-map__filter select option:hover {
-  background: #FFFFFF;
-  color: #4D4D4D;
+.objects-map__select { display: flex; flex-direction: column; width: 100%; min-width: 0; }
+
+.objects-map__select-trigger {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  width: 100%; min-height: 64px; padding: 18px 24px; border: 0; border-radius: 10px;
+  background: rgba(50, 76, 136, 0.04); color: #272629;
+  font-family: "Onest-Medium", sans-serif; font-size: 18px; font-weight: 500;
+  line-height: 1.6; text-align: left; cursor: pointer;
 }
+
+.objects-map__select-trigger:focus-visible,
+.objects-map__select-option:focus-visible { outline: 2px solid #324C88; outline-offset: 2px; }
+
+.objects-map__select-chevron {
+  display: flex; flex: 0 0 24px; width: 24px; height: 24px;
+  align-items: center; justify-content: center; transition: transform 0.15s ease;
+}
+
+.objects-map__select-chevron svg {
+  display: block; width: 24px; height: 24px; fill: none; stroke: currentColor;
+  stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;
+}
+
+.objects-map__select.is-open .objects-map__select-chevron { transform: rotate(180deg); }
+
+.objects-map__select-options {
+  display: flex; flex-direction: column; gap: 15px; width: 100%; height: 264px;
+  margin-top: 8px; padding: 18px 24px; overflow-y: auto; overscroll-behavior: contain;
+  border: 3px solid #F5F8F7; border-radius: 10px; background: #F7F8FA;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  scrollbar-color: #4D4D4D rgba(255, 255, 255, 0.8); scrollbar-width: thin;
+}
+
+.objects-map__select-options[hidden] { display: none; }
+
+.objects-map__select-option {
+  flex: 0 0 auto; align-self: flex-start; max-width: 100%; padding: 0;
+  border: 0; background: transparent; color: rgba(44, 44, 44, 0.5);
+  font-family: "Onest-Medium", sans-serif; font-size: 18px; font-weight: 500;
+  line-height: 26px; text-align: left; overflow-wrap: anywhere; cursor: pointer;
+}
+
+.objects-map__select-option:hover,
+.objects-map__select-option.is-selected { color: #4D4D4D; }
+
+.objects-map__select-option:focus-visible { border-radius: 2px; }
 
 @media screen and (max-width: 680px) {
-  .objects-map__filter select option {
-    font-size: 14px;
-    line-height: 20px;
-  }
+  .objects-map__select-trigger { min-height: 54px; padding: 14px 18px; font-size: 14px; }
+  .objects-map__select-options { height: 264px; padding: 18px 24px; }
+  .objects-map__select-option { font-size: 14px; line-height: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .objects-map__select-chevron { transition: none; }
 }
