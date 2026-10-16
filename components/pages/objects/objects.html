@@ -58,4 +58,104 @@
       </div>
     </div>
   </div>
+
+  <section class="objects-map" aria-label="Карта объектов">
+    <iframe
+      class="objects-map__frame"
+      title="Расположение объектов на Яндекс Картах"
+      src="https://yandex.ru/map-widget/v1/?ll=75.3229%2C51.7237&z=12&pt=75.3229%2C51.7237%2Cpm2rdm"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <form class="objects-map__filters" aria-label="Фильтры объектов">
+      <div class="objects-map__filters-heading">
+        <h2 class="objects-map__filters-title">Фильтр:</h2>
+      </div>
+
+      <label class="objects-map__filter">
+        <span class="objects-map__filter-label">Год:</span>
+        <select name="year">
+          <option value="">Все</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+        </select>
+      </label>
+
+      <label class="objects-map__filter">
+        <span class="objects-map__filter-label">Страна:</span>
+        <select name="country">
+          <option value="">Все</option>
+          <option value="Казахстан">Казахстан</option>
+          <option value="Россия">Россия</option>
+        </select>
+      </label>
+
+      <label class="objects-map__filter">
+        <span class="objects-map__filter-label">Регион:</span>
+        <select name="region">
+          <option value="">Все</option>
+          <option value="Павлодарская область">Павлодарская область</option>
+        </select>
+      </label>
+
+      <label class="objects-map__filter">
+        <span class="objects-map__filter-label">Сегменты:</span>
+        <select name="segment">
+          <option value="">Все</option>
+          <option value="Промышленность">Промышленность</option>
+          <option value="Транспорт">Транспорт</option>
+        </select>
+      </label>
+
+      <label class="objects-map__filter">
+        <span class="objects-map__filter-label">Технология:</span>
+        <select name="technology">
+          <option value="">Все</option>
+          <option value="Металлоконструкции">Металлоконструкции</option>
+        </select>
+      </label>
+
+      <button class="objects-map__more" type="button" aria-expanded="false">
+        <span>Еще фильтры</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+      </button>
+
+      <div class="objects-map__extra-filters" hidden>
+        <label class="objects-map__filter">
+          <span class="objects-map__filter-label">Тип объекта:</span>
+          <select name="object-type">
+            <option value="">Все</option>
+            <option value="Цех">Цех</option>
+            <option value="Склад">Склад</option>
+          </select>
+        </label>
+      </div>
+
+      <button class="objects-map__submit" type="submit">Показать</button>
+    </form>
+
+    <article class="objects-map__card" aria-label="Информация об объекте">
+      <div class="objects-map__card-image" role="img" aria-label="Промышленный объект"></div>
+      <div class="objects-map__card-content">
+        <div class="objects-map__card-heading">
+          <h3 class="objects-map__card-title">Быстровозводимый цех для ремонта вагонных колес</h3>
+          <button class="objects-map__card-close" type="button" aria-label="Скрыть карточку объекта">×</button>
+        </div>
+        <dl class="objects-map__details">
+          <div>
+            <dt>Размеры</dt>
+            <dd>10Ш × 54Д × 6.5В</dd>
+          </div>
+          <div>
+            <dt>Локация</dt>
+            <dd>г. Экибастуз, Казахстан</dd>
+          </div>
+        </dl>
+        <a class="objects-map__details-link" href="https://yandex.ru/maps/?text=Экибастуз%2C%20Казахстан" target="_blank" rel="noopener noreferrer">Подробнее</a>
+      </div>
+    </article>
+  </section>
 </section>
