@@ -17,6 +17,7 @@ function initObjects() {
   }
 
   const filtersForm = root.querySelector('.objects-map__filters');
+  const mobileFiltersToggle = root.querySelector('.objects-map__mobile-toggle');
   const moreFiltersButton = root.querySelector('.objects-map__more');
   const extraFilters = root.querySelector('.objects-map__extra-filters');
   const mapCard = root.querySelector('.objects-map__card');
@@ -25,6 +26,14 @@ function initObjects() {
   if (filtersForm) {
     filtersForm.addEventListener('submit', (event) => {
       event.preventDefault();
+    });
+  }
+
+  if (mobileFiltersToggle && filtersForm) {
+    mobileFiltersToggle.addEventListener('click', () => {
+      const expanded = mobileFiltersToggle.getAttribute('aria-expanded') === 'true';
+      mobileFiltersToggle.setAttribute('aria-expanded', String(!expanded));
+      filtersForm.classList.toggle('is-expanded', !expanded);
     });
   }
 
