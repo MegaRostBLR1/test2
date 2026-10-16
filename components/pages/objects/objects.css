@@ -939,3 +939,110 @@
     transition: none;
   }
 }
+
+
+/* Figma 1857:31483 — tablet map/filter composition at 1024 px.
+   The Yandex map remains the full-bleed background; filters sit in a
+   white panel anchored to the bottom edge of the map section. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .objects-map {
+    display: flex;
+    align-items: flex-end;
+    min-height: 0;
+    height: 800px;
+    padding: 4px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .objects-map__frame {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    border-radius: 10px;
+  }
+
+  .objects-map__filters {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: end;
+    gap: 24px 20px;
+    width: 100%;
+    max-width: none;
+    padding: 25px;
+    border-radius: 10px;
+  }
+
+  .objects-map__filters-heading,
+  .objects-map__more,
+  .objects-map__extra-filters,
+  .objects-map__submit {
+    grid-column: 1 / -1;
+  }
+
+  .objects-map__filters-heading {
+    padding-bottom: 16px;
+  }
+
+  .objects-map__filters-title {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .objects-map__filter {
+    gap: 20px;
+  }
+
+  .objects-map__filter-label {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .objects-map__filter select {
+    min-height: 48px;
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .objects-map__more {
+    min-height: 48px;
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+
+  .objects-map__submit {
+    min-height: 48px;
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+
+  .objects-map__extra-filters {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .objects-map__extra-filters[hidden] {
+    display: none;
+  }
+
+  .objects-map__card {
+    top: 20px;
+    right: 20px;
+    bottom: auto;
+    left: auto;
+    width: 440px;
+    max-width: calc(100% - 40px);
+    transform: none;
+  }
+}
+
+/* Ensure the embedded map always fills the entire map section on desktop too. */
+@media screen and (min-width: 1101px) {
+  .objects-map__frame {
+    width: 100%;
+    height: 100%;
+  }
+}
