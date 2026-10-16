@@ -1056,9 +1056,9 @@
 }
 
 .object-detail__review-text {
-  display: -webkit-box;
   width: 100%;
   max-width: 42.2778rem;
+  max-height: 6.4em;
   margin: 0;
   overflow: hidden;
   color: #5D5D5D;
@@ -1066,16 +1066,11 @@
   font-size: 1.3333rem;
   font-weight: 400;
   line-height: 1.6;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
 }
 
 .object-detail__review-text.is-expanded {
-  display: block;
+  max-height: none;
   overflow: visible;
-  -webkit-line-clamp: unset;
-  line-clamp: unset;
 }
 
 .object-detail__review-more {
