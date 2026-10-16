@@ -1,6 +1,61 @@
-<section class="objects">
-  <div class="container">
-    <h1>Объекты</h1>
-    <p>Базовый HTML-контент страницы объектов. Здесь будет размещён основной интерфейс.</p>
+<section class="objects" aria-labelledby="objects-title">
+  <div class="objects__panel">
+    <nav class="objects__breadcrumbs" aria-label="Хлебные крошки">
+      <a class="objects__breadcrumb-link" href="#/">Главная</a>
+      <span class="objects__breadcrumb-separator" aria-hidden="true">-</span>
+      <span aria-current="page">Каталог зданий</span>
+    </nav>
+
+    <h1 class="objects__title" id="objects-title">
+      <span>Наши обьекты</span>
+      <span class="objects__count">(9)</span>
+    </h1>
+
+    <div class="objects__toolbar">
+      <form class="objects__search-group" role="search">
+        <label class="objects__label" for="objects-project-id">Поиск:</label>
+        <div class="objects__search-field">
+          <svg class="objects__search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input
+            class="objects__search-input"
+            id="objects-project-id"
+            name="project-id"
+            type="search"
+            placeholder="Введите ID проекта"
+            autocomplete="off"
+          >
+        </div>
+      </form>
+
+      <div class="objects__view-group">
+        <span class="objects__label">Отображение:</span>
+        <div class="objects__view-options" role="group" aria-label="Способ отображения объектов">
+          <div class="objects__view-option">
+            <span class="objects__view-name">Карточки</span>
+            <button class="objects__view-control" type="button" data-objects-view="cards" aria-label="Показать объекты карточками" aria-pressed="false">
+              <svg class="objects__view-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+                <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+              </svg>
+            </button>
+          </div>
+
+          <div class="objects__view-option">
+            <span class="objects__view-name">На карте</span>
+            <button class="objects__view-control is-active" type="button" data-objects-view="map" aria-label="Показать объекты на карте" aria-pressed="true">
+              <svg class="objects__view-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"></path>
+                <path d="M9 3v15M15 6v15"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
