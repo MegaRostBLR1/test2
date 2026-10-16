@@ -29,6 +29,138 @@ function initObjects() {
     });
   }
 
+  if (filtersForm) {
+    const filterSelects = Array.from(filtersForm.querySelectorAll('.objects-map__filter select'));
+    let openDropdown = null;
+
+    const closeDropdown = (dropdown, returnFocus = false) => {
+      if (!dropdown) return;
+      const trigger = dropdown.querySelector('.objects-map__select-trigger');
+      const options = dropdown.querySelector('.objects-map__select-options');
+      dropdown.classList.remove('is-open');
+      if (trigger) trigger.setAttribute('aria-expanded', 'false');
+      if (options) options.hidden = true;
+      if (returnFocus && trigger) trigger.focus();
+      if (openDropdown === dropdown) openDropdown = null;
+    };
+
+    filterSelects.forEach((select, index) => {
+      const filter = select.closest('.objects-map__filter');
+      if (!filter) return;
+      const dropdown = document.createElement('div');
+      dropdown.className = 'objects-map__select';
+      const trigger = document.createElement('button');
+      trigger.className = 'objects-map__select-trigger';
+      trigger.type = 'button';
+      trigger.id = `objects-map-select-${select.name || index}`;
+      trigger.setAttribute('aria-haspopup', 'listbox');
+      trigger.setAttribute('aria-expanded', 'false');
+      trigger.setAttribute('aria-label', filter.querySelector('.objects-map__filter-label')?.textContent.trim() || 'Выбрать значение');
+      const value = document.createElement('span');
+      value.className = 'objects-map__select-value';
+      const chevron = document.createElement('span');
+      chevron.className = 'objects-map__select-chevron';
+      chevron.setAttribute('aria-hidden', 'true');
+      chevron.innerHTML = '<svg viewBox="0 0 24 24" focusable="false"><path d="m6 9 6 6 6-6"></path></svg>';
+      trigger.append(value, chevron);
+
+      const options = document.createElement('div');
+      options.className = 'objects-map__select-options';
+      options.id = `objects-map-options-${select.name || index}`;
+      options.setAttribute('role', 'listbox');
+      options.setAttribute('aria-label', trigger.getAttribute('aria-label'));
+      options.hidden = true;
+      trigger.setAttribute('aria-controls', options.id);
+      let optionButtons = [];
+      const updateSelection = () => {
+        const selectedOption = select.options[select.selectedIndex];
+        value.textContent = selectedOption ? selectedOption.textContent : '';
+        optionButtons.forEach((item) => {
+          const selected = item.dataset.value === select.value;
+          item.classList.toggle('is-selected', selected);
+          item.setAttribute('aria-selected', String(selected));
+        });
+      };
+
+      optionButtons = Array.from(select.options).map((option, optionIndex) => {
+        const item = document.createElement('button');
+        item.className = 'objects-map__select-option';
+        item.type = 'button';
+        item.setAttribute('role', 'option');
+        item.dataset.value = option.value;
+        item.textContent = option.textContent;
+        item.setAttribute('aria-selected', String(option.selected));
+        item.tabIndex = -1;
+        if (option.selected) item.classList.add('is-selected');
+        item.addEventListener('click', () => {
+          select.value = option.value;
+          select.dispatchEvent(new Event('change', { bubbles: true }));
+          updateSelection();
+          closeDropdown(dropdown);
+          trigger.focus();
+        });
+        item.addEventListener('keydown', (event) => {
+          let nextIndex = optionIndex;
+          if (event.key === 'ArrowDown') nextIndex = Math.min(optionButtons.length - 1, optionIndex + 1);
+          else if (event.key === 'ArrowUp') nextIndex = Math.max(0, optionIndex - 1);
+          else if (event.key === 'Home') nextIndex = 0;
+          else if (event.key === 'End') nextIndex = optionButtons.length - 1;
+          else if (event.key === 'Escape') {
+            event.preventDefault();
+            closeDropdown(dropdown, true);
+            return;
+          } else if (event.key === 'Tab') {
+            closeDropdown(dropdown);
+            return;
+          } else return;
+          event.preventDefault();
+          optionButtons[nextIndex]?.focus();
+        });
+        options.append(item);
+        return item;
+      });
+
+      trigger.addEventListener('click', () => {
+        if (openDropdown && openDropdown !== dropdown) closeDropdown(openDropdown);
+        if (!options.hidden) {
+          closeDropdown(dropdown);
+          return;
+        }
+        openDropdown = dropdown;
+        dropdown.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+        options.hidden = false;
+        const selected = optionButtons.find((item) => item.getAttribute('aria-selected') === 'true');
+        (selected || optionButtons[0])?.focus();
+      });
+      trigger.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowDown' || event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          if (options.hidden) trigger.click();
+          else optionButtons[0]?.focus();
+        } else if (event.key === 'Escape' && !options.hidden) {
+          event.preventDefault();
+          closeDropdown(dropdown, true);
+        }
+      });
+
+      select.classList.add('objects-map__native-select');
+      select.tabIndex = -1;
+      select.setAttribute('aria-hidden', 'true');
+      select.insertAdjacentElement('afterend', dropdown);
+      dropdown.append(trigger, options);
+      updateSelection();
+      select.addEventListener('change', updateSelection);
+    });
+
+    document.addEventListener('click', (event) => {
+      if (openDropdown && !openDropdown.contains(event.target)) closeDropdown(openDropdown);
+    });
+    filtersForm.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && openDropdown) closeDropdown(openDropdown, true);
+    });
+  }
+
   if (mobileFiltersToggle && filtersForm) {
     mobileFiltersToggle.addEventListener('click', () => {
       const expanded = mobileFiltersToggle.getAttribute('aria-expanded') === 'true';
