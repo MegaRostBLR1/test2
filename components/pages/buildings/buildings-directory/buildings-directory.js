@@ -10,10 +10,11 @@ function initBuildingsDirectory() {
   const filters = Array.from(root.querySelectorAll('[data-filter]'));
   const cards = Array.from(root.querySelectorAll('[data-category]'));
   const showMoreButton = root.querySelector('.buildings-directory__show-more');
-  const initialVisibleCount = 3;
+  const verticalGrid = window.matchMedia('(max-width: 680px)');
+  const getInitialVisibleCount = () => (verticalGrid.matches ? 3 : 6);
   const batchSize = 3;
   let selectedCategory = 'all';
-  let visibleCount = initialVisibleCount;
+  let visibleCount = getInitialVisibleCount();
 
   function renderCards() {
     const matchingCards = cards.filter((card) => (
@@ -35,10 +36,15 @@ function initBuildingsDirectory() {
     }
   }
 
+  verticalGrid.addEventListener('change', () => {
+    visibleCount = getInitialVisibleCount();
+    renderCards();
+  });
+
   filters.forEach((filter) => {
     filter.addEventListener('click', () => {
       selectedCategory = filter.dataset.filter;
-      visibleCount = initialVisibleCount;
+      visibleCount = getInitialVisibleCount();
 
       filters.forEach((item) => {
         const isActive = item === filter;
