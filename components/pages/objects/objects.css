@@ -1266,10 +1266,56 @@
 .objects-video__pagination { display:flex; align-items:center; gap:4px; }
 .objects-video__dot { width:10px; height:10px; flex:0 0 10px; padding:0; border:0; border-radius:50%; background:rgba(50,76,136,.2); cursor:pointer; }
 .objects-video__dot.is-active { background:#324C88; }
-@media screen and (max-width:1100px) {
-  .objects-video { gap:24px; padding:48px 32px; }
-  .objects-video__feature { height:560px; }
-  .objects-video__feature-title { font-size:36px; line-height:1.4; }
+/* Figma 1857:31537 — tablet layout at 1024 px. */
+@media screen and (min-width:681px) and (max-width:1100px) {
+  .objects-video {
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .objects-video__heading {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .objects-video__title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .objects-video__all {
+    flex: 0 0 auto;
+  }
+
+  .objects-video__feature {
+    height: 565px;
+  }
+
+  .objects-video__feature-content {
+    gap: 36px;
+    padding: 0 24px;
+  }
+
+  .objects-video__feature-title {
+    width: 100%;
+    max-width: 823px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .objects-video__play {
+    width: 283px;
+    height: 283px;
+    flex-basis: 283px;
+  }
+
+  .objects-video__play-diamond {
+    width: 200px;
+    height: 200px;
+  }
 }
 @media screen and (max-width:680px) {
   .objects-video { gap:20px; padding:32px 16px; }
