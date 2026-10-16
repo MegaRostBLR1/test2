@@ -88,6 +88,13 @@ const APP_CONFIG = {
       js: './components/pages/objects/objects.js',
       init: 'initObjects'
     },
+    'object-detail': {
+      title: 'Объект',
+      html: './components/pages/objects/object-detail/object-detail.html',
+      css: './components/pages/objects/object-detail/object-detail.css',
+      js: './components/pages/objects/object-detail/object-detail.js',
+      init: 'initObjectDetail'
+    },
     'press-center': {
       title: 'Пресс-центр',
       html: './components/pages/press-center/press-center.html',
