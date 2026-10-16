@@ -190,36 +190,41 @@
 
 @media screen and (max-width: 1100px) {
   .object-detail__breadcrumbs {
-    gap: 12px;
+    gap: 20px;
     font-size: 16px;
   }
 
   .object-detail__hero {
-    min-height: 680px;
-    padding: 40px 32px;
+    min-height: 839px;
+    padding: 40px 20px 40px 60px;
   }
 
   .object-detail__hero-content {
-    gap: 48px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 246px;
   }
 
   .object-detail__intro {
-    gap: 20px;
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 24px;
   }
 
   .object-detail__title {
     font-size: 48px;
-    line-height: 1.35;
+    line-height: 64px;
   }
 
   .object-detail__video-link {
-    width: 240px;
-    height: 240px;
+    width: 282.843px;
+    height: 282.843px;
   }
 
   .object-detail__video-diamond {
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
   }
 }
 
