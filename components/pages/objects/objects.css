@@ -1034,7 +1034,7 @@
     bottom: auto;
     left: auto;
     width: 440px;
-    max-width: calc(100% - 40px);
+    max-width: 100%;
     transform: none;
   }
 }
