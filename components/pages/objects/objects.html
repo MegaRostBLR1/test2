@@ -74,6 +74,12 @@
         <h2 class="objects-map__filters-title">Фильтр:</h2>
       </div>
 
+      <button class="objects-map__mobile-toggle" type="button" aria-expanded="false" aria-controls="objects-map-filter-fields">
+        <span>Фильтры</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"></path></svg>
+      </button>
+
+      <div class="objects-map__filter-fields" id="objects-map-filter-fields">
       <label class="objects-map__filter">
         <span class="objects-map__filter-label">Год:</span>
         <select name="year">
@@ -109,6 +115,8 @@
           <option value="Транспорт">Транспорт</option>
         </select>
       </label>
+
+      </div>
 
       <button class="objects-map__more" type="button" aria-expanded="false">
         <span>Еще фильтры</span>
