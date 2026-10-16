@@ -583,8 +583,8 @@
   position: absolute;
   inset: 4px;
   display: block;
-  width: calc(100% - 8px);
-  height: calc(100% - 8px);
+  width: auto;
+  height: auto;
   border: 0;
   border-radius: 10px;
   background: #E8ECEA;
@@ -734,7 +734,7 @@
   display: flex;
   gap: 2px;
   width: 484px;
-  max-width: calc(100% - 48px);
+  max-width: 100%;
   padding: 5px;
   border-radius: 10px;
   background: #FFFFFF;
@@ -746,7 +746,7 @@
   flex: 0 0 170px;
   min-height: 232px;
   border-radius: 10px;
-  background: #DDE3E1 url("https://www.figma.com/api/mcp/asset/bc5ac5ac-b49a-4f1f-8352-35f19ba478ef/b2329.png") center / cover no-repeat;
+  background: #DDE3E1 url("../../../static/images/angar.png") center / cover no-repeat;
 }
 
 .objects-map__card-content {
