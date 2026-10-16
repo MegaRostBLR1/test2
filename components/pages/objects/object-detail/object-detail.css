@@ -739,3 +739,74 @@
     transition: none;
   }
 }
+
+
+/* Figma 1857:105359 — точная адаптация блока обзора для фрейма 1024 × 640. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .object-detail__overview {
+    padding: 40px;
+  }
+
+  .object-detail__overview-inner {
+    gap: 30px;
+    padding: 20px 28px 0;
+  }
+
+  .object-detail__overview-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .object-detail__tabs {
+    flex-wrap: nowrap;
+    gap: 4px;
+    padding: 4px;
+  }
+
+  .object-detail__tab {
+    flex: 0 0 auto;
+    min-height: 54px;
+    padding: 14px 18px;
+    font-size: 16px;
+    line-height: 26px;
+    white-space: nowrap;
+  }
+
+  .object-detail__facts {
+    grid-template-columns: 200px 231px 200px 200px;
+    justify-content: center;
+    gap: 18px;
+    width: 100%;
+  }
+
+  .object-detail__fact {
+    gap: 20px;
+    padding: 18px 20px;
+  }
+
+  .object-detail__fact-label {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .object-detail__fact-value {
+    font-size: 16px;
+    line-height: 26px;
+    white-space: nowrap;
+  }
+
+  .object-detail__description {
+    gap: 30px;
+  }
+
+  .object-detail__description-text {
+    max-width: 852px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .object-detail__read-more {
+    font-size: 22px;
+    line-height: 31px;
+  }
+}
