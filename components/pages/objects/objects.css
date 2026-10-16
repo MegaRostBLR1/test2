@@ -1413,3 +1413,159 @@
     height: 30px;
   }
 }
+
+
+/* Figma 1857:30594 — drawings section at 1920 px. */
+.objects-drawings {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 30px;
+  width: 100%;
+  min-width: 0;
+  padding: 60px 62px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  color: #4D4D4D;
+}
+.objects-drawings__title {
+  width: 100%;
+  margin: 0;
+  color: #4D4D4D;
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.objects-drawings__divider {
+  width: 100%;
+  height: 1px;
+  flex: 0 0 1px;
+  background: rgba(77, 77, 77, 0.2);
+}
+.objects-drawings__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+}
+.objects-drawings__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  min-width: 0;
+  height: 312px;
+  padding: 25px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #F5F8F7;
+  color: #000000;
+  text-decoration: none;
+}
+.objects-drawings__image {
+  display: block;
+  flex: 0 0 180px;
+  width: 100%;
+  height: 180px;
+  min-width: 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.objects-drawings__caption {
+  display: block;
+  max-width: 100%;
+  color: #000000;
+  font-family: "Onest-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.objects-drawings__card:focus-visible,
+.objects-drawings__arrow:focus-visible,
+.objects-drawings__dot:focus-visible {
+  outline: 2px solid #324C88;
+  outline-offset: 4px;
+}
+.objects-drawings__card:hover .objects-drawings__image {
+  filter: brightness(0.96);
+}
+.objects-drawings__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  min-height: 90.51px;
+}
+.objects-drawings__arrow {
+  position: relative;
+  display: flex;
+  flex: 0 0 90.51px;
+  align-items: center;
+  justify-content: center;
+  width: 90.51px;
+  height: 90.51px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.objects-drawings__arrow::before {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(77, 77, 77, 0.2);
+  border-radius: 20px;
+  content: "";
+  transform: rotate(45deg);
+}
+.objects-drawings__arrow svg {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  fill: none;
+  stroke: #4D4D4D;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.objects-drawings__arrow:disabled { cursor: default; opacity: 0.45; }
+.objects-drawings__pagination { display: flex; align-items: center; gap: 4px; }
+.objects-drawings__dot {
+  display: block;
+  flex: 0 0 10px;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(50, 76, 136, 0.2);
+  cursor: pointer;
+}
+.objects-drawings__dot.is-active { background: #324C88; }
+
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .objects-drawings { gap: 30px; padding: 40px; }
+  .objects-drawings__title { font-size: 24px; line-height: 32px; }
+  .objects-drawings__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+}
+@media screen and (max-width: 680px) {
+  .objects-drawings { gap: 20px; padding: 20px 10px; }
+  .objects-drawings__title { font-size: 24px; line-height: 32px; }
+  .objects-drawings__grid { grid-template-columns: 1fr; gap: 10px; }
+  .objects-drawings__card { gap: 20px; height: auto; min-height: 250px; padding: 20px; }
+  .objects-drawings__image { flex-basis: 160px; height: 160px; }
+  .objects-drawings__caption { font-size: 16px; }
+  .objects-drawings__navigation { gap: 18px; min-height: 67.882px; }
+  .objects-drawings__arrow { flex-basis: 67.882px; width: 67.882px; height: 67.882px; }
+  .objects-drawings__arrow::before { width: 48px; height: 48px; border-radius: 20px; }
+  .objects-drawings__arrow svg { width: 30px; height: 30px; }
+}
