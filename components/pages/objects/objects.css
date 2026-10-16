@@ -345,7 +345,7 @@
 
 /* Figma 1857:31433 — tablet header/toolbar at 1024 px.
    Desktop layout remains the source for 1440/1920 px; only the tablet
-   composition is adjusted here. Values intentionally avoid clamp() and calc(). */
+   composition is adjusted here. */
 @media screen and (min-width: 681px) and (max-width: 1100px) {
   .objects__panel {
     align-items: center;
