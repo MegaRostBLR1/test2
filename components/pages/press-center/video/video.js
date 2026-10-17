@@ -74,24 +74,32 @@ function initVideo() {
   const mobileFilterDialog = document.querySelector('#video-mobile-filter');
   const mobileFilterForm = mobileFilterDialog?.querySelector('.video-page__mobile-filter-form');
   const mobileFilterClose = mobileFilterDialog?.querySelector('.video-page__mobile-filter-close');
+  let previousMobileFilterFocus = null;
 
   const closeMobileFilter = () => {
-    if (mobileFilterDialog?.open) mobileFilterDialog.close();
+    if (!mobileFilterDialog || mobileFilterDialog.hidden) return;
+    mobileFilterDialog.hidden = true;
     mobileFilterButton?.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('video-page-filter-open');
+    previousMobileFilterFocus?.focus();
   };
 
   mobileFilterButton?.addEventListener('click', () => {
     if (!mobileFilterDialog) return;
-    mobileFilterDialog.showModal();
+    previousMobileFilterFocus = document.activeElement;
+    mobileFilterDialog.hidden = false;
     mobileFilterButton.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('video-page-filter-open');
+    mobileFilterClose?.focus();
   });
 
   mobileFilterClose?.addEventListener('click', closeMobileFilter);
   mobileFilterDialog?.addEventListener('click', (event) => {
     if (event.target === mobileFilterDialog) closeMobileFilter();
   });
-  mobileFilterDialog?.addEventListener('close', () => {
-    mobileFilterButton?.setAttribute('aria-expanded', 'false');
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMobileFilter();
   });
 
   mobileFilterForm?.addEventListener('submit', (event) => {
