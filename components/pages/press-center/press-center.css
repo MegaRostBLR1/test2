@@ -125,6 +125,12 @@
   }
 }
 
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .press-center__breadcrumbs {
+    align-self: center;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .press-center__container {
     padding: 24px 16px;
