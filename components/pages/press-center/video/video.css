@@ -727,19 +727,6 @@
     gap: 1.1111rem;
   }
 
-  .video-page__breadcrumbs {
-    display: none;
-  }
-
-  .video-page__title {
-    margin: 0;
-    font-family: 'Onest-Medium', sans-serif;
-    font-size: 1.1111rem;
-    font-weight: 500;
-    line-height: 1.5556rem;
-    text-align: center;
-  }
-
   .video-page__categories {
     max-width: 100%;
     overflow-x: auto;
