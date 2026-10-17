@@ -1002,3 +1002,58 @@
     line-height: 21px;
   }
 }
+
+
+/* Footer: верхняя строка desktop-макета Figma 1440 px. */
+@media screen and (min-width: 1301px) and (max-width: 1440px) {
+  .footer__row--top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 86px;
+  }
+
+  .footer__top-main {
+    display: flex;
+    flex: 0 0 849px;
+    align-items: center;
+    gap: 283px;
+    min-width: 0;
+  }
+
+  .footer__logo {
+    flex: 0 0 190px;
+  }
+
+  .footer__logo-link {
+    display: flex;
+    width: 190px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+
+  .footer__logo-link img {
+    display: block;
+    width: 103px;
+    height: 43px;
+    object-fit: contain;
+  }
+
+  .footer__legal-top {
+    flex: 0 0 354px;
+    width: 354px;
+    max-width: 354px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .footer__copyright-system {
+    flex: 0 0 222px;
+    width: 222px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
