@@ -15137,3 +15137,11 @@ h2 {
     width: 174px;
   }
 }
+
+
+/* Footer legal links: keep the list vertical at every viewport. */
+.footer__legal-list {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
