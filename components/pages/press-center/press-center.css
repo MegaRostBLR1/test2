@@ -397,6 +397,20 @@
 
 .press-center__card[hidden] { display: none; }
 
+@media screen and (min-width: 1301px) and (max-width: 1599px) {
+  .press-center__featured { grid-template-columns: minmax(0, 1fr) 590px; }
+  .press-center__featured-news,
+  .press-center__social { min-height: 548px; }
+  .press-center__cards { gap: 30px; }
+  .press-center__card { gap: 20px; }
+  .press-center__card > .press-center__card-image,
+  .press-center__card-media { height: 260px; }
+  .press-center__card-meta { gap: 14px; }
+  .press-center__card-title { line-height: 40px; }
+  .press-center__card-description { line-height: 28px; }
+  .press-center__card-duration { font-size: 20px; line-height: normal; }
+}
+
 @media screen and (min-width: 1600px) {
   .press-center__featured { grid-template-columns: minmax(0, 1fr) 590px; }
   .press-center__featured-news,
