@@ -1107,6 +1107,74 @@
   }
 }
 
+/* Figma 1857:112334 — mobile gallery, frame 360px. */
+@media screen and (max-width: 680px) {
+  .news-gallery {
+    padding: 20px 10px;
+    border-radius: 30px;
+  }
+
+  .news-gallery__container {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .news-gallery__title {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .news-gallery__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .news-gallery__item {
+    aspect-ratio: 16 / 9;
+    border-radius: 30px;
+  }
+
+  .news-gallery__zoom {
+    right: 10px;
+    bottom: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+  }
+
+  .news-gallery__zoom img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .news-gallery__controls {
+    gap: 10px;
+  }
+
+  .news-gallery__arrow {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+  }
+
+  .news-gallery__arrow img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .news-gallery__pagination {
+    gap: 4px;
+  }
+
+  .news-gallery__dot {
+    flex-basis: 8px;
+    width: 8px;
+    height: 8px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .news-gallery__zoom,
   .news-gallery__arrow {
