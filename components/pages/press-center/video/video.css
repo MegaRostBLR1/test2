@@ -28,6 +28,7 @@
   display: flex;
   align-self: stretch;
   align-items: center;
+  justify-content: center;
   flex-wrap: nowrap;
   gap: 1.1111rem;
   min-width: 0;
