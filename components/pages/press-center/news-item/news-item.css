@@ -965,6 +965,17 @@
   background: #324c88;
 }
 
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .news-gallery {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .news-gallery__container {
+    width: 1278px;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .news-gallery {
     padding: 40px;
