@@ -807,6 +807,9 @@
 }
 
 /* Фотогалерея — Figma node 1857:111812, desktop 1920px. */
+.news-gallery__more {
+  display: none;
+}
 .news-gallery {
   display: flex;
   flex-direction: column;
@@ -1128,6 +1131,29 @@
   .news-gallery__grid {
     grid-template-columns: minmax(0, 1fr);
     gap: 10px;
+  }
+
+  .news-gallery__item--additional {
+    display: none;
+  }
+
+  .news-gallery__more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    gap: 14px;
+    color: #324c88;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .news-gallery__more:focus-visible {
+    outline: 2px solid #324c88;
+    outline-offset: 5px;
+    border-radius: 4px;
   }
 
   .news-gallery__item {
