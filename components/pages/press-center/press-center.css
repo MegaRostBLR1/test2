@@ -102,12 +102,16 @@
 
 @media screen and (max-width: 1300px) {
   .press-center__container {
-    padding: 30px;
+    padding: 40px;
+  }
+
+  .press-center__content {
+    gap: 24px;
   }
 
   .press-center__title {
-    font-size: 44px;
-    line-height: 1.2;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   .press-center__breadcrumbs {
@@ -116,7 +120,7 @@
 
   .press-center__category {
     min-height: 54px;
-    padding: 12px 18px;
+    padding: 14px 18px;
     font-size: 16px;
   }
 }
