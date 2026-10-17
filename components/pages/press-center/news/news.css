@@ -581,3 +581,68 @@
     line-height: 24px;
   }
 }
+
+
+/* Press news: точная геометрия desktop-макета Figma 1440 px.
+   Базовые правила выше сохраняют существующую компоновку 1920 px. */
+@media screen and (min-width: 1301px) and (max-width: 1440px) {
+  .press-news {
+    border-radius: 30px 30px 0 0;
+  }
+
+  .press-news__container {
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .press-news__content {
+    gap: 30px;
+  }
+
+  .press-news__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  .press-news__card {
+    padding: 10px 4px 4px;
+  }
+
+  .press-news__card-media {
+    height: 260px;
+  }
+
+  .press-news__card-content {
+    padding: 24px 5px 0;
+  }
+
+  .press-news__card-meta {
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .press-news__card-tag {
+    min-height: 46px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .press-news__card-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .press-news__card-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .press-news__load-more {
+    min-height: 65px;
+    padding: 18px 36px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+}
