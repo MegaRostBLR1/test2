@@ -939,11 +939,11 @@
 }
 
 .news-gallery__arrow--previous img {
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 
 .news-gallery__arrow--next img {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 .news-gallery__pagination {
