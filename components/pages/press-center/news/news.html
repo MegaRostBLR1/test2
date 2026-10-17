@@ -62,31 +62,64 @@
       <div class="press-news__filter-overlay" id="press-news-filter-dialog" hidden>
         <section class="press-news__filter-dialog" role="dialog" aria-modal="true" aria-labelledby="press-news-filter-title" tabindex="-1">
           <div class="press-news__filter-dialog-header">
-            <h2 class="press-news__filter-dialog-title" id="press-news-filter-title">Фильтр</h2>
+            <h2 class="press-news__filter-dialog-title" id="press-news-filter-title">Показывать:</h2>
             <button class="press-news__filter-dialog-close" type="button" aria-label="Закрыть фильтр">×</button>
           </div>
-          <div class="press-news__filter-dialog-fields">
-            <label class="press-news__filter-field">
-              <span>Месяц</span>
-              <select name="news-month" class="press-news__filter-select">
-                <option value="">Все месяцы</option>
-                <option value="Январь">Январь</option><option value="Февраль">Февраль</option>
-                <option value="Март">Март</option><option value="Апрель">Апрель</option>
-                <option value="Май">Май</option><option value="Июнь">Июнь</option><option value="Июль">Июль</option>
-              </select>
-            </label>
-            <label class="press-news__filter-field">
-              <span>Год</span>
-              <select name="news-year" class="press-news__filter-select">
-                <option value="">Все годы</option><option value="2026">2026</option>
-                <option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option>
-              </select>
-            </label>
+          <div class="press-news__filter-dialog-content">
+            <section class="press-news__filter-group" aria-labelledby="press-news-months-title">
+              <h3 class="press-news__filter-group-title" id="press-news-months-title">Месяц:</h3>
+              <div class="press-news__filter-list press-news__filter-list--months" data-filter-list="months">
+                <button class="press-news__filter-option is-selected" type="button" aria-pressed="true" data-filter-value="Январь">Январь (29)</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="Февраль">Февраль (29)</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="Март">Март (29)</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="Апрель">Апрель (29)</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="Май">Май (29)</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="Июнь (29)">Июнь (29)</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="Июль (29)">Июль (29)</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="Август (29)">Август (29)</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="Сентябрь (29)">Сентябрь (29)</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="Октябрь (29)">Октябрь (29)</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="Ноябрь (29)">Ноябрь (29)</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="Декабрь (29)">Декабрь (29)</button>
+              </div>
+              <button class="press-news__filter-show-more" type="button" aria-expanded="false" data-expand-list="months">
+                <span>Показать еще</span><span class="press-news__filter-show-more-icon" aria-hidden="true">⌄</span>
+              </button>
+            </section>
+            <section class="press-news__filter-group" aria-labelledby="press-news-years-title">
+              <h3 class="press-news__filter-group-title" id="press-news-years-title">По годам:</h3>
+              <div class="press-news__filter-list press-news__filter-list--years" data-filter-list="years">
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2003">2003</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2004">2004</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2005">2005</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2006">2006</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2007">2007</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2008">2008</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2009">2009</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2010">2010</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2011">2011</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2012">2012</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2013">2013</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2014">2014</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2015">2015</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2016">2016</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2017">2017</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2018">2018</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2019">2019</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2020">2020</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2021">2021</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2022">2022</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2023">2023</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2024">2024</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2025">2025</button>
+                <button class="press-news__filter-option" type="button" aria-pressed="false" data-filter-value="2026">2026</button>
+              </div>
+              <button class="press-news__filter-show-more" type="button" aria-expanded="false" data-expand-list="years">
+                <span>Показать еще</span><span class="press-news__filter-show-more-icon" aria-hidden="true">⌄</span>
+              </button>
+            </section>
           </div>
-          <div class="press-news__filter-dialog-actions">
-            <button class="press-news__filter-reset" type="button">Сбросить</button>
-            <button class="press-news__filter-apply" type="button">Применить</button>
-          </div>
+          <button class="press-news__filter-back" type="button">Назад</button>
         </section>
       </div>
 
