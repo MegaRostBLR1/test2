@@ -149,6 +149,44 @@
   }
 }
 
+/* Tablet: Figma frame 2121:50320 (1024px). Keep desktop rules above 1300px intact. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .press-news__container {
+    padding: 40px;
+  }
+
+  .press-news__content {
+    gap: 24px;
+  }
+
+  .press-news__breadcrumbs {
+    flex-wrap: nowrap;
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .press-news__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .press-news__count {
+    font-size: 41.28px;
+    line-height: 72px;
+  }
+
+  .press-news__categories {
+    flex-wrap: nowrap;
+  }
+
+  .press-news__category {
+    min-height: 54px;
+    padding: 14px 18px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .press-news {
     border-radius: 0 0 16px 16px;
