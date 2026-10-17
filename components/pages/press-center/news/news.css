@@ -21,21 +21,23 @@
 .press-news__breadcrumbs {
   display: flex;
   flex-wrap: nowrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 20px;
   width: 100%;
   font-family: 'Onest-Regular', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 26px;
 }
 
 .press-news__breadcrumb {
+  flex: 0 0 auto;
   color: #4D4D4D;
   font-family: 'Onest-Medium', sans-serif;
   font-weight: 500;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .press-news__breadcrumb:hover {
@@ -55,6 +57,9 @@
 
 .press-news__breadcrumb-separator {
   flex: 0 0 auto;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .press-news__title {
@@ -93,12 +98,12 @@
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
-  min-height: 64px;
-  padding: 14px 24px;
+  min-height: 54px;
+  padding: 14px 18px;
   border-radius: 14px;
   color: #4D4D4D;
   font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.6;
   text-align: center;
@@ -106,6 +111,10 @@
   text-transform: uppercase;
   white-space: nowrap;
   transition: background-color 0.15s ease;
+}
+
+.press-news__category--mobile-only {
+  display: none;
 }
 
 .press-news__category:hover {
@@ -117,40 +126,15 @@
   background: #FFF500;
 }
 
-@media screen and (max-width: 1300px) {
-  .press-news__container {
-    padding: 30px;
-  }
-
-  .press-news__breadcrumbs {
-    flex-wrap: wrap;
-    gap: 14px;
-    font-size: 18px;
-  }
-
-  .press-news__title {
-    font-size: 48px;
-    line-height: 1.2;
-  }
-
-  .press-news__count {
-    font-size: 30px;
-    line-height: 1.2;
-  }
-
-  .press-news__categories {
-    flex-wrap: wrap;
-  }
-
+@media screen and (min-width: 1301px) {
   .press-news__category {
-    min-height: 56px;
-    padding: 12px 18px;
-    font-size: 16px;
+    min-height: 64px;
+    padding: 14px 24px;
+    font-size: 18px;
   }
 }
 
-/* Tablet: Figma frame 2121:50320 (1024px). Keep desktop rules above 1300px intact. */
-@media screen and (min-width: 681px) and (max-width: 1100px) {
+@media screen and (min-width: 681px) and (max-width: 1300px) {
   .press-news__container {
     padding: 40px;
   }
@@ -160,7 +144,6 @@
   }
 
   .press-news__breadcrumbs {
-    flex-wrap: nowrap;
     gap: 20px;
     font-size: 16px;
   }
@@ -177,59 +160,79 @@
 
   .press-news__categories {
     flex-wrap: nowrap;
+    width: 100%;
   }
 
   .press-news__category {
     min-height: 54px;
     padding: 14px 18px;
     font-size: 16px;
-    line-height: 1.6;
   }
 }
 
 @media screen and (max-width: 680px) {
   .press-news {
-    border-radius: 0 0 16px 16px;
+    border-radius: 0 0 30px 30px;
   }
 
   .press-news__container {
-    padding: 24px 16px;
+    padding: 20px 10px;
   }
 
   .press-news__content {
-    gap: 24px;
+    gap: 20px;
+    align-items: center;
   }
 
   .press-news__breadcrumbs {
-    justify-content: flex-start;
-    gap: 8px;
+    justify-content: center;
+    gap: 14px;
+    width: auto;
     font-size: 14px;
+    line-height: 26px;
+  }
+
+  .press-news__breadcrumb-separator {
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .press-news__title {
-    align-self: flex-start;
-    font-size: 30px;
-    line-height: 1.2;
-    text-align: left;
+    align-self: center;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
   }
 
   .press-news__count {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 32px;
   }
 
   .press-news__categories {
     justify-content: flex-start;
     width: 100%;
+    max-width: 100%;
     overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
     flex-wrap: nowrap;
   }
 
+  .press-news__categories::-webkit-scrollbar {
+    display: none;
+  }
+
   .press-news__category {
-    min-height: 44px;
+    min-height: 42px;
     padding: 10px 14px;
-    border-radius: 10px;
-    font-size: 13px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .press-news__category--mobile-only {
+    display: flex;
   }
 }
 
