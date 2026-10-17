@@ -1325,3 +1325,11 @@
     line-height: 24px;
   }
 }
+
+/* Figma 1857:112009 — навигация между новостями, frame 1440px.
+   На 1920px сохраняется ограничение ширины текста из исходного desktop-макета. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .news-navigation__link {
+    max-width: none;
+  }
+}
