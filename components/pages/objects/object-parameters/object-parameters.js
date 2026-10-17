@@ -7,7 +7,7 @@ function initObjectParameters() {
 
   root.dataset.initialized = 'true';
 
-  const grid = root.querySelector('.object-parameters__grid');
+  const grid = root.querySelector('.object-parameters__details');
   const items = grid ? Array.from(grid.querySelectorAll('.object-parameters__item')) : [];
   const toggle = root.querySelector('.object-parameters__show-more');
   const label = toggle?.querySelector('.object-parameters__show-more-label');
