@@ -166,3 +166,44 @@
     transition: none;
   }
 }
+
+
+/* Desktop Figma frame 1440px (1857:109299).
+   The base desktop rules remain the source for the 1920px layout. */
+@media screen and (min-width: 1301px) and (max-width: 1440px) {
+  .press-center__container {
+    padding: 40px;
+  }
+
+  .press-center__content {
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .press-center__breadcrumbs {
+    align-self: flex-start;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .press-center__title {
+    align-self: center;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+  }
+
+  .press-center__categories {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .press-center__category {
+    min-height: 64px;
+    padding: 14px 24px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
