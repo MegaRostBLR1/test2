@@ -747,13 +747,14 @@
   }
 
   .footer__row--contacts {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 36px;
     row-gap: 36px;
     align-items: start;
   }
 
   .footer__description-col {
-    grid-column: auto;
+    grid-column: 1 / -1;
     width: 100%;
   }
 
@@ -793,9 +794,8 @@
   }
 
   .footer__contacts {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 36px;
+    display: flex;
+    flex-direction: column;
     row-gap: 36px;
     min-width: 0;
   }
