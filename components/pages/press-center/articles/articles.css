@@ -467,3 +467,29 @@
     padding: 20px;
   }
 }
+
+/* Figma node 1857:111564 — 1024px tablet layout. */
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .articles-results__container {
+    gap: 30px;
+  }
+
+  .articles__list {
+    gap: 10px;
+  }
+
+  .articles__card {
+    gap: 10px;
+    padding: 10px 4px 4px;
+  }
+
+  .articles__card-content {
+    flex: 0 0 45.5%;
+    padding: 20px;
+  }
+
+  .articles__card-media {
+    flex: 0 0 53.42%;
+    height: 500px;
+  }
+}
