@@ -304,7 +304,8 @@
 .video-page__filter-menu {
   position: absolute;
   z-index: 2;
-  top: calc(100% + 0.3333rem);
+  top: 100%;
+  margin-top: 0.3333rem;
   left: 0;
   display: flex;
   flex-direction: column;
