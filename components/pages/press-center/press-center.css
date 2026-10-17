@@ -460,3 +460,45 @@
 @media screen and (prefers-reduced-motion: reduce) {
   .press-center__category { transition: none; }
 }
+
+/* Tablet layout from Figma: preserve the featured-news/social split at 1024px. */
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .press-center__container {
+    padding: 40px;
+  }
+
+  .press-center__featured {
+    grid-template-columns: minmax(0, 1.41fr) minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .press-center__featured-news {
+    min-height: 448px;
+    padding: 30px;
+  }
+
+  .press-center__featured-title {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .press-center__social {
+    min-height: 448px;
+    gap: 36px;
+    padding: 30px 20px 0;
+  }
+
+  .press-center__social-title {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .press-center__social-link {
+    gap: 16px;
+    font-size: 18px;
+  }
+
+  .press-center__social-links {
+    gap: 24px;
+  }
+}
