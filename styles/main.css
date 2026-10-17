@@ -14003,7 +14003,7 @@ h2 {
 
 .footer__row {
   display: grid;
-  grid-template-columns: 1fr 28.3889rem 25.8333rem;
+  grid-template-columns: 1fr 28.3889rem 28.3889rem;
   column-gap: 2.6667rem;
 }
 
@@ -14049,10 +14049,6 @@ h2 {
   display: flex;
   gap: 0.5556rem;
   flex-wrap: wrap;
-}
-.footer__social-link img {
-  width: 3.1111rem;
-  height: 2.8889rem;
 }
 
 .footer__contacts {
@@ -14173,6 +14169,7 @@ h2 {
   flex-wrap: nowrap;
   justify-content: flex-start;
   gap: 1.3333rem;
+  margin-left: 100px;
 }
 .footer__legal-link {
   font-weight: 500;
@@ -14259,9 +14256,7 @@ h2 {
   }
 
   .footer__row--top {
-    grid-template-columns: minmax(0, 1fr) 28.3889rem 12.3333rem;
     column-gap: 2.6667rem;
-    align-items: center;
   }
 
   .footer__row--contacts {
@@ -14318,10 +14313,6 @@ h2 {
   .footer-accordion__nav-list {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
-
-  .footer__legal-list {
-    gap: 1.3333rem;
-  }
 }
 
 @media screen and (max-width: 1040px) {
@@ -14376,6 +14367,7 @@ h2 {
   }
 
   .footer__legal-list {
+    margin-left: 30px;
     gap: 0.8889rem;
   }
 }
@@ -14438,8 +14430,6 @@ h2 {
 
   .footer__social-link img {
     display: block;
-    width: 2.6667rem;
-    height: 2.6667rem;
     object-fit: contain;
   }
 
@@ -14608,8 +14598,6 @@ h2 {
 
   .footer__social-link img {
     display: block;
-    width: 56px;
-    height: 52px;
     object-fit: contain;
   }
 
@@ -14759,8 +14747,6 @@ h2 {
 
   .footer__social-link img {
     display: block;
-    width: 20px;
-    height: 20px;
     object-fit: contain;
   }
 
@@ -14901,6 +14887,11 @@ h2 {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .footer__legal-list {
+    margin-left: 0;
+  }
+}
 
 /* Footer: мобильный макет Figma 360 px, включая открытое состояние аккордеона. */
 @media screen and (max-width: 680px) {
@@ -15001,8 +14992,6 @@ h2 {
 
   .footer__social-link img {
     display: block;
-    width: 20px;
-    height: 20px;
     object-fit: contain;
   }
 
