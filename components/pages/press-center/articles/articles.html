@@ -1,5 +1,24 @@
-<section class="press-page">
-  <div class="container">
-    <h1>Статьи</h1>
+<section class="articles" aria-labelledby="articles-title">
+  <div class="articles__container">
+    <nav class="articles__breadcrumbs" aria-label="Хлебные крошки">
+      <a class="articles__breadcrumb" href="#/home">Главная</a>
+      <span class="articles__breadcrumb-separator" aria-hidden="true">-</span>
+      <a class="articles__breadcrumb" href="#/press-center">Пресс-центр</a>
+      <span class="articles__breadcrumb-separator" aria-hidden="true">-</span>
+      <span class="articles__breadcrumb-current" aria-current="page">Статьи</span>
+    </nav>
+
+    <h1 class="articles__title" id="articles-title">
+      <span>Статьи</span>
+      <span class="articles__count">(2000)</span>
+    </h1>
+
+    <nav class="articles__categories" aria-label="Категории пресс-центра">
+      <a class="articles__category" href="#/press-center">Все</a>
+      <a class="articles__category" href="#/news">Новости</a>
+      <a class="articles__category" href="#/video">Видео</a>
+      <a class="articles__category is-active" href="#/articles" aria-current="page">Статьи</a>
+      <a class="articles__category" href="#/faq">F.A.Q</a>
+    </nav>
   </div>
 </section>
