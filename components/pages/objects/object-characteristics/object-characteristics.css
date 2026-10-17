@@ -41,7 +41,7 @@
   margin: 0;
   color: #4D4D4D;
   font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 1.3333rem;
+  font-size: 2.6667rem;
   font-weight: 600;
   line-height: 1.3333;
   text-align: center;
@@ -210,8 +210,8 @@
   }
 
   .object-characteristics__title {
-    font-size: 1.3333rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.4444;
   }
 
   .object-characteristics__tabs {
