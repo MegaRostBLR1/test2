@@ -224,6 +224,51 @@
 }
 
 
+
+/* Макет архива видео для desktop 1440 px; базовые значения выше сохраняют вариант 1920 px. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .video-page__archive {
+    gap: 1.6667rem;
+    margin-top: 1.6667rem;
+  }
+
+  .video-page__filter {
+    gap: 1.6667rem;
+  }
+
+  .video-page__filter-controls {
+    gap: 0.7778rem;
+  }
+
+  .video-page__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.1111rem;
+  }
+
+  .video-page__card {
+    padding: 0.2222rem 0.2222rem 1.1111rem;
+  }
+
+  .video-page__card-media {
+    height: 14.4444rem;
+  }
+
+  .video-page__card-content {
+    gap: 1rem;
+    padding: 1.1111rem 0.5556rem 0;
+  }
+
+  .video-page__card-title {
+    font-size: 1.3333rem;
+    line-height: 2.2222rem;
+  }
+
+  .video-page__card-duration {
+    gap: 0.5556rem;
+    font-size: 1.1111rem;
+  }
+}
+
 .video-page__archive {
   display: flex;
   flex-direction: column;
