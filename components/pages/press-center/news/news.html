@@ -53,6 +53,41 @@
             </div>
           </div>
         </div>
+        <button class="press-news__mobile-filter-button" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="press-news-filter-dialog">
+          <span>Фильтр</span>
+          <img src="https://www.figma.com/api/mcp/asset/943a0af9-c8f7-468c-8283-fa4df40a128a/21205.svg" alt="" aria-hidden="true">
+        </button>
+      </div>
+
+      <div class="press-news__filter-overlay" id="press-news-filter-dialog" hidden>
+        <section class="press-news__filter-dialog" role="dialog" aria-modal="true" aria-labelledby="press-news-filter-title" tabindex="-1">
+          <div class="press-news__filter-dialog-header">
+            <h2 class="press-news__filter-dialog-title" id="press-news-filter-title">Фильтр</h2>
+            <button class="press-news__filter-dialog-close" type="button" aria-label="Закрыть фильтр">×</button>
+          </div>
+          <div class="press-news__filter-dialog-fields">
+            <label class="press-news__filter-field">
+              <span>Месяц</span>
+              <select name="news-month" class="press-news__filter-select">
+                <option value="">Все месяцы</option>
+                <option value="Январь">Январь</option><option value="Февраль">Февраль</option>
+                <option value="Март">Март</option><option value="Апрель">Апрель</option>
+                <option value="Май">Май</option><option value="Июнь">Июнь</option><option value="Июль">Июль</option>
+              </select>
+            </label>
+            <label class="press-news__filter-field">
+              <span>Год</span>
+              <select name="news-year" class="press-news__filter-select">
+                <option value="">Все годы</option><option value="2026">2026</option>
+                <option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option>
+              </select>
+            </label>
+          </div>
+          <div class="press-news__filter-dialog-actions">
+            <button class="press-news__filter-reset" type="button">Сбросить</button>
+            <button class="press-news__filter-apply" type="button">Применить</button>
+          </div>
+        </section>
       </div>
 
       <div class="press-news__grid">
