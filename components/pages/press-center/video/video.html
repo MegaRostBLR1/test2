@@ -86,30 +86,32 @@
         </div>
       </div>
 
-      <dialog class="video-page__mobile-filter-dialog" id="video-mobile-filter" aria-labelledby="video-mobile-filter-title">
-        <form class="video-page__mobile-filter-form" method="dialog">
+      <div class="video-page__mobile-filter-dialog" id="video-mobile-filter" hidden>
+        <form class="video-page__mobile-filter-form" aria-labelledby="video-mobile-filter-title" role="dialog" aria-modal="true" tabindex="-1">
           <div class="video-page__mobile-filter-heading">
             <h2 id="video-mobile-filter-title">Фильтр</h2>
             <button class="video-page__mobile-filter-close" type="button" aria-label="Закрыть фильтр">×</button>
           </div>
-          <label class="video-page__mobile-filter-field">Год
-            <select name="years"><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option></select>
-          </label>
-          <label class="video-page__mobile-filter-field">Страна
-            <select name="countries"><option value="Россия">Россия</option><option value="Беларусь">Беларусь</option><option value="Узбекистан">Узбекистан</option></select>
-          </label>
-          <label class="video-page__mobile-filter-field">Регион
-            <select name="regions"><option value="Все регионы">Все регионы</option><option value="Тульская область">Тульская область</option></select>
-          </label>
-          <label class="video-page__mobile-filter-field">Сегменты
-            <select name="segments"><option value="Все сегменты">Все сегменты</option><option value="Промышленные здания">Промышленные здания</option></select>
-          </label>
-          <label class="video-page__mobile-filter-field">Технология
-            <select name="technology"><option value="Все технологии">Все технологии</option><option value="ЛСТК">ЛСТК</option></select>
-          </label>
+          <div class="video-page__mobile-filter-fields">
+            <label class="video-page__mobile-filter-field">Год
+              <select name="years"><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option></select>
+            </label>
+            <label class="video-page__mobile-filter-field">Страна
+              <select name="countries"><option value="Россия">Россия</option><option value="Беларусь">Беларусь</option><option value="Узбекистан">Узбекистан</option></select>
+            </label>
+            <label class="video-page__mobile-filter-field">Регион
+              <select name="regions"><option value="Все регионы">Все регионы</option><option value="Тульская область">Тульская область</option></select>
+            </label>
+            <label class="video-page__mobile-filter-field">Сегменты
+              <select name="segments"><option value="Все сегменты">Все сегменты</option><option value="Промышленные здания">Промышленные здания</option></select>
+            </label>
+            <label class="video-page__mobile-filter-field">Технология
+              <select name="technology"><option value="Все технологии">Все технологии</option><option value="ЛСТК">ЛСТК</option></select>
+            </label>
+          </div>
           <button class="video-page__mobile-filter-apply" type="submit">Показать</button>
         </form>
-      </dialog>
+      </div>
 
       <div class="video-page__grid" aria-label="Видео">
         <article class="video-page__card">
