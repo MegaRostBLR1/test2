@@ -19,8 +19,7 @@
   background: #FFFFFF;
 }
 
-.object-parameters__header,
-.object-parameters__content {
+.object-parameters__header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -241,9 +240,6 @@
   }
 
   .object-parameters__header,
-  .object-parameters__content {
-    gap: 1.3333rem;
-  }
 
   .object-parameters__tabs {
     flex-wrap: wrap;
@@ -274,9 +270,6 @@
   }
 
   .object-parameters__header,
-  .object-parameters__content {
-    gap: 1.6667rem;
-  }
 
   .object-parameters__title {
     padding-top: 1.1111rem;
