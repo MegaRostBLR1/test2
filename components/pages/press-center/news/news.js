@@ -7,7 +7,7 @@ function initNews() {
   const backButton = overlay?.querySelector('.press-news__filter-back');
   const showMoreButtons = overlay?.querySelectorAll('[data-expand-list]');
   let previousFocus = null;
-  const selected = { months: 'Январь', years: '' };
+  const selected = { months: '', years: '' };
 
   const closeMenus = (exceptButton = null) => {
     filterButtons.forEach((button) => {
@@ -98,7 +98,7 @@ function initNews() {
       const expanded = button.getAttribute('aria-expanded') !== 'true';
       button.setAttribute('aria-expanded', String(expanded));
       if (list) list.classList.toggle('is-expanded', expanded);
-      if (list) list.style.maxHeight = expanded ? 'none' : (type === 'months' ? '166px' : '124px');
+      if (list) list.style.maxHeight = expanded ? 'none' : (type === 'months' ? '166px' : '130px');
       const label = button.querySelector('span');
       if (label) label.textContent = expanded ? 'Скрыть' : 'Показать еще';
     });
