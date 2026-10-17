@@ -697,3 +697,8 @@
   .press-news__card-description { font-size: 14px; line-height: 24px; }
   .press-news__load-more { width: 100%; min-height: 49px; padding: 12px 24px; border-radius: 10px; background: rgb(50 76 136 / 10%); color: #324C88; font-size: 14px; font-weight: 600; line-height: 25px; text-transform: uppercase; }
 }
+
+@media screen and (max-width: 680px) {
+  .press-news__filter-button > span { font-size: 0; }
+  .press-news__filter-button > span::after { content: "Фильтр"; font-size: 16px; }
+}
