@@ -14545,6 +14545,25 @@ h2 {
 
 /* Footer: desktop-макет Figma 1440 px. Сохраняем отдельную геометрию 1920 px выше. */
 @media screen and (min-width: 1301px) and (max-width: 1500px) {
+  .footer__legal-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .footer__legal-list li {
+    max-width: none;
+  }
+
+  .footer__legal-link {
+    white-space: nowrap;
+    overflow-wrap: normal;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
   .app-footer {
     padding: 40px 0 60px;
     border-radius: 21px 21px 0 0;
