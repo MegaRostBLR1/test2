@@ -4,11 +4,10 @@ function initNews() {
   const overlay = document.querySelector('#press-news-filter-dialog');
   const dialog = overlay?.querySelector('.press-news__filter-dialog');
   const closeButton = overlay?.querySelector('.press-news__filter-dialog-close');
-  const resetButton = overlay?.querySelector('.press-news__filter-reset');
-  const applyButton = overlay?.querySelector('.press-news__filter-apply');
-  const monthSelect = overlay?.querySelector('[name="news-month"]');
-  const yearSelect = overlay?.querySelector('[name="news-year"]');
+  const backButton = overlay?.querySelector('.press-news__filter-back');
+  const showMoreButtons = overlay?.querySelectorAll('[data-expand-list]');
   let previousFocus = null;
+  const selected = { months: '', years: '' };
 
   const closeMenus = (exceptButton = null) => {
     filterButtons.forEach((button) => {
@@ -19,28 +18,34 @@ function initNews() {
     });
   };
 
+  const syncDesktopLabel = (type, value) => {
+    const button = document.querySelector('[data-filter-type="' + type + '"]');
+    const label = button?.querySelector('span');
+    if (label) {
+      const prefix = type === 'months' ? 'По месяцам:' : 'По годам:';
+      label.textContent = value ? prefix + ' ' + value : prefix;
+    }
+  };
+
   filterButtons.forEach((button) => {
+    const type = button.dataset.filterType;
+    const menu = document.getElementById(button.getAttribute('aria-controls'));
     button.addEventListener('click', () => {
-      const menu = document.getElementById(button.getAttribute('aria-controls'));
       const shouldOpen = button.getAttribute('aria-expanded') !== 'true';
       closeMenus(button);
       button.setAttribute('aria-expanded', String(shouldOpen));
       if (menu) menu.hidden = !shouldOpen;
     });
-
-    const menu = document.getElementById(button.getAttribute('aria-controls'));
     menu?.querySelectorAll('.press-news__filter-option').forEach((option) => {
       option.addEventListener('click', () => {
+        const value = option.dataset.filterValue || '';
         menu.querySelectorAll('.press-news__filter-option').forEach((item) => {
-          const selected = item === option;
-          item.classList.toggle('is-selected', selected);
-          item.setAttribute('aria-selected', String(selected));
+          const active = item === option;
+          item.classList.toggle('is-selected', active);
+          item.setAttribute('aria-selected', String(active));
         });
-        const label = button.querySelector('span');
-        if (label) {
-          const prefix = button.dataset.filterType === 'months' ? 'По месяцам: ' : 'По годам: ';
-          label.textContent = prefix + option.dataset.filterValue;
-        }
+        selected[type] = value;
+        syncDesktopLabel(type, value);
         closeMenus();
       });
     });
@@ -65,23 +70,38 @@ function initNews() {
 
   mobileButton?.addEventListener('click', openDialog);
   closeButton?.addEventListener('click', closeDialog);
+  backButton?.addEventListener('click', closeDialog);
   overlay?.addEventListener('click', (event) => {
     if (event.target === overlay) closeDialog();
   });
 
-  resetButton?.addEventListener('click', () => {
-    if (monthSelect) monthSelect.value = '';
-    if (yearSelect) yearSelect.value = '';
+  overlay?.querySelectorAll('[data-filter-list]').forEach((list) => {
+    const type = list.dataset.filterList;
+    list.querySelectorAll('.press-news__filter-option').forEach((option) => {
+      option.addEventListener('click', () => {
+        const value = option.dataset.filterValue || '';
+        list.querySelectorAll('.press-news__filter-option').forEach((item) => {
+          const active = item === option;
+          item.classList.toggle('is-selected', active);
+          item.setAttribute('aria-pressed', String(active));
+        });
+        selected[type] = value;
+        syncDesktopLabel(type, value);
+      });
+    });
   });
 
-  applyButton?.addEventListener('click', () => {
-    const month = monthSelect?.value || '';
-    const year = yearSelect?.value || '';
-    const monthButton = document.querySelector('[data-filter-type="months"] span');
-    const yearButton = document.querySelector('[data-filter-type="years"] span');
-    if (monthButton) monthButton.textContent = month ? 'По месяцам: ' + month : 'По месяцам:';
-    if (yearButton) yearButton.textContent = year ? 'По годам: ' + year : 'По годам:';
-    closeDialog();
+  showMoreButtons?.forEach((button) => {
+    button.addEventListener('click', () => {
+      const type = button.dataset.expandList;
+      const list = overlay?.querySelector('[data-filter-list="' + type + '"]');
+      const expanded = button.getAttribute('aria-expanded') !== 'true';
+      button.setAttribute('aria-expanded', String(expanded));
+      if (list) list.classList.toggle('is-expanded', expanded);
+      if (list) list.style.maxHeight = expanded ? 'none' : (type === 'months' ? '166px' : '130px');
+      const label = button.querySelector('span');
+      if (label) label.textContent = expanded ? 'Скрыть' : 'Показать еще';
+    });
   });
 
   document.addEventListener('click', (event) => {
@@ -94,7 +114,7 @@ function initNews() {
       if (overlay && !overlay.hidden) closeDialog();
     }
     if (event.key === 'Tab' && overlay && !overlay.hidden && dialog) {
-      const focusable = dialog.querySelectorAll('button, select, [href], input, textarea, [tabindex]:not([tabindex="-1"])');
+      const focusable = dialog.querySelectorAll('button, [href], input, textarea, select, [tabindex]:not([tabindex="-1"])');
       if (!focusable.length) return;
       const first = focusable[0];
       const last = focusable[focusable.length - 1];
