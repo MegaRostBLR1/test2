@@ -109,6 +109,11 @@
 }
 
 @media screen and (max-width: 1300px) {
+  .articles__categories {
+    width: 944px;
+    max-width: 100%;
+  }
+
   .articles__container {
     gap: 24px;
     padding: 40px;
