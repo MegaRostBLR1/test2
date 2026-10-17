@@ -1313,35 +1313,42 @@
   }
 }
 
+/* Figma 1857:112374 — mobile news navigation, frame 360px. */
 @media screen and (max-width: 680px) {
   .news-navigation {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 5px;
   }
 
   .news-navigation__card {
-    padding: 30px 16px;
-    border-radius: 20px;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 16px 10px;
+    border-radius: 30px;
   }
 
   .news-navigation__label {
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 28px;
+    margin: 0 0 14px;
+    font-size: 12px;
+    line-height: 10px;
+    white-space: nowrap;
   }
 
   .news-navigation__link {
-    gap: 12px;
+    gap: 10px;
+    max-width: none;
+    overflow-wrap: anywhere;
   }
 
   .news-navigation__title {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .news-navigation__description {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
