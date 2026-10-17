@@ -17,6 +17,16 @@
   background: #FFFFFF;
 }
 
+.object-parameters__header,
+.object-parameters__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6667rem;
+  width: 100%;
+  min-width: 0;
+}
+
 .object-parameters__breadcrumbs {
   display: flex;
   align-items: flex-start;
@@ -228,6 +238,11 @@
     padding: 1.1111rem;
   }
 
+  .object-parameters__header,
+  .object-parameters__content {
+    gap: 1.3333rem;
+  }
+
   .object-parameters__tabs {
     flex-wrap: wrap;
     justify-content: center;
@@ -254,6 +269,11 @@
     gap: 1.6667rem;
     padding: 1.1111rem 0.7778rem;
     border-radius: 0.5556rem;
+  }
+
+  .object-parameters__header,
+  .object-parameters__content {
+    gap: 1.6667rem;
   }
 
   .object-parameters__title {
