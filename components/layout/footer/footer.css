@@ -953,13 +953,13 @@
   .footer__row--top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    column-gap: 0;
+    justify-content: flex-start;
+    column-gap: 205px;
   }
 
   .footer__top-main {
     display: flex;
-    flex: 0 1 1170px;
+    flex: 0 0 1170px;
     align-items: center;
     justify-content: space-between;
     gap: 32px;
