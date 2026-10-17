@@ -75,17 +75,14 @@
 .object-characteristics__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: start;
+  align-items: stretch;
   gap: 0.2222rem;
   width: 100%;
   min-width: 0;
+  margin: 0;
   padding: 0.2778rem;
   border-radius: 0.5556rem;
   background: #F5F8F7;
-}
-
-.object-characteristics__column {
-  display: contents;
 }
 
 .object-characteristics__item {
