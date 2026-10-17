@@ -704,3 +704,219 @@
     font-size: 18px;
   }
 }
+
+
+/* Mobile filter dialog and 360px video layout. Uses the shared Onest fonts and palette. */
+.video-page__mobile-filter-button,
+.video-page__mobile-filter-dialog {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .video-page {
+    border-radius: 1.6667rem 1.6667rem 0 0;
+  }
+
+  .video-page__container {
+    gap: 0.7778rem;
+    padding: 1.1111rem 0.5556rem 0.5556rem;
+    border-radius: 1.6667rem 1.6667rem 0 0;
+  }
+
+  .video-page__content {
+    gap: 1.1111rem;
+  }
+
+  .video-page__breadcrumbs {
+    display: none;
+  }
+
+  .video-page__title {
+    margin: 0;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 1.1111rem;
+    font-weight: 500;
+    line-height: 1.5556rem;
+    text-align: center;
+  }
+
+  .video-page__categories {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .video-page__archive {
+    width: 100%;
+  }
+
+  .video-page__filter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5556rem;
+    width: 100%;
+    margin-bottom: 0.7778rem;
+  }
+
+  .video-page__filter-label {
+    display: block;
+    align-self: center;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 1.1111rem;
+    font-weight: 500;
+    line-height: 1.5556rem;
+  }
+
+  .video-page__filter-controls {
+    display: none;
+  }
+
+  .video-page__mobile-filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.7778rem;
+    width: 100%;
+    min-height: 2.7778rem;
+    padding: 0.6667rem 1rem;
+    border: 0.1667rem solid #F5F8F7;
+    border-radius: 0.5556rem;
+    background: #F5F8F7;
+    color: #4D4D4D;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 0.8889rem;
+    line-height: 1.2222rem;
+    text-align: left;
+  }
+
+  .video-page__mobile-filter-button img {
+    flex: 0 0 1.3333rem;
+    width: 1.3333rem;
+    height: 1.3333rem;
+  }
+
+  .video-page__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.7778rem;
+  }
+
+  .video-page__card {
+    width: 100%;
+    border-radius: 0.5556rem;
+  }
+
+  .video-page__card-media {
+    height: 10rem;
+    border-radius: 0.7778rem;
+  }
+
+  .video-page__card-content {
+    gap: 0.7778rem;
+    padding: 0 0.5556rem;
+  }
+
+  .video-page__card-title {
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
+  }
+
+  .video-page__card-duration {
+    gap: 0.3333rem;
+    font-size: 0.7778rem;
+  }
+
+  .video-page__mobile-filter-dialog {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+    margin: 0;
+    padding: 1.1111rem;
+    border: 0;
+    background: #FFFFFF;
+    color: #4D4D4D;
+  }
+
+  .video-page__mobile-filter-dialog[open] {
+    display: block;
+  }
+
+  .video-page__mobile-filter-dialog::backdrop {
+    background: rgb(24 31 44 / 45%);
+  }
+
+  .video-page__mobile-filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .video-page__mobile-filter-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.3333rem;
+  }
+
+  .video-page__mobile-filter-heading h2 {
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 1.1111rem;
+    font-weight: 500;
+    line-height: 1.5556rem;
+    text-transform: none;
+  }
+
+  .video-page__mobile-filter-close {
+    display: grid;
+    flex: 0 0 2.2222rem;
+    width: 2.2222rem;
+    height: 2.2222rem;
+    place-items: center;
+    border-radius: 0.5556rem;
+    background: #F5F8F7;
+    font-size: 1.5556rem;
+    line-height: 1;
+  }
+
+  .video-page__mobile-filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4444rem;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 0.7778rem;
+    line-height: 1.1111rem;
+  }
+
+  .video-page__mobile-filter-field select {
+    width: 100%;
+    min-height: 2.7778rem;
+    padding: 0.6667rem 0.7778rem;
+    border: 1px solid #E2E7E5;
+    border-radius: 0.5556rem;
+    background: #F5F8F7;
+    color: #4D4D4D;
+    font: inherit;
+    font-size: 0.8889rem;
+  }
+
+  .video-page__mobile-filter-apply {
+    min-height: 2.7778rem;
+    margin-top: 0.3333rem;
+    padding: 0.6667rem 1rem;
+    border-radius: 0.5556rem;
+    background: #324C88;
+    color: #FFFFFF;
+    font-family: 'Onest-SemiBold', sans-serif;
+    font-size: 0.8889rem;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 681px) {
+  .video-page__mobile-filter-dialog {
+    display: none;
+  }
+}
