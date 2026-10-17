@@ -929,3 +929,244 @@
     width: 174px;
   }
 }
+
+
+/* Footer: мобильный макет Figma 360 px, включая открытое состояние аккордеона. */
+@media screen and (max-width: 680px) {
+  .app-footer {
+    padding: 30px 0 36px;
+    border-radius: 21px 21px 0 0;
+  }
+
+  .footer__container {
+    padding: 0 20px;
+  }
+
+  .footer__section {
+    padding: 18px 0;
+  }
+
+  .footer__row--top {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 24px;
+  }
+
+  .footer__logo-link {
+    display: flex;
+    width: 190px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+
+  .footer__logo-link img {
+    display: block;
+    width: 103px;
+    height: 43px;
+    object-fit: contain;
+  }
+
+  .footer__legal-top {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 25px;
+    overflow-wrap: anywhere;
+  }
+
+  .footer__copyright-system {
+    grid-column: auto;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .footer__row--contacts {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 24px;
+  }
+
+  .footer__description-col {
+    grid-column: auto;
+    min-width: 0;
+  }
+
+  .footer__copyright-company {
+    max-width: 100%;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 20px;
+    overflow-wrap: anywhere;
+  }
+
+  .footer__social-title {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .footer__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer__social-item {
+    flex: 0 0 56px;
+    width: 56px;
+  }
+
+  .footer__social-link {
+    display: flex;
+    width: 56px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #465e94;
+    border-radius: 20px;
+  }
+
+  .footer__social-link img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    min-width: 0;
+  }
+
+  .footer__contact {
+    gap: 18px;
+    min-width: 0;
+  }
+
+  .footer__contact-icon {
+    display: flex;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    padding: 7px;
+    border-radius: 10px;
+    background: #fff500;
+  }
+
+  .footer__contact-icon img {
+    display: block;
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+  }
+
+  .footer__contact-info {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .footer__contact-title {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .footer__contact-text,
+  .footer__contact-extra-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .footer__contact-extra-text {
+    margin-top: 0;
+  }
+
+  .footer-accordion__head {
+    min-height: 36px;
+  }
+
+  .footer-accordion__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .footer-accordion__btn {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+
+  .footer-accordion__nav-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    margin-top: 24px;
+  }
+
+  .footer-accordion__nav-item {
+    padding-left: 14px;
+    font-size: 16px;
+    line-height: 20px;
+    background-size: 8px;
+  }
+
+  .footer__row--bottom {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 24px;
+  }
+
+  .footer__subscribe {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer__subscribe-title {
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .footer__subscribe-btn {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 16px 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .footer__subscribe-agreement {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .footer__bottom-legal {
+    grid-column: auto;
+    min-width: 0;
+  }
+
+  .footer__legal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .footer__legal-link {
+    font-size: 14px;
+    line-height: 20px;
+    overflow-wrap: anywhere;
+  }
+
+  .footer__badge {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: start;
+    width: 174px;
+  }
+}
