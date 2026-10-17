@@ -69,4 +69,50 @@ function initVideo() {
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') closeMenus();
   });
+
+  const mobileFilterButton = document.querySelector('.video-page__mobile-filter-button');
+  const mobileFilterDialog = document.querySelector('#video-mobile-filter');
+  const mobileFilterForm = mobileFilterDialog?.querySelector('.video-page__mobile-filter-form');
+  const mobileFilterClose = mobileFilterDialog?.querySelector('.video-page__mobile-filter-close');
+
+  const closeMobileFilter = () => {
+    if (mobileFilterDialog?.open) mobileFilterDialog.close();
+    mobileFilterButton?.setAttribute('aria-expanded', 'false');
+  };
+
+  mobileFilterButton?.addEventListener('click', () => {
+    if (!mobileFilterDialog) return;
+    mobileFilterDialog.showModal();
+    mobileFilterButton.setAttribute('aria-expanded', 'true');
+  });
+
+  mobileFilterClose?.addEventListener('click', closeMobileFilter);
+  mobileFilterDialog?.addEventListener('click', (event) => {
+    if (event.target === mobileFilterDialog) closeMobileFilter();
+  });
+  mobileFilterDialog?.addEventListener('close', () => {
+    mobileFilterButton?.setAttribute('aria-expanded', 'false');
+  });
+
+  mobileFilterForm?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const values = new FormData(mobileFilterForm);
+    filterButtons.forEach((button) => {
+      const type = button.dataset.filterType;
+      const value = values.get(type);
+      const menu = document.getElementById(button.getAttribute('aria-controls'));
+      const option = Array.from(menu?.querySelectorAll('.video-page__filter-option') || [])
+        .find((item) => item.dataset.filterValue === value);
+      if (!option) return;
+      menu.querySelectorAll('.video-page__filter-option').forEach((item) => {
+        const selected = item === option;
+        item.classList.toggle('is-selected', selected);
+        item.setAttribute('aria-selected', String(selected));
+      });
+      const label = button.querySelector('span');
+      if (label) label.textContent = typeLabel(type) + ' ' + value;
+    });
+    closeMobileFilter();
+  });
+
 }
