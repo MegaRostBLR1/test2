@@ -1,3 +1,208 @@
-.press-page {
-  padding: 40px 0;
+.video-page {
+  width: 100%;
+  color: #4D4D4D;
+  background: #FFFFFF;
+  border-radius: 0 0 1.6667rem 1.6667rem;
+}
+
+.video-page__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2.2222rem;
+  background: #FFFFFF;
+  border-radius: 0 0 1.6667rem 1.6667rem;
+}
+
+.video-page__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6667rem;
+  width: 100%;
+  max-width: 102.2222rem;
+  margin: 0 auto;
+}
+
+.video-page__breadcrumbs {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1.1111rem;
+  min-width: 0;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 400;
+  line-height: 1.4444rem;
+}
+
+.video-page__breadcrumb {
+  flex: 0 0 auto;
+  color: #4D4D4D;
+  font-family: 'Onest-Medium', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.video-page__breadcrumb:hover {
+  color: #324C88;
+}
+
+.video-page__breadcrumb:focus-visible,
+.video-page__category:focus-visible {
+  outline: 0.1111rem solid #324C88;
+  outline-offset: 0.1667rem;
+}
+
+.video-page__breadcrumb-separator {
+  flex: 0 0 auto;
+  color: #4D4D4D;
+  font-family: 'Onest-Regular', sans-serif;
+}
+
+.video-page__breadcrumb--current {
+  font-family: 'Onest-Medium', sans-serif;
+  font-weight: 500;
+}
+
+.video-page__title {
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 3.5556rem;
+  font-weight: 500;
+  line-height: 4rem;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video-page__count {
+  color: #324C88;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 2.2933rem;
+  font-weight: 500;
+  line-height: 4rem;
+  white-space: nowrap;
+}
+
+.video-page__categories {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2222rem;
+  max-width: 100%;
+  padding: 0.2222rem;
+  border-radius: 0.5556rem;
+  background: #F5F8F7;
+}
+
+.video-page__category {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.5556rem;
+  padding: 0.7778rem 1.3333rem;
+  border-radius: 0.7778rem;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.video-page__category:hover {
+  background: #FFFFFF;
+}
+
+.video-page__category.is-active,
+.video-page__category.is-active:hover {
+  background: #FFF500;
+}
+
+@media screen and (max-width: 1300px) {
+  .video-page__container {
+    padding: 1.1111rem;
+  }
+
+  .video-page__content {
+    gap: 1.1111rem;
+  }
+
+  .video-page__breadcrumbs {
+    gap: 0.5556rem;
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;
+  }
+
+  .video-page__title {
+    font-size: 2.6667rem;
+    line-height: 3.1111rem;
+  }
+
+  .video-page__count {
+    font-size: 1.7222rem;
+    line-height: 3.1111rem;
+  }
+
+  .video-page__category {
+    min-height: 3rem;
+    padding: 0.6667rem 1rem;
+    font-size: 0.8889rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .video-page__container {
+    padding: 1.1111rem 0.8889rem;
+  }
+
+  .video-page__breadcrumbs {
+    gap: 0.4444rem;
+    overflow-x: auto;
+    font-size: 0.6667rem;
+    line-height: 1rem;
+  }
+
+  .video-page__content {
+    gap: 1.1111rem;
+  }
+
+  .video-page__title {
+    font-size: 1.7778rem;
+    line-height: 2.2222rem;
+  }
+
+  .video-page__count {
+    font-size: 1.1111rem;
+    line-height: 2.2222rem;
+  }
+
+  .video-page__categories {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .video-page__category {
+    min-height: 2.6667rem;
+    padding: 0.5556rem 0.6667rem;
+    border-radius: 0.5556rem;
+    font-size: 0.6667rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .video-page__category {
+    padding-right: 0.5556rem;
+    padding-left: 0.5556rem;
+  }
 }
