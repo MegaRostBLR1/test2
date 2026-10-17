@@ -256,12 +256,6 @@
   }
 }
 
-@media screen and (max-width: 380px) {
-  .news-item__facts {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .news-item__breadcrumb {
     transition: none;
@@ -319,5 +313,95 @@
   .news-item__fact-value {
     font-size: 18px;
     line-height: 26px;
+  }
+}
+
+
+
+/* Figma mobile frame 360px — node 1857:112275. */
+@media screen and (max-width: 680px) {
+  .news-item__container {
+    align-items: center;
+    gap: 18px;
+    padding: 40px 10px;
+  }
+
+  .news-item__breadcrumbs {
+    align-self: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    overflow: visible;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .news-item__breadcrumb--current {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .news-item__title {
+    max-width: none;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  .news-item__publication {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 18px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .news-item__facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-self: stretch;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .news-item__fact,
+  .news-item__fact--location {
+    display: flex;
+    flex: initial;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    min-width: 0;
+    padding: 18px 10px;
+  }
+
+  .news-item__fact-icon {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .news-item__fact-copy {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .news-item__fact-title {
+    font-size: 16px;
+    line-height: 24px;
+    overflow-wrap: anywhere;
+  }
+
+  .news-item__fact-value {
+    font-size: 14px;
+    line-height: 26px;
+    overflow-wrap: anywhere;
+    white-space: normal;
   }
 }
