@@ -25,14 +25,33 @@
       <div class="press-news__filter">
         <p class="press-news__filter-label">Показывать:</p>
         <div class="press-news__filter-controls">
-          <button class="press-news__filter-button" type="button" aria-label="Фильтр по месяцам">
-            <span>По месяцам:</span>
-            <img src="https://www.figma.com/api/mcp/asset/5d0af646-84b2-4994-9a71-a94ddcca11c4/2a347.svg" alt="" aria-hidden="true">
-          </button>
-          <button class="press-news__filter-button" type="button" aria-label="Фильтр по годам">
-            <span>По годам:</span>
-            <img src="https://www.figma.com/api/mcp/asset/5d0af646-84b2-4994-9a71-a94ddcca11c4/2a347.svg" alt="" aria-hidden="true">
-          </button>
+          <div class="press-news__filter-dropdown">
+            <button class="press-news__filter-button" type="button" aria-label="Фильтр по месяцам" aria-expanded="false" aria-controls="press-news-months" data-filter-type="months">
+              <span>По месяцам:</span>
+              <img src="https://www.figma.com/api/mcp/asset/5d0af646-84b2-4994-9a71-a94ddcca11c4/2a347.svg" alt="" aria-hidden="true">
+            </button>
+            <div class="press-news__filter-menu" id="press-news-months" role="listbox" aria-label="Выберите месяц" hidden>
+              <button class="press-news__filter-option is-selected" type="button" role="option" aria-selected="true" data-filter-value="Январь">Январь (29)</button>
+              <button class="press-news__filter-option" type="button" role="option" aria-selected="false" data-filter-value="Февраль">Февраль (29)</button>
+              <button class="press-news__filter-option" type="button" role="option" aria-selected="false" data-filter-value="Март">Март (29)</button>
+              <button class="press-news__filter-option" type="button" role="option" aria-selected="false" data-filter-value="Апрель">Апрель (29)</button>
+              <button class="press-news__filter-option" type="button" role="option" aria-selected="false" data-filter-value="Май">Май (29)</button>
+              <button class="press-news__filter-option" type="button" role="option" aria-selected="false" data-filter-value="Июнь">Июнь (29)</button>
+              <button class="press-news__filter-option" type="button" role="option" aria-selected="false" data-filter-value="Июль">Июль (29)</button>
+            </div>
+          </div>
+          <div class="press-news__filter-dropdown">
+            <button class="press-news__filter-button" type="button" aria-label="Фильтр по годам" aria-expanded="false" aria-controls="press-news-years" data-filter-type="years">
+              <span>По годам:</span>
+              <img src="https://www.figma.com/api/mcp/asset/5d0af646-84b2-4994-9a71-a94ddcca11c4/2a347.svg" alt="" aria-hidden="true">
+            </button>
+            <div class="press-news__filter-menu press-news__filter-menu--years" id="press-news-years" role="listbox" aria-label="Выберите год" hidden>
+              <button class="press-news__filter-option is-selected" type="button" role="option" aria-selected="true" data-filter-value="2026">2026</button>
+              <button class="press-news__filter-option" type="button" role="option" aria-selected="false" data-filter-value="2025">2025</button>
+              <button class="press-news__filter-option" type="button" role="option" aria-selected="false" data-filter-value="2024">2024</button>
+              <button class="press-news__filter-option" type="button" role="option" aria-selected="false" data-filter-value="2023">2023</button>
+            </div>
+          </div>
         </div>
       </div>
 
