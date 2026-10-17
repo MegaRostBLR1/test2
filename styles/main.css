@@ -14237,6 +14237,18 @@ h2 {
 
 /* Footer: геометрия desktop-макета Figma 1920 px. */
 @media screen and (min-width: 1441px) {
+  .footer__section {
+    padding: 36px 0;
+  }
+
+  .footer__section:first-child {
+    padding-top: 0;
+  }
+
+  .footer__section:last-child {
+    padding-bottom: 0;
+  }
+
   .app-footer {
     padding: 2.2222rem 0 3.3333rem;
     border-radius: 1.1667rem 1.1667rem 0 0;
