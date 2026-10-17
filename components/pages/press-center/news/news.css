@@ -20,7 +20,7 @@
 
 .press-news__breadcrumbs {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
@@ -78,7 +78,7 @@
 
 .press-news__categories {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   gap: 4px;
@@ -123,6 +123,7 @@
   }
 
   .press-news__breadcrumbs {
+    flex-wrap: wrap;
     gap: 14px;
     font-size: 18px;
   }
@@ -135,6 +136,10 @@
   .press-news__count {
     font-size: 30px;
     line-height: 1.2;
+  }
+
+  .press-news__categories {
+    flex-wrap: wrap;
   }
 
   .press-news__category {
