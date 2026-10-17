@@ -1225,7 +1225,7 @@ h2 {
 
 /* Контрольный desktop-frame Figma 1440 px: 1857:24744.
    Сохраняет четыре карточки в ряд и уточняет параметры относительно 1920 px. */
-@media screen and (min-width: 1301px) and (max-width: 1500px) {
+@media screen and (min-width: 1301px) and (max-width: 1440px) {
   .home-process__panel {
     gap: 30px;
     padding: 48px 30px;
@@ -1838,7 +1838,7 @@ h2 {
 /* Контрольный desktop-frame Figma 1440 px: 1857:24801.
    Состояние связано с базовой геометрией 1920 px; отдельная модель только
    уточняет плотность шапки и композицию контента в доступной ширине. */
-@media screen and (min-width: 1301px) and (max-width: 1500px) {
+@media screen and (min-width: 1301px) and (max-width: 1440px) {
   .home-industries__panel {
     gap: 24px;
     height: 675px;
@@ -6899,7 +6899,7 @@ h2 {
 
 
 /* Figma desktop frame 1440 px: H3 Semibold 36/44; preserve 1920 px typography above this range. */
-@media screen and (min-width: 1301px) and (max-width: 1500px) {
+@media screen and (min-width: 1301px) and (max-width: 1440px) {
   .home-faq__title {
     font-size: 36px;
     line-height: 44px;
@@ -14236,7 +14236,7 @@ h2 {
 
 
 /* Footer: геометрия desktop-макета Figma 1920 px. */
-@media screen and (min-width: 1501px) {
+@media screen and (min-width: 1441px) {
   .app-footer {
     padding: 2.2222rem 0 3.3333rem;
     border-radius: 1.1667rem 1.1667rem 0 0;
@@ -14536,7 +14536,7 @@ h2 {
 
 
 /* Footer: desktop-макет Figma 1440 px. Сохраняем отдельную геометрию 1920 px выше. */
-@media screen and (min-width: 1301px) and (max-width: 1500px) {
+@media screen and (min-width: 1301px) and (max-width: 1440px) {
   .footer__legal-list {
     display: flex;
     flex-direction: column;
@@ -14555,7 +14555,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1301px) and (max-width: 1500px) {
+@media screen and (min-width: 1301px) and (max-width: 1440px) {
   .app-footer {
     padding: 40px 0 60px;
     border-radius: 21px 21px 0 0;
