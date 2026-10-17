@@ -630,3 +630,50 @@
     font-size: 18px;
   }
 }
+
+
+/* Figma 1857:111934 — desktop 1440px.
+   At 1920px, retain the composition from Figma 1857:111798. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .news-article {
+    gap: 30px;
+    padding: 40px 81px;
+  }
+
+  .news-article__gallery {
+    width: 1278px;
+    height: 700px;
+    aspect-ratio: auto;
+  }
+
+  .news-article__body {
+    width: 1260px;
+    gap: 30px;
+  }
+
+  .news-article__lead {
+    align-items: center;
+    gap: 20px;
+    padding: 22px;
+  }
+
+  .news-article__lead-accent {
+    height: 102px;
+  }
+
+  .news-article__lead-text {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .news-article__columns {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 25px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .news-article__column {
+    gap: 25px;
+  }
+}
