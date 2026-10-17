@@ -1099,3 +1099,20 @@
     display: none;
   }
 }
+
+
+/* Переход из архива к отдельной новости. */
+.press-news__card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.press-news__card-link:hover {
+  color: #324C88;
+}
+
+.press-news__card-link:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid #324C88;
+  outline-offset: 4px;
+}
