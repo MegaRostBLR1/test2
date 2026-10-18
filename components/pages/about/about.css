@@ -1801,3 +1801,83 @@
     border-radius: 30px;
   }
 }
+
+
+/* Figma 1857:130420 — responsive layout for 1440px and 1024px.
+   The extra 10px inset matches the nested frame in Figma without changing 1920px. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .about-team__panel {
+    width: auto;
+    margin: 0 10px;
+    padding: 60px 40px;
+  }
+
+  .about-team__gallery {
+    max-width: none;
+  }
+
+  .about-team__featured,
+  .about-team__featured--peek {
+    height: 649px;
+  }
+
+  .about-team__thumbnails {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .about-team__panel {
+    width: auto;
+    margin: 0 10px;
+    padding: 40px;
+  }
+
+  .about-team__content {
+    gap: 24px;
+  }
+
+  .about-team__header {
+    gap: 18px;
+  }
+
+  .about-team__title {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .about-team__subtitle {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .about-team__featured-row {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .about-team__featured,
+  .about-team__featured--peek {
+    flex: 0 0 100%;
+    height: 420px;
+  }
+
+  .about-team__featured--peek {
+    display: none;
+  }
+
+  .about-team__controls {
+    inset: 0 20px;
+  }
+
+  .about-team__thumbnails {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .about-team__thumbnail {
+    height: 180px;
+    border-radius: 20px;
+  }
+}
