@@ -43,6 +43,18 @@ function initFaq() {
     });
   });
 
+  document.querySelectorAll('.press-faq-item__show-more').forEach((button) => {
+    button.addEventListener('click', () => {
+      const item = button.closest('.press-faq-item');
+      if (!item) return;
+
+      const isExpanded = item.classList.toggle('press-faq-item--show-all');
+      button.setAttribute('aria-expanded', String(isExpanded));
+      const label = button.querySelector('span');
+      if (label) label.textContent = isExpanded ? 'Скрыть' : 'Показать еще';
+    });
+  });
+
   document.querySelectorAll('.press-faq-item__zoom').forEach((button) => {
     button.addEventListener('click', () => {
       const image = button.closest('.press-faq-item__media')?.querySelector('img');
