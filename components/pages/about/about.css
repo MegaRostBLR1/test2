@@ -1264,7 +1264,7 @@
   }
 
   .about-timeline__controls {
-    gap: 16px;
+    display: none;
   }
 
   .about-timeline__arrow {
