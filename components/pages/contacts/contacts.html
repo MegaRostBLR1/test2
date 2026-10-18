@@ -1,6 +1,76 @@
-<section class="contacts">
-  <div class="container">
-    <h1>Контакты</h1>
-    <p>Базовый HTML-контент страницы контактов. Здесь будет размещён основной интерфейс.</p>
+<section class="contacts" aria-labelledby="contacts-title">
+  <div class="contacts__container">
+    <nav class="contacts__breadcrumbs" aria-label="Хлебные крошки">
+      <a href="#/">Главная</a>
+      <span aria-hidden="true">-</span>
+      <span aria-current="page">Контакты</span>
+    </nav>
+
+    <h1 class="contacts__title" id="contacts-title">Контакты</h1>
+
+    <div class="contacts__layout">
+      <div class="contacts__details">
+        <section class="contacts__panel" aria-labelledby="contacts-office-title">
+          <h2 class="contacts__panel-title" id="contacts-office-title">Главный офис, производство ПК «Веста» в г. Тула, Россия</h2>
+
+          <div class="contacts__address-card">
+            <h3 class="contacts__label">Юридический адрес:</h3>
+            <p class="contacts__value">Юридический адрес: 300004, Тульская область, г. Тула, Торховский проезд, дом 6, ком.1, административно-бытовой блок 1</p>
+          </div>
+
+          <div class="contacts__requisites">
+            <div class="contacts__requisite">
+              <h3 class="contacts__label">Почтовый адрес:</h3>
+              <p class="contacts__value">300028, г. Тула, а/я 2496</p>
+            </div>
+            <div class="contacts__requisite">
+              <h3 class="contacts__label">ОГРН:</h3>
+              <p class="contacts__value">1027100739192</p>
+            </div>
+            <div class="contacts__requisite">
+              <h3 class="contacts__label">ИНН:</h3>
+              <p class="contacts__value">7106006132</p>
+            </div>
+            <a class="contacts__download" href="https://www.figma.com/design/1N1oZKJBDmVLm5rGPOO401/" target="_blank" rel="noopener noreferrer" aria-label="Скачать реквизиты — ссылка на макет, замените на файл реквизитов">
+              <svg class="contacts__download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3" /></svg>
+              <span>Скачать реквизиты</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="contacts__panel contacts__phones" aria-labelledby="contacts-phones-title">
+          <h2 class="contacts__panel-title" id="contacts-phones-title">Телефоны для связи:</h2>
+          <div class="contacts__phone-grid">
+            <article class="contacts__phone-card">
+              <div class="contacts__phone-copy">
+                <a class="contacts__phone-number" href="tel:+74872701777">+7 (4872) 701-777</a>
+                <p class="contacts__value">Общий: с 8:00 до 17:30</p>
+              </div>
+              <span class="contacts__language">Ru</span>
+            </article>
+            <article class="contacts__phone-card">
+              <div class="contacts__phone-copy">
+                <a class="contacts__phone-number" href="tel:+74872701777">+7 (4872) 701-777</a>
+                <p class="contacts__value">с 9:00 до 20:00.</p>
+                <p class="contacts__value">Денис. Заместитель директора по развитию</p>
+              </div>
+              <div class="contacts__languages"><span class="contacts__language">Ru</span><span class="contacts__language">En</span></div>
+            </article>
+            <article class="contacts__phone-card">
+              <div class="contacts__phone-copy">
+                <a class="contacts__phone-number" href="tel:+74872701777">+7 (4872) 701-777</a>
+                <p class="contacts__value">с 8:00 до 16:30.</p>
+                <p class="contacts__value">Ольга. Консультант</p>
+              </div>
+              <div class="contacts__languages"><span class="contacts__language">Ru</span><span class="contacts__language">En</span></div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div class="contacts__visual">
+        <img class="contacts__image" src="https://www.figma.com/api/mcp/asset/ed17dd1d-f8f9-4190-8107-f6d12d7fe409/9241d.png" alt="Производство ПК «Веста»" loading="lazy">
+      </div>
+    </div>
   </div>
 </section>
