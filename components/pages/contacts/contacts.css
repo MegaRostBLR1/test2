@@ -423,8 +423,6 @@
   gap: 1.6667rem;
   width: 100%;
   min-width: 0;
-  padding: 2.2222rem;
-  border-radius: 1.1111rem;
 }
 .contacts-links__title {
   margin: 0;
@@ -502,12 +500,12 @@
 .contacts-links__value:focus-visible,
 .contacts-links__social-link:focus-visible { outline: 2px solid #324C88; outline-offset: 3px; }
 @media screen and (max-width: 1300px) {
-  .contacts-links { padding: 1.6667rem; }
+  .contacts-links { gap: 1.3333rem; }
   .contacts-links__title { font-size: 2.2222rem; }
   .contacts-links__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media screen and (max-width: 680px) {
-  .contacts-links { gap: 1.1111rem; padding: 1.1111rem 0; }
+  .contacts-links { gap: 1.1111rem; }
   .contacts-links__title { font-size: 1.3333rem; line-height: 1.3333; }
   .contacts-links__cards { grid-template-columns: minmax(0, 1fr); gap: 0.2778rem; padding: 1rem; }
   .contacts-links__card { padding: 1.1111rem; }
