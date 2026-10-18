@@ -1372,3 +1372,98 @@
     font-size: 24px;
   }
 }
+
+
+/* Figma: About timeline, tablet frame 1024 px (1857:133862).
+   На планшете текст и изображение располагаются вертикально; desktop-кадры 1440/1920 сохраняют свои правила. */
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .about-timeline {
+    padding: 5px;
+  }
+
+  .about-timeline__panel {
+    padding: 40px;
+    border-radius: 21px;
+  }
+
+  .about-timeline__container {
+    gap: 20px;
+  }
+
+  .about-timeline__header {
+    gap: 24px;
+  }
+
+  .about-timeline__eyebrow {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .about-timeline__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .about-timeline__story {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 36px;
+  }
+
+  .about-timeline__story-content {
+    flex: 0 1 auto;
+    gap: 24px;
+  }
+
+  .about-timeline__year {
+    font-size: 70px;
+    line-height: 1.2;
+  }
+
+  .about-timeline__description {
+    gap: 24px;
+  }
+
+  .about-timeline__story-title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .about-timeline__description p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about-timeline__controls {
+    gap: 20px;
+  }
+
+  .about-timeline__image {
+    flex: 0 0 auto;
+    width: 100%;
+    aspect-ratio: auto;
+    height: 549px;
+  }
+
+  .about-timeline__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .about-timeline__years,
+  .about-timeline__milestone {
+    gap: 36px;
+  }
+
+  .about-timeline__milestone-mark {
+    flex-basis: 114px;
+    width: 114px;
+    height: 119px;
+  }
+
+  .about-timeline__milestone-mark span {
+    font-size: 24px;
+  }
+}
