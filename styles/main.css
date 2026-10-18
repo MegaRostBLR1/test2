@@ -14193,17 +14193,7 @@ h2 {
 }
 
 .header__contacts-choice {
-    position: absolute;
-    top: 3rem;
-    left: -0.4444rem;
-    display: flex;
-    flex-direction: column;
-    padding: 0.2222rem;
-    background: #FFFFFF;
-    border-radius: 0.5556rem;
-    text-transform: none;
     min-width: 15.5556rem;
-    z-index: 2;
 }
 
 .header__contacts-choice-title {
