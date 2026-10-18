@@ -2754,7 +2754,7 @@
 }
 
 
-<!-- Figma 1857:129413 — документы и сертификаты -->
+/* Figma 1857:129413 — документы и сертификаты. */
 .about-documents {
   display: flex;
   justify-content: center;
@@ -2782,6 +2782,7 @@
 }
 
 .about-documents__eyebrow {
+  margin: 0;
   color: #324C8880;
   font-family: "Onest-Medium", sans-serif;
   font-size: 20px;
@@ -2790,6 +2791,7 @@
 }
 
 .about-documents__title {
+  margin: 0;
   color: #324C88;
   font-family: "Onest-SemiBold", sans-serif;
   font-size: 44px;
@@ -2801,7 +2803,8 @@
 .about-documents__grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 5px;
+  column-gap: 5px;
+  row-gap: 24px;
   width: 100%;
 }
 
@@ -2812,7 +2815,7 @@
   justify-content: center;
   gap: 20px;
   min-width: 0;
-  min-height: 243px;
+  min-height: 244px;
   padding: 30px 20px;
   border-radius: 10px;
   background: #FFFFFF;
@@ -2839,6 +2842,7 @@
 }
 
 .about-documents__name {
+  margin: 0;
   font-family: "Onest-Regular", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -2847,6 +2851,7 @@
 }
 
 .about-documents__meta {
+  margin: 0;
   font-family: "Onest-Medium", sans-serif;
   font-size: 16px;
   font-weight: 500;
