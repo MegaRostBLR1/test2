@@ -790,66 +790,126 @@
   }
 }
 
+
+/* Figma: About history, mobile frame 360 px (1857:136758). */
 @media screen and (max-width: 680px) {
   .about-history {
-    padding: 1.111rem 0.556rem;
-    border-radius: 0.556rem;
+    padding: 20px 10px;
+    border-radius: 10px;
   }
 
   .about-history__layout {
-    gap: 1.111rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
     min-height: 0;
   }
 
   .about-history__content {
-    gap: 1rem;
-    padding: 1.333rem 1.111rem;
-    border-radius: 0.778rem;
+    order: 0;
+    gap: 14px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
   }
 
   .about-history__heading {
-    gap: 0.778rem;
+    gap: 14px;
   }
 
   .about-history__eyebrow {
-    font-size: 0.889rem;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .about-history__title {
-    font-size: 1.556rem;
-    line-height: 1.333;
+    font-size: 20px;
+    line-height: 29px;
   }
 
   .about-history__text {
-    gap: 0.889rem;
-    font-size: 0.889rem;
-    line-height: 1.6;
+    gap: 14px;
+    font-size: 14px;
+    line-height: 18px;
   }
 
   .about-history__visual {
-    height: 23.333rem;
+    position: relative;
+    order: 1;
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: 496px;
+    margin-top: 0;
+    transform: none;
+    pointer-events: auto;
   }
 
   .about-history__background {
     top: 0;
-    height: 100%;
+    right: 0;
+    width: 100%;
+    max-width: none;
+    height: 293px;
+    object-fit: contain;
   }
 
   .about-history__tiles {
-    transform: translate(-50%, -50%) scale(.58);
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .about-history__content {
-    padding: 1.111rem 0.889rem;
+    top: 0;
+    left: 50%;
+    width: 348px;
+    height: 496px;
+    transform: translateX(-50%);
   }
 
-  .about-history__visual {
-    height: 20rem;
+  .about-history__tile {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
   }
 
-  .about-history__tiles {
-    transform: translate(-50%, -50%) scale(.5);
+  .about-history__tile--download {
+    top: 326px;
+    left: auto;
+    right: 87px;
+  }
+
+  .about-history__tile--video-30 {
+    top: 241px;
+    right: 0;
+    left: auto;
+    transform: rotate(45deg);
+  }
+
+  .about-history__tile--video-25 {
+    top: 241px;
+    right: 174px;
+    left: auto;
+  }
+
+  .about-history__tile--video-35 {
+    top: 156px;
+    right: 87px;
+    left: auto;
+  }
+
+  .about-history__tile-icon {
+    top: 12px;
+    left: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 12px;
+  }
+
+  .about-history__tile-icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .about-history__tile-label {
+    width: 115px;
+    font-size: 12px;
+    line-height: 18px;
   }
 }
