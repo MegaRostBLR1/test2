@@ -2944,3 +2944,41 @@
     padding: 18px 8px;
   }
 }
+
+
+/* Figma 1857:133001 — desktop frame 1440 px; preserve the 1920 px base layout. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .about-documents {
+    padding: 80px 45px;
+  }
+
+  .about-documents__container {
+    max-width: 1350px;
+  }
+
+  .about-documents__title {
+    font-size: 44px;
+    line-height: 1.4;
+  }
+
+  .about-documents__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  .about-documents__card {
+    min-height: 243px;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .about-documents__name {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .about-documents__meta {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
