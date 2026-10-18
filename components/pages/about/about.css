@@ -2414,7 +2414,7 @@
 
   .about-reasons__tab,
   .about-reasons__tab.is-active {
-    flex: 1 1 calc(50% - 4px);
+    flex: 1 1 48%;
     min-height: 48px;
     padding: 10px 8px;
     border-radius: 10px;
