@@ -151,6 +151,13 @@ const APP_CONFIG = {
       js: './components/pages/press-center/articles/articles.js',
       init: 'initArticles'
     },
+    'article-item': {
+      title: 'Статья',
+      html: './components/pages/press-center/article-item/article-item.html',
+      css: './components/pages/press-center/article-item/article-item.css',
+      js: './components/pages/press-center/article-item/article-item.js',
+      init: 'initArticleItem'
+    },
     'about': {
       title: 'О компании',
       html: './components/pages/about/about.html',
