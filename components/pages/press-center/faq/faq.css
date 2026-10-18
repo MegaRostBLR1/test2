@@ -24,7 +24,7 @@
   font-family: "Onest-Medium", sans-serif;
   font-size: 1.1111rem;
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .press-faq__breadcrumb-link {
@@ -66,8 +66,9 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  align-self: stretch;
+  align-self: center;
   gap: 0.2222rem;
+  width: fit-content;
   max-width: 100%;
   padding: 0.2222rem;
   border-radius: 0.5556rem;
@@ -151,6 +152,7 @@
     justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: auto;
+    width: 100%;
     max-width: 100%;
     scrollbar-width: thin;
   }
