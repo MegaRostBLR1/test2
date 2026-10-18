@@ -617,3 +617,136 @@
     transition: none;
   }
 }
+
+
+/* Mobile FAQ card: Figma frame 1857:100669 (360px). */
+.press-faq-item__show-more {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .press-faq-content {
+    padding: 20px 14px;
+  }
+
+  .press-faq-content__inner {
+    gap: 48px;
+  }
+
+  .press-faq-group {
+    gap: 30px;
+  }
+
+  .press-faq-group:first-child {
+    gap: 18px;
+  }
+
+  .press-faq-group__title {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .press-faq-item {
+    border-radius: 20px;
+  }
+
+  .press-faq-item__question {
+    gap: 0;
+    padding: 0 11px 0 30px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .press-faq-item__toggle {
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .press-faq-item__plus,
+  .press-faq-item__minus {
+    width: 24px;
+    height: 24px;
+  }
+
+  .press-faq-item__answer {
+    gap: 36px;
+    padding: 0;
+  }
+
+  .press-faq-item__copy {
+    gap: 18px;
+    padding-left: 27px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .press-faq-item__copy p:nth-child(n + 3) {
+    display: none;
+  }
+
+  .press-faq-item__copy p:nth-child(2) {
+    max-height: 95px;
+    overflow: hidden;
+  }
+
+  .press-faq-item--show-all .press-faq-item__copy p:nth-child(n + 3) {
+    display: block;
+  }
+
+  .press-faq-item--show-all .press-faq-item__copy p:nth-child(2) {
+    max-height: none;
+  }
+
+  .press-faq-item__show-more {
+    display: inline-flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 24px;
+    color: #324c88;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .press-faq-item__show-more img {
+    display: block;
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transform: rotate(180deg);
+  }
+
+  .press-faq-item--show-all .press-faq-item__show-more img {
+    transform: none;
+  }
+
+  .press-faq-item__media {
+    flex: none;
+    height: 179px;
+    min-height: 0;
+    margin: 0 14px;
+    border-radius: 30px;
+  }
+
+  .press-faq-item__zoom {
+    right: 20px;
+    bottom: 20px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .press-faq-item__zoom img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .press-faq-item--show-all .press-faq-item__answer {
+    gap: 24px;
+  }
+}
