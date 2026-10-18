@@ -459,3 +459,235 @@
     padding: 14px 12px;
   }
 }
+
+
+/* Article body — Figma node 1857:112485. */
+.article-item__body {
+  width: 100%;
+  padding: 2.2222rem 6.1111rem;
+  border-radius: 1.6667rem;
+  background: #fff;
+}
+
+.article-item__body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6667rem;
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.article-item__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6667rem;
+  width: 100%;
+}
+
+.article-item__section-title {
+  margin: 0;
+  color: #4d4d4d;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3.5556rem;
+  overflow-wrap: anywhere;
+}
+
+.article-item__text-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.3889rem;
+  color: #4d4d4d;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.article-item__text-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3889rem;
+  min-width: 0;
+}
+
+.article-item__text-columns p {
+  margin: 0;
+}
+
+.article-item__image {
+  display: block;
+  width: 100%;
+  height: 38.8889rem;
+  border-radius: 1.6667rem;
+  object-fit: cover;
+}
+
+.article-item__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1111rem;
+}
+
+.article-item__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  min-width: 0;
+  min-height: 13rem;
+  padding: 1.3333rem;
+  border-radius: 1.6667rem;
+  background: #f5f8f7;
+}
+
+.article-item__card-icon {
+  display: grid;
+  flex: 0 0 2rem;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 0.7778rem;
+  background: #36508a;
+}
+
+.article-item__card-icon span {
+  display: block;
+  width: 0.5556rem;
+  height: 0.5556rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.article-item__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4444rem;
+  width: 100%;
+  min-width: 0;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.article-item__card-content h3 {
+  margin: 0;
+  color: rgb(44 44 44 / 90%);
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.2222rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.article-item__card-content p {
+  margin: 0;
+  color: rgb(44 44 44 / 50%);
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1300px) {
+  .article-item__body {
+    padding: 40px;
+  }
+
+  .article-item__body-container {
+    gap: 30px;
+  }
+
+  .article-item__section {
+    gap: 30px;
+  }
+
+  .article-item__section-title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .article-item__text-columns {
+    gap: 24px;
+    font-size: 18px;
+  }
+
+  .article-item__text-column {
+    gap: 24px;
+  }
+
+  .article-item__image {
+    height: 560px;
+  }
+
+  .article-item__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .article-item__card {
+    gap: 28px;
+    padding: 24px;
+  }
+
+  .article-item__card-content h3 {
+    font-size: 22px;
+  }
+
+  .article-item__card-content p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .article-item__body {
+    padding: 20px 10px;
+  }
+
+  .article-item__body-container,
+  .article-item__section {
+    gap: 20px;
+  }
+
+  .article-item__section-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .article-item__text-columns {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .article-item__text-column {
+    gap: 16px;
+  }
+
+  .article-item__image {
+    height: 260px;
+    border-radius: 20px;
+  }
+
+  .article-item__cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .article-item__card {
+    gap: 20px;
+    min-height: 0;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .article-item__card-content h3 {
+    font-size: 18px;
+  }
+
+  .article-item__card-content p {
+    font-size: 16px;
+  }
+}
