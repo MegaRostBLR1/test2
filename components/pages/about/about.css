@@ -2505,3 +2505,115 @@
   }
 }
 
+
+
+/* Figma 1857:133956 — «Почему завод ПК Веста», tablet frame 1024 px.
+   Desktop 1920/1440 rules above are preserved; the content changes to a vertical flow. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .about-reasons {
+    padding: 40px 10px;
+  }
+
+  .about-reasons__inner {
+    padding: 0 40px;
+  }
+
+  .about-reasons__header {
+    gap: 18px;
+    margin-bottom: 36px;
+  }
+
+  .about-reasons__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .about-reasons__subtitle {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .about-reasons__tabs {
+    display: grid;
+    grid-template-columns: 164px 168px 89px 152px;
+    gap: 4px;
+    width: 593px;
+    max-width: 100%;
+    min-height: 62px;
+    margin-bottom: 36px;
+    padding: 4px;
+    border-radius: 20px;
+  }
+
+  .about-reasons__tab,
+  .about-reasons__tab.is-active {
+    flex: initial;
+    min-height: 54px;
+    padding: 12px 8px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 26px;
+    white-space: nowrap;
+  }
+
+  .about-reasons__tab.is-active {
+    font-size: 14px;
+  }
+
+  .about-reasons__panel {
+    flex-direction: column;
+    min-height: 0;
+    padding: 40px;
+    border-radius: 30px;
+  }
+
+  .about-reasons__content {
+    flex: 0 0 auto;
+    gap: 36px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-reasons__copy {
+    gap: 18px;
+    width: 100%;
+  }
+
+  .about-reasons__eyebrow {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .about-reasons__heading {
+    width: 100%;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .about-reasons__description {
+    max-width: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about-reasons__link {
+    width: 100%;
+    min-width: 0;
+    min-height: 54px;
+    padding: 15px 30px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .about-reasons__map {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    align-self: stretch;
+    width: 100%;
+    max-width: 844px;
+    height: auto;
+    margin: 24px 0 0;
+  }
+}
