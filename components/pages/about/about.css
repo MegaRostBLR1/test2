@@ -1881,3 +1881,129 @@
     border-radius: 20px;
   }
 }
+
+
+/* Figma 1857:133930 — «Лица компании», tablet frame 1024 px.
+   Изменяется только tablet layout; desktop frames 1440/1920 остаются без изменений. */
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .about-team__panel {
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+
+  .about-team__content {
+    gap: 36px;
+  }
+
+  .about-team__header {
+    gap: 24px;
+  }
+
+  .about-team__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .about-team__subtitle {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .about-team__gallery {
+    gap: 20px;
+  }
+
+  .about-team__featured-row {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  .about-team__featured {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2520 / 1417;
+    border-radius: 30px;
+  }
+
+  .about-team__featured img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-team__featured--peek {
+    display: none;
+  }
+
+  .about-team__controls {
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(467px, 100%);
+    height: 101px;
+    margin: auto;
+    pointer-events: none;
+  }
+
+  .about-team__arrow {
+    flex: 0 0 90.51px;
+    width: 90.51px;
+    height: 90.51px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    font-size: 0;
+  }
+
+  .about-team__arrow::before {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #FFFFFF80;
+    border-radius: 20px;
+    background: #FFFFFF;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  .about-team__arrow span {
+    position: relative;
+    z-index: 1;
+    display: block;
+    color: #324C88;
+    font-family: "Onest-Regular", sans-serif;
+    font-size: 40px;
+    line-height: 1;
+    transform: none;
+  }
+
+  .about-team__arrow--previous span {
+    transform: rotate(180deg);
+  }
+
+  .about-team__arrow--previous::before {
+    transform: rotate(-45deg);
+  }
+
+  .about-team__arrow--next::before {
+    transform: rotate(45deg);
+  }
+
+  .about-team__thumbnails {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .about-team__thumbnail {
+    height: 300px;
+    border-radius: 30px;
+  }
+
+  .about-team__thumbnail:nth-child(n + 4) {
+    display: none;
+  }
+}
