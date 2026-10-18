@@ -739,19 +739,6 @@
   overflow-wrap: anywhere;
 }
 
-.contacts-representations__contact {
-  min-width: 0;
-  border-radius: 0.7778rem;
-  background: #FFFFFF;
-  color: #5D5D5D;
-  font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 0.7778rem;
-  font-weight: 600;
-  line-height: 1.6;
-  text-align: center;
-  overflow-wrap: anywhere;
-}
-
 .contacts-representations__contact strong {
   font-size: 0.7778rem;
   font-weight: 600;
