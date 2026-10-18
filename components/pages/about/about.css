@@ -3049,47 +3049,9 @@
 
 
 /* Figma 1857:140010 — mobile documents frame, 360 px. */
-.about-documents__more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  padding: 0;
-  color: #324C88;
-  background: transparent;
-  font-family: "Onest-Medium", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 25px;
-}
-.about-documents__more-icon {
-  position: relative;
-  display: block;
-  flex: 0 0 24px;
-  width: 24px;
-  height: 24px;
-  transform: rotate(180deg);
-}
-.about-documents__more-icon::before {
-  position: absolute;
-  top: 5px;
-  left: 7px;
-  width: 8px;
-  height: 8px;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  content: "";
-  transform: rotate(45deg);
-}
-.about-documents__more[aria-expanded="true"] .about-documents__more-icon {
-  transform: none;
-}
-.about-documents__grid:not(.is-expanded) .about-documents__card:nth-child(n + 3) {
-  display: none;
-}
-.about-documents__grid.is-expanded .about-documents__card {
-  display: flex;
-}
+.about-documents__more { display: none; }
+.about-documents__more-icon { position: relative; display: block; flex: 0 0 24px; width: 24px; height: 24px; }
+.about-documents__more-icon::before { position: absolute; top: 5px; left: 7px; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; content: ""; transform: rotate(45deg); }
 @media screen and (max-width: 680px) {
   .about-documents { padding: 20px 10px; }
   .about-documents__container { gap: 24px; }
@@ -3101,5 +3063,9 @@
   .about-documents__icon { flex-basis: 48px; width: 48px; height: 48px; }
   .about-documents__name { font-size: 16px; line-height: 22px; }
   .about-documents__meta { font-size: 14px; line-height: 20px; }
-
+  .about-documents__card:nth-child(n + 3) { display: none; }
+  .about-documents__grid.is-expanded .about-documents__card { display: flex; }
+  .about-documents__more { display: flex; align-items: center; justify-content: center; gap: 14px; padding: 0; color: #324C88; font-family: "Onest-Medium", sans-serif; font-size: 18px; font-weight: 500; line-height: 25px; }
+  .about-documents__more-icon { transform: rotate(180deg); }
+  .about-documents__more[aria-expanded="true"] .about-documents__more-icon { transform: none; }
 }
