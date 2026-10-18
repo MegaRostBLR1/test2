@@ -18,7 +18,11 @@ function initArticleItem() {
     popup.hidden = isExpanded;
   }
 
-  contentsList.addEventListener('click', toggleContents);
+  contentsList.addEventListener('click', (event) => {
+    if (!isCompactLayout()) return;
+    if (event.target.closest('a')) event.preventDefault();
+    toggleContents();
+  });
   contentsList.addEventListener('keydown', (event) => {
     if (!isCompactLayout() || (event.key !== 'Enter' && event.key !== ' ')) return;
     event.preventDefault();
