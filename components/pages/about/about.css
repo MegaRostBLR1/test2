@@ -913,3 +913,389 @@
     line-height: 18px;
   }
 }
+
+/* Figma: About timeline, desktop frame 1920 px (1857:126762). */
+.about-timeline {
+  padding: 5px;
+  background: #F5F8F7;
+}
+
+.about-timeline__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 80px 40px;
+  border-radius: 21px;
+  background: #324C88;
+  color: #FFFFFF;
+}
+
+.about-timeline__container {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  width: 100%;
+}
+
+.about-timeline__header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.about-timeline__eyebrow,
+.about-timeline__title {
+  color: #FFFFFF;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about-timeline__eyebrow {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.about-timeline__title {
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.about-timeline__divider {
+  width: 100%;
+  height: 2px;
+  background: #FFFFFF1A;
+}
+
+.about-timeline__story {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.about-timeline__story-content {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  min-width: 0;
+}
+
+.about-timeline__year {
+  color: #FFFFFF;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 140px;
+  font-weight: 600;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.about-timeline__description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.about-timeline__story-title {
+  color: #FFFFFF;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.about-timeline__description p {
+  color: #FFFFFF;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.about-timeline__controls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.about-timeline__arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 90.51px;
+  width: 90.51px;
+  height: 90.51px;
+  border-radius: 20px;
+}
+
+.about-timeline__arrow::before {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #FFFFFF80;
+  border-radius: 20px;
+  background: #FFFFFF;
+  content: '';
+}
+
+.about-timeline__arrow img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.about-timeline__arrow--previous img {
+  transform: rotate(-45deg);
+}
+
+.about-timeline__arrow--next img {
+  transform: rotate(45deg);
+}
+
+.about-timeline__image {
+  flex: 0 1 801px;
+  width: 44%;
+  min-width: 0;
+  aspect-ratio: 801 / 549;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+
+.about-timeline__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-timeline__years {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.about-timeline__milestone {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  gap: 36px;
+  min-width: 0;
+}
+
+.about-timeline__milestone:last-child {
+  flex: 0 0 auto;
+}
+
+.about-timeline__milestone-mark {
+  position: relative;
+  display: flex;
+  flex: 0 0 114px;
+  align-items: center;
+  justify-content: center;
+  width: 114px;
+  height: 119px;
+}
+
+.about-timeline__milestone-mark img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-timeline__milestone-mark span {
+  position: relative;
+  color: #FFFFFF;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.about-timeline__milestone.is-active .about-timeline__milestone-mark span {
+  color: #324C88;
+}
+
+.about-timeline__milestone-line {
+  flex: 1 1 auto;
+  height: 2px;
+  min-width: 12px;
+  border-radius: 10px;
+  background: #FFFFFF80;
+}
+
+.about-timeline__arrow:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 4px;
+}
+
+@media screen and (max-width: 1300px) {
+  .about-timeline__panel {
+    padding: 56px 32px;
+  }
+
+  .about-timeline__container {
+    gap: 64px;
+  }
+
+  .about-timeline__story {
+    gap: 28px;
+  }
+
+  .about-timeline__year {
+    font-size: 88px;
+  }
+
+  .about-timeline__story-title {
+    font-size: 28px;
+  }
+
+  .about-timeline__description p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .about-timeline__image {
+    flex-basis: 48%;
+  }
+
+  .about-timeline__years,
+  .about-timeline__milestone {
+    gap: 16px;
+  }
+
+  .about-timeline__milestone-mark {
+    flex-basis: 86px;
+    width: 86px;
+    height: 90px;
+  }
+
+  .about-timeline__milestone-mark span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .about-timeline {
+    padding: 5px;
+  }
+
+  .about-timeline__panel {
+    padding: 32px 20px;
+    border-radius: 16px;
+  }
+
+  .about-timeline__container {
+    gap: 32px;
+  }
+
+  .about-timeline__header {
+    gap: 14px;
+  }
+
+  .about-timeline__eyebrow {
+    font-size: 14px;
+  }
+
+  .about-timeline__title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .about-timeline__story {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+  }
+
+  .about-timeline__story-content {
+    gap: 24px;
+  }
+
+  .about-timeline__year {
+    font-size: 64px;
+  }
+
+  .about-timeline__description {
+    gap: 14px;
+  }
+
+  .about-timeline__story-title {
+    font-size: 22px;
+  }
+
+  .about-timeline__description p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .about-timeline__controls {
+    gap: 16px;
+  }
+
+  .about-timeline__arrow {
+    flex-basis: 64px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .about-timeline__arrow::before {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+  }
+
+  .about-timeline__arrow img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .about-timeline__image {
+    flex: 0 0 auto;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .about-timeline__years {
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .about-timeline__milestone {
+    flex: 0 0 auto;
+    gap: 12px;
+  }
+
+  .about-timeline__milestone-mark {
+    flex-basis: 64px;
+    width: 64px;
+    height: 68px;
+  }
+
+  .about-timeline__milestone-mark span {
+    font-size: 13px;
+  }
+
+  .about-timeline__milestone-line {
+    min-width: 16px;
+  }
+}
