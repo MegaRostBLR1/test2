@@ -229,18 +229,22 @@
 }
 
 .contacts__visual {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   min-height: 100%;
   overflow: hidden;
   border-radius: 1rem;
+  background: #F5F8F7;
 }
 
-.contacts__image {
+.contacts__map {
   display: block;
+  flex: 1 1 auto;
   width: 100%;
+  min-height: 0;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  border: 0;
 }
 
 @media screen and (max-width: 1500px) {
@@ -253,7 +257,11 @@
   }
 
   .contacts__phone-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contacts__phone-card:last-child {
+    grid-column: 1 / -1;
   }
 }
 
@@ -267,6 +275,10 @@
   }
 
   .contacts__visual {
+    min-height: 24rem;
+  }
+
+  .contacts__map {
     min-height: 24rem;
   }
 
@@ -313,6 +325,14 @@
 
   .contacts__visual {
     min-height: 18rem;
+  }
+
+  .contacts__map {
+    min-height: 18rem;
+  }
+
+  .contacts__phone-card:last-child {
+    grid-column: auto;
   }
 }
 
