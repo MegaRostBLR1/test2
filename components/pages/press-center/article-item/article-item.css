@@ -314,7 +314,8 @@
 .article-item__contents-popup {
   position: absolute;
   z-index: 2;
-  top: calc(100% + 8px);
+  top: 100%;
+  margin-top: 8px;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -374,5 +375,87 @@
     gap: 14px;
     font-size: 16px;
     line-height: 22px;
+  }
+}
+
+
+/* Mobile layout — Figma node 1893:91090 (360px). */
+@media screen and (max-width: 680px) {
+  .article-item__breadcrumbs {
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 10px;
+  }
+
+  .article-item__title {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .article-item__contents {
+    align-items: center;
+    gap: 14px;
+  }
+
+  .article-item__contents-title {
+    align-self: flex-start;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .article-item__contents-list {
+    display: block;
+    width: 100%;
+  }
+
+  .article-item__contents-item:not(:first-child) {
+    display: none;
+  }
+
+  .article-item__contents-item,
+  .article-item__contents-item:nth-child(n + 5) {
+    min-height: 52px;
+  }
+
+  .article-item__contents-item a {
+    gap: 14px;
+    padding: 14px 18px;
+  }
+
+  .article-item__contents-number,
+  .article-item__contents-label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .article-item__contents-number {
+    width: auto;
+  }
+
+  .article-item__contents-icon {
+    display: block;
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+  }
+
+  .article-item__contents-icon::before {
+    display: block;
+    width: 9px;
+    height: 9px;
+    margin: 5px auto 0;
+    border-right: 2px solid #324c88;
+    border-bottom: 2px solid #324c88;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  .article-item__contents-popup {
+    top: 100%;
+    margin-top: 8px;
+    width: 100%;
+    padding: 14px 12px;
   }
 }
