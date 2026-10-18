@@ -1495,3 +1495,256 @@
     font-size: 24px;
   }
 }
+
+
+/* Figma: «Лица компании», desktop 1920 px (1857:126830). */
+.about-team {
+  padding: 10px;
+  background: #F5F8F7;
+}
+
+.about-team__panel {
+  width: 100%;
+  padding: 60px 40px;
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+
+.about-team__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  width: 100%;
+}
+
+.about-team__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-team__title {
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.about-team__subtitle {
+  color: #333333;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.about-team__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1736px;
+}
+
+.about-team__featured-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-team__featured {
+  position: relative;
+  flex: 0 0 66.55%;
+  min-width: 0;
+  height: 649px;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #E5E8EC;
+}
+
+.about-team__featured img,
+.about-team__thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-team__featured--peek {
+  flex-basis: 66.55%;
+}
+
+.about-team__controls {
+  position: absolute;
+  inset: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.about-team__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: 1px solid #FFFFFF80;
+  border-radius: 20px;
+  color: #324C88;
+  background: #FFFFFF;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 48px;
+  line-height: 1;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.about-team__arrow--previous {
+  transform: rotate(-45deg);
+}
+
+.about-team__arrow--next {
+  transform: rotate(45deg);
+}
+
+.about-team__arrow span {
+  display: block;
+  transform: rotate(45deg);
+}
+
+.about-team__thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.about-team__thumbnail {
+  min-width: 0;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #E5E8EC;
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .about-team__panel {
+    padding: 48px 30px;
+  }
+
+  .about-team__featured,
+  .about-team__featured--peek {
+    height: 540px;
+  }
+
+  .about-team__thumbnail {
+    height: 240px;
+  }
+}
+
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .about-team__panel {
+    padding: 40px;
+  }
+
+  .about-team__title {
+    font-size: 36px;
+  }
+
+  .about-team__subtitle {
+    font-size: 18px;
+  }
+
+  .about-team__featured,
+  .about-team__featured--peek {
+    flex-basis: 75%;
+    height: 420px;
+  }
+
+  .about-team__thumbnail {
+    height: 180px;
+    border-radius: 20px;
+  }
+
+  .about-team__arrow {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .about-team {
+    padding: 10px;
+  }
+
+  .about-team__panel {
+    padding: 30px 10px;
+    border-radius: 10px;
+  }
+
+  .about-team__content {
+    gap: 24px;
+  }
+
+  .about-team__header {
+    gap: 14px;
+  }
+
+  .about-team__title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .about-team__subtitle {
+    max-width: 320px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .about-team__featured-row {
+    gap: 12px;
+  }
+
+  .about-team__featured,
+  .about-team__featured--peek {
+    flex-basis: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+  }
+
+  .about-team__featured--peek {
+    display: none;
+  }
+
+  .about-team__controls {
+    inset: 0 12px;
+  }
+
+  .about-team__arrow {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    font-size: 34px;
+  }
+
+  .about-team__thumbnails {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .about-team__thumbnail {
+    height: auto;
+    aspect-ratio: 4 / 3;
+    border-radius: 16px;
+  }
+}
