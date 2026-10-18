@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.3333rem;
+  gap: 1.6667rem;
   min-width: 0;
   padding: 2.2222rem;
   border-radius: 0 0 1.6667rem 1.6667rem;
@@ -22,7 +22,7 @@
   gap: 1.1111rem;
   color: #4d4d4d;
   font-family: "Onest-Medium", sans-serif;
-  font-size: 0.8889rem;
+  font-size: 1.1111rem;
   font-weight: 500;
   line-height: 1.25;
 }
@@ -55,9 +55,9 @@
   margin: 0;
   color: #4d4d4d;
   font-family: "Onest-Medium", sans-serif;
-  font-size: 2.2222rem;
+  font-size: 3.5556rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 4rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -84,9 +84,9 @@
   border-radius: 0.7778rem;
   color: #4d4d4d;
   font-family: "Onest-SemiBold", sans-serif;
-  font-size: 0.8889rem;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 1.625;
+  line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -101,15 +101,26 @@
   background: #fff500;
 }
 
+@media screen and (max-width: 1500px) {
+  .press-faq__categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .press-faq__panel {
     gap: 1.3333rem;
     padding: 2.2222rem;
   }
 
-  .press-faq__categories {
-    flex-wrap: wrap;
-    justify-content: center;
+  .press-faq__breadcrumbs {
+    font-size: 1rem;
+  }
+
+  .press-faq__title {
+    font-size: 2.6667rem;
+    line-height: 1.2;
   }
 
   .press-faq__category {
