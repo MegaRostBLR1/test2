@@ -772,7 +772,7 @@
    Desktop rules above remain the source for 1440px and 1920px. */
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
   .article-item__body {
-    padding: 40px;
+    padding: 40px 0;
   }
 
   .article-item__body-container {
