@@ -1943,13 +1943,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: min(467px, 100%);
+    width: 100%;
+    max-width: 467px;
     height: 101px;
     margin: auto;
     pointer-events: none;
   }
 
   .about-team__arrow {
+    position: relative;
     flex: 0 0 90.51px;
     width: 90.51px;
     height: 90.51px;
@@ -1961,6 +1963,8 @@
 
   .about-team__arrow::before {
     position: absolute;
+    inset: 0;
+    margin: auto;
     width: 64px;
     height: 64px;
     border: 1px solid #FFFFFF80;
