@@ -363,6 +363,8 @@
 }
 
 .press-faq-item {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   overflow: clip;
   border-radius: 20px;
