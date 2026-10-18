@@ -1,4 +1,14 @@
 function initAbout() {
+  const documentsGrid = document.querySelector('.about-documents__grid');
+  const documentsMore = document.querySelector('.about-documents__more');
+
+  if (documentsGrid && documentsMore) {
+    documentsMore.addEventListener('click', () => {
+      const expanded = documentsGrid.classList.toggle('is-expanded');
+      documentsMore.setAttribute('aria-expanded', String(expanded));
+      documentsMore.querySelector('span').textContent = expanded ? 'Скрыть' : 'Показать еще';
+    });
+  }
   const tabs = document.querySelectorAll('.about__media-tab');
 
   const gallery = document.querySelector('.about-team__featured-row');
