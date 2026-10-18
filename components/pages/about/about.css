@@ -292,3 +292,55 @@
     border-radius: 30px;
   }
 }
+
+/* Figma: About, responsive frame 1024 px (1857:133156). */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .about {
+    padding: 40px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .about__container,
+  .about__intro {
+    gap: 24px;
+  }
+
+  .about__title {
+    max-width: 698px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .about__description {
+    max-width: 764px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .about__button.btn {
+    min-height: 0;
+    padding: 26px 32px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 1.26;
+  }
+
+  .about__media-switch {
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding: 4px;
+  }
+
+  .about__media-tab {
+    flex: 0 0 auto;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+
+  .about__media-frame {
+    max-width: none;
+    aspect-ratio: 1220 / 600;
+    border-radius: 20px;
+  }
+}
