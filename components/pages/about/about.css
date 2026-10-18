@@ -2968,11 +2968,12 @@
 
   .about-documents__grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 5px;
+    column-gap: 5px;
+    row-gap: 24px;
   }
 
   .about-documents__card {
-    min-height: 243px;
+    min-height: 244px;
     padding: 30px 20px;
     gap: 20px;
   }
