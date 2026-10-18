@@ -414,3 +414,102 @@
     padding: 1.1111rem;
   }
 }
+
+/* Figma 1857:103450 — contact channels. */
+.contacts-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6667rem;
+  width: 100%;
+  min-width: 0;
+  padding: 2.2222rem;
+  border-radius: 1.1111rem;
+}
+.contacts-links__title {
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: 1.1667;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contacts-links__frame {
+  width: 100%;
+  min-width: 0;
+  padding: 0.2222rem;
+  border-radius: 0.7778rem;
+  background: #F5F8F7;
+}
+.contacts-links__cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.2778rem;
+  width: 100%;
+  min-width: 0;
+  padding: 1.8333rem 1.3333rem;
+  border-radius: 1rem;
+  background: #FFFFFF;
+}
+.contacts-links__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5556rem;
+  min-width: 0;
+  padding: 1.1111rem;
+  border-radius: 0.7778rem;
+  background: #F5F8F7;
+}
+.contacts-links__label {
+  margin: 0;
+  color: #5D5D5D;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: none;
+}
+.contacts-links__value {
+  max-width: 100%;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+.contacts-links__value:hover { color: #324C88; }
+.contacts-links__socials { display: flex; flex-wrap: wrap; gap: 0.5556rem; }
+.contacts-links__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3333rem 0.4444rem;
+  border-radius: 0.5556rem;
+  background: #FFFFFF;
+}
+.contacts-links__social-link img {
+  display: block;
+  width: 1.1111rem;
+  height: 1.1111rem;
+  object-fit: contain;
+}
+.contacts-links__value:focus-visible,
+.contacts-links__social-link:focus-visible { outline: 2px solid #324C88; outline-offset: 3px; }
+@media screen and (max-width: 1300px) {
+  .contacts-links { padding: 1.6667rem; }
+  .contacts-links__title { font-size: 2.2222rem; }
+  .contacts-links__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media screen and (max-width: 680px) {
+  .contacts-links { gap: 1.1111rem; padding: 1.1111rem 0; }
+  .contacts-links__title { font-size: 1.3333rem; line-height: 1.3333; }
+  .contacts-links__cards { grid-template-columns: minmax(0, 1fr); gap: 0.2778rem; padding: 1rem; }
+  .contacts-links__card { padding: 1.1111rem; }
+  .contacts-links__label, .contacts-links__value { font-size: 0.8889rem; }
+}
