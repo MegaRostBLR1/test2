@@ -499,6 +499,28 @@
 }
 .contacts-links__value:focus-visible,
 .contacts-links__social-link:focus-visible { outline: 2px solid #324C88; outline-offset: 3px; }
+/* Figma 1857:103892 — contacts block at 1024px. */
+@media screen and (min-width: 1001px) and (max-width: 1100px) {
+  .contacts-links {
+    gap: 1.6667rem;
+    padding: 2.2222rem;
+  }
+
+  .contacts-links__title {
+    font-size: 1.3333rem;
+    line-height: 1.7778rem;
+  }
+
+  .contacts-links__cards {
+    gap: 0.2778rem;
+    padding: 1.8333rem 1.3333rem;
+  }
+
+  .contacts-links__card {
+    padding: 1.1111rem;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .contacts-links { gap: 1.3333rem; }
   .contacts-links__title { font-size: 2.2222rem; }
