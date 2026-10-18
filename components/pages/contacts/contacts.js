@@ -34,6 +34,9 @@ function initContacts() {
     // Additional office details are not present in the supplied design data.
     const moreButton = representations.querySelector('.contacts-representations__more');
     moreButton?.addEventListener('click', () => {
+      representations.querySelectorAll('.contacts-representations__card[data-layout-1920]')
+        .forEach((card) => card.removeAttribute('data-layout-1920'));
+
       moreButton.querySelector('span').textContent = 'Все представительства показаны';
       moreButton.disabled = true;
     });
