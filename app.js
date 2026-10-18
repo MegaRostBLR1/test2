@@ -1,7 +1,7 @@
 const APP_CONFIG = {
   header: {
     html: './components/layout/header/header.html',
-    css: './components/layout/header/header.css',
+    css: null,
     js: './components/layout/header/header.js'
   },
   footer: {
@@ -207,7 +207,9 @@ async function loadHtml(url) {
 
 async function loadComponent(target, component) {
   target.innerHTML = await loadHtml(component.html);
-  loadStylesheet(component.css);
+  if (component.css) {
+    loadStylesheet(component.css);
+  }
   await loadScript(component.js);
 }
 
