@@ -182,3 +182,54 @@
     transition: none;
   }
 }
+
+
+/* Tablet layout: Figma frame 1857:100471 (1024px). Desktop rules remain the source
+   for 1440px and 1920px; this breakpoint only adapts the existing component. */
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .press-faq {
+    padding: 40px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .press-faq__inner {
+    gap: 24px;
+  }
+
+  .press-faq__breadcrumbs {
+    align-self: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .press-faq__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .press-faq__categories {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 4px;
+    width: 100%;
+    overflow-x: auto;
+    padding: 4px;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+  }
+
+  .press-faq__categories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .press-faq__category {
+    min-height: 54px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
