@@ -428,3 +428,337 @@
     border-radius: 20px;
   }
 }
+
+
+/* Figma: About history block, desktop 1920 px (1857:126148). */
+.about-history {
+  position: relative;
+  padding: 4.444rem 2.222rem;
+  border-radius: 1.167rem;
+  background: #f5f8f7;
+}
+
+.about-history__layout {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 52.889rem;
+}
+
+.about-history__visual {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 0;
+  width: 64%;
+  height: 57.056rem;
+  transform: translateY(-50%);
+}
+
+.about-history__background {
+  position: absolute;
+  top: -5.5rem;
+  right: -1.111rem;
+  display: block;
+  width: 67.833rem;
+  max-width: none;
+  height: 57.056rem;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.about-history__tiles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 31.806rem;
+  height: 31.806rem;
+  transform: translate(-50%, -35%);
+}
+
+.about-history__tile {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.111rem;
+  height: 11.111rem;
+  border-radius: 0.556rem;
+  color: #324c88;
+  text-decoration: none;
+  transform: rotate(45deg);
+  transition: box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.about-history__tile--video {
+  background: rgb(255 255 255 / 92%);
+  backdrop-filter: blur(2px);
+}
+
+.about-history__tile--download {
+  top: 57%;
+  left: 0;
+  color: #fff;
+  background: #324c88;
+}
+
+.about-history__tile--video-30 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.about-history__tile--video-25 {
+  top: 29%;
+  right: 0;
+}
+
+.about-history__tile--video-35 {
+  top: 29%;
+  left: 0;
+}
+
+.about-history__tile-icon {
+  position: absolute;
+  top: 1.111rem;
+  left: 1.111rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.667rem;
+  height: 2.667rem;
+  border-radius: 1.111rem;
+  background: #324c88;
+  transform: rotate(-45deg);
+}
+
+.about-history__tile-icon--light {
+  background: #fff;
+}
+
+.about-history__tile-icon img {
+  display: block;
+  width: 1.333rem;
+  height: 1.333rem;
+}
+
+.about-history__tile-icon--light img {
+  width: 1.333rem;
+  height: 1.333rem;
+}
+
+.about-history__tile-label {
+  display: block;
+  width: 9.833rem;
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.444rem;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+}
+
+.about-history__tile:hover,
+.about-history__tile:focus-visible {
+  box-shadow: 0 0.333rem 1.111rem rgb(50 76 136 / 18%);
+}
+
+.about-history__tile:focus-visible {
+  outline: 2px solid #324c88;
+  outline-offset: 4px;
+}
+
+.about-history__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1.333rem;
+  width: 55.556%;
+  padding: 3.333rem;
+  border-radius: 1.111rem;
+  background: #fff;
+}
+
+.about-history__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1.667rem;
+}
+
+.about-history__eyebrow {
+  margin: 0;
+  color: #4d4d4de6;
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 1.333rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.about-history__title {
+  margin: 0;
+  color: #4d4d4d;
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 2.667rem;
+  font-weight: 600;
+  line-height: 1.333;
+}
+
+.about-history__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.333rem;
+  color: #4d4d4de6;
+  font-family: "Onest-Regular", sans-serif;
+  font-size: 1.333rem;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.about-history__text p {
+  margin: 0;
+}
+
+.about-history__text strong {
+  font-family: "Onest-SemiBold", sans-serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1600px) {
+  .about-history {
+    padding: 3.333rem;
+  }
+
+  .about-history__layout {
+    min-height: 47.222rem;
+  }
+
+  .about-history__content {
+    width: 57%;
+    padding: 2.778rem;
+  }
+
+  .about-history__title {
+    font-size: 2.333rem;
+  }
+
+  .about-history__text {
+    font-size: 1.111rem;
+    line-height: 1.75;
+  }
+
+  .about-history__visual {
+    right: -1.667rem;
+    width: 60%;
+    transform: translateY(-50%) scale(.88);
+    transform-origin: center right;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .about-history {
+    padding: 2.222rem;
+  }
+
+  .about-history__layout {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2.222rem;
+  }
+
+  .about-history__content {
+    width: 100%;
+    padding: 2.222rem;
+  }
+
+  .about-history__visual {
+    position: relative;
+    top: auto;
+    right: auto;
+    order: 2;
+    width: 100%;
+    height: 35rem;
+    transform: none;
+  }
+
+  .about-history__background {
+    top: -2.778rem;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-history__tiles {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.82);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .about-history {
+    padding: 1.111rem 0.556rem;
+    border-radius: 0.556rem;
+  }
+
+  .about-history__layout {
+    gap: 1.111rem;
+    min-height: 0;
+  }
+
+  .about-history__content {
+    gap: 1rem;
+    padding: 1.333rem 1.111rem;
+    border-radius: 0.778rem;
+  }
+
+  .about-history__heading {
+    gap: 0.778rem;
+  }
+
+  .about-history__eyebrow {
+    font-size: 0.889rem;
+  }
+
+  .about-history__title {
+    font-size: 1.556rem;
+    line-height: 1.333;
+  }
+
+  .about-history__text {
+    gap: 0.889rem;
+    font-size: 0.889rem;
+    line-height: 1.6;
+  }
+
+  .about-history__visual {
+    height: 23.333rem;
+  }
+
+  .about-history__background {
+    top: 0;
+    height: 100%;
+  }
+
+  .about-history__tiles {
+    transform: translate(-50%, -50%) scale(.58);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .about-history__content {
+    padding: 1.111rem 0.889rem;
+  }
+
+  .about-history__visual {
+    height: 20rem;
+  }
+
+  .about-history__tiles {
+    transform: translate(-50%, -50%) scale(.5);
+  }
+}
