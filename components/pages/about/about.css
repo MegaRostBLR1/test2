@@ -1200,39 +1200,51 @@
   }
 
   .about-timeline__panel {
-    padding: 32px 20px;
-    border-radius: 16px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 21px;
   }
 
   .about-timeline__container {
-    gap: 32px;
+    gap: 24px;
   }
 
   .about-timeline__header {
-    gap: 14px;
+    gap: 24px;
   }
 
   .about-timeline__eyebrow {
-    font-size: 14px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
   }
 
   .about-timeline__title {
-    font-size: 24px;
-    line-height: 1.3;
+    margin: 0;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .about-timeline__divider {
+    flex: 0 0 2px;
   }
 
   .about-timeline__story {
     flex-direction: column;
     align-items: stretch;
-    gap: 28px;
-  }
-
-  .about-timeline__story-content {
+    justify-content: flex-start;
     gap: 24px;
   }
 
+  .about-timeline__story-content {
+    flex: 0 0 auto;
+    gap: 18px;
+    width: 100%;
+  }
+
   .about-timeline__year {
-    font-size: 64px;
+    font-size: 40px;
+    line-height: 1.2;
   }
 
   .about-timeline__description {
@@ -1240,12 +1252,15 @@
   }
 
   .about-timeline__story-title {
-    font-size: 22px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .about-timeline__description p {
+    margin: 0;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 22px;
   }
 
   .about-timeline__controls {
@@ -1272,34 +1287,47 @@
   .about-timeline__image {
     flex: 0 0 auto;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 801 / 549;
+    margin: 0;
   }
 
   .about-timeline__years {
-    gap: 12px;
-    overflow-x: auto;
-    padding-bottom: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
   }
 
   .about-timeline__milestone {
     flex: 0 0 auto;
-    gap: 12px;
+    gap: 10px;
   }
 
   .about-timeline__milestone-mark {
-    flex-basis: 64px;
-    width: 64px;
-    height: 68px;
+    flex-basis: 74px;
+    width: 74px;
+    height: 75px;
   }
 
   .about-timeline__milestone-mark span {
-    font-size: 13px;
+    font-size: 16px;
+    line-height: 1;
   }
 
   .about-timeline__milestone-line {
-    min-width: 16px;
+    flex: 0 0 36px;
+    min-width: 0;
+  }
+
+  .about-timeline__milestone:last-child {
+    flex: 0 0 auto;
   }
 }
+
 
 /* Figma: About timeline, desktop frame 1440 px (1857:130352).
    Отдельная адаптация сохраняет геометрию исходного кадра 1920 px выше этого диапазона. */
