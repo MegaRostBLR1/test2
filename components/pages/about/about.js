@@ -24,4 +24,15 @@ function initAbout() {
       });
     });
   });
+
+  const reasonTabs = document.querySelectorAll('.about-reasons__tab');
+  reasonTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      reasonTabs.forEach((item) => {
+        const active = item === tab;
+        item.classList.toggle('is-active', active);
+        item.setAttribute('aria-pressed', String(active));
+      });
+    });
+  });
 }
