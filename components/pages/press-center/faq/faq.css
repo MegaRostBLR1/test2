@@ -257,9 +257,9 @@
 }
 
 
-/* F.A.Q. — список вопросов по макету Figma 1857:100383. */
+/* F.A.Q. — список вопросов по макету Figma 1857:100315. */
 .press-faq-content {
-  padding: 50px 84px;
+  padding: 50px 45px;
   background: #f5f8f7;
 }
 
@@ -268,7 +268,9 @@
   flex-direction: column;
   gap: 48px;
   width: 100%;
+  max-width: 1700px;
   min-width: 0;
+  margin: 0 auto;
 }
 
 .press-faq-group {
