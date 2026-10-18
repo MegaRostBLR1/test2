@@ -527,9 +527,64 @@
   .contacts-links__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media screen and (max-width: 680px) {
-  .contacts-links { gap: 1.1111rem; }
-  .contacts-links__title { font-size: 1.3333rem; line-height: 1.3333; }
-  .contacts-links__cards { grid-template-columns: minmax(0, 1fr); gap: 0.2778rem; padding: 1rem; }
-  .contacts-links__card { padding: 1.1111rem; }
-  .contacts-links__label, .contacts-links__value { font-size: 0.8889rem; }
+  .contacts-links {
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1.1111rem 0.7778rem;
+    border-radius: 0.5556rem;
+    background: #FFFFFF;
+  }
+
+  .contacts-links__title {
+    align-self: center;
+    max-width: 100%;
+    font-size: 1.1111rem;
+    line-height: 1.5556rem;
+    white-space: nowrap;
+  }
+
+  .contacts-links__frame {
+    padding: 0.2222rem;
+    border-radius: 0.7778rem;
+  }
+
+  .contacts-links__cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.2778rem;
+    padding: 0.7778rem;
+    border-radius: 1rem;
+  }
+
+  .contacts-links__card {
+    gap: 0.5556rem;
+    padding: 1.1111rem;
+    border-radius: 0.7778rem;
+  }
+
+  .contacts-links__label {
+    font-size: 0.8889rem;
+    line-height: 1.5;
+  }
+
+  .contacts-links__value {
+    font-size: 0.8889rem;
+    line-height: 1.5;
+  }
+
+  .contacts-links__card--social .contacts-links__label {
+    font-size: 1rem;
+  }
+
+  .contacts-links__socials {
+    gap: 0.5556rem;
+  }
+
+  .contacts-links__social-link {
+    padding: 0.3333rem 0.4444rem;
+  }
+
+  .contacts-links__social-link img {
+    width: 1.1111rem;
+    height: 1.1111rem;
+  }
 }
