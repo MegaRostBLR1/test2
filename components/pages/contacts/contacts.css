@@ -326,46 +326,82 @@
 
 @media screen and (max-width: 680px) {
   .contacts {
-    padding: 1rem;
+    padding: 2.2222rem 0.5556rem;
   }
 
   .contacts__container {
-    gap: 1.1111rem;
+    gap: 1rem;
   }
 
   .contacts__breadcrumbs {
-    gap: 0.5556rem;
-    font-size: 0.8889rem;
+    justify-content: center;
+    gap: 1.1111rem;
+    font-size: 0.7778rem;
+    line-height: 1.4444;
   }
 
   .contacts__title {
-    font-size: 1.6667rem;
+    align-self: center;
+    font-size: 1.3333rem;
+    line-height: 1.3333;
+  }
+
+  .contacts__layout {
+    gap: 0.2222rem;
+    padding: 0.2222rem;
+    border-radius: 0.7778rem;
   }
 
   .contacts__panel {
     gap: 1.1111rem;
-    padding: 1.1111rem;
+    padding: 1rem;
+    border-radius: 1rem;
   }
 
   .contacts__panel-title {
-    font-size: 1.1111rem;
+    font-size: 0.8889rem;
+    line-height: 1.5556;
+  }
+
+  .contacts__office-data {
+    gap: 0.2778rem;
+  }
+
+  .contacts__address-card,
+  .contacts__requisite,
+  .contacts__phone-card {
+    padding: 1.1111rem;
   }
 
   .contacts__requisites,
   .contacts__phone-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.2778rem;
   }
 
   .contacts__label {
-    font-size: 1rem;
+    font-size: 0.8889rem;
+  }
+
+  .contacts__value {
+    font-size: 0.7778rem;
+    line-height: 1.5;
+  }
+
+  .contacts__phone-number {
+    font-size: 0.8889rem;
+  }
+
+  .contacts__phones {
+    gap: 1.1111rem;
   }
 
   .contacts__visual {
-    min-height: 18rem;
+    min-height: 33.3333rem;
   }
 
   .contacts__map {
-    min-height: 18rem;
+    min-height: 33.3333rem;
   }
 
   .contacts__phone-card:last-child {
@@ -374,11 +410,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .contacts {
-    padding: 0.7778rem;
-  }
-
   .contacts__phone-card {
-    padding: 1rem;
+    padding: 1.1111rem;
   }
 }
