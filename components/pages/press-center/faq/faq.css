@@ -1,0 +1,184 @@
+/* Пресс-центр — верхний блок F.A.Q. по макету Figma 1857:100263. */
+.press-faq {
+  margin: 0 0.2778rem 0.2778rem;
+  padding: 2.2222rem;
+  border-radius: 0 0 1.6667rem 1.6667rem;
+  background: #ffffff;
+}
+
+.press-faq__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6667rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.press-faq__breadcrumbs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.1111rem;
+  max-width: 100%;
+  color: #4d4d4d;
+  font-size: 1.1111rem;
+  line-height: normal;
+}
+
+.press-faq__breadcrumb {
+  color: inherit;
+  font-family: 'Onest-Medium', sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.press-faq__breadcrumb:hover {
+  color: #324c88;
+}
+
+.press-faq__breadcrumb--current {
+  cursor: default;
+}
+
+.press-faq__separator {
+  font-family: 'Onest-Regular', sans-serif;
+  font-weight: 400;
+}
+
+.press-faq__title {
+  margin: 0;
+  color: #4d4d4d;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 3.5556rem;
+  font-weight: 500;
+  line-height: 1.125;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.press-faq__categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.2222rem;
+  max-width: 100%;
+  padding: 0.2222rem;
+  border-radius: 0.5556rem;
+  background: #f5f8f7;
+}
+
+.press-faq__category {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.1556rem;
+  padding: 0.7778rem 1rem;
+  border-radius: 0.7778rem;
+  color: #4d4d4d;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.press-faq__category:hover {
+  background: #fff50073;
+}
+
+.press-faq__category.is-active {
+  background: #fff500;
+}
+
+.press-faq__category:focus-visible,
+.press-faq__breadcrumb:focus-visible {
+  outline: 0.1111rem solid #324c88;
+  outline-offset: 0.1667rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .press-faq {
+    padding: 1.6667rem;
+    border-radius: 0 0 1.1111rem 1.1111rem;
+  }
+
+  .press-faq__inner {
+    gap: 1.3333rem;
+  }
+
+  .press-faq__breadcrumbs {
+    gap: 0.7778rem;
+    font-size: 1rem;
+  }
+
+  .press-faq__title {
+    font-size: 2.6667rem;
+    line-height: 1.2;
+  }
+
+  .press-faq__categories {
+    width: 100%;
+  }
+
+  .press-faq__category {
+    min-height: 2.8889rem;
+    padding: 0.6667rem 0.8889rem;
+    font-size: 0.8889rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .press-faq {
+    margin: 0 0.2778rem 0.2778rem;
+    padding: 1.1111rem 0.7778rem 1.3333rem;
+    border-radius: 0 0 0.5556rem 0.5556rem;
+  }
+
+  .press-faq__inner {
+    gap: 1.1111rem;
+    align-items: stretch;
+  }
+
+  .press-faq__breadcrumbs {
+    justify-content: flex-start;
+    gap: 0.4444rem;
+    font-size: 0.7778rem;
+  }
+
+  .press-faq__title {
+    align-self: center;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .press-faq__categories {
+    justify-content: flex-start;
+    gap: 0.2222rem;
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 0.2222rem;
+    scrollbar-width: thin;
+  }
+
+  .press-faq__category {
+    min-height: 2.4444rem;
+    padding: 0.5556rem 0.7778rem;
+    border-radius: 0.5556rem;
+    font-size: 0.7778rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .press-faq__category {
+    transition: none;
+  }
+}
