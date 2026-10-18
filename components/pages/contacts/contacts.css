@@ -588,3 +588,27 @@
     height: 1.1111rem;
   }
 }
+
+/* Figma 1857:103685 — Представительства. */
+.contacts-representations{display:flex;flex-direction:column;align-items:center;gap:1.6667rem;padding:2.2222rem;border-radius:1.1111rem;background:#FFFFFF}
+.contacts-representations__title{margin:0;color:#4D4D4D;font-family:'Onest-SemiBold',sans-serif;font-size:2rem;font-weight:600;line-height:1.2222;text-align:center;text-transform:uppercase}
+.contacts-representations__filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.2222rem;padding:.2222rem;border-radius:.5556rem;background:#F5F8F7}
+.contacts-representations__filter{padding:.7778rem 1rem;border-radius:.7778rem;color:#5D5D5D;font-family:'Onest-SemiBold',sans-serif;font-size:1rem;font-weight:600;line-height:1.6;text-transform:uppercase;transition:background-color .15s ease}
+.contacts-representations__filter.is-active{background:#FFF500}
+.contacts-representations__filter:focus-visible,.contacts-representations__more:focus-visible{outline:2px solid #324C88;outline-offset:3px}
+.contacts-representations__hotline{color:#4D4D4D;font-family:'Onest-Medium',sans-serif;font-size:1.1111rem;line-height:1.5;text-align:center}
+.contacts-representations__hotline a{white-space:nowrap}
+.contacts-representations__frame{width:100%;padding:.2222rem;border-radius:.7778rem;background:#F5F8F7}
+.contacts-representations__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.2778rem;padding:.5556rem;border-radius:.7778rem;background:#FFFFFF}
+.contacts-representations__card{display:flex;flex-direction:column;gap:1.1111rem;min-width:0;padding:1.1111rem;border-radius:.7778rem;background:#F5F8F7}
+.contacts-representations__card-title{margin:0;color:#4D4D4D;font-family:'Onest-SemiBold',sans-serif;font-size:1rem;font-weight:600;line-height:1.5;overflow-wrap:anywhere}
+.contacts-representations__address{color:#5D5D5D;font-family:'Onest-Medium',sans-serif;font-size:.8333rem;font-weight:500;line-height:1.5;overflow-wrap:anywhere}
+.contacts-representations__contacts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.2778rem}
+.contacts-representations__contact{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:.2222rem;min-width:0;padding:.7778rem 1rem;border-radius:.7778rem;background:#FFFFFF;color:#5D5D5D;font-family:'Onest-SemiBold',sans-serif;font-size:.7778rem;font-weight:600;line-height:1.6;text-align:center;overflow-wrap:anywhere}
+.contacts-representations__contact strong{font-weight:600}
+.contacts-representations__contact span{font-size:.6667rem;font-weight:500}
+.contacts-representations__more{display:flex;align-items:center;justify-content:center;gap:.7778rem;color:#324C88;font-family:'Onest-Medium',sans-serif;font-size:1.2222rem;font-weight:500;line-height:1.4}
+.contacts-representations__more svg{width:1.3333rem;height:1.3333rem;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+.contacts-representations__card[hidden]{display:none}
+@media screen and (max-width:1000px){.contacts-representations{padding:1.3333rem}.contacts-representations__title{font-size:1.6667rem}.contacts-representations__hotline{font-size:1rem}.contacts-representations__grid{grid-template-columns:minmax(0,1fr)}}
+@media screen and (max-width:600px){.contacts-representations{padding:1rem;gap:1.1111rem}.contacts-representations__filters{width:100%}.contacts-representations__filter{flex:1 1 auto;padding:.5556rem .6667rem;font-size:.7778rem}.contacts-representations__contacts{grid-template-columns:minmax(0,1fr)}.contacts-representations__hotline{font-size:.8889rem}}
