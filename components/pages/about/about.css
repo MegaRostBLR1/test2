@@ -3049,7 +3049,24 @@
 
 
 /* Figma 1857:140010 — mobile documents frame, 360 px. */
-.about-documents__more { display: none; }
+.about-documents__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 0;
+  color: #324C88;
+  font-family: "Onest-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.about-documents__more:focus-visible {
+  outline: 2px solid #324C88;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
 .about-documents__more-icon { position: relative; display: block; flex: 0 0 24px; width: 24px; height: 24px; }
 .about-documents__more-icon::before { position: absolute; top: 5px; left: 7px; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; content: ""; transform: rotate(45deg); }
 @media screen and (max-width: 680px) {
