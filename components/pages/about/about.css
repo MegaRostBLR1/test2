@@ -629,34 +629,46 @@
   font-weight: 600;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1101px) and (max-width: 1600px) {
   .about-history {
-    padding: 3.333rem;
+    padding: 4.444rem 2.222rem;
   }
 
   .about-history__layout {
-    min-height: 47.222rem;
+    min-height: 52.889rem;
   }
 
   .about-history__content {
-    width: 57%;
-    padding: 2.778rem;
-  }
-
-  .about-history__title {
-    font-size: 2.333rem;
-  }
-
-  .about-history__text {
-    font-size: 1.111rem;
-    line-height: 1.5;
+    width: 46.7%;
+    padding: 3.333rem;
   }
 
   .about-history__visual {
-    right: -1.667rem;
-    width: 60%;
-    transform: translateY(-50%) scale(.88);
-    transform-origin: center right;
+    right: 0;
+    width: 89.6%;
+    height: 52.889rem;
+    transform: translateY(-50%);
+  }
+
+  .about-history__background {
+    top: -5.5rem;
+    right: -1.111rem;
+    width: 67.833rem;
+    height: 57.056rem;
+  }
+
+  .about-history__tiles {
+    left: 40%;
+    transform: translate(-50%, -35%);
+  }
+
+  .about-history__title {
+    font-size: 2.667rem;
+  }
+
+  .about-history__text {
+    font-size: 1.333rem;
+    line-height: 1.5;
   }
 }
 
