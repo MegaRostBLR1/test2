@@ -1,6 +1,24 @@
-<section class="about">
-  <div class="container">
-    <h1>О компании</h1>
-    <p>Базовый HTML-контент страницы «О компании». Здесь будет размещена информация о компании.</p>
+<section class="about" aria-labelledby="about-title">
+  <div class="about__container">
+    <div class="about__intro">
+      <h1 class="about__title" id="about-title">PK VESTA – ВМЕСТЕ С 1991 г.</h1>
+      <p class="about__description">Мы создаём надёжные решения из металла, объединяя опыт, современные технологии и ответственность за результат.</p>
+      <div class="about__actions">
+        <a class="btn main-btn about__button" href="#/contacts">Связаться с нами</a>
+        <a class="btn secondary-btn about__button" href="#/objects">Наша продукция</a>
+      </div>
+    </div>
+    <div class="about__media">
+      <div class="about__media-switch" role="group" aria-label="Материалы о компании">
+        <button class="about__media-tab is-active" type="button" aria-pressed="true" data-about-media="video">ВИДЕО о компании</button>
+        <button class="about__media-tab" type="button" aria-pressed="false" data-about-media="photo">посмотреть ФОТО</button>
+      </div>
+      <a class="about__media-link" href="https://www.figma.com/design/1N1oZKJBDmVLm5rGPOO401/%D0%9D%D0%9E%D0%92%D0%AB%D0%99-%D0%A1%D0%90%D0%99%D0%A2_copy--Copy-?node-id=1857-126066" target="_blank" rel="noreferrer" aria-label="Открыть материалы о компании">
+        <img class="about__media-image" src="../../../static/images/home/home-about.png" alt="Производство и команда PK Vesta" loading="lazy">
+        <span class="about__media-play" aria-hidden="true">
+          <svg viewBox="0 0 64 64" focusable="false"><circle cx="32" cy="32" r="31" fill="white" fill-opacity=".92"/><path d="M27 21L44 32L27 43V21Z" fill="#324C88"/></svg>
+        </span>
+      </a>
+    </div>
   </div>
 </section>
