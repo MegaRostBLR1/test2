@@ -594,18 +594,20 @@
   }
 }
 
- 
-.articles__card-link {
+.articles__card {
   color: inherit;
   text-decoration: none;
 }
 
-.articles__card-link:hover {
+.articles__card:hover .articles__card-heading {
   color: #324c88;
 }
 
-.articles__card-link:focus-visible {
+.articles__card:focus-visible {
   outline: 2px solid #324c88;
   outline-offset: 3px;
-  border-radius: 2px;
+}
+
+.articles__card:focus-visible .articles__card-heading {
+  color: #324c88;
 }
