@@ -750,3 +750,27 @@
     gap: 24px;
   }
 }
+
+
+/* Keep the expanded mobile card's internal rhythm aligned with the 360px frame. */
+@media screen and (max-width: 680px) {
+  .press-faq-item {
+    padding: 18px 0;
+  }
+
+  .press-faq-item--expanded {
+    gap: 24px;
+  }
+
+  .press-faq-item__text {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 0;
+  }
+
+  .press-faq-item__copy {
+    flex: none;
+  }
+}
