@@ -2617,3 +2617,138 @@
     margin: 24px 0 0;
   }
 }
+
+
+/* Figma 1857:137459 — mobile layout at 360 px. */
+@media screen and (max-width: 680px) {
+  .about-reasons {
+    padding: 20px 10px 10px;
+  }
+
+  .about-reasons__inner {
+    padding: 0;
+  }
+
+  .about-reasons__header {
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .about-reasons__title {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .about-reasons__subtitle {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .about-reasons__tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 4px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    margin: 0 0 24px;
+    padding: 4px;
+    overflow-x: auto;
+    border-radius: 14px;
+    scrollbar-width: none;
+  }
+
+  .about-reasons__tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .about-reasons__tab,
+  .about-reasons__tab.is-active {
+    flex: 0 0 auto;
+    min-height: 42px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 22px;
+    white-space: nowrap;
+  }
+
+  .about-reasons__tab.is-active {
+    font-size: 12px;
+  }
+
+  .about-reasons__panel {
+    flex-direction: column;
+    min-height: 0;
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .about-reasons__content {
+    flex: 0 0 auto;
+    gap: 36px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-reasons__icon {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .about-reasons__icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .about-reasons__copy {
+    gap: 14px;
+    width: 100%;
+  }
+
+  .about-reasons__eyebrow {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .about-reasons__heading {
+    width: 100%;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .about-reasons__description {
+    max-width: none;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .about-reasons__link {
+    align-self: stretch;
+    width: 100%;
+    min-width: 0;
+    min-height: 54px;
+    margin-top: 0;
+    padding: 18px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .about-reasons__map {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    align-self: center;
+    width: 100%;
+    max-width: 304px;
+    height: auto;
+    margin: 14px 0 0;
+  }
+}
