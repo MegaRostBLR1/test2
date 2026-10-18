@@ -1,6 +1,7 @@
 .about {
-  padding: 64px 5px;
-  background: #f5f8f7;
+  padding: 64px 8px;
+  border-radius: 0 0 10px 10px;
+  background: #fff;
 }
 
 .about__container {
@@ -10,30 +11,33 @@
   gap: 36px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 50px;
 }
 
 .about__intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 36px;
   width: 100%;
   text-align: center;
 }
 
 .about__title {
+  width: 100%;
+  max-width: 1338px;
   margin: 0;
   color: #324c88;
   font-family: "Onest-SemiBold", sans-serif;
   font-size: 64px;
   font-weight: 600;
-  line-height: 1.46875;
+  line-height: 94px;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .about__description {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1052px;
   color: #4d4d4d;
   font-family: "Onest-Medium", sans-serif;
   font-size: 24px;
@@ -49,60 +53,65 @@
 }
 
 .about__button.btn {
-  min-width: 260px;
-  min-height: 76px;
-  padding: 24px 28px;
+  min-height: 88px;
+  padding: 32px 40px;
   border-radius: 20px;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.26;
   text-align: center;
 }
 
 .about__media {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 24px;
   width: 100%;
 }
 
 .about__media-switch {
   display: flex;
-  align-self: center;
   align-items: center;
-  gap: 12px;
-  padding: 6px;
-  border-radius: 20px;
-  background: #fff;
+  justify-content: center;
+  gap: 24px;
+  max-width: 100%;
+  padding: 4px;
+  border-radius: 10px;
 }
 
 .about__media-tab {
-  padding: 16px 24px;
-  border-radius: 16px;
-  color: #324c88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  color: #5d5d5dcc;
   font-family: "Onest-SemiBold", sans-serif;
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.6;
+  text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .about__media-tab.is-active {
-  color: #fff;
-  background: #324c88;
+  border-bottom-color: #000;
+  color: #5d5d5d;
+  background: transparent;
 }
 
-.about__media-tab:focus-visible,
-.about__media-link:focus-visible {
+.about__media-tab:focus-visible {
   outline: 2px solid #324c88;
   outline-offset: 4px;
 }
 
-.about__media-link {
-  position: relative;
-  display: block;
+.about__media-frame {
   width: 100%;
+  max-width: 1700px;
   aspect-ratio: 17 / 9;
-  overflow: hidden;
   border-radius: 30px;
   background: #e5e8ec;
 }
@@ -111,30 +120,13 @@
   display: block;
   width: 100%;
   height: 100%;
+  border-radius: inherit;
   object-fit: cover;
 }
 
-.about__media-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: grid;
-  width: 64px;
-  height: 64px;
-  place-items: center;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.about__media-play svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 1300px) {
-  .about__container {
-    padding: 0 30px;
+@media screen and (max-width: 1300px) {
+  .about {
+    padding: 48px 30px;
   }
 
   .about__title {
@@ -146,23 +138,24 @@
     font-size: 20px;
   }
 
-  .about__media-link {
+  .about__button.btn {
+    min-height: 76px;
+    padding: 24px 28px;
+  }
+
+  .about__media-frame {
     aspect-ratio: 16 / 9;
   }
 }
 
-@media (max-width: 680px) {
+@media screen and (max-width: 680px) {
   .about {
-    padding: 32px 5px;
+    padding: 32px 10px;
   }
 
-  .about__container {
-    gap: 24px;
-    padding: 0 10px;
-  }
-
+  .about__container,
   .about__intro {
-    gap: 16px;
+    gap: 24px;
   }
 
   .about__title {
@@ -196,26 +189,27 @@
   }
 
   .about__media-switch {
-    align-self: stretch;
-    gap: 4px;
-    padding: 4px;
-    border-radius: 14px;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   .about__media-tab {
-    flex: 1 1 50%;
-    padding: 12px 8px;
-    border-radius: 10px;
+    padding: 10px 0;
     font-size: 12px;
   }
 
-  .about__media-link {
+  .about__media-frame {
     aspect-ratio: 4 / 3;
     border-radius: 16px;
   }
+}
 
-  .about__media-play {
-    width: 48px;
-    height: 48px;
+@media screen and (max-width: 360px) {
+  .about__media-switch {
+    gap: 8px;
+  }
+
+  .about__media-tab {
+    font-size: 11px;
   }
 }
