@@ -2988,3 +2988,61 @@
     line-height: 1.4;
   }
 }
+
+
+/* Figma 1857:136507 — документы и сертификаты, адаптация планшетного кадра 1024 px. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .about-documents {
+    padding: 40px;
+  }
+
+  .about-documents__container {
+    gap: 24px;
+    max-width: none;
+  }
+
+  .about-documents__header {
+    gap: 17px;
+  }
+
+  .about-documents__eyebrow {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .about-documents__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .about-documents__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(244px, 1fr));
+    column-gap: 5px;
+    row-gap: 5px;
+    height: 512px;
+  }
+
+  .about-documents__card {
+    gap: 20px;
+    min-height: 0;
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+
+  .about-documents__icon {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .about-documents__name {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .about-documents__meta {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
