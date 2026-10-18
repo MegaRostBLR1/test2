@@ -767,3 +767,80 @@
     line-height: 1.5;
   }
 }
+
+/* Figma node 1857:112887 — tablet frame, 1024px.
+   Desktop rules above remain the source for 1440px and 1920px. */
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .article-item__body {
+    padding: 40px;
+  }
+
+  .article-item__body-container {
+    max-width: 1260px;
+    gap: 30px;
+  }
+
+  .article-item__section {
+    gap: 30px;
+  }
+
+  .article-item__section-title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .article-item__section:nth-child(3) .article-item__section-title {
+    font-size: 36px;
+    line-height: 64px;
+  }
+
+  .article-item__text-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .article-item__text-column {
+    gap: 25px;
+  }
+
+  .article-item__image {
+    height: 700px;
+    border-radius: 30px;
+  }
+
+  .article-item__cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .article-item__card {
+    gap: 36px;
+    min-height: 0;
+    padding: 24px;
+    border-radius: 30px;
+  }
+
+  .article-item__card-icon {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 14px;
+  }
+
+  .article-item__card-content {
+    gap: 8px;
+  }
+
+  .article-item__card-content h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .article-item__card-content p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
