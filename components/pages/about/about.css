@@ -914,6 +914,79 @@
   }
 }
 
+
+/* Figma: About timeline, desktop frame 1440 px (1857:130352).
+   Отдельная адаптация сохраняет геометрию исходного кадра 1920 px выше этого диапазона. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .about-timeline__panel {
+    padding: 40px;
+  }
+
+  .about-timeline__container {
+    gap: 72px;
+  }
+
+  .about-timeline__header {
+    gap: 24px;
+  }
+
+  .about-timeline__eyebrow {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .about-timeline__title {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .about-timeline__story {
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .about-timeline__story-content {
+    flex: 1 1 707px;
+    gap: 48px;
+  }
+
+  .about-timeline__year {
+    font-size: 120px;
+    line-height: 1.275;
+  }
+
+  .about-timeline__story-title {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .about-timeline__description p {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .about-timeline__image {
+    flex: 0 1 619px;
+    width: 45.85%;
+    aspect-ratio: 833 / 549;
+  }
+
+  .about-timeline__years,
+  .about-timeline__milestone {
+    gap: 36px;
+  }
+
+  .about-timeline__milestone-mark {
+    flex-basis: 114px;
+    width: 114px;
+    height: 119px;
+  }
+
+  .about-timeline__milestone-mark span {
+    font-size: 24px;
+  }
+}
+
 /* Figma: About timeline, desktop frame 1920 px (1857:126762). */
 .about-timeline {
   padding: 5px;
