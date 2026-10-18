@@ -22,6 +22,14 @@
   text-align: center;
 }
 
+.about__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
 .about__title {
   width: 100%;
   max-width: 1338px;
