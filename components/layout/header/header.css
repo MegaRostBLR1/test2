@@ -1007,3 +1007,25 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .header__location-country {
+        order: 1;
+    }
+
+    .header__location-country-code {
+        order: 2;
+    }
+
+    .header__location-money {
+        order: 3;
+    }
+
+    .header__location-current {
+        display: none;
+    }
+
+    .header__location-choice-title {
+        display: block;
+    }
+}
