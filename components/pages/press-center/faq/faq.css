@@ -774,3 +774,16 @@
     flex: none;
   }
 }
+
+
+/* Expanded answer text and image share the available width on desktop. */
+.press-faq-item__text {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.press-faq-item__copy {
+  flex: 1 1 auto;
+}
