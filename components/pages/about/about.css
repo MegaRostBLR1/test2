@@ -1555,11 +1555,15 @@
   display: flex;
   gap: 20px;
   width: 100%;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
 }
 
 .about-team__featured {
   position: relative;
+  scroll-snap-align: start;
   flex: 0 0 66.55%;
   min-width: 0;
   height: 649px;
@@ -1578,6 +1582,10 @@
 
 .about-team__featured--peek {
   flex-basis: 66.55%;
+}
+
+.about-team__featured-row::-webkit-scrollbar {
+  display: none;
 }
 
 .about-team__controls {
