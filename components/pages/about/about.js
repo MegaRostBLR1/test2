@@ -1,6 +1,20 @@
 function initAbout() {
   const tabs = document.querySelectorAll('.about__media-tab');
 
+  const gallery = document.querySelector('.about-team__featured-row');
+  const previousButton = document.querySelector('.about-team__arrow--previous');
+  const nextButton = document.querySelector('.about-team__arrow--next');
+
+  if (gallery && previousButton && nextButton) {
+    previousButton.addEventListener('click', () => {
+      gallery.scrollBy({ left: -gallery.clientWidth * 0.7, behavior: 'smooth' });
+    });
+
+    nextButton.addEventListener('click', () => {
+      gallery.scrollBy({ left: gallery.clientWidth * 0.7, behavior: 'smooth' });
+    });
+  }
+
   tabs.forEach((tab) => {
     tab.addEventListener('click', () => {
       tabs.forEach((item) => {
