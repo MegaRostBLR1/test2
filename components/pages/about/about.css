@@ -2011,3 +2011,81 @@
     display: none;
   }
 }
+
+
+/* Figma 1857:137434 — «Лица компании», mobile frame 360 px.
+   Desktop 1920/1440 and tablet 1024 rules above remain unchanged. */
+@media screen and (max-width: 680px) {
+  .about-team {
+    padding: 0 4px 10px;
+  }
+
+  .about-team__panel {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px 10px;
+    border-radius: 10px;
+  }
+
+  .about-team__content {
+    gap: 24px;
+    padding: 20px 10px;
+    border-radius: 20px;
+  }
+
+  .about-team__header {
+    gap: 14px;
+  }
+
+  .about-team__title {
+    font-size: 20px;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+
+  .about-team__subtitle {
+    width: 100%;
+    max-width: none;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .about-team__gallery {
+    gap: 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  .about-team__featured-row {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0;
+    scroll-snap-type: none;
+  }
+
+  .about-team__featured,
+  .about-team__featured--peek {
+    display: block;
+    flex: 0 0 302px;
+    width: 302px;
+    height: 283px;
+    aspect-ratio: auto;
+    border-radius: 30px;
+  }
+
+  .about-team__featured img {
+    display: block;
+    width: 100%;
+    height: 118.56%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about-team__controls,
+  .about-team__thumbnails {
+    display: none;
+  }
+}
