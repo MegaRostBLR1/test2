@@ -617,7 +617,7 @@
   font-family: "Onest-Regular", sans-serif;
   font-size: 1.333rem;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .about-history__text p {
@@ -649,7 +649,7 @@
 
   .about-history__text {
     font-size: 1.111rem;
-    line-height: 1.75;
+    line-height: 1.5;
   }
 
   .about-history__visual {
