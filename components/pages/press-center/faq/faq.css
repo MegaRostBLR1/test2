@@ -1,5 +1,5 @@
 .press-faq {
-  padding: 0 0.2778rem 0.2778rem;
+  padding: 0;
   background: #f5f8f7;
 }
 
@@ -42,7 +42,11 @@
   outline-offset: 0.1667rem;
 }
 
-.press-faq__breadcrumb-separator,
+.press-faq__breadcrumb-separator {
+  color: #4d4d4d;
+  font-size: 1.1111rem;
+}
+
 .press-faq__breadcrumb-current {
   color: #4d4d4d;
 }
@@ -114,10 +118,6 @@
 }
 
 @media screen and (max-width: 680px) {
-  .press-faq {
-    padding: 0 0.2778rem 0.2778rem;
-  }
-
   .press-faq__panel {
     gap: 1.3333rem;
     padding: 1.3333rem 0.8889rem;
