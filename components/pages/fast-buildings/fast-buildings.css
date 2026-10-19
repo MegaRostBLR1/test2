@@ -2784,3 +2784,113 @@
     line-height: 32px;
   }
 }
+
+
+/* Mobile characteristics expansion — Figma 1857:122359 / 2132:136819. */
+.fast-buildings-characteristics__more {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .fast-buildings-characteristics__content {
+    gap: 14px;
+    padding: 20px 10px 10px;
+  }
+
+  .fast-buildings-characteristics__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .fast-buildings-characteristics__tabs {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 4px;
+    padding: 4px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+
+  .fast-buildings-characteristics__tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fast-buildings-characteristics__tab {
+    flex: 0 0 auto;
+    padding: 12px 18px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: nowrap;
+    overflow-wrap: normal;
+  }
+
+  .fast-buildings-characteristics__table {
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .fast-buildings-characteristics__columns {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 5px;
+  }
+
+  .fast-buildings-characteristics__column {
+    gap: 5px;
+  }
+
+  .fast-buildings-characteristics__item {
+    gap: 14px;
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .fast-buildings-characteristics__label {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .fast-buildings-characteristics__value {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .fast-buildings-characteristics__column:first-child .fast-buildings-characteristics__item:nth-child(n + 6),
+  .fast-buildings-characteristics__column:nth-child(n + 2) {
+    display: none;
+  }
+
+  .fast-buildings-characteristics__more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 0;
+    color: #324C88;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .fast-buildings-characteristics__more svg {
+    flex: 0 0 24px;
+    transition: transform 0.2s ease;
+  }
+
+  .fast-buildings-characteristics__more[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+
+  .fast-buildings-characteristics__table.is-expanded .fast-buildings-characteristics__column:first-child .fast-buildings-characteristics__item,
+  .fast-buildings-characteristics__table.is-expanded .fast-buildings-characteristics__column:nth-child(n + 2) {
+    display: flex;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fast-buildings-characteristics__more svg {
+    transition: none;
+  }
+}
