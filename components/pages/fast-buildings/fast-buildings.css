@@ -1299,3 +1299,380 @@
     display: none;
   }
 }
+
+
+/* Гарантия — Figma 1857:114201. */
+.fast-buildings-guarantee {
+  padding: 0.5556rem;
+  background: #F5F8F7;
+}
+
+.fast-buildings-guarantee__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.2222rem;
+  border-radius: 1.1111rem;
+  background: #F5F8F7;
+}
+
+.fast-buildings-guarantee__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3333rem;
+  width: 100%;
+  text-align: center;
+}
+
+.fast-buildings-guarantee__title {
+  width: 100%;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.fast-buildings-guarantee__subtitle {
+  margin: 0;
+  color: #4D4D4DCC;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.3333rem;
+  line-height: 1.5;
+}
+
+.fast-buildings-guarantee__options {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 35.4444rem));
+  justify-content: center;
+  align-items: start;
+  gap: 1.1111rem;
+  padding-bottom: 5.9444rem;
+}
+
+.fast-buildings-guarantee__card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 0;
+  padding: 2rem 1.3333rem;
+  border-radius: 1.6667rem;
+  background: #FFFFFF;
+  isolation: isolate;
+}
+
+.fast-buildings-guarantee__card::before {
+  position: absolute;
+  z-index: -1;
+  top: -0.2222rem;
+  right: 1.3333rem;
+  left: 1.3333rem;
+  height: 14.2222rem;
+  border-radius: 1.6667rem;
+  background: #36508A;
+  content: "";
+}
+
+.fast-buildings-guarantee__card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.fast-buildings-guarantee__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6667rem 1.1111rem;
+  border-radius: 1.1111rem;
+  color: #36508A;
+  background: #36508A0D;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 0.8889rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.fast-buildings-guarantee__icon {
+  display: flex;
+  flex: 0 0 2.6667rem;
+  align-items: center;
+  justify-content: center;
+  width: 2.6667rem;
+  height: 2.6667rem;
+  border-radius: 1.1111rem;
+  background: #36508A;
+}
+
+.fast-buildings-guarantee__icon img {
+  display: block;
+  width: 1.3333rem;
+  height: 1.3333rem;
+}
+
+.fast-buildings-guarantee__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.fast-buildings-guarantee__card-title {
+  width: 100%;
+  color: #000000;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.3333rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.fast-buildings-guarantee__type {
+  margin: 0;
+  color: #36508A;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 0.8889rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.fast-buildings-guarantee__divider {
+  width: 100%;
+  height: 1px;
+  background: #36508A26;
+}
+
+.fast-buildings-guarantee__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7778rem;
+  width: 100%;
+  list-style: none;
+}
+
+.fast-buildings-guarantee__item {
+  display: flex;
+  align-items: center;
+  gap: 0.7778rem;
+  min-width: 0;
+}
+
+.fast-buildings-guarantee__item p {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.fast-buildings-guarantee__check {
+  display: flex;
+  flex: 0 0 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5556rem;
+  background: #324C880D;
+}
+
+.fast-buildings-guarantee__check img {
+  display: block;
+  width: 1.3333rem;
+  height: 1.3333rem;
+}
+
+.fast-buildings-guarantee__number {
+  position: absolute;
+  z-index: -1;
+  top: -8.1111rem;
+  right: 5.0556rem;
+  color: #36508A0D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 11.1111rem;
+  font-weight: 600;
+  line-height: 1.5;
+  pointer-events: none;
+}
+
+.fast-buildings-guarantee__number--five {
+  top: -1.2222rem;
+  right: 9rem;
+}
+
+.fast-buildings-guarantee__lifetime {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5.9444rem;
+  padding: 1.3333rem 2rem;
+  border-radius: 0 0 1.6667rem 1.6667rem;
+  color: #FFFFFF;
+  background: #36508A;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 1.3333rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .fast-buildings-guarantee__panel {
+    gap: 1.7778rem;
+    padding: 1.7778rem;
+  }
+
+  .fast-buildings-guarantee__title {
+    font-size: 2.2222rem;
+  }
+
+  .fast-buildings-guarantee__subtitle {
+    font-size: 1.1111rem;
+    white-space: normal;
+  }
+
+  .fast-buildings-guarantee__options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .fast-buildings-guarantee__card {
+    gap: 1.3333rem;
+    padding: 1.7778rem 1.3333rem;
+  }
+
+  .fast-buildings-guarantee__card-title {
+    font-size: 1.1111rem;
+  }
+
+  .fast-buildings-guarantee__item p {
+    font-size: 0.8889rem;
+  }
+
+  .fast-buildings-guarantee__lifetime {
+    font-size: 1.1111rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .fast-buildings-guarantee {
+    padding: 0 0.5556rem 0.5556rem;
+  }
+
+  .fast-buildings-guarantee__panel {
+    gap: 1.3333rem;
+    padding: 1.1111rem 0.5556rem 5.5556rem;
+    border-radius: 1.1111rem;
+  }
+
+  .fast-buildings-guarantee__heading {
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings-guarantee__title {
+    font-size: 1.3333rem;
+    line-height: 1.4;
+  }
+
+  .fast-buildings-guarantee__subtitle {
+    font-size: 0.7778rem;
+    line-height: 1.5;
+  }
+
+  .fast-buildings-guarantee__options {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    padding-bottom: 0;
+  }
+
+  .fast-buildings-guarantee__card {
+    gap: 1.3333rem;
+    padding: 1.3333rem 1rem;
+    border-radius: 1.1111rem;
+  }
+
+  .fast-buildings-guarantee__card::before {
+    right: 1rem;
+    left: 1rem;
+    height: 10rem;
+    border-radius: 1.1111rem;
+  }
+
+  .fast-buildings-guarantee__badge {
+    padding: 0.5556rem 0.8889rem;
+    font-size: 0.7778rem;
+  }
+
+  .fast-buildings-guarantee__icon {
+    flex-basis: 2.2222rem;
+    width: 2.2222rem;
+    height: 2.2222rem;
+    border-radius: 0.7778rem;
+  }
+
+  .fast-buildings-guarantee__icon img {
+    width: 1.1111rem;
+    height: 1.1111rem;
+  }
+
+  .fast-buildings-guarantee__details {
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings-guarantee__card-title {
+    font-size: 1rem;
+  }
+
+  .fast-buildings-guarantee__type {
+    font-size: 0.7778rem;
+  }
+
+  .fast-buildings-guarantee__item {
+    align-items: flex-start;
+    gap: 0.6667rem;
+  }
+
+  .fast-buildings-guarantee__item p {
+    font-size: 0.7778rem;
+  }
+
+  .fast-buildings-guarantee__check {
+    flex-basis: 1.7778rem;
+    width: 1.7778rem;
+    height: 1.7778rem;
+  }
+
+  .fast-buildings-guarantee__check img {
+    width: 1.1111rem;
+    height: 1.1111rem;
+  }
+
+  .fast-buildings-guarantee__number {
+    display: none;
+  }
+
+  .fast-buildings-guarantee__lifetime {
+    position: static;
+    min-height: 0;
+    margin-top: 0.3333rem;
+    padding: 1rem;
+    border-radius: 0.7778rem;
+    font-size: 0.8889rem;
+  }
+}
