@@ -1,4 +1,4 @@
 /* Инициализация страницы «Сравнение». */
-function initComplexesComparison() {
+function initBuildingsComparison() {
     // Интерактивное поведение будет добавлено вместе с содержимым страницы.
 }

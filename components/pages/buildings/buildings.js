@@ -1,12 +1,12 @@
-function initComplexes() {
-  const advantages = document.querySelector('.complexes-advantages');
+function initBuildings() {
+  const advantages = document.querySelector('.buildings-advantages');
 
   if (advantages && advantages.dataset.initialized !== 'true') {
     advantages.dataset.initialized = 'true';
 
-    const items = Array.from(advantages.querySelectorAll('.complexes-advantages__item:not(.complexes-advantages__item--responsive)'));
-    const previousButton = advantages.querySelector('.complexes-advantages__arrow--prev');
-    const nextButton = advantages.querySelector('.complexes-advantages__arrow--next');
+    const items = Array.from(advantages.querySelectorAll('.buildings-advantages__item:not(.buildings-advantages__item--responsive)'));
+    const previousButton = advantages.querySelector('.buildings-advantages__arrow--prev');
+    const nextButton = advantages.querySelector('.buildings-advantages__arrow--next');
     let activeIndex = 0;
 
     const setActiveItem = (index) => {
@@ -48,8 +48,8 @@ function initComplexes() {
   }
 
 
-  const tabs = document.querySelector('.complexes__agro-tabs');
-  const toggle = tabs?.querySelector('.complexes__agro-tabs-toggle');
+  const tabs = document.querySelector('.buildings__agro-tabs');
+  const toggle = tabs?.querySelector('.buildings__agro-tabs-toggle');
 
   if (tabs && toggle && tabs.dataset.initialized !== 'true') {
     tabs.dataset.initialized = 'true';
@@ -68,7 +68,7 @@ function initComplexes() {
         return;
       }
 
-      const link = event.target.closest('.complexes__agro-tab');
+      const link = event.target.closest('.buildings__agro-tab');
       const isExpanded = tabs.classList.contains('is-open');
 
       if (link) {
@@ -89,14 +89,14 @@ function initComplexes() {
     });
   }
 
-  const description = document.querySelector('.complexes-description');
+  const description = document.querySelector('.buildings-description');
 
   if (!description) {
     return;
   }
 
-  const industries = description.querySelector('.complexes-description__industries');
-  const industriesToggle = description.querySelector('.complexes-description__industries-toggle');
+  const industries = description.querySelector('.buildings-description__industries');
+  const industriesToggle = description.querySelector('.buildings-description__industries-toggle');
 
   if (industries && industriesToggle && industries.dataset.toggleInitialized !== 'true') {
     industries.dataset.toggleInitialized = 'true';
@@ -115,13 +115,13 @@ function initComplexes() {
   description.dataset.initialized = 'true';
 
   const accordionItems = Array.from(
-      description.querySelectorAll('.complexes-description__item')
+      description.querySelectorAll('.buildings-description__item')
   );
 
   accordionItems.forEach((item) => {
-    const trigger = item.querySelector('.complexes-description__trigger');
-    const panel = item.querySelector('.complexes-description__panel');
-    const icon = trigger?.querySelector('.complexes-description__icon img');
+    const trigger = item.querySelector('.buildings-description__trigger');
+    const panel = item.querySelector('.buildings-description__panel');
+    const icon = trigger?.querySelector('.buildings-description__icon img');
 
     if (!trigger || !panel || !icon || !panel.textContent.trim()) {
       return;
@@ -131,9 +131,9 @@ function initComplexes() {
       const shouldExpand = trigger.getAttribute('aria-expanded') !== 'true';
 
       accordionItems.forEach((accordionItem) => {
-        const accordionTrigger = accordionItem.querySelector('.complexes-description__trigger');
-        const accordionPanel = accordionItem.querySelector('.complexes-description__panel');
-        const accordionIcon = accordionTrigger?.querySelector('.complexes-description__icon img');
+        const accordionTrigger = accordionItem.querySelector('.buildings-description__trigger');
+        const accordionPanel = accordionItem.querySelector('.buildings-description__panel');
+        const accordionIcon = accordionTrigger?.querySelector('.buildings-description__icon img');
 
         if (!accordionTrigger || !accordionPanel || !accordionIcon) {
           return;
@@ -150,8 +150,8 @@ function initComplexes() {
     });
   });
 
-  const zoomButtons = description.querySelectorAll('.complexes-description__zoom');
-  const lightbox = description.querySelector('.complexes-description__lightbox');
+  const zoomButtons = description.querySelectorAll('.buildings-description__zoom');
+  const lightbox = description.querySelector('.buildings-description__lightbox');
 
   if (lightbox) {
     zoomButtons.forEach((zoomButton) => {
@@ -168,18 +168,18 @@ function initComplexes() {
       }
     });
   }
-  const gallery = document.querySelector('.complexes-gallery');
+  const gallery = document.querySelector('.buildings-gallery');
 
   if (gallery && gallery.dataset.initialized !== 'true') {
     gallery.dataset.initialized = 'true';
 
     const slides = Array.from(gallery.querySelectorAll('[data-gallery-slide]'));
-    const dots = Array.from(gallery.querySelectorAll('.complexes-gallery__dot'));
+    const dots = Array.from(gallery.querySelectorAll('.buildings-gallery__dot'));
     const previous = gallery.querySelector('[data-gallery-prev]');
     const next = gallery.querySelector('[data-gallery-next]');
-    const lightbox = gallery.querySelector('.complexes-gallery__lightbox');
-    const lightboxImage = gallery.querySelector('.complexes-gallery__lightbox-image');
-    const zoom = gallery.querySelector('.complexes-gallery__zoom');
+    const lightbox = gallery.querySelector('.buildings-gallery__lightbox');
+    const lightboxImage = gallery.querySelector('.buildings-gallery__lightbox-image');
+    const zoom = gallery.querySelector('.buildings-gallery__zoom');
     const galleryImages = [
       'https://www.figma.com/api/mcp/asset/5648ade9-e8a3-4d99-bbab-194096e7b33b/45237.png',
       'https://www.figma.com/api/mcp/asset/5648ade9-e8a3-4d99-bbab-194096e7b33b/fa91b.png'
@@ -189,8 +189,8 @@ function initComplexes() {
     const renderGallery = () => {
       slides.forEach((slide, index) => {
         const isCenter = index === 1;
-        slide.classList.toggle('complexes-gallery__slide--active', isCenter);
-        slide.classList.toggle('complexes-gallery__slide--side', !isCenter);
+        slide.classList.toggle('buildings-gallery__slide--active', isCenter);
+        slide.classList.toggle('buildings-gallery__slide--side', !isCenter);
       });
 
       const centerImage = slides[1]?.querySelector('img');

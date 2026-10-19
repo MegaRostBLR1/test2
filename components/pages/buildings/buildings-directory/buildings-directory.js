@@ -1,5 +1,5 @@
-function initComplexesDirectory() {
-  const root = document.querySelector('.complexes-directory');
+function initBuildingsDirectory() {
+  const root = document.querySelector('.buildings-directory');
 
   if (!root || root.dataset.initialized === 'true') {
     return;
@@ -9,7 +9,7 @@ function initComplexesDirectory() {
 
   const filters = Array.from(root.querySelectorAll('[data-filter]'));
   const cards = Array.from(root.querySelectorAll('[data-category]'));
-  const showMoreButton = root.querySelector('.complexes-directory__show-more');
+  const showMoreButton = root.querySelector('.buildings-directory__show-more');
   const verticalGrid = window.matchMedia('(max-width: 680px)');
   const getInitialVisibleCount = () => (verticalGrid.matches ? 3 : 6);
   const batchSize = 3;
