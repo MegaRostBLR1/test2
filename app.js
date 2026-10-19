@@ -179,6 +179,13 @@ const APP_CONFIG = {
       js: './components/pages/prices/prices.js',
       init: 'initPrices'
     },
+    'calculator': {
+      title: 'Онлайн калькулятор',
+      html: './components/pages/calculator/calculator.html',
+      css: './components/pages/calculator/calculator.css',
+      js: './components/pages/calculator/calculator.js',
+      init: 'initCalculator'
+    },
     'contacts': {
       title: 'Контакты',
       html: './components/pages/contacts/contacts.html',
@@ -319,6 +326,12 @@ async function renderPage(pageName) {
 
 
 function initNavigationRouting() {
+  const calculatorLink = document.querySelector('.app-header .header-bottom__action-calculation');
+
+  if (calculatorLink) {
+    calculatorLink.href = '#/calculator';
+  }
+
   const routeByLabel = {
     'Продукция': 'buildings',
     'Быстровозводимые здания': 'fast-buildings',
