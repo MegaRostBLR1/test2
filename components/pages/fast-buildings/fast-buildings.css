@@ -1165,3 +1165,137 @@
   }
 }
 
+
+
+/* Мобильный кадр блока факторов — Figma 1857:120892 (360 px). */
+.fast-buildings-factors__more {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .fast-buildings-factors {
+    padding: 0 10px 10px;
+  }
+
+  .fast-buildings-factors__panel {
+    gap: 24px;
+    padding: 20px 0;
+    border-radius: 20px;
+    background: #FFFFFF;
+  }
+
+  .fast-buildings-factors__heading {
+    gap: 18px;
+    padding: 0 10px;
+  }
+
+  .fast-buildings-factors__title {
+    color: #4D4D4D;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .fast-buildings-factors__subtitle {
+    color: #4D4D4DCC;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .fast-buildings-factors__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    padding: 0;
+  }
+
+  .fast-buildings-factors__card {
+    gap: 36px;
+    min-height: 214px;
+    padding: 18px;
+    border-radius: 30px;
+  }
+
+  .fast-buildings-factors__card:nth-child(n + 3) {
+    display: none;
+  }
+
+  .fast-buildings-factors__grid.is-expanded .fast-buildings-factors__card:nth-child(n + 3) {
+    display: flex;
+  }
+
+  .fast-buildings-factors__card::before {
+    top: 0;
+    right: 24px;
+    bottom: 0;
+    left: 24px;
+    border-radius: 30px;
+  }
+
+  .fast-buildings-factors__card::after {
+    top: 8px;
+    border-radius: 30px;
+  }
+
+  .fast-buildings-factors__icon {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 14px;
+  }
+
+  .fast-buildings-factors__icon img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .fast-buildings-factors__copy {
+    gap: 8px;
+  }
+
+  .fast-buildings-factors__card-title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .fast-buildings-factors__description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .fast-buildings-factors__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    align-self: center;
+    min-height: 24px;
+    padding: 0;
+    color: #324C88;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .fast-buildings-factors__more svg {
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+  }
+
+  .fast-buildings-factors__more[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+
+  .fast-buildings-factors__more:focus-visible {
+    outline: 2px solid #324C88;
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 681px) {
+  .fast-buildings-factors__more {
+    display: none;
+  }
+}
