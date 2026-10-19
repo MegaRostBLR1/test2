@@ -510,7 +510,7 @@
     gap: 0.5556rem;
   }
 
-  .fast-buildings-catalog__card--tablet-hidden {
+  .fast-buildings-catalog__card--desktop-hidden {
     display: none;
   }
 
