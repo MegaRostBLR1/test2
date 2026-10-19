@@ -3708,42 +3708,91 @@
 
 @media (min-width: 761px) and (max-width: 1200px) {
   .fast-buildings-comfort__panel {
-    padding: 2.2222rem 1.3333rem;
+    gap: 1.3889rem;
+    padding: 2.2222rem;
+  }
+
+  .fast-buildings-comfort__heading {
+    gap: 0.7778rem;
   }
 
   .fast-buildings-comfort__title {
-    font-size: 1.7778rem;
+    font-size: 1.6667rem;
+    line-height: 1.2667;
   }
 
   .fast-buildings-comfort__subtitle {
-    font-size: 1rem;
+    max-width: 42.8889rem;
+    font-size: 1.1111rem;
+    line-height: 1.6;
   }
 
   .fast-buildings-comfort__layout {
     grid-template-columns: minmax(0, 1fr);
-    gap: 1.7778rem;
-    max-width: 48.8889rem;
-  }
-
-  .fast-buildings-comfort__buildings {
-    min-height: 0;
-    padding: 1.7778rem 1.3333rem;
-  }
-
-  .fast-buildings-comfort__building img {
-    width: min(100%, 8.8889rem);
-    height: 5.8889rem;
-  }
-
-  .fast-buildings-comfort__building h3 {
-    font-size: 1.2222rem;
+    gap: 1.3333rem;
+    max-width: 100%;
   }
 
   .fast-buildings-comfort__list {
-    width: 100%;
+    order: 1;
+  }
+
+  .fast-buildings-comfort__buildings {
+    order: 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 1.3333rem;
+    min-height: 0;
+    padding: 1.3333rem;
+    border-radius: 1.6667rem;
+  }
+
+  .fast-buildings-comfort__building img {
+    width: min(100%, 5.8333rem);
+    height: 3.8889rem;
+    margin-bottom: 0.5556rem;
+  }
+
+  .fast-buildings-comfort__building h3 {
+    margin-bottom: 0.4444rem;
+    font-size: 1.1111rem;
+    line-height: 1.6;
+  }
+
+  .fast-buildings-comfort__building p {
+    font-size: 0.8889rem;
+  }
+
+  .fast-buildings-comfort__item {
+    padding-bottom: 1.1111rem;
+    margin-bottom: 1.1111rem;
+  }
+
+  .fast-buildings-comfort__item-heading button {
+    align-items: center;
+    gap: 1.3333rem;
+    padding-top: 1.1111rem;
+    font-size: 1rem;
+  }
+
+  .fast-buildings-comfort__icon {
+    flex-basis: 1.6667rem;
+    width: 1.6667rem;
+    height: 1.6667rem;
+  }
+
+  .fast-buildings-comfort__icon img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .fast-buildings-comfort__description {
+    padding: 0.7778rem 0 0 3rem;
+  }
+
+  .fast-buildings-comfort__description p {
+    font-size: 0.8889rem;
   }
 }
-
 @media (max-width: 760px) {
   .fast-buildings-comfort {
     padding: 0 0 0.5556rem;
