@@ -475,6 +475,66 @@
   background: #324C88;
 }
 
+/* Desktop layout for the 1440px Figma frame (1857:115870).
+   The 1920px layout remains the four-card grid above this range. */
+@media screen and (min-width: 1301px) and (max-width: 1599px) {
+  .fast-buildings-catalog {
+    gap: 1.6667rem;
+    padding: 2.6667rem 2.7778rem 0.2778rem;
+  }
+
+  .fast-buildings-catalog__heading {
+    gap: 1.3333rem;
+  }
+
+  .fast-buildings-catalog__title {
+    font-size: 2.6667rem;
+    line-height: normal;
+  }
+
+  .fast-buildings-catalog__subtitle {
+    font-size: 1.3333rem;
+    line-height: normal;
+  }
+
+  .fast-buildings-catalog__tabs {
+    gap: 1.1111rem;
+  }
+
+  .fast-buildings-catalog__tab {
+    font-size: 1.1111rem;
+  }
+
+  .fast-buildings-catalog__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5556rem;
+  }
+
+  .fast-buildings-catalog__card {
+    gap: 1.6667rem;
+    padding: 1.1111rem;
+  }
+
+  .fast-buildings-catalog__card-title {
+    font-size: 1.6667rem;
+    line-height: 1.6;
+  }
+
+  .fast-buildings-catalog__price {
+    font-size: 1rem;
+  }
+
+  .fast-buildings-catalog__button {
+    min-height: 3.5556rem;
+    padding: 1.7778rem 2.2222rem;
+    font-size: 0.9444rem;
+  }
+
+  .fast-buildings-catalog__pagination {
+    gap: 1.3333rem;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .fast-buildings-catalog {
     gap: 1.3333rem;
