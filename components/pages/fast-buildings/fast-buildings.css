@@ -911,8 +911,15 @@
 .fast-buildings-factors__grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: center;
   gap: 1.1111rem;
   width: 100%;
+}
+
+@media screen and (min-width: 1800px) {
+  .fast-buildings-factors__grid {
+    grid-template-columns: repeat(4, 20.6667rem);
+  }
 }
 
 .fast-buildings-factors__card {
@@ -932,10 +939,10 @@
 .fast-buildings-factors__card::before {
   position: absolute;
   z-index: -1;
-  top: 0;
-  right: 0;
+  top: -0.2222rem;
+  right: 3%;
   bottom: 0.2778rem;
-  left: 1.2222rem;
+  left: 3%;
   border-radius: 1.6667rem;
   background: #36508A;
   content: "";
@@ -973,7 +980,7 @@
   margin: 0;
   color: #4D4D4D;
   font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 1.3333rem;
+  font-size: 1.1111rem;
   font-weight: 600;
   line-height: 1.5;
 }
