@@ -3849,3 +3849,35 @@
     font-size: 0.7778rem;
   }
 }
+
+
+/* Figma 1857:116542 — desktop layout for 1440px, fluidly connected to 1920px. */
+@media screen and (min-width: 1301px) and (max-width: 1599px) {
+  .fast-buildings-comfort__panel {
+    padding: 3.5556rem 2.2222rem;
+  }
+
+  .fast-buildings-comfort__layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4.4444rem;
+    max-width: 75.5556rem;
+  }
+
+  .fast-buildings-comfort__buildings {
+    min-height: 38.3889rem;
+    padding: 2rem 1.3333rem;
+  }
+
+  .fast-buildings-comfort__building img {
+    width: min(100%, 11.1111rem);
+    height: 7.3889rem;
+  }
+
+  .fast-buildings-comfort__building h3 {
+    font-size: 1.6667rem;
+  }
+
+  .fast-buildings-comfort__building p {
+    font-size: 1rem;
+  }
+}
