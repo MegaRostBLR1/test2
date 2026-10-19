@@ -677,18 +677,22 @@
   }
 
   .fast-buildings-catalog__grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
     gap: 0.5556rem;
-    overflow: visible;
-    scroll-snap-type: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .fast-buildings-catalog__grid::-webkit-scrollbar {
+    display: none;
   }
 
   .fast-buildings-catalog__card {
-    flex: initial;
+    flex: 0 0 32.7%;
     gap: 1.6667rem;
     padding: 1.1111rem;
-    scroll-snap-align: none;
+    scroll-snap-align: start;
   }
 
   .fast-buildings-catalog__card-content {
@@ -714,10 +718,6 @@
     min-height: 3.5556rem;
     padding: 0.8889rem 1.1111rem;
     font-size: 0.9444rem;
-  }
-
-  .fast-buildings-catalog__card--tablet-hidden {
-    display: none;
   }
 
   .fast-buildings-catalog__pagination {
