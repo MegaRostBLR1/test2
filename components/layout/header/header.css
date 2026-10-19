@@ -1584,3 +1584,42 @@
   }
 }
 
+
+
+/* Toggle the header-top area from the blue app-header strip on tablet/mobile. */
+@media screen and (max-width: 1300px) {
+  .app-header:not(.app-header--top-open) .header__nav,
+  .app-header:not(.app-header--top-open) .header__contacts,
+  .app-header:not(.app-header--top-open) .header__location {
+    display: none;
+  }
+
+  .app-header.app-header--top-open .header__nav {
+    display: block;
+  }
+
+  .app-header.app-header--top-open .header__contacts,
+  .app-header.app-header--top-open .header__location {
+    display: flex;
+  }
+
+  .app-header::before {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .app-header::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 2.375rem;
+    z-index: 0;
+  }
+
+  .header-bottom {
+    z-index: 1;
+  }
+}
