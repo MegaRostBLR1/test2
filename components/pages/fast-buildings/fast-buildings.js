@@ -90,4 +90,39 @@ function initFastBuildings() {
   previous.addEventListener('click', () => updateCarousel(activeIndex - 1));
   next.addEventListener('click', () => updateCarousel(activeIndex + 1));
   catalog.dataset.carouselInitialized = 'true';
+
+
+  const comparison = document.querySelector('.fast-buildings-comparison');
+  if (comparison && !comparison.dataset.initialized) {
+    const differencesToggle = comparison.querySelector('[data-comparison-differences]');
+    const comparisonRows = comparison.querySelector('[data-comparison-rows]');
+    const moreButton = comparison.querySelector('[data-comparison-more]');
+
+    differencesToggle?.addEventListener('change', () => {
+      const groups = [...comparisonRows.querySelectorAll('.fast-buildings-comparison__group')];
+      groups.forEach((group) => {
+        const values = [...group.querySelectorAll('[data-comparison-value]')];
+        const isDifferent = values.length > 0 && new Set(values.map((value) => value.dataset.comparisonValue)).size > 1;
+        group.classList.toggle('is-hidden', differencesToggle.checked && !isDifferent);
+      });
+    });
+
+    moreButton?.addEventListener('click', () => {
+      const collapsedGroups = [...comparisonRows.querySelectorAll('.fast-buildings-comparison__group')].filter((group) => !group.open);
+      const shouldExpand = moreButton.dataset.expanded !== 'true';
+      comparisonRows.querySelectorAll('.fast-buildings-comparison__group').forEach((group) => {
+        group.open = shouldExpand;
+      });
+      moreButton.dataset.expanded = String(shouldExpand);
+      moreButton.textContent = shouldExpand ? 'Скрыть' : 'Показать еще';
+      if (!shouldExpand) {
+        comparisonRows.querySelectorAll('.fast-buildings-comparison__group').forEach((group, index) => {
+          group.open = index === 1 || index === 2;
+        });
+      }
+    });
+
+    comparison.dataset.initialized = 'true';
+  }
+
 }
