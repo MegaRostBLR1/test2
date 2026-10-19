@@ -3206,8 +3206,15 @@
 
 /* Figma 1857:116253 — desktop adaptation at 1440px; retain the 1920px layout above. */
 @media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .fast-buildings-websteel {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
   .fast-buildings-websteel__panel {
     padding: 64px 40px;
+    border-radius: 10px;
   }
 
   .fast-buildings-websteel__content {
