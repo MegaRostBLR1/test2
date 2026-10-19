@@ -1088,3 +1088,80 @@
     font-size: 0.8889rem;
   }
 }
+
+/* Адаптация блока факторов под макет Figma 1857:118573 (1024 px). */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .fast-buildings-factors__panel {
+    gap: 1.3333rem;
+    padding: 2.2222rem 1.6667rem;
+  }
+
+  .fast-buildings-factors__heading {
+    gap: 1.3333rem;
+  }
+
+  .fast-buildings-factors__title {
+    max-width: none;
+    font-size: 1.6667rem;
+    line-height: 1.2667;
+  }
+
+  .fast-buildings-factors__subtitle {
+    font-size: 1.1111rem;
+    line-height: 1.5;
+  }
+
+  .fast-buildings-factors__grid {
+    grid-template-columns: repeat(2, 25.5556rem);
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .fast-buildings-factors__card {
+    gap: 2rem;
+    min-height: 18.2222rem;
+    padding: 2rem 1.3333rem;
+    border-radius: 1.6667rem;
+  }
+
+  .fast-buildings-factors__card::before {
+    top: 0;
+    right: 4.3478%;
+    bottom: 4rem;
+    left: 4.3478%;
+    border-radius: 1.6667rem;
+  }
+
+  .fast-buildings-factors__card::after {
+    top: 0.4444rem;
+    border-radius: 1.6667rem;
+  }
+
+  .fast-buildings-factors__icon {
+    flex-basis: 4rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.1111rem;
+  }
+
+  .fast-buildings-factors__icon img {
+    width: 2rem;
+    height: 2rem;
+    filter: none;
+  }
+
+  .fast-buildings-factors__copy {
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings-factors__card-title {
+    font-size: 1.2222rem;
+    line-height: 1.5;
+  }
+
+  .fast-buildings-factors__description {
+    font-size: 1.1111rem;
+    line-height: 1.5;
+  }
+}
+
