@@ -4516,8 +4516,11 @@
   gap: 1.3333rem;
   padding: 0.3333rem 0 0.7778rem;
 }
-.fast-buildings-comparison__value:first-child {
-  grid-column: 2;
+.fast-buildings-comparison__row-label {
+  margin: 0;
+  color: #4D4D4DCC;
+  font-size: 0.8333rem;
+  line-height: 1.3333rem;
 }
 .fast-buildings-comparison__value {
   display: flex;
@@ -4618,12 +4621,14 @@
     display: none;
   }
   .fast-buildings-comparison__values {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(4.5rem, 0.8fr) repeat(3, minmax(0, 1fr));
     gap: 0.2222rem;
     padding-bottom: 0.5556rem;
   }
-  .fast-buildings-comparison__value:first-child {
-    grid-column: auto;
+  .fast-buildings-comparison__row-label {
+    font-size: 0.5556rem;
+    line-height: 0.8889rem;
+    overflow-wrap: anywhere;
   }
   .fast-buildings-comparison__value {
     padding: 0.3333rem 0.1111rem;
