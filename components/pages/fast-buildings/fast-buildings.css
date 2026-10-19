@@ -2439,3 +2439,196 @@
     display: none;
   }
 }
+
+
+/* Характеристики зданий — Figma 1857:115534. */
+.fast-buildings-characteristics {
+  padding: 0 0.2778rem 0.5556rem;
+  background: #F5F8F7;
+  color: #4D4D4D;
+}
+
+.fast-buildings-characteristics__panel {
+  width: 100%;
+  border-radius: 0.5556rem;
+  background: #FFFFFF;
+}
+
+.fast-buildings-characteristics__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6667rem;
+  padding: 2.2222rem;
+  border-radius: 1.1111rem;
+}
+
+.fast-buildings-characteristics__title {
+  width: 100%;
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.fast-buildings-characteristics__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2222rem;
+  max-width: 100%;
+  padding: 0.2222rem;
+  border-radius: 0.5556rem;
+  background: #F5F8F7;
+}
+
+.fast-buildings-characteristics__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7778rem 1rem;
+  border-radius: 0.7778rem;
+  color: #5D5D5D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.fast-buildings-characteristics__tab--active {
+  background: #FFFFFF;
+}
+
+.fast-buildings-characteristics__table {
+  width: 100%;
+  max-width: 96.8889rem;
+  padding: 0.2778rem;
+  border-radius: 0.5556rem;
+  background: #F5F8F7;
+}
+
+.fast-buildings-characteristics__columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 2.2222rem;
+}
+
+.fast-buildings-characteristics__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2778rem;
+  min-width: 0;
+  margin: 0;
+}
+
+.fast-buildings-characteristics__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+  padding: 1.1111rem;
+  border-radius: 0.5556rem;
+  background: #FFFFFF;
+  overflow-wrap: anywhere;
+}
+
+.fast-buildings-characteristics__item--fill {
+  flex: 1 0 auto;
+}
+
+.fast-buildings-characteristics__label {
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.fast-buildings-characteristics__value {
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.2222rem;
+  font-weight: 400;
+  line-height: 1.4545;
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 1300px) {
+  .fast-buildings-characteristics__content {
+    gap: 1.3333rem;
+    padding: 1.7778rem;
+  }
+
+  .fast-buildings-characteristics__title {
+    font-size: 2.2222rem;
+  }
+
+  .fast-buildings-characteristics__columns {
+    gap: 1.1111rem;
+  }
+
+  .fast-buildings-characteristics__tab {
+    font-size: 0.8889rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .fast-buildings-characteristics {
+    padding: 0 0.5556rem 0.5556rem;
+  }
+
+  .fast-buildings-characteristics__content {
+    gap: 1rem;
+    padding: 1.1111rem 0.5556rem;
+  }
+
+  .fast-buildings-characteristics__title {
+    font-size: 1.3333rem;
+    line-height: 1.3333;
+  }
+
+  .fast-buildings-characteristics__tabs {
+    width: 100%;
+  }
+
+  .fast-buildings-characteristics__tab {
+    flex: 1 1 auto;
+    padding: 0.5556rem 0.6667rem;
+    font-size: 0.7778rem;
+    line-height: 1.4;
+  }
+
+  .fast-buildings-characteristics__table {
+    padding: 0.2778rem;
+  }
+
+  .fast-buildings-characteristics__columns {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.2778rem;
+  }
+
+  .fast-buildings-characteristics__item {
+    gap: 0.5556rem;
+    padding: 0.8889rem;
+  }
+
+  .fast-buildings-characteristics__label {
+    font-size: 0.8889rem;
+  }
+
+  .fast-buildings-characteristics__value {
+    font-size: 0.8889rem;
+    line-height: 1.5;
+  }
+}
