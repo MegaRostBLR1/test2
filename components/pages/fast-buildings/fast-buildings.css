@@ -4145,3 +4145,79 @@
     font-size: 16px;
   }
 }
+
+
+/* Планшетная адаптация секции «Наши работы», Figma 1857:120216 (1024 px). */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .fast-buildings-works {
+    padding: 0 10px 10px;
+  }
+
+  .fast-buildings-works__panel {
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .fast-buildings-works__header {
+    gap: 24px;
+  }
+
+  .fast-buildings-works__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .fast-buildings-works__catalog {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .fast-buildings-works__gallery {
+    padding: 0;
+  }
+
+  .fast-buildings-works__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .fast-buildings-works__card {
+    gap: 20px;
+    padding: 4px 4px 20px;
+  }
+
+  .fast-buildings-works__image-wrap {
+    aspect-ratio: 460 / 265;
+    padding: 10px 11px;
+  }
+
+  .fast-buildings-works__card-content {
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .fast-buildings-works__card-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .fast-buildings-works__details {
+    gap: 10px;
+  }
+
+  .fast-buildings-works__detail {
+    gap: 8px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .fast-buildings-works__project-id,
+  .fast-buildings-works__area {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .fast-buildings-works__pagination {
+    gap: 24px;
+  }
+}
