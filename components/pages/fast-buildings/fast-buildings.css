@@ -1865,6 +1865,7 @@
 .fast-buildings-process__title { margin: 0; color: #4D4D4D; font-family: 'Onest-SemiBold', sans-serif; font-size: 2.6667rem; font-weight: 600; line-height: normal; text-transform: uppercase; }
 .fast-buildings-process__subtitle { width: 100%; max-width: 50rem; margin: 0; color: #5D5D5D; font-family: 'Onest-Regular', sans-serif; font-size: 1.3333rem; line-height: 1.6; text-align: center; }
 .fast-buildings-process__steps { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; width: 100%; padding: 0; list-style: none; }
+.fast-buildings-process__steps::before { position: absolute; z-index: 0; top: 1.9444rem; right: 10%; left: 10%; height: 2px; background: #36508A1A; content: ""; pointer-events: none; }
 .fast-buildings-process__step { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 1.3333rem; min-width: 0; text-align: center; }
 .fast-buildings-process__icon-wrap { position: relative; display: flex; justify-content: center; width: 100%; }
 .fast-buildings-process__icon { display: grid; flex: 0 0 4rem; width: 4rem; height: 4rem; place-items: center; border-radius: 1.1111rem; background: #36508A; }
