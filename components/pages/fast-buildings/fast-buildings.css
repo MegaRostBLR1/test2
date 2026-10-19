@@ -2187,8 +2187,10 @@
   .fast-buildings-process__icon-wrap::after {
     position: absolute;
     top: 50%;
-    left: calc(50% + 2rem);
-    width: calc(100% - 4rem);
+    left: 50%;
+    right: -50%;
+    width: auto;
+    margin-left: 2rem;
     height: 2px;
     background: #36508A1A;
     content: "";
