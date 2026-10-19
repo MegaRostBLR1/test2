@@ -2303,6 +2303,10 @@
     pointer-events: none;
   }
 
+  .fast-buildings-process__step:nth-child(3) .fast-buildings-process__icon-wrap::after {
+    display: block;
+  }
+
   .fast-buildings-process__step:last-child .fast-buildings-process__icon-wrap::after {
     display: none;
   }
