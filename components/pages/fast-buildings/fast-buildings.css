@@ -490,7 +490,20 @@
   }
 
   .fast-buildings-catalog__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
+    gap: 0.5556rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .fast-buildings-catalog__grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fast-buildings-catalog__card {
+    flex: 0 0 48%;
+    scroll-snap-align: start;
   }
 
   .fast-buildings-catalog__card-title {
@@ -528,8 +541,11 @@
   }
 
   .fast-buildings-catalog__grid {
-    grid-template-columns: minmax(0, 1fr);
     gap: 0.5556rem;
+  }
+
+  .fast-buildings-catalog__card {
+    flex-basis: 100%;
   }
 
   .fast-buildings-catalog__card {
