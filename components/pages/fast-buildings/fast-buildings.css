@@ -4106,3 +4106,42 @@
 @media screen and (max-width:1500px){.fast-buildings-works__panel{padding:40px 30px}.fast-buildings-works__card-title{font-size:18px}.fast-buildings-works__detail{gap:8px;font-size:14px}.fast-buildings-works__details{gap:10px}.fast-buildings-works__project-id,.fast-buildings-works__area{padding:8px 10px;font-size:14px}}
 @media screen and (max-width:1100px){.fast-buildings-works__panel{gap:24px;padding:30px}.fast-buildings-works__title{font-size:34px}.fast-buildings-works__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.fast-buildings-works__card-title{font-size:20px}.fast-buildings-works__detail{font-size:14px}}
 @media screen and (max-width:680px){.fast-buildings-works{padding:0 5px 5px}.fast-buildings-works__panel{gap:24px;padding:24px 10px;border-radius:10px}.fast-buildings-works__header{gap:12px}.fast-buildings-works__title{font-size:24px;line-height:1.25}.fast-buildings-works__catalog{font-size:14px}.fast-buildings-works__gallery{padding:0;background:transparent}.fast-buildings-works__grid{grid-template-columns:minmax(0,1fr);gap:12px}.fast-buildings-works__card{gap:14px;padding:4px 4px 14px;border-radius:14px}.fast-buildings-works__image-wrap{border-radius:12px}.fast-buildings-works__card-content{gap:12px;padding:0 8px}.fast-buildings-works__card-title{font-size:18px;line-height:1.4}.fast-buildings-works__details{gap:8px}.fast-buildings-works__detail{gap:8px;max-width:100%;font-size:13px;line-height:22px;white-space:normal}.fast-buildings-works__detail-icon{flex-basis:28px;width:28px;height:28px}.fast-buildings-works__pagination{gap:12px}.fast-buildings-works__arrow{flex-basis:52px;width:52px;height:52px}.fast-buildings-works__arrow img{width:30px;height:30px}.fast-buildings-works__dot{flex-basis:8px;width:8px;height:8px}}
+
+
+/* Макет «Наши работы»: адаптация для Figma 1440 (node 1857:117983). */
+@media screen and (min-width: 1301px) and (max-width: 1599px) {
+  .fast-buildings-works__panel {
+    padding: 40px;
+  }
+
+  .fast-buildings-works__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .fast-buildings-works__card:nth-child(4) {
+    display: none;
+  }
+
+  .fast-buildings-works__title {
+    font-size: 48px;
+  }
+
+  .fast-buildings-works__card-title {
+    font-size: 22px;
+  }
+
+  .fast-buildings-works__detail {
+    gap: 12px;
+    font-size: 16px;
+  }
+
+  .fast-buildings-works__details {
+    gap: 15px;
+  }
+
+  .fast-buildings-works__project-id,
+  .fast-buildings-works__area {
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+}
