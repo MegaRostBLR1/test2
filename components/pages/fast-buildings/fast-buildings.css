@@ -1524,7 +1524,7 @@
   pointer-events: none;
 }
 
-.fast-buildings-guarantee__option:nth-child(2) .fast-buildings-guarantee__number {
+.fast-buildings-guarantee__number--five {
   top: -1.2222rem;
   right: 9rem;
 }
@@ -1578,7 +1578,7 @@
   }
 
   .fast-buildings-guarantee__number,
-  .fast-buildings-guarantee__option:nth-child(2) .fast-buildings-guarantee__number {
+  .fast-buildings-guarantee__number--five {
     top: -0.6667rem;
     right: 0.4444rem;
     font-size: 8rem;
