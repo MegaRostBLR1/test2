@@ -1518,14 +1518,16 @@
 .fast-buildings-guarantee__lifetime {
   position: absolute;
   z-index: 0;
-  right: 0;
+  right: auto;
   bottom: 0;
-  left: 0;
+  left: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 5.9444rem;
-  padding: 1.3333rem 2rem;
+  width: max-content;
+  max-width: 100%;
+  min-height: 0;
+  padding: 1.6667rem 12.6111rem 1.3333rem;
   border-radius: 0 0 1.6667rem 1.6667rem;
   color: #FFFFFF;
   background: #36508A;
@@ -1534,6 +1536,8 @@
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
+  white-space: nowrap;
+  transform: translateX(-50%);
 }
 
 
