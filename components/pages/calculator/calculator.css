@@ -198,7 +198,7 @@ h4 {
   top: 0;
   width: 36px;
   height: 36px;
-  background-image: url(/static/images/calculator/hero-list-ic.svg);
+  background-image: url(../../../static/images/calculator/hero-list-ic.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
