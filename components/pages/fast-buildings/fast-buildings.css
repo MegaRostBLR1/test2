@@ -4128,9 +4128,9 @@
 }
 .fast-buildings-complectation__body {
   display: grid;
-  grid-template-columns: 597px minmax(0, 1fr);
-  gap: 24px;
-  min-height: 703px;
+  grid-template-columns: 39.4815rem minmax(0, 1fr);
+  gap: 1.3333rem;
+  min-height: 39.0556rem;
 }
 .fast-buildings-complectation__items {
   display: flex;
@@ -4190,7 +4190,7 @@
   align-items: flex-start;
   justify-content: center;
   min-width: 0;
-  height: 703px;
+  height: 39.0556rem;
   overflow: hidden;
 }
 .fast-buildings-complectation__visual img,
