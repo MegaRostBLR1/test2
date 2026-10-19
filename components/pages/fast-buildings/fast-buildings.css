@@ -939,7 +939,7 @@
 .fast-buildings-factors__card::before {
   position: absolute;
   z-index: -2;
-  top: 0;
+  top: 0.0272rem;
   right: 3%;
   bottom: 0.2778rem;
   left: 3%;
@@ -951,7 +951,7 @@
 .fast-buildings-factors__card::after {
   position: absolute;
   z-index: -1;
-  top: 0.2222rem;
+  top: 0.2494rem;
   right: 0;
   bottom: 0;
   left: 0;
