@@ -2893,3 +2893,304 @@
     transition: none;
   }
 }
+
+<!-- Figma 1857:114025 — Онлайн система WebSteel -->
+.fast-buildings-websteel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.2778rem;
+  color: #4D4D4D;
+  background: #F5F8F7;
+}
+
+.fast-buildings-websteel__panel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 3.5556rem 2.2222rem;
+  border-radius: 1.1111rem;
+  background: #FFFFFF;
+}
+
+.fast-buildings-websteel__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.2222rem;
+  width: 100%;
+  max-width: 94.4444rem;
+  min-height: 47.7778rem;
+  padding: 2.6667rem 5.3333rem;
+  border-radius: 1.6667rem;
+  background: #F7F8FA;
+}
+
+.fast-buildings-websteel__copy {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.6667rem;
+  min-width: 0;
+}
+
+.fast-buildings-websteel__title,
+.fast-buildings-websteel__description {
+  margin: 0;
+}
+
+.fast-buildings-websteel__title {
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.fast-buildings-websteel__description {
+  max-width: 49rem;
+  color: #5D5D5D;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.3333rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.fast-buildings-websteel__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.7778rem;
+}
+
+.fast-buildings-websteel__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.7778rem 2.2222rem;
+  border: 1px solid #324C88;
+  border-radius: 1.1111rem;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 600;
+  line-height: 1.26;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.fast-buildings-websteel__button--primary {
+  color: #FFFFFF;
+  background: #324C88;
+}
+
+.fast-buildings-websteel__button--secondary {
+  color: #324C88;
+  background: transparent;
+}
+
+.fast-buildings-websteel__button--primary:hover {
+  background: #263B6B;
+}
+
+.fast-buildings-websteel__button--secondary:hover {
+  color: #FFFFFF;
+  background: #324C88;
+}
+
+.fast-buildings-websteel__button:focus-visible {
+  outline: 2px solid #324C88;
+  outline-offset: 4px;
+}
+
+.fast-buildings-websteel__devices {
+  position: relative;
+  flex: 0 0 30rem;
+  height: 39.1111rem;
+}
+
+.fast-buildings-websteel__device {
+  position: absolute;
+  width: 13.8889rem;
+  height: 34.0556rem;
+}
+
+.fast-buildings-websteel__device--left {
+  top: 5.0556rem;
+  left: 0;
+}
+
+.fast-buildings-websteel__device--right {
+  top: 0;
+  right: 0.5rem;
+}
+
+.fast-buildings-websteel__device img {
+  position: absolute;
+  display: block;
+  max-width: none;
+  height: auto;
+  pointer-events: none;
+}
+
+.fast-buildings-websteel__device-shadow,
+.fast-buildings-websteel__device-frame {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.fast-buildings-websteel__device-shadow {
+  opacity: 0.7;
+}
+
+.fast-buildings-websteel__device-screen {
+  top: 1.8%;
+  left: 2%;
+  width: 86%;
+  height: 96.5%;
+  object-fit: contain;
+}
+
+.fast-buildings-websteel__device--left .fast-buildings-websteel__device-screen {
+  left: 2%;
+}
+
+.fast-buildings-websteel__device--right .fast-buildings-websteel__device-screen {
+  left: 10.5%;
+}
+
+@media screen and (max-width: 1300px) {
+  .fast-buildings-websteel__panel {
+    padding: 2.6667rem 1.3333rem;
+  }
+
+  .fast-buildings-websteel__content {
+    gap: 1.7778rem;
+    min-height: 0;
+    padding: 2.6667rem;
+  }
+
+  .fast-buildings-websteel__title {
+    font-size: 2.2222rem;
+  }
+
+  .fast-buildings-websteel__description {
+    font-size: 1.1111rem;
+  }
+
+  .fast-buildings-websteel__devices {
+    flex-basis: 24rem;
+    height: 34rem;
+  }
+
+  .fast-buildings-websteel__device {
+    width: 11.1111rem;
+    height: 27.3333rem;
+  }
+
+  .fast-buildings-websteel__device--left {
+    top: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .fast-buildings-websteel__content {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2rem;
+  }
+
+  .fast-buildings-websteel__copy {
+    gap: 1.7778rem;
+  }
+
+  .fast-buildings-websteel__devices {
+    align-self: center;
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 30rem;
+    height: 34rem;
+  }
+
+  .fast-buildings-websteel__device {
+    width: 11.1111rem;
+    height: 27.3333rem;
+  }
+
+  .fast-buildings-websteel__device--left {
+    top: 4rem;
+    left: 0;
+  }
+
+  .fast-buildings-websteel__device--right {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .fast-buildings-websteel {
+    padding: 0;
+  }
+
+  .fast-buildings-websteel__panel {
+    padding: 1.1111rem 0.5556rem;
+    border-radius: 0;
+  }
+
+  .fast-buildings-websteel__content {
+    gap: 1.7778rem;
+    padding: 1.3333rem 1rem;
+    border-radius: 1.1111rem;
+  }
+
+  .fast-buildings-websteel__title {
+    font-size: 1.4444rem;
+    line-height: 1.4;
+  }
+
+  .fast-buildings-websteel__description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .fast-buildings-websteel__actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .fast-buildings-websteel__button {
+    width: 100%;
+    padding: 1.1111rem 1rem;
+    font-size: 0.8889rem;
+  }
+
+  .fast-buildings-websteel__devices {
+    max-width: 22rem;
+    height: 27rem;
+  }
+
+  .fast-buildings-websteel__device {
+    width: 9.2rem;
+    height: 22.5rem;
+  }
+
+  .fast-buildings-websteel__device--left {
+    top: 3.5rem;
+  }
+
+  .fast-buildings-websteel__device--right {
+    right: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fast-buildings-websteel__button {
+    transition: none;
+  }
+}
