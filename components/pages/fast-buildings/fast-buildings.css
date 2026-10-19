@@ -1858,43 +1858,61 @@
   }
 }
 
-/* Этапы работы — Figma 1857:113910. */
-.fast-buildings-process { padding: 0.5556rem 0.5556rem 0; color: #4D4D4D; background: #F5F8F7; }
-.fast-buildings-process__panel { display: flex; flex-direction: column; align-items: center; gap: 3.5556rem; padding: 3.5556rem 4rem; border-radius: 1.1111rem; background: #FFFFFF; }
-.fast-buildings-process__heading { display: flex; flex-direction: column; align-items: center; gap: 1.3333rem; width: 100%; text-align: center; }
-.fast-buildings-process__title { margin: 0; color: #4D4D4D; font-family: 'Onest-SemiBold', sans-serif; font-size: 2.6667rem; font-weight: 600; line-height: normal; text-transform: uppercase; }
-.fast-buildings-process__subtitle { width: 100%; max-width: 50rem; margin: 0; color: #5D5D5D; font-family: 'Onest-Regular', sans-serif; font-size: 1.3333rem; line-height: 1.6; text-align: center; }
-.fast-buildings-process__steps { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; width: 100%; padding: 0; list-style: none; }
-.fast-buildings-process__steps::before { position: absolute; z-index: 0; top: 1.9444rem; right: 10%; left: 10%; height: 2px; background: #36508A1A; content: ""; pointer-events: none; }
+/* Этапы работы — Figma 1857:118385. */
+.fast-buildings-process {
+  padding: 0.2778rem 0.2778rem 0.5556rem;
+  color: #4D4D4D;
+  background: #F5F8F7;
+}
+.fast-buildings-process__panel { display: flex; flex-direction: column; align-items: center; gap: 2rem; padding: 1.1111rem; border-radius: 0.5556rem; background: #FFFFFF; }
+.fast-buildings-process__heading { display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; text-align: center; }
+.fast-buildings-process__title { margin: 0; color: #4D4D4D; font-family: 'Onest-SemiBold', sans-serif; font-size: 1.6667rem; font-weight: 600; line-height: 1.2667; text-transform: uppercase; }
+.fast-buildings-process__subtitle { width: 100%; max-width: 50rem; margin: 0; color: #5D5D5D; font-family: 'Onest-Regular', sans-serif; font-size: 1rem; line-height: 1.6; text-align: center; }
+.fast-buildings-process__steps { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.5556rem; width: 100%; padding: 0; list-style: none; }
+.fast-buildings-process__steps::before { position: absolute; z-index: 0; top: 1.3333rem; right: 10%; left: 10%; height: 2px; background: #36508A1A; content: ''; pointer-events: none; }
 .fast-buildings-process__step { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 1.3333rem; min-width: 0; text-align: center; }
 .fast-buildings-process__icon-wrap { position: relative; display: flex; justify-content: center; width: 100%; }
-.fast-buildings-process__icon { display: grid; flex: 0 0 4rem; width: 4rem; height: 4rem; place-items: center; border-radius: 1.1111rem; background: #36508A; }
-.fast-buildings-process__icon img { display: block; width: 2rem; height: 2rem; object-fit: contain; }
+.fast-buildings-process__icon { display: grid; flex: 0 0 2.6667rem; width: 2.6667rem; height: 2.6667rem; place-items: center; border-radius: 0.7778rem; background: #36508A; }
+.fast-buildings-process__icon img { display: block; width: 1.3333rem; height: 1.3333rem; object-fit: contain; }
 .fast-buildings-process__number { position: absolute; top: -0.5rem; left: 55%; display: grid; width: 1.6667rem; height: 1.6667rem; place-items: center; border: 1px solid #FFFFFF; border-radius: 50%; background: #FFF500; color: #36508A; font-family: 'Onest-SemiBold', sans-serif; font-size: 0.6667rem; font-weight: 600; line-height: 1; }
-.fast-buildings-process__step-copy { display: flex; flex-direction: column; align-items: center; gap: 0.7778rem; width: 100%; }
-.fast-buildings-process__step-title { margin: 0; color: #4D4D4D; font-family: 'Onest-SemiBold', sans-serif; font-size: 1.3333rem; font-weight: 600; line-height: 1.3; }
-.fast-buildings-process__description { max-width: 18.5rem; margin: 0; color: #5D5D5D; font-family: 'Onest-Regular', sans-serif; font-size: 1rem; line-height: 1.4; text-align: center; }
-.fast-buildings-process__footnote { display: flex; flex-direction: column; align-items: center; gap: 1.3333rem; width: 100%; }
-.fast-buildings-process__separator { display: block; width: 16.6667rem; height: 2px; background: #36508A1A; }
-.fast-buildings-process__footnote p { max-width: 50rem; margin: 0; color: #5D5D5D; font-family: 'Onest-Regular', sans-serif; font-size: 1.1111rem; line-height: 1.6; text-align: center; }
+.fast-buildings-process__step-copy { display: flex; flex-direction: column; align-items: center; gap: 0.4444rem; width: 100%; }
+.fast-buildings-process__step-title { margin: 0; color: #4D4D4D; font-family: 'Onest-SemiBold', sans-serif; font-size: 1.1111rem; font-weight: 600; line-height: 1.3; overflow-wrap: anywhere; }
+.fast-buildings-process__description { width: 100%; max-width: 10rem; margin: 0; color: #5D5D5D; font-family: 'Onest-Regular', sans-serif; font-size: 0.8889rem; line-height: 1.375; text-align: center; overflow-wrap: anywhere; }
+.fast-buildings-process__footnote, .fast-buildings-process__separator { display: none; }
+@media screen and (min-width: 1301px) {
+  .fast-buildings-process { padding: 5px 5px 10px; }
+  .fast-buildings-process__panel { gap: 36px; padding: 20px; border-radius: 10px; }
+  .fast-buildings-process__heading { gap: 18px; }
+  .fast-buildings-process__title { font-size: 30px; line-height: 38px; }
+  .fast-buildings-process__subtitle { max-width: 900px; font-size: 18px; line-height: 1.6; }
+  .fast-buildings-process__steps { gap: 0; }
+  .fast-buildings-process__steps::before { top: 23px; right: 10%; left: 10%; }
+  .fast-buildings-process__step { gap: 24px; padding: 0 8px; }
+  .fast-buildings-process__icon { flex-basis: 48px; width: 48px; height: 48px; border-radius: 14px; }
+  .fast-buildings-process__icon img { width: 24px; height: 24px; }
+  .fast-buildings-process__number { top: -9px; left: 55%; width: 30px; height: 30px; font-size: 12px; }
+  .fast-buildings-process__step-copy { gap: 8px; }
+  .fast-buildings-process__step-title { font-size: 20px; line-height: 1.3; }
+  .fast-buildings-process__description { max-width: 195px; font-size: 16px; line-height: 22px; }
+}
 @media screen and (max-width: 1300px) {
- .fast-buildings-process__panel { gap: 2.6667rem; padding: 2.6667rem 1.7778rem; }
- .fast-buildings-process__steps { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 2.2222rem; }
- .fast-buildings-process__step-title { font-size: 1.1111rem; }
- .fast-buildings-process__description { font-size: 0.8889rem; }
+  .fast-buildings-process__panel { gap: 2rem; padding: 1.3333rem 1rem; }
+  .fast-buildings-process__steps { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 2rem; }
+  .fast-buildings-process__steps::before { display: none; }
+  .fast-buildings-process__step-title { font-size: 1rem; }
+  .fast-buildings-process__description { font-size: 0.8889rem; }
 }
 @media screen and (max-width: 680px) {
- .fast-buildings-process { padding: 0.5556rem 0.5556rem 0; }
- .fast-buildings-process__panel { gap: 1.3333rem; padding: 1.3333rem 0.5556rem; border-radius: 0.5556rem; }
- .fast-buildings-process__heading { gap: 0.6667rem; }
- .fast-buildings-process__title { font-size: 1.2222rem; }
- .fast-buildings-process__subtitle { font-size: 0.7778rem; }
- .fast-buildings-process__steps { grid-template-columns: 1fr; gap: 1.3333rem; }
- .fast-buildings-process__step { gap: 0.7778rem; }
- .fast-buildings-process__icon { flex-basis: 3rem; width: 3rem; height: 3rem; border-radius: 0.7778rem; }
- .fast-buildings-process__icon img { width: 1.5556rem; height: 1.5556rem; }
- .fast-buildings-process__number { left: 55%; }
- .fast-buildings-process__step-title { font-size: 1rem; }
- .fast-buildings-process__description, .fast-buildings-process__footnote p { font-size: 0.7778rem; }
- .fast-buildings-process__footnote { gap: 0.7778rem; }
+  .fast-buildings-process { padding: 0.5556rem 0.5556rem 0; }
+  .fast-buildings-process__panel { gap: 1.3333rem; padding: 1.3333rem 0.5556rem; border-radius: 0.5556rem; }
+  .fast-buildings-process__heading { gap: 0.6667rem; }
+  .fast-buildings-process__title { font-size: 1.2222rem; }
+  .fast-buildings-process__subtitle { font-size: 0.7778rem; }
+  .fast-buildings-process__steps { grid-template-columns: 1fr; gap: 1.3333rem; }
+  .fast-buildings-process__step { gap: 0.7778rem; }
+  .fast-buildings-process__icon { flex-basis: 3rem; width: 3rem; height: 3rem; border-radius: 0.7778rem; }
+  .fast-buildings-process__icon img { width: 1.5556rem; height: 1.5556rem; }
+  .fast-buildings-process__number { left: 55%; }
+  .fast-buildings-process__step-title { font-size: 1rem; }
+  .fast-buildings-process__description { max-width: 20rem; font-size: 0.7778rem; }
 }
