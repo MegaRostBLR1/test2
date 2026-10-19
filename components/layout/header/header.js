@@ -6,19 +6,6 @@ function initHeaderLocationChoices() {
     }
 
     header.addEventListener('click', (event) => {
-        if (window.matchMedia('(max-width: 1300px)').matches) {
-            const bounds = header.getBoundingClientRect();
-            const clickedTopBar = event.target === header
-                && event.clientY >= bounds.top
-                && event.clientY <= bounds.top + 38
-                && event.clientX >= bounds.left
-                && event.clientX <= bounds.right;
-
-            if (clickedTopBar) {
-                const isOpen = header.classList.toggle('app-header--top-open');
-                header.setAttribute('data-top-open', String(isOpen));
-            }
-        }
         const item = event.target.closest('.header__location-choice-item');
 
         if (!item || !header.contains(item)) {
