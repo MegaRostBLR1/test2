@@ -35,6 +35,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.fast-buildings__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 0.7778rem;
   width: 100%;
 }
