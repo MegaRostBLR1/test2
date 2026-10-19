@@ -4068,3 +4068,41 @@
     transition: none;
   }
 }
+
+
+
+/* Блок «Наши работы», Figma 1857:115702. */
+.fast-buildings-works{padding:0 10px 10px;color:#4d4d4d;background:#f5f8f7}
+.fast-buildings-works__panel{display:flex;flex-direction:column;align-items:center;gap:30px;width:100%;padding:40px;border-radius:10px;background:#fff}
+.fast-buildings-works__header{display:flex;flex-direction:column;align-items:center;gap:24px;width:100%;text-align:center}
+.fast-buildings-works__title{margin:0;color:#4d4d4d;font-family:"Onest-SemiBold",sans-serif;font-size:48px;font-weight:600;line-height:normal;text-transform:uppercase}
+.fast-buildings-works__catalog{color:#324c88;font-family:"Onest-Medium",sans-serif;font-size:18px;font-weight:500;line-height:1.6;text-transform:uppercase}
+.fast-buildings-works__catalog:focus-visible,.fast-buildings-works__arrow:focus-visible{outline:2px solid #324c88;outline-offset:3px}
+.fast-buildings-works__gallery{width:100%;padding:4px;border-radius:10px;background:#f5f8f7}
+.fast-buildings-works__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;gap:5px;width:100%}
+.fast-buildings-works__card{display:flex;flex-direction:column;gap:20px;min-width:0;padding:4px 4px 14px;overflow:hidden;border-radius:20px;background:#fff}
+.fast-buildings-works__image-wrap{position:relative;display:flex;align-items:flex-start;gap:10px;width:100%;min-width:0;aspect-ratio:460/265;padding:10px 11px;overflow:hidden;border-radius:20px;background:#324c88}
+.fast-buildings-works__image{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+.fast-buildings-works__project-id,.fast-buildings-works__area{position:relative;z-index:1;display:inline-flex;align-items:center;flex:0 0 auto;gap:4px;padding:10px 14px;border-radius:10px;font-family:"Onest-Medium",sans-serif;font-size:16px;font-weight:500;line-height:1.25;white-space:nowrap}
+.fast-buildings-works__project-id{color:#39538c;background:#fff500}
+.fast-buildings-works__area{color:#fff;background:rgb(237 237 237 / 20%);backdrop-filter:blur(25px)}
+.fast-buildings-works__area sup{font-size:10px;line-height:1}
+.fast-buildings-works__card-content{display:flex;flex-direction:column;align-items:flex-start;gap:15px;width:100%;padding:0 10px}
+.fast-buildings-works__card-title{width:100%;margin:0;color:#4d4d4d;font-family:"Onest-SemiBold",sans-serif;font-size:22px;font-weight:600;line-height:1.5;text-transform:uppercase;overflow-wrap:anywhere}
+.fast-buildings-works__divider{flex:0 0 1px;width:100%;height:1px;background:rgb(77 77 77 / 20%)}
+.fast-buildings-works__details{display:flex;flex-wrap:wrap;align-items:flex-start;gap:15px;width:100%;padding:0;list-style:none}
+.fast-buildings-works__detail{display:inline-flex;align-items:center;gap:12px;min-width:0;min-height:34px;padding:2px 10px 2px 2px;border-radius:10px;background:rgb(39 38 41 / 5%);color:#4d4d4d;font-family:"Onest-Medium",sans-serif;font-size:16px;font-weight:500;line-height:26px;white-space:nowrap}
+.fast-buildings-works__detail-icon{display:grid;flex:0 0 30px;width:30px;height:30px;place-items:center;border-radius:10px;background:#38528b}
+.fast-buildings-works__detail-icon img{display:block;width:18px;height:18px;object-fit:contain}
+.fast-buildings-works__pagination{display:flex;align-items:center;justify-content:center;gap:24px;max-width:100%}
+.fast-buildings-works__arrow{display:grid;flex:0 0 90.51px;width:90.51px;height:90.51px;place-items:center;border:0;border-radius:0;background:transparent}
+.fast-buildings-works__arrow:disabled{cursor:default;opacity:1}
+.fast-buildings-works__arrow img{display:block;width:40px;height:40px;object-fit:contain}
+.fast-buildings-works__arrow--previous img{transform:rotate(-90deg)}
+.fast-buildings-works__arrow--next img{transform:rotate(90deg)}
+.fast-buildings-works__dots{display:flex;align-items:center;gap:4px}
+.fast-buildings-works__dot{display:block;flex:0 0 10px;width:10px;height:10px;border-radius:50%;background:rgb(50 76 136 / 20%)}
+.fast-buildings-works__dot--active{background:#324c88}
+@media screen and (max-width:1500px){.fast-buildings-works__panel{padding:40px 30px}.fast-buildings-works__card-title{font-size:18px}.fast-buildings-works__detail{gap:8px;font-size:14px}.fast-buildings-works__details{gap:10px}.fast-buildings-works__project-id,.fast-buildings-works__area{padding:8px 10px;font-size:14px}}
+@media screen and (max-width:1100px){.fast-buildings-works__panel{gap:24px;padding:30px}.fast-buildings-works__title{font-size:34px}.fast-buildings-works__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.fast-buildings-works__card-title{font-size:20px}.fast-buildings-works__detail{font-size:14px}}
+@media screen and (max-width:680px){.fast-buildings-works{padding:0 5px 5px}.fast-buildings-works__panel{gap:24px;padding:24px 10px;border-radius:10px}.fast-buildings-works__header{gap:12px}.fast-buildings-works__title{font-size:24px;line-height:1.25}.fast-buildings-works__catalog{font-size:14px}.fast-buildings-works__gallery{padding:0;background:transparent}.fast-buildings-works__grid{grid-template-columns:minmax(0,1fr);gap:12px}.fast-buildings-works__card{gap:14px;padding:4px 4px 14px;border-radius:14px}.fast-buildings-works__image-wrap{border-radius:12px}.fast-buildings-works__card-content{gap:12px;padding:0 8px}.fast-buildings-works__card-title{font-size:18px;line-height:1.4}.fast-buildings-works__details{gap:8px}.fast-buildings-works__detail{gap:8px;max-width:100%;font-size:13px;line-height:22px;white-space:normal}.fast-buildings-works__detail-icon{flex-basis:28px;width:28px;height:28px}.fast-buildings-works__pagination{gap:12px}.fast-buildings-works__arrow{flex-basis:52px;width:52px;height:52px}.fast-buildings-works__arrow img{width:30px;height:30px}.fast-buildings-works__dot{flex-basis:8px;width:8px;height:8px}}
