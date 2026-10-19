@@ -3336,3 +3336,123 @@
     height: 96.54%;
   }
 }
+
+
+/* Figma 1857:120815 — точная адаптация WebSteel для 360 px. */
+@media screen and (max-width: 680px) {
+  .fast-buildings-websteel {
+    display: block;
+    padding: 5px;
+  }
+
+  .fast-buildings-websteel__panel {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .fast-buildings-websteel__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 24px;
+    width: 100%;
+    min-height: 0;
+    padding: 20px 10px;
+    border-radius: 30px;
+  }
+
+  .fast-buildings-websteel__copy {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .fast-buildings-websteel__title {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .fast-buildings-websteel__description {
+    max-width: none;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .fast-buildings-websteel__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .fast-buildings-websteel__button {
+    display: flex;
+    flex: 0 0 54px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 54px;
+    padding: 18px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.26;
+    white-space: nowrap;
+  }
+
+  .fast-buildings-websteel__devices {
+    position: relative;
+    align-self: center;
+    flex: 0 0 262.5px;
+    width: 200px;
+    max-width: none;
+    height: 262.5px;
+  }
+
+  .fast-buildings-websteel__device {
+    position: absolute;
+    width: 93px;
+    height: 228.5px;
+  }
+
+  .fast-buildings-websteel__device--left {
+    top: 33.9px;
+    left: 0;
+  }
+
+  .fast-buildings-websteel__device--right {
+    top: 0;
+    right: 2px;
+  }
+
+  .fast-buildings-websteel__device-shadow,
+  .fast-buildings-websteel__device-frame {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .fast-buildings-websteel__device-screen {
+    top: 1.5%;
+    left: 2%;
+    width: 86%;
+    height: 96.5%;
+    object-fit: contain;
+  }
+
+  .fast-buildings-websteel__device--left .fast-buildings-websteel__device-screen {
+    left: 2%;
+  }
+
+  .fast-buildings-websteel__device--right .fast-buildings-websteel__device-screen {
+    left: 10.5%;
+  }
+}
