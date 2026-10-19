@@ -1808,3 +1808,52 @@
     white-space: normal;
   }
 }
+
+/* Гарантия — mobile Figma 1857:121043 (360 px). */
+@media screen and (max-width: 680px) {
+  .fast-buildings-guarantee { padding: 0 0.5556rem 0.5556rem; }
+  .fast-buildings-guarantee__panel {
+    gap: 1.3333rem;
+    padding: 1.1111rem 0;
+    border-radius: 1.1111rem;
+  }
+  .fast-buildings-guarantee__heading { gap: 1rem; padding: 0 0.5556rem; }
+  .fast-buildings-guarantee__title { font-size: 1.1111rem; line-height: 1.5556rem; }
+  .fast-buildings-guarantee__subtitle { font-size: 0.8889rem; line-height: normal; text-wrap: initial; }
+  .fast-buildings-guarantee__options { gap: 0.7778rem; padding: 0 0.2778rem; }
+  .fast-buildings-guarantee__option { width: 100%; padding-top: 0.2778rem; }
+  .fast-buildings-guarantee__option::before {
+    top: 0; width: 88.4393%; height: 14.2222rem; border-radius: 1.6667rem;
+  }
+  .fast-buildings-guarantee__card {
+    gap: 1.3333rem; width: 100%; max-width: 19.2222rem; min-height: 0;
+    margin: 0 auto; padding: 1.3333rem; border-radius: 1.6667rem;
+  }
+  .fast-buildings-guarantee__card-header { gap: 0.7778rem; }
+  .fast-buildings-guarantee__label { padding: 0.6667rem 1.1111rem; font-size: 0.7778rem; line-height: 1.5; }
+  .fast-buildings-guarantee__icon {
+    flex: 0 0 2rem; width: 2rem; height: 2rem; border-radius: 0.7778rem;
+  }
+  .fast-buildings-guarantee__icon img { width: 1rem; height: 1rem; }
+  .fast-buildings-guarantee__card-content { gap: 0.5556rem; }
+  .fast-buildings-guarantee__card-title,
+  .fast-buildings-guarantee__type { font-size: 0.8889rem; line-height: 1.3333; }
+  .fast-buildings-guarantee__divider { margin: 0.1111rem 0; }
+  .fast-buildings-guarantee__benefits { gap: 0.7778rem; }
+  .fast-buildings-guarantee__benefit { align-items: center; gap: 0.7778rem; }
+  .fast-buildings-guarantee__benefit p { font-size: 0.6667rem; line-height: 1.5; }
+  .fast-buildings-guarantee__check {
+    flex: 0 0 1.3333rem; width: 1.3333rem; height: 1.3333rem; border-radius: 0.5556rem;
+  }
+  .fast-buildings-guarantee__check img { width: 1rem; height: 1rem; }
+  .fast-buildings-guarantee__number,
+  .fast-buildings-guarantee__number--five {
+    top: -4.8rem; right: 2.75rem; font-size: 6.6667rem; line-height: 1.5;
+  }
+  .fast-buildings-guarantee__number--five { top: -4.8rem; right: 4.8056rem; }
+  .fast-buildings-guarantee__footnote {
+    width: 100%; max-width: none; margin: 0; padding: 1.1111rem 0.5556rem;
+    border-radius: 0 0 1.6667rem 1.6667rem; font-size: 0.8889rem;
+    line-height: 1.2222rem; white-space: normal;
+  }
+}
