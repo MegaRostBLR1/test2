@@ -2935,6 +2935,15 @@
   min-width: 0;
 }
 
+.fast-buildings-websteel__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.3333rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
 .fast-buildings-websteel__title,
 .fast-buildings-websteel__description {
   margin: 0;
