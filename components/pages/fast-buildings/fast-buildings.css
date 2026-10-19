@@ -269,3 +269,306 @@
     transition: none;
   }
 }
+
+
+/* Каталог быстровозводимых зданий — Figma 1857:113629. */
+.fast-buildings-catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6667rem;
+  margin: 0 0.2778rem 0.2778rem;
+  padding: 2.6667rem 2.7778rem 0.2778rem;
+  border-radius: 1.1111rem;
+  background: #F5F8F7;
+  color: #4D4D4D;
+}
+
+.fast-buildings-catalog__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3333rem;
+  width: 100%;
+  text-align: center;
+}
+
+.fast-buildings-catalog__title {
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.fast-buildings-catalog__subtitle {
+  margin: 0;
+  color: #4D4D4DCC;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.3333rem;
+  line-height: 1.5;
+}
+
+.fast-buildings-catalog__tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1111rem;
+  padding: 0.2222rem;
+}
+
+.fast-buildings-catalog__tab {
+  color: #5D5D5D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.1111rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.fast-buildings-catalog__tab--muted {
+  color: #5D5D5D4D;
+}
+
+.fast-buildings-catalog__tab-separator {
+  flex: 0 0 0.2222rem;
+  width: 0.2222rem;
+  height: 0.2222rem;
+  border-radius: 50%;
+  background: #5D5D5D;
+}
+
+.fast-buildings-catalog__carousel {
+  width: 100%;
+  min-width: 0;
+}
+
+.fast-buildings-catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5556rem;
+  width: 100%;
+}
+
+.fast-buildings-catalog__card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.6667rem;
+  min-width: 0;
+  padding: 1.1111rem;
+  border-radius: 1.1111rem;
+  background: #FFFFFF;
+}
+
+.fast-buildings-catalog__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7778rem;
+  width: 100%;
+  text-align: center;
+}
+
+.fast-buildings-catalog__image {
+  display: block;
+  flex: 0 0 auto;
+  width: 11.1111rem;
+  max-width: 100%;
+  height: 7.3889rem;
+  object-fit: contain;
+}
+
+.fast-buildings-catalog__card-title {
+  max-width: 100%;
+  margin: 0;
+  color: #505050;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.6667rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.fast-buildings-catalog__price {
+  margin: 0;
+  color: #4D4D4DCC;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.fast-buildings-catalog__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 3.5556rem;
+  padding: 0.8889rem 1.1111rem;
+  border-radius: 1.1111rem;
+  background: #EBEDF3;
+  color: #324C88;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 0.9444rem;
+  font-weight: 600;
+  line-height: 1.26;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.1s ease;
+}
+
+.fast-buildings-catalog__button:hover {
+  background: #DFE3ED;
+}
+
+.fast-buildings-catalog__button:focus-visible,
+.fast-buildings-catalog__arrow:focus-visible {
+  outline: 0.1111rem solid #324C88;
+  outline-offset: 0.2222rem;
+}
+
+.fast-buildings-catalog__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3333rem;
+  align-self: center;
+}
+
+.fast-buildings-catalog__arrow {
+  display: grid;
+  flex: 0 0 3.5556rem;
+  width: 3.5556rem;
+  height: 3.5556rem;
+  place-items: center;
+  border: 1px solid #4D4D4D33;
+  border-radius: 1.1111rem;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.fast-buildings-catalog__arrow img {
+  display: block;
+  width: 2.2222rem;
+  height: 2.2222rem;
+  object-fit: contain;
+}
+
+.fast-buildings-catalog__dots {
+  display: flex;
+  align-items: center;
+  gap: 0.2222rem;
+}
+
+.fast-buildings-catalog__dot {
+  display: block;
+  flex: 0 0 0.5556rem;
+  width: 0.5556rem;
+  height: 0.5556rem;
+  border-radius: 50%;
+  background: #324C8833;
+}
+
+.fast-buildings-catalog__dot--active {
+  background: #324C88;
+}
+
+@media screen and (max-width: 1300px) {
+  .fast-buildings-catalog {
+    gap: 1.3333rem;
+    padding: 2.2222rem 1.1111rem 0.2778rem;
+  }
+
+  .fast-buildings-catalog__title {
+    font-size: 1.6667rem;
+  }
+
+  .fast-buildings-catalog__subtitle {
+    font-size: 1rem;
+  }
+
+  .fast-buildings-catalog__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fast-buildings-catalog__card-title {
+    font-size: 1.3333rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .fast-buildings-catalog {
+    gap: 1rem;
+    padding: 1.3333rem 0.5556rem 0.2778rem;
+    border-radius: 0.5556rem;
+  }
+
+  .fast-buildings-catalog__heading {
+    gap: 0.6667rem;
+  }
+
+  .fast-buildings-catalog__title {
+    font-size: 1.2222rem;
+    line-height: 1.35;
+  }
+
+  .fast-buildings-catalog__subtitle {
+    font-size: 0.7778rem;
+    line-height: 1.5;
+  }
+
+  .fast-buildings-catalog__tabs {
+    gap: 0.6667rem;
+  }
+
+  .fast-buildings-catalog__tab {
+    font-size: 0.7778rem;
+  }
+
+  .fast-buildings-catalog__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.5556rem;
+  }
+
+  .fast-buildings-catalog__card {
+    gap: 1rem;
+    padding: 0.8889rem;
+  }
+
+  .fast-buildings-catalog__card-title {
+    font-size: 1.1111rem;
+  }
+
+  .fast-buildings-catalog__price {
+    font-size: 0.7778rem;
+  }
+
+  .fast-buildings-catalog__button {
+    min-height: 2.8889rem;
+    font-size: 0.7778rem;
+  }
+
+  .fast-buildings-catalog__pagination {
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings-catalog__arrow {
+    flex-basis: 2.6667rem;
+    width: 2.6667rem;
+    height: 2.6667rem;
+    border-radius: 0.6667rem;
+  }
+
+  .fast-buildings-catalog__arrow img {
+    width: 1.6667rem;
+    height: 1.6667rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fast-buildings-catalog__button {
+    transition: none;
+  }
+}
