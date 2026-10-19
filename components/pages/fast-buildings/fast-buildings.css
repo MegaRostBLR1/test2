@@ -4227,3 +4227,143 @@
   .fast-buildings-complectation__visual img,
   .fast-buildings-complectation__structure { width: 100%; height: auto; }
 }
+
+
+/* Комплектация здания — Figma 1857:114356. */
+.fast-buildings-complectation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2222rem;
+  margin: 0 0.2778rem 0.2778rem;
+  padding: 4.4444rem 2.7778rem 2.7778rem;
+  border-radius: 1.1111rem;
+  background: #324C88;
+  color: #FFFFFF;
+}
+.fast-buildings-complectation__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+.fast-buildings-complectation__title {
+  margin: 0;
+  color: #FFFFFF;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.fast-buildings-complectation__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1111rem;
+}
+.fast-buildings-complectation__tab {
+  color: #FFFFFF;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.3333rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+.fast-buildings-complectation__tab--muted { color: #FFFFFF4D; }
+.fast-buildings-complectation__separator {
+  flex: 0 0 0.2222rem;
+  width: 0.2222rem;
+  height: 0.2222rem;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+.fast-buildings-complectation__layout {
+  display: grid;
+  grid-template-columns: minmax(32rem, 0.78fr) minmax(0, 1.22fr);
+  align-items: center;
+  gap: 2.2222rem;
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.fast-buildings-complectation__list {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border-top: 1px solid #FFFFFF33;
+}
+.fast-buildings-complectation__item {
+  border-bottom: 1px solid #FFFFFF33;
+}
+.fast-buildings-complectation__item summary {
+  display: flex;
+  align-items: center;
+  gap: 1.6667rem;
+  min-height: 5.4444rem;
+  padding: 1.1111rem 1.6667rem;
+  cursor: pointer;
+  list-style: none;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.3333rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+.fast-buildings-complectation__item summary::-webkit-details-marker { display: none; }
+.fast-buildings-complectation__plus {
+  display: grid;
+  flex: 0 0 2.6667rem;
+  width: 2.6667rem;
+  height: 2.6667rem;
+  place-items: center;
+  border: 1px solid #FFFFFF66;
+  border-radius: 0.4444rem;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.fast-buildings-complectation__item[open] .fast-buildings-complectation__plus { background: #FFFFFF; color: #324C88; }
+.fast-buildings-complectation__item p {
+  padding: 0 1.6667rem 1.3333rem 5.4444rem;
+  color: #FFFFFFB3;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.fast-buildings-complectation__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+.fast-buildings-complectation__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.fast-buildings-complectation__item summary:focus-visible {
+  outline: 2px solid #FFF500;
+  outline-offset: -2px;
+}
+@media screen and (max-width: 1300px) {
+  .fast-buildings-complectation { gap: 1.7778rem; padding: 3.3333rem 1.6667rem 2.2222rem; }
+  .fast-buildings-complectation__title { font-size: 1.6667rem; }
+  .fast-buildings-complectation__layout { grid-template-columns: minmax(0, 1fr); gap: 1.6667rem; }
+  .fast-buildings-complectation__list { width: 100%; }
+  .fast-buildings-complectation__visual { max-width: 60rem; margin: 0 auto; }
+  .fast-buildings-complectation__tab { font-size: 1rem; }
+}
+@media screen and (max-width: 680px) {
+  .fast-buildings-complectation { gap: 1.3333rem; margin: 0 0.2778rem 0.2778rem; padding: 1.3333rem 0.5556rem; border-radius: 0.5556rem; }
+  .fast-buildings-complectation__header { gap: 1rem; }
+  .fast-buildings-complectation__title { font-size: 1.2222rem; }
+  .fast-buildings-complectation__tabs { gap: 0.5556rem; }
+  .fast-buildings-complectation__tab { font-size: 0.7778rem; }
+  .fast-buildings-complectation__layout { gap: 1rem; }
+  .fast-buildings-complectation__item summary { gap: 0.7778rem; min-height: 3.8889rem; padding: 0.7778rem 0.5556rem; font-size: 0.8889rem; }
+  .fast-buildings-complectation__plus { flex-basis: 2rem; width: 2rem; height: 2rem; font-size: 1.5556rem; }
+  .fast-buildings-complectation__item p { padding: 0 0.5556rem 1rem 3.3333rem; font-size: 0.7778rem; }
+}
