@@ -930,21 +930,33 @@
   gap: 2rem;
   min-width: 0;
   min-height: 14.5rem;
-  padding: 1.3333rem;
+  padding: 1.5556rem 1.3333rem 1.3333rem;
   border-radius: 1.6667rem;
-  background: #FFFFFF;
+  background: transparent;
   isolation: isolate;
 }
 
 .fast-buildings-factors__card::before {
   position: absolute;
-  z-index: -1;
-  top: -0.2222rem;
+  z-index: -2;
+  top: 0;
   right: 3%;
   bottom: 0.2778rem;
   left: 3%;
   border-radius: 1.6667rem;
   background: #36508A;
+  content: "";
+}
+
+.fast-buildings-factors__card::after {
+  position: absolute;
+  z-index: -1;
+  top: 0.2222rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 1.6667rem;
+  background: #FFFFFF;
   content: "";
 }
 
@@ -1050,8 +1062,14 @@
   }
 
   .fast-buildings-factors__card::before {
-    left: 0.6667rem;
+    right: 3%;
+    left: 3%;
     bottom: 0.2222rem;
+    border-radius: 1.1111rem;
+  }
+
+  .fast-buildings-factors__card::after {
+    top: 0.2222rem;
     border-radius: 1.1111rem;
   }
 
