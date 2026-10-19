@@ -1681,3 +1681,130 @@
     font-size: 0.8889rem;
   }
 }
+
+
+/* Адаптация блока гарантии под Figma 1857:118726 (1024 px).
+   Отдельный tablet breakpoint не меняет раскладку для 1440/1920 px. */
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+  .fast-buildings-guarantee {
+    padding: 0 0.5556rem 0.5556rem;
+  }
+
+  .fast-buildings-guarantee__panel {
+    gap: 1.3333rem;
+    padding: 2.2222rem;
+    border-radius: 1.1111rem;
+  }
+
+  .fast-buildings-guarantee__heading {
+    gap: 1rem;
+  }
+
+  .fast-buildings-guarantee__title {
+    font-size: 1.6667rem;
+    line-height: 1.2667;
+  }
+
+  .fast-buildings-guarantee__subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .fast-buildings-guarantee__options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.1111rem;
+    align-items: stretch;
+    padding-bottom: 0;
+  }
+
+  .fast-buildings-guarantee__option {
+    min-width: 0;
+  }
+
+  .fast-buildings-guarantee__card {
+    gap: 1.3333rem;
+    min-height: 20.5556rem;
+    height: 100%;
+    padding: 1.3333rem;
+    border-radius: 1.6667rem;
+  }
+
+  .fast-buildings-guarantee__card-header {
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings-guarantee__label {
+    padding: 0.6667rem 1.1111rem;
+    border-radius: 1.1111rem;
+    font-size: 0.8889rem;
+  }
+
+  .fast-buildings-guarantee__icon {
+    flex: 0 0 2.6667rem;
+    width: 2.6667rem;
+    height: 2.6667rem;
+    border-radius: 1.1111rem;
+  }
+
+  .fast-buildings-guarantee__card-content {
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings-guarantee__card-title {
+    font-size: 1.1111rem;
+    line-height: 1.5;
+  }
+
+  .fast-buildings-guarantee__type {
+    font-size: 0.8889rem;
+    line-height: 1.5;
+  }
+
+  .fast-buildings-guarantee__divider {
+    margin: 0.1111rem 0;
+  }
+
+  .fast-buildings-guarantee__benefits {
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings-guarantee__benefit {
+    align-items: flex-start;
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings-guarantee__check {
+    flex: 0 0 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .fast-buildings-guarantee__check img {
+    width: 1.3333rem;
+    height: 1.3333rem;
+  }
+
+  .fast-buildings-guarantee__benefit p {
+    min-width: 0;
+    font-size: 0.8889rem;
+    line-height: 1.5;
+  }
+
+  .fast-buildings-guarantee__number,
+  .fast-buildings-guarantee__number--five {
+    top: -0.6667rem;
+    right: 0.4444rem;
+    font-size: 8rem;
+  }
+
+  .fast-buildings-guarantee__footnote {
+    margin: 0 auto;
+    padding: 1.1111rem 2.2222rem;
+    border-radius: 0 0 1.1111rem 1.1111rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    white-space: normal;
+  }
+}
