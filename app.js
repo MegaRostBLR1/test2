@@ -39,6 +39,13 @@ const APP_CONFIG = {
       js: './components/pages/buildings/buildings.js',
       init: 'initBuildings'
     },
+    'fast-buildings': {
+      title: 'Быстровозводимые здания',
+      html: './components/pages/fast-buildings/fast-buildings.html',
+      css: './components/pages/fast-buildings/fast-buildings.css',
+      js: './components/pages/fast-buildings/fast-buildings.js',
+      init: 'initFastBuildings'
+    },
     'buildings-directory': {
       title: 'Каталог зданий',
       html: './components/pages/buildings/buildings-directory/buildings-directory.html',
@@ -314,7 +321,7 @@ async function renderPage(pageName) {
 function initNavigationRouting() {
   const routeByLabel = {
     'Продукция': 'buildings',
-    'Быстровозводимые здания': 'buildings',
+    'Быстровозводимые здания': 'fast-buildings',
     'Легкие металлоконструкции': 'objects',
     'Сэндвич панели': 'objects',
     'Комплектующие для ворот': 'objects',
