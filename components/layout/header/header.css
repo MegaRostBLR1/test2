@@ -978,3 +978,11 @@
         background: #324C881A;
     }
 }
+
+@media screen and (min-width: 1521px) {
+    .header-bottom__search {
+        flex: 0 1 988px;
+        width: 988px;
+        min-width: 0;
+    }
+}
