@@ -108,7 +108,6 @@ function initFastBuildings() {
     });
 
     moreButton?.addEventListener('click', () => {
-      const collapsedGroups = [...comparisonRows.querySelectorAll('.fast-buildings-comparison__group')].filter((group) => !group.open);
       const shouldExpand = moreButton.dataset.expanded !== 'true';
       comparisonRows.querySelectorAll('.fast-buildings-comparison__group').forEach((group) => {
         group.open = shouldExpand;
