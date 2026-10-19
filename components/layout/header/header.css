@@ -871,3 +871,110 @@
     }
 
 }
+
+
+/* Desktop header: размеры контрольного Figma-фрейма 1920 × 164. */
+@media screen and (min-width: 1521px) {
+    .app-header {
+        background: #324C88;
+    }
+
+    .header-top {
+        min-height: 64px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .header__location,
+    .nav-list,
+    .header__contacts {
+        gap: 30px;
+    }
+
+    .header-top,
+    .nav-link,
+    .header__contacts-phone {
+        font-size: 16px;
+    }
+
+    .header-bottom {
+        min-height: 100px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .header-bottom__logo {
+        flex: 0 0 190px;
+        width: 190px;
+        height: 80px;
+        padding: 0;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 10px;
+        background: #FFFFFF;
+    }
+
+    .header-bottom__logo-image {
+        display: block;
+        width: 126px;
+        max-width: 126px;
+        height: 52px;
+        object-fit: contain;
+    }
+
+    .header-bottom__solutions-button {
+        flex: 0 0 200px;
+        width: 200px;
+        height: 80px;
+        justify-content: center;
+        padding: 30px 36px;
+        gap: 18px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    .header-bottom__search-input {
+        height: 80px;
+        padding: 30px 30px 30px 78px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .search-svg {
+        left: 30px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-bottom__actions {
+        height: 80px;
+        gap: 0;
+        border-radius: 10px;
+        background: #FFFFFF;
+    }
+
+    .header-bottom__action {
+        min-width: 100px;
+        height: 80px;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .header-bottom__action svg,
+    .header-bottom__action img {
+        flex: 0 0 32px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-bottom__action-text {
+        font-size: 16px;
+    }
+
+    .header-bottom__action-calculation {
+        min-width: 100px;
+        background: #324C881A;
+    }
+}
