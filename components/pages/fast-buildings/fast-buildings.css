@@ -510,7 +510,7 @@
     gap: 0.5556rem;
   }
 
-  .fast-buildings-catalog__card:nth-child(4) {
+  .fast-buildings-catalog__card--tablet-hidden {
     display: none;
   }
 
@@ -650,5 +650,77 @@
 @media (prefers-reduced-motion: reduce) {
   .fast-buildings-catalog__button {
     transition: none;
+  }
+}
+
+
+/* Tablet catalog layout — Figma 1857:118111 (1024px).
+   Keep three cards in one row and preserve the existing desktop layouts. */
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .fast-buildings-catalog {
+    padding-right: 2.2222rem;
+    padding-left: 2.2222rem;
+  }
+
+  .fast-buildings-catalog__heading {
+    gap: 1.3333rem;
+  }
+
+  .fast-buildings-catalog__title {
+    font-size: 1.6667rem;
+    line-height: 1.2667;
+  }
+
+  .fast-buildings-catalog__subtitle {
+    font-size: 1.1111rem;
+    line-height: 1.3;
+  }
+
+  .fast-buildings-catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5556rem;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .fast-buildings-catalog__card {
+    flex: initial;
+    gap: 1.6667rem;
+    padding: 1.1111rem;
+    scroll-snap-align: none;
+  }
+
+  .fast-buildings-catalog__card-content {
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings-catalog__image {
+    width: 11.1111rem;
+    height: 7.3889rem;
+  }
+
+  .fast-buildings-catalog__card-title {
+    font-size: 1.2222rem;
+    line-height: 1.4545;
+  }
+
+  .fast-buildings-catalog__price {
+    font-size: 0.8889rem;
+    line-height: 1.5;
+  }
+
+  .fast-buildings-catalog__button {
+    min-height: 3.5556rem;
+    padding: 0.8889rem 1.1111rem;
+    font-size: 0.9444rem;
+  }
+
+  .fast-buildings-catalog__card--tablet-hidden {
+    display: none;
+  }
+
+  .fast-buildings-catalog__pagination {
+    margin-top: 0;
   }
 }
