@@ -201,53 +201,66 @@
 
 @media screen and (max-width: 680px) {
   .fast-buildings {
-    gap: 1.5556rem;
-    padding: 1.7778rem 0.4444rem;
-    border-radius: 0 0 0.7778rem 0.7778rem;
+    gap: 1rem;
+    padding: 1.1111rem 0.5556rem;
+    border-radius: 0 0 0.5556rem 0.5556rem;
   }
 
   .fast-buildings__intro {
-    gap: 0.6667rem;
+    gap: 0;
   }
 
   .fast-buildings__eyebrow {
-    font-size: 1rem;
-    line-height: 1.3;
+    display: none;
   }
 
   .fast-buildings__content {
-    gap: 0.6667rem;
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings__copy {
+    gap: 0.7778rem;
   }
 
   .fast-buildings__title {
-    font-size: 1.5556rem;
-    line-height: 1.3;
+    width: 100%;
+    max-width: 20rem;
+    font-size: 1.3333rem;
+    line-height: 1.3333;
+    text-align: center;
   }
 
   .fast-buildings__description {
-    font-size: 0.8889rem;
-    line-height: 1.5;
+    width: 100%;
+    max-width: none;
+    font-size: 0.7778rem;
+    line-height: 1.2222rem;
+    text-align: center;
   }
 
   .fast-buildings__actions {
     flex-direction: column;
     align-items: stretch;
-    width: 100%;
-    gap: 0.4444rem;
+    gap: 0.7778rem;
+    width: 17.7778rem;
+    max-width: 100%;
   }
 
   .fast-buildings__button.btn {
     width: 100%;
-    padding: 1rem 0.8889rem;
-    border-radius: 0.7778rem;
-    font-size: 0.8889rem;
-    white-space: normal;
+    min-height: 0;
+    padding: 1rem 1.3333rem;
+    border-radius: 1.1111rem;
+    font-size: 0.7778rem;
+    line-height: 1.26;
+    white-space: nowrap;
   }
 
   .fast-buildings__visual {
     width: 100%;
-    aspect-ratio: 4 / 3;
-    border-radius: 0.7778rem;
+    max-width: none;
+    aspect-ratio: 61 / 30;
+    border-radius: 1.1111rem;
   }
 }
 
