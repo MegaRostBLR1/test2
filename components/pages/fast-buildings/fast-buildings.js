@@ -1,4 +1,18 @@
 function initFastBuildings() {
+  const factors = document.querySelector('.fast-buildings-factors');
+  const factorsGrid = factors?.querySelector('.fast-buildings-factors__grid');
+  const factorsMore = factors?.querySelector('.fast-buildings-factors__more');
+
+  if (factorsGrid && factorsMore && !factorsMore.dataset.initialized) {
+    factorsMore.addEventListener('click', () => {
+      const expanded = factorsMore.getAttribute('aria-expanded') === 'true';
+      factorsMore.setAttribute('aria-expanded', String(!expanded));
+      factorsGrid.classList.toggle('is-expanded', !expanded);
+      factorsMore.querySelector('span').textContent = expanded ? 'Показать еще' : 'Скрыть';
+    });
+    factorsMore.dataset.initialized = 'true';
+  }
+
   const page = document.querySelector('.fast-buildings');
 
   if (page) {
