@@ -371,6 +371,14 @@
   text-align: center;
 }
 
+.fast-buildings-catalog__card-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7778rem;
+  width: 100%;
+}
+
 .fast-buildings-catalog__image {
   display: block;
   flex: 0 0 auto;
