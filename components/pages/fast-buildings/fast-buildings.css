@@ -3294,82 +3294,101 @@
 }
 
 
-/* Figma 1857:116253 — tablet layout for the 1024px frame. */
+/* Figma 1857:118492 — tablet layout at 1024px. */
 @media screen and (min-width: 901px) and (max-width: 1100px) {
+  .fast-buildings-websteel {
+    padding: 5px;
+  }
+
   .fast-buildings-websteel__panel {
-    padding: 2.2222rem 1.3333rem;
+    padding: 40px;
+    border-radius: 10px;
   }
 
   .fast-buildings-websteel__content {
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    gap: 2.6667rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
     min-height: 0;
-    padding: 2.6667rem;
+    padding: 40px;
+    border-radius: 30px;
   }
 
   .fast-buildings-websteel__copy {
-    flex: 0 1 auto;
+    flex: 1 1 418px;
+    gap: 48px;
+    min-width: 0;
+  }
+
+  .fast-buildings-websteel__text {
+    gap: 24px;
     width: 100%;
-    max-width: 35.3333rem;
-    gap: 2.6667rem;
+    max-width: 418px;
   }
 
   .fast-buildings-websteel__title {
-    font-size: 2.6667rem;
-    line-height: 1.6;
+    font-size: 30px;
+    line-height: 38px;
   }
 
   .fast-buildings-websteel__description {
-    max-width: 100%;
-    font-size: 1.3333rem;
+    max-width: 418px;
+    font-size: 18px;
     line-height: 1.6;
   }
 
   .fast-buildings-websteel__actions {
-    gap: 0.7778rem;
+    flex-wrap: wrap;
+    gap: 14px;
   }
 
   .fast-buildings-websteel__button {
-    padding: 1.7778rem 2.2222rem;
-    font-size: 1.1111rem;
+    padding: 26px 32px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 1.26;
   }
 
   .fast-buildings-websteel__devices {
     align-self: center;
-    flex: 0 0 auto;
-    width: 24.033rem;
-    max-width: 100%;
-    height: 31.3333rem;
+    flex: 0 0 370px;
+    width: 370px;
+    max-width: none;
+    height: 486px;
   }
 
   .fast-buildings-websteel__device {
-    width: 11.127rem;
-    height: 27.422rem;
+    width: 172px;
+    height: 423px;
   }
 
   .fast-buildings-websteel__device--left {
-    top: 4.05rem;
+    top: 62.75px;
     left: 0;
+    width: 172.37px;
+    height: 424.805px;
   }
 
   .fast-buildings-websteel__device--right {
     top: 0;
-    right: 0;
+    right: 3.85px;
+    width: 172.387px;
+    height: 422.693px;
   }
 
   .fast-buildings-websteel__device--left .fast-buildings-websteel__device-screen {
     top: 1.51%;
-    left: 2.05%;
-    width: 86.4%;
-    height: 96.54%;
+    left: 2.03%;
+    width: 86%;
+    height: 96.05%;
   }
 
   .fast-buildings-websteel__device--right .fast-buildings-websteel__device-screen {
     top: 1.51%;
-    left: 10.6%;
-    width: 86.4%;
+    left: 10.55%;
+    width: 85.75%;
     height: 96.54%;
   }
 }
