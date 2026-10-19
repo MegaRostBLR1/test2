@@ -4413,7 +4413,7 @@
 }
 .fast-buildings-comparison__models {
   display: grid;
-  grid-template-columns: minmax(18rem, 1fr) repeat(3, minmax(12rem, 17.7778rem));
+  grid-template-columns: minmax(18rem, 1fr) 2.7778rem repeat(3, minmax(12rem, 17.7778rem)) 2.7778rem;
   align-items: center;
   gap: 1.3333rem;
   width: 100%;
@@ -4449,7 +4449,31 @@
   font-weight: 600;
 }
 .fast-buildings-comparison__model-nav {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fast-buildings-comparison__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2222rem;
+  height: 2.2222rem;
+  padding: 0.5556rem;
+  border-radius: 50%;
+  background: #F5F8F7;
+}
+.fast-buildings-comparison__arrow img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.fast-buildings-comparison__model-nav:first-of-type .fast-buildings-comparison__arrow img {
+  transform: rotate(-90deg);
+}
+.fast-buildings-comparison__model-nav:last-of-type .fast-buildings-comparison__arrow img {
+  transform: rotate(90deg);
 }
 .fast-buildings-comparison__rows {
   width: 100%;
@@ -4487,7 +4511,7 @@
 }
 .fast-buildings-comparison__values {
   display: grid;
-  grid-template-columns: minmax(18rem, 1fr) repeat(3, minmax(12rem, 17.7778rem));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: center;
   gap: 1.3333rem;
   padding: 0.3333rem 0 0.7778rem;
@@ -4504,12 +4528,6 @@
   line-height: 1.3333rem;
   text-align: center;
   overflow-wrap: anywhere;
-}
-.fast-buildings-comparison__value:first-child {
-  grid-column: 2;
-}
-.fast-buildings-comparison__values:has(.fast-buildings-comparison__value:nth-child(3)) .fast-buildings-comparison__value:first-child {
-  grid-column: auto;
 }
 .fast-buildings-comparison__value--dot {
   min-height: 2.6667rem;
@@ -4543,9 +4561,12 @@
   .fast-buildings-comparison__panel {
     padding: 3.3333rem 2.2222rem 1.6667rem;
   }
-  .fast-buildings-comparison__models,
+   .fast-buildings-comparison__models {
+    grid-template-columns: minmax(12rem, 1fr) 2rem repeat(3, minmax(9rem, 1fr)) 2rem;
+    gap: 0.5556rem;
+  }
   .fast-buildings-comparison__values {
-    grid-template-columns: minmax(12rem, 1fr) repeat(3, minmax(9rem, 1fr));
+    grid-template-columns: repeat(3, minmax(9rem, 1fr));
     gap: 0.5556rem;
   }
 }
@@ -4599,13 +4620,9 @@
     padding-bottom: 0.5556rem;
   }
   .fast-buildings-comparison__value {
-    grid-column: auto !important;
     padding: 0.3333rem 0.1111rem;
     font-size: 0.6667rem;
     line-height: 1.1111rem;
-  }
-  .fast-buildings-comparison__value:first-child {
-    grid-column: auto;
   }
   .fast-buildings-comparison__group summary {
     min-height: 2.8889rem;
