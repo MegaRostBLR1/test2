@@ -313,7 +313,7 @@ async function renderPage(pageName) {
 
 function initNavigationRouting() {
   const routeByLabel = {
-    'Продукция': 'objects',
+    'Продукция': 'buildings',
     'Быстровозводимые здания': 'buildings',
     'Легкие металлоконструкции': 'objects',
     'Сэндвич панели': 'objects',
