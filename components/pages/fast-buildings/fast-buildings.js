@@ -28,6 +28,31 @@ function initFastBuildings() {
     factorsMore.dataset.initialized = 'true';
   }
 
+  const comfort = document.querySelector('.fast-buildings-comfort');
+
+  if (comfort && !comfort.dataset.accordionInitialized) {
+    const comfortItems = Array.from(comfort.querySelectorAll('.fast-buildings-comfort__item'));
+
+    comfortItems.forEach((item) => {
+      const toggle = item.querySelector('.fast-buildings-comfort__item-heading button');
+      const description = item.querySelector('.fast-buildings-comfort__description');
+
+      if (!toggle || !description) {
+        return;
+      }
+
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        description.hidden = expanded;
+        item.classList.toggle('fast-buildings-comfort__item--active', !expanded);
+      });
+    });
+
+    comfort.dataset.accordionInitialized = 'true';
+  }
+
   const page = document.querySelector('.fast-buildings');
 
   if (page) {
