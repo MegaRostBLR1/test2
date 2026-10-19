@@ -2172,3 +2172,31 @@
   .fast-buildings-process__footnote { gap: 0.7778rem; font-size: 0.7778rem; }
   .fast-buildings-process__separator { width: 10rem; }
 }
+
+
+/* Сохраняем соединительные линии между иконками на планшетном диапазоне. */
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .fast-buildings-process__steps {
+    position: relative;
+  }
+
+  .fast-buildings-process__step {
+    overflow: visible;
+  }
+
+  .fast-buildings-process__icon-wrap::after {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 2rem);
+    width: calc(100% - 4rem);
+    height: 2px;
+    background: #36508A1A;
+    content: "";
+    pointer-events: none;
+  }
+
+  .fast-buildings-process__step:nth-child(3) .fast-buildings-process__icon-wrap::after,
+  .fast-buildings-process__step:last-child .fast-buildings-process__icon-wrap::after {
+    display: none;
+  }
+}
