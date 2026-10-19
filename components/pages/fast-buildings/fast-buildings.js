@@ -1,4 +1,19 @@
 function initFastBuildings() {
+  const characteristics = document.querySelector('.fast-buildings-characteristics');
+  const characteristicsMore = characteristics?.querySelector('.fast-buildings-characteristics__more');
+  const characteristicsTable = characteristics?.querySelector('.fast-buildings-characteristics__table');
+
+  if (characteristicsMore && characteristicsTable && !characteristicsMore.dataset.initialized) {
+    characteristicsMore.addEventListener('click', () => {
+      const expanded = characteristicsMore.getAttribute('aria-expanded') === 'true';
+      characteristicsMore.setAttribute('aria-expanded', String(!expanded));
+      characteristicsTable.classList.toggle('is-expanded', !expanded);
+      characteristicsMore.querySelector('span').textContent = expanded ? 'Показать еще' : 'Скрыть';
+    });
+    characteristicsMore.dataset.initialized = 'true';
+  }
+
+
   const factors = document.querySelector('.fast-buildings-factors');
   const factorsGrid = factors?.querySelector('.fast-buildings-factors__grid');
   const factorsMore = factors?.querySelector('.fast-buildings-factors__more');
