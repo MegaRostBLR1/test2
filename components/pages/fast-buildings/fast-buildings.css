@@ -2708,3 +2708,79 @@
     line-height: 32px;
   }
 }
+
+
+/* Характеристики зданий — планшетный макет 1024px (Figma 1857:120050).
+   Сохраняем композицию desktop и точные параметры целевого фрейма. */
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .fast-buildings-characteristics {
+    padding: 0 5px 10px;
+  }
+
+  .fast-buildings-characteristics__panel {
+    border-radius: 10px;
+  }
+
+  .fast-buildings-characteristics__content {
+    gap: 30px;
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  .fast-buildings-characteristics__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .fast-buildings-characteristics__tabs {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-self: stretch;
+    width: 100%;
+    gap: 4px;
+    padding: 4px;
+    overflow: hidden;
+  }
+
+  .fast-buildings-characteristics__tab {
+    flex: 0 0 auto;
+    padding: 14px 18px;
+    border-radius: 14px;
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: nowrap;
+    overflow-wrap: normal;
+  }
+
+  .fast-buildings-characteristics__table {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .fast-buildings-characteristics__columns {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 40px;
+  }
+
+  .fast-buildings-characteristics__column {
+    gap: 5px;
+  }
+
+  .fast-buildings-characteristics__item {
+    gap: 18px;
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .fast-buildings-characteristics__label {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .fast-buildings-characteristics__value {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
