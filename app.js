@@ -1,7 +1,7 @@
 const APP_CONFIG = {
   header: {
     html: './components/layout/header/header.html',
-    css: null,
+    css: './components/layout/header/header.css',
     js: './components/layout/header/header.js'
   },
   footer: {
