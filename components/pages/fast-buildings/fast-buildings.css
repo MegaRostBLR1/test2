@@ -1817,7 +1817,7 @@
     padding: 20px 0;
     border-radius: 20px;
   }
-  .fast-buildings-guarantee__heading { gap: 1rem; padding: 0 10px; }
+  .fast-buildings-guarantee__heading { gap: 18px; padding: 0 10px; }
   .fast-buildings-guarantee__title { font-size: 20px; line-height: 28px; }
   .fast-buildings-guarantee__subtitle { font-size: 16px; line-height: normal; text-wrap: initial; }
   .fast-buildings-guarantee__options { gap: 14px; padding: 0 5px; }
@@ -1834,7 +1834,7 @@
   .fast-buildings-guarantee__icon {
     flex: 0 0 36px; width: 36px; height: 36px; border-radius: 14px;
   }
-  .fast-buildings-guarantee__icon img { width: 1rem; height: 1rem; }
+  .fast-buildings-guarantee__icon img { width: 18px; height: 18px; }
   .fast-buildings-guarantee__card-content { gap: 10px; }
   .fast-buildings-guarantee__card-title,
   .fast-buildings-guarantee__type { font-size: 16px; line-height: 1.3333; }
@@ -1845,7 +1845,7 @@
   .fast-buildings-guarantee__check {
     flex: 0 0 24px; width: 24px; height: 24px; border-radius: 10px;
   }
-  .fast-buildings-guarantee__check img { width: 1rem; height: 1rem; }
+  .fast-buildings-guarantee__check img { width: 18px; height: 18px; }
   .fast-buildings-guarantee__number,
   .fast-buildings-guarantee__number--five {
     top: -86px; right: 49.5px; font-size: 120px; line-height: 1.5;
@@ -1854,6 +1854,6 @@
   .fast-buildings-guarantee__footnote {
     width: 100%; max-width: none; margin: 0; padding: 20px 10px;
     border-radius: 0 0 30px 30px; font-size: 16px;
-    line-height: 1.22236px; white-space: normal;
+    line-height: 22px; white-space: normal;
   }
 }
