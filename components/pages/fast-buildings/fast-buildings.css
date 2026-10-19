@@ -1670,7 +1670,7 @@
   }
 
   .fast-buildings-guarantee__number,
-  .fast-buildings-guarantee__option:nth-child(2) .fast-buildings-guarantee__number {
+  .fast-buildings-guarantee__number--five {
     top: -0.3333rem;
     right: 0.3333rem;
     font-size: 5.5556rem;
