@@ -861,3 +861,205 @@
   }
 }
 
+/* Факторы, влияющие на стоимость здания — Figma 1857:114052. */
+.fast-buildings-factors {
+  padding: 0 0.5556rem 0.5556rem;
+  background: #F5F8F7;
+  color: #4D4D4D;
+}
+
+.fast-buildings-factors__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.2222rem;
+  border-radius: 1.1111rem;
+  background: #F5F8F7;
+}
+
+.fast-buildings-factors__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3889rem;
+  width: 100%;
+  text-align: center;
+}
+
+.fast-buildings-factors__title {
+  width: 100%;
+  max-width: 70.8889rem;
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 2.6667rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.fast-buildings-factors__subtitle {
+  margin: 0;
+  color: #4D4D4DCC;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1.3333rem;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.fast-buildings-factors__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.1111rem;
+  width: 100%;
+}
+
+.fast-buildings-factors__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  min-width: 0;
+  min-height: 14.5rem;
+  padding: 1.3333rem;
+  border-radius: 1.6667rem;
+  background: #FFFFFF;
+  isolation: isolate;
+}
+
+.fast-buildings-factors__card::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0.2778rem;
+  left: 1.2222rem;
+  border-radius: 1.6667rem;
+  background: #36508A;
+  content: "";
+}
+
+.fast-buildings-factors__icon {
+  display: grid;
+  flex: 0 0 2.6667rem;
+  width: 2.6667rem;
+  height: 2.6667rem;
+  place-items: center;
+  border-radius: 1.1111rem;
+  background: #36508A;
+}
+
+.fast-buildings-factors__icon img {
+  display: block;
+  width: 1.3333rem;
+  height: 1.3333rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.fast-buildings-factors__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4444rem;
+  width: 100%;
+  min-width: 0;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.fast-buildings-factors__card-title {
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 1.3333rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.fast-buildings-factors__description {
+  margin: 0;
+  color: #4D4D4DCC;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1300px) {
+  .fast-buildings-factors__panel {
+    gap: 1.7778rem;
+    padding: 1.7778rem;
+  }
+
+  .fast-buildings-factors__title {
+    font-size: 2rem;
+  }
+
+  .fast-buildings-factors__subtitle {
+    font-size: 1.1111rem;
+  }
+
+  .fast-buildings-factors__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .fast-buildings-factors {
+    padding: 0 0.5556rem 0.5556rem;
+  }
+
+  .fast-buildings-factors__panel {
+    gap: 1.3333rem;
+    padding: 1.1111rem 0.5556rem;
+  }
+
+  .fast-buildings-factors__heading {
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings-factors__title {
+    font-size: 1.2222rem;
+    line-height: 1.35;
+  }
+
+  .fast-buildings-factors__subtitle {
+    font-size: 0.8889rem;
+    line-height: 1.4;
+  }
+
+  .fast-buildings-factors__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.7778rem;
+  }
+
+  .fast-buildings-factors__card {
+    gap: 1.3333rem;
+    min-height: 0;
+    padding: 1.1111rem;
+    border-radius: 1.1111rem;
+  }
+
+  .fast-buildings-factors__card::before {
+    left: 0.6667rem;
+    bottom: 0.2222rem;
+    border-radius: 1.1111rem;
+  }
+
+  .fast-buildings-factors__icon {
+    flex-basis: 2.4444rem;
+    width: 2.4444rem;
+    height: 2.4444rem;
+    border-radius: 0.8889rem;
+  }
+
+  .fast-buildings-factors__card-title {
+    font-size: 1.1111rem;
+  }
+
+  .fast-buildings-factors__description {
+    font-size: 0.8889rem;
+  }
+}
