@@ -4469,10 +4469,10 @@
   height: 100%;
   object-fit: contain;
 }
-.fast-buildings-comparison__model-nav:first-of-type .fast-buildings-comparison__arrow img {
+.fast-buildings-comparison__arrow[data-comparison-scroll="-1"] img {
   transform: rotate(-90deg);
 }
-.fast-buildings-comparison__model-nav:last-of-type .fast-buildings-comparison__arrow img {
+.fast-buildings-comparison__arrow[data-comparison-scroll="1"] img {
   transform: rotate(90deg);
 }
 .fast-buildings-comparison__rows {
@@ -4511,10 +4511,13 @@
 }
 .fast-buildings-comparison__values {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(18rem, 1fr) repeat(3, minmax(12rem, 17.7778rem));
   align-items: center;
   gap: 1.3333rem;
   padding: 0.3333rem 0 0.7778rem;
+}
+.fast-buildings-comparison__value:first-child {
+  grid-column: 2;
 }
 .fast-buildings-comparison__value {
   display: flex;
@@ -4566,7 +4569,7 @@
     gap: 0.5556rem;
   }
   .fast-buildings-comparison__values {
-    grid-template-columns: repeat(3, minmax(9rem, 1fr));
+    grid-template-columns: minmax(12rem, 1fr) repeat(3, minmax(9rem, 1fr));
     gap: 0.5556rem;
   }
 }
@@ -4618,6 +4621,9 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.2222rem;
     padding-bottom: 0.5556rem;
+  }
+  .fast-buildings-comparison__value:first-child {
+    grid-column: auto;
   }
   .fast-buildings-comparison__value {
     padding: 0.3333rem 0.1111rem;
