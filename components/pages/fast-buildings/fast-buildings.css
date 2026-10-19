@@ -845,7 +845,7 @@
   }
 
   .fast-buildings-catalog__pagination {
-    gap: 14px;
+    display: none;
   }
 
   .fast-buildings-catalog__arrow {
