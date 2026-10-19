@@ -4193,12 +4193,16 @@
   height: 703px;
   overflow: hidden;
 }
-.fast-buildings-complectation__visual img {
+.fast-buildings-complectation__visual img,
+.fast-buildings-complectation__structure {
   display: block;
   width: 100%;
   max-width: 965px;
-  height: auto;
+  height: 100%;
   object-fit: contain;
+}
+.fast-buildings-complectation__structure {
+  overflow: visible;
 }
 @media (max-width: 1300px) {
   .fast-buildings-complectation { padding: 56px 32px 24px; }
@@ -4223,5 +4227,6 @@
   .fast-buildings-complectation__plus { flex-basis: 36px; width: 36px; height: 36px; font-size: 28px; }
   .fast-buildings-complectation__item p { padding: 0 16px 20px 68px; font-size: 14px; }
   .fast-buildings-complectation__visual { height: auto; }
-  .fast-buildings-complectation__visual img { width: 100%; }
+  .fast-buildings-complectation__visual img,
+  .fast-buildings-complectation__structure { width: 100%; height: auto; }
 }
