@@ -1811,49 +1811,49 @@
 
 /* Гарантия — mobile Figma 1857:121043 (360 px). */
 @media screen and (max-width: 680px) {
-  .fast-buildings-guarantee { padding: 0 0.5556rem 0.5556rem; }
+  .fast-buildings-guarantee { padding: 0 10px 10px; }
   .fast-buildings-guarantee__panel {
-    gap: 1.3333rem;
-    padding: 1.1111rem 0;
-    border-radius: 1.1111rem;
+    gap: 24px;
+    padding: 20px 0;
+    border-radius: 20px;
   }
-  .fast-buildings-guarantee__heading { gap: 1rem; padding: 0 0.5556rem; }
-  .fast-buildings-guarantee__title { font-size: 1.1111rem; line-height: 1.5556rem; }
-  .fast-buildings-guarantee__subtitle { font-size: 0.8889rem; line-height: normal; text-wrap: initial; }
-  .fast-buildings-guarantee__options { gap: 0.7778rem; padding: 0 0.2778rem; }
-  .fast-buildings-guarantee__option { width: 100%; padding-top: 0.2778rem; }
+  .fast-buildings-guarantee__heading { gap: 1rem; padding: 0 10px; }
+  .fast-buildings-guarantee__title { font-size: 20px; line-height: 28px; }
+  .fast-buildings-guarantee__subtitle { font-size: 16px; line-height: normal; text-wrap: initial; }
+  .fast-buildings-guarantee__options { gap: 14px; padding: 0 5px; }
+  .fast-buildings-guarantee__option { width: 100%; padding-top: 5px; }
   .fast-buildings-guarantee__option::before {
-    top: 0; width: 88.4393%; height: 14.2222rem; border-radius: 1.6667rem;
+    top: 0; width: 88.4393%; height: 256px; border-radius: 30px;
   }
   .fast-buildings-guarantee__card {
-    gap: 1.3333rem; width: 100%; max-width: 19.2222rem; min-height: 0;
-    margin: 0 auto; padding: 1.3333rem; border-radius: 1.6667rem;
+    gap: 24px; width: 100%; max-width: 346px; min-height: 0;
+    margin: 0 auto; padding: 24px; border-radius: 30px;
   }
-  .fast-buildings-guarantee__card-header { gap: 0.7778rem; }
-  .fast-buildings-guarantee__label { padding: 0.6667rem 1.1111rem; font-size: 0.7778rem; line-height: 1.5; }
+  .fast-buildings-guarantee__card-header { gap: 14px; }
+  .fast-buildings-guarantee__label { padding: 12px 20px; font-size: 14px; line-height: 1.5; }
   .fast-buildings-guarantee__icon {
-    flex: 0 0 2rem; width: 2rem; height: 2rem; border-radius: 0.7778rem;
+    flex: 0 0 36px; width: 36px; height: 36px; border-radius: 14px;
   }
   .fast-buildings-guarantee__icon img { width: 1rem; height: 1rem; }
-  .fast-buildings-guarantee__card-content { gap: 0.5556rem; }
+  .fast-buildings-guarantee__card-content { gap: 10px; }
   .fast-buildings-guarantee__card-title,
-  .fast-buildings-guarantee__type { font-size: 0.8889rem; line-height: 1.3333; }
-  .fast-buildings-guarantee__divider { margin: 0.1111rem 0; }
-  .fast-buildings-guarantee__benefits { gap: 0.7778rem; }
-  .fast-buildings-guarantee__benefit { align-items: center; gap: 0.7778rem; }
-  .fast-buildings-guarantee__benefit p { font-size: 0.6667rem; line-height: 1.5; }
+  .fast-buildings-guarantee__type { font-size: 16px; line-height: 1.3333; }
+  .fast-buildings-guarantee__divider { margin: 2px 0; }
+  .fast-buildings-guarantee__benefits { gap: 14px; }
+  .fast-buildings-guarantee__benefit { align-items: center; gap: 14px; }
+  .fast-buildings-guarantee__benefit p { font-size: 12px; line-height: 1.5; }
   .fast-buildings-guarantee__check {
-    flex: 0 0 1.3333rem; width: 1.3333rem; height: 1.3333rem; border-radius: 0.5556rem;
+    flex: 0 0 24px; width: 24px; height: 24px; border-radius: 10px;
   }
   .fast-buildings-guarantee__check img { width: 1rem; height: 1rem; }
   .fast-buildings-guarantee__number,
   .fast-buildings-guarantee__number--five {
-    top: -4.8rem; right: 2.75rem; font-size: 6.6667rem; line-height: 1.5;
+    top: -86px; right: 49.5px; font-size: 120px; line-height: 1.5;
   }
-  .fast-buildings-guarantee__number--five { top: -4.8rem; right: 4.8056rem; }
+  .fast-buildings-guarantee__number--five { top: -86px; right: 86.5px; }
   .fast-buildings-guarantee__footnote {
-    width: 100%; max-width: none; margin: 0; padding: 1.1111rem 0.5556rem;
-    border-radius: 0 0 1.6667rem 1.6667rem; font-size: 0.8889rem;
-    line-height: 1.2222rem; white-space: normal;
+    width: 100%; max-width: none; margin: 0; padding: 20px 10px;
+    border-radius: 0 0 30px 30px; font-size: 16px;
+    line-height: 1.22236px; white-space: normal;
   }
 }
