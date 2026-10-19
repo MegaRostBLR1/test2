@@ -510,6 +510,10 @@
     gap: 0.5556rem;
   }
 
+  .fast-buildings-catalog__card:nth-child(4) {
+    display: none;
+  }
+
   .fast-buildings-catalog__card {
     gap: 1.6667rem;
     padding: 1.1111rem;
