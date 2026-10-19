@@ -1,0 +1,139 @@
+.fast-buildings {
+  padding: 1rem;
+  color: #4d4d4d;
+  background: #f5f8f7;
+}
+
+.fast-buildings__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 28rem;
+  padding: 3rem;
+  border-radius: 1.25rem;
+  background: #ffffff;
+}
+
+.fast-buildings__breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.fast-buildings__breadcrumb-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fast-buildings__breadcrumb-link:hover {
+  color: #324c88;
+}
+
+.fast-buildings__breadcrumb-link:focus-visible,
+.fast-buildings__action:focus-visible {
+  outline: 2px solid #324c88;
+  outline-offset: 3px;
+}
+
+.fast-buildings__breadcrumb-separator {
+  color: #979a9b;
+}
+
+.fast-buildings__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  width: min(100%, 56rem);
+  margin: 0 auto;
+}
+
+.fast-buildings__eyebrow {
+  margin: 0;
+  color: #324c88;
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.fast-buildings__title {
+  margin: 0;
+  font-family: "Onest-Medium", sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.fast-buildings__description {
+  max-width: 42rem;
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.fast-buildings__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background: #324c88;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.fast-buildings__action:hover {
+  background: #28427e;
+}
+
+@media screen and (max-width: 1100px) {
+  .fast-buildings__panel {
+    min-height: 24rem;
+    padding: 2rem;
+  }
+
+  .fast-buildings__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .fast-buildings {
+    padding: 0 0.5rem 0.5rem;
+  }
+
+  .fast-buildings__panel {
+    gap: 2rem;
+    min-height: 20rem;
+    padding: 1.25rem 1rem;
+    border-radius: 0.75rem;
+  }
+
+  .fast-buildings__breadcrumbs {
+    gap: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .fast-buildings__header {
+    gap: 1rem;
+  }
+
+  .fast-buildings__title {
+    font-size: 1.75rem;
+  }
+
+  .fast-buildings__description {
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fast-buildings__action {
+    transition: none;
+  }
+}
