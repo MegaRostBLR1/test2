@@ -1,6 +1,6 @@
-function initBuildingsCharacteristics() {
-  const panel = document.querySelector('.buildings-characteristics__technical-panel');
-  const toggle = document.querySelector('.buildings-characteristics__show-more');
+function initComplexesCharacteristics() {
+  const panel = document.querySelector('.complexes-characteristics__technical-panel');
+  const toggle = document.querySelector('.complexes-characteristics__show-more');
 
   if (!panel || !toggle || toggle.dataset.initialized === 'true') {
     return;
@@ -8,7 +8,7 @@ function initBuildingsCharacteristics() {
 
   toggle.dataset.initialized = 'true';
 
-  const label = toggle.querySelector('.buildings-characteristics__show-more-label');
+  const label = toggle.querySelector('.complexes-characteristics__show-more-label');
 
   toggle.addEventListener('click', () => {
     const expanded = toggle.getAttribute('aria-expanded') === 'true';

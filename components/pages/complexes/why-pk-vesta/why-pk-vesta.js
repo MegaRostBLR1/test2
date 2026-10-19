@@ -1,5 +1,5 @@
 /* Интерактивность блока «Почему PK VESTA». */
-function initBuildingsWhyPkVesta() {
+function initComplexesWhyPkVesta() {
     const accordion = document.querySelector('[data-why-vesta-accordion]');
 
     if (!accordion || accordion.dataset.initialized === 'true') {

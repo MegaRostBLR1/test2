@@ -32,54 +32,54 @@ const APP_CONFIG = {
       js: './components/pages/services/laser/laser.js',
       init: 'initLaser'
     },
-    'buildings': {
+    'complexes': {
       title: 'Быстровозводимые здания',
-      html: './components/pages/buildings/buildings.html',
-      css: './components/pages/buildings/buildings.css',
-      js: './components/pages/buildings/buildings.js',
-      init: 'initBuildings'
+      html: './components/pages/complexes/complexes.html',
+      css: './components/pages/complexes/complexes.css',
+      js: './components/pages/complexes/complexes.js',
+      init: 'initComplexes'
     },
-    'buildings-directory': {
+    'complexes-directory': {
       title: 'Каталог зданий',
-      html: './components/pages/buildings/buildings-directory/buildings-directory.html',
-      css: './components/pages/buildings/buildings-directory/buildings-directory.css',
-      js: './components/pages/buildings/buildings-directory/buildings-directory.js',
-      init: 'initBuildingsDirectory'
+      html: './components/pages/complexes/complexes-directory/complexes-directory.html',
+      css: './components/pages/complexes/complexes-directory/complexes-directory.css',
+      js: './components/pages/complexes/complexes-directory/complexes-directory.js',
+      init: 'initComplexesDirectory'
     },
-    'buildings-characteristics': {
+    'complexes-characteristics': {
       title: 'Характеристики быстровозводимых зданий',
-      html: './components/pages/buildings/characteristics/characteristics.html',
-      css: './components/pages/buildings/characteristics/characteristics.css',
-      js: './components/pages/buildings/characteristics/characteristics.js',
-      init: 'initBuildingsCharacteristics'
+      html: './components/pages/complexes/characteristics/characteristics.html',
+      css: './components/pages/complexes/characteristics/characteristics.css',
+      js: './components/pages/complexes/characteristics/characteristics.js',
+      init: 'initComplexesCharacteristics'
     },
-    'buildings-why-pk-vesta': {
+    'complexes-why-pk-vesta': {
       title: 'Почему PK Vesta',
-      html: './components/pages/buildings/why-pk-vesta/why-pk-vesta.html',
-      css: './components/pages/buildings/why-pk-vesta/why-pk-vesta.css',
-      js: './components/pages/buildings/why-pk-vesta/why-pk-vesta.js',
-      init: 'initBuildingsWhyPkVesta'
+      html: './components/pages/complexes/why-pk-vesta/why-pk-vesta.html',
+      css: './components/pages/complexes/why-pk-vesta/why-pk-vesta.css',
+      js: './components/pages/complexes/why-pk-vesta/why-pk-vesta.js',
+      init: 'initComplexesWhyPkVesta'
     },
-    'buildings-comparison': {
+    'complexes-comparison': {
       title: 'Сравнение',
-      html: './components/pages/buildings/comparison/comparison.html',
-      css: './components/pages/buildings/comparison/comparison.css',
-      js: './components/pages/buildings/comparison/comparison.js',
-      init: 'initBuildingsComparison'
+      html: './components/pages/complexes/comparison/comparison.html',
+      css: './components/pages/complexes/comparison/comparison.css',
+      js: './components/pages/complexes/comparison/comparison.js',
+      init: 'initComplexesComparison'
     },
-    'buildings-prices': {
+    'complexes-prices': {
       title: 'Цены',
-      html: './components/pages/buildings/buildings-prices/buildings-prices.html',
-      css: './components/pages/buildings/buildings-prices/buildings-prices.css',
-      js: './components/pages/buildings/buildings-prices/buildings-prices.js',
-      init: 'initBuildingsPrices'
+      html: './components/pages/complexes/complexes-prices/complexes-prices.html',
+      css: './components/pages/complexes/complexes-prices/complexes-prices.css',
+      js: './components/pages/complexes/complexes-prices/complexes-prices.js',
+      init: 'initComplexesPrices'
     },
-    'buildings-faq': {
+    'complexes-faq': {
       title: 'Вопросы',
-      html: './components/pages/buildings/buildings-faq/buildings-faq.html',
-      css: './components/pages/buildings/buildings-faq/buildings-faq.css',
-      js: './components/pages/buildings/buildings-faq/buildings-faq.js',
-      init: 'initBuildingsFaq'
+      html: './components/pages/complexes/complexes-faq/complexes-faq.html',
+      css: './components/pages/complexes/complexes-faq/complexes-faq.css',
+      js: './components/pages/complexes/complexes-faq/complexes-faq.js',
+      init: 'initComplexesFaq'
     },
     'objects': {
       title: 'Объекты',
@@ -313,8 +313,8 @@ async function renderPage(pageName) {
 
 function initNavigationRouting() {
   const routeByLabel = {
-    'Продукция': 'buildings',
-    'Быстровозводимые здания': 'buildings',
+    'Продукция': 'complexes',
+    'Быстровозводимые здания': 'complexes',
     'Легкие металлоконструкции': 'objects',
     'Сэндвич панели': 'objects',
     'Комплектующие для ворот': 'objects',
