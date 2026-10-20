@@ -5414,9 +5414,6 @@
     .fast-buildings-complectation__overlay > .fast-buildings-complectation__panel {
         position: absolute;
         pointer-events: auto;
-        right: 0;
-        bottom: 100%;
-        left: 0;
         box-sizing: border-box;
         padding: 0 1.1111rem 1.1111rem;
         border-radius: 0.5556rem 0.5556rem 0 0;
