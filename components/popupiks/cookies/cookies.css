@@ -1,4 +1,4 @@
-/* Cookie consent popup — Figma node 2443:55653. Uses the global Onest font and palette. */
+/* Cookie consent popup — Figma node 2484:55588. Uses global Onest fonts and palette. */
 .cookies {
   position: fixed;
   z-index: 1000;
@@ -37,9 +37,9 @@
   min-width: 0;
   color: #4D4D4D;
   font-family: 'Onest-SemiBold', sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
-  line-height: 26px;
+  line-height: 24px;
   text-transform: none;
 }
 
@@ -64,9 +64,9 @@
   margin: 0;
   color: #2C2C2C80;
   font-family: 'Onest-Medium', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 28px;
   overflow-wrap: break-word;
 }
 
@@ -93,8 +93,8 @@
   align-items: center;
   justify-content: center;
   min-width: 0;
-  min-height: 52px;
-  padding: 14px 24px;
+  min-height: 48px;
+  padding: 12px 48px;
   border: 1px solid #324C88;
   border-radius: 20px;
   color: #324C88;
@@ -133,27 +133,48 @@
   outline-offset: 3px;
 }
 
-@media screen and (max-width: 1100px) {
-  .cookies {
-    right: 20px;
-    bottom: 20px;
-    width: min(1080px, 94vw);
-    padding: 24px;
+@media screen and (min-width: 1101px) {
+  .cookies__title {
+    font-size: 22px;
+    line-height: 24px;
   }
 
   .cookies__description {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .cookies {
+    right: 48px;
+    bottom: 20px;
+    width: 92vw;
+    max-width: 928px;
+    padding: 30px;
+  }
+
+  .cookies__header {
+    gap: 16px;
+  }
+
+  .cookies__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .cookies__description {
+    font-size: 16px;
+    line-height: 28px;
   }
 
   .cookies__actions {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .cookies__button {
-    flex-basis: 30%;
-    padding-right: 16px;
-    padding-left: 16px;
+    flex: 1 1 0;
+    padding: 12px 24px;
   }
 }
 
@@ -162,7 +183,8 @@
     right: 12px;
     bottom: 12px;
     gap: 20px;
-    width: min(1080px, 94vw);
+    width: auto;
+    max-width: none;
     padding: 20px;
     border-radius: 16px;
   }
@@ -190,6 +212,7 @@
     flex: 1 1 auto;
     width: 100%;
     min-height: 48px;
+    padding: 12px 16px;
     border-radius: 14px;
     font-size: 14px;
     line-height: 20px;
