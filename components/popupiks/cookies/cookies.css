@@ -493,3 +493,78 @@
     line-height: 24px;
   }
 }
+
+
+/* Mobile cookie settings — Figma node 2484:55828 (360 px). */
+@media screen and (max-width: 680px) {
+  .cookies-settings {
+    top: auto;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    width: auto;
+    height: 538px;
+    max-height: 100vh;
+    min-width: 0;
+    padding: 18px;
+    transform: none;
+    gap: 14px;
+  }
+
+  .cookies-settings__header {
+    gap: 12px;
+  }
+
+  .cookies-settings__body {
+    flex: 1 1 auto;
+    width: 100%;
+    gap: 14px;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .cookies-settings__text {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-size: 14px;
+    line-height: 25px;
+    gap: 14px;
+    overflow-wrap: anywhere;
+  }
+
+  .cookies-settings__actions {
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cookies-settings__button {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 36px;
+    padding: 7px 16px;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: normal;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .cookies-settings {
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    padding: 16px;
+  }
+
+  .cookies-settings__title {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .cookies-settings__button {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
