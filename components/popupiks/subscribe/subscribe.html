@@ -1,0 +1,14 @@
+<!-- Subscribe popup markup. Подключение к приложению будет выполнено отдельно. -->
+<div class="subscribe" role="dialog" aria-modal="true" aria-labelledby="subscribe-title" aria-describedby="subscribe-description" hidden>
+  <div class="subscribe__content">
+    <button class="subscribe__close" type="button" aria-label="Закрыть окно подписки" data-subscribe-close>×</button>
+    <h2 class="subscribe__title" id="subscribe-title">Будьте в курсе новостей</h2>
+    <p class="subscribe__description" id="subscribe-description">Подпишитесь на обновления, чтобы не пропустить важные новости и полезные материалы.</p>
+    <form class="subscribe__form" data-subscribe-form>
+      <label class="subscribe__label" for="subscribe-email">Электронная почта</label>
+      <input class="subscribe__input" id="subscribe-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+      <p class="subscribe__message" data-subscribe-message aria-live="polite"></p>
+      <button class="subscribe__button" type="submit">Подписаться</button>
+    </form>
+  </div>
+</div>
