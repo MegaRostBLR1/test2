@@ -520,7 +520,7 @@
         content: "";
         grid-column: 1;
         grid-row: 1;
-        min-height: 2.375rem;
+        min-height: 1.375rem;
         background: #324C88;
     }
 .header-top {
@@ -628,7 +628,7 @@
 }
 @media screen and (max-width: 900px) {
 .app-header::before {
-        min-height: 2.375rem;
+        min-height: 1.375rem;
     }
 .header-top {
         display: contents;
@@ -1031,14 +1031,6 @@
         background: #FFFFFF;
     }
 
-    .app-header::before {
-        content: "";
-        grid-column: 1;
-        grid-row: 1;
-        min-height: 2.5rem;
-        background: #324C88;
-    }
-
     .header-top {
         display: contents;
     }
@@ -1063,20 +1055,6 @@
         padding: 10px;
         border-radius: 1.25rem 1.25rem 0 0;
         background: #FFFFFF;
-    }
-
-    .header-burger {
-        position: absolute;
-        top: -2.5rem;
-        left: 1.125rem;
-        z-index: 1;
-        display: flex;
-        gap: 0.3125rem;
-        margin: 0;
-        padding: 0.5rem 0;
-        color: #FFFFFF;
-        font-size: 0.875rem;
-        transform: none;
     }
 
     .header-burger__title {
