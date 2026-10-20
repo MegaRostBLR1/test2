@@ -2,38 +2,30 @@
   function initSubscribePopup() {
     const popup = document.querySelector('.subscribe');
 
-    if (!popup) {
-      return;
-    }
+    if (!popup || popup.dataset.initialized === 'true') return;
+    popup.dataset.initialized = 'true';
 
     const form = popup.querySelector('[data-subscribe-form]');
     const closeButton = popup.querySelector('[data-subscribe-close]');
+    const backButton = popup.querySelector('[data-subscribe-back]');
     const message = popup.querySelector('[data-subscribe-message]');
 
-    function closePopup() {
-      popup.hidden = true;
-    }
+    function closePopup() { popup.hidden = true; }
 
     closeButton?.addEventListener('click', closePopup);
+    backButton?.addEventListener('click', closePopup);
 
     popup.addEventListener('click', (event) => {
-      if (event.target === popup) {
-        closePopup();
-      }
+      if (event.target === popup) closePopup();
     });
 
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && !popup.hidden) {
-        closePopup();
-      }
+      if (event.key === 'Escape' && !popup.hidden) closePopup();
     });
 
     form?.addEventListener('submit', (event) => {
       event.preventDefault();
-
-      if (!form.reportValidity()) {
-        return;
-      }
+      if (!form.reportValidity()) return;
 
       if (message) {
         message.textContent = 'Форма заполнена. Для оформления подписки необходимо подключить API.';
