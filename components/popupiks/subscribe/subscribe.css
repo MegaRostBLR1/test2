@@ -1,4 +1,5 @@
-/* Subscribe popup — Figma 2269:143745; используем глобальные Onest, Inter и базовые цвета проекта. */
+/* Subscribe popup — Figma 2269:143745 (desktop) and 2269:144260 (1024 px).
+   Uses the project's global Onest/Inter font faces and color palette. */
 .subscribe {
   position: fixed;
   z-index: 1001;
@@ -123,7 +124,7 @@
 .subscribe__consent {
   display: flex;
   align-items: flex-start;
-  gap: 24px;
+  gap: 18px;
   min-width: 0;
 }
 
@@ -139,7 +140,7 @@
   min-width: 0;
   color: #4D4D4D;
   font-family: 'Inter-Regular', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -150,6 +151,32 @@
 .subscribe__button:focus-visible {
   outline: 2px solid #324C88;
   outline-offset: 3px;
+}
+
+/* Tablet layout from Figma node 2269:144260 (1024 px).
+   Desktop sizing remains unchanged at 1440 and 1920 px. */
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .subscribe__title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .subscribe__input {
+    min-height: 56px;
+    padding: 16px 18px;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #324C880A;
+  }
+
+  .subscribe__button.btn {
+    padding: 24px 40px;
+    font-size: 18px;
+  }
+
+  .subscribe__consent-text {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 680px) {
