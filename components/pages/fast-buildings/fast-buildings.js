@@ -58,10 +58,44 @@ function initFastBuildings() {
   const complectation = document.querySelector('.fast-buildings-complectation');
   if (complectation && !complectation.dataset.accordionInitialized) {
     const items = Array.from(complectation.querySelectorAll('.fast-buildings-complectation__item'));
+    const panels = new Map(items.map((item) => [item, item.querySelector('.fast-buildings-complectation__panel')]));
+    const content = complectation.querySelector('.fast-buildings-complectation__content');
+    const list = complectation.querySelector('.fast-buildings-complectation__list');
+    const overlay = complectation.querySelector('.fast-buildings-complectation__overlay');
+    const overlayMode = window.matchMedia('(min-width: 901px) and (max-width: 1300px)');
+
+    const restorePanel = (item, panel) => {
+      if (overlay && panel.parentElement === overlay) {
+        item.appendChild(panel);
+      }
+      panel.style.removeProperty('top');
+      panel.style.removeProperty('left');
+      panel.style.removeProperty('width');
+    };
+
+    const positionOverlayPanel = (item, panel) => {
+      if (!content || !overlay || !overlayMode.matches || panel.parentElement !== overlay) {
+        return;
+      }
+
+      const itemRect = item.getBoundingClientRect();
+      const contentRect = content.getBoundingClientRect();
+      panel.style.left = (itemRect.left - contentRect.left) + 'px';
+      panel.style.width = itemRect.width + 'px';
+      panel.style.top = (itemRect.top - contentRect.top - panel.offsetHeight) + 'px';
+    };
+
+    const syncOverlayPanel = () => {
+      const expandedItem = items.find((item) => item.classList.contains('fast-buildings-complectation__item--expanded'));
+      const panel = expandedItem ? panels.get(expandedItem) : null;
+      if (expandedItem && panel && panel.parentElement === overlay) {
+        positionOverlayPanel(expandedItem, panel);
+      }
+    };
 
     items.forEach((item) => {
       const toggle = item.querySelector('.fast-buildings-complectation__toggle');
-      const panel = item.querySelector('.fast-buildings-complectation__panel');
+      const panel = panels.get(item);
 
       if (!toggle || !panel) {
         return;
@@ -69,23 +103,47 @@ function initFastBuildings() {
 
       toggle.addEventListener('click', () => {
         const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        const shouldOpen = !expanded;
 
         items.forEach((currentItem) => {
           const currentToggle = currentItem.querySelector('.fast-buildings-complectation__toggle');
-          const currentPanel = currentItem.querySelector('.fast-buildings-complectation__panel');
-          const isActive = currentItem === item && !expanded;
+          const currentPanel = panels.get(currentItem);
+          const isActive = currentItem === item && shouldOpen;
 
           if (!currentToggle || !currentPanel) {
             return;
+          }
+
+          if (!isActive) {
+            restorePanel(currentItem, currentPanel);
           }
 
           currentToggle.setAttribute('aria-expanded', String(isActive));
           currentPanel.setAttribute('aria-hidden', String(!isActive));
           currentPanel.classList.toggle('is-collapsed', !isActive);
           currentItem.classList.toggle('fast-buildings-complectation__item--expanded', isActive);
+
+          if (isActive && overlayMode.matches && overlay) {
+            overlay.appendChild(currentPanel);
+            positionOverlayPanel(currentItem, currentPanel);
+          }
         });
       });
     });
+
+    if (list) {
+      list.addEventListener('scroll', syncOverlayPanel, { passive: true });
+    }
+    window.addEventListener('resize', syncOverlayPanel, { passive: true });
+
+    if (overlayMode.matches && overlay) {
+      const initiallyExpanded = items.find((item) => item.classList.contains('fast-buildings-complectation__item--expanded'));
+      const initialPanel = initiallyExpanded ? panels.get(initiallyExpanded) : null;
+      if (initiallyExpanded && initialPanel && !initialPanel.classList.contains('is-collapsed')) {
+        overlay.appendChild(initialPanel);
+        positionOverlayPanel(initiallyExpanded, initialPanel);
+      }
+    }
 
     complectation.dataset.accordionInitialized = 'true';
   }
