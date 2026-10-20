@@ -1,13 +1,13 @@
-<!-- Subscribe popup. Геометрия и типографика приведены к Figma node 2269:143745. -->
+<!-- Subscribe popup. Desktop/tablet: centered dialog; mobile: bottom sheet from Figma node 2269:144378. -->
 <div class="subscribe" role="dialog" aria-modal="true" aria-labelledby="subscribe-title" hidden>
   <section class="subscribe__content" aria-label="Подписка на обновления">
+    <div class="subscribe__handle" aria-hidden="true"></div>
     <header class="subscribe__header">
       <h2 class="subscribe__title" id="subscribe-title">Подписаться</h2>
       <button class="subscribe__close" type="button" aria-label="Закрыть окно подписки" data-subscribe-close>
         <img src="https://www.figma.com/api/mcp/asset/253b569c-8271-46ef-a7ec-e5eaae9a8019/db4c7.svg" alt="">
       </button>
     </header>
-
     <form class="subscribe__form" data-subscribe-form>
       <label class="subscribe__visually-hidden" for="subscribe-email">Ваш Email</label>
       <input class="subscribe__input" id="subscribe-email" name="email" type="email" autocomplete="email" placeholder="Введите ваш Email" required>
@@ -19,4 +19,7 @@
       </div>
     </form>
   </section>
+  <div class="subscribe__mobile-footer">
+    <button class="subscribe__back" type="button" data-subscribe-back>Назад</button>
+  </div>
 </div>
