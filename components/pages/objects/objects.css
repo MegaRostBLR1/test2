@@ -1814,3 +1814,109 @@
         border-radius: 10px;
     }
 }
+
+
+/* Figma 1857:31930 — mobile catalog at 360 px. Keep the map view intact;
+   only refine the card view when the user selects "Карточки". */
+@media screen and (max-width: 680px) {
+    .objects-map.is-cards-view {
+        gap: 10px;
+        padding: 5px;
+        background: #F5F8F7;
+    }
+
+    .objects-map.is-cards-view .objects-map__filters {
+        gap: 18px;
+        padding: 14px;
+        border-radius: 10px;
+        background: #FFFFFF;
+    }
+
+    .objects-map.is-cards-view .objects-map__filters-heading {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .objects-map.is-cards-view .objects-map__filters-title {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .objects-map.is-cards-view .objects-map__mobile-toggle {
+        min-height: 48px;
+        padding: 12px 24px;
+        border: 1px solid #27262933;
+        border-radius: 10px;
+        background: #FFFFFF;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .objects-map.is-cards-view .objects-map__submit {
+        min-height: 48px;
+        padding: 12px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__grid {
+        gap: 5px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__card {
+        gap: 20px;
+        width: 100%;
+        padding: 4px 4px 20px;
+        border-radius: 20px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__image-wrap {
+        aspect-ratio: 334 / 185;
+        gap: 6px;
+        padding: 10px 11px;
+        border-radius: 20px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__project-id,
+    .objects-map.is-cards-view .objects-catalog__area {
+        min-height: 38px;
+        padding: 8px 14px;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__content {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__features {
+        gap: 15px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__features li {
+        gap: 12px;
+        padding: 2px 10px 2px 2px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__feature-icon {
+        flex-basis: 30px;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__feature-icon img {
+        width: 18px;
+        height: 18px;
+    }
+}
