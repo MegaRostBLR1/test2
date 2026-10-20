@@ -163,7 +163,13 @@
 }
 
 @media screen and (max-width: 680px) {
-  .subscribe { align-items: end; padding: 0; }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+    padding: 0;
+  }
   .subscribe__content {
     gap: 14px;
     width: 100%;
@@ -174,13 +180,14 @@
   .subscribe__handle {
     position: absolute;
     top: 0;
-    left: 50%;
+    right: 0;
+    left: 0;
     display: block;
+    margin-inline: auto;
     width: 57px;
     height: 3px;
     border-radius: 0 0 10px 10px;
     background: #2555BD;
-    transform: translateX(-50%);
   }
   .subscribe__header { gap: 12px; }
   .subscribe__title { font-size: 20px; line-height: 26px; }
