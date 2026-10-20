@@ -111,9 +111,13 @@
 }
 
 .subscribe__message {
-  margin: -12px 0 0;
+  margin: 0;
   font-size: 14px;
   line-height: 1.4;
+}
+
+.subscribe__message:empty {
+  display: none;
 }
 
 .subscribe__consent {
