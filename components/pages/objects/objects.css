@@ -1957,3 +1957,72 @@
         overflow-wrap: anywhere;
     }
 }
+
+/* Figma 1857:30251 — карточный каталог на desktop 1920 px.
+   Фильтры и каталог — независимые grid-колонки; карточки не должны
+   расширять свою колонку и пересекаться при длинном контенте. */
+@media screen and (min-width: 1601px) {
+    .objects-map.is-cards-view {
+        display: grid;
+        grid-template-columns: 470px minmax(0, 1fr);
+        align-items: start;
+        gap: 20px;
+        min-width: 0;
+        min-height: 0;
+        padding: 20px;
+        overflow: visible;
+    }
+
+    .objects-map.is-cards-view .objects-map__frame,
+    .objects-map.is-cards-view .objects-map__card {
+        display: none;
+    }
+
+    .objects-map.is-cards-view .objects-map__filters {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        align-self: start;
+    }
+
+    .objects-map.is-cards-view .objects-catalog {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: start;
+        gap: 16px;
+        min-width: 0;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__card,
+    .objects-map.is-cards-view .objects-catalog__content,
+    .objects-map.is-cards-view .objects-catalog__features {
+        min-width: 0;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__card {
+        width: 100%;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__image-wrap {
+        width: 100%;
+        aspect-ratio: 460 / 265;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__title {
+        overflow-wrap: anywhere;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__features li {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
+
