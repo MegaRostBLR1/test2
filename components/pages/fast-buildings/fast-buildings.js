@@ -69,10 +69,21 @@ function initFastBuildings() {
 
       toggle.addEventListener('click', () => {
         const expanded = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', String(!expanded));
-        panel.setAttribute('aria-hidden', String(expanded));
-        panel.classList.toggle('is-collapsed', expanded);
-        item.classList.toggle('fast-buildings-complectation__item--expanded', !expanded);
+
+        items.forEach((currentItem) => {
+          const currentToggle = currentItem.querySelector('.fast-buildings-complectation__toggle');
+          const currentPanel = currentItem.querySelector('.fast-buildings-complectation__panel');
+          const isActive = currentItem === item && !expanded;
+
+          if (!currentToggle || !currentPanel) {
+            return;
+          }
+
+          currentToggle.setAttribute('aria-expanded', String(isActive));
+          currentPanel.setAttribute('aria-hidden', String(!isActive));
+          currentPanel.classList.toggle('is-collapsed', !isActive);
+          currentItem.classList.toggle('fast-buildings-complectation__item--expanded', isActive);
+        });
       });
     });
 
