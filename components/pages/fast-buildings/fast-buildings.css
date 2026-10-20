@@ -5322,3 +5322,125 @@
         transition: none;
     }
 }
+
+/* Комплектация здания — адаптив Figma 1857:118875 (1024 px).
+   Desktop layout (1920/1440) остаётся без изменений. */
+@media (min-width: 901px) and (max-width: 1300px) {
+    .fast-buildings-complectation {
+        padding: 2.2222rem;
+    }
+
+    .fast-buildings-complectation__inner {
+        max-width: 100%;
+    }
+
+    .fast-buildings-complectation__header {
+        gap: 0.8889rem;
+        margin-bottom: 1.1111rem;
+    }
+
+    .fast-buildings-complectation__title {
+        font-size: 1.3333rem;
+        line-height: 1.5833;
+    }
+
+    .fast-buildings-complectation__categories {
+        gap: 1.1111rem;
+        padding: 0;
+    }
+
+    .fast-buildings-complectation__category {
+        font-size: 1rem;
+        line-height: 1.6111;
+    }
+
+    .fast-buildings-complectation__content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.1111rem;
+    }
+
+    .fast-buildings-complectation__visual {
+        order: 0;
+        align-self: center;
+        width: 100%;
+        max-width: 45rem;
+        padding-top: 0;
+    }
+
+    .fast-buildings-complectation__visual img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .fast-buildings-complectation__list {
+        order: 1;
+        flex-direction: row;
+        gap: 0.5556rem;
+        width: 100%;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: x proximity;
+        scrollbar-width: thin;
+        padding-bottom: 0.2222rem;
+    }
+
+    .fast-buildings-complectation__item {
+        flex: 0 0 18.8889rem;
+        padding: 1.1111rem;
+        border-radius: 0.5556rem;
+        scroll-snap-align: start;
+    }
+
+    .fast-buildings-complectation__toggle {
+        gap: 1rem;
+    }
+
+    .fast-buildings-complectation__icon {
+        flex-basis: 2rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .fast-buildings-complectation__icon img {
+        width: 1.3333rem;
+        height: 1.3333rem;
+    }
+
+    .fast-buildings-complectation__label {
+        font-size: 1rem;
+        line-height: 1.6111;
+    }
+
+    .fast-buildings-complectation__panel-inner {
+        gap: 0.8889rem;
+    }
+
+    .fast-buildings-complectation__roof-options {
+        gap: 0.2222rem;
+        margin-top: 1.1111rem;
+    }
+
+    .fast-buildings-complectation__roof-option {
+        gap: 0.3333rem;
+        padding: 0.5556rem 0.2222rem;
+    }
+
+    .fast-buildings-complectation__roof-option img {
+        width: 1.7778rem;
+        height: 1.7778rem;
+    }
+
+    .fast-buildings-complectation__roof-option span {
+        font-size: 0.6667rem;
+        line-height: 1.5;
+    }
+
+    .fast-buildings-complectation__description {
+        font-size: 0.7778rem;
+        line-height: 1.5;
+    }
+}
+
