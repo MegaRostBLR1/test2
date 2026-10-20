@@ -1920,3 +1920,40 @@
         height: 18px;
     }
 }
+
+
+/* Prevent mobile card view from inheriting the map's fixed canvas and
+   absolutely positioned filter panel. Keep sections in normal document flow. */
+@media screen and (max-width: 680px) {
+    .objects-map.is-cards-view {
+        position: relative;
+        height: auto;
+        min-height: 0;
+        overflow: visible;
+    }
+
+    .objects-map.is-cards-view .objects-map__filters {
+        position: relative;
+        inset: auto;
+        order: 0;
+        min-width: 0;
+    }
+
+    .objects-map.is-cards-view .objects-catalog {
+        position: relative;
+        order: 1;
+        min-width: 0;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__grid,
+    .objects-map.is-cards-view .objects-catalog__card,
+    .objects-map.is-cards-view .objects-catalog__content,
+    .objects-map.is-cards-view .objects-catalog__features {
+        min-width: 0;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__features li {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
