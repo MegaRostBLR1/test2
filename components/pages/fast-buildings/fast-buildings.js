@@ -83,6 +83,13 @@ function initFastBuildings() {
           currentPanel.setAttribute('aria-hidden', String(!isActive));
           currentPanel.classList.toggle('is-collapsed', !isActive);
           currentItem.classList.toggle('fast-buildings-complectation__item--expanded', isActive);
+
+          const icon = currentToggle.querySelector('.fast-buildings-complectation__icon img');
+          if (icon) {
+            icon.src = isActive
+              ? 'https://www.figma.com/api/mcp/asset/035ac16a-4e90-4d85-93d8-668b590b2b80/80d1a.svg'
+              : 'https://www.figma.com/api/mcp/asset/035ac16a-4e90-4d85-93d8-668b590b2b80/5ee85.svg';
+          }
         });
       });
     });
