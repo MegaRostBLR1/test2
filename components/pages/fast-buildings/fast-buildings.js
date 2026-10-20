@@ -56,28 +56,27 @@ function initFastBuildings() {
 
 
   const complectation = document.querySelector('.fast-buildings-complectation');
-  if (complectation && !complectation.dataset.paginationInitialized) {
+  if (complectation && !complectation.dataset.accordionInitialized) {
     const items = Array.from(complectation.querySelectorAll('.fast-buildings-complectation__item'));
-    const previous = complectation.querySelector('.fast-buildings-complectation__arrow--prev');
-    const next = complectation.querySelector('.fast-buildings-complectation__arrow--next');
-    let activeIndex = 0;
-    const updateComplectation = (index) => {
-      activeIndex = Math.max(0, Math.min(index, items.length - 1));
-      const compact = window.matchMedia('(max-width: 900px)').matches;
-      items.forEach((item, itemIndex) => {
-        item.hidden = compact && itemIndex !== activeIndex;
-        item.classList.toggle('is-active', itemIndex === activeIndex);
-        if (itemIndex === activeIndex) item.setAttribute('aria-current', 'true');
-        else item.removeAttribute('aria-current');
+
+    items.forEach((item) => {
+      const toggle = item.querySelector('.fast-buildings-complectation__toggle');
+      const panel = item.querySelector('.fast-buildings-complectation__panel');
+
+      if (!toggle || !panel) {
+        return;
+      }
+
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        panel.setAttribute('aria-hidden', String(expanded));
+        panel.classList.toggle('is-collapsed', expanded);
+        item.classList.toggle('fast-buildings-complectation__item--expanded', !expanded);
       });
-      if (previous) previous.disabled = activeIndex === 0;
-      if (next) next.disabled = activeIndex === items.length - 1;
-    };
-    previous?.addEventListener('click', () => updateComplectation(activeIndex - 1));
-    next?.addEventListener('click', () => updateComplectation(activeIndex + 1));
-    window.addEventListener('resize', () => updateComplectation(activeIndex));
-    updateComplectation(0);
-    complectation.dataset.paginationInitialized = 'true';
+    });
+
+    complectation.dataset.accordionInitialized = 'true';
   }
 
   const page = document.querySelector('.fast-buildings');
