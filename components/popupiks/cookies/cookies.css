@@ -1,14 +1,16 @@
-/* Cookie consent popup — Figma node 2484:55588. Uses global Onest fonts and palette. */
+/* Cookie consent popup — Figma nodes 2484:55588 (desktop) and 2484:55741 (360 px). */
 .cookies {
   position: fixed;
   z-index: 1000;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 24px;
   bottom: 30px;
+  left: 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: min(1080px, 94vw);
+  width: auto;
+  max-width: 1080px;
+  margin: 0 auto;
   padding: 30px;
   color: #4D4D4D;
   background: #FFFFFF;
@@ -51,6 +53,7 @@
   justify-content: center;
   width: 36px;
   height: 36px;
+  padding: 0;
   color: #4D4D4D;
   border-radius: 8px;
 }
@@ -95,7 +98,7 @@
   justify-content: center;
   min-width: 0;
   min-height: 48px;
-  padding: 12px 48px;
+  padding: 12px 24px;
   border: 1px solid #324C88;
   border-radius: 20px;
   color: #324C88;
@@ -134,24 +137,21 @@
   outline-offset: 3px;
 }
 
-@media screen and (min-width: 1101px) {
-  .cookies__title {
-    font-size: 22px;
-    line-height: 24px;
-  }
-
-  .cookies__description {
-    font-size: 16px;
-    line-height: 28px;
+@media screen and (min-width: 1150px) {
+  .cookies {
+    right: 0;
+    left: 0;
+    width: 1080px;
   }
 }
 
 @media screen and (max-width: 1100px) {
   .cookies {
-    right: 48px;
+    right: 24px;
     bottom: 20px;
-    width: 92vw;
-    max-width: 928px;
+    left: 24px;
+    width: auto;
+    max-width: none;
     padding: 30px;
   }
 
@@ -159,23 +159,13 @@
     gap: 16px;
   }
 
-  .cookies__title {
-    font-size: 22px;
-    line-height: 24px;
-  }
-
-  .cookies__description {
-    font-size: 16px;
-    line-height: 28px;
-  }
-
   .cookies__actions {
-    flex-wrap: nowrap;
+    gap: 12px;
   }
 
   .cookies__button {
-    flex: 1 1 0;
-    padding: 12px 24px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 
@@ -184,11 +174,9 @@
     right: 12px;
     bottom: 12px;
     left: 12px;
-    gap: 20px;
-    width: auto;
-    max-width: none;
-    padding: 20px;
-    border-radius: 16px;
+    gap: 24px;
+    padding: 18px;
+    border-radius: 20px;
   }
 
   .cookies__header {
@@ -196,28 +184,40 @@
   }
 
   .cookies__title {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
+  }
+
+  .cookies__close {
+    flex-basis: 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .cookies__close-icon {
+    width: 24px;
+    height: 24px;
   }
 
   .cookies__description {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 25px;
   }
 
   .cookies__actions {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   .cookies__button {
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     width: 100%;
-    min-height: 48px;
-    padding: 12px 16px;
-    border-radius: 14px;
+    min-height: 36px;
+    padding: 7px 16px;
+    border-radius: 20px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 22px;
+    white-space: normal;
   }
 }
 
