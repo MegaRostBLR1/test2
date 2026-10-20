@@ -1,17 +1,25 @@
-<!-- Cookie consent popup. Подключение к приложению будет выполнено отдельно. -->
-<div class="cookies" role="dialog" aria-labelledby="cookies-title" aria-describedby="cookies-description" hidden>
+<!-- Cookie consent popup based on Figma node 2443:55653. -->
+<section class="cookies" role="dialog" aria-modal="false" aria-labelledby="cookies-title" aria-describedby="cookies-description" hidden>
   <div class="cookies__content">
-    <h2 class="cookies__title" id="cookies-title">Использование cookies</h2>
-    <p class="cookies__description" id="cookies-description">
-      Мы используем cookies для корректной работы сайта и улучшения пользовательского опыта.
-    </p>
-    <div class="cookies__actions">
-      <button class="cookies__button cookies__button--accept" type="button" data-cookies-accept>
-        Принять
-      </button>
-      <button class="cookies__button cookies__button--reject" type="button" data-cookies-reject>
-        Отклонить необязательные
+    <div class="cookies__header">
+      <h2 class="cookies__title" id="cookies-title">Мы используем файлы cookies</h2>
+      <button class="cookies__close" type="button" aria-label="Закрыть уведомление" data-cookies-close>
+        <svg class="cookies__close-icon" width="36" height="36" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+          <path d="M27 9 9 27M9 9l18 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+        </svg>
       </button>
     </div>
+    <p class="cookies__description" id="cookies-description">
+      Мы используем cookies для улучшения работы сайта. Нажимая «Согласен», вы принимаете
+      <a class="cookies__link" href="#" data-cookies-policy>условия обработки персональных данных</a>
+      и
+      <a class="cookies__link" href="#" data-cookies-policy>правила использования cookie-файлов</a>.
+      Отключить cookies можно в настройках браузера.
+    </p>
   </div>
-</div>
+  <div class="cookies__actions">
+    <button class="cookies__button cookies__button--settings" type="button" data-cookies-settings>Настройка</button>
+    <button class="cookies__button cookies__button--block" type="button" data-cookies-reject>Блокировать cookies</button>
+    <button class="cookies__button cookies__button--accept" type="button" data-cookies-accept>Принимаю</button>
+  </div>
+</section>
