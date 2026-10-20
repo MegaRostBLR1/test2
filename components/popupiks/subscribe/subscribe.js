@@ -9,8 +9,23 @@
     const closeButton = popup.querySelector('[data-subscribe-close]');
     const backButton = popup.querySelector('[data-subscribe-back]');
     const message = popup.querySelector('[data-subscribe-message]');
+    let opener = null;
 
-    function closePopup() { popup.hidden = true; }
+    function closePopup() {
+      popup.hidden = true;
+      opener?.focus();
+    }
+
+    document.addEventListener('click', (event) => {
+      const trigger = event.target.closest('.footer__subscribe-btn');
+
+      if (!trigger) return;
+
+      event.preventDefault();
+      opener = trigger;
+      popup.hidden = false;
+      popup.querySelector('#subscribe-email')?.focus();
+    });
 
     closeButton?.addEventListener('click', closePopup);
     backButton?.addEventListener('click', closePopup);
