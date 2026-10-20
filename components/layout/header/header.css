@@ -129,6 +129,7 @@
     border-radius: 0.5556rem;
 }
 .nav-list__nested-list-item {
+    width: 16.2778rem;
     padding: 0.5556rem;
     border-radius: 0.2222rem;
     background: #324C880D;
@@ -138,6 +139,40 @@
     font-size: 0.8889rem;
     line-height: 100%;
     text-wrap: nowrap;
+}
+
+.nav-list__nested-list-item:hover,
+.nav-list__nested-list-item:focus-within {
+    background: #324C881A;
+}
+
+.nav-list__nested-list-item:active {
+    background: #324C8826;
+}
+
+.nav-list__nested-list-link:focus-visible {
+    outline: 0.1111rem solid #324C88;
+    outline-offset: 0.1111rem;
+    border-radius: 0.1111rem;
+}
+
+.nav-list__nested-list-item--disabled {
+    background: #324C8808;
+    cursor: not-allowed;
+}
+
+.nav-list__nested-list-item--disabled .nav-list__nested-list-link,
+.nav-list__nested-list-link[aria-disabled="true"] {
+    color: #324C8833;
+    cursor: not-allowed;
+}
+
+.nav-list__nested-list-item--disabled .nav-list__nested-list-icon {
+    background: #FFFFFF66;
+}
+
+.nav-list__nested-list-item--disabled .nav-list__nested-list-link {
+    pointer-events: none;
 }
 .nav-list__nested-list-link {
     display: flex;
