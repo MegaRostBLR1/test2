@@ -453,3 +453,49 @@
     transition: none;
   }
 }
+
+/* Tablet settings dialog — Figma 2484:55713 (1024 px).
+   Desktop geometry remains unchanged above 1100 px. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .cookies-settings {
+    right: 48px;
+    bottom: 30px;
+    left: 48px;
+    width: auto;
+    height: 757px;
+    transform: none;
+  }
+
+  .cookies-settings__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .cookies-settings__body {
+    flex: 0 0 705px;
+    height: 705px;
+    margin-bottom: -120px;
+  }
+
+  .cookies-settings__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .cookies-settings__section-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .cookies-settings__actions {
+    position: relative;
+    z-index: 1;
+    gap: 14px;
+  }
+
+  .cookies-settings__button {
+    min-height: 48px;
+    padding: 12px 24px;
+    line-height: 24px;
+  }
+}
