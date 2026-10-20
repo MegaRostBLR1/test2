@@ -1660,3 +1660,25 @@
 @media (prefers-reduced-motion: reduce) {
     .objects-map__select-chevron { transition: none; }
 }
+
+/* Режим каталога объектов — Figma 1857:30251. */
+.objects-map.is-cards-view{display:grid;grid-template-columns:minmax(280px,470px) minmax(0,1fr);align-items:start;gap:20px;min-height:0;padding:20px;overflow:visible;background:#F5F8F7}
+.objects-map.is-cards-view .objects-map__frame,.objects-map.is-cards-view .objects-map__card{display:none}
+.objects-catalog{width:100%;min-width:0}.objects-catalog[hidden]{display:none}
+.objects-catalog__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:16px;min-width:0}
+.objects-catalog__card{display:flex;flex-direction:column;gap:20px;min-width:0;padding:4px 4px 14px;border-radius:20px;background:#fff}
+.objects-catalog__image-wrap{position:relative;display:flex;align-items:flex-start;gap:10px;min-width:0;aspect-ratio:460/265;padding:10px 11px;overflow:hidden;border-radius:20px;background:#e8ecea}
+.objects-catalog__image{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+.objects-catalog__project-id,.objects-catalog__area{position:relative;z-index:1;display:inline-flex;align-items:center;flex:0 0 auto;min-height:38px;padding:8px 14px;border-radius:10px;font-family:"Onest-Medium",sans-serif;font-size:16px;font-weight:500;line-height:22px;white-space:nowrap}
+.objects-catalog__project-id{background:#FFF500;color:#39538C}.objects-catalog__area{margin-left:auto;background:rgb(237 237 237 / 20%);color:#fff;backdrop-filter:blur(25px)}
+.objects-catalog__area sup{align-self:flex-start;margin-left:2px;font-size:10px;line-height:1}
+.objects-catalog__content{display:flex;flex-direction:column;gap:15px;min-width:0;padding:0 10px}
+.objects-catalog__title{margin:0;color:#4D4D4D;font-family:"Onest-SemiBold",sans-serif;font-size:22px;font-weight:600;line-height:1.5;text-transform:uppercase;overflow-wrap:anywhere}
+.objects-catalog__divider{flex:0 0 1px;width:100%;height:1px;background:rgb(77 77 77 / 20%)}
+.objects-catalog__features{display:flex;flex-wrap:wrap;align-items:flex-start;gap:15px;min-width:0}
+.objects-catalog__features li{display:inline-flex;align-items:center;gap:12px;min-width:0;max-width:100%;padding:2px 10px 2px 2px;border-radius:10px;background:rgb(39 38 41 / 5%);color:#4D4D4D;font-family:"Onest-Medium",sans-serif;font-size:16px;font-weight:500;line-height:26px;overflow-wrap:anywhere}
+.objects-catalog__feature-icon{display:grid;flex:0 0 30px;width:30px;height:30px;place-items:center;border-radius:10px;background:#38528B}
+.objects-catalog__feature-icon img{display:block;width:18px;height:18px;object-fit:contain}
+@media screen and (min-width:1601px){.objects-map.is-cards-view{grid-template-columns:minmax(360px,470px) minmax(0,1fr);gap:20px;padding:20px}.objects-catalog__grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+@media screen and (min-width:681px) and (max-width:1600px){.objects-map.is-cards-view{grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);gap:14px;padding:14px}.objects-catalog__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.objects-catalog__title{font-size:18px}.objects-catalog__features{gap:8px}.objects-catalog__features li{gap:8px;font-size:14px;line-height:22px}}
+@media screen and (max-width:680px){.objects-map.is-cards-view{display:flex;flex-direction:column;gap:14px;min-height:0;padding:10px}.objects-map.is-cards-view .objects-map__filters{width:100%}.objects-map.is-cards-view .objects-map__mobile-toggle{display:flex}.objects-map.is-cards-view .objects-map__filter-fields,.objects-map.is-cards-view .objects-map__submit{display:none}.objects-map.is-cards-view .objects-map__filters.is-expanded .objects-map__filter-fields,.objects-map.is-cards-view .objects-map__filters.is-expanded .objects-map__submit{display:flex}.objects-catalog__grid{grid-template-columns:minmax(0,1fr);gap:12px}.objects-catalog__card{gap:14px;padding:4px 4px 12px;border-radius:14px}.objects-catalog__image-wrap{aspect-ratio:320/185;gap:6px;padding:8px;border-radius:12px}.objects-catalog__project-id,.objects-catalog__area{min-height:30px;padding:5px 8px;border-radius:8px;font-size:11px;line-height:18px}.objects-catalog__content{gap:10px;padding:0 8px}.objects-catalog__title{font-size:16px;line-height:1.5}.objects-catalog__features{gap:8px}.objects-catalog__features li{gap:8px;padding:2px 8px 2px 2px;border-radius:8px;font-size:12px;line-height:20px}.objects-catalog__feature-icon{flex-basis:26px;width:26px;height:26px;border-radius:8px}.objects-catalog__feature-icon img{width:16px;height:16px}}
