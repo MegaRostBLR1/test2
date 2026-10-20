@@ -2,7 +2,8 @@
 .cookies {
   position: fixed;
   z-index: 1000;
-  right: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 30px;
   display: flex;
   flex-direction: column;
