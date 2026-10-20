@@ -62,7 +62,7 @@ function initFastBuildings() {
     const content = complectation.querySelector('.fast-buildings-complectation__content');
     const list = complectation.querySelector('.fast-buildings-complectation__list');
     const overlay = complectation.querySelector('.fast-buildings-complectation__overlay');
-    const overlayMode = window.matchMedia('(max-width: 1300px)');
+    const overlayMode = window.matchMedia('(min-width: 901px) and (max-width: 1300px), (max-width: 600px)');
 
     const restorePanel = (item, panel) => {
       if (overlay && panel.parentElement === overlay) {
@@ -134,7 +134,12 @@ function initFastBuildings() {
     if (list) {
       list.addEventListener('scroll', syncOverlayPanel, { passive: true });
     }
-    window.addEventListener('resize', syncOverlayPanel, { passive: true });
+    window.addEventListener('resize', () => {
+      if (!overlayMode.matches) {
+        items.forEach((item) => restorePanel(item, panels.get(item)));
+      }
+      syncOverlayPanel();
+    }, { passive: true });
 
     if (overlayMode.matches && overlay) {
       const initiallyExpanded = items.find((item) => item.classList.contains('fast-buildings-complectation__item--expanded'));
