@@ -4920,6 +4920,7 @@
 
 
 /* Комплектация здания — Figma 1857:123779. */
+/* Комплектация здания — Figma 1857:124932. */
 .fast-buildings-complectation {
     margin: 0 0.2778rem 0.2778rem;
     padding: 4.4444rem 2.7778rem 3.3333rem;
@@ -4938,8 +4939,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.3333rem;
-    margin-bottom: 2.2222rem;
+    gap: 2rem;
+    margin-bottom: 1.6667rem;
     text-align: center;
 }
 
@@ -4962,7 +4963,7 @@
 }
 
 .fast-buildings-complectation__category {
-    color: #FFFFFF66;
+    color: #FFFFFF4D;
     font-family: 'Onest-SemiBold', sans-serif;
     font-size: 1.3333rem;
     font-weight: 600;
@@ -4988,6 +4989,7 @@
     grid-template-columns: minmax(0, 33.1667rem) minmax(0, 1fr);
     align-items: start;
     gap: 1.3333rem;
+    min-width: 0;
 }
 
 .fast-buildings-complectation__list {
@@ -4997,7 +4999,6 @@
     min-width: 0;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 .fast-buildings-complectation__item {
@@ -5063,21 +5064,6 @@
     overflow-wrap: anywhere;
 }
 
-.fast-buildings-complectation__arrow {
-    flex: 0 0 0.6667rem;
-    width: 0.6667rem;
-    height: 0.6667rem;
-    margin-left: auto;
-    border-right: 0.1111rem solid #FFFFFF;
-    border-bottom: 0.1111rem solid #FFFFFF;
-    transform: rotate(45deg) translateY(-0.1667rem);
-    transition: transform 280ms ease;
-}
-
-.fast-buildings-complectation__toggle[aria-expanded="true"] .fast-buildings-complectation__arrow {
-    transform: rotate(225deg) translateY(-0.1667rem);
-}
-
 .fast-buildings-complectation__panel {
     display: grid;
     grid-template-rows: 1fr;
@@ -5096,16 +5082,16 @@
 .fast-buildings-complectation__panel-inner {
     display: flex;
     flex-direction: column;
-    gap: 1.1111rem;
+    gap: 1rem;
     min-height: 0;
     overflow: hidden;
 }
 
 .fast-buildings-complectation__roof-options {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.2222rem;
-    margin-top: 1.6667rem;
+    margin-top: 1rem;
 }
 
 .fast-buildings-complectation__roof-option {
@@ -5115,14 +5101,14 @@
     justify-content: center;
     gap: 0.4444rem;
     min-width: 0;
-    padding: 0.8889rem;
+    padding: 0.8889rem 0.2222rem;
     border-radius: 0.5556rem;
-    background: #555555;
+    background: #3E3E3E;
     text-align: center;
 }
 
-.fast-buildings-complectation__roof-option + .fast-buildings-complectation__roof-option {
-    background: #3E3E3E;
+.fast-buildings-complectation__roof-option--active {
+    background: #555555;
 }
 
 .fast-buildings-complectation__roof-option img {
@@ -5138,6 +5124,7 @@
     font-size: 0.7778rem;
     font-weight: 500;
     line-height: 1.5714;
+    overflow-wrap: anywhere;
 }
 
 .fast-buildings-complectation__description {
@@ -5268,7 +5255,7 @@
     }
 
     .fast-buildings-complectation__roof-options {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .fast-buildings-complectation__roof-option {
