@@ -5378,6 +5378,7 @@
     .fast-buildings-complectation__list {
         order: 1;
         flex-direction: row;
+        align-items: flex-end;
         gap: 0.5556rem;
         width: 100%;
         overflow-x: auto;
