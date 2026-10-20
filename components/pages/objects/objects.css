@@ -1804,3 +1804,13 @@
         line-height: 22px;
     }
 }
+
+
+/* Fix tablet cards view: do not inherit the fixed-height map canvas. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+    .objects-map.is-cards-view {
+        height: auto;
+        overflow: visible;
+        border-radius: 10px;
+    }
+}
