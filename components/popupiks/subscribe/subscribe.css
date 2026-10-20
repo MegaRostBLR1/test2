@@ -1,4 +1,4 @@
-/* Subscribe popup styles. */
+/* Subscribe popup — Figma 2269:143745; используем глобальные Onest, Inter и базовые цвета проекта. */
 .subscribe {
   position: fixed;
   z-index: 1001;
@@ -14,99 +14,178 @@
 }
 
 .subscribe__content {
-  position: relative;
-  width: min(480px, 100%);
-  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 611px;
+  padding: 30px;
   color: #4D4D4D;
   background: #FFFFFF;
-  border-radius: 12px;
-  box-shadow: 0 12px 40px #00000026;
+  border-radius: 20px;
 }
 
-.subscribe__close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  display: grid;
-  width: 40px;
-  height: 40px;
-  place-items: center;
-  padding: 0;
-  color: inherit;
-  font: inherit;
-  font-size: 28px;
-  line-height: 1;
-  background: transparent;
-  border: 0;
-  border-radius: 6px;
-  cursor: pointer;
+.subscribe__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .subscribe__title {
-  margin: 0 40px 12px 0;
-  font-size: 24px;
-  line-height: 1.3;
+  margin: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: none;
 }
 
-.subscribe__description {
-  margin: 0 0 24px;
-  font-size: 16px;
-  line-height: 1.5;
+.subscribe__close {
+  display: grid;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  padding: 0;
+  border-radius: 6px;
+}
+
+.subscribe__close img {
+  display: block;
+  width: 36px;
+  height: 36px;
 }
 
 .subscribe__form {
-  display: grid;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
 }
 
-.subscribe__label {
-  font-size: 14px;
-  font-weight: 600;
+.subscribe__visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .subscribe__input {
-  box-sizing: border-box;
   width: 100%;
-  min-height: 48px;
-  padding: 12px;
-  color: inherit;
-  font: inherit;
-  background: #FFFFFF;
-  border: 1px solid #B8C2BE;
-  border-radius: 6px;
+  min-width: 0;
+  min-height: 64px;
+  padding: 20px 24px;
+  color: #4D4D4D;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  background: #F7F8FA;
+  border: 0;
+  border-radius: 10px;
 }
 
-.subscribe__button {
-  min-height: 48px;
-  margin-top: 6px;
-  padding: 12px 16px;
+.subscribe__input::placeholder {
+  color: #2C2C2C80;
+  opacity: 1;
+}
+
+.subscribe__button.btn {
+  width: 100%;
+  min-height: 72px;
+  padding: 24px 40px;
   color: #FFFFFF;
-  font: inherit;
-  background: #4D4D4D;
-  border: 1px solid #4D4D4D;
-  border-radius: 6px;
-  cursor: pointer;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.26;
+  text-align: center;
+  text-transform: uppercase;
+  background: #324C88;
+  border-radius: 20px;
 }
 
 .subscribe__message {
-  margin: 0;
+  margin: -12px 0 0;
   font-size: 14px;
   line-height: 1.4;
 }
 
+.subscribe__consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  min-width: 0;
+}
+
+.subscribe__checkbox {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  accent-color: #324C88;
+}
+
+.subscribe__consent-text {
+  min-width: 0;
+  color: #4D4D4D;
+  font-family: 'Inter-Regular', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
 .subscribe__close:focus-visible,
 .subscribe__input:focus-visible,
+.subscribe__checkbox:focus-visible,
 .subscribe__button:focus-visible {
-  outline: 2px solid #267A61;
+  outline: 2px solid #324C88;
   outline-offset: 3px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .subscribe {
     padding: 16px;
   }
 
   .subscribe__content {
+    gap: 20px;
+    max-width: 100%;
     padding: 24px;
+    border-radius: 16px;
+  }
+
+  .subscribe__title {
+    font-size: 28px;
+  }
+
+  .subscribe__form {
+    gap: 16px;
+  }
+
+  .subscribe__input {
+    min-height: 56px;
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .subscribe__button.btn {
+    min-height: 60px;
+    padding: 18px 20px;
+    border-radius: 16px;
+    font-size: 16px;
+  }
+
+  .subscribe__consent {
+    gap: 12px;
+  }
+
+  .subscribe__consent-text {
+    font-size: 13px;
   }
 }
