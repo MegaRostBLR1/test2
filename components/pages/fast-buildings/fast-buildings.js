@@ -1,13 +1,13 @@
 function initFastBuildings() {
 
-  const advantages = document.querySelector('.buildings-advantages');
+  const advantages = document.querySelector('.fast-buildings-advantages');
 
   if (advantages && advantages.dataset.initialized !== 'true') {
     advantages.dataset.initialized = 'true';
 
-    const items = Array.from(advantages.querySelectorAll('.buildings-advantages__item:not(.buildings-advantages__item--responsive)'));
-    const previousButton = advantages.querySelector('.buildings-advantages__arrow--prev');
-    const nextButton = advantages.querySelector('.buildings-advantages__arrow--next');
+    const items = Array.from(advantages.querySelectorAll('.fast-buildings-advantages__item:not(.fast-buildings-advantages__item--responsive)'));
+    const previousButton = advantages.querySelector('.fast-buildings-advantages__arrow--prev');
+    const nextButton = advantages.querySelector('.fast-buildings-advantages__arrow--next');
     let activeIndex = 0;
 
     const setActiveItem = (index) => {
