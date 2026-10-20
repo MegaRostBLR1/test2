@@ -1,0 +1,89 @@
+/* Состояния полей формы заявки на главной странице.
+   Базовая геометрия и сетка формы заданы в styles/main.css. */
+
+.services-contact__form .services-contact__input {
+  border-color: transparent;
+  background-color: #324c880a;
+  color: #2c2c2ce6;
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.services-contact__form .services-contact__input:hover:not(:disabled):not([readonly]) {
+  background-color: #324c880f;
+}
+
+.services-contact__form .services-contact__input:focus,
+.services-contact__form .services-contact__input:focus-visible {
+  border-color: #324c88;
+  outline: 1px solid #324c88;
+  outline-offset: 0;
+  background-color: #324c880a;
+  box-shadow: none;
+}
+
+.services-contact__form .services-contact__input:not(:placeholder-shown) {
+  color: #2c2c2ce6;
+}
+
+.services-contact__form .services-contact__input:disabled,
+.services-contact__form .services-contact__input[readonly] {
+  border-color: transparent;
+  background-color: #324c8805;
+  color: #4d4d4d66;
+  cursor: not-allowed;
+}
+
+.services-contact__form .services-contact__input:disabled::placeholder,
+.services-contact__form .services-contact__input[readonly]::placeholder {
+  color: #4d4d4d66;
+}
+
+.services-contact__form .services-contact__input:user-invalid {
+  border-color: #d52b1e;
+  outline: 1px solid #d52b1e;
+}
+
+.services-contact__form .services-contact__input:user-invalid:focus-visible {
+  border-color: #d52b1e;
+  outline-color: #d52b1e;
+}
+
+.services-contact__form .services-contact__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.services-contact__form .services-contact__textarea:hover:not(:disabled):not([readonly]) {
+  background-color: #324c880f;
+}
+
+.services-contact__upload-button {
+  transition: background-color 0.15s ease, color 0.15s ease, outline-color 0.15s ease;
+}
+
+.services-contact__upload-button:hover {
+  background-color: #324c8814;
+}
+
+.services-contact__upload-button:focus-visible,
+.services-contact__file-input:focus-visible + .services-contact__upload-help {
+  outline: 2px solid #324c88;
+  outline-offset: 3px;
+}
+
+.services-contact__checkbox:focus-visible {
+  outline: 2px solid #324c88;
+  outline-offset: 3px;
+}
+
+.services-contact__submit.btn:focus-visible {
+  outline: 2px solid #324c88;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-contact__form .services-contact__input,
+  .services-contact__upload-button {
+    transition: none;
+  }
+}
