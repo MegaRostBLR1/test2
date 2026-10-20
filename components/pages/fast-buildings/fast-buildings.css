@@ -5091,7 +5091,7 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.2222rem;
-    margin-top: 1rem;
+    margin-top: 1.6667rem;
 }
 
 .fast-buildings-complectation__roof-option {
@@ -5108,6 +5108,8 @@
 }
 
 .fast-buildings-complectation__roof-option--active {
+    padding-right: 0.5556rem;
+    padding-left: 0.5556rem;
     background: #555555;
 }
 
