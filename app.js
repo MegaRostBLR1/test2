@@ -14,6 +14,11 @@ const APP_CONFIG = {
     css: './components/popupiks/cookies/cookies.css',
     js: './components/popupiks/cookies/cookies.js'
   },
+  subscribe: {
+    html: './components/popupiks/subscribe/subscribe.html',
+    css: './components/popupiks/subscribe/subscribe.css',
+    js: './components/popupiks/subscribe/subscribe.js'
+  },
   defaultPage: 'home',
   pages: {
     'home': {
@@ -380,12 +385,14 @@ async function initApp() {
   const header = document.querySelector('#app-header');
   const footer = document.querySelector('#app-footer');
   const cookies = document.querySelector('#app-cookies');
+  const subscribe = document.querySelector('#app-subscribe');
 
   try {
     await Promise.all([
       loadComponent(header, APP_CONFIG.header),
       loadComponent(footer, APP_CONFIG.footer),
-      loadComponent(cookies, APP_CONFIG.cookies)
+      loadComponent(cookies, APP_CONFIG.cookies),
+      loadComponent(subscribe, APP_CONFIG.subscribe)
     ]);
   } catch (error) {
     console.error(error);
