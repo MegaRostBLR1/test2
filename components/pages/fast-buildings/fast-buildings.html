@@ -661,45 +661,107 @@
     </header>
     <div class="fast-buildings-complectation__content">
       <div class="fast-buildings-complectation__list" aria-label="Элементы комплектации">
-        <article class="fast-buildings-complectation__item">
-          <h3 class="fast-buildings-complectation__item-heading">
-            <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/5ee85.svg" alt="" width="36" height="36"></span>
-            <span class="fast-buildings-complectation__label">Конструкция</span>
-          </h3>
-        </article>
         <article class="fast-buildings-complectation__item fast-buildings-complectation__item--expanded">
           <h3 class="fast-buildings-complectation__item-heading">
-            <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/81908.svg" alt="" width="36" height="36"></span>
-            <span class="fast-buildings-complectation__label">Прогоны</span>
+            <button class="fast-buildings-complectation__toggle" type="button" id="fast-buildings-complectation-toggle-1" aria-expanded="true" aria-controls="fast-buildings-complectation-panel-1">
+              <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/5ee85.svg" alt="" width="36" height="36"></span>
+              <span class="fast-buildings-complectation__label">Конструкция</span>
+              <span class="fast-buildings-complectation__arrow" aria-hidden="true"></span>
+            </button>
           </h3>
-          <div class="fast-buildings-complectation__details">
-            <h4 class="fast-buildings-complectation__details-title">Коэффициенты надежности</h4>
-            <p class="fast-buildings-complectation__description">Здания комплектуются надежными утепленными индустриальными воротами (с вертикальным подъёмом, распашными, ангарными и т. д.) российских производителей DoorHan, AlluTech с возможностью добавления автоматики, радиоуправления, разных цветовых решений, калитками и проемами под окна.</p>
+          <div class="fast-buildings-complectation__panel" id="fast-buildings-complectation-panel-1" role="region" aria-labelledby="fast-buildings-complectation-toggle-1" aria-hidden="false">
+            <div class="fast-buildings-complectation__panel-inner">
+              <div class="fast-buildings-complectation__details">
+                <h4 class="fast-buildings-complectation__details-title">Несущий каркас</h4>
+                <p class="fast-buildings-complectation__description">Основу здания составляют стальные колонны и балки. Расчётная схема подбирается под размеры объекта, нагрузки и условия эксплуатации.</p>
+              </div>
+            </div>
           </div>
         </article>
         <article class="fast-buildings-complectation__item">
           <h3 class="fast-buildings-complectation__item-heading">
-            <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/5ee85.svg" alt="" width="36" height="36"></span>
-            <span class="fast-buildings-complectation__label">Связи</span>
+            <button class="fast-buildings-complectation__toggle" type="button" id="fast-buildings-complectation-toggle-2" aria-expanded="false" aria-controls="fast-buildings-complectation-panel-2">
+              <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/81908.svg" alt="" width="36" height="36"></span>
+              <span class="fast-buildings-complectation__label">Прогоны</span>
+              <span class="fast-buildings-complectation__arrow" aria-hidden="true"></span>
+            </button>
           </h3>
+          <div class="fast-buildings-complectation__panel is-collapsed" id="fast-buildings-complectation-panel-2" role="region" aria-labelledby="fast-buildings-complectation-toggle-2" aria-hidden="true">
+            <div class="fast-buildings-complectation__panel-inner">
+              <div class="fast-buildings-complectation__details">
+                <h4 class="fast-buildings-complectation__details-title">Основа для ограждающих конструкций</h4>
+                <p class="fast-buildings-complectation__description">Прогоны крепятся к несущему каркасу и поддерживают кровельные и стеновые материалы. Их шаг и сечение подбираются согласно проекту и расчётным нагрузкам.</p>
+              </div>
+            </div>
+          </div>
         </article>
         <article class="fast-buildings-complectation__item">
           <h3 class="fast-buildings-complectation__item-heading">
-            <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/5ee85.svg" alt="" width="36" height="36"></span>
-            <span class="fast-buildings-complectation__label">Болты</span>
+            <button class="fast-buildings-complectation__toggle" type="button" id="fast-buildings-complectation-toggle-3" aria-expanded="false" aria-controls="fast-buildings-complectation-panel-3">
+              <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/5ee85.svg" alt="" width="36" height="36"></span>
+              <span class="fast-buildings-complectation__label">Связи</span>
+              <span class="fast-buildings-complectation__arrow" aria-hidden="true"></span>
+            </button>
           </h3>
+          <div class="fast-buildings-complectation__panel is-collapsed" id="fast-buildings-complectation-panel-3" role="region" aria-labelledby="fast-buildings-complectation-toggle-3" aria-hidden="true">
+            <div class="fast-buildings-complectation__panel-inner">
+              <div class="fast-buildings-complectation__details">
+                <h4 class="fast-buildings-complectation__details-title">Пространственная устойчивость</h4>
+                <p class="fast-buildings-complectation__description">Система вертикальных и горизонтальных связей помогает сохранять геометрию каркаса и передавать предусмотренные проектом нагрузки на несущие элементы.</p>
+              </div>
+            </div>
+          </div>
         </article>
         <article class="fast-buildings-complectation__item">
           <h3 class="fast-buildings-complectation__item-heading">
-            <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/5ee85.svg" alt="" width="36" height="36"></span>
-            <span class="fast-buildings-complectation__label">Базы колонн</span>
+            <button class="fast-buildings-complectation__toggle" type="button" id="fast-buildings-complectation-toggle-4" aria-expanded="false" aria-controls="fast-buildings-complectation-panel-4">
+              <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/5ee85.svg" alt="" width="36" height="36"></span>
+              <span class="fast-buildings-complectation__label">Болты</span>
+              <span class="fast-buildings-complectation__arrow" aria-hidden="true"></span>
+            </button>
           </h3>
+          <div class="fast-buildings-complectation__panel is-collapsed" id="fast-buildings-complectation-panel-4" role="region" aria-labelledby="fast-buildings-complectation-toggle-4" aria-hidden="true">
+            <div class="fast-buildings-complectation__panel-inner">
+              <div class="fast-buildings-complectation__details">
+                <h4 class="fast-buildings-complectation__details-title">Надёжные узловые соединения</h4>
+                <p class="fast-buildings-complectation__description">Для сборки применяются крепёжные элементы, соответствующие проектным требованиям. Тип, класс прочности и схема затяжки определяются документацией на здание.</p>
+              </div>
+            </div>
+          </div>
         </article>
         <article class="fast-buildings-complectation__item">
           <h3 class="fast-buildings-complectation__item-heading">
-            <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/5ee85.svg" alt="" width="36" height="36"></span>
-            <span class="fast-buildings-complectation__label">Уголки</span>
+            <button class="fast-buildings-complectation__toggle" type="button" id="fast-buildings-complectation-toggle-5" aria-expanded="false" aria-controls="fast-buildings-complectation-panel-5">
+              <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/5ee85.svg" alt="" width="36" height="36"></span>
+              <span class="fast-buildings-complectation__label">Базы колонн</span>
+              <span class="fast-buildings-complectation__arrow" aria-hidden="true"></span>
+            </button>
           </h3>
+          <div class="fast-buildings-complectation__panel is-collapsed" id="fast-buildings-complectation-panel-5" role="region" aria-labelledby="fast-buildings-complectation-toggle-5" aria-hidden="true">
+            <div class="fast-buildings-complectation__panel-inner">
+              <div class="fast-buildings-complectation__details">
+                <h4 class="fast-buildings-complectation__details-title">Передача нагрузки на фундамент</h4>
+                <p class="fast-buildings-complectation__description">Опорные базы соединяют колонны с фундаментом и передают на него усилия от каркаса. Конструкция и анкеровка назначаются по результатам расчёта.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="fast-buildings-complectation__item">
+          <h3 class="fast-buildings-complectation__item-heading">
+            <button class="fast-buildings-complectation__toggle" type="button" id="fast-buildings-complectation-toggle-6" aria-expanded="false" aria-controls="fast-buildings-complectation-panel-6">
+              <span class="fast-buildings-complectation__icon" aria-hidden="true"><img src="https://www.figma.com/api/mcp/asset/4b612c88-420a-4382-9abb-4eb60bbc0940/5ee85.svg" alt="" width="36" height="36"></span>
+              <span class="fast-buildings-complectation__label">Уголки</span>
+              <span class="fast-buildings-complectation__arrow" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="fast-buildings-complectation__panel is-collapsed" id="fast-buildings-complectation-panel-6" role="region" aria-labelledby="fast-buildings-complectation-toggle-6" aria-hidden="true">
+            <div class="fast-buildings-complectation__panel-inner">
+              <div class="fast-buildings-complectation__details">
+                <h4 class="fast-buildings-complectation__details-title">Соединительные элементы</h4>
+                <p class="fast-buildings-complectation__description">Стальные уголки используются в узлах крепления и отдельных элементах каркаса. Их размеры и расположение выбираются с учётом проектной схемы.</p>
+              </div>
+            </div>
+          </div>
         </article>
       </div>
       <div class="fast-buildings-complectation__visual" aria-hidden="true">
