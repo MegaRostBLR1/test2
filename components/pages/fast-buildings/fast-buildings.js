@@ -62,7 +62,7 @@ function initFastBuildings() {
     const content = complectation.querySelector('.fast-buildings-complectation__content');
     const list = complectation.querySelector('.fast-buildings-complectation__list');
     const overlay = complectation.querySelector('.fast-buildings-complectation__overlay');
-    const overlayMode = window.matchMedia('(min-width: 901px) and (max-width: 1300px)');
+    const overlayMode = window.matchMedia('(max-width: 1300px)');
 
     const restorePanel = (item, panel) => {
       if (overlay && panel.parentElement === overlay) {
