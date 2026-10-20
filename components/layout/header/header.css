@@ -1619,3 +1619,47 @@
   }
 }
 
+/* Search input states from Figma node 2265:83133. */
+.header-bottom__search-input {
+    color: #2C2C2CE6;
+    caret-color: #4D4D4D;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.header-bottom__search-input:hover {
+    background: #324C880F;
+}
+
+.header-bottom__search-input:focus,
+.header-bottom__search-input:focus-visible {
+    background: #324C880F;
+    outline: none;
+}
+
+.header-bottom__search-input:focus-visible {
+    box-shadow: inset 0 0 0 0.0556rem #324C884D;
+}
+
+.header-bottom__search-input:not(:placeholder-shown) {
+    background: #324C880F;
+}
+
+.header-bottom__search-input:disabled,
+.header-bottom__search-input[aria-disabled="true"] {
+    background: #324C880F;
+    color: #4D4D4D33;
+    cursor: not-allowed;
+    -webkit-text-fill-color: #4D4D4D33;
+}
+
+.header-bottom__search-input:disabled::placeholder,
+.header-bottom__search-input[aria-disabled="true"]::placeholder {
+    color: #4D4D4D33;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .header-bottom__search-input {
+        transition: none;
+    }
+}
+
