@@ -5634,7 +5634,7 @@
 .fast-buildings-complectation__separator{flex:0 0 0.2222rem;width:0.2222rem;height:0.2222rem;border-radius:50%;background:#FFFFFF}
 .fast-buildings-complectation__content{display:grid;grid-template-columns:minmax(0,33.1667rem) 5rem minmax(0,1fr);align-items:center;gap:1.3333rem}
 .fast-buildings-complectation__list{display:flex;flex-direction:column;gap:0.5556rem;min-width:0;margin:0;padding:0;list-style:none}
-.fast-buildings-complectation__item{display:flex;align-items:center;gap:1.6667rem;min-width:0;min-height:5.4444rem;padding:1.3889rem 1.6667rem;border-radius:1.1111rem;background:#363636}
+.fast-buildings-complectation__item{display:flex;align-items:center;gap:1.6667rem;min-width:0;padding:1.6667rem;border-radius:1.1111rem;background:#363636}
 .fast-buildings-complectation__item.is-active{background:#414141}
 .fast-buildings-complectation__icon{display:grid;flex:0 0 2.6667rem;width:2.6667rem;height:2.6667rem;place-items:center;border-radius:50%;background:#FFF500}
 .fast-buildings-complectation__icon--small{flex-basis:2rem;width:2rem;height:2rem}
