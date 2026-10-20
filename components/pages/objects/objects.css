@@ -1691,3 +1691,61 @@
     .objects-map.is-cards-view .objects-map__filters { order:0; }
     .objects-map.is-cards-view .objects-catalog { order:1; }
 }
+
+
+/* Figma 1857:30846 — каталог объектов при ширине 1440 px.
+   Панель фильтров остаётся отдельной колонкой, карточки занимают основную область. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+    .objects-map.is-cards-view {
+        grid-template-columns: minmax(320px, 0.8fr) minmax(0, 2fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__card {
+        width: 100%;
+        gap: 20px;
+        padding: 4px 4px 14px;
+        border-radius: 20px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__image-wrap {
+        aspect-ratio: 452 / 265;
+        padding: 10px 11px;
+        border-radius: 20px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__project-id,
+    .objects-map.is-cards-view .objects-catalog__area {
+        min-height: 38px;
+        padding: 8px 14px;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__content {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__title {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__features {
+        gap: 15px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__features li {
+        gap: 12px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
