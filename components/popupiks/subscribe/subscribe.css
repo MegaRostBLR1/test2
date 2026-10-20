@@ -1,5 +1,5 @@
-/* Subscribe popup — Figma 2269:143745 (desktop) and 2269:144260 (1024 px).
-   Uses the project's global Onest/Inter font faces and color palette. */
+/* Subscribe popup — desktop/tablet plus mobile bottom sheet (Figma 2269:144378).
+   Uses global Onest font faces and project button primitives. */
 .subscribe {
   position: fixed;
   z-index: 1001;
@@ -10,11 +10,10 @@
   background: #00000066;
 }
 
-.subscribe[hidden] {
-  display: none;
-}
+.subscribe[hidden] { display: none; }
 
 .subscribe__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -25,6 +24,8 @@
   background: #FFFFFF;
   border-radius: 20px;
 }
+
+.subscribe__handle { display: none; }
 
 .subscribe__header {
   display: flex;
@@ -53,11 +54,7 @@
   border-radius: 6px;
 }
 
-.subscribe__close img {
-  display: block;
-  width: 36px;
-  height: 36px;
-}
+.subscribe__close img { display: block; width: 36px; height: 36px; }
 
 .subscribe__form {
   display: flex;
@@ -91,10 +88,7 @@
   border-radius: 10px;
 }
 
-.subscribe__input::placeholder {
-  color: #2C2C2C80;
-  opacity: 1;
-}
+.subscribe__input::placeholder { color: #2C2C2C80; opacity: 1; }
 
 .subscribe__button.btn {
   width: 100%;
@@ -111,15 +105,8 @@
   border-radius: 20px;
 }
 
-.subscribe__message {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.subscribe__message:empty {
-  display: none;
-}
+.subscribe__message { margin: 0; font-size: 14px; line-height: 1.4; }
+.subscribe__message:empty { display: none; }
 
 .subscribe__consent {
   display: flex;
@@ -138,85 +125,114 @@
 
 .subscribe__consent-text {
   min-width: 0;
-  color: #4D4D4D;
-  font-family: 'Inter-Regular', sans-serif;
+  color: #2C2C2C80;
+  font-family: 'Onest-Medium', sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 1.6;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .subscribe__close:focus-visible,
 .subscribe__input:focus-visible,
 .subscribe__checkbox:focus-visible,
-.subscribe__button:focus-visible {
+.subscribe__button:focus-visible,
+.subscribe__back:focus-visible {
   outline: 2px solid #324C88;
   outline-offset: 3px;
 }
 
-/* Tablet layout from Figma node 2269:144260 (1024 px).
-   Desktop sizing remains unchanged at 1440 and 1920 px. */
-@media screen and (min-width: 681px) and (max-width: 1300px) {
-  .subscribe__title {
-    font-size: 24px;
-    line-height: 26px;
-  }
+.subscribe__mobile-footer { display: none; }
 
+@media screen and (min-width: 681px) and (max-width: 1300px) {
+  .subscribe__content { gap: 14px; padding: 24px; }
+  .subscribe__title { font-size: 24px; line-height: 26px; }
+  .subscribe__close,
+  .subscribe__close img { width: 24px; height: 24px; }
+  .subscribe__close { flex-basis: 24px; }
   .subscribe__input {
     min-height: 56px;
     padding: 16px 18px;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     background: #324C880A;
   }
-
-  .subscribe__button.btn {
-    padding: 24px 40px;
-    font-size: 18px;
-  }
-
-  .subscribe__consent-text {
-    font-size: 14px;
-  }
+  .subscribe__form { gap: 14px; }
+  .subscribe__button.btn { min-height: 58px; padding: 18px 40px; font-size: 16px; }
+  .subscribe__consent { gap: 18px; }
+  .subscribe__consent-text { font-size: 12px; line-height: 20px; }
 }
 
 @media screen and (max-width: 680px) {
-  .subscribe {
-    padding: 16px;
-  }
-
+  .subscribe { align-items: end; padding: 0; }
   .subscribe__content {
-    gap: 20px;
-    max-width: 100%;
-    padding: 24px;
-    border-radius: 16px;
+    gap: 14px;
+    width: 100%;
+    max-width: none;
+    padding: 20px 14px;
+    border-radius: 20px 20px 0 0;
   }
-
-  .subscribe__title {
-    font-size: 28px;
+  .subscribe__handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 57px;
+    height: 3px;
+    border-radius: 0 0 10px 10px;
+    background: #2555BD;
+    transform: translateX(-50%);
   }
-
-  .subscribe__form {
-    gap: 16px;
-  }
-
+  .subscribe__header { gap: 12px; }
+  .subscribe__title { font-size: 20px; line-height: 26px; }
+  .subscribe__close,
+  .subscribe__close img { width: 24px; height: 24px; }
+  .subscribe__close { flex-basis: 24px; }
+  .subscribe__form { gap: 14px; }
   .subscribe__input {
-    min-height: 56px;
-    padding: 16px;
+    min-height: 52px;
+    padding: 16px 18px;
     font-size: 16px;
+    line-height: 20px;
+    background: #324C880A;
+    border-radius: 10px;
   }
-
   .subscribe__button.btn {
-    min-height: 60px;
+    min-height: 58px;
     padding: 18px 20px;
-    border-radius: 16px;
     font-size: 16px;
+    line-height: 20px;
+    border-radius: 20px;
   }
+  .subscribe__consent { gap: 18px; }
+  .subscribe__checkbox { flex-basis: 24px; }
+  .subscribe__consent-text { font-size: 12px; line-height: 20px; }
+  .subscribe__mobile-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 68px;
+    padding: 4px;
+    background: #FFFFFF;
+  }
+  .subscribe__back {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 60px;
+    padding: 18px 24px;
+    color: #2555BD;
+    font-family: 'Onest-Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    background: #D7E1F7;
+    border-radius: 10px;
+  }
+}
 
-  .subscribe__consent {
-    gap: 12px;
-  }
-
-  .subscribe__consent-text {
-    font-size: 13px;
-  }
+@media (prefers-reduced-motion: reduce) {
+  .subscribe__button.btn { transition: none; }
 }
