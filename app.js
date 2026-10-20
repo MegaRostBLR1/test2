@@ -9,6 +9,11 @@ const APP_CONFIG = {
     css: './components/layout/footer/footer.css',
     js: './components/layout/footer/footer.js'
   },
+  cookies: {
+    html: './components/popupiks/cookies/cookies.html',
+    css: './components/popupiks/cookies/cookies.css',
+    js: './components/popupiks/cookies/cookies.js'
+  },
   defaultPage: 'home',
   pages: {
     'home': {
@@ -374,11 +379,13 @@ function initNavigationRouting() {
 async function initApp() {
   const header = document.querySelector('#app-header');
   const footer = document.querySelector('#app-footer');
+  const cookies = document.querySelector('#app-cookies');
 
   try {
     await Promise.all([
       loadComponent(header, APP_CONFIG.header),
-      loadComponent(footer, APP_CONFIG.footer)
+      loadComponent(footer, APP_CONFIG.footer),
+      loadComponent(cookies, APP_CONFIG.cookies)
     ]);
   } catch (error) {
     console.error(error);
