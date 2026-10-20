@@ -4921,9 +4921,23 @@
 
 /* Комплектация здания — Figma 1857:116637 (1440px). */
 @media (min-width: 1301px) and (max-width: 1600px) {
+    .fast-buildings-complectation {
+        padding-right: 2.6111rem;
+        padding-left: 2.6111rem;
+    }
+
     .fast-buildings-complectation__header {
         gap: 2rem;
         margin-bottom: 1.6667rem;
+    }
+
+    .fast-buildings-complectation__content {
+        grid-template-columns: minmax(0, 31.5556rem) minmax(0, 1fr);
+        gap: 3.3333rem;
+    }
+
+    .fast-buildings-complectation__item {
+        padding: 1.5556rem;
     }
 
     .fast-buildings-complectation__visual img {
