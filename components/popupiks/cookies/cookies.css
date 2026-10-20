@@ -226,3 +226,225 @@
     transition: none;
   }
 }
+
+
+/* Полноэкранное окно настроек по макету Figma 2484:55450. */
+.cookies-settings {
+  position: fixed;
+  z-index: 1001;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 320px;
+  min-height: 0;
+  padding: 30px;
+  overflow: hidden;
+  color: #4D4D4D;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.cookies-settings[hidden] {
+  display: none;
+}
+
+.cookies-settings__header {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cookies-settings__title {
+  min-width: 0;
+  color: #4D4D4D;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.cookies-settings__close {
+  display: flex;
+  flex: 0 0 36px;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  color: #777777;
+  border-radius: 8px;
+}
+
+.cookies-settings__close-icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+
+.cookies-settings__body {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 24px;
+  min-width: 0;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-color: #2555BD #EBF0FB;
+  scrollbar-width: thin;
+}
+
+.cookies-settings__body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.cookies-settings__body::-webkit-scrollbar-track {
+  background: #EBF0FB;
+  border-radius: 10px;
+}
+
+.cookies-settings__body::-webkit-scrollbar-thumb {
+  background: #2555BD;
+  border-radius: 10px;
+}
+
+.cookies-settings__text {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+  color: #2C2C2C80;
+  font-family: 'Onest-Medium', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  overflow-wrap: break-word;
+}
+
+.cookies-settings__paragraph {
+  margin: 0;
+  color: inherit;
+  font: inherit;
+}
+
+.cookies-settings__section-title {
+  margin: 0;
+  color: #2C2C2CE6;
+  font-family: 'Onest-Regular', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: none;
+}
+
+.cookies-settings__link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cookies-settings__actions {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 14px;
+  min-width: 0;
+}
+
+.cookies-settings__button {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 50px;
+  padding: 14px 48px;
+  border: 1px solid #324C88;
+  border-radius: 20px;
+  font-family: 'Onest-SemiBold', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.cookies-settings__button--block {
+  color: #324C88;
+  background: #FFFFFF;
+}
+
+.cookies-settings__button--accept {
+  color: #FFFFFF;
+  background: #324C88;
+}
+
+.cookies-settings__button--block:hover {
+  background: #F5F8F7;
+}
+
+.cookies-settings__button--accept:hover {
+  background: #28427E;
+}
+
+.cookies-settings__button:focus-visible,
+.cookies-settings__close:focus-visible {
+  outline: 2px solid #324C88;
+  outline-offset: 3px;
+}
+
+@media screen and (max-width: 680px) {
+  .cookies-settings {
+    gap: 14px;
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .cookies-settings__title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .cookies-settings__close,
+  .cookies-settings__close-icon {
+    flex-basis: 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .cookies-settings__text {
+    gap: 14px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .cookies-settings__section-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .cookies-settings__actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cookies-settings__button {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cookies-settings__button {
+    transition: none;
+  }
+}
