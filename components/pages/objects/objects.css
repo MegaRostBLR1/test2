@@ -1749,3 +1749,58 @@
         line-height: 26px;
     }
 }
+
+
+/* Figma 1857:31102 — карточное представление на планшете 1024 px.
+   Фильтры располагаются над каталогом; карточки сохраняют двухколоночную сетку. */
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+    .objects-map.is-cards-view {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        min-height: 0;
+        padding: 20px;
+    }
+
+    .objects-map.is-cards-view .objects-map__frame {
+        display: none;
+    }
+
+    .objects-map.is-cards-view .objects-map__filters {
+        width: 100%;
+        max-width: none;
+        padding: 25px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog {
+        width: 100%;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__card {
+        width: 100%;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__image-wrap {
+        aspect-ratio: 460 / 265;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__title {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__features {
+        gap: 8px;
+    }
+
+    .objects-map.is-cards-view .objects-catalog__features li {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
