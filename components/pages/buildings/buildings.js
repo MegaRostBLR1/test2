@@ -1,4 +1,52 @@
 function initBuildings() {
+  const advantages = document.querySelector('.buildings-advantages');
+
+  if (advantages && advantages.dataset.initialized !== 'true') {
+    advantages.dataset.initialized = 'true';
+
+    const items = Array.from(advantages.querySelectorAll('.buildings-advantages__item:not(.buildings-advantages__item--responsive)'));
+    const previousButton = advantages.querySelector('.buildings-advantages__arrow--prev');
+    const nextButton = advantages.querySelector('.buildings-advantages__arrow--next');
+    let activeIndex = 0;
+
+    const setActiveItem = (index) => {
+      activeIndex = (index + items.length) % items.length;
+
+      items.forEach((item, itemIndex) => {
+        const isActive = itemIndex === activeIndex;
+        item.classList.toggle('is-active', isActive);
+
+        if (isActive) {
+          item.setAttribute('aria-current', 'step');
+        } else {
+          item.removeAttribute('aria-current');
+        }
+      });
+
+      if (previousButton) {
+        previousButton.disabled = activeIndex === 0;
+      }
+
+      if (nextButton) {
+        nextButton.disabled = activeIndex === items.length - 1;
+      }
+    };
+
+    previousButton?.addEventListener('click', () => {
+      if (activeIndex > 0) {
+        setActiveItem(activeIndex - 1);
+      }
+    });
+
+    nextButton?.addEventListener('click', () => {
+      if (activeIndex < items.length - 1) {
+        setActiveItem(activeIndex + 1);
+      }
+    });
+
+    setActiveItem(0);
+  }
+
 
   const tabs = document.querySelector('.buildings__agro-tabs');
   const toggle = tabs?.querySelector('.buildings__agro-tabs-toggle');
