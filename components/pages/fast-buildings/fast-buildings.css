@@ -5621,3 +5621,36 @@
 }
 
 
+
+
+/* Комплектация здания — Figma 1857:114356. */
+.fast-buildings-complectation{margin:0 5px 5px;padding:80px 50px 60px;overflow:hidden;border-radius:20px;color:#FFFFFF;background:#252525}
+.fast-buildings-complectation__inner{width:100%;max-width:1810px;margin:0 auto}
+.fast-buildings-complectation__header{display:flex;flex-direction:column;align-items:center;gap:36px;margin-bottom:30px;text-align:center}
+.fast-buildings-complectation__title{margin:0;color:#FFFFFF;font-family:'Onest-SemiBold',sans-serif;font-size:48px;font-weight:600;line-height:1.27;text-transform:uppercase}
+.fast-buildings-complectation__categories{display:flex;align-items:center;justify-content:center;gap:20px;padding:4px}
+.fast-buildings-complectation__category{color:#FFFFFF4D;font-family:'Onest-SemiBold',sans-serif;font-size:24px;font-weight:600;line-height:1.6;text-transform:uppercase;white-space:nowrap}
+.fast-buildings-complectation__category--active{color:#FFFFFF}
+.fast-buildings-complectation__separator{flex:0 0 4px;width:4px;height:4px;border-radius:50%;background:#FFFFFF}
+.fast-buildings-complectation__content{display:grid;grid-template-columns:minmax(0,597px) 90px minmax(0,1fr);align-items:center;gap:24px}
+.fast-buildings-complectation__list{display:flex;flex-direction:column;gap:10px;min-width:0;margin:0;padding:0;list-style:none}
+.fast-buildings-complectation__item{display:flex;align-items:center;gap:30px;min-width:0;min-height:98px;padding:25px 30px;border-radius:20px;background:#363636}
+.fast-buildings-complectation__item.is-active{background:#414141}
+.fast-buildings-complectation__icon{display:grid;flex:0 0 48px;width:48px;height:48px;place-items:center;border-radius:50%;background:#FFF500}
+.fast-buildings-complectation__icon--small{flex-basis:36px;width:36px;height:36px}
+.fast-buildings-complectation__icon img{display:block;width:36px;height:36px;object-fit:contain}
+.fast-buildings-complectation__icon--small img{width:24px;height:24px}
+.fast-buildings-complectation__label{min-width:0;color:#FFFFFF;font-family:'Onest-SemiBold',sans-serif;font-size:24px;font-weight:600;line-height:1.6;text-transform:uppercase;overflow-wrap:anywhere}
+.fast-buildings-complectation__pagination{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.fast-buildings-complectation__arrow{display:grid;flex:0 0 64px;width:64px;height:64px;place-items:center;border:1px solid #FFFFFF33;border-radius:20px;transition:border-color .2s ease,background-color .2s ease,opacity .2s ease}
+.fast-buildings-complectation__arrow:hover:not(:disabled){border-color:#FFF500;background:#FFFFFF0A}
+.fast-buildings-complectation__arrow:focus-visible{outline:2px solid #FFF500;outline-offset:3px}
+.fast-buildings-complectation__arrow:disabled{cursor:default;opacity:.4}
+.fast-buildings-complectation__arrow img{display:block;width:40px;height:40px;object-fit:contain}
+.fast-buildings-complectation__arrow--prev img{transform:rotate(180deg)}
+.fast-buildings-complectation__visual{display:flex;align-items:center;justify-content:center;min-width:0;min-height:685px}
+.fast-buildings-complectation__visual img{display:block;width:100%;max-width:502px;height:auto;object-fit:contain}
+@media(max-width:1300px){.fast-buildings-complectation{padding:56px 32px 40px}.fast-buildings-complectation__content{grid-template-columns:minmax(0,1fr) 64px minmax(0,.9fr);gap:18px}.fast-buildings-complectation__item{gap:20px;padding:20px}.fast-buildings-complectation__label{font-size:20px}.fast-buildings-complectation__visual{min-height:0}}
+@media(max-width:900px){.fast-buildings-complectation{padding:40px 24px}.fast-buildings-complectation__content{grid-template-columns:minmax(0,1fr) 56px;align-items:center}.fast-buildings-complectation__visual{grid-column:1/-1;grid-row:2;max-width:502px;margin:0 auto}.fast-buildings-complectation__title{font-size:36px}.fast-buildings-complectation__category{font-size:20px}}
+@media(max-width:600px){.fast-buildings-complectation{padding:28px 16px 24px;border-radius:10px}.fast-buildings-complectation__header{gap:20px;margin-bottom:24px}.fast-buildings-complectation__title{font-size:24px;line-height:1.3}.fast-buildings-complectation__categories{flex-wrap:wrap;gap:10px}.fast-buildings-complectation__category{font-size:14px}.fast-buildings-complectation__content{grid-template-columns:minmax(0,1fr);gap:16px}.fast-buildings-complectation__list{gap:10px}.fast-buildings-complectation__item{min-height:76px;gap:16px;padding:14px;border-radius:12px}.fast-buildings-complectation__icon{flex-basis:40px;width:40px;height:40px}.fast-buildings-complectation__icon--small{flex-basis:36px;width:36px;height:36px}.fast-buildings-complectation__icon img{width:30px;height:30px}.fast-buildings-complectation__icon--small img{width:24px;height:24px}.fast-buildings-complectation__label{font-size:16px;line-height:1.4}.fast-buildings-complectation__pagination{flex-direction:row;grid-row:2}.fast-buildings-complectation__arrow{flex-basis:48px;width:48px;height:48px;border-radius:12px}.fast-buildings-complectation__arrow img{width:28px;height:28px}.fast-buildings-complectation__visual{grid-row:3}}
+@media(prefers-reduced-motion:reduce){.fast-buildings-complectation__arrow{transition:none}}
