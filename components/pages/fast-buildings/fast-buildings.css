@@ -5470,3 +5470,39 @@
     }
 }
 
+
+
+/* Комплектация здания — mobile Figma 1866:77245 (360 px). */
+@media (max-width: 600px) {
+    .fast-buildings-complectation {
+        margin: 0 0.2778rem 0.2778rem;
+        padding: 1.1111rem 0.5556rem 0.8889rem;
+        border-radius: 0.5556rem;
+    }
+    .fast-buildings-complectation__inner { max-width: 100%; }
+    .fast-buildings-complectation__header { gap: 0.7778rem; margin-bottom: 1.9444rem; }
+    .fast-buildings-complectation__title { font-size: 1.1111rem; line-height: 1.4; }
+    .fast-buildings-complectation__categories { flex-wrap: nowrap; gap: 0.7778rem; padding: 0; }
+    .fast-buildings-complectation__category { font-size: 0.7778rem; line-height: 1.5714; }
+    .fast-buildings-complectation__separator { flex-basis: 0.2222rem; width: 0.2222rem; height: 0.2222rem; }
+    .fast-buildings-complectation__content { position: relative; display: flex; flex-direction: column; align-items: stretch; gap: 1.9444rem; }
+    .fast-buildings-complectation__visual { order: 0; align-self: center; width: 100%; max-width: 16.6667rem; height: 16.1667rem; margin: 0; padding: 0; }
+    .fast-buildings-complectation__visual img { width: 100%; height: 100%; max-width: 100%; object-fit: contain; object-position: center; }
+    .fast-buildings-complectation__list { order: 1; flex-direction: row; align-items: flex-end; gap: 0.5556rem; width: 100%; overflow-x: auto; overflow-y: visible; overscroll-behavior-inline: contain; scroll-snap-type: x proximity; scrollbar-width: none; padding: 0 0 0.1111rem; }
+    .fast-buildings-complectation__list::-webkit-scrollbar { display: none; }
+    .fast-buildings-complectation__item { position: relative; flex: 0 0 13.8889rem; padding: 0.5556rem; border-radius: 1.1111rem; scroll-snap-align: start; }
+    .fast-buildings-complectation__item--expanded { z-index: 2; }
+    .fast-buildings-complectation__toggle { gap: 1rem; }
+    .fast-buildings-complectation__icon { flex-basis: 1.6667rem; width: 1.6667rem; height: 1.6667rem; }
+    .fast-buildings-complectation__icon img { width: 1.3333rem; height: 1.3333rem; }
+    .fast-buildings-complectation__label { font-size: 0.7778rem; line-height: 1.5714; }
+    .fast-buildings-complectation__arrow { flex-basis: 0.5556rem; width: 0.5556rem; height: 0.5556rem; }
+    .fast-buildings-complectation__panel-inner { gap: 0.5556rem; }
+    .fast-buildings-complectation__roof-options { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.2222rem; margin-top: 0.7778rem; }
+    .fast-buildings-complectation__roof-option { gap: 0.3333rem; padding: 0.3333rem 0.1667rem; }
+    .fast-buildings-complectation__roof-option img { width: 1.3333rem; height: 1.3333rem; }
+    .fast-buildings-complectation__roof-option span { font-size: 0.6111rem; line-height: 1.4; }
+    .fast-buildings-complectation__description { font-size: 0.7222rem; line-height: 1.45; }
+    .fast-buildings-complectation__overlay { position: absolute; inset: 0; z-index: 5; pointer-events: none; }
+    .fast-buildings-complectation__overlay > .fast-buildings-complectation__panel { position: absolute; box-sizing: border-box; padding: 0 0.5556rem 0.5556rem; border-radius: 1.1111rem 1.1111rem 0 0; background: #363636; pointer-events: auto; }
+}
