@@ -578,9 +578,31 @@
   }
 
   .search-result__play {
-    flex-basis: 2.7778rem;
+    position: relative;
+    flex-basis: 3.9284rem;
+    width: 3.9284rem;
+    height: 3.9284rem;
+    background: transparent;
+    transform: none;
+  }
+
+  .search-result__play::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 2.7778rem;
     height: 2.7778rem;
+    border-radius: 0.5556rem;
+    background: #ffffff1a;
+    content: "";
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .search-result__play img {
+    position: relative;
+    width: 1.5556rem;
+    height: 1.5556rem;
+    transform: none;
   }
 
   .search-result__tag {
