@@ -1,24 +1,24 @@
 function initNewsItem() {
-  const gallery = document.querySelector('.news-gallery');
+    const gallery = document.querySelector('.news-gallery');
 
-  if (!gallery) {
-    return;
-  }
+    if (!gallery) {
+        return;
+    }
 
-  const moreButton = gallery.querySelector('.news-gallery__more');
+    const moreButton = gallery.querySelector('.news-gallery__more');
 
-  if (!moreButton) {
-    return;
-  }
+    if (!moreButton) {
+        return;
+    }
 
-  moreButton.addEventListener('click', () => {
-    const isExpanded = moreButton.getAttribute('aria-expanded') === 'true';
+    moreButton.addEventListener('click', () => {
+        const isExpanded = moreButton.getAttribute('aria-expanded') === 'true';
 
-    gallery.querySelectorAll('.news-gallery__item--additional').forEach((item) => {
-      item.style.display = isExpanded ? '' : 'block';
+        gallery.querySelectorAll('.news-gallery__item--additional').forEach((item) => {
+            item.style.display = isExpanded ? '' : 'block';
+        });
+
+        moreButton.setAttribute('aria-expanded', String(!isExpanded));
+        moreButton.textContent = isExpanded ? 'Показать еще' : 'Скрыть';
     });
-
-    moreButton.setAttribute('aria-expanded', String(!isExpanded));
-    moreButton.textContent = isExpanded ? 'Показать еще' : 'Скрыть';
-  });
 }
