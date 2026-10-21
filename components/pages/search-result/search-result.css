@@ -369,6 +369,34 @@
   }
 }
 
+/* Макет поиска для ширины Figma 1440px. Базовые desktop-стили выше остаются вариантом 1920px. */
+@media screen and (min-width: 1301px) and (max-width: 1440px) {
+  .search-result__container {
+    padding: 1.1111rem;
+  }
+
+  .search-result__layout {
+    grid-template-columns: 17.7778rem minmax(0, 1fr);
+    gap: 1.7778rem;
+  }
+
+  .search-result__project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .search-result__project-card {
+    min-height: 17.7778rem;
+  }
+
+  .search-result__project-name {
+    font-size: 1.2222rem;
+  }
+
+  .search-result__news-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .search-result__container {
     padding: 1.1111rem;
