@@ -202,6 +202,13 @@ const APP_CONFIG = {
       css: './components/pages/contacts/contacts.css',
       js: './components/pages/contacts/contacts.js',
       init: 'initContacts'
+    },
+    'search-result': {
+      title: 'Результаты поиска',
+      html: './components/pages/search-result/search-result.html',
+      css: './components/pages/search-result/search-result.css',
+      js: './components/pages/search-result/search-result.js',
+      init: 'initSearchResult'
     }
   }
 };
