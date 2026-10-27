@@ -2304,13 +2304,15 @@ h2 {
 }
 
 .project-card__video-label {
+  max-width: 100%;
   color: #fff;
   font-family: "Onest-SemiBold", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 1.45;
+  line-height: 1.35;
   text-align: center;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .project-card__controls,
@@ -2809,8 +2811,14 @@ h2 {
     height: 17px;
   }
 
+  .project-card__video::before {
+    width: 160px;
+    height: 160px;
+  }
+
   .project-card__video-label {
     font-size: 12px;
+    line-height: 18px;
   }
 
   .project-card__controls,
@@ -2973,9 +2981,14 @@ h2 {
     border-radius: 10px;
   }
 
+  .project-card__video::before {
+    width: 140px;
+    height: 140px;
+  }
+
   .project-card__video-label {
     font-size: 12px;
-    line-height: 26px;
+    line-height: 18px;
   }
 
   .project-card__controls {
