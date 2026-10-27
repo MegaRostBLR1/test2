@@ -81,6 +81,7 @@ function initHome() {
             countryPopup.hidden = !isOpen;
             countryTrigger.setAttribute('aria-expanded', String(isOpen));
             countrySelector.classList.toggle('is-country-popup-open', isOpen);
+            document.documentElement.classList.toggle('is-country-popup-open', isOpen);
         };
 
         countryTrigger.addEventListener('click', () => {
