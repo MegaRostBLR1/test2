@@ -50,6 +50,29 @@ function initHome() {
         const countryFlag = countrySelector.querySelector('.services-contact__phone-flag');
         const countryOptions = Array.from(countrySelector.querySelectorAll('.services-contact__country-option'));
 
+        const phoneInput = countrySelector.querySelector('.services-contact__phone-input');
+
+        const updatePhoneInputPadding = () => {
+            if (!countryTrigger || !phoneInput) return;
+
+            const triggerRect = countryTrigger.getBoundingClientRect();
+            const inputRect = phoneInput.getBoundingClientRect();
+            const gap = 12;
+            const paddingLeft = Math.ceil(triggerRect.right - inputRect.left + gap);
+
+            phoneInput.style.setProperty('--phone-country-padding-left', `${paddingLeft}px`);
+        };
+
+        updatePhoneInputPadding();
+
+        if ('ResizeObserver' in window) {
+            const countrySelectorResizeObserver = new ResizeObserver(updatePhoneInputPadding);
+            countrySelectorResizeObserver.observe(countryTrigger);
+            countrySelectorResizeObserver.observe(phoneInput);
+        } else {
+            window.addEventListener('resize', updatePhoneInputPadding, { passive: true });
+        }
+
         const setCountryPopupOpen = (isOpen) => {
             countryPopup.hidden = !isOpen;
             countryTrigger.setAttribute('aria-expanded', String(isOpen));
