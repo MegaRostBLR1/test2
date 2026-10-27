@@ -3227,6 +3227,7 @@ h2 {
 
 .services-contact__form .services-contact__phone-input {
   min-height: 3.7778rem;
+  padding-left: var(--phone-country-padding-left, 105px);
   background-color: #324c880a;
   transition: background-color 0.15s ease;
 }
