@@ -1940,10 +1940,6 @@ h2 {
     flex: 0 0 auto;
   }
 
-  .home-industries__nav-item--tablet-hidden {
-    display: flex;
-  }
-
   .home-industries__nav-divider {
     flex: 0 0 1px;
   }
@@ -13562,3 +13558,15 @@ h2 {
 
 /* footer */
 
+
+
+/* Responsive navigation visibility for the industries catalog. */
+.home-industries__nav-item--no-divider::after {
+  display: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .home-industries__nav-item--tablet-hidden {
+    display: none;
+  }
+}
