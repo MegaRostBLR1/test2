@@ -38,6 +38,81 @@ function initHome() {
         });
     }
 
+
+    const countrySelector = document.querySelector('.services-contact__field--phone');
+
+    if (countrySelector && !countrySelector.dataset.countrySelectorInitialized) {
+        countrySelector.dataset.countrySelectorInitialized = 'true';
+
+        const countryTrigger = countrySelector.querySelector('.services-contact__phone-country');
+        const countryPopup = countrySelector.querySelector('.services-contact__country-popup');
+        const countryCode = countrySelector.querySelector('.services-contact__phone-code');
+        const countryFlag = countrySelector.querySelector('.services-contact__phone-flag');
+        const countryOptions = Array.from(countrySelector.querySelectorAll('.services-contact__country-option'));
+
+        const setCountryPopupOpen = (isOpen) => {
+            countryPopup.hidden = !isOpen;
+            countryTrigger.setAttribute('aria-expanded', String(isOpen));
+            countrySelector.classList.toggle('is-country-popup-open', isOpen);
+        };
+
+        countryTrigger.addEventListener('click', () => {
+            setCountryPopupOpen(countryPopup.hidden);
+        });
+
+        countryOptions.forEach((option) => {
+            option.addEventListener('click', () => {
+                const selectedCode = option.dataset.code;
+                const selectedName = option.dataset.name;
+                const selectedFlag = option.querySelector('svg');
+
+                countryCode.textContent = selectedCode;
+                countryFlag.innerHTML = selectedFlag.innerHTML;
+                countryFlag.setAttribute('viewBox', selectedFlag.getAttribute('viewBox'));
+                countryTrigger.setAttribute('aria-label', `Код страны ${selectedName}, ${selectedCode}`);
+
+                countryOptions.forEach((countryOption) => {
+                    const isSelected = countryOption === option;
+                    countryOption.classList.toggle('is-selected', isSelected);
+                    countryOption.setAttribute('aria-selected', String(isSelected));
+                });
+
+                const phoneInput = countrySelector.querySelector('.services-contact__phone-input');
+                phoneInput.dataset.countryCode = selectedCode;
+                setCountryPopupOpen(false);
+                countryTrigger.focus();
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!countrySelector.contains(event.target)) {
+                setCountryPopupOpen(false);
+            }
+        });
+
+        countrySelector.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !countryPopup.hidden) {
+                setCountryPopupOpen(false);
+                countryTrigger.focus();
+            }
+
+            if (event.key === 'ArrowDown' && event.target === countryTrigger) {
+                event.preventDefault();
+                setCountryPopupOpen(true);
+                countryOptions[0]?.focus();
+            }
+
+            if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+                const currentIndex = countryOptions.indexOf(event.target);
+                if (currentIndex === -1) return;
+                event.preventDefault();
+                const direction = event.key === 'ArrowDown' ? 1 : -1;
+                const nextIndex = (currentIndex + direction + countryOptions.length) % countryOptions.length;
+                countryOptions[nextIndex]?.focus();
+            }
+        });
+    }
+
     const processGrid = document.querySelector('.home-process__grid');
 
     if (processGrid && !processGrid.dataset.headersEqualized) {
