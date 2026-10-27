@@ -280,6 +280,24 @@ button {
   background: #fff;
 }
 
+/* Dark theme for slider controls on light backgrounds. */
+.slider-controls--dark .slider-controls__arrow::before {
+  border: 1px solid #4D4D4D33;
+}
+
+.slider-controls--dark .slider-controls__arrow svg {
+  stroke: #4D4D4D;
+}
+
+.slider-controls--dark .slider-controls__dot {
+  background: #324C8833;
+}
+
+.slider-controls--dark .slider-controls__dot--active {
+  background: #324C88;
+}
+
+
 @media screen and (min-width: 681px) and (max-width: 1100px) {
   .slider-controls {
     gap: 24px;
