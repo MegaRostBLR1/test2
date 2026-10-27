@@ -3272,6 +3272,23 @@ h2 {
   outline-offset: 2px;
 }
 
+.services-contact__country-container {
+  display: none;
+}
+
+.services-contact__country-back {
+  padding-top: 4px;
+}
+
+.back-btn {
+  display: block;
+  width: 100%;
+  padding: 22px;
+  background: #D7E1F7;
+  color: #2555BD;
+  border-radius: 10px;
+}
+
 .services-contact__phone-country[aria-expanded="true"] .services-contact__phone-chevron {
   transform: rotate(180deg);
 }
@@ -3302,7 +3319,7 @@ h2 {
   overflow-y: auto;
   border: 0.1667rem solid #f5f8f7;
   border-radius: 0.5556rem;
-  background-color: #efefef;
+  background-color: #FFFFFF;
   box-shadow: 0 0.3333rem 1.1111rem rgb(0 0 0 / 5%);
   scrollbar-color: #4d4d4d #ffffff;
   scrollbar-width: thin;
@@ -14017,7 +14034,7 @@ h2 {
     width: 100%;
     max-width: none;
     max-height: min(80dvh, 42rem);
-    padding: 0 0 max(0.25rem, env(safe-area-inset-bottom));
+    padding: 4px;
     overflow-x: hidden;
     overflow-y: auto;
     border: 0;
@@ -14073,5 +14090,11 @@ h2 {
     min-height: 3rem;
     padding: 0.75rem 0.875rem;
     border-radius: 0.5556rem;
+  }
+
+  .services-contact__country-container {
+    display: block;
+    background-color: #efefef;
+    border-radius: 10px;
   }
 }
