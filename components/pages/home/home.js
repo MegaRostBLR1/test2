@@ -50,7 +50,6 @@ function initHome() {
         const countryFlag = countrySelector.querySelector('.services-contact__phone-flag');
         const countryOptions = Array.from(countrySelector.querySelectorAll('.services-contact__country-option'));
         const countryPopupClose = countrySelector.querySelector('.services-contact__country-popup-close');
-        const countryPopupBack = countrySelector.querySelector('.services-contact__country-popup-back');
         const countryPopupBackButton = countrySelector.querySelector('.back-btn');
 
         const phoneInput = countrySelector.querySelector('.services-contact__phone-input');
@@ -95,7 +94,6 @@ function initHome() {
         });
 
         countryPopupClose?.addEventListener('click', closeCountryPopup);
-        countryPopupBack?.addEventListener('click', closeCountryPopup);
         countryPopupBackButton?.addEventListener('click', closeCountryPopup);
 
         countryOptions.forEach((option) => {
