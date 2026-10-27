@@ -3779,12 +3779,6 @@ h2 {
     outline: 1px solid #d52b1e;
 }
 
-@media (max-width: 480px) {
-    .services-contact__tooltip {
-        top: -2.3333rem;
-    }
-}
-
 @media (prefers-reduced-motion: reduce) {
     .services-contact__tooltip {
         transition: none;
@@ -13846,13 +13840,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .services-contact__form .services-contact__input::placeholder,
-  .services-contact__form .services-contact__phone-input::placeholder,
-  .services-contact__form .services-contact__textarea::placeholder {
-    font-size: 16px;
-  }
-
+@media screen and (max-width: 1300px) {
   .services-contact__phone-country {
     top: calc(100% - 28px);
     left: 18px;
@@ -13861,6 +13849,13 @@ h2 {
   .services-contact__form .services-contact__phone-input {
     min-height: 56px;
     padding: 18px 18px 18px 105px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .services-contact__form .services-contact__input::placeholder,
+  .services-contact__form .services-contact__phone-input::placeholder,
+  .services-contact__form .services-contact__textarea::placeholder {
     font-size: 16px;
   }
 
