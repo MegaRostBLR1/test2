@@ -84,19 +84,17 @@ function initHome() {
             document.documentElement.classList.toggle('is-country-popup-open', isOpen);
         };
 
+        const closeCountryPopup = () => {
+            setCountryPopupOpen(false);
+            countryTrigger.focus();
+        };
+
         countryTrigger.addEventListener('click', () => {
             setCountryPopupOpen(countryPopup.hidden);
         });
 
-        countryPopupClose?.addEventListener('click', () => {
-            setCountryPopupOpen(false);
-            countryTrigger.focus();
-        });
-
-        countryPopupBack?.addEventListener('click', () => {
-            setCountryPopupOpen(false);
-            countryTrigger.focus();
-        });
+        countryPopupClose?.addEventListener('click', closeCountryPopup);
+        countryPopupBack?.addEventListener('click', closeCountryPopup);
 
         countryOptions.forEach((option) => {
             option.addEventListener('click', () => {
@@ -341,4 +339,3 @@ function initHome() {
         });
     }
 }
-
