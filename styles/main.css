@@ -1540,7 +1540,6 @@ h2 {
 
   .home-industries__header {
     align-items: center;
-    flex-direction: column;
     gap: 20px;
   }
 
@@ -1550,7 +1549,6 @@ h2 {
   }
 
   .home-industries__nav {
-    width: 100%;
     flex: 0 1 auto;
     gap: 18px;
   }
@@ -1645,21 +1643,6 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1190px) {
-  .home-industries__nav {
-    flex-direction: column;
-  }
-
-  .home-industries__nav-list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .home-industries__nav-divider {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 681px) and (max-width: 1100px) {
   .home-industries__panel {
     gap: 18px;
@@ -1700,11 +1683,8 @@ h2 {
     gap: 20px;
   }
 
-  /*.home-industries__nav-item--tablet-hidden {*/
-  /*  display: none;*/
-  /*}*/
-
-  .home-industries__nav-item {
+  .home-industries__nav-item,
+  .home-industries__catalog-link {
     gap: 20px;
     font-size: 16px;
     line-height: 1.6;
@@ -1712,10 +1692,6 @@ h2 {
 
   .home-industries__nav-divider {
     height: 40px;
-  }
-
-  .home-industries__catalog-link {
-    font-size: 18px;
   }
 
   .home-industries__content {
@@ -1816,6 +1792,21 @@ h2 {
   }
 }
 
+@media screen and (max-width: 940px) {
+  .home-industries__nav {
+    flex-direction: column;
+  }
+
+  .home-industries__nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-industries__nav-divider {
+    display: none;
+  }
+}
+
 
 @media screen and (max-width: 680px) {
   .home-industries__panel {
@@ -1838,7 +1829,7 @@ h2 {
 
   .home-industries__nav-item {
     gap: 10px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .home-industries__nav-divider {
@@ -1846,7 +1837,7 @@ h2 {
   }
 
   .home-industries__catalog-link {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .home-industries__content {
@@ -1914,8 +1905,12 @@ h2 {
 
   .home-industries__header {
     align-items: center;
-    gap: 20px;
+    gap: 14px;
     width: 100%;
+  }
+
+  .home-industries__nav {
+    gap: 14px;
   }
 
   .home-industries__eyebrow {
@@ -2516,10 +2511,6 @@ h2 {
     font-size: 32px;
   }
 
-  .home-projects__all-link {
-    font-size: 14px;
-  }
-
   .home-projects__layout {
     height: 680px;
   }
@@ -2631,7 +2622,7 @@ h2 {
   }
 
   .home-projects__all-link {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .home-projects__layout {
