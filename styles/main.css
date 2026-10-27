@@ -75,10 +75,12 @@ body {
   font-size: 1rem;
 }
 
-/* Блокируем прокрутку страницы, пока открыт popup выбора страны. */
-html.is-country-popup-open,
-html.is-country-popup-open body {
-  overflow: hidden;
+/* Блокируем прокрутку страницы при открытом popup выбора страны на планшетах и мобильных устройствах. */
+@media screen and (max-width: 1024px) {
+  html.is-country-popup-open,
+  html.is-country-popup-open body {
+    overflow: hidden;
+  }
 }
 
 
