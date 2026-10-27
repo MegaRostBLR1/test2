@@ -3241,6 +3241,7 @@ h2 {
   gap: 0.5556rem;
   border-radius: 0.5556rem;
   color: #4d4d4d;
+  background-color: transparent;
   white-space: nowrap;
 }
 
@@ -3278,8 +3279,6 @@ h2 {
   line-height: normal;
 }
 
-.services-contact__field--phone:has(.services-contact__phone-input:hover) .services-contact__phone-country,
-.services-contact__field--phone:has(.services-contact__phone-input:focus) .services-contact__phone-country,
 .services-contact__form .services-contact__phone-input:hover:not(:disabled):not([readonly]),
 .services-contact__form .services-contact__phone-input:focus:not(:user-invalid):not(:disabled):not([readonly]) {
   background-color: #324c880f;
