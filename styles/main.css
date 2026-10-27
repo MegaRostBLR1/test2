@@ -3275,10 +3275,12 @@ h2 {
 }
 
 .services-contact__country-container {
-  display: none;
+  background-color: #efefef;
+  border-radius: 10px;
 }
 
 .services-contact__country-back {
+  display: none;
   padding-top: 4px;
 }
 
@@ -3317,7 +3319,6 @@ h2 {
   gap: 0.7778rem;
   width: min(20rem, calc(100vw - 2rem));
   max-height: 18rem;
-  padding: 0.6667rem 0.7778rem 0.2222rem;
   overflow-y: auto;
   border: 0.1667rem solid #f5f8f7;
   border-radius: 0.5556rem;
@@ -3335,7 +3336,7 @@ h2 {
   width: 100%;
   min-width: 0;
   min-height: 2.6667rem;
-  padding: 0.6667rem 0.7778rem 0.6667rem 0;
+  padding: 0.6667rem 0.7778rem 0.6667rem 0.7778rem;
   border-radius: 0.5556rem;
   color: #2555bd;
   background-color: transparent;
@@ -14094,9 +14095,8 @@ h2 {
     border-radius: 0.5556rem;
   }
 
-  .services-contact__country-container {
+  .services-contact__country-back {
     display: block;
-    background-color: #efefef;
-    border-radius: 10px;
+    padding-top: 4px;
   }
 }
