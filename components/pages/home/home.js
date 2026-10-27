@@ -49,6 +49,7 @@ function initHome() {
         const countryCode = countrySelector.querySelector('.services-contact__phone-code');
         const countryFlag = countrySelector.querySelector('.services-contact__phone-flag');
         const countryOptions = Array.from(countrySelector.querySelectorAll('.services-contact__country-option'));
+        const countryPopupClose = countrySelector.querySelector('.services-contact__country-popup-close');
 
         const phoneInput = countrySelector.querySelector('.services-contact__phone-input');
 
@@ -83,6 +84,11 @@ function initHome() {
 
         countryTrigger.addEventListener('click', () => {
             setCountryPopupOpen(countryPopup.hidden);
+        });
+
+        countryPopupClose?.addEventListener('click', () => {
+            setCountryPopupOpen(false);
+            countryTrigger.focus();
         });
 
         countryOptions.forEach((option) => {
