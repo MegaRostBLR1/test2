@@ -69,9 +69,11 @@ function initHome() {
             const countrySelectorResizeObserver = new ResizeObserver(updatePhoneInputPadding);
             countrySelectorResizeObserver.observe(countryTrigger);
             countrySelectorResizeObserver.observe(phoneInput);
-        } else {
-            window.addEventListener('resize', updatePhoneInputPadding, { passive: true });
         }
+
+        // ResizeObserver не отслеживает изменение положения элемента без изменения его размера.
+        // Поэтому пересчитываем отступ и при каждом изменении ширины/размера окна.
+        window.addEventListener('resize', updatePhoneInputPadding, { passive: true });
 
         const setCountryPopupOpen = (isOpen) => {
             countryPopup.hidden = !isOpen;
