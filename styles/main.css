@@ -3440,7 +3440,7 @@ h2 {
   }
 
   .services-contact__phone-country {
-    left: 1rem;
+    left: 18px;
   }
 
   .services-contact__phone-code {
@@ -3523,10 +3523,6 @@ h2 {
     min-height: 3.1111rem;
     padding: 1rem 1rem 1rem 5.1111rem;
     font-size: 0.8889rem;
-  }
-
-  .services-contact__phone-country {
-    left: 16px;
   }
 
   .services-contact__phone-code {
