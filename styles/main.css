@@ -2628,8 +2628,8 @@ h2 {
     height: auto;
   }
 
-  .project-card--featured {
-    min-height: 700px;
+  .home-projects__featured.project-card--featured {
+    min-height: 840px;
     padding: 45px 65px;
   }
 
