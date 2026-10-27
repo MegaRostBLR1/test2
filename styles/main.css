@@ -3521,7 +3521,8 @@ h2 {
     background-color: #324c880f;
 }
 
-.services-contact__form .services-contact__input:focus:not(:user-invalid) {
+.services-contact__form .services-contact__input:focus:not(:user-invalid):not(:disabled):not([readonly]) {
+    background-color: #324c880f;
     outline: none;
 }
 
