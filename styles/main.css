@@ -3318,7 +3318,7 @@ h2 {
 }
 
 .services-contact__country-option:hover:not(.is-selected) {
-  background-color: #e7e7e7;
+  background-color: transparent;
 }
 
 .services-contact__country-flag {
