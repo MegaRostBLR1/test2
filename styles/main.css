@@ -3590,8 +3590,12 @@ h2 {
     transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
+.services-contact__form .services-contact__input:hover:not(:disabled):not([readonly]),
 .services-contact__form .services-contact__input:focus:not(:user-invalid):not(:disabled):not([readonly]) {
     background-color: #324c880f;
+}
+
+.services-contact__form .services-contact__input:focus:not(:user-invalid):not(:disabled):not([readonly]) {
     outline: none;
 }
 
