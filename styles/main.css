@@ -3231,7 +3231,6 @@ h2 {
   padding: 1.1111rem 1.3333rem;
   border: 0.0556rem solid transparent;
   border-radius: 0.5556rem;
-  outline-offset: 0.1667rem;
   color: #4d4d4d;
   background-color: #324c880a;
   font-family: "Onest-Regular", sans-serif;
@@ -3243,11 +3242,6 @@ h2 {
 .services-contact__input::placeholder {
   color: #2c2c2c80;
   opacity: 1;
-}
-
-.services-contact__input:focus-visible {
-  border-color: #324c88;
-  outline: 0.0556rem solid #324c88;
 }
 
 .services-contact__form-bottom {
@@ -3527,15 +3521,6 @@ h2 {
     background-color: #324c880f;
 }
 
-.services-contact__form .services-contact__input:focus,
-.services-contact__form .services-contact__input:focus-visible {
-    border-color: #324c88;
-    outline: 1px solid #324c88;
-    outline-offset: 0;
-    background-color: #324c880a;
-    box-shadow: none;
-}
-
 .services-contact__form .services-contact__input:not(:placeholder-shown) {
     color: #2c2c2ce6;
 }
@@ -3612,8 +3597,8 @@ h2 {
 .services-contact__tooltip {
     position: absolute;
     z-index: 2;
-    top: -2.1667rem;
-    right: 0;
+    bottom: -15px;
+    left: 35px;
     display: none;
     align-items: center;
     gap: 0.3333rem;
