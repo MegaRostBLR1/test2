@@ -5,6 +5,39 @@ function initHome() {
         return;
     }
 
+    const contactForm = document.querySelector('.services-contact__form');
+
+    if (contactForm && !contactForm.dataset.validationInitialized) {
+        contactForm.dataset.validationInitialized = 'true';
+
+        const requiredFields = Array.from(contactForm.querySelectorAll('input[required]'));
+
+        const updateFieldValidity = (field) => {
+            const isInvalid = !field.checkValidity();
+            field.classList.toggle('is-invalid', isInvalid);
+            return isInvalid;
+        };
+
+        requiredFields.forEach((field) => {
+            field.addEventListener('input', () => {
+                if (field.checkValidity()) {
+                    field.classList.remove('is-invalid');
+                }
+            });
+
+            field.addEventListener('change', () => updateFieldValidity(field));
+        });
+
+        contactForm.addEventListener('submit', (event) => {
+            const invalidFields = requiredFields.filter((field) => updateFieldValidity(field));
+
+            if (invalidFields.length > 0) {
+                event.preventDefault();
+                invalidFields[0].focus();
+            }
+        });
+    }
+
     const processGrid = document.querySelector('.home-process__grid');
 
     if (processGrid && !processGrid.dataset.headersEqualized) {
