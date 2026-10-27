@@ -3493,6 +3493,26 @@ h2 {
     line-height: 1.1;
   }
 
+  .services-contact__form .services-contact__phone-input {
+    min-height: 3.1111rem;
+    padding: 1rem 1rem 1rem 5.1111rem;
+    font-size: 0.8889rem;
+  }
+
+  .services-contact__phone-country {
+    left: 16px;
+  }
+
+  .services-contact__phone-code {
+    font-size: 0.7778rem;
+  }
+
+  .services-contact__phone-chevron {
+    width: 0.6667rem;
+    height: 0.6667rem;
+    flex-basis: 0.6667rem;
+  }
+
   .services-contact__textarea {
     min-height: 6.6667rem;
   }
