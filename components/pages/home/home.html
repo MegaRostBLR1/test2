@@ -548,7 +548,7 @@
                 </div>
                 <div class="services-contact__field services-contact__field--phone">
                     <label class="services-contact__label" for="services-contact-phone">Телефон</label>
-                    <span class="services-contact__phone-country" aria-label="Код страны Россия, плюс 7">
+                    <button class="services-contact__phone-country" type="button" aria-label="Выбрать код страны" aria-haspopup="listbox" aria-expanded="false" aria-controls="services-contact-country-list">
                         <svg class="services-contact__phone-flag" viewBox="0 0 22 15" aria-hidden="true" focusable="false">
                             <rect width="22" height="5" fill="#fff"></rect>
                             <rect y="5" width="22" height="5" fill="#0039a6"></rect>
@@ -558,7 +558,39 @@
                         <svg class="services-contact__phone-chevron" viewBox="0 0 14 14" aria-hidden="true" focusable="false">
                             <path d="m3.5 5 3.5 3.5L10.5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
                         </svg>
-                    </span>
+                    </button>
+                    <div class="services-contact__country-popup" id="services-contact-country-list" role="listbox" aria-label="Код страны" hidden>
+                        <button class="services-contact__country-option is-selected" type="button" role="option" aria-selected="true" data-country="ru" data-code="+7" data-name="Россия">
+                            <svg class="services-contact__country-flag" viewBox="0 0 22 15" aria-hidden="true" focusable="false"><rect width="22" height="5" fill="#fff"></rect><rect y="5" width="22" height="5" fill="#0039a6"></rect><rect y="10" width="22" height="5" fill="#d52b1e"></rect></svg>
+                            <span class="services-contact__country-code">+7</span><span class="services-contact__country-name">Россия</span>
+                            <svg class="services-contact__country-check" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="m4 9 3.2 3.2L14 5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+                        </button>
+                        <button class="services-contact__country-option" type="button" role="option" aria-selected="false" data-country="am" data-code="+374" data-name="Армения">
+                            <svg class="services-contact__country-flag" viewBox="0 0 22 15" aria-hidden="true" focusable="false"><rect width="22" height="5" fill="#d90012"></rect><rect y="5" width="22" height="5" fill="#0033a0"></rect><rect y="10" width="22" height="5" fill="#f2a800"></rect></svg>
+                            <span class="services-contact__country-code">+374</span><span class="services-contact__country-name">Армения</span>
+                            <svg class="services-contact__country-check" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="m4 9 3.2 3.2L14 5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+                        </button>
+                        <button class="services-contact__country-option" type="button" role="option" aria-selected="false" data-country="by" data-code="+375" data-name="Беларусь">
+                            <svg class="services-contact__country-flag" viewBox="0 0 22 15" aria-hidden="true" focusable="false"><rect width="22" height="10" fill="#d22730"></rect><rect y="10" width="22" height="5" fill="#009739"></rect><rect width="4" height="15" fill="#fff"></rect><path d="M1 0h2v15H1z" fill="#d22730"></path><path d="M0 2h4M0 5h4M0 8h4M0 11h4M0 14h4" stroke="#fff" stroke-width=".6"></path></svg>
+                            <span class="services-contact__country-code">+375</span><span class="services-contact__country-name">Беларусь</span>
+                            <svg class="services-contact__country-check" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="m4 9 3.2 3.2L14 5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+                        </button>
+                        <button class="services-contact__country-option" type="button" role="option" aria-selected="false" data-country="kz" data-code="+7" data-name="Казахстан">
+                            <svg class="services-contact__country-flag" viewBox="0 0 22 15" aria-hidden="true" focusable="false"><rect width="22" height="15" fill="#00afca"></rect><circle cx="11" cy="6" r="2.1" fill="#f6d24a"></circle><g fill="none" stroke="#f6d24a" stroke-width=".6"><circle cx="11" cy="6" r="3.1"></circle><path d="M7 11h8l-4-2z" fill="#f6d24a"></path></g></svg>
+                            <span class="services-contact__country-code">+7</span><span class="services-contact__country-name">Казахстан</span>
+                            <svg class="services-contact__country-check" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="m4 9 3.2 3.2L14 5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+                        </button>
+                        <button class="services-contact__country-option" type="button" role="option" aria-selected="false" data-country="kg" data-code="+996" data-name="Киргизия">
+                            <svg class="services-contact__country-flag" viewBox="0 0 22 15" aria-hidden="true" focusable="false"><rect width="22" height="15" fill="#e8112d"></rect><circle cx="11" cy="7.5" r="3.4" fill="none" stroke="#ffde00" stroke-width=".8"></circle><g stroke="#ffde00" stroke-width=".45"><path d="M11 3.5v8M7 7.5h8M8.2 4.7l5.6 5.6M13.8 4.7l-5.6 5.6"></path></g></svg>
+                            <span class="services-contact__country-code">+996</span><span class="services-contact__country-name">Киргизия</span>
+                            <svg class="services-contact__country-check" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="m4 9 3.2 3.2L14 5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+                        </button>
+                        <button class="services-contact__country-option" type="button" role="option" aria-selected="false" data-country="uz" data-code="+998" data-name="Узбекистан">
+                            <svg class="services-contact__country-flag" viewBox="0 0 22 15" aria-hidden="true" focusable="false"><rect width="22" height="5" fill="#1eb5e5"></rect><rect y="5" width="22" height="5" fill="#fff"></rect><rect y="10" width="22" height="5" fill="#1eb53a"></rect><path d="M0 4.5h22M0 10.5h22" stroke="#ce1126" stroke-width=".6"></path><circle cx="4" cy="2.4" r="1.1" fill="#fff"></circle><circle cx="4.4" cy="2.1" r=".9" fill="#1eb5e5"></circle></svg>
+                            <span class="services-contact__country-code">+998</span><span class="services-contact__country-name">Узбекистан</span>
+                            <svg class="services-contact__country-check" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="m4 9 3.2 3.2L14 5.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+                        </button>
+                    </div>
                     <input class="services-contact__input services-contact__phone-input" id="services-contact-phone"
                            name="phone" type="tel" placeholder="999 123-45-24" autocomplete="tel" required>
                     <span class="services-contact__tooltip" role="status" aria-live="polite">
