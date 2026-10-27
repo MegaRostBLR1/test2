@@ -3521,6 +3521,10 @@ h2 {
     background-color: #324c880f;
 }
 
+.services-contact__form .services-contact__input:focus:not(:user-invalid) {
+    outline: none;
+}
+
 .services-contact__form .services-contact__input:not(:placeholder-shown) {
     color: #2c2c2ce6;
 }
