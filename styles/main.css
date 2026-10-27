@@ -209,6 +209,135 @@ button {
   cursor: not-allowed;
 }
 
+
+/* Универсальная навигация слайдера. Не привязана к конкретной странице. */
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3333rem;
+  flex: 0 0 auto;
+  padding: 0.2778rem;
+}
+
+.slider-controls__arrow {
+  position: relative;
+  display: grid;
+  flex: 0 0 90.51px;
+  place-items: center;
+  width: 90.51px;
+  height: 90.51px;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  transform: none;
+}
+
+.slider-controls__arrow::before {
+  position: absolute;
+  top: 13.25px;
+  left: 13.25px;
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgb(255 255 255 / 50%);
+  border-radius: 20px;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.slider-controls__arrow:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.slider-controls__arrow svg {
+  display: block;
+  width: 2.2222rem;
+  height: 2.2222rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.slider-controls__pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.2222rem;
+}
+
+.slider-controls__dot {
+  display: block;
+  flex: 0 0 0.5556rem;
+  width: 0.5556rem;
+  height: 0.5556rem;
+  border-radius: 50%;
+  background: #a6a6a6;
+}
+
+.slider-controls__dot--active {
+  background: #fff;
+}
+
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  .slider-controls {
+    gap: 24px;
+  }
+
+  .slider-controls__arrow svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slider-controls__pagination {
+    gap: 4px;
+  }
+
+  .slider-controls__dot {
+    flex-basis: 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .slider-controls {
+    gap: 24px;
+    padding: 0;
+  }
+
+  .slider-controls__arrow {
+    flex: 0 0 67.882px;
+    width: 67.882px;
+    height: 67.882px;
+  }
+
+  .slider-controls__arrow::before {
+    top: 9.941px;
+    left: 9.941px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .slider-controls__arrow svg {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+
+  .slider-controls__pagination {
+    gap: 4px;
+  }
+
+  .slider-controls__dot {
+    flex-basis: 8px;
+    width: 8px;
+    height: 8px;
+  }
+}
+
+
 h2 {
   margin: 0;
   font-family: "Onest-SemiBold", sans-serif;
@@ -390,74 +519,13 @@ h2 {
   white-space: nowrap;
 }
 
-.home-hero__slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.3333rem;
-  flex: 0 0 auto;
-  padding: 0.2778rem;
-}
 
-.home-hero__arrow {
-  position: relative;
-  flex: 0 0 90.51px;
-  width: 90.51px;
-  height: 90.51px;
-  border: 0;
-  border-radius: 0;
-  transform: none;
-  display: grid;
-  place-items: center;
-  color: #fff;
-}
 
-.home-hero__arrow::before {
-  position: absolute;
-  top: 13.25px;
-  left: 13.25px;
-  width: 64px;
-  height: 64px;
-  border: 1px solid rgb(255 255 255 / 50%);
-  border-radius: 20px;
-  content: "";
-  transform: rotate(45deg);
-}
 
-.home-hero__arrow:disabled {
-  cursor: default;
-  opacity: 1;
-}
 
-.home-hero__arrow svg {
-  display: block;
-  width: 2.2222rem;
-  height: 2.2222rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-}
 
-.home-hero__pagination {
-  display: flex;
-  align-items: center;
-  gap: 0.2222rem;
-}
 
-.home-hero__dot {
-  display: block;
-  flex: 0 0 0.5556rem;
-  width: 0.5556rem;
-  height: 0.5556rem;
-  border-radius: 50%;
-  background: #a6a6a6;
-}
 
-.home-hero__dot.is-active {
-  background: #fff;
-}
 
 @media screen and (max-width: 1297px) {
   .home-hero {
@@ -548,24 +616,9 @@ h2 {
     line-height: 28px;
   }
 
-  .home-hero__slider {
-    gap: 24px;
-  }
 
-  .home-hero__arrow svg {
-    width: 40px;
-    height: 40px;
-  }
 
-  .home-hero__pagination {
-    gap: 4px;
-  }
 
-  .home-hero__dot {
-    flex-basis: 10px;
-    width: 10px;
-    height: 10px;
-  }
 }
 
 
@@ -632,27 +685,9 @@ h2 {
     line-height: 1.3333;
   }
 
-  .home-hero__slider {
-    gap: 0.7778rem;
-  }
 
-  .home-hero__arrow {
-    flex-basis: 2.6667rem;
-    width: 2.6667rem;
-    height: 2.6667rem;
-    border-radius: 0.6667rem;
-  }
 
-  .home-hero__arrow svg {
-    width: 1.5556rem;
-    height: 1.5556rem;
-  }
 
-  .home-hero__dot {
-    flex-basis: 0.4444rem;
-    width: 0.4444rem;
-    height: 0.4444rem;
-  }
 
   /* Figma mobile frame 360 × 556 (1857:26279): уточнения поверх базовых мобильных стилей. */
 .home-hero {
@@ -731,48 +766,11 @@ h2 {
     white-space: nowrap;
   }
 
-  .home-hero__slider {
-    gap: 24px;
-    padding: 0;
-  }
 
-  .home-hero__arrow {
-    position: relative;
-    flex: 0 0 67.882px;
-    width: 67.882px;
-    height: 67.882px;
-    border: 0;
-    border-radius: 0;
-    transform: none;
-  }
 
-  .home-hero__arrow::before {
-    position: absolute;
-    top: 9.941px;
-    left: 9.941px;
-    width: 48px;
-    height: 48px;
-    border: 1px solid rgb(255 255 255 / 50%);
-    border-radius: 20px;
-    content: "";
-    transform: rotate(45deg);
-  }
 
-  .home-hero__arrow svg {
-    position: relative;
-    width: 30px;
-    height: 30px;
-  }
 
-  .home-hero__pagination {
-    gap: 4px;
-  }
 
-  .home-hero__dot {
-    flex-basis: 8px;
-    width: 8px;
-    height: 8px;
-  }
 }
 
 
