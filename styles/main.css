@@ -3277,6 +3277,10 @@ h2 {
   display: none;
 }
 
+.services-contact__country-popup-header {
+  display: none;
+}
+
 .services-contact__country-popup {
   position: absolute;
   z-index: 10;
@@ -13981,5 +13985,90 @@ h2 {
     width: 14px;
     height: 14px;
     flex-basis: 14px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .services-contact__field--phone.is-country-popup-open::before {
+    position: fixed;
+    z-index: 9;
+    inset: 0;
+    background-color: rgb(0 0 0 / 20%);
+    content: "";
+  }
+
+  .services-contact__country-popup {
+    position: fixed;
+    z-index: 10;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    gap: 0;
+    width: 100%;
+    max-width: none;
+    max-height: min(80dvh, 42rem);
+    padding: 0 0 max(0.25rem, env(safe-area-inset-bottom));
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 0;
+    border-radius: 0.625rem 0.625rem 0 0;
+    background-color: #f8f8f8;
+    box-shadow: none;
+    scrollbar-color: #4d4d4d #ffffff;
+  }
+
+  .services-contact__country-popup-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 1.125rem;
+    min-height: 3.5rem;
+    padding: 0.875rem;
+    background-color: #f8f8f8;
+  }
+
+  .services-contact__country-popup-title {
+    flex: 1 1 auto;
+    color: #1d4395;
+    font-size: 0.8889rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .services-contact__country-popup-close {
+    display: inline-flex;
+    flex: 0 0 1.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    border: 0;
+    color: #1d4395;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .services-contact__country-popup-close svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .services-contact__country-option {
+    flex: 0 0 auto;
+    min-height: 3rem;
+    padding: 0.75rem 0.875rem;
+    border-radius: 0.5556rem;
+  }
+
+  .services-contact__country-option.is-selected {
+    background-color: #efefef;
   }
 }
