@@ -3652,11 +3652,11 @@ h2 {
     stroke-width: 1.8;
 }
 
-.services-contact__field:has(.services-contact__input:user-invalid) .services-contact__tooltip {
+.services-contact__field:has(.services-contact__input:user-invalid, .services-contact__input.is-invalid) .services-contact__tooltip {
     display: inline-flex;
 }
 
-.services-contact__field:has(.services-contact__input:user-invalid) .services-contact__input {
+.services-contact__field:has(.services-contact__input:user-invalid, .services-contact__input.is-invalid) .services-contact__input {
     border-color: #d52b1e;
     outline: 1px solid #d52b1e;
 }
