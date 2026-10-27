@@ -13961,7 +13961,7 @@ h2 {
 
   .services-contact__form .services-contact__phone-input {
     min-height: 56px;
-    padding: 18px 18px 18px 105px;
+    padding: 18px 18px 18px var(--phone-country-padding-left, 105px);
   }
 }
 
