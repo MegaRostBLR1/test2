@@ -3385,7 +3385,7 @@ h2 {
 .services-contact__form .services-contact__phone-input {
   width: 100%;
   min-width: 0;
-  padding: 1.3333rem 1.3333rem 1.3333rem 6.2222rem;
+  padding: 1.3333rem 1.3333rem 1.3333rem var(--phone-country-padding-left, 105px);
   border: 0;
   border-radius: 0.5556rem;
   background: #324c880a;
@@ -3556,7 +3556,7 @@ h2 {
 
   .services-contact__form .services-contact__phone-input {
     min-height: 3.7778rem;
-    padding: 1.3333rem 1.3333rem 1.3333rem 6.2222rem;
+    padding: 1.3333rem 1.3333rem 1.3333rem var(--phone-country-padding-left, 105px);
     font-size: 1rem;
   }
 
@@ -3638,7 +3638,7 @@ h2 {
 
   .services-contact__form .services-contact__phone-input {
     min-height: 3.1111rem;
-    padding: 1rem 1rem 1rem 5.1111rem;
+    padding: 1rem 1rem 1rem var(--phone-country-padding-left, 105px);
     font-size: 0.8889rem;
   }
 
@@ -13962,7 +13962,7 @@ h2 {
 
   .services-contact__form .services-contact__phone-input {
     min-height: 56px;
-    padding: 18px 18px 18px var(--phone-country-padding-left, 105px);
+    padding: 18px; padding-left: var(--phone-country-padding-left, 105px);
   }
 }
 
