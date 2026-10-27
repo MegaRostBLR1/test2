@@ -3212,17 +3212,12 @@ h2 {
 }
 
 .services-contact__field--phone {
-  display: grid;
+  position: relative;
+  display: flex;
   grid-template-columns: auto minmax(0, 1fr);
   grid-template-rows: auto auto auto;
-  align-items: center;
   column-gap: 1rem;
   row-gap: 0;
-  grid-column: 1 / -1;
-}
-
-.services-contact__field--phone .services-contact__label,
-.services-contact__field--phone .services-contact__tooltip {
   grid-column: 1 / -1;
 }
 
@@ -3230,7 +3225,6 @@ h2 {
   margin-bottom: 0.5556rem;
 }
 
-.services-contact__phone-country,
 .services-contact__form .services-contact__phone-input {
   min-height: 3.7778rem;
   background-color: #324c880a;
@@ -3238,11 +3232,14 @@ h2 {
 }
 
 .services-contact__phone-country {
+  position: absolute;
+  left: 24px;
+  bottom: 50%;
+  transform: translateY(125%);
   display: inline-flex;
   align-items: center;
   gap: 0.5556rem;
-  padding: 0 0 0 1.3333rem;
-  border-radius: 0.5556rem 0 0 0.5556rem;
+  border-radius: 0.5556rem;
   color: #4d4d4d;
   white-space: nowrap;
 }
@@ -3273,10 +3270,9 @@ h2 {
 .services-contact__form .services-contact__phone-input {
   width: 100%;
   min-width: 0;
-  min-height: 3.7778rem;
-  padding: 0 1.3333rem 0 0;
+  padding: 1.3333rem 1.3333rem 1.3333rem 6.2222rem;
   border: 0;
-  border-radius: 0 0.5556rem 0.5556rem 0;
+  border-radius: 0.5556rem;
   background: #324c880a;
   font-size: 1rem;
   line-height: normal;
@@ -3593,10 +3589,6 @@ h2 {
     background-color: #324c880a;
     color: #2c2c2ce6;
     transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-.services-contact__form .services-contact__input:hover:not(:disabled):not([readonly]) {
-    background-color: #324c880f;
 }
 
 .services-contact__form .services-contact__input:focus:not(:user-invalid):not(:disabled):not([readonly]) {
