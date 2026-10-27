@@ -3316,8 +3316,7 @@ h2 {
   white-space: nowrap;
 }
 
-.services-contact__country-option:hover,
-.services-contact__country-option.is-selected {
+.services-contact__country-option:hover:not(.is-selected) {
   background-color: #e7e7e7;
 }
 
