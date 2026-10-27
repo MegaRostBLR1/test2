@@ -3215,6 +3215,78 @@ h2 {
   grid-column: 1 / -1;
 }
 
+.services-contact__phone-control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  min-width: 0;
+  min-height: 3.7778rem;
+  padding: 0 1.3333rem;
+  border-radius: 0.5556rem;
+  background-color: #324c880a;
+  transition: background-color 0.15s ease;
+}
+
+.services-contact__phone-control:hover,
+.services-contact__phone-control:focus-within {
+  background-color: #324c880f;
+}
+
+.services-contact__phone-country {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.5556rem;
+  color: #4d4d4d;
+  white-space: nowrap;
+}
+
+.services-contact__phone-flag {
+  display: block;
+  flex: 0 0 1.1696rem;
+  width: 1.1696rem;
+  height: 0.7778rem;
+  border: 0.0278rem solid #0000000d;
+  object-fit: cover;
+}
+
+.services-contact__phone-code {
+  font-family: "Onest-Regular", sans-serif;
+  font-size: 0.8889rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.services-contact__phone-chevron {
+  display: block;
+  flex: 0 0 0.7778rem;
+  width: 0.7778rem;
+  height: 0.7778rem;
+}
+
+.services-contact__form .services-contact__phone-input {
+  flex: 1 1 auto;
+  width: 0;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: 1rem;
+  line-height: normal;
+}
+
+.services-contact__form .services-contact__phone-input:hover:not(:disabled):not([readonly]),
+.services-contact__form .services-contact__phone-input:focus:not(:user-invalid):not(:disabled):not([readonly]) {
+  background: transparent;
+}
+
+.services-contact__form .services-contact__phone-input:focus {
+  outline: none;
+}
+
 .services-contact__label {
   color: #2c2c2ce6;
   font-family: "Onest-Medium", sans-serif;
