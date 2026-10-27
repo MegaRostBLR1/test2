@@ -13845,3 +13845,32 @@ h2 {
     display: none;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .services-contact__form .services-contact__input::placeholder,
+  .services-contact__form .services-contact__phone-input::placeholder,
+  .services-contact__form .services-contact__textarea::placeholder {
+    font-size: 16px;
+  }
+
+  .services-contact__phone-country {
+    top: calc(100% - 28px);
+    left: 18px;
+  }
+
+  .services-contact__form .services-contact__phone-input {
+    min-height: 56px;
+    padding: 18px 18px 18px 105px;
+    font-size: 16px;
+  }
+
+  .services-contact__phone-code {
+    font-size: 14px;
+  }
+
+  .services-contact__phone-chevron {
+    width: 14px;
+    height: 14px;
+    flex-basis: 14px;
+  }
+}
