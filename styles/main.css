@@ -14100,3 +14100,43 @@ h2 {
     padding-top: 4px;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .services-contact__country-popup {
+    padding: 4px;
+  }
+
+  .services-contact__country-popup-header {
+    min-height: 0;
+    padding: 14px;
+  }
+
+  .services-contact__country-popup-title {
+    font-size: 16px;
+  }
+
+  .services-contact__country-option {
+    gap: 8px;
+    min-height: 0;
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+
+  .services-contact__country-flag {
+    flex-basis: 21px;
+    width: 21px;
+    height: 14px;
+  }
+
+  .services-contact__country-check {
+    flex-basis: 18px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .services-contact__country-back .back-btn {
+    padding: 22px 14px;
+    font-size: 16px;
+  }
+}
+
