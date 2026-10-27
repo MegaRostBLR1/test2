@@ -75,6 +75,13 @@ body {
   font-size: 1rem;
 }
 
+/* Блокируем прокрутку страницы, пока открыт popup выбора страны. */
+html.is-country-popup-open,
+html.is-country-popup-open body {
+  overflow: hidden;
+}
+
+
 .container {
   margin: 0 auto;
 }
