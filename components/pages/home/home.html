@@ -548,8 +548,21 @@
                 </div>
                 <div class="services-contact__field services-contact__field--phone">
                     <label class="services-contact__label" for="services-contact-phone">Телефон</label>
-                    <input class="services-contact__input" id="services-contact-phone" name="phone" type="tel"
-                           placeholder="+7 999 123-45-24" autocomplete="tel" required>
+                    <div class="services-contact__phone-control">
+                        <span class="services-contact__phone-country" aria-label="Код страны Россия, плюс 7">
+                            <svg class="services-contact__phone-flag" viewBox="0 0 22 15" aria-hidden="true" focusable="false">
+                                <rect width="22" height="5" fill="#fff"></rect>
+                                <rect y="5" width="22" height="5" fill="#0039a6"></rect>
+                                <rect y="10" width="22" height="5" fill="#d52b1e"></rect>
+                            </svg>
+                            <span class="services-contact__phone-code">+7</span>
+                            <svg class="services-contact__phone-chevron" viewBox="0 0 14 14" aria-hidden="true" focusable="false">
+                                <path d="m3.5 5 3.5 3.5L10.5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                            </svg>
+                        </span>
+                        <input class="services-contact__input services-contact__phone-input" id="services-contact-phone"
+                               name="phone" type="tel" placeholder="999 123-45-24" autocomplete="tel" required>
+                    </div>
                     <span class="services-contact__tooltip" role="status" aria-live="polite">
                         <span class="services-contact__tooltip-icon" aria-hidden="true"><svg viewBox="0 0 24 24"
                                                                                              focusable="false">
