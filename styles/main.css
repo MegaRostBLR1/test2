@@ -1312,11 +1312,12 @@ h2 {
 }
 
 .home-about__info {
-  display: grid;
+  display: flex;
   flex: 0 0 24px;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
-  place-items: center;
 }
 
 .home-about__info svg {
@@ -1333,14 +1334,15 @@ h2 {
 .home-about__intro {
   position: absolute;
   inset: 0 45px 325px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: start;
-  column-gap: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 .home-about__heading {
   display: flex;
+  flex: 0 1 48%;
+  min-width: 0;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
@@ -1379,6 +1381,8 @@ h2 {
 
 .home-about__description {
   display: flex;
+  flex: 1 1 0;
+  min-width: 0;
   flex-direction: column;
   gap: 25px;
   width: 100%;
@@ -1448,10 +1452,11 @@ h2 {
   position: absolute;
   top: 53px;
   left: 50%;
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
-  place-items: center;
   border-radius: 20px;
   background: #fff;
   transform: translateX(-50%);
@@ -1466,8 +1471,8 @@ h2 {
 }
 
 .home-about__stats {
-  display: grid;
-  grid-template-columns: repeat(6, 285px);
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   width: 100%;
   margin-top: auto;
@@ -1476,6 +1481,7 @@ h2 {
 .home-about__stat {
   position: relative;
   display: flex;
+  flex: 1 1 14%;
   min-width: 0;
   min-height: 280px;
   flex-direction: column;
@@ -1549,8 +1555,7 @@ h2 {
   .home-about__intro {
     right: 35px;
     left: 35px;
-    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-    column-gap: 25px;
+    gap: 25px;
   }
 
   .home-about__heading {
@@ -1578,8 +1583,8 @@ h2 {
     right: 0;
   }
 
-  .home-about__stats {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .home-about__stat {
+    flex-basis: 28%;
   }
 
   .home-about__stat {
@@ -1601,8 +1606,7 @@ h2 {
   .home-about__intro {
     position: relative;
     inset: auto;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    display: flex;
     gap: 30px;
     padding-bottom: 260px;
   }
@@ -1642,8 +1646,8 @@ h2 {
     bottom: 15px;
   }
 
-  .home-about__stats {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .home-about__stat {
+    flex-basis: 28%;
   }
 
   .home-about__stat-value {
@@ -1663,7 +1667,7 @@ h2 {
   }
 
   .home-about__intro {
-    grid-template-columns: minmax(0, 1fr);
+    flex-direction: column;
     gap: 25px;
     padding-bottom: 0;
   }
@@ -1739,8 +1743,11 @@ h2 {
     line-height: 1.4;
   }
 
+  .home-about__stat {
+    flex-basis: 40%;
+  }
+
   .home-about__stats {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
 
@@ -1766,8 +1773,8 @@ h2 {
 }
 
 @media screen and (max-width: 360px) {
-  .home-about__stats {
-    grid-template-columns: minmax(0, 1fr);
+  .home-about__stat {
+    flex-basis: 100%;
   }
 
   .home-about__stat {
