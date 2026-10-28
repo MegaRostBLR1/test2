@@ -13719,6 +13719,9 @@ h2 {
 
 @media screen and (max-width: 680px) {
   .home-about__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     gap: 24px;
     padding: 24px 16px;
     border-radius: 12px;
@@ -13817,6 +13820,7 @@ h2 {
   }
 
   .home-about__stats {
+    display: flex;
     flex-wrap: nowrap;
     grid-row: 3;
     gap: 8px;
