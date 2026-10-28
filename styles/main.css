@@ -5111,8 +5111,12 @@ h2 {
   }
 
   .home-about__video-links {
-    grid-row: 3;
+    position: static;
+    top: auto;
+    right: auto;
+    order: 4;
     justify-content: flex-start;
+    margin: 0 0 24px;
   }
 
   .home-about__video-link {
@@ -5130,7 +5134,8 @@ h2 {
   }
 
   .home-about__stats {
-    grid-row: 4;
+    order: 7;
+    margin-top: 0;
   }
 
   .home-benefits__panel {
@@ -5230,6 +5235,50 @@ h2 {
     border-radius: 16px;
   }
 
+
+  /* Figma 1857:26636 — mobile layout at 360 px. */
+  .home-about__hero {
+    gap: 0;
+  }
+
+  .home-about__intro,
+  .home-about__description {
+    display: contents;
+  }
+
+  .home-about__eyebrow {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .home-about__title {
+    order: 2;
+    margin-bottom: 18px;
+  }
+
+  .home-about__button.btn {
+    order: 3;
+    margin-bottom: 20px;
+  }
+
+  .video-trigger--about {
+    position: relative;
+    inset: auto;
+    order: 5;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin: 0 0 24px;
+  }
+
+  .home-about__description > p {
+    order: 6;
+    margin: 0;
+  }
+
+  .home-about__description > p + p {
+    margin-top: 10px;
+  }
 
   /* Figma 1857:26635 — mobile layout 360 px for the existing About section. */
   .home-about {
