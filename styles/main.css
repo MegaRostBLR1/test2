@@ -365,6 +365,46 @@ button {
 }
 
 
+/* стили для всех кнопок аккордеон */
+.accordion__btn {
+  position: relative;
+  border-radius: 50%;
+}
+
+.accordion__btn::before,
+.accordion__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.accordion__btn::before {
+  width: 0.7778rem;
+  height: 0.1111rem;
+}
+
+.accordion__btn::after {
+  width: 0.1111rem;
+  height: 0.7778rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion.active .accordion__btn::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.accordion__head {
+  cursor: pointer;
+}
+.accordion__body {
+  display: none;
+}
+.accordion.active .accordion__body {
+  display: block;
+}
+
 h2 {
   margin: 0;
   font-family: "Onest-SemiBold", sans-serif;
@@ -13799,46 +13839,6 @@ h2 {
 }
 
 /* Footer styles moved from components/layout/footer/footer.css. */
-
-/* стили для всех кнопок аккордеон */
-.accordion__btn {
-  position: relative;
-  border-radius: 50%;
-}
-
-.accordion__btn::before,
-.accordion__btn::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.accordion__btn::before {
-  width: 0.7778rem;
-  height: 0.1111rem;
-}
-
-.accordion__btn::after {
-  width: 0.1111rem;
-  height: 0.7778rem;
-  transition: transform 0.3s ease;
-}
-
-.accordion.active .accordion__btn::after {
-  transform: translate(-50%, -50%) rotate(90deg);
-}
-
-.accordion__head {
-  cursor: pointer;
-}
-.accordion__body {
-  display: none;
-}
-.accordion.active .accordion__body {
-  display: block;
-}
 
 /* footer */
 
