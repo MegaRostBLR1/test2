@@ -5008,8 +5008,61 @@ h2 {
 }
 
 .home-about__mobile-video {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 282.843px;
 }
+
+.home-about__mobile-video-link {
+  position: relative;
+  display: flex;
+  flex: 0 0 200px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 10px;
+  background: rgb(255 255 255 / 10%);
+}
+
+.home-about__mobile-video-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  transform: rotate(-45deg);
+  border-radius: 20px;
+  color: #324c88;
+  background: #fff;
+}
+
+.home-about__mobile-video-play svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.home-about__mobile-video-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 164px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  color: #fff;
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
 
 /* Figma 1857:26635 — mobile layout 360 px for the existing About section. */
 @media screen and (max-width: 680px) {
@@ -5098,61 +5151,6 @@ h2 {
   .home-about__video-caption {
     font-size: 16px;
     line-height: 26px;
-  }
-
-  .home-about__mobile-video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 282.843px;
-  }
-
-  .home-about__mobile-video-link {
-    position: relative;
-    display: flex;
-    flex: 0 0 200px;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    transform: rotate(45deg);
-    border: 1px solid rgb(255 255 255 / 10%);
-    border-radius: 10px;
-    background: rgb(255 255 255 / 10%);
-  }
-
-  .home-about__mobile-video-play {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    transform: rotate(-45deg);
-    border-radius: 20px;
-    color: #324c88;
-    background: #fff;
-  }
-
-  .home-about__mobile-video-play svg {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-  }
-
-  .home-about__mobile-video-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 164px;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    color: #fff;
-    font-family: "Onest-SemiBold", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 26px;
-    text-align: center;
-    text-transform: uppercase;
   }
 
   .home-about__stats {
