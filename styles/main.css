@@ -7399,12 +7399,7 @@ h2 {
   color: #ffffff;
   text-align: center;
   background-color: #25313a;
-<<<<<<< HEAD
-  background-image: linear-gradient(#00000080, #00000080),
-    url("../../../static/images/home/home-advantages-factory.png");
-=======
   background-image: linear-gradient(#00000080, #00000080), url('../static/images/home/home-advantages-factory.png');
->>>>>>> develop
   background-position: center;
   background-size: cover;
 }
