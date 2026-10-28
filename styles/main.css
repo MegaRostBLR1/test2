@@ -4679,7 +4679,7 @@ h2 {
 
   /* Планшетная композиция блока «О компании» по Figma 1024 px.
      Десктопные состояния 1920/1440 px остаются в предыдущих правилах. */
-.home-about__hero {
+  .home-about__hero {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto auto auto;
     gap: 40px 20px;
