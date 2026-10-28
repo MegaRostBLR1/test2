@@ -547,6 +547,13 @@ h2 {
 }
 
 
+
+
+
+
+
+
+
 @media screen and (max-width: 1297px) {
   .home-hero {
     min-height: 46rem;
@@ -702,6 +709,9 @@ h2 {
     font-size: 0.7778rem;
     line-height: 1.3333;
   }
+
+
+
 
 
   /* Figma mobile frame 360 × 556 (1857:26279): уточнения поверх базовых мобильных стилей. */
@@ -2610,6 +2620,7 @@ h2 {
     border-radius: 14px;
   }
 }
+
 
 
 /* Контрольный tablet-frame Figma 1024 px: 1857:25447.
@@ -4980,8 +4991,8 @@ h2 {
   }
 
 
-  /* Mobile-specific layout refinements */
-.home-about {
+  /* Figma 1857:26635 — mobile layout 360 px for the existing About section. */
+  .home-about {
     padding: 0 5px 5px;
   }
 
@@ -5106,7 +5117,6 @@ h2 {
 }
 
 @media screen and (max-width: 375px) {
-
   .home-benefits__panel {
     padding-right: 8px;
     padding-left: 8px;
