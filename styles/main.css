@@ -4676,124 +4676,124 @@ h2 {
     height: auto;
     aspect-ratio: 650 / 490;
   }
-}
 
-/* Планшетная композиция блока «О компании» по Figma 1024 px.
-   Десктопные состояния 1920/1440 px остаются в предыдущих правилах. */
-@media screen and (max-width: 1100px) {
+  /* Планшетная композиция блока «О компании» по Figma 1024 px.
+     Десктопные состояния 1920/1440 px остаются в предыдущих правилах. */
   .home-about__hero {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: auto auto auto;
-    gap: 40px 20px;
-    min-height: 0;
-    padding: 45px;
-  }
-
-  .home-about__info {
-    display: none;
-  }
-
-  .home-about__intro {
-    grid-column: 1;
-    grid-row: 1;
-    align-self: start;
-    margin-top: 0;
-    gap: 30px;
-  }
-
-  .home-about__eyebrow {
-    font-size: 18px;
-    line-height: 1.4;
-  }
-
-  .home-about__title {
-    max-width: 345px;
-    font-size: 28px;
-    line-height: 46px;
-  }
-
-  .home-about__button.btn {
-    min-height: 76px;
-    padding: 24px 48px;
-    border-radius: 20px;
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  .home-about__description {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-column: 1 / -1;
-    grid-row: 2;
-    align-self: start;
-    gap: 0 20px;
-    max-width: none;
-    margin-top: 0;
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  .home-about__video-links {
-    position: absolute;
-    top: 45px;
-    right: 45px;
-    gap: 18px;
-  }
-
-  .home-about__video-link {
-    flex: 0 0 147px;
-    width: 147px;
-  }
-
-  .home-about__video-image {
-    width: 106px;
-    height: 93px;
-  }
-
-  .home-about__video-play {
-    top: 53px;
-    width: 48px;
-    height: 48px;
-    border-radius: 20px;
-  }
-
-  .home-about__video-caption {
-    font-size: 16px;
-    line-height: 26px;
-  }
-
-  .home-about__stats {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(2, minmax(280px, auto));
-    grid-column: 1 / -1;
-    grid-row: 3;
-    gap: 20px;
-    overflow: visible;
-  }
-
-  .home-about__stat {
-    min-width: 0;
-    min-height: 280px;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .home-about__stat-value {
-    font-size: 36px;
-    line-height: 1.2;
-  }
-
-  .home-about__stat-unit {
-    font-size: 20px;
-  }
-
-  .home-about__stat-description {
-    max-width: 180px;
-    font-size: 18px;
-    line-height: 28px;
-  }
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: auto auto auto;
+      gap: 40px 20px;
+      min-height: 0;
+      padding: 45px;
+    }
+  
+    .home-about__info {
+      display: none;
+    }
+  
+    .home-about__intro {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: start;
+      margin-top: 0;
+      gap: 30px;
+    }
+  
+    .home-about__eyebrow {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  
+    .home-about__title {
+      max-width: 345px;
+      font-size: 28px;
+      line-height: 46px;
+    }
+  
+    .home-about__button.btn {
+      min-height: 76px;
+      padding: 24px 48px;
+      border-radius: 20px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  
+    .home-about__description {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-column: 1 / -1;
+      grid-row: 2;
+      align-self: start;
+      gap: 0 20px;
+      max-width: none;
+      margin-top: 0;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  
+    .home-about__video-links {
+      position: absolute;
+      top: 45px;
+      right: 45px;
+      gap: 18px;
+    }
+  
+    .home-about__video-link {
+      flex: 0 0 147px;
+      width: 147px;
+    }
+  
+    .home-about__video-image {
+      width: 106px;
+      height: 93px;
+    }
+  
+    .home-about__video-play {
+      top: 53px;
+      width: 48px;
+      height: 48px;
+      border-radius: 20px;
+    }
+  
+    .home-about__video-caption {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  
+    .home-about__stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: repeat(2, minmax(280px, auto));
+      grid-column: 1 / -1;
+      grid-row: 3;
+      gap: 20px;
+      overflow: visible;
+    }
+  
+    .home-about__stat {
+      min-width: 0;
+      min-height: 280px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  
+    .home-about__stat-value {
+      font-size: 36px;
+      line-height: 1.2;
+    }
+  
+    .home-about__stat-unit {
+      font-size: 20px;
+    }
+  
+    .home-about__stat-description {
+      max-width: 180px;
+      font-size: 18px;
+      line-height: 28px;
+    }
 }
+
+
 
 @media screen and (max-width: 960px) {
   .home-about__hero {
