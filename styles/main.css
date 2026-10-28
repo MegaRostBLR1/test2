@@ -13694,14 +13694,20 @@ h2 {
     line-height: 1.4;
   }
 
-  .home-about__stats {
-    grid-row: 3;
-    gap: 8px;
+  .home-about__description {
     margin-top: 0;
   }
 
+  .home-about__stats {
+    flex-wrap: nowrap;
+    grid-row: 3;
+    gap: 8px;
+    margin-top: 0;
+    overflow-x: auto;
+  }
+
   .home-about__stat {
-    flex-basis: 220px;
+    flex: 0 0 220px;
     min-height: 220px;
     padding: 16px;
     border-radius: 12px;
