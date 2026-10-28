@@ -547,13 +547,6 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
 @media screen and (max-width: 1297px) {
   .home-hero {
     min-height: 46rem;
@@ -644,8 +637,6 @@ h2 {
   }
 
 
-
-
 }
 
 
@@ -711,9 +702,6 @@ h2 {
     font-size: 0.7778rem;
     line-height: 1.3333;
   }
-
-
-
 
 
   /* Figma mobile frame 360 × 556 (1857:26279): уточнения поверх базовых мобильных стилей. */
@@ -792,10 +780,6 @@ h2 {
     line-height: 26px;
     white-space: nowrap;
   }
-
-
-
-
 
 
 }
@@ -2626,7 +2610,6 @@ h2 {
     border-radius: 14px;
   }
 }
-
 
 
 /* Контрольный tablet-frame Figma 1024 px: 1857:25447.
@@ -4477,6 +4460,116 @@ h2 {
   }
 }
 
+/* Figma: блок «О компании», desktop 1440 px (1866:74851).
+   Переопределяет только промежуточный desktop; базовый layout 1920 px сохранён. */
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .home-about__hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 579px auto;
+    gap: 20px;
+    min-height: 1259px;
+    padding: 45px 45px 35px;
+  }
+
+  .home-about__info {
+    top: 45px;
+    left: 45px;
+  }
+
+  .home-about__intro {
+    align-self: start;
+    gap: 30px;
+    max-width: 595px;
+    margin-top: 0;
+  }
+
+  .home-about__eyebrow {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .home-about__title {
+    max-width: 595px;
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .home-about__button.btn {
+    min-height: 84px;
+    padding: 28px 48px;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .home-about__description {
+    align-self: start;
+    gap: 30px;
+    max-width: 644px;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .home-about__video-links {
+    position: static;
+    gap: 18px;
+  }
+
+  .home-about__video-link {
+    flex: 0 0 177px;
+    width: 177px;
+  }
+
+  .home-about__video-image {
+    width: 106px;
+    height: 93px;
+  }
+
+  .home-about__video-play {
+    top: 53px;
+    width: 48px;
+    height: 48px;
+    border-radius: 20px;
+  }
+
+  .home-about__video-caption {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .home-about__stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column: 1 / -1;
+    grid-row: 2;
+    gap: 20px;
+    overflow: visible;
+  }
+
+  .home-about__stat {
+    flex: initial;
+    min-width: 0;
+    min-height: 280px;
+    padding: 20px;
+  }
+
+  .home-about__stat-value {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .home-about__stat-unit {
+    font-size: 24px;
+  }
+
+  .home-about__stat-description {
+    max-width: 245px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .home-about__hero {
     grid-template-columns: minmax(0, 1fr);
@@ -4885,160 +4978,10 @@ h2 {
   .home-benefits__image {
     border-radius: 16px;
   }
-}
-
-@media screen and (max-width: 375px) {
-  .home-about__hero {
-    padding: 20px 12px;
-  }
-
-  .home-about__title {
-    font-size: 24px;
-  }
-
-  .home-about__video-link {
-    gap: 8px;
-  }
-
-  .home-about__video-caption {
-    font-size: 10px;
-  }
-
-  .home-about__stat {
-    flex-basis: 200px;
-  }
-
-  .home-benefits__panel {
-    padding-right: 8px;
-    padding-left: 8px;
-  }
-
-  .home-benefits__feature {
-    padding: 16px;
-  }
-
-  .home-benefits__heading {
-    font-size: 21px;
-  }
-}
-
-/* Figma: блок «О компании», desktop 1440 px (1866:74851).
-   Переопределяет только промежуточный desktop; базовый layout 1920 px сохранён. */
-@media screen and (min-width: 1301px) and (max-width: 1600px) {
-  .home-about__hero {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: 579px auto;
-    gap: 20px;
-    min-height: 1259px;
-    padding: 45px 45px 35px;
-  }
-
-  .home-about__info {
-    top: 45px;
-    left: 45px;
-  }
-
-  .home-about__intro {
-    align-self: start;
-    gap: 30px;
-    max-width: 595px;
-    margin-top: 0;
-  }
-
-  .home-about__eyebrow {
-    font-size: 24px;
-    line-height: normal;
-  }
-
-  .home-about__title {
-    max-width: 595px;
-    font-size: 48px;
-    line-height: 64px;
-  }
-
-  .home-about__button.btn {
-    min-height: 84px;
-    padding: 28px 48px;
-    border-radius: 20px;
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  .home-about__description {
-    align-self: start;
-    gap: 30px;
-    max-width: 644px;
-    margin-top: 0;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .home-about__video-links {
-    position: static;
-    gap: 18px;
-  }
-
-  .home-about__video-link {
-    flex: 0 0 177px;
-    width: 177px;
-  }
-
-  .home-about__video-image {
-    width: 106px;
-    height: 93px;
-  }
-
-  .home-about__video-play {
-    top: 53px;
-    width: 48px;
-    height: 48px;
-    border-radius: 20px;
-  }
-
-  .home-about__video-caption {
-    font-size: 18px;
-    line-height: 26px;
-  }
-
-  .home-about__stats {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-column: 1 / -1;
-    grid-row: 2;
-    gap: 20px;
-    overflow: visible;
-  }
-
-  .home-about__stat {
-    flex: initial;
-    min-width: 0;
-    min-height: 280px;
-    padding: 20px;
-  }
-
-  .home-about__stat-value {
-    font-size: 48px;
-    line-height: 1.2;
-  }
-
-  .home-about__stat-unit {
-    font-size: 24px;
-  }
-
-  .home-about__stat-description {
-    max-width: 245px;
-    font-size: 20px;
-    line-height: 28px;
-  }
-}
 
 
-
-
-
-/* Figma 1857:26635 — mobile layout 360 px for the existing About section. */
-@media screen and (max-width: 680px) {
-  .home-about {
+  /* Mobile-specific layout refinements */
+.home-about {
     padding: 0 5px 5px;
   }
 
@@ -5163,10 +5106,24 @@ h2 {
 }
 
 @media screen and (max-width: 375px) {
-  .home-about__hero {
-    padding: 20px 10px;
+
+  .home-benefits__panel {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .home-benefits__feature {
+    padding: 16px;
+  }
+
+  .home-benefits__heading {
+    font-size: 21px;
   }
 }
+
+
+/* Figma 1857:26635 — mobile layout 360 px for the existing About section. */
+
 
 /* Преимущества завода */
 .home-advantages {
@@ -13941,7 +13898,6 @@ h2 {
 }
 
 /* footer */
-
 
 
 /* Responsive navigation visibility for the industries catalog. */
