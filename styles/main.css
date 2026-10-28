@@ -2334,7 +2334,7 @@ h2 {
 
 .video-trigger--about {
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   right: -10%;
 }
 
@@ -4472,8 +4472,7 @@ h2 {
 }
 
 /* Figma: блок «О компании», desktop 1440 px (1866:74851).
-   Отдельная композиция для 1301–1600 px: min-width не даёт ей
-   переопределять планшетную и мобильную версии. */
+   Переопределяет только промежуточный desktop; базовый layout 1920 px сохранён. */
 @media screen and (min-width: 1301px) and (max-width: 1600px) {
   .home-about__hero {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
