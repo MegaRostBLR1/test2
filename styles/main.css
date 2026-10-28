@@ -4850,9 +4850,6 @@ h2 {
     line-height: 28px;
   }
 
-  .video-trigger--about {
-    display: none;
-  }
 
   .home-about__description {
     display: flex;
@@ -5055,9 +5052,6 @@ h2 {
     line-height: 26px;
   }
 
-  .video-trigger--about {
-    display: none;
-  }
 
   .home-about__description {
     display: grid;
