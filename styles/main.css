@@ -2339,14 +2339,9 @@ h2 {
 }
 
 .video-trigger--about {
-  position: relative;
-  align-self: flex-start;
-  margin: 24px 0 64px;
-}
-
-.video-trigger--about::before {
-  width: 160px;
-  height: 160px;
+  position: absolute;
+  bottom: 0;
+  right: -15%;
 }
 
 .video-trigger--about .video-trigger__label {
@@ -5164,19 +5159,6 @@ h2 {
     max-width: 180px;
     font-size: 18px;
     line-height: 28px;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .video-trigger--about {
-    align-self: center;
-    margin-top: 16px;
-    margin-bottom: 40px;
-  }
-
-  .video-trigger--about::before {
-    width: 120px;
-    height: 120px;
   }
 }
 
