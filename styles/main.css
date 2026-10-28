@@ -4790,71 +4790,18 @@ h2 {
     padding-left: 4px;
   }
 
-  .home-about__hero {
-    gap: 24px;
-    padding: 24px 16px;
-    border-radius: 12px;
-  }
-
-  .home-about__info {
-    top: 20px;
-    left: 16px;
-  }
-
-  .home-about__intro {
-    gap: 16px;
-    margin-top: 32px;
-  }
-
-  .home-about__eyebrow {
-    font-size: 16px;
-  }
-
-  .home-about__title {
-    font-size: 28px;
-    line-height: 1.25;
-  }
-
-  .home-about__button.btn {
-    min-height: 56px;
-    padding: 16px 24px;
-    border-radius: 12px;
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  .home-about__description {
-    gap: 16px;
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
   .home-about__video-links {
-    position: static;
     grid-row: 3;
     justify-content: flex-start;
-    gap: 12px;
-    width: 100%;
   }
 
   .home-about__video-link {
-    flex: 1 1 0;
-    gap: 10px;
     min-width: 0;
     font-size: 12px;
   }
 
   .home-about__video-image {
-    width: 88px;
     max-width: 100%;
-    height: 72px;
-  }
-
-  .home-about__video-play {
-    top: 35px;
-    width: 36px;
-    height: 36px;
-    border-radius: 12px;
   }
 
   .home-about__video-play svg {
@@ -4862,35 +4809,8 @@ h2 {
     height: 18px;
   }
 
-  .home-about__video-caption {
-    font-size: 11px;
-    line-height: 1.4;
-  }
-
   .home-about__stats {
     grid-row: 4;
-    gap: 8px;
-    margin-top: 0;
-  }
-
-  .home-about__stat {
-    flex-basis: 220px;
-    min-height: 220px;
-    padding: 16px;
-    border-radius: 12px;
-  }
-
-  .home-about__stat-value {
-    font-size: 34px;
-  }
-
-  .home-about__stat-unit {
-    font-size: 18px;
-  }
-
-  .home-about__stat-description {
-    font-size: 15px;
-    line-height: 1.4;
   }
 
   .home-benefits__panel {
