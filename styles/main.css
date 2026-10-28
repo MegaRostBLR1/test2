@@ -4801,39 +4801,131 @@ h2 {
 
 @media screen and (max-width: 1100px) {
   .home-about__hero {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    min-height: 1269px;
+    padding: 45px;
   }
 
   .home-about__info {
-    top: 32px;
-    left: 32px;
+    display: none;
   }
 
   .home-about__intro {
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: 40px;
+    display: flex;
+    flex: 0 0 556px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .home-about__eyebrow {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .home-about__title {
+    max-width: 345px;
+    font-size: 28px;
+    line-height: 46px;
+  }
+
+  .home-about__button.btn {
+    min-height: 76px;
+    padding: 24px 48px;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .video-trigger--about {
-    bottom: 50px;
-    right: -125px;
+    display: none;
   }
 
   .home-about__description {
-    grid-column: 1;
-    grid-row: 2;
-    margin-top: 0;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .home-about__description > p,
+  .home-about__description > div:not(.home-about__video-links) {
+    flex: 1 1 0;
+    min-width: 0;
   }
 
   .home-about__video-links {
-    top: 28px;
-    right: 28px;
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    gap: 18px;
+  }
+
+  .home-about__video-link {
+    flex: 0 0 147px;
+    width: 147px;
+  }
+
+  .home-about__video-image {
+    width: 106px;
+    height: 93px;
+  }
+
+  .home-about__video-play {
+    top: 53px;
+    width: 48px;
+    height: 48px;
+    border-radius: 20px;
+  }
+
+  .home-about__video-caption {
+    font-size: 16px;
+    line-height: 26px;
   }
 
   .home-about__stats {
-    grid-column: 1;
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    grid-column: auto;
+    grid-row: auto;
+    gap: 20px;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .home-about__stat {
+    flex: 0 0 290px;
+    min-width: 0;
+    min-height: 280px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .home-about__stat-value {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .home-about__stat-unit {
+    font-size: 20px;
+  }
+
+  .home-about__stat-description {
+    max-width: 180px;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .home-benefits__panel {
@@ -4995,6 +5087,7 @@ h2 {
   }
 }
 
+}
 
 
 @media screen and (max-width: 960px) {
