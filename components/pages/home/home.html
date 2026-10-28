@@ -303,14 +303,14 @@
 
                     <div class="project-card__divider" aria-hidden="true"></div>
 
-                    <div class="project-card__video" aria-hidden="true">
-                        <span class="project-card__play">
+                    <button class="video-trigger video-trigger--project" type="button" aria-label="Смотреть видео проекта">
+                        <span class="video-trigger__play" aria-hidden="true">
                             <svg viewBox="0 0 24 24" focusable="false">
                                 <path d="m9 6 10 6-10 6V6Z" />
                             </svg>
                         </span>
-                        <span class="project-card__video-label">Смотреть видео</span>
-                    </div>
+                        <span class="video-trigger__label">Смотреть видео</span>
+                    </button>
 
                     <nav class="slider-controls" aria-label="Навигация по слайдам">
                         <button class="slider-controls__arrow slider-controls__arrow--prev" type="button"
@@ -719,16 +719,14 @@
                     <span class="home-about__video-caption">Видео о заводе 30 лет</span>
                 </a>
             </div>
-            <div class="home-about__mobile-video">
-                <a class="home-about__mobile-video-link" href="#/about" aria-label="Смотреть видео о заводе">
-                    <span class="home-about__mobile-video-play" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" focusable="false">
-                            <path d="m8 5 11 7-11 7V5Z"></path>
-                        </svg>
-                    </span>
-                    <span class="home-about__mobile-video-caption">Смотреть видео о заводе</span>
-                </a>
-            </div>
+            <button class="video-trigger video-trigger--about" type="button" aria-label="Смотреть видео о заводе">
+                <span class="video-trigger__play" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                        <path d="m8 5 11 7-11 7V5Z"></path>
+                    </svg>
+                </span>
+                <span class="video-trigger__label">Смотреть видео о заводе</span>
+            </button>
             <p>Промышленная компания PK VESTA работает на строительном рынке России и за рубежом с 1991 г., предлагая
                 современные решения в проектировании, изготовлении и строительстве быстровозводимых зданий из легких
                 металлоконструкций (ЛСТК и ЛМК). строительстве быстровозводимых зданий из легких металлоконструкций
