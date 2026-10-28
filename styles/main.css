@@ -4228,6 +4228,13 @@ h2 {
   margin-top: 10px;
 }
 
+.home-about__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
 .home-about__eyebrow {
   color: #fff;
   font-family: "Onest-SemiBold", sans-serif;
