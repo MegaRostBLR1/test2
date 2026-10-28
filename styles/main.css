@@ -5131,10 +5131,6 @@ h2 {
   }
 }
 
-
-/* Figma 1857:26635 — mobile layout 360 px for the existing About section. */
-
-
 /* Преимущества завода */
 .home-advantages {
   width: calc(100% - 10px);
