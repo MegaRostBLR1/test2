@@ -1275,7 +1275,6 @@ h2 {
 .home-about {
   position: relative;
   min-width: 0;
-  min-height: 1000px;
   margin: 0 5px 5px;
   overflow: hidden;
   border-radius: 20px;
@@ -1306,8 +1305,8 @@ h2 {
 .home-about__content {
   position: relative;
   display: flex;
-  flex-direction: column;
   min-height: 1000px;
+  flex-direction: column;
   padding: 45px;
 }
 
@@ -1332,23 +1331,14 @@ h2 {
 }
 
 .home-about__intro {
-  position: absolute;
-  inset: 0 45px 325px;
   display: flex;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.home-about__heading {
-  display: flex;
-  flex: 0 1 48%;
-  min-width: 0;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
   width: 100%;
   max-width: 595px;
-  margin-top: 285px;
+  margin-top: auto;
+  margin-bottom: 40px;
 }
 
 .home-about__eyebrow {
@@ -1366,7 +1356,7 @@ h2 {
   font-family: "Onest-SemiBold", sans-serif;
   font-size: 48px;
   font-weight: 600;
-  line-height: 64px;
+  line-height: 1.3333;
   text-transform: uppercase;
   overflow-wrap: break-word;
 }
@@ -1377,97 +1367,6 @@ h2 {
   font-size: 20px;
   line-height: 28px;
   white-space: nowrap;
-}
-
-.home-about__description {
-  display: flex;
-  flex: 1 1 0;
-  min-width: 0;
-  flex-direction: column;
-  gap: 25px;
-  width: 100%;
-  max-width: 747px;
-  margin-top: 223px;
-  color: #fff;
-  font-family: "Onest-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-}
-
-.home-about__description p {
-  margin: 0;
-}
-
-.home-about .video-trigger--about {
-  position: absolute;
-  top: 359px;
-  left: 489px;
-  width: 283px;
-  height: 283px;
-}
-
-.home-about__videos {
-  position: absolute;
-  top: 45px;
-  left: 50%;
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-}
-
-.home-about__video {
-  position: relative;
-  display: flex;
-  flex: 0 0 177px;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-  width: 177px;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-}
-
-.home-about__video-image {
-  display: block;
-  width: 106px;
-  height: 93px;
-  border-radius: 4px;
-  background-color: #505050;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.home-about__video-image--first {
-  background-image: url("../static/images/home/home-advantages-factory.png");
-}
-
-.home-about__video-image--second {
-  background-image: url("../static/images/home/home-lstk.png");
-}
-
-.home-about__video-play {
-  position: absolute;
-  top: 53px;
-  left: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 20px;
-  background: #fff;
-  transform: translateX(-50%);
-}
-
-.home-about__video-title {
-  font-family: "Onest-SemiBold", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 26px;
-  text-transform: uppercase;
 }
 
 .home-about__stats {
@@ -1481,7 +1380,7 @@ h2 {
 .home-about__stat {
   position: relative;
   display: flex;
-  flex: 1 1 14%;
+  flex: 1 1 0;
   min-width: 0;
   min-height: 280px;
   flex-direction: column;
@@ -1529,7 +1428,7 @@ h2 {
   font-weight: 600;
   line-height: 1.1;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .home-about__stat-unit {
@@ -1549,74 +1448,35 @@ h2 {
 
 @media screen and (max-width: 1600px) {
   .home-about__content {
+    min-height: 850px;
     padding: 35px;
   }
 
   .home-about__intro {
-    right: 35px;
-    left: 35px;
-    gap: 25px;
-  }
-
-  .home-about__heading {
     max-width: 520px;
-    margin-top: 250px;
+    margin-bottom: 30px;
   }
 
   .home-about__title {
     font-size: 42px;
-    line-height: 1.3;
-  }
-
-  .home-about__description {
-    margin-top: 210px;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-
-  .home-about .video-trigger--about {
-    left: 32%;
-  }
-
-  .home-about__videos {
-    left: auto;
-    right: 0;
   }
 
   .home-about__stat {
-    flex-basis: 28%;
-  }
-
-  .home-about__stat {
+    flex-basis: calc((100% - 40px) / 3);
     min-height: 220px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .home-about,
   .home-about__content {
     min-height: 0;
-  }
-
-  .home-about__content {
     gap: 35px;
     padding: 30px;
   }
 
   .home-about__intro {
-    position: relative;
-    inset: auto;
-    display: flex;
-    gap: 30px;
-    padding-bottom: 260px;
-  }
-
-  .home-about__heading,
-  .home-about__description {
-    margin-top: 0;
-  }
-
-  .home-about__heading {
+    margin-top: 70px;
+    margin-bottom: 0;
     gap: 22px;
   }
 
@@ -1629,25 +1489,13 @@ h2 {
     line-height: 1.25;
   }
 
-  .home-about__description {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .home-about .video-trigger--about {
-    top: auto;
-    bottom: 0;
-    left: 28%;
-  }
-
-  .home-about__videos {
-    top: auto;
-    right: 0;
-    bottom: 15px;
+  .home-about__stats {
+    margin-top: 0;
   }
 
   .home-about__stat {
-    flex-basis: 28%;
+    flex-basis: calc((100% - 20px) / 2);
+    min-height: 200px;
   }
 
   .home-about__stat-value {
@@ -1667,13 +1515,7 @@ h2 {
   }
 
   .home-about__intro {
-    flex-direction: column;
-    gap: 25px;
-    padding-bottom: 0;
-  }
-
-  .home-about__heading {
-    max-width: none;
+    margin-top: 35px;
     gap: 16px;
   }
 
@@ -1693,65 +1535,12 @@ h2 {
     line-height: 20px;
   }
 
-  .home-about__description {
-    gap: 16px;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .home-about .video-trigger--about {
-    position: relative;
-    top: auto;
-    left: auto;
-    align-self: center;
-    width: 220px;
-    height: 220px;
-    margin: 0 auto;
-  }
-
-  .home-about__videos {
-    position: relative;
-    top: auto;
-    right: auto;
-    justify-content: center;
-    gap: 14px;
-    width: 100%;
-  }
-
-  .home-about__video {
-    flex: 1 1 0;
-    width: auto;
-    min-width: 0;
-    gap: 12px;
-  }
-
-  .home-about__video-image {
-    width: 100%;
-    max-width: 106px;
-    height: 80px;
-  }
-
-  .home-about__video-play {
-    top: 35px;
-    width: 38px;
-    height: 38px;
-    border-radius: 12px;
-  }
-
-  .home-about__video-title {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-
-  .home-about__stat {
-    flex-basis: 40%;
-  }
-
   .home-about__stats {
     gap: 10px;
   }
 
   .home-about__stat {
+    flex-basis: calc((100% - 10px) / 2);
     min-height: 190px;
     gap: 16px;
     padding: 14px;
@@ -1775,9 +1564,6 @@ h2 {
 @media screen and (max-width: 360px) {
   .home-about__stat {
     flex-basis: 100%;
-  }
-
-  .home-about__stat {
     min-height: 160px;
   }
 }
