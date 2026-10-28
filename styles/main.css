@@ -5128,6 +5128,23 @@ h2 {
     max-width: 100%;
   }
 
+  .video-trigger--about::before {
+    width: 200px;
+    height: 200px;
+  }
+
+  .video-trigger--about .video-trigger__play {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 20px;
+  }
+
+  .video-trigger--about .video-trigger__label {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
   .home-about__video-play svg {
     width: 18px;
     height: 18px;
@@ -5321,11 +5338,12 @@ h2 {
     position: static;
     top: auto;
     right: auto;
+    order: 4;
     align-self: center;
     gap: 18px;
     width: max-content;
     max-width: 100%;
-    margin-bottom: 0;
+    margin: 0 0 24px;
   }
 
   .home-about__video-link {
