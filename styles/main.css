@@ -4941,7 +4941,8 @@ h2 {
   }
 
   .home-about__video-links {
-    display: none;
+    top: 28px;
+    right: 28px;
   }
 
   .home-about__video-link {
