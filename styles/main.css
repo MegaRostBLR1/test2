@@ -4983,35 +4983,32 @@ h2 {
     aspect-ratio: 650 / 490;
   }
 
-  /* Планшетная композиция блока «О компании» по Figma 1024 px.
-     Десктопные состояния 1920/1440 px остаются в предыдущих правилах. */
+  /* Figma 1857:25607 — exact tablet composition at 1024 px. */
   .home-about__hero {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: minmax(556px, auto) auto;
-    gap: 40px 20px;
-    min-height: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 556px auto;
+    justify-content: space-between;
+    gap: 0;
+    min-height: 1269px;
     padding: 45px;
-  }
-
-  .home-about__info {
-    display: none;
   }
 
   .home-about__intro {
     grid-column: 1;
     grid-row: 1;
     align-self: start;
-    margin-top: 0;
     gap: 30px;
+    margin: 0;
   }
 
-  .video-trigger--about {
-    display: none;
+  .home-about__heading {
+    gap: 30px;
   }
 
   .home-about__eyebrow {
     font-size: 18px;
-    line-height: 1.4;
+    line-height: normal;
   }
 
   .home-about__title {
@@ -5021,6 +5018,7 @@ h2 {
   }
 
   .home-about__button.btn {
+    align-self: flex-start;
     min-height: 76px;
     padding: 24px 48px;
     border-radius: 20px;
@@ -5028,17 +5026,11 @@ h2 {
     line-height: 28px;
   }
 
-  .home-about__description {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-column: 1 / -1;
-    grid-row: 1;
-    align-self: end;
-    gap: 0 10px;
-    max-width: none;
-    margin-top: 0;
-    font-size: 18px;
-    line-height: 28px;
+  .home-about__video-links {
+    position: absolute;
+    top: 45px;
+    right: 75px;
+    gap: 18px;
   }
 
   .home-about__video-link {
@@ -5063,13 +5055,37 @@ h2 {
     line-height: 26px;
   }
 
+  .video-trigger--about {
+    display: none;
+  }
+
+  .home-about__description {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    gap: 0 10px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .home-about__description > p {
+    min-width: 0;
+  }
+
   .home-about__stats {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(2, minmax(280px, auto));
-    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, 290px);
+    grid-auto-rows: 280px;
+    grid-column: 1;
     grid-row: 2;
     gap: 20px;
+    width: 100%;
+    align-content: start;
     overflow: visible;
   }
 
@@ -5097,14 +5113,71 @@ h2 {
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 681px) and (max-width: 960px) {
   .home-about__hero {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     gap: 24px;
     min-height: 0;
-    padding: 20px 10px;
+    padding: 24px 20px;
     border-radius: 21px;
+  }
+
+  .home-about__intro {
+    align-self: stretch;
+    gap: 20px;
+  }
+
+  .home-about__heading {
+    gap: 20px;
+  }
+
+  .home-about__title {
+    max-width: 100%;
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .home-about__button.btn {
+    min-height: 60px;
+    padding: 16px 28px;
+  }
+
+  .home-about__video-links {
+    position: static;
+    top: auto;
+    right: auto;
+    align-self: flex-start;
+    gap: 18px;
+  }
+
+  .home-about__description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-self: stretch;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .home-about__stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: minmax(240px, auto);
+    gap: 16px;
+    width: 100%;
+  }
+
+  .home-about__stat {
+    min-width: 0;
+    min-height: 240px;
+  }
+
+  .home-about__stat-description {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
