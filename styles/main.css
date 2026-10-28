@@ -5089,8 +5089,6 @@ h2 {
   }
 }
 
-}
-
 
 @media screen and (max-width: 960px) {
   .home-about__hero {
@@ -5253,60 +5251,37 @@ h2 {
   }
 
 
-  /* Figma 1857:26636 — mobile layout at 360 px. */
-  .home-about__hero {
-    gap: 0;
-  }
-
-  .home-about__intro,
-  .home-about__description {
-    display: contents;
-  }
-
-  .home-about__eyebrow {
-    order: 1;
-    margin-bottom: 20px;
-  }
-
-  .home-about__title {
-    order: 2;
-    margin-bottom: 18px;
-  }
-
-  .home-about__button.btn {
-    order: 3;
-    margin-bottom: 20px;
-  }
-
-  .video-trigger--about {
-    position: relative;
-    inset: auto;
-    order: 5;
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    margin: 0 0 24px;
-  }
-
-  .home-about__description > p {
-    order: 6;
-    margin: 0;
-  }
-
-  .home-about__description > p + p {
-    margin-top: 10px;
-  }
-
-  /* Figma 1857:26635 — mobile layout 360 px for the existing About section. */
+  /* Figma 1857:26635 — mobile layout at 360 px. */
   .home-about {
     padding: 0 5px 5px;
+  }
+
+  .home-about__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    min-height: 0;
+    padding: 20px 10px;
+    border-radius: 21px;
   }
 
   .home-about__info {
     display: none;
   }
 
+  .home-about__intro,
+  .home-about__video-links,
+  .video-trigger--about,
+  .home-about__description,
+  .home-about__stats {
+    order: 0;
+  }
+
   .home-about__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     gap: 20px;
     width: 100%;
     max-width: none;
@@ -5315,7 +5290,14 @@ h2 {
 
   .home-about__eyebrow {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 22px;
+  }
+
+  .home-about__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
   }
 
   .home-about__title {
@@ -5338,18 +5320,18 @@ h2 {
     position: static;
     top: auto;
     right: auto;
-    order: 4;
     align-self: center;
     gap: 18px;
     width: max-content;
     max-width: 100%;
-    margin: 0 0 24px;
+    margin: 0;
   }
 
   .home-about__video-link {
     flex: 0 0 147px;
     width: 147px;
     gap: 18px;
+    font-size: 16px;
   }
 
   .home-about__video-image {
@@ -5369,30 +5351,78 @@ h2 {
     line-height: 26px;
   }
 
+  .video-trigger--about {
+    position: relative;
+    inset: auto;
+    display: flex;
+    flex: 0 0 282.843px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 282.843px;
+    max-width: 100%;
+    height: 282.843px;
+    margin: 0;
+    gap: 8px;
+  }
+
+  .video-trigger--about::before {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .video-trigger--about .video-trigger__play {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 20px;
+  }
+
+  .video-trigger--about .video-trigger__label {
+    max-width: 164px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .home-about__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .home-about__description > p {
+    min-width: 0;
+    margin: 0;
+  }
+
   .home-about__stats {
     display: flex;
+    flex-wrap: nowrap;
     gap: 20px;
     width: 100%;
+    min-width: 0;
     margin: 0;
-    padding-bottom: 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    overscroll-behavior-inline: contain;
+    padding: 0;
+    overflow: clip;
   }
 
   .home-about__stat {
     flex: 0 0 290px;
+    width: 290px;
     min-height: 280px;
     padding: 20px;
     border-radius: 10px;
-    scroll-snap-align: start;
   }
 
   .home-about__stat-value {
     font-size: 36px;
-    line-height: 1.2;
+    line-height: normal;
   }
 
   .home-about__stat-unit {
