@@ -2341,7 +2341,7 @@ h2 {
 .video-trigger--about {
   position: absolute;
   bottom: 0;
-  right: -15%;
+  right: -10%;
 }
 
 .video-trigger--about .video-trigger__label {
