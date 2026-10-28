@@ -4585,9 +4585,6 @@ h2 {
   .home-about__hero {
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: auto auto auto;
-    min-height: 0;
-    gap: 30px;
-    padding: 32px;
   }
 
   .home-about__info {
@@ -4604,7 +4601,6 @@ h2 {
   .home-about__description {
     grid-column: 1;
     grid-row: 2;
-    max-width: 100%;
     margin-top: 0;
   }
 
@@ -4615,7 +4611,6 @@ h2 {
 
   .home-about__stats {
     grid-column: 1;
-    grid-row: 3;
   }
 
   .home-benefits__panel {
