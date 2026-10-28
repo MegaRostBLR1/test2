@@ -13323,7 +13323,6 @@ h2 {
   width: 24px;
   height: 24px;
   fill: none;
-  stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 1.7;
@@ -13539,8 +13538,7 @@ h2 {
   }
 
   .home-about__info {
-    top: 35px;
-    left: 35px;
+    display: none;
   }
 
   .home-about__intro {
@@ -13555,7 +13553,6 @@ h2 {
 
   .home-about__description {
     max-width: 620px;
-    margin-top: 150px;
     font-size: 18px;
     line-height: 1.5;
   }
