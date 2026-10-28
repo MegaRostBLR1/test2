@@ -4886,7 +4886,7 @@ h2 {
      Десктопные состояния 1920/1440 px остаются в предыдущих правилах. */
   .home-about__hero {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: auto auto auto;
+    grid-template-rows: minmax(556px, auto) auto;
     gap: 40px 20px;
     min-height: 0;
     padding: 45px;
@@ -4902,6 +4902,10 @@ h2 {
     align-self: start;
     margin-top: 0;
     gap: 30px;
+  }
+
+  .video-trigger--about {
+    display: none;
   }
 
   .home-about__eyebrow {
@@ -4927,9 +4931,9 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-column: 1 / -1;
-    grid-row: 2;
-    align-self: start;
-    gap: 0 20px;
+    grid-row: 1;
+    align-self: end;
+    gap: 0 10px;
     max-width: none;
     margin-top: 0;
     font-size: 18px;
@@ -4937,10 +4941,7 @@ h2 {
   }
 
   .home-about__video-links {
-    position: absolute;
-    top: 45px;
-    right: 45px;
-    gap: 18px;
+    display: none;
   }
 
   .home-about__video-link {
@@ -4970,7 +4971,7 @@ h2 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(280px, auto));
     grid-column: 1 / -1;
-    grid-row: 3;
+    grid-row: 2;
     gap: 20px;
     overflow: visible;
   }
