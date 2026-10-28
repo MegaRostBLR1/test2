@@ -14191,3 +14191,124 @@ h2 {
     line-height: 28px;
   }
 }
+
+
+/* Секция «О компании» — mobile-frame Figma 360 px (1857:26633). */
+@media screen and (max-width: 375px) {
+  .home-about__hero {
+    gap: 24px;
+    padding: 20px 10px;
+    border-radius: 12px;
+  }
+
+  .home-about__intro {
+    gap: 20px;
+    margin-top: 0;
+  }
+
+  .home-about__eyebrow {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .home-about__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .home-about__button.btn {
+    width: 100%;
+    min-height: 54px;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .home-about__description {
+    gap: 10px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .home-about__video-links {
+    gap: 18px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .home-about__video-link {
+    flex: 0 1 147px;
+    gap: 18px;
+    width: 147px;
+  }
+
+  .home-about__video-image {
+    width: 106px;
+    max-width: none;
+    height: 93px;
+  }
+
+  .home-about__video-play {
+    top: 53px;
+    width: 48px;
+    height: 48px;
+    border-radius: 20px;
+  }
+
+  .home-about__video-play svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .home-about__video-caption {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .home-about__mobile-video {
+    position: static;
+    display: block;
+    width: 100%;
+    transform: none;
+  }
+
+  .video-trigger--about {
+    width: 100%;
+    min-height: 145px;
+    margin: 0;
+  }
+
+  .video-trigger--about::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home-about__stats {
+    gap: 20px;
+    margin-top: 0;
+    overflow-x: auto;
+  }
+
+  .home-about__stat {
+    flex: 0 0 290px;
+    min-height: 280px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .home-about__stat-value {
+    font-size: 36px;
+  }
+
+  .home-about__stat-unit {
+    font-size: 20px;
+  }
+
+  .home-about__stat-description {
+    max-width: 180px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
