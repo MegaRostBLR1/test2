@@ -1395,67 +1395,12 @@ h2 {
   margin: 0;
 }
 
-.home-about__factory-play {
+.home-about .video-trigger--about {
   position: absolute;
   top: 359px;
   left: 489px;
-  display: flex;
   width: 283px;
   height: 283px;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border-radius: 10px;
-  color: #fff;
-  background: transparent;
-}
-
-.home-about__factory-play::before {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  background: rgb(255 255 255 / 10%);
-  content: "";
-  transform: rotate(45deg);
-}
-
-.home-about__factory-play-inner {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  display: grid;
-  width: 48px;
-  height: 48px;
-  place-items: center;
-  border-radius: 20px;
-  background: #fff;
-  transform: translate(-50%, -50%);
-}
-
-.home-about__factory-play-inner svg,
-.home-about__video-play svg {
-  display: block;
-  width: 24px;
-  height: 24px;
-  fill: #324c88;
-}
-
-.home-about__factory-play-label {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  width: 177px;
-  color: #fff;
-  font-family: "Onest-SemiBold", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .home-about__videos {
@@ -1624,7 +1569,7 @@ h2 {
     line-height: 1.5;
   }
 
-  .home-about__factory-play {
+  .home-about .video-trigger--about {
     left: 32%;
   }
 
@@ -1685,7 +1630,7 @@ h2 {
     line-height: 1.5;
   }
 
-  .home-about__factory-play {
+  .home-about .video-trigger--about {
     top: auto;
     bottom: 0;
     left: 28%;
@@ -1750,7 +1695,7 @@ h2 {
     line-height: 1.5;
   }
 
-  .home-about__factory-play {
+  .home-about .video-trigger--about {
     position: relative;
     top: auto;
     left: auto;
@@ -1758,16 +1703,6 @@ h2 {
     width: 220px;
     height: 220px;
     margin: 0 auto;
-  }
-
-  .home-about__factory-play::before {
-    width: 160px;
-    height: 160px;
-  }
-
-  .home-about__factory-play-label {
-    font-size: 14px;
-    line-height: 20px;
   }
 
   .home-about__videos {
