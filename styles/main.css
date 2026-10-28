@@ -13268,3 +13268,486 @@ h2 {
 
 /* footer */
 
+/* Секция «О компании» перенесена из pkVesta/home-start-fix. */
+/* Company overview and factory benefits */
+.home-about {
+  width: 100%;
+  padding: 5px;
+  background: #f5f8f7;
+}
+
+.home-about__hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 30px 20px;
+  min-height: 1000px;
+  padding: 45px;
+  overflow: hidden;
+  border-radius: 20px;
+  color: #fff;
+  background: #1e2935;
+  isolation: isolate;
+}
+
+.home-about__background {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  border-radius: inherit;
+  background: url("../static/images/home/home-about.png") center / cover no-repeat;
+}
+
+.home-about__hero::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: inherit;
+  background: rgb(20 20 20 / 50%);
+  content: "";
+}
+
+.home-about__info {
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.home-about__info svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.home-about__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  max-width: 650px;
+  margin-top: 10px;
+}
+
+.home-about__eyebrow {
+  color: #fff;
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.home-about__title {
+  max-width: 595px;
+  color: #fff;
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+
+.home-about__button.btn {
+  min-height: 84px;
+  padding: 28px 48px;
+  border-radius: 20px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.home-about__description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  max-width: 747px;
+  color: #fff;
+  font-family: "Onest-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.home-about__video-links {
+  display: flex;
+  gap: 18px;
+}
+
+.home-about__video-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 177px;
+  color: #fff;
+  text-align: center;
+}
+
+.home-about__video-image {
+  display: block;
+  width: 106px;
+  height: 93px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.home-about__video-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-about__video-play {
+  position: absolute;
+  top: 53px;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  color: #324c88;
+  background: #fff;
+}
+
+.home-about__video-play svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.home-about__video-caption {
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.home-about__stats {
+  display: flex;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  gap: 20px;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.home-about__stats::-webkit-scrollbar {
+  display: none;
+}
+
+.home-about__stat {
+  position: relative;
+  display: flex;
+  flex: 0 0 285px;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  padding: 20px;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 20px;
+  color: #505050;
+  background: rgb(255 255 255 / 94%);
+}
+
+.home-about__stat::before {
+  position: absolute;
+  z-index: -0;
+  top: 65px;
+  left: -70px;
+  width: 190px;
+  height: 220px;
+  transform: rotate(51deg);
+  border-radius: 20px;
+  background: rgb(50 76 136 / 5%);
+  content: "";
+}
+
+.home-about__stat--featured {
+  color: #fff;
+  background: rgb(50 76 136 / 88%);
+}
+
+.home-about__stat--featured::before {
+  background: #1e3874;
+}
+
+.home-about__stat-value {
+  position: relative;
+  z-index: 1;
+  color: inherit;
+  font-family: "Onest-SemiBold", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.home-about__stat-unit {
+  font-size: 24px;
+}
+
+.home-about__stat-description {
+  position: relative;
+  z-index: 1;
+  max-width: 245px;
+  color: inherit;
+  font-family: "Onest-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.home-about__button:focus-visible,
+.home-about__video-link:focus-visible {
+  outline: 2px solid #fff500;
+  outline-offset: 4px;
+}
+
+@media screen and (max-width: 1600px) {
+  .home-about__hero {
+    min-height: 850px;
+    padding: 35px;
+    gap: 28px;
+  }
+
+  .home-about__info {
+    top: 35px;
+    left: 35px;
+  }
+
+  .home-about__intro {
+    max-width: 560px;
+    gap: 24px;
+  }
+
+  .home-about__title {
+    font-size: 40px;
+    line-height: 1.33;
+  }
+
+  .home-about__description {
+    max-width: 620px;
+    margin-top: 150px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .home-about__video-links {
+    top: 35px;
+    right: 35px;
+    gap: 8px;
+  }
+
+  .home-about__stats {
+    gap: 12px;
+  }
+
+  .home-about__stat {
+    flex-basis: 240px;
+    min-height: 240px;
+    padding: 18px;
+  }
+
+  .home-about__stat-value {
+    font-size: 40px;
+  }
+
+  .home-about__stat-description {
+    font-size: 17px;
+    line-height: 1.4;
+  }}
+
+@media screen and (max-width: 1100px) {
+  .home-about__hero {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    min-height: 0;
+    gap: 30px;
+    padding: 32px;
+  }
+
+  .home-about__info {
+    top: 32px;
+    left: 32px;
+  }
+
+  .home-about__intro {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 40px;
+  }
+
+  .home-about__description {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .home-about__video-links {
+    top: 28px;
+    right: 28px;
+  }
+
+  .home-about__stats {
+    grid-column: 1;
+    grid-row: 3;
+  }}
+
+@media screen and (max-width: 680px) {
+
+  .home-about__hero {
+    gap: 24px;
+    padding: 24px 16px;
+    border-radius: 12px;
+  }
+
+  .home-about__info {
+    top: 20px;
+    left: 16px;
+  }
+
+  .home-about__intro {
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .home-about__eyebrow {
+    font-size: 16px;
+  }
+
+  .home-about__title {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .home-about__button.btn {
+    min-height: 56px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .home-about__description {
+    gap: 16px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .home-about__video-links {
+    position: static;
+    grid-row: 3;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .home-about__video-link {
+    flex: 1 1 0;
+    gap: 10px;
+    min-width: 0;
+    font-size: 12px;
+  }
+
+  .home-about__video-image {
+    width: 88px;
+    max-width: 100%;
+    height: 72px;
+  }
+
+  .home-about__video-play {
+    top: 35px;
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+  }
+
+  .home-about__video-play svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .home-about__video-caption {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .home-about__stats {
+    grid-row: 4;
+    gap: 8px;
+    margin-top: 0;
+  }
+
+  .home-about__stat {
+    flex-basis: 220px;
+    min-height: 220px;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .home-about__stat-value {
+    font-size: 34px;
+  }
+
+  .home-about__stat-unit {
+    font-size: 18px;
+  }
+
+  .home-about__stat-description {
+    font-size: 15px;
+    line-height: 1.4;
+  }}
+
+@media screen and (max-width: 375px) {
+  .home-about__hero {
+    padding: 20px 12px;
+  }
+
+  .home-about__title {
+    font-size: 24px;
+  }
+
+  .home-about__video-link {
+    gap: 8px;
+  }
+
+  .home-about__video-caption {
+    font-size: 10px;
+  }
+
+  .home-about__stat {
+    flex-basis: 200px;
+  }}
+
+.home-about__mobile-video {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .home-about__hero {
+    padding: 20px 10px;
+  }}
