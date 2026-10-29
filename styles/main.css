@@ -5116,7 +5116,6 @@ h2 {
 .home-advantages {
   width: calc(100% - 10px);
   margin: 0 5px;
-  padding: 0 10px 10px;
   border-radius: 20px;
   background: #fff;
   color: #5d5d5d;
@@ -5645,7 +5644,6 @@ h2 {
   }
 }
 
-/* Мобильный frame Figma 360 px: 1857:26714. */
 @media screen and (max-width: 400px) {
   .home-advantages {
     padding: 0;
