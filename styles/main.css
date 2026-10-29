@@ -4809,6 +4809,9 @@ h2 {
   .home-about__video-links {
     grid-column: auto;
     grid-row: auto;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
   }
 }
 
@@ -4851,12 +4854,6 @@ h2 {
   .home-about__description > p {
     font-size: inherit;
     line-height: inherit;
-  }
-
-  .home-about__video-links {
-    justify-content: flex-start;
-    gap: 12px;
-    width: 100%;
   }
 
   .home-about__video-link {
