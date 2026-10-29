@@ -4461,8 +4461,8 @@ h2 {
   .home-about__mobile-video {
     position: absolute;
     z-index: 1;
-    top: 359px;
-    left: 534px;
+    top: 43%;
+    left: 28%;
     display: block;
     width: 170px;
     transform: none;
@@ -4609,8 +4609,8 @@ h2 {
   .home-about__mobile-video {
     position: absolute;
     z-index: 1;
-    top: 360px;
-    left: 50%;
+    top: 31%;
+    left: 37%;
     display: block;
     width: 170px;
     transform: translateX(-50%);
@@ -4842,8 +4842,7 @@ h2 {
 
   .home-about__mobile-video {
     position: static;
-    display: none;
-    width: auto;
+    width: 100%;
     transform: none;
   }
 
@@ -4999,13 +4998,6 @@ h2 {
   .home-about__video-caption {
     font-size: 16px;
     line-height: 26px;
-  }
-
-  .home-about__mobile-video {
-    position: static;
-    display: block;
-    width: 100%;
-    transform: none;
   }
 
   .video-trigger--about {
