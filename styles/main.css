@@ -3065,8 +3065,6 @@ h2 {
 .services-contact__field--phone {
   position: relative;
   display: flex;
-  grid-template-columns: auto minmax(0, 1fr);
-  grid-template-rows: auto auto auto;
   column-gap: 1rem;
   row-gap: 0;
   grid-column: 1 / -1;
@@ -3226,11 +3224,7 @@ h2 {
   opacity: 1;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .services-contact__phone-chevron {
-    transition: none;
-  }
-}
+
 
 .services-contact__phone-flag {
   display: block;
@@ -3409,11 +3403,7 @@ h2 {
   accent-color: #324c88;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .services-contact * {
-    scroll-behavior: auto;
-  }
-}
+
 
 @media screen and (max-width: 1440px) {
   .services-contact__form .services-contact__input::placeholder,
@@ -3602,8 +3592,8 @@ h2 {
   }
 
   .services-contact__form-bottom {
-      gap: 27px;
-    }
+    gap: 27px;
+  }
 
   .services-contact__submit.btn {
     font-size: 14px;
@@ -3691,12 +3681,7 @@ h2 {
     outline-offset: 3px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .services-contact__form .services-contact__input,
-    .services-contact__upload-button {
-        transition: none;
-    }
-}
+
 
 
 /* Tooltip ошибки поля — показывается после взаимодействия с невалидным обязательным полем. */
@@ -3766,11 +3751,7 @@ h2 {
     outline: 1px solid #d52b1e;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .services-contact__tooltip {
-        transition: none;
-    }
-}
+
 
 @media screen and (max-width: 1300px) {
   .services-contact__phone-country {
@@ -3780,7 +3761,8 @@ h2 {
 
   .services-contact__form .services-contact__phone-input {
     min-height: 56px;
-    padding: 18px; padding-left: var(--phone-country-padding-left, 105px);
+    padding: 18px;
+    padding-left: var(--phone-country-padding-left, 105px);
   }
 }
 
@@ -3929,6 +3911,20 @@ h2 {
 
 /* Секция «О компании» перенесена из pkVesta/home-start-fix. */
 /* Company overview and factory benefits */
+
+@media (prefers-reduced-motion: reduce) {
+  .services-contact__phone-chevron,
+  .services-contact__form .services-contact__input,
+  .services-contact__upload-button,
+  .services-contact__tooltip {
+    transition: none;
+  }
+
+  .services-contact * {
+    scroll-behavior: auto;
+  }
+}
+
 .home-about {
   width: 100%;
   padding: 5px;
