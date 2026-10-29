@@ -4223,7 +4223,7 @@ h2 {
 .home-about__title {
   width: 100%;
   min-width: 0;
-  max-width: 100%;
+  max-width: 595px;
   color: #fff;
   font-family: "Onest-SemiBold", sans-serif;
   font-size: 48px;
