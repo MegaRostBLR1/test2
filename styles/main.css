@@ -4813,6 +4813,11 @@ h2 {
     gap: 12px;
     width: 100%;
   }
+
+  .home-about__video-link {
+    flex: 1 1 0;
+    min-width: 0;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -4857,9 +4862,7 @@ h2 {
   }
 
   .home-about__video-link {
-    flex: 1 1 0;
     gap: 10px;
-    min-width: 0;
     font-size: 12px;
   }
 
