@@ -4687,6 +4687,7 @@ h2 {
     max-width: 100%;
     font-size: 28px;
     line-height: 46px;
+    hyphens: auto;
   }
 
   .home-about__button.btn {
