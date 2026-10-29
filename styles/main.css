@@ -4401,25 +4401,18 @@ h2 {
   outline-offset: 4px;
 }
 
-
-
 /* Секция «О компании» — desktop-frame Figma 1920 px (1857:24065). */
 @media screen and (min-width: 1601px) {
-
 
   .home-about__intro {
     align-self: start;
     margin-top: 0;
   }
 
-
-
   .home-about__video-link {
     flex: 0 1 177px;
     min-width: 0;
   }
-
-
 
   .home-about__mobile-video {
     position: absolute;
@@ -4516,13 +4509,11 @@ h2 {
     margin-top: 0;
   }
 
-
   .home-about__title {
     max-width: 595px;
     font-size: 48px;
     line-height: 64px;
   }
-
 
   .home-about__description {
     align-self: start;
@@ -4532,12 +4523,9 @@ h2 {
     line-height: 30px;
   }
 
-
   .home-about__video-link {
     flex: 0 0 177px;
   }
-
-
 
   .home-about__mobile-video {
     position: absolute;
@@ -4569,7 +4557,6 @@ h2 {
   .home-about__stat-value {
     font-size: 48px;
   }
-
 
   .home-about__stat-description {
     max-width: 201px;
@@ -4821,7 +4808,6 @@ h2 {
     line-height: 1.4;
   }
 
-
   .home-about__stats {
     display: flex;
     flex-wrap: nowrap;
@@ -4962,10 +4948,6 @@ h2 {
     line-height: 28px;
   }
 }
-
-
-
-
 
 .home-benefits {
   width: 100%;
