@@ -4321,10 +4321,6 @@ h2 {
   text-transform: uppercase;
 }
 
-.home-about__mobile-video {
-  display: none;
-}
-
 .home-about__stats {
   display: flex;
   grid-column: 1 / -1;
@@ -4532,11 +4528,6 @@ h2 {
     margin: 0;
   }
 
-  .video-trigger--about::before {
-    width: 250px;
-    height: 250px;
-  }
-
   .home-about__stats {
     display: grid;
     grid-column: 1 / -1;
@@ -4662,11 +4653,6 @@ h2 {
     width: 170px;
     min-height: 145px;
     margin: 0;
-  }
-
-  .video-trigger--about::before {
-    width: 250px;
-    height: 250px;
   }
 
   .home-about__description > p {
@@ -4919,11 +4905,6 @@ h2 {
     margin: 0;
   }
 
-  .video-trigger--about::before {
-    width: 250px;
-    height: 250px;
-  }
-
   .home-about__stats {
     display: grid;
     grid-column: 1 / -1;
@@ -5034,11 +5015,6 @@ h2 {
     width: 100%;
     min-height: 145px;
     margin: 0;
-  }
-
-  .video-trigger--about::before {
-    width: 250px;
-    height: 250px;
   }
 
   .home-about__stats {
