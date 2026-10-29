@@ -3049,16 +3049,6 @@ h2 {
     border-radius: 10px;
   }
 
-  .video-trigger::before {
-    width: 140px;
-    height: 140px;
-  }
-
-  .video-trigger__label {
-    font-size: 12px;
-    line-height: 18px;
-  }
-
   .project-card__controls {
     flex: 0 0 auto;
     width: 100%;
@@ -4463,9 +4453,9 @@ h2 {
     z-index: 1;
     top: 43%;
     left: 28%;
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 170px;
-    transform: none;
   }
 
   .video-trigger--about {
@@ -4610,10 +4600,7 @@ h2 {
     position: absolute;
     z-index: 1;
     top: 31%;
-    left: 37%;
-    display: block;
-    width: 170px;
-    transform: translateX(-50%);
+    left: 31%;
   }
 
   .video-trigger--about {
@@ -4737,9 +4724,8 @@ h2 {
     z-index: 1;
     top: 145px;
     left: 50%;
-    display: block;
-    width: 170px;
     transform: translateX(-50%);
+    width: 170px;
   }
 
   .video-trigger--about {
@@ -4842,8 +4828,10 @@ h2 {
 
   .home-about__mobile-video {
     position: static;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    transform: none;
+    transform: none
   }
 
   .home-about__video-links {
