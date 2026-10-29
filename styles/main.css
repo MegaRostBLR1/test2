@@ -6238,23 +6238,6 @@ h2 {
 }
 
 @media (max-width: 420px) {
-  .home-contact-person__panel {
-    padding: 40px 20px;
-  }
-
-  .home-contact-person__person {
-    gap: 20px;
-    padding: 30px;
-  }
-
-  .home-contact-person__name {
-    font-size: 24px;
-  }
-
-  .home-contact-person__contact {
-    padding: 14px;
-  }
-
   .home-contact-person__phone-row {
     flex-direction: column;
     align-items: flex-start;
