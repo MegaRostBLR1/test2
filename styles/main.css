@@ -5181,8 +5181,9 @@ h2 {
   gap: 4px;
   width: 100%;
   padding: 4px;
-  border-radius: 30px;
+  border-radius: 10px;
   background: #f7f8fa;
+  overflow: auto;
 }
 
 .home-advantages__tab {
@@ -5201,12 +5202,22 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+  cursor: pointer;
+}
+
+.home-advantages__tab:hover {
+  background: #324C881A;
 }
 
 .home-advantages__tab--active {
   background: #fff500;
   color: #324c88;
   font-size: 20px;
+}
+
+.home-advantages__tab--active:hover {
+  background: #fff500;
+  color: #324c88;
 }
 
 .home-advantages__card {
@@ -5646,7 +5657,7 @@ h2 {
 /* Мобильный frame Figma 360 px: 1857:26714. */
 @media screen and (max-width: 400px) {
   .home-advantages {
-    padding: 0 10px 10px;
+    padding: 0;
   }
 
   .home-advantages__inner {
