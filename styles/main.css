@@ -980,7 +980,6 @@ h2 {
   }
 }
 
-
 @media (prefers-reduced-motion: reduce) {
   .home-process__link {
     transition: none;
@@ -993,7 +992,6 @@ h2 {
   .home-process__panel {
     gap: 18px;
     padding: 40px;
-    background: transparent;
   }
 
   .home-process__header {
@@ -1006,23 +1004,15 @@ h2 {
   }
 
   .home-process__subtitle {
-    font-size: 20px;
     line-height: normal;
   }
 
   .home-process__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
   }
 
   .home-process__card {
-    gap: 30px;
     padding: 20px;
-    background: #fff;
-  }
-
-  .home-process__card-content {
-    gap: 24px;
   }
 
   .home-process__card-header {
@@ -1037,30 +1027,13 @@ h2 {
 
   .home-process__card-title {
     font-size: 22px;
-    line-height: 1.6;
-    overflow-wrap: anywhere;
   }
 
-  .home-process__description {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .home-process__link {
-    flex-basis: 64px;
-    min-height: 64px;
-    padding: 16px 20px;
-    border-radius: 20px;
-    font-size: 17px;
-    line-height: 1.26;
-  }
 }
 
 @media screen and (min-width: 1301px) and (max-width: 1440px) {
   .home-process__panel {
-    gap: 30px;
     padding: 48px 30px;
-    background: transparent;
   }
 
   .home-process__header {
@@ -1069,27 +1042,14 @@ h2 {
 
   .home-process__title {
     font-size: 48px;
-    line-height: normal;
   }
 
   .home-process__subtitle {
     font-size: 24px;
-    line-height: normal;
-  }
-
-  .home-process__grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 10px;
   }
 
   .home-process__card {
-    gap: 30px;
     padding: 20px;
-    background: #fff;
-  }
-
-  .home-process__card-content {
-    gap: 24px;
   }
 
   .home-process__card-header {
@@ -1104,23 +1064,9 @@ h2 {
 
   .home-process__card-title {
     font-size: 26px;
-    line-height: 1.6;
     overflow-wrap: normal;
   }
 
-  .home-process__description {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-
-  .home-process__link {
-    flex-basis: 64px;
-    min-height: 64px;
-    padding: 16px 20px;
-    border-radius: 20px;
-    font-size: 17px;
-    line-height: 1.26;
-  }
 }
 
 @media screen and (max-width: 680px) {
@@ -1180,20 +1126,11 @@ h2 {
     overflow-wrap: anywhere;
   }
 
-  .home-process__divider {
-    flex-basis: 2px;
-    height: 2px;
-  }
-
   .home-process__description {
     min-width: 0;
     font-size: 14px;
     line-height: 22px;
     overflow-wrap: anywhere;
-  }
-
-  .home-process__description p + p {
-    margin-top: 0;
   }
 
   .home-process__link {
