@@ -4687,7 +4687,6 @@ h2 {
     max-width: 100%;
     font-size: 28px;
     line-height: 46px;
-    hyphens: auto;
   }
 
   .home-about__button.btn {
@@ -4789,7 +4788,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1000px) {
   .home-about__hero {
     display: flex;
     flex-direction: column;
@@ -4798,7 +4797,9 @@ h2 {
     padding: 24px 16px;
     border-radius: 12px;
   }
+}
 
+@media screen and (max-width: 680px) {
   .home-about__info {
     top: 20px;
     left: 16px;
