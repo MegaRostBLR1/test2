@@ -3495,9 +3495,7 @@ h2 {
     line-height: 1.1;
   }
 
-  .services-contact__form .services-contact__phone-input {
-    font-size: 0.8889rem;
-  }
+
 
   .services-contact__phone-code {
     font-size: 0.7778rem;
@@ -3531,6 +3529,7 @@ h2 {
     min-height: 56px;
     padding: 18px;
     padding-left: var(--phone-country-padding-left, 105px);
+    font-size: 0.8889rem;
   }
 }
 
