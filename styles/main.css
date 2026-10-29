@@ -5496,11 +5496,6 @@ h2 {
     height: 64px;
   }
 
-  .home-advantages__icon img {
-    width: 36px;
-    height: 36px;
-  }
-
   .home-advantages__copy {
     gap: 18px;
   }
@@ -5657,69 +5652,45 @@ h2 {
 
   .home-advantages__heading {
     gap: 14px;
-    width: 100%;
   }
 
   .home-advantages__title {
     width: 100%;
     font-size: 22px;
     line-height: 32px;
-    text-align: center;
   }
 
   .home-advantages__subtitle {
     width: 100%;
     font-size: 14px;
     line-height: 1.6;
-    text-align: center;
   }
 
   .home-advantages__content {
     gap: 24px;
-    width: 100%;
   }
 
   .home-advantages__tabs {
     align-self: stretch;
-    justify-content: flex-start;
-    gap: 4px;
-    width: 100%;
     max-width: 100%;
-    padding: 4px;
-    overflow-x: auto;
-    border-radius: 10px;
-    scrollbar-width: none;
-  }
-
-  .home-advantages__tabs::-webkit-scrollbar {
-    display: none;
   }
 
   .home-advantages__tab,
   .home-advantages__tab--active {
-    flex: 0 0 auto;
     padding: 12px 14px;
     border-radius: 14px;
     font-size: 14px;
-    line-height: 1.6;
-    white-space: nowrap;
   }
 
   .home-advantages__card {
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
     gap: 14px;
     padding: 18px;
     border-radius: 30px;
   }
 
   .home-advantages__information {
-    flex: 0 1 auto;
-    flex-direction: column;
     align-items: stretch;
     gap: 36px;
-    width: 100%;
     max-width: none;
   }
 
@@ -5737,7 +5708,6 @@ h2 {
 
   .home-advantages__copy {
     gap: 14px;
-    width: 100%;
   }
 
   .home-advantages__eyebrow {
@@ -5774,7 +5744,6 @@ h2 {
     height: 208px;
     aspect-ratio: auto;
     border-radius: 30px;
-    object-fit: cover;
   }
 }
 
