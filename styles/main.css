@@ -4797,6 +4797,19 @@ h2 {
     padding: 24px 16px;
     border-radius: 12px;
   }
+
+  .home-about__mobile-video {
+    position: static;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transform: none;
+  }
+
+  .home-about__video-links {
+    grid-column: auto;
+    grid-row: auto;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -4833,19 +4846,6 @@ h2 {
     gap: 16px;
     font-size: 15px;
     line-height: 1.5;
-  }
-
-  .home-about__mobile-video {
-    position: static;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    transform: none
-  }
-
-  .home-about__video-links {
-    grid-column: auto;
-    grid-row: auto;
   }
 
   .home-about__description > p {
