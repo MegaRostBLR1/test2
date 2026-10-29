@@ -6568,10 +6568,6 @@ h2 {
 }
 
 @media (max-width: 480px) {
-  .home-news {
-    padding: 5px;
-  }
-
   .home-news__panel {
     gap: 20px;
     padding: 24px 14px;
@@ -6754,7 +6750,6 @@ h2 {
   }
 
   .home-news__grid {
-    grid-template-columns: minmax(0, 1fr);
     gap: 20px;
   }
 
