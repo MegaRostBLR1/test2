@@ -3224,8 +3224,6 @@ h2 {
   opacity: 1;
 }
 
-
-
 .services-contact__phone-flag {
   display: block;
   flex: 0 0 1.1696rem;
@@ -3403,13 +3401,25 @@ h2 {
   accent-color: #324c88;
 }
 
+@media screen and (max-width: 1600px) {
+  .services-contact {
+    padding: 2.7778rem 2.5rem;
+  }
 
+  .services-contact__description {
+    font-size: 24px;
+  }
+
+  .services-contact__illustration img {
+    height: 350px;
+  }
+}
 
 @media screen and (max-width: 1440px) {
   .services-contact__form .services-contact__input::placeholder,
   .services-contact__form .services-contact__phone-input::placeholder,
   .services-contact__form .services-contact__textarea::placeholder {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .services-contact__phone-country {
@@ -3431,20 +3441,6 @@ h2 {
     width: 0.7778rem;
     height: 0.7778rem;
     flex-basis: 0.7778rem;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .services-contact {
-    padding: 2.7778rem 2.5rem;
-  }
-
-  .services-contact__description {
-    font-size: 24px;
-  }
-
-  .services-contact__illustration img {
-    height: 350px;
   }
 }
 
@@ -3527,78 +3523,17 @@ h2 {
     min-height: 3rem;
     padding: 0.8333rem 1.7778rem;
   }
-}
 
-@media screen and (max-width: 680px) {
-  .services-contact {
-    padding: 1.1111rem 0.7778rem;
-  }
-
-  .services-contact__container {
-    gap: 1rem;
-  }
-
-  .services-contact__intro {
-    gap: 1rem;
-  }
-
-  .services-contact__heading {
-    gap: 0.7778rem;
-  }
-
-  .services-contact__eyebrow {
-    font-size: 0.8889rem;
-    line-height: 1.3333rem;
-  }
-
-  .services-contact__title {
-    font-size: 1.1111rem;
-    line-height: 1.5556rem;
-  }
-
-  .services-contact__description {
-    margin-top: 0;
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-
-  .services-contact__form {
-    padding: 0.7778rem;
-  }
-
-  .services-contact__fields {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .services-contact__field,
-  .services-contact__field--phone {
-    grid-column: 1 / -1;
-  }
-
-  .services-contact__upload {
-    padding: 18px;
-    gap: 8px;
-  }
-
-  .services-contact__upload-button {
-    padding: 16px 20px;
-    min-width: 217px;
-    font-size: 0.7778rem;
-  }
-
-  .services-contact__upload-help {
-    font-size: 12px;
-    line-height: 20px;
-  }
-
-  .services-contact__form-bottom {
-    gap: 27px;
-  }
-
-  .services-contact__submit.btn {
-    font-size: 14px;
-    line-height: 1.3333rem;
-  }
+  .services-contact__phone-country {
+      top: calc(100% - 28px);
+      left: 18px;
+    }
+  
+    .services-contact__form .services-contact__phone-input {
+      min-height: 56px;
+      padding: 18px;
+      padding-left: var(--phone-country-padding-left, 105px);
+    }
 }
 
 /* Дополнительные состояния формы и tooltip ошибки для секции заявки. */
@@ -3681,9 +3616,6 @@ h2 {
     outline-offset: 3px;
 }
 
-
-
-
 /* Tooltip ошибки поля — показывается после взаимодействия с невалидным обязательным полем. */
 .services-contact__field {
     position: relative;
@@ -3751,21 +3683,6 @@ h2 {
     outline: 1px solid #d52b1e;
 }
 
-
-
-@media screen and (max-width: 1300px) {
-  .services-contact__phone-country {
-    top: calc(100% - 28px);
-    left: 18px;
-  }
-
-  .services-contact__form .services-contact__phone-input {
-    min-height: 56px;
-    padding: 18px;
-    padding-left: var(--phone-country-padding-left, 105px);
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .services-contact__form .services-contact__input::placeholder,
   .services-contact__form .services-contact__phone-input::placeholder,
@@ -3782,91 +3699,160 @@ h2 {
     height: 14px;
     flex-basis: 14px;
   }
+
+  .services-contact__field--phone.is-country-popup-open::before {
+      position: fixed;
+      z-index: 9;
+      inset: 0;
+      background-color: rgb(0 0 0 / 20%);
+      content: "";
+    }
+  
+    .services-contact__country-popup {
+      position: fixed;
+      z-index: 10;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      gap: 0;
+      width: 100%;
+      max-width: none;
+      max-height: min(80dvh, 42rem);
+      padding: 4px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      border: 0;
+      border-radius: 0.625rem 0.625rem 0 0;
+      background-color: #f8f8f8;
+      box-shadow: none;
+      scrollbar-color: #4d4d4d #ffffff;
+    }
+  
+    .services-contact__country-popup-header {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      display: flex;
+      flex: 0 0 auto;
+      align-items: center;
+      gap: 1.125rem;
+      min-height: 3.5rem;
+      padding: 0.875rem;
+      background-color: #f8f8f8;
+    }
+  
+    .services-contact__country-popup-title {
+      flex: 1 1 auto;
+      color: #1d4395;
+      font-size: 0.8889rem;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  
+    .services-contact__country-popup-close {
+      display: inline-flex;
+      flex: 0 0 1.5rem;
+      align-items: center;
+      justify-content: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0;
+      border: 0;
+      color: #1d4395;
+      background: transparent;
+      cursor: pointer;
+    }
+  
+    .services-contact__country-popup-close svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .services-contact__country-option {
+      flex: 0 0 auto;
+      min-height: 3rem;
+      padding: 0.75rem 0.875rem;
+      border-radius: 0.5556rem;
+    }
+  
+    .services-contact__country-back {
+      display: block;
+      padding-top: 4px;
+    }
 }
 
-
-@media (max-width: 1024px) {
-  .services-contact__field--phone.is-country-popup-open::before {
-    position: fixed;
-    z-index: 9;
-    inset: 0;
-    background-color: rgb(0 0 0 / 20%);
-    content: "";
+@media screen and (max-width: 680px) {
+  .services-contact {
+    padding: 1.1111rem 0.7778rem;
   }
 
-  .services-contact__country-popup {
-    position: fixed;
-    z-index: 10;
-    top: auto;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    gap: 0;
-    width: 100%;
-    max-width: none;
-    max-height: min(80dvh, 42rem);
-    padding: 4px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    border: 0;
-    border-radius: 0.625rem 0.625rem 0 0;
-    background-color: #f8f8f8;
-    box-shadow: none;
-    scrollbar-color: #4d4d4d #ffffff;
+  .services-contact__container {
+    gap: 1rem;
   }
 
-  .services-contact__country-popup-header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    flex: 0 0 auto;
-    align-items: center;
-    gap: 1.125rem;
-    min-height: 3.5rem;
-    padding: 0.875rem;
-    background-color: #f8f8f8;
+  .services-contact__intro {
+    gap: 1rem;
   }
 
-  .services-contact__country-popup-title {
-    flex: 1 1 auto;
-    color: #1d4395;
+  .services-contact__heading {
+    gap: 0.7778rem;
+  }
+
+  .services-contact__eyebrow {
     font-size: 0.8889rem;
-    font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.3333rem;
   }
 
-  .services-contact__country-popup-close {
-    display: inline-flex;
-    flex: 0 0 1.5rem;
-    align-items: center;
-    justify-content: center;
-    width: 1.5rem;
-    height: 1.5rem;
-    padding: 0;
-    border: 0;
-    color: #1d4395;
-    background: transparent;
-    cursor: pointer;
+  .services-contact__title {
+    font-size: 1.1111rem;
+    line-height: 1.5556rem;
   }
 
-  .services-contact__country-popup-close svg {
-    display: block;
-    width: 100%;
-    height: 100%;
+  .services-contact__description {
+    margin-top: 0;
+    font-size: 1rem;
+    line-height: 1.4;
   }
 
-  .services-contact__country-option {
-    flex: 0 0 auto;
-    min-height: 3rem;
-    padding: 0.75rem 0.875rem;
-    border-radius: 0.5556rem;
+  .services-contact__form {
+    padding: 0.7778rem;
   }
 
-  .services-contact__country-back {
-    display: block;
-    padding-top: 4px;
+  .services-contact__fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .services-contact__field,
+  .services-contact__field--phone {
+    grid-column: 1 / -1;
+  }
+
+  .services-contact__upload {
+    padding: 18px;
+    gap: 8px;
+  }
+
+  .services-contact__upload-button {
+    padding: 16px 20px;
+    min-width: 217px;
+    font-size: 0.7778rem;
+  }
+
+  .services-contact__upload-help {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .services-contact__form-bottom {
+    gap: 27px;
+  }
+
+  .services-contact__submit.btn {
+    font-size: 14px;
+    line-height: 1.3333rem;
   }
 }
 
