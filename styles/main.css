@@ -1003,10 +1003,6 @@ h2 {
     line-height: 38px;
   }
 
-  .home-process__subtitle {
-    line-height: normal;
-  }
-
   .home-process__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1028,7 +1024,6 @@ h2 {
   .home-process__card-title {
     font-size: 22px;
   }
-
 }
 
 @media screen and (min-width: 1301px) and (max-width: 1440px) {
@@ -1066,7 +1061,6 @@ h2 {
     font-size: 26px;
     overflow-wrap: normal;
   }
-
 }
 
 @media screen and (max-width: 680px) {
