@@ -4205,6 +4205,8 @@ h2 {
   align-self: center;
   justify-content: center;
   gap: 30px;
+  width: 100%;
+  min-width: 0;
   max-width: 650px;
   margin-top: 10px;
 }
@@ -4219,21 +4221,42 @@ h2 {
 }
 
 .home-about__title {
-  max-width: 595px;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   color: #fff;
   font-family: "Onest-SemiBold", sans-serif;
   font-size: 48px;
   font-weight: 600;
   line-height: 64px;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .home-about__button.btn {
+  max-width: 100%;
   min-height: 84px;
   padding: 28px 48px;
   border-radius: 20px;
   font-size: 20px;
   line-height: 28px;
+  white-space: normal;
+}
+
+.home-about__mobile-video {
+  position: static;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  transform: none;
+}
+
+.video-trigger--about {
+  width: 170px;
+  max-width: 100%;
+  min-height: 145px;
+  margin: 0;
 }
 
 .home-about__description {
@@ -4448,22 +4471,6 @@ h2 {
     line-height: 26px;
   }
 
-  .home-about__mobile-video {
-    position: absolute;
-    z-index: 1;
-    top: 43%;
-    left: 28%;
-    display: flex;
-    justify-content: center;
-    width: 170px;
-  }
-
-  .video-trigger--about {
-    width: 170px;
-    min-height: 145px;
-    margin: 0;
-  }
-
   .home-about__stats {
     display: grid;
     grid-column: 1 / -1;
@@ -4596,13 +4603,6 @@ h2 {
     line-height: 26px;
   }
 
-  .home-about__mobile-video {
-    position: absolute;
-    z-index: 1;
-    top: 31%;
-    left: 31%;
-  }
-
   .video-trigger--about {
     width: 170px;
     min-height: 145px;
@@ -4717,15 +4717,6 @@ h2 {
   .home-about__video-caption {
     font-size: 14px;
     line-height: 1.4;
-  }
-
-  .home-about__mobile-video {
-    position: absolute;
-    z-index: 1;
-    top: 145px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 170px;
   }
 
   .video-trigger--about {
