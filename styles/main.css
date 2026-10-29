@@ -13962,27 +13962,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 375px) {
-  .home-about__hero {
-    padding: 20px 10px;
-  }
 
-  .home-about__title {
-    font-size: 24px;
-  }
-
-  .home-about__video-link {
-    gap: 8px;
-  }
-
-  .home-about__video-caption {
-    font-size: 10px;
-  }
-
-  .home-about__stat {
-    flex-basis: 200px;
-  }
-}
 
 
 /* Секция «О компании» — desktop-frame Figma 1920 px (1857:24065). */
