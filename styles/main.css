@@ -5400,10 +5400,6 @@ h2 {
 /* Figma node 1857:25687 — планшетный макет 1024 px.
    Сохраняем desktop-структуру секции и перестраиваем карточку по Figma. */
 @media screen and (max-width: 1100px) {
-  .home-advantages {
-    padding: 0 10px 10px;
-  }
-
   .home-advantages__inner {
     gap: 24px;
     padding: 40px;
