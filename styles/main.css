@@ -5378,6 +5378,16 @@ h2 {
     font-size: 20px;
   }
 
+  .home-advantages__card {
+    gap: 64px;
+  }
+
+  .home-advantages__information {
+    flex: 0 1 649px;
+    width: 649px;
+    max-width: 100%;
+  }
+
   .home-advantages__image {
     flex: 0 1 650px;
     width: 650px;
