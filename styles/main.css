@@ -7457,7 +7457,8 @@ h2 {
   }
 }
 
-/* Вопросы о компании — Figma 1857:24696 (1920 px) и 1857:25201 (1440 px). */
+/* Вопросы о компании — Figma 1857:24696 (1920 px), 1857:25201 (1440 px),
+   1857:26229 (1024 px), 1857:26891 (360 px). */
 .home-faq {
   width: 100%;
   padding: 0 0 40px;
@@ -7584,10 +7585,11 @@ h2 {
 
 .home-faq__answer p {
   margin: 0;
+  font-size: 18px;
 }
 
-/* Figma desktop frame 1440 px: H3 Semibold 36/44; preserve 1920 px typography above this range. */
-@media screen and (min-width: 1301px) and (max-width: 1440px) {
+/* Figma desktop frame 1440 px: H3 Semibold 36/44. */
+@media screen and (max-width: 1440px) {
   .home-faq__title {
     font-size: 36px;
     line-height: 44px;
@@ -7604,11 +7606,6 @@ h2 {
     padding: 32px;
   }
 
-  .home-faq__title {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
   .home-faq__question {
     font-size: 20px;
     line-height: 28px;
@@ -7617,55 +7614,14 @@ h2 {
   .home-faq__item {
     padding: 24px;
   }
-}
 
-@media screen and (max-width: 680px) {
-  .home-faq {
-    padding: 0 10px 10px;
-  }
-
-  .home-faq__panel {
-    gap: 20px;
-    padding: 24px 12px;
-    border-radius: 10px;
-  }
-
-  .home-faq__title {
-    font-size: 22px;
-    line-height: 30px;
-  }
-
-  .home-faq__item {
-    gap: 12px;
-    padding: 16px 12px;
-    border-radius: 12px;
-  }
-
-  .home-faq__question {
-    font-size: 14px;
-    line-height: 21px;
-  }
-
-  .home-faq__icon {
-    flex-basis: 32px;
-    width: 32px;
-    height: 32px;
-  }
-
-  .home-faq__icon svg {
-    width: 20px;
-    height: 20px;
+  .home-faq__answer p {
+    font-size: 16px;
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .home-faq__icon svg {
-    transition: none;
-  }
-}
-
-/* FAQ — Figma 1857:26229, tablet frame 1024 px. Desktop 1920/1440 keeps its own typography. */
-@media screen and (min-width: 761px) and (max-width: 1100px) {
+/* Figma tablet frame 1024 px. */
+@media screen and (max-width: 1100px) {
   .home-faq {
     padding: 0 10px 10px;
   }
@@ -7686,7 +7642,6 @@ h2 {
   }
 
   .home-faq__item {
-    gap: 20px;
     padding: 20px;
     border-radius: 20px;
   }
@@ -7709,7 +7664,49 @@ h2 {
   }
 }
 
-/* FAQ — Figma 1857:26891, mobile frame 360 px. */
+/* Figma mobile frame 360 px. */
+@media screen and (max-width: 680px) {
+  .home-faq {
+    padding: 0 10px 10px;
+  }
+
+  .home-faq__panel {
+    gap: 20px;
+    padding: 24px 12px;
+    border-radius: 10px;
+  }
+
+  .home-faq__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .home-faq__item {
+    padding: 16px 12px;
+    border-radius: 12px;
+  }
+
+  .home-faq__question {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .home-faq__icon {
+    flex-basis: 32px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .home-faq__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .home-faq__answer p {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .home-faq {
     padding: 0;
@@ -7733,7 +7730,6 @@ h2 {
   }
 
   .home-faq__item {
-    gap: 12px;
     padding: 18px;
     border-radius: 20px;
   }
@@ -7753,6 +7749,12 @@ h2 {
   .home-faq__icon svg {
     width: 18px;
     height: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-faq__icon svg {
+    transition: none;
   }
 }
 
