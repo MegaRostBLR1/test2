@@ -7664,6 +7664,43 @@ h2 {
   }
 }
 
+/* Сохраняем исходный промежуточный диапазон ниже tablet-breakpoint. */
+@media screen and (max-width: 760px) {
+  .home-faq {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+
+  .home-faq__panel {
+    padding: 32px;
+  }
+
+  .home-faq__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .home-faq__item {
+    padding: 24px;
+  }
+
+  .home-faq__question {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .home-faq__icon {
+    flex-basis: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .home-faq__icon svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 /* Figma mobile frame 360 px. */
 @media screen and (max-width: 680px) {
   .home-faq {
