@@ -3532,37 +3532,16 @@ h2 {
 }
 
 @media screen and (max-width: 1600px) {
-  .home-about__hero {
-    min-height: 1269px;
+  .services-contact {
+    padding: 2.7778rem 2.5rem;
   }
 
-  .home-about__info {
-    display: none;
+  .services-contact__description {
+    font-size: 24px;
   }
 
-  .home-about__description {
-    max-width: none;
-  }
-
-  .home-about__video-link {
-    flex: 0 0 177px;
-    min-width: auto;
-  }
-
-  .home-about__mobile-video {
-    top: 31%;
-    left: 31%;
-    display: block;
-    justify-content: normal;
-    width: auto;
-  }
-
-  .home-about__stats {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .home-about__stat {
-    flex-basis: 240px;
+  .services-contact__illustration img {
+    height: 350px;
   }
 }
 
@@ -4342,78 +4321,15 @@ h2 {
 
 @media screen and (max-width: 1600px) {
   .home-about__hero {
-    min-height: 850px;
-    gap: 28px;
-    padding: 35px;
+    min-height: 1269px;
   }
 
   .home-about__info {
     display: none;
   }
 
-  .home-about__intro {
-    gap: 24px;
-    max-width: 560px;
-  }
-
-  .home-about__title {
-    font-size: 40px;
-    line-height: 1.33;
-  }
-
   .home-about__description {
-    max-width: 620px;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-
-  .home-about__stats {
-    gap: 12px;
-  }
-
-  .home-about__stat {
-    flex-basis: 240px;
-    min-height: 240px;
-    padding: 18px;
-  }
-
-  .home-about__stat-value {
-    font-size: 40px;
-  }
-
-  .home-about__stat-description {
-    font-size: 17px;
-    line-height: 1.4;
-  }
-
-
-  .home-about__hero {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: minmax(0, 1fr) auto;
-    min-height: 1269px;
-    gap: 30px 20px;
-    padding: 45px;
-  }
-
-  .home-about__intro {
-    align-self: start;
-    gap: 30px;
-    max-width: 650px;
-    margin-top: 0;
-  }
-
-  .home-about__title {
-    max-width: 595px;
-    font-size: 48px;
-    line-height: 64px;
-  }
-
-  .home-about__description {
-    align-self: start;
-    gap: 30px;
     max-width: none;
-    font-size: 20px;
-    line-height: 30px;
   }
 
   .home-about__video-link {
@@ -4422,8 +4338,6 @@ h2 {
   }
 
   .home-about__mobile-video {
-    position: absolute;
-    z-index: 1;
     top: 31%;
     left: 31%;
     display: block;
@@ -4431,36 +4345,13 @@ h2 {
     width: auto;
   }
 
-  .video-trigger--about {
-    width: 170px;
-    min-height: 145px;
-    margin: 0;
-  }
-
   .home-about__stats {
-    display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-    overflow: visible;
   }
 
   .home-about__stat {
-    min-width: 0;
-    min-height: 280px;
-    padding: 20px;
-    border-radius: 12px;
+    flex-basis: 240px;
   }
-
-  .home-about__stat-value {
-    font-size: 48px;
-  }
-
-  .home-about__stat-description {
-    max-width: 201px;
-    font-size: 20px;
-    line-height: 28px;
-  }
-
 }
 
 
