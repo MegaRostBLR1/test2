@@ -1263,6 +1263,10 @@ h2 {
   display: none;
 }
 
+.home-industries__nav-item--no-divider::after {
+  display: none;
+}
+
 .home-industries__nav-item.is-active {
   color: #5d5d5d;
 }
@@ -1457,6 +1461,7 @@ h2 {
   }
 
   .home-industries__nav {
+    flex: initial;
     gap: 16px;
   }
 
@@ -1565,11 +1570,14 @@ h2 {
   .home-industries__details {
     position: static;
     z-index: auto;
+    flex: 0 1 auto;
     min-height: auto;
+    padding-right: 0;
   }
 
   .home-industries__title {
     line-height: 1.25;
+    white-space: normal;
     text-wrap: nowrap;
   }
 
@@ -1789,6 +1797,7 @@ h2 {
   }
 
   .home-industries__nav {
+    flex: initial;
     align-self: auto;
     overflow: visible;
     padding: 0 0 4px;
@@ -1799,8 +1808,12 @@ h2 {
     flex: initial;
   }
 
+  .home-industries__content {
+    min-height: auto;
+  }
+
   .home-industries__details {
-    flex-basis: auto;
+    flex: 0 1 auto;
     justify-content: normal;
   }
 
@@ -1850,6 +1863,7 @@ h2 {
   }
 
   .home-industries__catalog-link {
+    gap: normal;
     font-size: 16px;
   }
 
