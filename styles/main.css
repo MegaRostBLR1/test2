@@ -3532,16 +3532,37 @@ h2 {
 }
 
 @media screen and (max-width: 1600px) {
-  .services-contact {
-    padding: 2.7778rem 2.5rem;
+  .home-about__hero {
+    min-height: 1269px;
   }
 
-  .services-contact__description {
-    font-size: 24px;
+  .home-about__info {
+    display: none;
   }
 
-  .services-contact__illustration img {
-    height: 350px;
+  .home-about__description {
+    max-width: none;
+  }
+
+  .home-about__video-link {
+    flex: 0 0 177px;
+    min-width: auto;
+  }
+
+  .home-about__mobile-video {
+    top: 31%;
+    left: 31%;
+    display: block;
+    justify-content: normal;
+    width: auto;
+  }
+
+  .home-about__stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .home-about__stat {
+    flex-basis: 240px;
   }
 }
 
