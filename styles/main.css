@@ -1821,11 +1821,6 @@ h2 {
     width: 100%;
   }
 
-  .home-industries__image--small {
-    flex: 0 1 37.6%;
-    width: 37.6%;
-  }
-
 
   .home-industries__panel {
     gap: 18px;
