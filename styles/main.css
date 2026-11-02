@@ -4406,9 +4406,9 @@ h2 {
     top: 31%;
     left: 31%;
     display: block;
-  justify-content: normal;
-  width: auto;
-}
+    justify-content: normal;
+    width: auto;
+  }
 
   .video-trigger--about {
     width: 170px;
@@ -4532,8 +4532,6 @@ h2 {
     top: 145px;
     left: 50%;
     transform: translateX(-50%);
-    display: block;
-    justify-content: normal;
     width: 170px;
   }
 
