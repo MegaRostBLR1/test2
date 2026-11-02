@@ -825,13 +825,37 @@ h2 {
 }
 
 .home-process__card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
   min-width: 0;
   padding: 20px;
+  overflow: hidden;
+  isolation: isolate;
   border-radius: 20px;
-  background: #FFFFFF;
+  background: #f8f8f8;
+}
+
+.home-process__card::before {
+  position: absolute;
+  z-index: 0;
+  bottom: -364.243px;
+  left: 108.498px;
+  width: 632.334px;
+  height: 663.662px;
+  transform: rotate(51.06deg);
+  transform-origin: center;
+  border-radius: 20px;
+  background: rgb(80 80 80 / 4%);
+  content: "";
+  pointer-events: none;
+}
+
+.home-process__card-content,
+.home-process__link {
+  position: relative;
+  z-index: 1;
 }
 
 .home-process__card-content {
@@ -958,36 +982,90 @@ h2 {
 
   .home-process__card {
     padding: 16px;
+    background: #ffffff;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .home-process__panel {
+    padding: 48px 30px;
+  }
+
+  .home-process__header {
+    gap: 24px;
+  }
+
+  .home-process__title {
+    font-size: 48px;
+  }
+
+  .home-process__subtitle {
+    font-size: 24px;
+  }
+
+  .home-process__card {
+    padding: 20px;
+  }
+
+  .home-process__card-header {
+    gap: 18px;
+  }
+
+  .home-process__icon {
+    flex-basis: 54px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .home-process__card-title {
+    font-size: 26px;
+    overflow-wrap: normal;
   }
 }
 
 @media screen and (max-width: 1300px) {
+  .home-process__panel {
+    padding: 60px 30px;
+  }
+
+  .home-process__header {
+    gap: 10px;
+  }
+
+  .home-process__title {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .home-process__subtitle {
+    font-size: 20px;
+  }
+
+  .home-process__card {
+    padding: 16px;
+  }
+
+  .home-process__card-header {
+    gap: 12px;
+  }
+
+  .home-process__icon {
+    flex-basis: 44px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .home-process__card-title {
+    font-size: 24px;
+    overflow-wrap: anywhere;
+  }
+
   .home-process__description {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .home-process__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .home-process__grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .home-process__link {
-    transition: none;
-  }
-}
-
-/* Контрольный tablet-frame Figma 1024 px: 1857:25321.
-   Точечные переопределения сохраняют desktop-геометрию на 1920/1440 px. */
-@media screen and (min-width: 681px) and (max-width: 1100px) {
   .home-process__panel {
     gap: 18px;
     padding: 40px;
@@ -1025,43 +1103,6 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1301px) and (max-width: 1440px) {
-  .home-process__panel {
-    padding: 48px 30px;
-  }
-
-  .home-process__header {
-    gap: 24px;
-  }
-
-  .home-process__title {
-    font-size: 48px;
-  }
-
-  .home-process__subtitle {
-    font-size: 24px;
-  }
-
-  .home-process__card {
-    padding: 20px;
-  }
-
-  .home-process__card-header {
-    gap: 18px;
-  }
-
-  .home-process__icon {
-    flex-basis: 54px;
-    width: 54px;
-    height: 54px;
-  }
-
-  .home-process__card-title {
-    font-size: 26px;
-    overflow-wrap: normal;
-  }
-}
-
 @media screen and (max-width: 680px) {
   .home-process__panel {
     gap: 18px;
@@ -1096,7 +1137,7 @@ h2 {
     gap: 14px;
     padding: 20px;
     border-radius: 20px;
-    background: #fff;
+    background: #ffffff;
   }
 
   .home-process__card-content {
@@ -1135,6 +1176,12 @@ h2 {
     border-radius: 20px;
     font-size: 14px;
     line-height: 1.26;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-process__link {
+    transition: none;
   }
 }
 
