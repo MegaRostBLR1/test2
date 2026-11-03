@@ -502,7 +502,7 @@
 
 /* Адаптация блока «Этапы работы» под Figma 1024 px.
    На 1440 и 1920 px сохраняется базовая desktop-композиция. */
-@media screen and (min-width: 681px) and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .laser-process__panel {
     gap: 36px;
     padding: 48px 40px;
@@ -599,11 +599,7 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .laser-process * {
-    scroll-behavior: auto;
-  }
-}
+
 
 /* Сырьё и готовые изделия — Figma 1857:37050. */
 .laser-materials {
@@ -849,7 +845,7 @@
 }
 
 /* Tablet frame 1024 px — Figma 1857:37050. */
-@media screen and (min-width: 761px) and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .laser-materials__panel {
     align-items: stretch;
     gap: 25px;
@@ -1069,11 +1065,7 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .laser-materials__toggle {
-    transition: none;
-  }
-}
+
 
 
 /* Mobile frame 360 px — Figma 1857:38832. Overrides are scoped to this section. */
@@ -1284,7 +1276,7 @@
 
 /* Figma node 1857:37116 — точная адаптация блока для ширины 1024 px.
    Базовые правила выше обслуживают desktop 1440/1920 px. */
-@media screen and (min-width: 681px) and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .laser-equipment__panel {
     gap: 80px;
     padding: 40px;
@@ -1547,7 +1539,7 @@
   border: 0;
 }
 
-@media screen and (min-width: 681px) and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .laser-work-with-us__panel {
     gap: 30px;
     padding: 40px 40px 5px;
@@ -1676,6 +1668,10 @@
 
 
 /* Преимущества лазерной резки */
+.laser-benefits__visual--tablet {
+  display: none;
+}
+
 .laser-benefits {
   padding: 0 0.5556rem 0.5556rem;
   background: #F5F8F7;
@@ -1886,165 +1882,12 @@
   }
 }
 
-@media screen and (min-width: 681px) and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .laser-benefits {
     padding: 0 0.5556rem 0.5556rem;
     border-radius: 0.5556rem;
   }
 
-  .laser-benefits__panel {
-    padding: 2.2222rem;
-    border-radius: 0.5556rem;
-  }
-
-  .laser-benefits__header {
-    margin-bottom: 2.2222rem;
-  }
-
-  .laser-benefits__title {
-    font-size: 1.3333rem;
-    line-height: 1.7778rem;
-  }
-
-  .laser-benefits__layout {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 1.6667rem;
-  }
-
-  .laser-benefits__accordion {
-    padding-top: 0;
-  }
-
-  .laser-benefits__item {
-    gap: 1.1111rem;
-  }
-
-  .laser-benefits__item-body {
-    gap: 1rem;
-  }
-
-  .laser-benefits__item-toggle {
-    gap: 1.1111rem;
-  }
-
-  .laser-benefits__toggle-icon {
-    flex-basis: 2.6667rem;
-    width: 2.6667rem;
-    height: 2.6667rem;
-  }
-
-  .laser-benefits__item-title {
-    font-size: 1rem;
-  }
-
-  .laser-benefits__item-content {
-    padding-left: 3.7778rem;
-  }
-
-  .laser-benefits__description {
-    font-size: 0.8889rem;
-  }
-
-  .laser-benefits__visual {
-    aspect-ratio: 1 / 1;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .laser-benefits {
-    padding: 0 0.2778rem 0.2778rem;
-  }
-
-  .laser-benefits__panel {
-    padding: 1.1111rem 0.5556rem;
-    border-radius: 0.8333rem;
-  }
-
-  .laser-benefits__header {
-    margin-bottom: 1.1111rem;
-  }
-
-  .laser-benefits__title {
-    font-size: 1.1111rem;
-    line-height: 1.5556rem;
-  }
-
-  .laser-benefits__layout {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1.1111rem;
-  }
-
-  .laser-benefits__accordion {
-    padding-top: 0;
-  }
-
-  .laser-benefits__item {
-    gap: 0.7778rem;
-  }
-
-  .laser-benefits__item-body {
-    gap: 0.7778rem;
-  }
-
-  .laser-benefits__item-toggle {
-    gap: 0.7778rem;
-  }
-
-  .laser-benefits__toggle-icon {
-    flex-basis: 2rem;
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .laser-benefits__toggle-icon img {
-    width: 1.1111rem;
-    height: 1.1111rem;
-  }
-
-  .laser-benefits__item-title {
-    font-size: 0.8889rem;
-    line-height: 1.4;
-  }
-
-  .laser-benefits__item-content {
-    gap: 0.7778rem;
-    padding-left: 2.7778rem;
-  }
-
-  .laser-benefits__description {
-    font-size: 0.7778rem;
-    line-height: 1.5;
-  }
-
-  .laser-benefits__more.btn {
-    padding: 0.6667rem 1.1111rem;
-    font-size: 0.7778rem;
-  }
-
-  .laser-benefits__visual {
-    aspect-ratio: 710 / 430;
-    border-radius: 0.8333rem;
-  }
-
-  .laser-benefits__image {
-    border-radius: 0.6667rem;
-  }
-
-  .laser-benefits__zoom {
-    right: 0.5556rem;
-    bottom: 0.5556rem;
-    width: 2.6667rem;
-    height: 2.6667rem;
-  }
-
-  .laser-benefits__zoom img {
-    width: 1.5556rem;
-    height: 1.5556rem;
-  }
-}
-
-/* Figma 1024 px: раскрытый пункт содержит изображение под описанием. */
-@media screen and (min-width: 681px) and (max-width: 1100px) {
   .laser-benefits__panel {
     padding: 40px;
     border-radius: 30px;
@@ -2067,15 +1910,34 @@
 
   .laser-benefits__accordion {
     width: 100%;
+    padding-top: 0;
   }
 
-  .laser-benefits__item-content {
-    padding-left: 54px;
+  .laser-benefits__item {
+    gap: 1.1111rem;
+  }
+
+  .laser-benefits__item-body {
+    gap: 1rem;
+  }
+
+  .laser-benefits__item-toggle {
+    gap: 1.1111rem;
+  }
+
+  .laser-benefits__toggle-icon {
+    flex-basis: 2.6667rem;
+    width: 2.6667rem;
+    height: 2.6667rem;
   }
 
   .laser-benefits__item-title {
     font-size: 18px;
     line-height: 27px;
+  }
+
+  .laser-benefits__item-content {
+    padding-left: 54px;
   }
 
   .laser-benefits__description {
@@ -2114,11 +1976,11 @@
   }
 }
 
-@media screen and (min-width: 1101px) {
-  .laser-benefits__visual--tablet {
-    display: none;
-  }
-}
+
+
+
+
+
 
 
 /* Figma 360 px: преимущества лазерной резки. */
