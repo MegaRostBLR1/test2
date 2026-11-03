@@ -968,6 +968,54 @@
 }
 
 @media screen and (max-width: 760px) {
+  /* Restore the base layout below the tablet breakpoint before mobile overrides. */
+  .laser-materials__panel {
+    align-items: center;
+  }
+
+  .laser-materials__tabs {
+    padding: 0.2222rem 0.2222rem 0.2222rem 1rem;
+  }
+
+  .laser-materials__tab {
+    line-height: 1.6;
+  }
+
+  .laser-materials__layout {
+    display: grid;
+  }
+
+  .laser-materials__list {
+    padding-top: 0.0556rem;
+  }
+
+  .laser-materials__item {
+    display: block;
+  }
+
+  .laser-materials__toggle {
+    padding: 0 0 1.1111rem;
+    line-height: 1.5;
+  }
+
+  .laser-materials__description p {
+    line-height: 1.5;
+  }
+
+  .laser-materials__more.btn {
+    min-height: 0;
+    line-height: 1.6;
+  }
+
+  .laser-materials__visual--desktop {
+    display: flex;
+  }
+
+  .laser-materials__visual--tablet {
+    display: none;
+    flex: initial;
+  }
+
   .laser-materials {
     width: calc(100% - 0.7778rem);
     padding: 0;
@@ -1987,6 +2035,7 @@
 @media screen and (max-width: 680px) {
   .laser-benefits {
     padding: 10px;
+    border-radius: 0;
   }
 
   .laser-benefits__panel {
