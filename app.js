@@ -30,6 +30,7 @@ const APP_CONFIG = {
     'home': {
       title: 'Главная',
       html: './components/pages/home/home.html',
+      css: './components/pages/home/home.css',
       js: './components/pages/home/home.js',
       init: 'initHome'
     },
