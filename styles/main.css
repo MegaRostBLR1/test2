@@ -7146,13 +7146,27 @@ h2 {
   }
 
   .home-agro__layout {
+    display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: 32px;
   }
 
   .home-agro__visual {
+    display: flex;
     min-height: 0;
     aspect-ratio: 684 / 523;
+  }
+
+  .home-agro__tablet-visual {
+    display: none;
+  }
+
+  .home-agro__item-copy {
+    margin-left: 0;
+  }
+
+  .home-agro__item-copy ul {
+    display: flex;
   }
 
   .home-agro__zoom {
