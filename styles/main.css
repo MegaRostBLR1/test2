@@ -7454,7 +7454,6 @@ h2 {
   stroke: #324c88;
   stroke-linecap: round;
   stroke-width: 2;
-  transition: transform 300ms ease-in-out;
 }
 
 .home-faq__toggle[aria-expanded="true"] .home-faq__icon svg {
@@ -7480,7 +7479,6 @@ h2 {
 
 .home-faq__answer p {
   margin: 0;
-  font-size: 18px;
 }
 
 /* Figma desktop frame 1440 px: H3 Semibold 36/44. */
@@ -7510,7 +7508,7 @@ h2 {
     padding: 24px;
   }
 
-  .home-faq__answer p {
+  .home-faq__answer {
     font-size: 16px;
   }
 }
@@ -7524,7 +7522,6 @@ h2 {
   .home-faq__panel {
     gap: 30px;
     padding: 40px;
-    border-radius: 10px;
   }
 
   .home-faq__title {
@@ -7532,19 +7529,13 @@ h2 {
     line-height: 32px;
   }
 
-  .home-faq__list {
-    gap: 4px;
-  }
-
   .home-faq__item {
     padding: 20px;
-    border-radius: 20px;
   }
 
   .home-faq__question {
     font-size: 18px;
     line-height: 30px;
-    white-space: normal;
   }
 
   .home-faq__icon {
@@ -7605,7 +7596,6 @@ h2 {
   .home-faq__panel {
     gap: 20px;
     padding: 24px 12px;
-    border-radius: 10px;
   }
 
   .home-faq__title {
@@ -7634,7 +7624,7 @@ h2 {
     height: 20px;
   }
 
-  .home-faq__answer p {
+  .home-faq__answer {
     font-size: 14px;
   }
 }
@@ -7651,14 +7641,9 @@ h2 {
   }
 
   .home-faq__title {
-    align-self: center;
     font-size: 18px;
     line-height: 26px;
     white-space: nowrap;
-  }
-
-  .home-faq__list {
-    gap: 4px;
   }
 
   .home-faq__item {
@@ -7666,10 +7651,13 @@ h2 {
     border-radius: 20px;
   }
 
+  .home-faq__item:nth-child(2) {
+    display: none;
+  }
+
   .home-faq__question {
     font-size: 16px;
     line-height: 22px;
-    overflow-wrap: break-word;
   }
 
   .home-faq__icon {
@@ -7679,14 +7667,8 @@ h2 {
   }
 
   .home-faq__icon svg {
-    width: 18px;
-    height: 18px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .home-faq__icon svg {
-    transition: none;
+    width: 24px;
+    height: 24px;
   }
 }
 
