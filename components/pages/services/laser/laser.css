@@ -20,7 +20,6 @@
 
 .laser__breadcrumb-link {
   color: inherit;
-  transition: color 0.15s ease;
 }
 
 .laser__breadcrumb-link:hover {
@@ -29,6 +28,8 @@
 
 .laser__breadcrumb-separator {
   color: #979a9b;
+  font-size: 1.1111rem;
+  line-height: 1.4444rem;
 }
 
 .laser__hero {
@@ -52,9 +53,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   width: 100%;
-  max-width: 72.2222rem;
+  max-width: 55.7222rem;
   margin: 0 auto;
 }
 
@@ -184,12 +186,6 @@
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1600px) {
-  .laser__hero {
-    min-height: 55.5556rem;
-  }
-}
-
 @media screen and (max-width: 1300px) {
   .laser__breadcrumbs {
     gap: 0.7778rem;
@@ -237,7 +233,7 @@
   }
 }
 
-@media screen and (min-width: 681px) and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .laser__breadcrumbs {
     gap: 1.1111rem;
     min-height: 3.4444rem;
@@ -260,7 +256,9 @@
   }
 
   .laser__title {
+    font-family: 'Onest-Medium', sans-serif;
     font-size: 2.2222rem;
+    font-weight: 500;
     line-height: 2.6667rem;
     white-space: nowrap;
   }
@@ -304,11 +302,11 @@
 
   .laser__breadcrumbs {
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    align-content: center;
     gap: 0.5556rem;
-    width: 100%;
-    min-height: 0;
-    padding: 1rem 0;
+    min-height: 3.4444rem;
+    padding: 0;
     font-size: 0.7778rem;
     line-height: 1.2857;
     white-space: nowrap;
@@ -393,12 +391,6 @@
     margin-top: 0.4444rem;
     font-size: 0.6667rem;
     line-height: 1.4444rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .laser__breadcrumb-link {
-    transition: none;
   }
 }
 
