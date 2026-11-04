@@ -684,8 +684,8 @@
 
 .laser-materials__zoom {
   position: absolute;
-  right: 0.5556rem;
-  bottom: 0.5556rem;
+  right: 24px;
+  bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
