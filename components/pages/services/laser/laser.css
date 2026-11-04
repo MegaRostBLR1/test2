@@ -280,7 +280,7 @@
   position: fixed;
   z-index: 1000;
   inset: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 2px;
   background: rgba(0, 0, 0, 0.35);
@@ -469,10 +469,11 @@
   outline-offset: 3px;
 }
 
-@media screen and (min-width: 681px) {
+@media screen and (max-width: 680px) {
   .laser-calculator__mobile-dialog {
-    display: none !important;
-  }}
+    display: flex;
+  }
+}
 
 /* laser-materials */
 
@@ -1155,7 +1156,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4.4444rem;
+  gap: 1.1111rem;
   width: 100%;
   min-width: 0;
   padding: 0.4444rem 2.2222rem 4.4444rem;
@@ -1206,7 +1207,7 @@
 @media screen and (max-width: 1100px) {
 
 .laser-equipment__panel {
-    gap: 80px;
+    gap: 20px;
     padding: 40px;
   }
 
@@ -1244,7 +1245,7 @@
   .laser-equipment__intro {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 20px;
     width: 100%;
   }
 
