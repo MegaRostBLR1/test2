@@ -1907,7 +1907,7 @@
 
 
 
-\n\n\n\n
+
 
 @media screen and (max-width: 1600px) {
 .laser-benefits__title {
@@ -2370,12 +2370,10 @@
   }
 
   .laser-benefits__topics {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     font-size: 14px;
-    white-space: nowrap;
-    overflow: auto;
   }
 
   .laser-benefits__grid {
