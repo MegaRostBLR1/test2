@@ -476,17 +476,6 @@
 
 /* laser-materials */
 
-
-/* At 1440 px the Figma frame keeps the same card geometry as the 1920 px layout. */
-
-/* Адаптация блока «Этапы работы» под Figma 1024 px.
-   На 1440 и 1920 px сохраняется базовая desktop-композиция. */
-
-
-
-
-
-
 /* Сырьё и готовые изделия — Figma 1857:37050. */
 .laser-materials {
   width: calc(100% - 1.1111rem);
@@ -707,8 +696,7 @@
 }
 
 @media screen and (max-width: 1300px) {
-
-.laser-materials__panel {
+  .laser-materials__panel {
     padding: 2.2222rem 1.3333rem;
   }
 
@@ -728,11 +716,11 @@
 
   .laser-materials__description {
     padding-left: 2.8889rem;
-  }}
+  }
+}
 
 @media screen and (max-width: 1100px) {
-
-.laser-materials__panel {
+  .laser-materials__panel {
     align-items: stretch;
     gap: 25px;
     padding: 40px;
@@ -850,10 +838,11 @@
   .laser-materials__zoom img {
     width: 36px;
     height: 36px;
-  }}
+  }
+}
 
 @media screen and (max-width: 760px) {
-/* Restore the base layout below the tablet breakpoint before mobile overrides. */
+  /* Restore the base layout below the tablet breakpoint before mobile overrides. */
   .laser-materials__panel {
     align-items: center;
   }
@@ -995,7 +984,8 @@
   .laser-materials__zoom img {
     width: 1.6667rem;
     height: 1.6667rem;
-  }}
+  }
+}
 
 @media screen and (max-width: 480px) {
 .laser-materials {
@@ -1131,11 +1121,8 @@
   .laser-materials__zoom img {
     width: 28px;
     height: 28px;
-  }}
-
-
-
-
+  }
+}
 
 /* Tablet frame 1024 px — Figma 1857:37050. */
 
