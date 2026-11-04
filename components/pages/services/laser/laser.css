@@ -1081,7 +1081,8 @@
 }
 
 .laser-calculator__table {
-  width: 100%;
+  width: calc(100% + 4px);
+  margin: -4px -2px;
   border-collapse: separate;
   border-spacing: 2px 4px;
   table-layout: fixed;
