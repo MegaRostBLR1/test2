@@ -6,6 +6,7 @@
 .laser__breadcrumbs {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.1111rem;
   width: calc(100% - 0.5556rem);
@@ -1912,9 +1913,9 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     width: 100%;
-    overflow: hidden;
     font-size: 14px;
     white-space: nowrap;
+    overflow: auto;
   }
 
   .laser-benefits__grid {
