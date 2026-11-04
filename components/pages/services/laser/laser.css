@@ -1003,8 +1003,8 @@
 }
 
 .laser-calculator__filters {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 24px 50px;
@@ -1017,14 +1017,10 @@
   align-items: center;
   gap: 30px;
   min-width: 0;
-  margin: 0;
-  padding: 0;
-  border: 0;
 }
 
 .laser-calculator__filter--volume {
-  grid-column: 1 / -1;
-  justify-self: center;
+  margin-inline: auto;
 }
 
 .laser-calculator__label {
