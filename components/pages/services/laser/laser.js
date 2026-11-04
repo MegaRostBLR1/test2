@@ -80,10 +80,11 @@ function initLaser() {
             if (moreButton) {
                 const options = moreButton.previousElementSibling;
                 const expanded = moreButton.getAttribute('aria-expanded') === 'true';
-                const hiddenOption = options?.querySelector('.laser-calculator__mobile-option[hidden]');
-                if (hiddenOption) hiddenOption.hidden = false;
+                options?.querySelectorAll('[data-extra-option]').forEach((option) => {
+                    option.hidden = expanded;
+                });
                 moreButton.setAttribute('aria-expanded', String(!expanded));
-                moreButton.hidden = !hiddenOption;
+                moreButton.firstChild.textContent = expanded ? 'Показать еще' : 'Скрыть';
             }
         });
 
