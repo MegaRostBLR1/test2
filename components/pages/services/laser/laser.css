@@ -2076,7 +2076,6 @@
   }
 
   .laser-work-with-us__cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
 
@@ -2298,11 +2297,21 @@
   }
 
   .laser-work-with-us__cards {
-    grid-template-columns: minmax(0, 1fr);
+    display: flex;
     gap: 10px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .laser-work-with-us__cards::-webkit-scrollbar {
+    display: none;
   }
 
   .laser-work-with-us__card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
     gap: 30px;
     padding: 20px;
     border-radius: 20px;
