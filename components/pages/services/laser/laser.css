@@ -1715,11 +1715,6 @@
 }
 
 
-/* Преимущества лазерной резки */
-.laser-benefits__visual--tablet {
-  display: none;
-}
-
 .laser-benefits {
   padding: 0 0.5556rem 0.5556rem;
   background: #f5f8f7;
