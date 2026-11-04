@@ -1013,6 +1013,7 @@
 
 .laser-calculator__filter {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 30px;
   min-width: 0;
@@ -1525,8 +1526,10 @@
 
   .laser-calculator__filters {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 50px;
   }
 
   .laser-calculator__option {
