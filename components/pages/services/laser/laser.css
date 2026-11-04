@@ -472,7 +472,7 @@
   font-weight: 600;
   line-height: 1.6;
   text-transform: uppercase;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
 }
 
 .laser-process__description {
@@ -488,7 +488,7 @@
 
 .laser-process__number {
   position: absolute;
-  top: 8px;
+  top: 80px;
   right: 36px;
   color: #324c8833;
   font-family: 'Onest-SemiBold', sans-serif;
@@ -504,11 +504,6 @@
 /* Адаптация блока «Этапы работы» под Figma 1024 px.
    На 1440 и 1920 px сохраняется базовая desktop-композиция. */
 @media screen and (max-width: 1100px) {
-  .laser-process__panel {
-    gap: 36px;
-    padding: 48px 40px;
-  }
-
   .laser-process__title {
     font-size: 48px;
     line-height: normal;
@@ -531,19 +526,17 @@
 
   .laser-process__description {
     font-size: 16px;
-    line-height: 1.5;
   }
 
   .laser-process__number {
+    top: 60px;
     right: 20px;
     font-size: 100px;
-    line-height: 1.5;
   }
 }
 
 @media screen and (max-width: 680px) {
   .laser-process {
-    width: calc(100% - 20px);
     padding: 0;
   }
 
@@ -579,16 +572,12 @@
   }
 
   .laser-process__card-title {
-    max-width: 100%;
     font-size: 18px;
     line-height: 1.6;
-    white-space: nowrap;
   }
 
   .laser-process__description {
-    max-width: 100%;
     font-size: 14px;
-    line-height: 1.5;
   }
 
   .laser-process__number {
@@ -596,7 +585,6 @@
     right: 18px;
     bottom: 18px;
     font-size: 50px;
-    line-height: 1.5;
   }
 }
 
