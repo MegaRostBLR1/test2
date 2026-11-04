@@ -552,6 +552,7 @@
   align-items: start;
   gap: 7.7778rem;
   width: 100%;
+  max-width: 1508px;
 }
 
 .laser-materials__list {
