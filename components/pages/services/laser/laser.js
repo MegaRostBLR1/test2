@@ -161,4 +161,35 @@ function initLaser() {
             }
         });
     }
+
+    document.querySelectorAll('.laser-cutting-advantages').forEach((root) => {
+        if (root.dataset.initialized === 'true') return;
+        root.dataset.initialized = 'true';
+
+        root.querySelectorAll('.laser-cutting-advantages__toggle').forEach((toggle) => {
+            toggle.addEventListener('click', () => {
+                const wasExpanded = toggle.getAttribute('aria-expanded') === 'true';
+                root.querySelectorAll('.laser-cutting-advantages__toggle').forEach((item) => {
+                    item.setAttribute('aria-expanded', 'false');
+                    const panel = root.querySelector(`#${item.getAttribute('aria-controls')}`);
+                    if (panel) panel.hidden = true;
+                });
+                if (!wasExpanded) {
+                    toggle.setAttribute('aria-expanded', 'true');
+                    const panel = root.querySelector(`#${toggle.getAttribute('aria-controls')}`);
+                    if (panel) panel.hidden = false;
+                }
+            });
+        });
+
+        root.querySelectorAll('.laser-cutting-advantages__zoom').forEach((zoom) => {
+            const image = zoom.closest('.laser-cutting-advantages__visual')?.querySelector('.laser-cutting-advantages__image');
+            if (!image) return;
+            zoom.addEventListener('click', () => {
+                const preview = window.open(image.src, '_blank', 'noopener,noreferrer');
+                if (preview) preview.opener = null;
+            });
+        });
+    });
+
 }
