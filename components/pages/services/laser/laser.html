@@ -351,9 +351,59 @@
         </div>
       </div>
 
-      <div class="laser-calculator__mobile-summary">
-        <p>Параметры: <strong>(Ш: 15м, В: 10м)</strong></p>
+      <button class="laser-calculator__mobile-summary" type="button" aria-haspopup="dialog" aria-controls="laser-calculator-mobile-settings">
+        <span>Параметры: <strong>(Ш: 15м, В: 10м)</strong></span>
         <img src="./static/images/news/settings-ic.svg" alt="" width="24" height="24" aria-hidden="true">
+      </button>
+
+      <div class="laser-calculator__mobile-dialog" id="laser-calculator-mobile-settings" role="dialog" aria-modal="true" aria-labelledby="laser-calculator-mobile-title" hidden>
+        <div class="laser-calculator__mobile-dialog-panel">
+          <header class="laser-calculator__mobile-dialog-header">
+            <h3 class="laser-calculator__mobile-dialog-title" id="laser-calculator-mobile-title">Параметры</h3>
+            <button class="laser-calculator__mobile-close" type="button" aria-label="Закрыть параметры">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            </button>
+          </header>
+
+          <div class="laser-calculator__mobile-dialog-content">
+            <section class="laser-calculator__mobile-group" aria-labelledby="laser-calculator-mobile-region">
+              <h4 class="laser-calculator__mobile-group-title" id="laser-calculator-mobile-region">Регион:</h4>
+              <div class="laser-calculator__mobile-options" role="group" aria-label="Регион">
+                <button class="laser-calculator__mobile-option is-selected" type="button" aria-pressed="true">Россия</button>
+                <button class="laser-calculator__mobile-option" type="button" aria-pressed="false">СНГ</button>
+                <button class="laser-calculator__mobile-option" type="button" aria-pressed="false">Африка и Ближний Восток</button>
+              </div>
+            </section>
+
+            <section class="laser-calculator__mobile-group" aria-labelledby="laser-calculator-mobile-width">
+              <h4 class="laser-calculator__mobile-group-title" id="laser-calculator-mobile-width">Ширина:</h4>
+              <div class="laser-calculator__mobile-options laser-calculator__mobile-options--compact" role="group" aria-label="Ширина">
+                <button class="laser-calculator__mobile-option is-selected" type="button" aria-pressed="true">2 м</button>
+                <button class="laser-calculator__mobile-option" type="button" aria-pressed="false">4 м</button>
+                <button class="laser-calculator__mobile-option" type="button" aria-pressed="false" data-extra-option hidden>4 м</button>
+              </div>
+              <button class="laser-calculator__mobile-more" type="button" aria-expanded="false">Показать еще
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+            </section>
+
+            <section class="laser-calculator__mobile-group" aria-labelledby="laser-calculator-mobile-height">
+              <h4 class="laser-calculator__mobile-group-title" id="laser-calculator-mobile-height">Высота:</h4>
+              <div class="laser-calculator__mobile-options laser-calculator__mobile-options--compact" role="group" aria-label="Высота">
+                <button class="laser-calculator__mobile-option is-selected" type="button" aria-pressed="true">2 м</button>
+                <button class="laser-calculator__mobile-option" type="button" aria-pressed="false">4 м</button>
+                <button class="laser-calculator__mobile-option" type="button" aria-pressed="false" hidden>4 м</button>
+              </div>
+              <button class="laser-calculator__mobile-more" type="button" aria-expanded="false">Показать еще
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+            </section>
+          </div>
+
+          <div class="laser-calculator__mobile-dialog-footer">
+            <button class="laser-calculator__mobile-back" type="button">Назад</button>
+          </div>
+        </div>
       </div>
 
       <div class="laser-calculator__table-wrap">
