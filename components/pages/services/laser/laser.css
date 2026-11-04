@@ -487,12 +487,13 @@
 
 .laser-process__number {
   flex: 0 0 auto;
-  align-self: center;
+  align-self: flex-end;
+  margin-top: auto;
   color: #324c8833;
   font-family: 'Onest-SemiBold', sans-serif;
   font-size: 120px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1;
   white-space: nowrap;
   pointer-events: none;
 }
@@ -578,8 +579,6 @@
   }
 
   .laser-process__number {
-    align-self: flex-end;
-    margin-top: auto;
     font-size: 50px;
   }
 }
