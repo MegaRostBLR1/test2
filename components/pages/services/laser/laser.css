@@ -1,13 +1,5 @@
-
-
-
-
-
-
-\n\n/* Калькулятор для резки металла — Figma 1857:33464 / 35121 / 36851 / 38627. */
 .laser-calculator {
-  width: 100%;
-  padding: 0 10px 10px;
+  margin: 0 5px 5px;
   background: #f5f8f7;
 }
 
@@ -17,7 +9,7 @@
   gap: 20px;
   width: 100%;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 30px;
   background: #ffffff;
 }
 
@@ -1125,23 +1117,8 @@
   }
 }
 
-/* Tablet frame 1024 px — Figma 1857:37050. */
-
-
-
-
-
-
-
-/* Mobile frame 360 px — Figma 1857:38832. Overrides are scoped to this section. */
-
-
-
-/* Секция «Ультросовременное оборудование», Figma 1857:35386.
-   Единая fluid-геометрия для desktop 1440 и 1920 px. */
 .laser-equipment {
   margin: 0 0.2778rem 0.2778rem;
-  padding: 0.5556rem;
   border-radius: 2.2222rem;
   background: #F5F8F7;
 }
@@ -1454,10 +1431,9 @@
 
 /* Этапы работы — Figma node 1857:33415, desktop 1920 px. */
 .laser-process {
-  width: calc(100% - 20px);
-  margin: 0 auto 10px;
+  margin: 0 5px 5px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 30px;
   background: #ffffff;
 }
 
@@ -1467,7 +1443,7 @@
   gap: 36px;
   width: 100%;
   padding: 48px 40px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .laser-process__header {
@@ -1562,15 +1538,14 @@
 
 /* Секция «Работать с нами», Figma 1857:35402. Общая fluid-геометрия для desktop 1440/1920 px. */
 .laser-work-with-us {
-  padding: 0 0.2778rem 0.2778rem;
+  margin: 0 0.2778rem 0.2778rem;
   border-radius: 1.1111rem;
   background: #F5F8F7;
 }
 
 .laser-work-with-us__frame {
   width: 100%;
-  border-radius: 0.5556rem;
-  background: #FFFFFF;
+  border-radius: 30px;
 }
 
 .laser-work-with-us__panel {
@@ -1580,9 +1555,8 @@
   gap: 1.6667rem;
   width: 100%;
   min-width: 0;
-  padding: 4.4444rem 2.7778rem 0.2778rem;
+  padding: 4.4444rem 2.7778rem;
   border-radius: 1.1111rem;
-  background: #FFFFFF;
 }
 
 .laser-work-with-us__header {
@@ -1770,11 +1744,8 @@
 
 
 
-
-
-
 .laser-benefits {
-  padding: 0 0.5556rem 0.5556rem;
+  margin: 0 5px 5px;
   background: #f5f8f7;
 }
 
@@ -1783,8 +1754,8 @@
   flex-direction: column;
   gap: 24px;
   width: 100%;
-  padding: 0 40px 40px;
-  border-radius: 10px;
+  padding: 40px;
+  border-radius: 30px;
   background: #ffffff;
 }
 
@@ -1794,7 +1765,6 @@
   align-items: center;
   gap: 24px;
   width: 100%;
-  padding: 20px 0 0;
 }
 
 .laser-benefits__title {
@@ -2062,7 +2032,7 @@
 
 .laser-work-with-us__panel {
     gap: 30px;
-    padding: 40px 40px 5px;
+    padding: 40px;
   }
 
   .laser-work-with-us__title {
@@ -2282,7 +2252,7 @@
 
   .laser-work-with-us__panel {
     gap: 18px;
-    padding: 20px 10px 5px;
+    padding: 20px 10px;
     border-radius: 10px;
   }
 
@@ -2437,7 +2407,7 @@
 /* Отдельная секция «Преимущества лазерной резки» — Figma 1857:33746 / 35403 / 37163 / 38941. */
 .laser-cutting-advantages {
   width: 100%;
-  padding: 0 10px 10px;
+  margin: 0 5px 5px;
   background: #f5f8f7;
 }
 .laser-cutting-advantages__panel {
