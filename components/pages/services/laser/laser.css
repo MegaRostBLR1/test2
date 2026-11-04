@@ -2076,10 +2076,21 @@
   }
 
   .laser-work-with-us__cards {
+    display: flex;
     gap: 10px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .laser-work-with-us__cards::-webkit-scrollbar {
+    display: none;
   }
 
   .laser-work-with-us__card {
+    flex: 0 0 calc(50% - 5px);
+    scroll-snap-align: start;
     gap: 30px;
     padding: 20px;
   }
