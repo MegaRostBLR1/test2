@@ -603,11 +603,25 @@
   background: #fff500;
 }
 
-.laser-materials__toggle-icon img {
+.laser-materials__toggle-icon svg {
   display: block;
   width: 1.3333rem;
   height: 1.3333rem;
   object-fit: contain;
+}
+
+.laser-materials__toggle-icon svg path {
+  fill: currentColor;
+}
+
+.laser-materials__toggle-plus,
+.laser-materials__toggle[aria-expanded="true"] .laser-materials__toggle-minus {
+  display: block;
+}
+
+.laser-materials__toggle-minus,
+.laser-materials__toggle[aria-expanded="true"] .laser-materials__toggle-plus {
+  display: none;
 }
 
 .laser-materials__divider {
@@ -782,12 +796,12 @@
     height: 30px;
   }
 
-  .laser-materials__toggle-icon img {
+  .laser-materials__toggle-icon svg {
     width: 18px;
     height: 18px;
   }
 
-  .laser-materials__item:nth-child(2) .laser-materials__toggle-icon img {
+  .laser-materials__item:nth-child(2) .laser-materials__toggle-icon svg {
     width: 24px;
     height: 24px;
   }
@@ -944,7 +958,7 @@
     height: 1.7778rem;
   }
 
-  .laser-materials__toggle-icon img {
+  .laser-materials__toggle-icon svg {
     width: 1.1111rem;
     height: 1.1111rem;
   }
@@ -1059,12 +1073,12 @@
     height: 30px;
   }
 
-  .laser-materials__toggle-icon img {
+  .laser-materials__toggle-icon svg {
     width: 18px;
     height: 18px;
   }
 
-  .laser-materials__item:nth-child(2) .laser-materials__toggle-icon img {
+  .laser-materials__item:nth-child(2) .laser-materials__toggle-icon svg {
     width: 24px;
     height: 24px;
   }
