@@ -441,9 +441,9 @@
 }
 
 .laser-process__card {
-  position: relative;
   display: flex;
   align-items: center;
+  gap: 12px;
   min-width: 0;
   min-height: 240px;
   padding: 36px;
@@ -457,11 +457,10 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 16px;
+  flex: 1 1 auto;
   width: 100%;
   min-width: 0;
   min-height: 168px;
-  position: relative;
-  z-index: 1;
 }
 
 .laser-process__card-title {
@@ -487,9 +486,8 @@
 }
 
 .laser-process__number {
-  position: absolute;
-  top: 80px;
-  right: 36px;
+  flex: 0 0 auto;
+  align-self: center;
   color: #324c8833;
   font-family: 'Onest-SemiBold', sans-serif;
   font-size: 120px;
@@ -529,8 +527,6 @@
   }
 
   .laser-process__number {
-    top: 60px;
-    right: 20px;
     font-size: 100px;
   }
 }
@@ -557,6 +553,7 @@
   }
 
   .laser-process__card {
+    align-items: stretch;
     height: 160px;
     min-height: 160px;
     padding: 18px;
@@ -581,9 +578,8 @@
   }
 
   .laser-process__number {
-    top: auto;
-    right: 18px;
-    bottom: 18px;
+    align-self: flex-end;
+    margin-top: auto;
     font-size: 50px;
   }
 }
