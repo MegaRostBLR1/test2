@@ -9,15 +9,11 @@ function initLaser() {
                     item.setAttribute('aria-expanded', 'false');
                     const panel = root.querySelector(`#${item.getAttribute('aria-controls')}`);
                     if (panel) panel.hidden = true;
-                    const icon = item.querySelector('.laser-materials__toggle-icon img');
-                    if (icon) icon.src = 'https://www.figma.com/api/mcp/asset/529bb6bf-2950-4bc3-a485-eb3e3f21fa62/dcfb2.svg';
                 });
                 if (!wasExpanded) {
                     toggle.setAttribute('aria-expanded', 'true');
                     const panel = root.querySelector(`#${toggle.getAttribute('aria-controls')}`);
                     if (panel) panel.hidden = false;
-                    const icon = toggle.querySelector('.laser-materials__toggle-icon img');
-                    if (icon) icon.src = 'https://www.figma.com/api/mcp/asset/529bb6bf-2950-4bc3-a485-eb3e3f21fa62/33e3b.svg';
                 }
             });
         });
