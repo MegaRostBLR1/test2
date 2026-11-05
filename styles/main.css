@@ -12418,8 +12418,9 @@ h2 {
 .services-list__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 25.7778rem), 1fr));
+  grid-auto-rows: 1fr;
   gap: 0.2778rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .service-card {
