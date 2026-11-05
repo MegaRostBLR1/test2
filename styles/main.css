@@ -12425,7 +12425,6 @@ h2 {
 .service-card {
   display: flex;
   gap: 0.8889rem;
-  width: auto;
   height: stretch;
   padding: 0.5556rem;
   border-radius: 0.5556rem;
@@ -12555,7 +12554,6 @@ h2 {
   .service-card {
     flex-direction: column;
     gap: 0.5556rem;
-    width: 100%;
     min-height: 0;
     padding: 0.5556rem;
   }
@@ -12649,17 +12647,9 @@ h2 {
     line-height: 1.5714;
   }
 
-  .services-list {
-    padding: 0 0.2778rem 0.5556rem;
-  }
-
   .services-list__panel {
     padding: 0.2222rem;
     border-radius: 0.5556rem;
-  }
-
-  .services-list__container {
-    max-width: none;
   }
 
   .services-list__more {
