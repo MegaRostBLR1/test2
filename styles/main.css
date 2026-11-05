@@ -5563,6 +5563,7 @@ h2 {
   font-weight: 600;
   line-height: 1.6;
   text-transform: uppercase;
+  transition: background-color 0.1s ease;
 }
 
 .home-advantages__button:hover {
@@ -12375,7 +12376,6 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  transition: background-color 0.1s ease;
 }
 
 .services__category:hover {
@@ -12391,71 +12391,9 @@ h2 {
   outline-offset: 0.1111rem;
 }
 
-@media screen and (max-width: 1300px) {
-  .services__panel.section__container {
-    padding: 2.2222rem;
-  }
 
-  .services__container.container {
-    gap: 1.1111rem;
-  }
 
-  .services__category {
-    min-height: 3rem;
-    padding: 0.6667rem 0.7778rem;
-    font-size: 0.8889rem;
-  }
-}
 
-@media screen and (max-width: 680px) {
-  .services__panel.section__container {
-    padding: 0.7778rem;
-    border-radius: 1.1111rem;
-  }
-
-  .services__container.container {
-    gap: 1.1111rem;
-  }
-
-  .services__breadcrumbs {
-    gap: 1.1111rem;
-    font-size: 0.7778rem;
-    line-height: 1.8571;
-  }
-
-  .services__breadcrumb-separator {
-    font-size: 1.1111rem;
-  }
-
-  .services__title {
-    gap: 0;
-    font-size: 1.3333rem;
-    line-height: 0;
-  }
-
-  .services__title-text {
-    line-height: 1.3333;
-  }
-
-  .services__count {
-    font-size: 2rem;
-    line-height: 0;
-  }
-
-  .services__categories {
-    gap: 0.2222rem;
-    padding: 0.2222rem;
-    border-radius: 0.5556rem;
-  }
-
-  .services__category {
-    min-height: 2.3333rem;
-    padding: 0.5556rem 0.7778rem;
-    border-radius: 0.7778rem;
-    font-size: 0.7778rem;
-    line-height: 1.5714;
-  }
-}
 
 
 .services-list {
@@ -12564,7 +12502,14 @@ h2 {
   display: none;
 }
 
+
 @media screen and (max-width: 1300px) {
+  .services__category {
+    min-height: 3rem;
+    padding: 0.6667rem 0.7778rem;
+    font-size: 0.8889rem;
+  }
+
   .services-list__panel {
     padding: 1.3333rem;
   }
@@ -12656,6 +12601,54 @@ h2 {
 }
 
 @media screen and (max-width: 680px) {
+  .services__panel.section__container {
+    padding: 0.7778rem;
+    border-radius: 1.1111rem;
+  }
+
+  .services__container.container {
+    gap: 1.1111rem;
+  }
+
+  .services__breadcrumbs {
+    gap: 1.1111rem;
+    font-size: 0.7778rem;
+    line-height: 1.8571;
+  }
+
+  .services__breadcrumb-separator {
+    font-size: 1.1111rem;
+  }
+
+  .services__title {
+    gap: 0;
+    font-size: 1.3333rem;
+    line-height: 0;
+  }
+
+  .services__title-text {
+    line-height: 1.3333;
+  }
+
+  .services__count {
+    font-size: 2rem;
+    line-height: 0;
+  }
+
+  .services__categories {
+    gap: 0.2222rem;
+    padding: 0.2222rem;
+    border-radius: 0.5556rem;
+  }
+
+  .services__category {
+    min-height: 2.3333rem;
+    padding: 0.5556rem 0.7778rem;
+    border-radius: 0.7778rem;
+    font-size: 0.7778rem;
+    line-height: 1.5714;
+  }
+
   .services-list {
     padding: 0 0.2778rem 0.5556rem;
   }
