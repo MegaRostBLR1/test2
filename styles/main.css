@@ -12435,7 +12435,8 @@ h2 {
   display: block;
   flex: 0 0 9.4444rem;
   width: 9.4444rem;
-  height: 11.1111rem;
+  height: auto;
+  align-self: stretch;
   object-fit: cover;
 }
 
