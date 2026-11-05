@@ -12315,9 +12315,8 @@ h2 {
 
 .services__title {
   display: flex;
-  align-items: baseline;
   justify-content: center;
-  gap: 0;
+  gap: 10px;
   margin: 0;
   color: #4d4d4d;
   font-family: "Onest-Medium", sans-serif;
@@ -12616,18 +12615,8 @@ h2 {
     font-size: 1.1111rem;
   }
 
-  .services__title {
-    gap: 0;
-    line-height: 0;
-  }
-
   .services__title-text {
     line-height: 1.7778rem;
-  }
-
-  .services__count {
-    font-size: 2rem;
-    line-height: 2.4444rem;
   }
 
   .services__categories {
