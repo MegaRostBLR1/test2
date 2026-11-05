@@ -12479,7 +12479,7 @@ h2 {
 
 .services-list__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25.7778rem), 1fr));
   gap: 0.2778rem;
   align-items: start;
 }
@@ -12487,6 +12487,8 @@ h2 {
 .service-card {
   display: flex;
   gap: 0.8889rem;
+  width: auto;
+  height: stretch;
   padding: 0.5556rem;
   border-radius: 0.5556rem;
   background-color: #4d4d4d0a;
@@ -12542,6 +12544,7 @@ h2 {
 
 .service-card__button.btn {
   flex: 0 0 auto;
+  transition: none;
   min-height: 2.8889rem;
   padding: 0.7778rem 2.6667rem;
   border-radius: 1.1111rem;
@@ -12550,20 +12553,6 @@ h2 {
   font-weight: 600;
   line-height: 1.3333rem;
   white-space: nowrap;
-}
-
-.services-list__container {
-  max-width: 99.7778rem;
-}
-
-.services-list__grid {
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25.7778rem), 1fr));
-  gap: 0.2778rem;
-}
-
-.service-card {
-  height: stretch;
-  width: auto;
 }
 
 .services-list__more {
@@ -12704,11 +12693,6 @@ h2 {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .service-card__button.btn {
-    transition: none;
-  }
-}
 /* Price */
 .prices {
   margin-top: 5px;
