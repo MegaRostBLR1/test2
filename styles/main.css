@@ -12505,23 +12505,6 @@ h2 {
 }
 
 
-@media screen and (max-width: 1100px) {
-  .services__title {
-    font-family: "Onest-SemiBold", sans-serif;
-    font-size: 1.3333rem;
-    font-weight: 600;
-  }
-
-  .services__title-text,
-  .services__count {
-    line-height: 1.7778rem;
-  }
-
-  .services__count {
-    font-size: 1.3333rem;
-  }
-}
-
 @media screen and (max-width: 1300px) {
   .services__category {
     min-height: 3rem;
@@ -12540,6 +12523,23 @@ h2 {
 
   .service-card__title {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .services__title {
+    font-family: "Onest-SemiBold", sans-serif;
+    font-size: 1.3333rem;
+    font-weight: 600;
+  }
+
+  .services__title-text,
+  .services__count {
+    line-height: 1.7778rem;
+  }
+
+  .services__count {
+    font-size: 1.3333rem;
   }
 }
 
