@@ -268,7 +268,8 @@
 }
 
 .footer__row--contacts {
-  grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, 454px));
+  grid-template-columns: minmax(0, 586px) minmax(0, 511px) minmax(0, 511px);
+  justify-content: space-between;
   column-gap: 48px;
   align-items: end;
 }
@@ -450,7 +451,7 @@
   }
 
   .footer__row--contacts {
-    grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 36px;
     align-items: end;
   }
@@ -926,8 +927,17 @@
 
   .footer__contacts {
     display: grid;
-    row-gap: 24px;
+    row-gap: 14px;
     min-width: 0;
+  }
+
+  .footer__contacts + .footer__contacts {
+    row-gap: 24px;
+  }
+
+  .footer__contacts + .footer__contacts .footer__contact:last-child .footer__contact-icon img {
+    width: 24px;
+    height: 24px;
   }
 
   .footer__contact {
@@ -980,8 +990,8 @@
   }
 
   .footer-accordion__title {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 26px;
   }
 
   .footer-accordion__icon {
@@ -1010,8 +1020,8 @@
   }
 
   .footer__subscribe {
-    width: 100%;
-    max-width: none;
+    width: 286px;
+    max-width: 100%;
   }
 
   .footer__subscribe-title {
@@ -1021,7 +1031,8 @@
   }
 
   .footer__subscribe-btn {
-    width: 100%;
+    width: 266px;
+    max-width: 100%;
     margin-bottom: 18px;
     padding: 16px 20px;
     font-size: 14px;
@@ -1052,7 +1063,7 @@
     grid-column: auto;
     grid-row: auto;
     justify-self: start;
-    width: 174px;
+    width: 133px;
   }
 }
 
