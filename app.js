@@ -37,7 +37,7 @@ const APP_CONFIG = {
     'services': {
       title: 'Услуги',
       html: './components/pages/services/services.html',
-      css: null,
+      css: './components/pages/services/services.css',
       js: './components/pages/services/services.js',
       init: 'initServices'
     },
@@ -323,9 +323,7 @@ async function renderPage(pageName) {
     }
 
     main.innerHTML = html;
-    if (page.css) {
-      loadStylesheet(page.css);
-    }
+    loadStylesheet(page.css);
     await loadScript(page.js);
 
     if (requestId !== renderRequestId) {
