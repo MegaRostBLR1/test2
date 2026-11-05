@@ -204,9 +204,8 @@
   line-height: 1.1111rem;
 }
 
-/* Footer layout: CSS Grid with independent responsive rows. */
-@media (min-width: 1441px) {
-  .app-footer {
+/* Desktop layout. Responsive overrides are mobile-first and ordered by max-width. */
+.app-footer {
     padding: 40px 0 60px;
   }
 
@@ -384,10 +383,12 @@
   .footer__badge {
     width: 174px;
   }
-}
+
+
+
 
 /* 1440 px */
-@media (min-width: 1301px) and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .app-footer {
     padding: 40px 0 60px;
     border-radius: 21px 21px 0 0;
@@ -575,7 +576,7 @@
 }
 
 /* 1024 px */
-@media (min-width: 681px) and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .app-footer {
     padding: 30px 0 60px;
     border-radius: 21px 21px 0 0;
@@ -794,7 +795,7 @@
   }
 }
 
-@media (min-width: 681px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .footer__row--top {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -814,7 +815,7 @@
 }
 
 /* 360 px */
-@media (max-width: 680px) {
+@media screen and (max-width: 680px) {
   .app-footer {
     padding: 30px 0 36px;
     border-radius: 21px 21px 0 0;
@@ -1051,6 +1052,8 @@
   }
 
   .footer__badge {
+    grid-column: auto;
+    grid-row: auto;
     justify-self: start;
     width: 174px;
   }
