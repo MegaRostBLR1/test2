@@ -12392,12 +12392,8 @@ h2 {
 
 
 
-
-
-
 .services-list {
-  width: 100%;
-  padding: 0 0.2778rem 0.5556rem;
+  margin: 5px;
   background-color: #f5f8f7;
 }
 
@@ -12439,7 +12435,7 @@ h2 {
   align-self: stretch;
   object-fit: cover;
   border-radius: 10px;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.1111rem), calc(100% - 1.3889rem) 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3.1111rem), calc(100% - 3.3889rem) 100%, 0 100%);
 }
 
 .service-card__content {
