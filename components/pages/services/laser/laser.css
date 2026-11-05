@@ -1380,6 +1380,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   padding-top: 0.5556rem;
@@ -2406,7 +2407,6 @@
 
 /* Отдельная секция «Преимущества лазерной резки» — Figma 1857:33746 / 35403 / 37163 / 38941. */
 .laser-cutting-advantages {
-  width: 100%;
   margin: 0 5px 5px;
   background: #f5f8f7;
 }
