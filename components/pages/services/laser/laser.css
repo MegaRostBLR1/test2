@@ -178,7 +178,7 @@
 
 @media screen and (max-width: 1100px) {
 
-.laser-calculator__title {
+  .laser-calculator__title {
     font-size: 24px;
     line-height: 32px;
   }
@@ -193,11 +193,12 @@
 
   .laser-calculator__option {
     font-size: 16px;
-  }}
+  }
+}
 
 @media screen and (max-width: 680px) {
 
-.laser-calculator {
+  .laser-calculator {
     padding: 0 10px;
   }
 
@@ -260,7 +261,8 @@
     font-size: 14px;
     line-height: 1.6;
     overflow-wrap: anywhere;
-  }}
+  }
+}
 
 
 /* Mobile calculator settings dialog */
@@ -863,6 +865,7 @@
 }
 
 @media screen and (max-width: 760px) {
+
   /* Restore the base layout below the tablet breakpoint before mobile overrides. */
   .laser-materials__panel {
     align-items: center;
@@ -1196,7 +1199,7 @@
 
 @media screen and (max-width: 1100px) {
 
-.laser-equipment__panel {
+  .laser-equipment__panel {
     gap: 20px;
     padding: 40px;
   }
@@ -1213,11 +1216,12 @@
 
   .laser-equipment__visual {
     max-width: none;
-  }}
+  }
+}
 
 @media screen and (max-width: 680px) {
 
-.laser-equipment {
+  .laser-equipment {
     padding: 0.2778rem;
     border-radius: 1.1111rem;
   }
@@ -1246,7 +1250,8 @@
   .laser-equipment__title {
     font-size: 20px;
     line-height: 28px;
-  }}
+  }
+}
 
 /* Страница услуги: лазерная резка металла */
 .laser {
@@ -1895,7 +1900,7 @@
 
 
 @media screen and (max-width: 1600px) {
-.laser-benefits__title {
+  .laser-benefits__title {
     font-size: 36px;
     line-height: 44px;
   }
@@ -1910,7 +1915,7 @@
 }
 
 @media screen and (max-width: 1300px) {
-.laser__breadcrumbs {
+  .laser__breadcrumbs {
     gap: 0.7778rem;
     font-size: 0.8889rem;
     line-height: 1.5;
@@ -1957,7 +1962,7 @@
 }
 
 @media screen and (max-width: 1100px) {
-.laser__breadcrumbs {
+  .laser__breadcrumbs {
     gap: 1.1111rem;
     min-height: 3.4444rem;
     font-size: 0.8889rem;
@@ -2017,7 +2022,7 @@
     line-height: 1.4444rem;
   }
 
-.laser-process__title {
+  .laser-process__title {
     font-size: 48px;
     line-height: normal;
   }
@@ -2044,7 +2049,7 @@
     font-size: 100px;
   }
 
-.laser-work-with-us__panel {
+  .laser-work-with-us__panel {
     gap: 30px;
     padding: 40px;
   }
@@ -2093,7 +2098,7 @@
     line-height: 1.5;
   }
 
-.laser-benefits__title {
+  .laser-benefits__title {
     font-size: 24px;
     line-height: 32px;
   }
@@ -2116,7 +2121,7 @@
 }
 
 @media screen and (max-width: 680px) {
-.laser {
+  .laser {
     padding-bottom: 1.1111rem;
   }
 
@@ -2213,7 +2218,7 @@
     line-height: 1.4444rem;
   }
 
-.laser-process {
+  .laser-process {
     padding: 0;
   }
 
@@ -2259,7 +2264,7 @@
     font-size: 50px;
   }
 
-.laser-work-with-us {
+  .laser-work-with-us {
     padding: 5px 5px 5px;
     border-radius: 10px;
   }
@@ -2353,7 +2358,7 @@
     height: 30px;
   }
 
-.laser-benefits {
+  .laser-benefits {
     padding: 0 10px 10px;
     background: #ffffff;
   }
@@ -2423,6 +2428,7 @@
   margin: 0 5px 5px;
   background: #f5f8f7;
 }
+
 .laser-cutting-advantages__panel {
   display: flex;
   flex-direction: column;
@@ -2433,6 +2439,7 @@
   border-radius: 30px;
   background: #ffffff;
 }
+
 .laser-cutting-advantages__header {
   display: flex;
   flex-direction: column;
@@ -2440,6 +2447,7 @@
   gap: 14px;
   width: 100%;
 }
+
 .laser-cutting-advantages__title {
   margin: 0;
   color: #4d4d4d;
@@ -2450,6 +2458,7 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 .laser-cutting-advantages__tabs {
   display: none;
   align-items: center;
@@ -2463,8 +2472,15 @@
   line-height: 1.6;
   text-transform: uppercase;
 }
-.laser-cutting-advantages__tab { white-space: nowrap; }
-.laser-cutting-advantages__tab--inactive { color: #5d5d5d4d; }
+
+.laser-cutting-advantages__tab {
+  white-space: nowrap;
+}
+
+.laser-cutting-advantages__tab--inactive {
+  color: #5d5d5d4d;
+}
+
 .laser-cutting-advantages__tab-separator {
   flex: 0 0 4px;
   width: 4px;
@@ -2472,6 +2488,7 @@
   border-radius: 50%;
   background: #5d5d5d;
 }
+
 .laser-cutting-advantages__layout {
   display: flex;
   align-items: flex-start;
@@ -2480,6 +2497,7 @@
   width: 100%;
   max-width: 1508px;
 }
+
 .laser-cutting-advantages__list {
   display: flex;
   flex: 1 1 0;
@@ -2487,13 +2505,18 @@
   gap: 26px;
   min-width: 0;
 }
+
 .laser-cutting-advantages__item {
   display: flex;
   flex-direction: column;
   gap: 20px;
   min-width: 0;
 }
-.laser-cutting-advantages__item-heading { margin: 0; }
+
+.laser-cutting-advantages__item-heading {
+  margin: 0;
+}
+
 .laser-cutting-advantages__toggle {
   display: flex;
   align-items: center;
@@ -2512,11 +2535,13 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .laser-cutting-advantages__toggle:focus-visible,
 .laser-cutting-advantages__zoom:focus-visible {
   outline: 2px solid #324c88;
   outline-offset: 3px;
 }
+
 .laser-cutting-advantages__toggle-icon {
   display: flex;
   flex: 0 0 40px;
@@ -2527,12 +2552,27 @@
   border-radius: 50%;
   background: #fff500;
 }
-.laser-cutting-advantages__toggle-icon svg { display: block; width: 24px; height: 24px; }
-.laser-cutting-advantages__toggle-icon svg path { fill: currentColor; }
+
+.laser-cutting-advantages__toggle-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.laser-cutting-advantages__toggle-icon svg path {
+  fill: currentColor;
+}
+
 .laser-cutting-advantages__toggle-plus,
-.laser-cutting-advantages__toggle[aria-expanded="true"] .laser-cutting-advantages__toggle-minus { display: block; }
+.laser-cutting-advantages__toggle[aria-expanded="true"] .laser-cutting-advantages__toggle-minus {
+  display: block;
+}
+
 .laser-cutting-advantages__toggle-minus,
-.laser-cutting-advantages__toggle[aria-expanded="true"] .laser-cutting-advantages__toggle-plus { display: none; }
+.laser-cutting-advantages__toggle[aria-expanded="true"] .laser-cutting-advantages__toggle-plus {
+  display: none;
+}
+
 .laser-cutting-advantages__description {
   display: flex;
   flex-direction: column;
@@ -2540,7 +2580,11 @@
   gap: 18px;
   padding-left: 64px;
 }
-.laser-cutting-advantages__description[hidden] { display: none; }
+
+.laser-cutting-advantages__description[hidden] {
+  display: none;
+}
+
 .laser-cutting-advantages__description p {
   margin: 0;
   color: #4d4d4dcc;
@@ -2549,6 +2593,7 @@
   font-weight: 400;
   line-height: 1.5;
 }
+
 .laser-cutting-advantages__more.btn {
   min-height: 0;
   padding: 18px 30px;
@@ -2556,7 +2601,13 @@
   font-size: 15px;
   line-height: 1.6;
 }
-.laser-cutting-advantages__divider { width: 100%; height: 1px; background: #0000000d; }
+
+.laser-cutting-advantages__divider {
+  width: 100%;
+  height: 1px;
+  background: #0000000d;
+}
+
 .laser-cutting-advantages__visual {
   position: relative;
   display: flex;
@@ -2571,7 +2622,11 @@
   border-radius: 30px;
   background: #ffffff;
 }
-.laser-cutting-advantages__visual--tablet { display: none; }
+
+.laser-cutting-advantages__visual--tablet {
+  display: none;
+}
+
 .laser-cutting-advantages__image {
   display: block;
   width: 100%;
@@ -2579,6 +2634,7 @@
   border-radius: 26px;
   object-fit: cover;
 }
+
 .laser-cutting-advantages__zoom {
   position: absolute;
   right: 10px;
@@ -2597,23 +2653,76 @@
   box-shadow: inset 0 0 60px #ffffff08;
   cursor: pointer;
 }
-.laser-cutting-advantages__zoom svg { display: block; width: 36px; height: 36px; }
+
+.laser-cutting-advantages__zoom svg {
+  display: block;
+  width: 36px;
+  height: 36px;
+}
 
 @media screen and (max-width: 1600px) {
-  .laser-cutting-advantages__title { font-size: 36px; line-height: 44px; }
+  .laser-cutting-advantages__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
 }
+
 @media screen and (max-width: 1100px) {
-  .laser-cutting-advantages__panel { gap: 25px; padding: 40px; border-radius: 30px; }
-  .laser-cutting-advantages__title { font-size: 24px; line-height: 32px; }
-  .laser-cutting-advantages__tabs { display: flex; }
-  .laser-cutting-advantages__layout { display: block; width: 100%; }
-  .laser-cutting-advantages__list { gap: 26px; }
-  .laser-cutting-advantages__toggle { gap: 24px; font-size: 18px; }
-  .laser-cutting-advantages__toggle-icon { flex-basis: 30px; width: 30px; height: 30px; }
-  .laser-cutting-advantages__description { gap: 14px; padding-left: 54px; }
-  .laser-cutting-advantages__description p { font-size: 16px; }
-  .laser-cutting-advantages__more.btn { min-height: 48px; padding: 12px 30px; border-radius: 10px; font-size: 14px; }
-  .laser-cutting-advantages__visual--desktop { display: none; }
+  .laser-cutting-advantages__panel {
+    gap: 25px;
+    padding: 40px;
+    border-radius: 30px;
+  }
+
+  .laser-cutting-advantages__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .laser-cutting-advantages__tabs {
+    display: flex;
+  }
+
+  .laser-cutting-advantages__layout {
+    display: block;
+    width: 100%;
+  }
+
+  .laser-cutting-advantages__list {
+    gap: 26px;
+  }
+
+  .laser-cutting-advantages__toggle {
+    gap: 24px;
+    font-size: 18px;
+  }
+
+  .laser-cutting-advantages__toggle-icon {
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .laser-cutting-advantages__description {
+    gap: 14px;
+    padding-left: 54px;
+  }
+
+  .laser-cutting-advantages__description p {
+    font-size: 16px;
+  }
+
+  .laser-cutting-advantages__more.btn {
+    min-height: 48px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  .laser-cutting-advantages__visual--desktop {
+    display: none;
+  }
+
   .laser-cutting-advantages__visual--tablet {
     display: flex;
     flex: 0 0 auto;
@@ -2623,16 +2732,61 @@
     border-radius: 30px;
   }
 }
+
 @media screen and (max-width: 680px) {
-  .laser-cutting-advantages { padding: 0 10px; }
-  .laser-cutting-advantages__panel { gap: 25px; padding: 20px 10px 10px; border-radius: 30px; }
-  .laser-cutting-advantages__title { font-size: 20px; line-height: 28px; }
-  .laser-cutting-advantages__tabs { gap: 20px; padding: 4px; font-size: 14px; }
-  .laser-cutting-advantages__toggle { gap: 14px; font-size: 16px; }
-  .laser-cutting-advantages__description { gap: 14px; padding-left: 44px; }
-  .laser-cutting-advantages__description p { font-size: 14px; }
-  .laser-cutting-advantages__more.btn { min-height: 48px; padding: 12px 30px; font-size: 14px; }
-  .laser-cutting-advantages__visual--tablet { height: auto; aspect-ratio: 710 / 480; }
-  .laser-cutting-advantages__zoom { width: 44px; height: 44px; }
-  .laser-cutting-advantages__zoom svg { width: 24px; height: 24px; }
+  .laser-cutting-advantages {
+    padding: 0 10px;
+  }
+
+  .laser-cutting-advantages__panel {
+    gap: 25px;
+    padding: 20px 10px 10px;
+    border-radius: 30px;
+  }
+
+  .laser-cutting-advantages__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .laser-cutting-advantages__tabs {
+    gap: 20px;
+    padding: 4px;
+    font-size: 14px;
+  }
+
+  .laser-cutting-advantages__toggle {
+    gap: 14px;
+    font-size: 16px;
+  }
+
+  .laser-cutting-advantages__description {
+    gap: 14px;
+    padding-left: 44px;
+  }
+
+  .laser-cutting-advantages__description p {
+    font-size: 14px;
+  }
+
+  .laser-cutting-advantages__more.btn {
+    min-height: 48px;
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+
+  .laser-cutting-advantages__visual--tablet {
+    height: auto;
+    aspect-ratio: 710 / 480;
+  }
+
+  .laser-cutting-advantages__zoom {
+    width: 44px;
+    height: 44px;
+  }
+
+  .laser-cutting-advantages__zoom svg {
+    width: 24px;
+    height: 24px;
+  }
 }
