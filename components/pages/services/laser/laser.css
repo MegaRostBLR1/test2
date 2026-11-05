@@ -274,7 +274,6 @@
   inset: 0;
   display: none;
   flex-direction: column;
-  padding: 2px;
   background: rgba(0, 0, 0, 0.35);
 }
 
@@ -295,6 +294,20 @@
   gap: 18px;
   padding: 14px;
   border-bottom: 2px solid #ffffff;
+  position: relative;
+}
+
+.laser-calculator__mobile-dialog-header::before {
+  content: '';
+  width: 57px;
+  height: 3px;
+  background: #2555BD;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .laser-calculator__mobile-dialog-title {
@@ -337,7 +350,7 @@
   flex-direction: column;
   gap: 14px;
   min-height: 0;
-  margin: 0;
+  margin: 0 2px;
   padding: 12px 28px 12px 14px;
   overflow-y: auto;
   border-radius: 10px;
