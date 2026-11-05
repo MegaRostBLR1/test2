@@ -12320,9 +12320,9 @@ h2 {
   gap: 0;
   margin: 0;
   color: #4d4d4d;
-  font-family: "Onest-SemiBold", sans-serif;
+  font-family: "Onest-Medium", sans-serif;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 0;
   text-align: center;
   text-transform: uppercase;
@@ -12331,15 +12331,15 @@ h2 {
 
 .services__title-text {
   font: inherit;
-  line-height: 1.2778;
+  line-height: normal;
 }
 
 .services__count {
   color: #324c88;
-  font-family: "Onest-SemiBold", sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.2222;
+  font-family: "Onest-Medium", sans-serif;
+  font-size: 1.935rem;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .services__categories {
@@ -12505,6 +12505,23 @@ h2 {
 }
 
 
+@media screen and (max-width: 1100px) {
+  .services__title {
+    font-family: "Onest-SemiBold", sans-serif;
+    font-size: 1.3333rem;
+    font-weight: 600;
+  }
+
+  .services__title-text,
+  .services__count {
+    line-height: 1.7778rem;
+  }
+
+  .services__count {
+    font-size: 1.3333rem;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .services__category {
     min-height: 3rem;
@@ -12601,17 +12618,16 @@ h2 {
 
   .services__title {
     gap: 0;
-    font-size: 1.3333rem;
     line-height: 0;
   }
 
   .services__title-text {
-    line-height: 1.3333;
+    line-height: 1.7778rem;
   }
 
   .services__count {
     font-size: 2rem;
-    line-height: 0;
+    line-height: 2.4444rem;
   }
 
   .services__categories {
