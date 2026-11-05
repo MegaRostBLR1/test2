@@ -12439,6 +12439,7 @@ h2 {
   height: auto;
   align-self: stretch;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .service-card__content {
