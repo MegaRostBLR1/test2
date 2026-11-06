@@ -360,12 +360,20 @@
           <div class="project-card__divider" aria-hidden="true"></div>
 
           <button class="video-trigger video-trigger--project" type="button" aria-label="Смотреть видео проекта">
-            <span class="video-trigger__play" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false">
-                <path d="m9 6 10 6-10 6V6Z" />
+            <span class="video-trigger__decoration" aria-hidden="true">
+              <span class="video-trigger__decoration-fill"></span>
+              <svg viewBox="0 0 200 200" focusable="false">
+                <rect x="29" y="29" width="142" height="142" rx="10" />
               </svg>
             </span>
-            <span class="video-trigger__label">Смотреть видео</span>
+            <span class="video-trigger__content">
+              <span class="video-trigger__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="m9 6 10 6-10 6V6Z" />
+                </svg>
+              </span>
+              <span class="video-trigger__label">Смотреть видео</span>
+            </span>
           </button>
 
           <nav class="slider-controls" aria-label="Навигация по слайдам">
@@ -1048,15 +1056,23 @@
       </div>
       <div class="home-about__mobile-video">
         <a class="video-trigger video-trigger--about" href="#/about" aria-label="Смотреть видео о заводе">
-          <span class="video-trigger__play" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path d="m9 6 10 6-10 6V6Z"></path>
+          <span class="video-trigger__decoration" aria-hidden="true">
+            <span class="video-trigger__decoration-fill"></span>
+            <svg viewBox="0 0 200 200" focusable="false">
+              <rect x="29" y="29" width="142" height="142" rx="10" />
             </svg>
           </span>
-          <span class="video-trigger__label">
-            Смотреть видео
-            <br />
-            о заводе
+          <span class="video-trigger__content">
+            <span class="video-trigger__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="m9 6 10 6-10 6V6Z"></path>
+              </svg>
+            </span>
+            <span class="video-trigger__label">
+              Смотреть видео
+              <br />
+              о заводе
+            </span>
           </span>
         </a>
       </div>
