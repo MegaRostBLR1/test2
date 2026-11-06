@@ -2885,7 +2885,7 @@ h2 {
 
 /* Контрольный tablet-frame Figma 1024 px: 1857:25447.
    Главная карточка занимает отдельный ряд; две дополнительные карточки
-   располагаются рядом ниже, как в макете. */
+   располагаются рядом ниже. На мобильных значения переопределяются ниже. */
 @media screen and (max-width: 1100px) {
   .home-projects__panel {
     padding: 40px;
@@ -3120,7 +3120,8 @@ h2 {
     gap: 14px;
   }
 
-  .project-card__arrow {
+  .project-card__arrow,
+  .home-projects__secondary-controls .project-card__arrow {
     flex-basis: 40px;
     width: 40px;
     height: 40px;
