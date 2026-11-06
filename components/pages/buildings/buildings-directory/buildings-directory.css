@@ -36,7 +36,6 @@
 }
 
 .buildings-directory__breadcrumb-link:focus-visible,
-.catalog-header__category:focus-visible,
 .buildings-directory__details:focus-visible,
 .buildings-directory__compare:focus-visible {
   outline: 2px solid #324c88;
@@ -65,37 +64,11 @@
   color: #324c88;
 }
 
-.catalog-header__categories {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 4px;
-  max-width: 100%;
-  padding: 4px;
-  border-radius: 10px;
-  background: #f5f8f7;
-}
 
-.catalog-header__category {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 18px;
-  border-radius: 14px;
-  color: #5d5d5d;
-  font-family: "Onest-SemiBold", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.6;
-  text-align: center;
-  text-transform: uppercase;
-  transition: background-color 0.15s ease;
-}
 
-.catalog-header__category.is-active {
-  background: #fff500;
-}
+
+
+
 
 .buildings-directory__grid {
   display: grid;
@@ -236,9 +209,7 @@
     font-size: 16px;
   }
 
-  .catalog-header__categories {
-    justify-content: flex-start;
-  }
+  
 }
 
 @media screen and (max-width: 680px) {
@@ -264,19 +235,9 @@
     line-height: 1.25;
   }
 
-  .catalog-header__categories {
-    justify-content: flex-start;
-    width: 100%;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-  }
+  
 
-  .catalog-header__category {
-    flex: 0 0 auto;
-    padding: 10px 12px;
-    font-size: 12px;
-    white-space: nowrap;
-  }
+  
 
   .buildings-directory__grid {
     grid-template-columns: minmax(0, 1fr);
@@ -337,8 +298,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .buildings-directory__breadcrumb-link,
-  .catalog-header__category,
-  .buildings-directory__details {
+.buildings-directory__details {
     transition: none;
   }
 }
@@ -367,20 +327,9 @@
     line-height: 72px;
   }
 
-  .catalog-header__categories {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-self: stretch;
-    width: 100%;
-    overflow: clip;
-  }
+  
 
-  .catalog-header__category {
-    flex: 0 0 auto;
-    padding: 14px 18px;
-    font-size: 16px;
-    white-space: nowrap;
-  }
+  
 
   .buildings-directory__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -474,23 +423,9 @@
     line-height: 72px;
   }
 
-  .catalog-header__categories {
-    align-self: center;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    width: 320px;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 4px;
-  }
+  
 
-  .catalog-header__category {
-    flex: 0 0 auto;
-    padding: 12px 18px;
-    font-size: 14px;
-    line-height: 1.6;
-    white-space: nowrap;
-  }
+  
 
   .buildings-directory__grid {
     grid-template-columns: minmax(0, 1fr);
@@ -547,19 +482,9 @@
 
 
 /* Horizontal category navigation and progressive card disclosure. */
-.catalog-header__categories {
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  overflow-x: auto;
-  overflow-y: hidden;
-  overscroll-behavior-x: contain;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-}
 
-.catalog-header__categories::-webkit-scrollbar {
-  display: none;
-}
+
+
 
 .buildings-directory__show-more {
   display: flex;
