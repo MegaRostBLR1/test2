@@ -12263,132 +12263,37 @@ h2 {
   }
 }
 
-.catalog-header {
-  width: 100%;
-  color: #4d4d4d;
-  background-color: #fff;
-  border-radius: 0.5556rem;
-}
 
-.catalog-header__panel.section__container {
-  display: flex;
-  justify-content: center;
-  padding: 2.2222rem;
-  border-radius: 1.1111rem;
-}
 
-.catalog-header__container.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.1111rem;
-  width: 100%;
-  max-width: 99.7778rem;
-  padding: 0;
-}
 
-.catalog-header__breadcrumbs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.1111rem;
-  color: #4d4d4d;
-  font-family: "Onest-Regular", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4444;
-  white-space: nowrap;
-}
 
-.catalog-header__breadcrumb-link {
-  color: inherit;
-}
 
-.catalog-header__breadcrumb-link:hover {
-  color: #324c88;
-}
 
-.catalog-header__breadcrumb-separator {
-  flex: 0 0 auto;
-  font-size: 1.1111rem;
-}
 
-.catalog-header__title {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 0;
-  color: #4d4d4d;
-  font-family: "Onest-Medium", sans-serif;
-  font-size: 3rem;
-  font-weight: 500;
-  line-height: 0;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
 
-.catalog-header__title-text {
-  font: inherit;
-  line-height: normal;
-}
 
-.catalog-header__count {
-  color: #324c88;
-  font-family: "Onest-Medium", sans-serif;
-  font-size: 1.935rem;
-  font-weight: 500;
-  line-height: normal;
-}
 
-.catalog-header__categories {
-  display: flex;
-  align-items: center;
-  gap: 0.2222rem;
-  max-width: 100%;
-  padding: 0.2222rem;
-  overflow-x: auto;
-  overflow-y: hidden;
-  border-radius: 0.5556rem;
-  background-color: #f5f8f7;
-  scrollbar-width: none;
-  overscroll-behavior-inline: contain;
-}
 
-.catalog-header__categories::-webkit-scrollbar {
-  display: none;
-}
 
-.catalog-header__category {
-  display: flex;
-  flex: 0 0 auto;
-  align-items: center;
-  justify-content: center;
-  min-height: 3.5556rem;
-  padding: 0.9444rem 1.3333rem;
-  border-radius: 0.7778rem;
-  color: #5d5d5d;
-  font-family: "Onest-SemiBold", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.6;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
 
-.catalog-header__category:hover {
-  background-color: #e9eeec;
-}
 
-.catalog-header__category.is-active {
-  background-color: #fff500;
-}
 
-.catalog-header__category:focus-visible {
-  outline: 0.1111rem solid #324c88;
-  outline-offset: 0.1111rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -12502,11 +12407,7 @@ h2 {
 
 
 @media screen and (max-width: 1300px) {
-  .catalog-header__category {
-    min-height: 3rem;
-    padding: 0.6667rem 0.7778rem;
-    font-size: 0.8889rem;
-  }
+  
 
   .services-list__panel {
     padding: 1.3333rem;
@@ -12522,22 +12423,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .catalog-header__title {
-    font-family: "Onest-SemiBold", sans-serif;
-    font-size: 1.3333rem;
-    font-weight: 600;
-  }
 
-  .catalog-header__title-text,
-  .catalog-header__count {
-    line-height: 1.7778rem;
-  }
-
-  .catalog-header__count {
-    font-size: 1.3333rem;
-  }
-}
 
 @media screen and (max-width: 800px) {
   .services-list__grid {
@@ -12593,42 +12479,19 @@ h2 {
 }
 
 @media screen and (max-width: 680px) {
-  .catalog-header__panel.section__container {
-    padding: 0.7778rem;
-    border-radius: 1.1111rem;
-  }
+  
 
-  .catalog-header__container.container {
-    gap: 1.1111rem;
-  }
+  
 
-  .catalog-header__breadcrumbs {
-    gap: 1.1111rem;
-    font-size: 0.7778rem;
-    line-height: 1.8571;
-  }
+  
 
-  .catalog-header__breadcrumb-separator {
-    font-size: 1.1111rem;
-  }
+  
 
-  .catalog-header__title-text {
-    line-height: 1.7778rem;
-  }
+  
 
-  .catalog-header__categories {
-    gap: 0.2222rem;
-    padding: 0.2222rem;
-    border-radius: 0.5556rem;
-  }
+  
 
-  .catalog-header__category {
-    min-height: 2.3333rem;
-    padding: 0.5556rem 0.7778rem;
-    border-radius: 0.7778rem;
-    font-size: 0.7778rem;
-    line-height: 1.5714;
-  }
+  
 
   .services-list__panel {
     padding: 0.2222rem;
