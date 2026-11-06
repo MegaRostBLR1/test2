@@ -2592,7 +2592,17 @@ h2 {
 }
 
 .video-trigger--project {
+  flex: 0 0 282.8427px;
+  width: 282.8427px;
+  height: 282.8427px;
   margin: auto 0;
+}
+
+.video-trigger--project .video-trigger__label {
+  width: 177px;
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .project-card__controls,
@@ -2876,7 +2886,7 @@ h2 {
 /* Контрольный tablet-frame Figma 1024 px: 1857:25447.
    Главная карточка занимает отдельный ряд; две дополнительные карточки
    располагаются рядом ниже, как в макете. */
-@media screen and (min-width: 681px) and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .home-projects__panel {
     padding: 40px;
   }
@@ -3082,6 +3092,29 @@ h2 {
     line-height: 18px;
   }
 
+  .video-trigger--project {
+    flex-basis: 197.9898px;
+    width: 197.9898px;
+    height: 197.9898px;
+  }
+
+  .video-trigger--project .video-trigger__decoration {
+    width: 140px;
+    height: 140px;
+  }
+
+  .video-trigger--project .video-trigger__play {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .video-trigger--project .video-trigger__label {
+    font-size: 12px;
+    line-height: 26px;
+  }
+
   .project-card__controls,
   .home-projects__secondary-controls {
     gap: 14px;
@@ -3108,6 +3141,33 @@ h2 {
   .home-projects__cards {
     grid-template-rows: none;
     gap: 8px;
+    min-height: 0;
+  }
+
+  .project-card__play--compact {
+    margin: 28px 20px 0;
+  }
+
+  .project-card__play--compact svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .project-card__metadata--compact .project-card__tag {
+    gap: 8px;
+    padding: 2px 10px 2px 2px;
+    font-size: 16px;
+  }
+
+  .project-card__metadata--compact .project-card__tag-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .project-card__id {
+    max-width: none;
+    font-size: 16px;
+    white-space: nowrap;
   }
 
   .project-card--compact {
@@ -3219,11 +3279,11 @@ h2 {
   }
 
   .video-trigger--project {
-    flex: 0 0 198px;
+    flex: 0 0 197.9898px;
     align-items: center;
     justify-content: center;
-    width: 198px;
-    height: 198px;
+    width: 197.9898px;
+    height: 197.9898px;
     gap: 8px;
     margin: 0;
   }
