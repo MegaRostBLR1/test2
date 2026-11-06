@@ -36,7 +36,7 @@
 }
 
 .buildings-directory__breadcrumb-link:focus-visible,
-.catalog-header__filter:focus-visible,
+.catalog-header__category:focus-visible,
 .buildings-directory__details:focus-visible,
 .buildings-directory__compare:focus-visible {
   outline: 2px solid #324c88;
@@ -65,7 +65,7 @@
   color: #324c88;
 }
 
-.catalog-header__filters {
+.catalog-header__categories {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,7 +77,7 @@
   background: #f5f8f7;
 }
 
-.catalog-header__filter {
+.catalog-header__category {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +93,7 @@
   transition: background-color 0.15s ease;
 }
 
-.catalog-header__filter.is-active {
+.catalog-header__category.is-active {
   background: #fff500;
 }
 
@@ -236,7 +236,7 @@
     font-size: 16px;
   }
 
-  .catalog-header__filters {
+  .catalog-header__categories {
     justify-content: flex-start;
   }
 }
@@ -264,14 +264,14 @@
     line-height: 1.25;
   }
 
-  .catalog-header__filters {
+  .catalog-header__categories {
     justify-content: flex-start;
     width: 100%;
     overflow-x: auto;
     flex-wrap: nowrap;
   }
 
-  .catalog-header__filter {
+  .catalog-header__category {
     flex: 0 0 auto;
     padding: 10px 12px;
     font-size: 12px;
@@ -337,7 +337,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .buildings-directory__breadcrumb-link,
-  .catalog-header__filter,
+  .catalog-header__category,
   .buildings-directory__details {
     transition: none;
   }
@@ -367,7 +367,7 @@
     line-height: 72px;
   }
 
-  .catalog-header__filters {
+  .catalog-header__categories {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-self: stretch;
@@ -375,7 +375,7 @@
     overflow: clip;
   }
 
-  .catalog-header__filter {
+  .catalog-header__category {
     flex: 0 0 auto;
     padding: 14px 18px;
     font-size: 16px;
@@ -474,7 +474,7 @@
     line-height: 72px;
   }
 
-  .catalog-header__filters {
+  .catalog-header__categories {
     align-self: center;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -484,7 +484,7 @@
     padding: 4px;
   }
 
-  .catalog-header__filter {
+  .catalog-header__category {
     flex: 0 0 auto;
     padding: 12px 18px;
     font-size: 14px;
@@ -547,7 +547,7 @@
 
 
 /* Horizontal category navigation and progressive card disclosure. */
-.catalog-header__filters {
+.catalog-header__categories {
   flex-wrap: nowrap;
   justify-content: flex-start;
   overflow-x: auto;
@@ -557,7 +557,7 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.catalog-header__filters::-webkit-scrollbar {
+.catalog-header__categories::-webkit-scrollbar {
   display: none;
 }
 
