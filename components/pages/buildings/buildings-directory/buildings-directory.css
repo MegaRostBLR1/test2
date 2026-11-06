@@ -102,7 +102,6 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  transition: background-color 0.15s ease;
 }
 
 .buildings-directory__details:hover {
@@ -157,7 +156,6 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 0.15s ease;
 }
 
 .buildings-directory__show-more:hover {
