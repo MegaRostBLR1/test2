@@ -1,6 +1,7 @@
 /* Каталог зданий — карточки по макетам Figma 1857:29109, 1857:29304, 1857:29624 и 1857:29967. */
 .buildings-directory {
-  padding: 5px;
+  margin-top: 20px;
+  padding: 0 40px 40px;
   color: #4d4d4d;
 }
 
@@ -163,6 +164,12 @@
 }
 
 @media screen and (max-width: 1100px) {
+  .buildings-directory {
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+  }
+
   .buildings-directory__image {
     height: 192px;
   }
@@ -205,7 +212,7 @@
 
 @media screen and (max-width: 680px) {
   .buildings-directory {
-    padding: 0 5px 5px;
+    padding: 0 14px 20px;
   }
 
   .buildings-directory__grid {
