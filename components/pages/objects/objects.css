@@ -2413,7 +2413,8 @@
         text-transform: none;
     }
 
-    body.objects-filters-open {
+    html.objects-filters-open,
+    html.objects-filters-open body {
         overflow: hidden;
     }
 

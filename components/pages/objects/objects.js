@@ -169,6 +169,7 @@ function initObjects() {
         const setMobileFiltersExpanded = (expanded) => {
             filtersForm.classList.toggle('is-expanded', expanded);
             mobileFiltersToggle.setAttribute('aria-expanded', String(expanded));
+            document.documentElement.classList.toggle('objects-filters-open', expanded);
             document.body.classList.toggle('objects-filters-open', expanded);
 
             if (extraFilters) {
