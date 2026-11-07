@@ -33,7 +33,6 @@
 
 .objects__breadcrumb-link {
     color: inherit;
-    transition: color 0.15s ease;
 }
 
 .objects__breadcrumb-link:hover {
@@ -228,7 +227,8 @@
     color: #2C2C2CE6;
 }
 
-@media screen and (min-width: 1101px) and (max-width: 1600px) {
+/* Адаптивная сетка панели объектов: desktop → tablet → mobile. */
+@media screen and (max-width: 1600px) {
     .objects__title {
         font-size: 2.6667rem;
         line-height: 3.1111rem;
@@ -241,112 +241,6 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .objects__panel {
-        gap: 1.3333rem;
-        padding: 2.2222rem 1.3333rem 1.1111rem;
-    }
-
-    .objects__toolbar {
-        flex-wrap: wrap;
-        gap: 1.3333rem 2rem;
-        width: auto;
-    }
-
-    .objects__search-group,
-    .objects__view-group {
-        flex-basis: auto;
-    }
-
-    .objects__title {
-        font-size: 2.2222rem;
-        line-height: 2.6667rem;
-    }
-
-    .objects__count {
-        font-size: 1.4444rem;
-        line-height: 1.8889rem;
-    }
-}
-
-@media screen and (max-width: 680px) {
-    .objects__panel {
-        align-items: stretch;
-        gap: 1.1111rem;
-        padding: 1.3333rem 0.7778rem 1.1111rem;
-    }
-
-    .objects__breadcrumbs {
-        align-self: center;
-        gap: 0.6667rem;
-        font-size: 0.7778rem;
-        line-height: 1.1111rem;
-        white-space: normal;
-    }
-
-    .objects__title {
-        flex-wrap: wrap;
-        gap: 0.2222rem;
-        font-size: 1.5556rem;
-        line-height: 1.8889rem;
-        white-space: normal;
-    }
-
-    .objects__count {
-        font-size: 1.1111rem;
-        line-height: 1.5556rem;
-    }
-
-    .objects__toolbar {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 1.1111rem;
-        width: 100%;
-    }
-
-    .objects__search-group,
-    .objects__view-group {
-        flex-wrap: wrap;
-        gap: 0.6667rem;
-        width: 100%;
-    }
-
-    .objects__label {
-        font-size: 0.8889rem;
-    }
-
-    .objects__search-field {
-        flex: 1 1 12rem;
-        width: 100%;
-    }
-
-    .objects__view-group {
-        justify-content: space-between;
-    }
-
-    .objects__view-options {
-        flex-wrap: wrap;
-        gap: 0.6667rem;
-    }
-
-    .objects__view-option {
-        gap: 0.5556rem;
-    }
-
-    .objects__view-name {
-        font-size: 0.7778rem;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .objects__breadcrumb-link {
-        transition: none;
-    }
-}
-
-/* Figma 1857:31433 — tablet header/toolbar at 1024 px.
-   Desktop layout remains the source for 1440/1920 px; only the tablet
-   composition is adjusted here. */
-@media screen and (min-width: 681px) and (max-width: 1100px) {
     .objects__panel {
         align-items: center;
         gap: 18px;
@@ -443,10 +337,10 @@
     }
 
     .objects__view-icon {
-        flex-basis: 60px;
-        width: 60px;
-        height: 52px;
-        padding: 14px 18px;
+        flex-basis: 24px;
+        width: 24px;
+        height: 24px;
+        padding: 0;
     }
 
     .objects__view-control.is-active .objects__view-icon {
@@ -454,27 +348,22 @@
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .objects__view-control {
-        transition: none;
-    }
-}
-
-
-/* Figma 1857:31661 — mobile toolbar at 360 px. */
 @media screen and (max-width: 680px) {
     .objects__panel {
+        align-items: center;
         gap: 18px;
         padding: 20px 14px;
     }
 
     .objects__breadcrumbs {
+        align-items: center;
         gap: 20px;
         font-size: 14px;
         line-height: normal;
     }
 
     .objects__title {
+        align-items: baseline;
         gap: 4px;
         font-family: "Onest-SemiBold", sans-serif;
         font-size: 18px;
@@ -491,7 +380,10 @@
     }
 
     .objects__toolbar {
+        flex-direction: column;
+        align-items: stretch;
         gap: 14px;
+        width: 100%;
     }
 
     .objects__view-group {
@@ -527,10 +419,10 @@
     }
 
     .objects__view-icon {
-        flex-basis: 32px;
-        width: 32px;
-        height: 28px;
-        padding: 7px 9px;
+        flex-basis: 18px;
+        width: 18px;
+        height: 18px;
+        padding: 0;
     }
 
     .objects__view-control.is-active .objects__view-icon {
@@ -567,8 +459,6 @@
     }
 }
 
-
-/* Figma 1857:30463 — карта объектов */
 .objects-map {
     position: relative;
     min-height: 1000px;
