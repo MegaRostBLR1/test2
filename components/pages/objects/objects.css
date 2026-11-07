@@ -1061,6 +1061,7 @@
     .objects-map__select-trigger {
         min-height: 48px;
         padding: 12px 24px;
+        font-size: 14px;
     }
 
     .objects-map__more {
