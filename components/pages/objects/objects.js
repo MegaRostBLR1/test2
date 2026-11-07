@@ -18,6 +18,8 @@ function initObjects() {
 
     const filtersForm = root.querySelector('.objects-map__filters');
     const mobileFiltersToggle = root.querySelector('.objects-map__mobile-toggle');
+    const closeFiltersButton = root.querySelector('.objects-map__filters-close');
+    const filtersSubmitButton = root.querySelector('.objects-map__submit');
     const moreFiltersButton = root.querySelector('.objects-map__more');
     const extraFilters = root.querySelector('.objects-map__extra-filters');
     const mapCard = root.querySelector('.objects-map__card');
@@ -162,12 +164,45 @@ function initObjects() {
     }
 
     if (mobileFiltersToggle && filtersForm) {
+        const setMobileFiltersExpanded = (expanded) => {
+            filtersForm.classList.toggle('is-expanded', expanded);
+            mobileFiltersToggle.setAttribute('aria-expanded', String(expanded));
+            document.body.classList.toggle('objects-filters-open', expanded);
+
+            if (extraFilters) {
+                extraFilters.hidden = !expanded;
+            }
+
+            if (filtersSubmitButton) {
+                filtersSubmitButton.textContent = expanded ? 'Назад' : 'Показать';
+            }
+
+            if (expanded) {
+                closeFiltersButton?.focus();
+            } else {
+                mobileFiltersToggle.focus();
+            }
+        };
+
         mobileFiltersToggle.addEventListener('click', () => {
             const expanded = mobileFiltersToggle.getAttribute('aria-expanded') === 'true';
-            mobileFiltersToggle.setAttribute('aria-expanded', String(!expanded));
-            filtersForm.classList.toggle('is-expanded', !expanded);
-            if (extraFilters) {
-                extraFilters.hidden = expanded;
+            setMobileFiltersExpanded(!expanded);
+        });
+
+        closeFiltersButton?.addEventListener('click', () => {
+            setMobileFiltersExpanded(false);
+        });
+
+        filtersSubmitButton?.addEventListener('click', () => {
+            if (filtersForm.classList.contains('is-expanded')) {
+                setMobileFiltersExpanded(false);
+            }
+        });
+
+        filtersForm.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && filtersForm.classList.contains('is-expanded')) {
+                event.preventDefault();
+                setMobileFiltersExpanded(false);
             }
         });
     }
