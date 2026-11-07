@@ -465,8 +465,8 @@
     position: absolute;
     inset: 0;
     display: block;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     border: 0;
     border-radius: 10px;
     background: #E8ECEA;
@@ -568,7 +568,6 @@
     fill: none;
     stroke: currentColor;
     stroke-width: 2;
-    transition: transform 0.2s ease;
 }
 
 .objects-map__more[aria-expanded="true"] svg {
@@ -774,7 +773,6 @@
     height: 24px;
     align-items: center;
     justify-content: center;
-    transition: transform 0.15s ease;
 }
 
 .objects-map__select-chevron svg {
