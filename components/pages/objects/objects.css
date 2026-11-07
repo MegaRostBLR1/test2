@@ -39,20 +39,12 @@
     color: #324C88;
 }
 
-.objects__breadcrumb-link:focus-visible,
-.objects__search-input:focus-visible,
-.objects__view-control:focus-visible {
-    outline: 0.1111rem solid #324C88;
-    outline-offset: 0.1667rem;
-}
-
 .objects__breadcrumb-separator {
     flex: 0 0 auto;
 }
 
 .objects__title {
     display: flex;
-    align-items: baseline;
     justify-content: center;
     gap: 0.2778rem;
     max-width: 100%;
