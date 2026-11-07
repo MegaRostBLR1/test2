@@ -714,10 +714,148 @@
     text-transform: uppercase;
 }
 
-/* Figma 1857:30649 — desktop layout at 1440 px.
-   Keep the 1920 px composition above; align the card to its measured
-   x-position in the 1440 px frame without vertical centering. */
-@media screen and (min-width: 1101px) and (max-width: 1600px) {
+.objects-map__filter {
+    position: relative;
+}
+
+.objects-map__native-select {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
+.objects-map__select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+}
+
+.objects-map__select.is-open {
+    z-index: 5;
+}
+
+.objects-map__select-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    min-height: 64px;
+    padding: 18px 24px;
+    border: 0;
+    border-radius: 10px;
+    background: rgba(50, 76, 136, 0.04);
+    color: #272629;
+    font-family: "Onest-Medium", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: left;
+    cursor: pointer;
+}
+
+.objects-map__select-trigger:focus-visible,
+.objects-map__select-option:focus-visible {
+    outline: 2px solid #324C88;
+    outline-offset: 2px;
+}
+
+.objects-map__select-chevron {
+    display: flex;
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.15s ease;
+}
+
+.objects-map__select-chevron svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
+.objects-map__select.is-open .objects-map__select-chevron {
+    transform: rotate(180deg);
+}
+
+.objects-map__select-options {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 264px;
+    margin-top: 0;
+    padding: 18px 24px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    border: 3px solid #F5F8F7;
+    border-radius: 10px;
+    background: #F7F8FA;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    scrollbar-color: #4D4D4D rgba(255, 255, 255, 0.8);
+    scrollbar-width: thin;
+}
+
+.objects-map__select-options[hidden] {
+    display: none;
+}
+
+.objects-map__select-option {
+    flex: 0 0 auto;
+    align-self: flex-start;
+    max-width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: rgba(44, 44, 44, 0.5);
+    font-family: "Onest-Medium", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+}
+
+.objects-map__select-option:hover,
+.objects-map__select-option.is-selected {
+    color: #4D4D4D;
+}
+
+.objects-map__select-option:focus-visible {
+    border-radius: 2px;
+}
+
+
+.objects-map__mobile-toggle {
+    display: none;
+}
+
+.objects-map__filter-fields {
+    display: contents;
+}
+
+
+/* Figma 1857:30649 — desktop card placement at 1440 px. */
+@media screen and (max-width: 1600px) {
     .objects-map__card {
         top: 50%;
         left: 56.2%;
@@ -725,108 +863,8 @@
     }
 }
 
+/* Figma 1857:31482 — tablet map and filter layout at 1024 px. */
 @media screen and (max-width: 1100px) {
-    .objects-map {
-        min-height: 760px;
-        padding: 20px;
-    }
-
-    .objects-map__filters {
-        width: 400px;
-        padding: 20px;
-    }
-
-    .objects-map__card {
-        top: auto;
-        right: 20px;
-        bottom: 20px;
-        left: auto;
-        width: 440px;
-        transform: none;
-    }
-}
-
-@media screen and (max-width: 680px) {
-    .objects-map {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        min-height: 0;
-        padding: 10px;
-        overflow: visible;
-    }
-
-    .objects-map__frame {
-        position: relative;
-        inset: auto;
-        order: 2;
-        width: 100%;
-        height: 420px;
-        border-radius: 10px;
-    }
-
-    .objects-map__filters {
-        width: 100%;
-        max-width: none;
-        gap: 14px;
-        padding: 16px;
-    }
-
-    .objects-map__filters-title {
-        font-size: 20px;
-    }
-
-    .objects-map__filter {
-        gap: 8px;
-    }
-
-    .objects-map__filter-label,
-    .objects-map__filter select,
-    .objects-map__more,
-    .objects-map__submit {
-        font-size: 14px;
-    }
-
-    .objects-map__filter select {
-        min-height: 48px;
-        padding: 12px 40px 12px 14px;
-    }
-
-    .objects-map__more {
-        min-height: 48px;
-        padding: 12px 14px;
-    }
-
-    .objects-map__submit {
-        min-height: 50px;
-        padding: 14px;
-    }
-
-    .objects-map__card {
-        position: relative;
-        inset: auto;
-        order: 3;
-        width: 100%;
-        max-width: none;
-    }
-
-    .objects-map__card-image {
-        flex-basis: 35%;
-        min-height: 190px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .objects-map__more svg {
-        transition: none;
-    }
-}
-
-
-/* Figma 1857:31483 — tablet map/filter composition at 1024 px.
-   The Yandex map remains the full-bleed background; filters sit in a
-   white panel anchored to the bottom edge of the map section. */
-@media screen and (min-width: 681px) and (max-width: 1100px) {
     .objects-map {
         display: flex;
         align-items: flex-end;
@@ -834,7 +872,6 @@
         height: 800px;
         padding: 4px;
         overflow: hidden;
-        border-radius: 10px;
     }
 
     .objects-map__frame {
@@ -843,7 +880,6 @@
         width: 100%;
         height: 100%;
         min-height: 0;
-        border-radius: 10px;
     }
 
     .objects-map__filters {
@@ -854,7 +890,6 @@
         width: 100%;
         max-width: none;
         padding: 25px;
-        border-radius: 10px;
     }
 
     .objects-map__filters-heading,
@@ -870,7 +905,6 @@
 
     .objects-map__filters-title {
         font-size: 20px;
-        line-height: 1.6;
     }
 
     .objects-map__filter {
@@ -879,10 +913,10 @@
 
     .objects-map__filter-label {
         font-size: 14px;
-        line-height: 1.6;
     }
 
-    .objects-map__filter select {
+    .objects-map__filter select,
+    .objects-map__select-trigger {
         min-height: 48px;
         padding: 12px 24px;
         font-size: 16px;
@@ -911,34 +945,16 @@
     }
 
     .objects-map__card {
-        top: 20px;
-        right: 20px;
-        bottom: auto;
-        left: auto;
-        width: 440px;
-        max-width: 100%;
-        transform: none;
+        display: none;
+    }
+
+    .objects-map__select-option {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
-/* Ensure the embedded map always fills the entire map section on desktop too. */
-@media screen and (min-width: 1101px) {
-    .objects-map__frame {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-
-/* Figma 1857:31710 — mobile filter panel at 360 px. */
-.objects-map__mobile-toggle {
-    display: none;
-}
-
-.objects-map__filter-fields {
-    display: contents;
-}
-
+/* Figma 1857:31710 — mobile map and compact filter panel at 360 px. */
 @media screen and (max-width: 680px) {
     .objects-map {
         display: block;
@@ -955,7 +971,6 @@
         position: absolute;
         inset: 0;
         display: block;
-        order: initial;
         width: 100%;
         height: 100%;
         border-radius: 10px;
@@ -1018,7 +1033,6 @@
         stroke-width: 2;
         stroke-linecap: round;
         stroke-linejoin: round;
-        transition: transform 0.2s ease;
     }
 
     .objects-map__mobile-toggle[aria-expanded="true"] svg {
@@ -1040,13 +1054,15 @@
     }
 
     .objects-map__filter-label,
-    .objects-map__filter select {
+    .objects-map__filter select,
+    .objects-map__select-option {
         font-size: 14px;
     }
 
-    .objects-map__filter select {
+    .objects-map__filter select,
+    .objects-map__select-trigger {
         min-height: 48px;
-        padding: 12px 40px 12px 14px;
+        padding: 12px 24px;
     }
 
     .objects-map__more {
@@ -1068,11 +1084,14 @@
     .objects-map__card {
         display: none;
     }
-}
 
-@media (prefers-reduced-motion: reduce) {
-    .objects-map__mobile-toggle svg {
-        transition: none;
+    .objects-map__select-options {
+        height: 264px;
+        padding: 18px 24px;
+    }
+
+    .objects-map__select-option {
+        line-height: 20px;
     }
 }
 
@@ -1790,161 +1809,6 @@
     .objects-drawings__card--third,
     .objects-drawings__card--fourth {
         display: none;
-    }
-}
-
-/* Figma 2269:146136 — custom filter options. */
-.objects-map__filter {
-    position: relative;
-}
-
-.objects-map__native-select {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    clip-path: inset(50%);
-}
-
-.objects-map__select {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-width: 0;
-}
-
-.objects-map__select.is-open {
-    z-index: 5;
-}
-
-.objects-map__select-trigger {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    width: 100%;
-    min-height: 64px;
-    padding: 18px 24px;
-    border: 0;
-    border-radius: 10px;
-    background: rgba(50, 76, 136, 0.04);
-    color: #272629;
-    font-family: "Onest-Medium", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.6;
-    text-align: left;
-    cursor: pointer;
-}
-
-.objects-map__select-trigger:focus-visible,
-.objects-map__select-option:focus-visible {
-    outline: 2px solid #324C88;
-    outline-offset: 2px;
-}
-
-.objects-map__select-chevron {
-    display: flex;
-    flex: 0 0 24px;
-    width: 24px;
-    height: 24px;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.15s ease;
-}
-
-.objects-map__select-chevron svg {
-    display: block;
-    width: 24px;
-    height: 24px;
-    fill: none;
-    stroke: currentColor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 2;
-}
-
-.objects-map__select.is-open .objects-map__select-chevron {
-    transform: rotate(180deg);
-}
-
-.objects-map__select-options {
-    position: absolute;
-    top: calc(100% + 8px);
-    left: 0;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    height: 264px;
-    margin-top: 0;
-    padding: 18px 24px;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    border: 3px solid #F5F8F7;
-    border-radius: 10px;
-    background: #F7F8FA;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-    scrollbar-color: #4D4D4D rgba(255, 255, 255, 0.8);
-    scrollbar-width: thin;
-}
-
-.objects-map__select-options[hidden] {
-    display: none;
-}
-
-.objects-map__select-option {
-    flex: 0 0 auto;
-    align-self: flex-start;
-    max-width: 100%;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    color: rgba(44, 44, 44, 0.5);
-    font-family: "Onest-Medium", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    text-align: left;
-    overflow-wrap: anywhere;
-    cursor: pointer;
-}
-
-.objects-map__select-option:hover,
-.objects-map__select-option.is-selected {
-    color: #4D4D4D;
-}
-
-.objects-map__select-option:focus-visible {
-    border-radius: 2px;
-}
-
-@media screen and (max-width: 680px) {
-    .objects-map__select-trigger {
-        min-height: 54px;
-        padding: 14px 18px;
-        font-size: 14px;
-    }
-
-    .objects-map__select-options {
-        height: 264px;
-        padding: 18px 24px;
-    }
-
-    .objects-map__select-option {
-        font-size: 14px;
-        line-height: 20px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .objects-map__select-chevron {
-        transition: none;
     }
 }
 
