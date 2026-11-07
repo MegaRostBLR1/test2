@@ -845,7 +845,8 @@
 }
 
 
-.objects-map__mobile-toggle {
+.objects-map__mobile-toggle,
+.objects-map__filters-close {
     display: none;
 }
 
@@ -2291,7 +2292,7 @@
         text-transform: none;
     }
 
-    .objects-map__filters-close {
+    .objects-map__filters.is-expanded .objects-map__filters-close {
         display: flex;
         flex: 0 0 24px;
         align-items: center;
@@ -2337,6 +2338,19 @@
         overscroll-behavior: contain;
         scrollbar-color: #4D4D4D transparent;
         scrollbar-width: thin;
+    }
+
+    .objects-map__filters.is-expanded .objects-map__filter-fields::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    .objects-map__filters.is-expanded .objects-map__filter-fields::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #4D4D4D;
+    }
+
+    .objects-map__filters.is-expanded .objects-map__filter-fields::-webkit-scrollbar-track {
+        background: transparent;
     }
 
     .objects-map__filters.is-expanded .objects-map__filter {

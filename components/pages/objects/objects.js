@@ -109,6 +109,7 @@ function initObjects() {
                     else if (event.key === 'End') nextIndex = optionButtons.length - 1;
                     else if (event.key === 'Escape') {
                         event.preventDefault();
+                        event.stopPropagation();
                         closeDropdown(dropdown, true);
                         return;
                     } else if (event.key === 'Tab') {
@@ -142,6 +143,7 @@ function initObjects() {
                     else optionButtons[0]?.focus();
                 } else if (event.key === 'Escape' && !options.hidden) {
                     event.preventDefault();
+                    event.stopPropagation();
                     closeDropdown(dropdown, true);
                 }
             });
