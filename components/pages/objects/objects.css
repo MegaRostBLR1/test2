@@ -459,6 +459,7 @@
     overflow: hidden;
     border-radius: 10px;
     background: #F5F8F7;
+    margin: 0 5px 5px;
 }
 
 .objects-map__frame {
@@ -627,7 +628,7 @@
     flex: 0 0 170px;
     min-height: 232px;
     border-radius: 10px;
-    background: #DDE3E1 url("../../../static/images/angar.png") center / cover no-repeat;
+    background: #DDE3E1 url("../../../static/images/ceh.png") center / cover no-repeat;
 }
 
 .objects-map__card-content {
@@ -2142,6 +2143,7 @@
     .objects-map__filters-heading {
         padding: 0 0 12px;
         border-bottom: 1px solid #4D4D4D33;
+        width: 100%;
     }
 
     .objects-map__filters-title {
@@ -2190,6 +2192,7 @@
         display: none;
         flex-direction: column;
         gap: 14px;
+        width: 100%;
     }
 
     .objects-map__filters.is-expanded .objects-map__filter-fields {
