@@ -459,6 +459,7 @@
     }
 }
 
+/* Figma 1857:30463 — карта объектов. */
 .objects-map {
     position: relative;
     min-height: 1000px;
